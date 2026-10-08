@@ -101,6 +101,21 @@ def build(out_dir: Path = REVIEW_DIR) -> Path:
     return html_path
 
 
+VERIFIER_BATCH_DIR = ROOT / "data" / "raw" / "agents" / "verifier" / "batches"
+
+
+def make_verifier_batches(size: int = 5) -> list[Path]:
+    """The verifier gets exactly the records (and the same information) the human reviewer gets."""
+    records = json.loads((REVIEW_DIR / "review_records.json").read_text(encoding="utf-8"))
+    VERIFIER_BATCH_DIR.mkdir(parents=True, exist_ok=True)
+    paths = []
+    for n, start in enumerate(range(0, len(records), size), 1):
+        path = VERIFIER_BATCH_DIR / f"v_b{n:02d}.json"
+        path.write_text(json.dumps(records[start:start + size], ensure_ascii=False, indent=1), encoding="utf-8")
+        paths.append(path)
+    return paths
+
+
 def render_form(records: list[dict]) -> str:
     questions = json.dumps({"primary": PRIMARY, "secondary": SECONDARY}, ensure_ascii=False)
     data = json.dumps(records, ensure_ascii=False)

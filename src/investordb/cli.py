@@ -92,6 +92,22 @@ def cmd_decide(args: argparse.Namespace) -> None:
     print(dict(Counter(r["status"] for r in rows)))
 
 
+def cmd_report(args: argparse.Namespace) -> None:
+    """Compute the pre-registered metrics and write docs/PRECISION_REPORT.md."""
+    from investordb.report import write
+
+    print(write())
+
+
+def cmd_sample(args: argparse.Namespace) -> None:
+    """Draw the review sample, build the blind review form and the verifier batches."""
+    from investordb.sample import build, make_verifier_batches
+
+    print(build())
+    for p in make_verifier_batches():
+        print(p)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="investordb")
     sub = parser.add_subparsers(required=True)
@@ -112,6 +128,12 @@ def main() -> None:
     p = sub.add_parser("decide", help="apply rules, write investors/rejected/needs_review tables")
     p.add_argument("--as-of", default="2026-10-08", help="reference date for the 36-month activity window")
     p.set_defaults(func=cmd_decide)
+
+    p = sub.add_parser("sample", help="draw the review sample + blind review form + verifier batches")
+    p.set_defaults(func=cmd_sample)
+
+    p = sub.add_parser("report", help="compute metrics and write docs/PRECISION_REPORT.md")
+    p.set_defaults(func=cmd_report)
 
     args = parser.parse_args()
     args.func(args)
