@@ -55,6 +55,24 @@ def make_waves(wave1_size: int = 50) -> dict[str, list[Path]]:
     return out
 
 
+def make_rescue(ids: list[str], prefix: str) -> list[Path]:
+    """Re-run candidates whose rejection came from too little evidence (not from evidence against them)."""
+    cands, triage = _read(CANDIDATES_CSV), _read(TRIAGE_CSV)
+    paths = []
+    for n, start in enumerate(range(0, len(ids), BATCH_SIZE), 1):
+        batch = [{
+            "candidate_id": cid, "name": cands[cid]["name"],
+            "other_names": [a for a in cands[cid]["aliases"].split(" | ") if a],
+            "known_website": cands[cid]["website"] or None,
+            "registry_hint": None if not triage[cid]["company_id"] else
+            f"possible registry match (unconfirmed, may be a different company): {triage[cid]['legal_name']}, IČO {triage[cid]['company_id']}",
+        } for cid in ids[start:start + BATCH_SIZE]]
+        path = BATCH_DIR / f"{prefix}_b{n:02d}.json"
+        path.write_text(json.dumps(batch, ensure_ascii=False, indent=2), encoding="utf-8")
+        paths.append(path)
+    return paths
+
+
 if __name__ == "__main__":
     for wave, paths in make_waves().items():
         n = sum(len(json.loads(p.read_text(encoding="utf-8"))) for p in paths)

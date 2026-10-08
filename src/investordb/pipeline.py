@@ -16,13 +16,14 @@ from datetime import date
 from pathlib import Path
 
 from investordb.candidates import OUT as CANDIDATES_CSV
-from investordb.evidence import CLAIMS_CSV, load_records
+from investordb.evidence import CLAIMS_CSV, T4_DOMAINS, _under, domain, load_records
 from investordb.money import Money, parse_money, to_eur
 from investordb.registries import RegistryRecord, ares_get, core_name, rpo_search
 from investordb.rules import Decision, decide
 from investordb.triage import TRIAGE_CSV
 
 PROCESSED = CLAIMS_CSV.parent
+ALIASES_CSV = CANDIDATES_CSV.parents[1] / "seeds" / "aliases.csv"
 
 
 def _read_csv(path: Path) -> list[dict]:
@@ -106,6 +107,48 @@ def wide_row(rec: dict, d: Decision, reg: RegistryRecord | None, ok: list[dict],
     )
 
 
+def entity_keys(rec: dict, claims: list[dict]) -> set[str]:
+    """Keys that identify the same firm: a verified company ID, or the official website domain."""
+    keys = set()
+    for c in claims:
+        if c["field"] == "identity" and c["auto_check"] == "ok":
+            ico = str((json.loads(c["value"]) or {}).get("company_id") or "").replace(" ", "")
+            if ico:
+                keys.add(f"ico:{ico}")
+    dom = domain(rec.get("website"))
+    if dom and not _under(dom, T4_DOMAINS):
+        keys.add(f"web:{dom}")
+    return keys
+
+
+def merge_duplicates(records: list[dict], claims_by_cand: dict[str, list[dict]]) -> dict[str, str]:
+    """Union-find over entity keys -> {candidate_id: primary candidate_id} (E8, decision D4)."""
+    parent = {r["candidate_id"]: r["candidate_id"] for r in records}
+
+    def find(x: str) -> str:
+        while parent[x] != x:
+            x = parent[x]
+        return x
+
+    # documented manual merges (data/seeds/aliases.csv) for brands without their own website or company ID
+    manual = {a["candidate_id"]: a["same_as"] for a in _read_csv(ALIASES_CSV)}
+    owner: dict[str, str] = {}
+    for r in sorted(records, key=lambda r: r["candidate_id"]):  # lowest id becomes the primary
+        cid = r["candidate_id"]
+        keys = entity_keys(r, claims_by_cand.get(cid, []))
+        if cid in manual:
+            keys.add(f"alias:{manual[cid]}")
+        if cid in manual.values():
+            keys.add(f"alias:{cid}")
+        for key in keys:
+            if key in owner:
+                a, b = sorted((find(owner[key]), find(cid)))
+                parent[b] = a
+            else:
+                owner[key] = cid
+    return {cid: find(cid) for cid in parent}
+
+
 def run(as_of: date, records: list[dict] | None = None) -> list[dict]:
     records = records or load_records()
     claims_by_cand: dict[str, list[dict]] = defaultdict(list)
@@ -113,19 +156,31 @@ def run(as_of: date, records: list[dict] | None = None) -> list[dict]:
         claims_by_cand[c["candidate_id"]].append(c)
     triage = {t["candidate_id"]: t for t in _read_csv(TRIAGE_CSV)}
     names = {c["candidate_id"]: c["name"] for c in _read_csv(CANDIDATES_CSV)}
+    # a later evidence run (e.g. the rescue pass) for the same candidate replaces the earlier one
+    latest = {r["candidate_id"]: r for r in records}
+    records = list(latest.values())
+    primary_of = merge_duplicates(records, claims_by_cand)
+    members: dict[str, list[str]] = defaultdict(list)
+    for cid, p in primary_of.items():
+        members[p].append(cid)
 
-    rows, seen_ids = [], {}
+    rows = []
     for rec in records:
         cid = rec["candidate_id"]
-        claims = claims_by_cand.get(cid, [])
+        primary = primary_of[cid]
+        if primary != cid:  # E8: decided once, on the merged evidence of the primary record
+            d = Decision(cid, "REJECTED", "E8", "", f"duplicate of {primary} - evidence merged there", [], "", 0, 0, "")
+            rows.append(wide_row(rec, d, None, [], as_of, names.get(cid) or ""))
+            continue
+        claims = [c for m in members[cid] for c in claims_by_cand.get(m, [])]
         reg = registry_for(claims, triage.get(cid))
         d = decide(cid, claims, reg, as_of)
-        if d.status == "INCLUDED" and reg:
-            if reg.company_id in seen_ids:  # E8: the same legal entity reached us under two names
-                d = Decision(**{**asdict(d), "status": "REJECTED", "reason": "E8",
-                                "explanation": f"duplicate of {seen_ids[reg.company_id]}"})
-            else:
-                seen_ids[reg.company_id] = cid
+        if d.reason == "E7" and rec.get("early_exit") == "foreign_hq":
+            # the agent stopped because the firm is foreign but could not quote the address: out of scope, not "name only"
+            d = Decision(**{**asdict(d), "status": "OOS", "reason": "OOS_HQ_UNVERIFIED",
+                            "explanation": "agent reports a foreign HQ; no verified quote"})
+        if len(members[cid]) > 1:
+            d.explanation += f" [merged: {', '.join(sorted(m for m in members[cid] if m != cid))}]"
         ok = [c for c in claims if c["auto_check"] == "ok"]
         rows.append(wide_row(rec, d, reg, ok, as_of, names.get(cid) or rec.get("name", "")))
 
