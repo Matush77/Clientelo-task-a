@@ -1,0 +1,9 @@
+{
+  "agentType": "Explore",
+  "description": "Slovak VC landscape research",
+  "toolUseId": "toolu_01MoHgDSKuEd35j5mnhpeiEt",
+  "spawnDepth": 1,
+  "requestShape": "foreground",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

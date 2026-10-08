@@ -1,0 +1,9 @@
+{
+  "agentType": "Explore",
+  "description": "Global investor universe size",
+  "toolUseId": "toolu_01QRw5mNhydS2pFn3uCbE6ui",
+  "spawnDepth": 1,
+  "requestShape": "foreground",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

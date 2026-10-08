@@ -1,0 +1,9 @@
+{
+  "agentType": "Explore",
+  "description": "Public investor data sources",
+  "toolUseId": "toolu_01JTrALPM9yvhPS4APLP6vew",
+  "spawnDepth": 1,
+  "requestShape": "foreground",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}
