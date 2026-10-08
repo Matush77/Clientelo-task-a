@@ -1,0 +1,388 @@
+[
+  {
+    "candidate_id": "C027",
+    "website": "https://n1.rocks",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague-based",
+      "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+      "quote": "Nation 1, a Prague-based venture capital firm",
+      "published_date": "2024-07-30",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "early-stage VC",
+      "source_url": "https://n1.rocks",
+      "quote": "N1 Ventures is an early-stage VC partnering with bold founders in AI, healthtech, and frontier tech.",
+      "published_date": "2026-06-20",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Respeecher", "date": "2025-05-28", "round": "unknown", "amount": null},
+        "value_text": "Respeecher",
+        "source_url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+        "quote": "Peníze již poslal ukrajinské společnosti Respeecher",
+        "published_date": "2025-05-28",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Novoflow", "date": "2025-11", "round": "unknown", "amount": "$3.1 million"},
+        "value_text": "N1 Ventures",
+        "source_url": "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup",
+        "quote": "The company has already attracted $3.1 million in funding, led by super angel Justin Hamilton, with participation from N1 Ventures, Multifaceted Capital, and Standard Partners Fund.",
+        "published_date": "2025-11-04",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Myriad AI", "date": "2024-07", "round": "pre_seed", "amount": "$2 million"},
+        "value_text": "Myriad AI",
+        "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+        "quote": "Myriad AI, a US-based startup with Czech roots, has secured $2 million in a pre-seed funding round.",
+        "published_date": "2024-07-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Taikun", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Taikun",
+        "source_url": "https://n1.rocks",
+        "quote": "From Prague to Silicon Valley: Taikun’s exit to Cloudera.",
+        "published_date": "2026-06-20",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["ai_data", "health_digital"],
+      "value_text": "AI, healthtech, and frontier tech",
+      "source_url": "https://n1.rocks",
+      "quote": "N1 Ventures is an early-stage VC partnering with bold founders in AI, healthtech, and frontier tech.",
+      "published_date": "2026-06-20",
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["seed"],
+      "value_text": "seed-stage",
+      "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+      "quote": "focused on investing in seed-stage startups that operate in Czechia.",
+      "published_date": "2024-07-30",
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "$60M", "currency": "USD", "capital_type": "aum", "as_of": null},
+      "value_text": "$60M",
+      "source_url": "https://n1.rocks",
+      "quote": "Today, we manage $60M across two funds focused on AI and healthcare.",
+      "published_date": "2026-06-20",
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "N1 Ventures U-Tech", "size": "přibližně 10 milionů eur", "currency": "EUR", "vintage": null},
+        "value_text": "přibližně 10 milionů eur",
+        "source_url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+        "quote": "investovat do celkem 20 ukrajinských startupů přibližně 10 milionů eur",
+        "published_date": "2025-05-28",
+        "derivation": "inferred"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "Nation1 VC portfolio investments",
+      "fetch https://www.nation1.vc (connection refused)",
+      "fetch https://nation1.vc (connection refused)",
+      "fetch https://n1.rocks (homepage)",
+      "fetch https://n1.rocks/portfolio (404)",
+      "N1 Ventures seed round led 2025 Prague startup",
+      "fetch https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+      "fetch https://n1.rocks/companies (404)",
+      "fetch https://n1.rocks (portfolio section)",
+      "Novoflow seed funding N1 investors 2025",
+      "Novoflow AI receptionist clinics raises seed round N1 press release",
+      "fetch https://www.thevccorner.com/p/novoflow-ai-healthcare-startup",
+      "N1 Ventures investice seed kolo 2025 česká startup",
+      "fetch https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/"
+    ]
+  },
+  {
+    "candidate_id": "C080",
+    "website": "https://www.rsj.com",
+    "identity": [
+      {
+        "value": {"legal_name": "RSJ Investments investiční společnost", "company_id": null, "country": "CZ"},
+        "value_text": "RSJ Investments investiční společností",
+        "source_url": "https://ekonomickydenik.cz/karel-janecek-prodal-akcie-v-rsj-investments-strida-ho-libor-winkler",
+        "quote": "Janečkovo podnikání bylo zastřešeno RSJ Investments investiční společností, která spravuje tři fondy",
+        "published_date": "2022-05-19",
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 1",
+      "source_url": "https://www.rsj.com/kontakt",
+      "quote": "Florentinum (budova C) Na Florenci 2116/15 CZ 110 00 Praha 1",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["real_estate", "pe"],
+      "value_text": "nemovitostí a private equity",
+      "source_url": "https://www.rsj.com",
+      "quote": "RSJ Investments obhospodařuje portfolia investic v oblasti nemovitostí a private equity.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "ElevenLabs", "date": "2024", "round": "unknown", "amount": null},
+        "value_text": "ElevenLabs",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "our portfolio now includes two companies, ElevenLabs and Pigment",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Pigment", "date": "2024", "round": "unknown", "amount": null},
+        "value_text": "Pigment",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "our portfolio now includes two companies, ElevenLabs and Pigment",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Pivovary CZ Group", "date": "2023", "round": "unknown", "amount": null},
+        "value_text": "Pivovary CZ Group",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "We have become a minority shareholder in Pivovary CZ Group, which owns the brewery brands Holba, Zubr, and Litovel.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Paddle", "date": "2022", "round": "unknown", "amount": null},
+        "value_text": "Paddle",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "and we co-invested in Paddle and Manta",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Manta", "date": "2022", "round": "unknown", "amount": null},
+        "value_text": "Manta",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "and we co-invested in Paddle and Manta",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Pillow", "date": "2021", "round": "unknown", "amount": null},
+        "value_text": "Pillow insurance company",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "We became the majority shareholder of the progressive Pillow insurance company",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "ESS", "date": null, "round": "unknown", "amount": null},
+        "value_text": "ESS",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "ESS, a portfolio company engaged in the development and production of battery systems",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Simply Fair Insurance", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Simply Fair Insurance",
+        "source_url": "https://ekonomickydenik.cz/karel-janecek-prodal-akcie-v-rsj-investments-strida-ho-libor-winkler",
+        "quote": "Nově založený fond krátce po svém vzniku koupil téměř 80procentní podíl ve firmě Simply Fair Insurance",
+        "published_date": "2022-05-19",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Tech III", "size": null, "currency": null, "vintage": "2023"},
+        "value_text": "Tech III fund",
+        "source_url": "https://www.rsj.com/en/investments/",
+        "quote": "We have successfully raised our Tech III fund, strengthening our investment strategy in technological innovation.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "RSJ PE SICAV", "size": null, "currency": null, "vintage": null},
+        "value_text": "RSJ PE SICAV",
+        "source_url": "https://ekonomickydenik.cz/karel-janecek-prodal-akcie-v-rsj-investments-strida-ho-libor-winkler",
+        "quote": "Nejmenším a nejmladším fondem ve správě RSJ Investments investiční společnosti je RSJ PE SICAV",
+        "published_date": "2022-05-19",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {
+        "value": "most fund sub-funds focus on commercial real estate",
+        "value_text": "zaměřených hlavně na investování do komerčních nemovitostí",
+        "source_url": "https://ekonomickydenik.cz/karel-janecek-prodal-akcie-v-rsj-investments-strida-ho-libor-winkler",
+        "quote": "Fond je rozdělen na čtrnáct podfondů, zaměřených hlavně na investování do komerčních nemovitostí",
+        "published_date": "2022-05-19",
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["sectors", "stages", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "RSJ Investments investice portfolio Libor Winkler",
+      "fetch https://www.rsj.com (homepage)",
+      "fetch https://www.rsj.com/en/investments/ (summary)",
+      "fetch https://ekonomickydenik.cz/karel-janecek-prodal-akcie-v-rsj-investments-strida-ho-libor-winkler",
+      "fetch https://www.rsj.com/en/investments/ (dated portfolio lines)",
+      "RSJ Investments led funding round startup 2025",
+      "fetch https://www.rsj.com/kontakt",
+      "RSJ Investments investice 2025 Winkler technologický startup podíl"
+    ]
+  },
+  {
+    "candidate_id": "C094",
+    "website": null,
+    "identity": [
+      {
+        "value": {"legal_name": "Národní rozvojová investiční, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Národní rozvojová investiční, a.s.",
+        "source_url": "https://www.nrb.cz/en/about-the-bank/our-partners/",
+        "quote": "Národní rozvojová investiční, a.s., a venture capital entity, is a joint-stock company",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["public_vc"],
+      "value_text": "venture capital entity",
+      "source_url": "https://www.nrb.cz/en/about-the-bank/our-partners/",
+      "quote": "Národní rozvojová investiční, a.s., a venture capital entity, is a joint-stock company",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "PRIMOCO UAV", "date": "2021", "round": "unknown", "amount": null},
+        "value_text": "PRIMOCO UAV",
+        "source_url": "https://www.nrb.cz/en/nrb-bought-a-minority-share-in-leather-processing-and-hardware-producing-companies/",
+        "quote": "The first case was realized in spring 2021, when the NRI bought 12.7% of newly issued shares of the PRIMOCO UAV company.",
+        "published_date": "2022-11-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "KARO LEATHER", "date": "2022-09-26", "round": "unknown", "amount": null},
+        "value_text": "KARO LEATHER",
+        "source_url": "https://www.nrb.cz/en/nrb-bought-a-minority-share-in-leather-processing-and-hardware-producing-companies/",
+        "quote": "it purchased 29.57% of newly issued shares of the KARO LEATHER Company",
+        "published_date": "2022-11-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "HARDWARIO", "date": "2022-10", "round": "unknown", "amount": null},
+        "value_text": "HARDWARIO",
+        "source_url": "https://www.nrb.cz/en/nrb-bought-a-minority-share-in-leather-processing-and-hardware-producing-companies/",
+        "quote": "Shortly afterwards, the NRI also bought 22.6% of newly issued shares of the HARDWARIO Company.",
+        "published_date": "2022-11-15",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "IPO fond 2025+", "size": "approximately CZK 360 million", "currency": "CZK", "vintage": null},
+        "value_text": "approximately CZK 360 million",
+        "source_url": "https://www.nrb.cz/en/nri-launches-ipo-fund-2025-program-to-support-capital-market-in-the-czech-republic/",
+        "quote": "the total allocation of the programme until 2030 is approximately CZK 360 million",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["website", "hq_country", "sectors", "stages", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Národní rozvojová investiční NRI investice fond",
+      "fetch https://www.nrb.cz/en/nri-launches-ipo-fund-2025-program-to-support-capital-market-in-the-czech-republic/",
+      "fetch https://www.businessinfo.cz/clanky/strukturalni-fondy-pomohly-zrealizovat-pilotni-investicni-fazi-ipo-fondu-narodni-rozvojove-investicni-a-s/ (403)",
+      "fetch https://www.businessinfo.cz/clanky/nri-spousti-program-ipo-fond-2025-na-podporu-kapitaloveho-trhu-v-cr/ (403)",
+      "Národní rozvojová investiční, a.s. IČO sídlo Praha",
+      "fetch https://www.nrb.cz/en/about-the-bank/our-partners/",
+      "Primoco UAV IPO fond NRI akcie START burza investice",
+      "fetch https://www.nrb.cz/en/cmzrb-bought-a-share-in-czech-company-producing-unmanned-aircrafts/",
+      "Národní rozvojová investiční IPO fond koupila akcie firmy 2025 upsání",
+      "Hardwario mmcité Karo Leather IPO fond Národní rozvojová investiční akcie START",
+      "fetch https://www.nrb.cz/en/nrb-bought-a-minority-share-in-leather-processing-and-hardware-producing-companies/",
+      "NRI bought newly issued shares IPO fund NRB 2024 2025 START Prague Stock Exchange"
+    ]
+  },
+  {
+    "candidate_id": "C095",
+    "website": null,
+    "identity": [
+      {
+        "value": {"legal_name": "Národní rozvojová investiční, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Národní rozvojová investiční, a.s.",
+        "source_url": "https://www.epravo.cz/top/clanky/pozor-ipo-fond-2025-je-tu-120195.html",
+        "quote": "Správcem fondu a jeho investičním partnerem je Národní rozvojová investiční, a.s. (NRI)",
+        "published_date": "2025-10-21",
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["public_vc"],
+      "value_text": "nový český nástroj",
+      "source_url": "https://www.epravo.cz/top/clanky/pozor-ipo-fond-2025-je-tu-120195.html",
+      "quote": "IPO fond 2025+ je nový český nástroj spuštěný Ministerstvem průmyslu a obchodu (MPO) v červenci 2025",
+      "published_date": "2025-10-21",
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "IPO fond 2025+", "size": "360 milionů Kč", "currency": "CZK", "vintage": null},
+        "value_text": "celkovou alokací 360 milionů Kč",
+        "source_url": "https://www.epravo.cz/top/clanky/pozor-ipo-fond-2025-je-tu-120195.html",
+        "quote": "Fond disponuje celkovou alokací 360 milionů Kč do roku 2030.",
+        "published_date": "2025-10-21",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "hq_country", "sectors", "stages", "ticket", "total_capital", "investments"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "IPO fond 2025+ investice do firem Česko",
+      "IPO fond 2025+ první investice NRI 2026 upsání akcií START",
+      "fetch https://www.epravo.cz/top/clanky/pozor-ipo-fond-2025-je-tu-120195.html",
+      "fetch https://www.nrb.cz/en/nri-launches-ipo-fund-2025-program-to-support-capital-market-in-the-czech-republic/",
+      "NRI IPO fond 2025+ výzva výsledky výběr emise START 2026 podpořená firma"
+    ]
+  }
+]
