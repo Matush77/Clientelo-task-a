@@ -1,0 +1,140 @@
+candidate_id,name,hq_claimed,next_step,registry,company_id,legal_name,registry_active,n_registry_matches,registry_url
+C001,Fingood s.r.o.,CZ,evidence,ARES,03328074,Fingood s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03328074
+C002,Investown Technologies s.r.o.,CZ,evidence,ARES,08667144,Investown Technologies s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08667144
+C003,Zonky (Air Bank a.s.),CZ,evidence,,,,,0,
+C004,Patria Corporate Finance,CZ,evidence,ARES,25671413,"Patria Corporate Finance, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/25671413
+C005,Ecovis Corporate Finance CZ,CZ,evidence,ARES,27611825,ECOVIS Corporate Finance CZ s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/27611825
+C006,Forvis Mazars CZ,CZ,evidence,,,,,0,
+C007,"Investika realitní fond (INVESTIKA, investiční společnost, a.s.)",CZ,evidence,,,,,0,
+C008,Trigea (Nemovitostní fond Trigea),CZ,evidence,ARES,07973179,"Trigea nemovitostní fond, SICAV, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07973179
+C009,AGROFERT,CZ,evidence,ARES,26185610,"AGROFERT, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26185610
+C011,ARX Equity Partners,CZ,evidence,ARES,64943356,Arx Equity Partners s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/64943356
+C012,Credo Ventures,CZ,evidence,ARES,24396893,Credo Ventures Management II a.s.,1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24396893
+C014,Depo Ventures,other,evidence,,,,,0,
+C016,Espira Investments s.r.o.,CZ,evidence,ARES,05528089,ESPIRA Investments s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05528089
+C017,EVERITA Capital,CZ,evidence,ARES,19067097,EVERITA Capital s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19067097
+C018,Genesis Capital,CZ,evidence,ARES,25795856,Genesis Capital Equity s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/25795856
+C019,i&i Biotech Investments,CZ,evidence,ARES,10885978,Biotech Investments s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10885978
+C021,Integral Capital Group,unknown,evidence,,,,,0,
+C022,Inven Capital,unknown,evidence,ARES,02059533,"Inven Capital, SICAV, a.s.",1,5,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02059533
+C023,Jet Investment,unknown,evidence,ARES,03890333,"Jet Investment, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03890333
+C024,KAYA,CZ,evidence,,,,,0,
+C025,MAM Private Equity Fund SICAV a.s.,CZ,evidence,ARES,19381603,MAM Private Equity Fund SICAV a.s.,1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19381603
+C026,Mid Europa Partners,unknown,evidence,,,,,0,
+C027,Nation1,CZ,evidence,,,,,0,
+C028,Orbit Capital,unknown,evidence,ARES,08319961,ORBIT Capital GP s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08319961
+C029,Sandberg Capital,unknown,evidence,ARES,08100373,Sandberg Capital s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08100373
+C030,SkyLimit Investments,unknown,evidence,ARES,04711629,SkyLimit Investments s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04711629
+C031,Stratum Partners,unknown,evidence,ARES,07607539,Stratum Partners s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07607539
+C032,Tensor Ventures,unknown,evidence,ARES,06257241,Tensor Ventures a.s.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06257241
+C033,Thein,unknown,evidence,,,,,0,
+C034,Tilia Impact Ventures,unknown,evidence,ARES,17848911,"Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17848911
+C035,V4C Investment Advisers Limited,unknown,evidence,,,,,0,
+C036,Versute Investments,unknown,evidence,ARES,03965953,VERSUTE INVESTMENTS a.s.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03965953
+C037,Accolade,CZ,evidence,,,,,0,
+C050,"CORPIN, a.s.",CZ,evidence,ARES,24756598,"CORPIN, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24756598
+C057,"EMUN investiční společnost, a.s.",CZ,evidence,ARES,28495349,"EMUN investiční společnost, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/28495349
+C059,"FARKASOVA INTERNATIONAL, s.r.o",CZ,evidence,ARES,07957360,"FARKASOVA INTERNATIONAL, s.r.o.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07957360
+C062,INDUNA,unknown,evidence,,,,,0,
+C063,JSK Investments,CZ,evidence,ARES,23823445,JSK Investments SICAV a.s.,1,3,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23823445
+C071,Pale Fire Capital SE,unknown,evidence,ARES,04165918,Pale Fire Capital SE,1,4,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04165918
+C076,PRK Partners,unknown,evidence,ARES,26692392,PRK Partners s.r.o. advokátní kancelář,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26692392
+C077,"QI investiční společnost, a.s.",CZ,evidence,,,,,0,
+C079,RENOMIA,CZ,evidence,ARES,48391301,"RENOMIA, a. s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/48391301
+C080,RSJ Investments,unknown,evidence,ARES,05357225,RSJ Investments investiční společnost a.s.,1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05357225
+C085,Sušánka & partneři,CZ,evidence,ARES,02029014,Sušánka & partneři a.s.,1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02029014
+C086,TARPAN Partners s.r.o.,CZ,evidence,ARES,24733792,TARPAN Partners s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24733792
+C087,"TMF Czech, a.s.",CZ,evidence,ARES,24705101,"TMF Czech, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24705101
+C091,WOOD & Company Financial Services,unknown,evidence,ARES,26503808,"WOOD & Company Financial Services, a.s.",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26503808
+C092,Lighthouse Ventures,CZ,evidence,ARES,07500912,Lighthouse Ventures GP s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07500912
+C093,Smart Management VC s.r.o.,CZ,evidence,,,,,0,
+C094,Národní rozvojová investiční (NRI),CZ,evidence,,,,,0,
+C095,IPO fond 2025+,CZ,evidence,,,,,0,
+C096,Eterus Capital,unknown,evidence,RPO,44193025,"Eterus Capital, a. s.",1,1,https://api.statistics.sk/rpo/v1/entity/1012082
+C097,Fond inovácií a technológií,unknown,evidence,RPO,47051981,"Fond inovácií a technológií, a.s.",1,1,https://api.statistics.sk/rpo/v1/entity/1039959
+C098,Národný holdingový fond s.r.o.,unknown,evidence,RPO,31384943,Národný holdingový fond s. r. o.,1,1,https://api.statistics.sk/rpo/v1/entity/930346
+C099,Neulogy Ventures,SK,evidence,RPO,47367610,"Neulogy Ventures, a. s.",1,1,https://api.statistics.sk/rpo/v1/entity/1008262
+C100,Venture to Future Fund,SK,evidence,RPO,52380483,"Venture to Future Fund, a.s.",1,1,https://api.statistics.sk/rpo/v1/entity/9905872
+C101,Vision Ventures,unknown,evidence,ARES,17422019,Vision Ventures s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17422019
+C102,Across Private Investments,unknown,evidence,RPO,35763388,"Across Private Investments, o.c.p., a.s.",1,1,https://api.statistics.sk/rpo/v1/entity/1001225
+C105,ASB Slovakia,SK,evidence,RPO,36665061,"ASB Slovakia, s.r.o.",1,2,https://api.statistics.sk/rpo/v1/entity/1046906
+C107,BHM group,unknown,evidence,ARES,02865998,BHM group a.s.,1,3,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02865998
+C110,Danube Capital Advisors,unknown,evidence,RPO,48279943,DANUBE Capital Advisors s. r. o.,1,1,https://api.statistics.sk/rpo/v1/entity/815887
+C114,HILLBRIDGES,unknown,evidence,RPO,36799327,"Hillbridges, s. r. o.",1,1,https://api.statistics.sk/rpo/v1/entity/493913
+C115,G4 INVESTMENTS,unknown,evidence,RPO,46753346,G4 INVESTMENTS s. r. o.,1,1,https://api.statistics.sk/rpo/v1/entity/431453
+C116,Finhold,unknown,evidence,ARES,28884566,FINHOLD a.s.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/28884566
+C117,M3 Partners s.r.o.,unknown,evidence,RPO,44736371,M3 Partners s.r.o.,1,1,https://api.statistics.sk/rpo/v1/entity/964381
+C119,Ments,unknown,evidence,,,,,0,
+C123,PFCEU,unknown,evidence,RPO,36282600,PFCEU s. r. o.,1,1,https://api.statistics.sk/rpo/v1/entity/682372
+C125,Slovak Investment Holding,SK,evidence,RPO,47759097,"Slovak Investment Holding, a. s.",1,1,https://api.statistics.sk/rpo/v1/entity/1007511
+C126,Montward,unknown,evidence,RPO,50090526,MONTWARD s. r. o.,1,1,https://api.statistics.sk/rpo/v1/entity/6143497
+C131,Wezeo,unknown,evidence,RPO,46390227,"WEZEO, s. r. o.",1,1,https://api.statistics.sk/rpo/v1/entity/1051874
+C132,Zero Gravity Capital,unknown,evidence,RPO,52651894,Zero Gravity Capital s.r.o.,1,1,https://api.statistics.sk/rpo/v1/entity/10049101
+C133,CB Investment Management,unknown,evidence,RPO,36796379,CB Investments s. r. o.,1,2,https://api.statistics.sk/rpo/v1/entity/677804
+C134,"Slovak Capital Management, a. s.",SK,evidence,,,,,0,
+C135,Seed Starter,unknown,evidence,,,,,0,
+C136,Earlybird,unknown,evidence,RPO,50782606,EARLYBIRD s.r.o.,1,1,https://api.statistics.sk/rpo/v1/entity/9120472
+C137,Irregular Expressions,unknown,hq_triage,,,,,0,
+C138,Seventure Partners,unknown,hq_triage,,,,,0,
+C139,J&T Ventures,CZ,evidence,,,,,0,
+C140,Elevator Ventures,unknown,hq_triage,,,,,0,
+C141,Taiwania Capital,unknown,hq_triage,,,,,0,
+C142,Euroventures,unknown,hq_triage,,,,,0,
+C143,N1,unknown,hq_triage,,,,,0,
+C144,Reflex Capital,unknown,evidence,ARES,24269158,Reflex Capital SE,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24269158
+C145,Presto Ventures,unknown,evidence,ARES,11678704,"Presto Ventures II a.s., osoba rizikového kapitálu",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/11678704
+C146,Purple Ventures,CZ,evidence,ARES,05775574,Purple Ventures s.r.o.,1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05775574
+C147,42Cap,unknown,hq_triage,,,,,0,
+C148,Dreamcraft Ventures,unknown,hq_triage,,,,,0,
+C149,Berkley SkyDeck Fund,unknown,hq_triage,,,,,0,
+C150,Lumiere AI Ventures,unknown,hq_triage,,,,,0,
+C151,Gi21 Capital,unknown,evidence,ARES,19584229,Gi21 Capital a.s.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19584229
+C152,FORWARD.one,unknown,hq_triage,,,,,0,
+C153,University2Ventures,unknown,hq_triage,,,,,0,
+C155,Google Ventures,unknown,hq_triage,,,,,0,
+C156,Experian,unknown,hq_triage,,,,,0,
+C157,Category Ventures,unknown,hq_triage,,,,,0,
+C158,Long Journey Ventures,unknown,hq_triage,,,,,0,
+C159,10VC,unknown,hq_triage,,,,,0,
+C160,N1 Ventures,unknown,hq_triage,,,,,0,
+C161,Plug and Play Tech Center,unknown,hq_triage,,,,,0,
+C162,Breakwater VC,unknown,hq_triage,,,,,0,
+C163,Caesar VC,unknown,hq_triage,,,,,0,
+C164,BD Partners,unknown,evidence,ARES,19286511,BD Partners a.s.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19286511
+C165,Preston-Werner Ventures,unknown,hq_triage,,,,,0,
+C166,European Bank for Reconstruction and Development (EBRD),unknown,hq_triage,,,,,0,
+C167,Sofina,unknown,evidence,ARES,09564314,Sofina s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09564314
+C168,Index Ventures,unknown,hq_triage,,,,,0,
+C169,Quadrille,unknown,evidence,ARES,25204254,QUADRILLE spol. s r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/25204254
+C170,TCF Capital,unknown,hq_triage,,,,,0,
+C171,European Investment Bank (EIB),unknown,hq_triage,,,,,0,
+C172,JIC Ventures,unknown,evidence,ARES,04156293,"JIC Ventures, s.r.o.",1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04156293
+C173,Creandum,unknown,hq_triage,,,,,0,
+C175,AspectWorks Group,unknown,evidence,ARES,05550530,AspectWorks Group a.s.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05550530
+C176,Kaya Ventures,unknown,hq_triage,,,,,0,
+C178,Středočeské inovační centrum,CZ,evidence,ARES,04228235,"Středočeské inovační centrum, spolek",1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04228235
+C180,EQT Ventures,unknown,evidence,RPO,50532481,EQT Ventures s.r.o.,1,1,https://api.statistics.sk/rpo/v1/entity/8811802
+C181,Wing VC,unknown,hq_triage,,,,,0,
+C182,Y Combinator,unknown,hq_triage,,,,,0,
+C183,Genesis Growth Equity Fund I,unknown,hq_triage,,,,,0,
+C184,Miton,unknown,hq_triage,,,,,0,
+C185,Jet Ventures,CZ,evidence,,,,,0,
+C186,Look AI Ventures,CZ,evidence,ARES,17604087,"Look AI Ventures SICAV, a.s.",1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17604087
+C187,Zero One Hundred,unknown,hq_triage,,,,,0,
+C189,Lead Ventures,unknown,hq_triage,,,,,0,
+C190,Point Nine Capital,unknown,hq_triage,,,,,0,
+C191,henQ,unknown,hq_triage,,,,,0,
+C192,European Innovation Council,unknown,hq_triage,,,,,0,
+C193,Token Ventures,unknown,evidence,ARES,09873155,Token Ventures s.r.o.,1,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09873155
+C194,BADideas.fund,unknown,hq_triage,,,,,0,
+C195,ZAKA Ventures,unknown,hq_triage,,,,,0,
+C197,Rockaway Ventures,CZ,evidence,,75163225,,,0,
+C198,Czech Founders VC,CZ,evidence,ARES,09761187,Czech Founders z.ú.,1,2,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09761187
+C199,Uroboros Ventures s.r.o.,CZ,evidence,,24808016,,,0,
+C200,Tech Ventures s.r.o.,CZ,evidence,,07922345,,,0,
+C201,MADU VENTURES s.r.o.,CZ,evidence,,17676011,,,0,
+C202,Fortress Ventures a.s.,CZ,evidence,,26024039,,,0,
+C203,"P.S. Capital Group, s.r.o.",SK,evidence,,46967036,,,0,
+C204,"CEC Capital SK, s.r.o.",SK,evidence,,35897635,,,0,
+C205,Grbi One s.r.o.,SK,evidence,,44556471,,,0,
+C206,"E.S. invest, s. r. o.",SK,evidence,,43875408,,,0,
