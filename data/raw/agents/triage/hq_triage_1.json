@@ -1,0 +1,222 @@
+[
+  {
+    "candidate_id": "C137",
+    "name": "Irregular Expressions",
+    "hq_country": "US",
+    "website": "https://irregex.vc",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://www.cbinsights.com/investor/irregular-expressions",
+    "quote": "It was founded in 2018 and is based in New York, New York.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C138",
+    "name": "Seventure Partners",
+    "hq_country": "FR",
+    "website": "https://www.seventure.fr",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://www.seventure.fr/en/about/about-seventure/",
+    "quote": "Headquartered in Paris, Seventure Partners has offices in Munich, London, Geneva and Basel.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C140",
+    "name": "Elevator Ventures",
+    "hq_country": "unknown",
+    "website": null,
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://elevator.vc",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C141",
+    "name": "Taiwania Capital",
+    "hq_country": "unknown",
+    "website": "https://taiwaniacapital.com",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://taiwaniacapital.com/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C142",
+    "name": "Euroventures",
+    "hq_country": "unknown",
+    "website": null,
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://euroventures.com",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C143",
+    "name": "N1",
+    "hq_country": "unknown",
+    "website": "https://n1.rocks",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://n1.rocks/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C147",
+    "name": "42Cap",
+    "hq_country": "unknown",
+    "website": "https://42cap.com",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://42cap.com/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C148",
+    "name": "Dreamcraft Ventures",
+    "hq_country": "DK",
+    "website": "https://dreamcraft.vc",
+    "legal_name": null,
+    "company_id": "DK40209808",
+    "source_url": "https://dreamcraft.vc/",
+    "quote": "Registered officeSankt Annae Plads 28,  DK-1250 Copenhagen K",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C149",
+    "name": "Berkley SkyDeck Fund",
+    "hq_country": "US",
+    "website": "https://skydeck.berkeley.edu",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://skydeck.berkeley.edu/",
+    "quote": "2150 Shattuck Avenue, Penthouse",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C150",
+    "name": "Lumiere AI Ventures",
+    "hq_country": "FR",
+    "website": null,
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://nordic9.com/companies/lumiere-ai-ventures/",
+    "quote": "Offices:Paris",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C152",
+    "name": "FORWARD.one",
+    "hq_country": "NL",
+    "website": "https://forward.one",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://forward.one/",
+    "quote": "Dorpsstraat 28, 1182 JD Amstelveen, the Netherlands",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C153",
+    "name": "University2Ventures",
+    "hq_country": "unknown",
+    "website": "https://u2v.vc",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://u2v.vc/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C155",
+    "name": "Google Ventures",
+    "hq_country": "unknown",
+    "website": "https://www.gv.com",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://www.gv.com/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C156",
+    "name": "Experian",
+    "hq_country": "unknown",
+    "website": "https://experian.com/ventures",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://experian.com/ventures",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C157",
+    "name": "Category Ventures",
+    "hq_country": "US",
+    "website": "https://www.categoryvc.com",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://www.categoryvc.com/",
+    "quote": "SF",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C158",
+    "name": "Long Journey Ventures",
+    "hq_country": "unknown",
+    "website": "https://longjourney.vc",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://longjourney.vc/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C159",
+    "name": "10VC",
+    "hq_country": "unknown",
+    "website": "https://10vc.com",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://10vc.com/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C160",
+    "name": "N1 Ventures",
+    "hq_country": "unknown",
+    "website": "https://n1.rocks",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://n1.rocks/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C161",
+    "name": "Plug and Play Tech Center",
+    "hq_country": "unknown",
+    "website": "https://www.plugandplaytechcenter.com",
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://www.plugandplaytechcenter.com/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "candidate_id": "C162",
+    "name": "Breakwater VC",
+    "hq_country": "unknown",
+    "website": null,
+    "legal_name": null,
+    "company_id": null,
+    "source_url": "https://breakwatervc.com/",
+    "quote": "",
+    "accessed_date": "2026-10-08"
+  }
+]

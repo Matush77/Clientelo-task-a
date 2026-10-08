@@ -58,5 +58,52 @@ def run(path: Path = CANDIDATES_CSV, out: Path = TRIAGE_CSV) -> Path:
     return out
 
 
+HQ_TRIAGE_DIR = TRIAGE_CSV.parents[1] / "raw" / "agents" / "triage"
+
+
+def apply_hq_triage(path: Path = TRIAGE_CSV) -> dict[str, int]:
+    """Second triage step: an HQ-triage agent's answer only counts if its quote is verified on the page.
+
+    verified foreign HQ -> skip (OOS_HQ); CZ/SK or unknown/unverified -> full evidence step (never drop a possible
+    CZ/SK investor on weak evidence - the evidence agent settles the HQ first and exits early if foreign).
+    """
+    import json
+
+    from investordb.validate import check_claim
+
+    answers = {}
+    for f in sorted(HQ_TRIAGE_DIR.glob("*.json")):
+        for a in json.loads(f.read_text(encoding="utf-8")):
+            answers[a["candidate_id"]] = a
+    with path.open(encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+    for r in rows:
+        r.setdefault("hq_triage", "")
+        r.setdefault("hq_triage_check", "")
+        r.setdefault("hq_triage_url", "")
+        a = answers.get(r["candidate_id"])
+        if r["next_step"] != "hq_triage" or not a:
+            continue
+        hq = (a.get("hq_country") or "unknown").upper()
+        status = check_claim(a["source_url"], a["quote"]).status if a.get("source_url") and a.get("quote") else "no_quote"
+        r.update(hq_triage=hq, hq_triage_check=status, hq_triage_url=a.get("source_url") or "")
+        if status == "ok" and hq not in ("CZ", "SK", "UNKNOWN"):
+            r["next_step"] = "skip:foreign_hq_verified"
+        else:
+            r["next_step"] = "evidence"
+        print(f"{r['next_step']:<26} {hq:<8} {status:<16} {r['name']}")
+    with path.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w.writeheader()
+        w.writerows(rows)
+    from collections import Counter
+    return dict(Counter(r["next_step"] for r in rows))
+
+
 if __name__ == "__main__":
-    print(run())
+    import sys
+
+    if sys.argv[1:] == ["--apply-hq-triage"]:
+        print(apply_hq_triage())
+    else:
+        print(run())
