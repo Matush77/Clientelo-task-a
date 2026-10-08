@@ -1,0 +1,10 @@
+candidate_source,name,company_id,country,legal_form,founded,registry_url,name_term,drawn_on
+control_name_only,Uroboros Ventures s.r.o.,24808016,CZ,112,2011-02-10,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016,Ventures,2026-10-08
+control_name_only,"Rockaway Ventures Fund SICAV a.s., podfond I",75163225,CZ,541,2022-03-24,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/75163225,Ventures,2026-10-08
+control_name_only,Tech Ventures s.r.o.,07922345,CZ,112,2019-02-22,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345,Ventures,2026-10-08
+control_name_only,MADU VENTURES s.r.o.,17676011,CZ,112,2022-10-25,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17676011,Ventures,2026-10-08
+control_name_only,Fortress Ventures a.s.,26024039,CZ,121,2000-04-11,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26024039,Ventures,2026-10-08
+control_name_only,"P.S. Capital Group, s.r.o.",46967036,SK,Spoločnosť s ručením obmedzeným,2013-01-08,https://api.statistics.sk/rpo/v1/entity/264707,Capital,2026-10-08
+control_name_only,"CEC Capital SK, s.r.o.",35897635,SK,Spoločnosť s ručením obmedzeným,2004-08-20,https://api.statistics.sk/rpo/v1/entity/244850,Capital,2026-10-08
+control_name_only,Grbi One s.r.o.,44556471,SK,Spoločnosť s ručením obmedzeným,2008-12-24,https://api.statistics.sk/rpo/v1/entity/200350,Invest,2026-10-08
+control_name_only,"E.S. invest, s. r. o.",43875408,SK,Spoločnosť s ručením obmedzeným,2008-01-01,https://api.statistics.sk/rpo/v1/entity/198718,Invest,2026-10-08
