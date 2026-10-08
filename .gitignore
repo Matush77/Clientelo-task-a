@@ -16,3 +16,6 @@ ai-log/_incoming/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local redaction terms for ai-log export (contains personal data, never commit)
+.redact-terms
