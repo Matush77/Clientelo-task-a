@@ -17,10 +17,26 @@ from investordb.registries import RegistryRecord, ares_search, rpo_search
 TRIAGE_CSV = CANDIDATES_CSV.with_name("triage.csv")
 
 
+INVESTMENT_WORDS = {"investment", "investments", "ventures", "venture", "capital", "partners", "management", "fund",
+                    "funds", "holding", "invest", "vc", "gp", "advisors", "advisers"}
+
+
+def registry_name_matches(registry_name: str, name: str) -> bool:
+    reg, cand = match_key(registry_name), match_key(name)
+    if not reg or not cand:
+        return False
+    if same_entity(reg, cand):
+        return True
+    if not reg.startswith(cand + " "):
+        return False
+    # "Reflex Capital" -> "Reflex Capital Partners s.r.o." (multi-word brand prefix), or a one-word brand followed only
+    # by investment words: "Nation1" -> "Nation1 Investment s.r.o." yes, "KAYA" -> "KAYA CONSTRUCTION s.r.o." no
+    extra = set(reg[len(cand):].split())
+    return len(cand.split()) >= 2 or extra <= INVESTMENT_WORDS
+
+
 def _accept(rec: RegistryRecord, name: str) -> bool:
-    reg, cand = match_key(rec.name), match_key(name)
-    # registry names are often longer than brands: "Reflex Capital" -> "Reflex Capital Partners s.r.o."
-    return same_entity(reg, cand) or (len(cand.split()) >= 2 and reg.startswith(cand + " "))
+    return registry_name_matches(rec.name, name)
 
 
 def registry_matches(name: str, hq: str) -> list[RegistryRecord]:

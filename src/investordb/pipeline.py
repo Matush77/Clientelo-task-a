@@ -20,7 +20,9 @@ from investordb.evidence import CLAIMS_CSV, T4_DOMAINS, _under, domain, load_rec
 from investordb.money import Money, parse_money, to_eur
 from investordb.registries import RegistryRecord, ares_get, core_name, rpo_search
 from investordb.rules import Decision, decide
-from investordb.triage import TRIAGE_CSV
+from investordb.candidates import match_key
+from investordb.registries import ares_search
+from investordb.triage import TRIAGE_CSV, registry_name_matches
 
 PROCESSED = CLAIMS_CSV.parent
 ALIASES_CSV = CANDIDATES_CSV.parents[1] / "seeds" / "aliases.csv"
@@ -33,14 +35,26 @@ def _read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def registry_for(claims: list[dict], triage: dict | None) -> RegistryRecord | None:
-    """Prefer the IČO the agent found (and the checker verified) on the investor's own pages; else the triage match."""
+def registry_for(claims: list[dict], triage: dict | None, names: list[str] = ()) -> RegistryRecord | None:
+    """Identity in a registry, strongest evidence first:
+    1. the IČO the agent found (and the checker verified) on the investor's own pages,
+    2. the triage match,
+    3. a name search with the verified legal name, then with the brand name(s) - accepted only on a strict match.
+    """
     ids: list[tuple[str, str]] = []
+    legal_names: list[tuple[str, str]] = []
+    hq = ""
     for c in claims:
-        if c["field"] == "identity" and c["auto_check"] == "ok":
-            v = json.loads(c["value"]) or {}
+        if c["auto_check"] != "ok":
+            continue
+        v = json.loads(c["value"])
+        if c["field"] == "identity" and isinstance(v, dict):
             if v.get("company_id"):
                 ids.append((str(v["company_id"]).replace(" ", ""), v.get("country", "")))
+            elif v.get("legal_name"):
+                legal_names.append((v["legal_name"], v.get("country", "")))
+        if c["field"] == "hq_country" and v in ("CZ", "SK"):
+            hq = v
     if triage and triage.get("company_id"):
         ids.append((triage["company_id"], {"ARES": "CZ", "RPO": "SK"}.get(triage.get("registry", ""), "")))
     for ico, country in ids:
@@ -50,6 +64,15 @@ def registry_for(claims: list[dict], triage: dict | None) -> RegistryRecord | No
             recs = rpo_search(ico=ico, limit=1)
             if recs:
                 return recs[0]
+    for name, country in legal_names + [(n, hq) for n in names if n]:
+        country = country if country in ("CZ", "SK") else hq
+        found = ares_search(match_key(name) or name, limit=10)[1] if country in ("CZ", "") else []
+        if country in ("SK", "") and not found:
+            found = rpo_search(name=match_key(name) or name, limit=3)
+        matches = [r for r in found if r.active and registry_name_matches(r.name, name)]
+        if matches:
+            # the management company, not one of its fund vehicles ("... AF II., osoba rizikového kapitálu")
+            return min(matches, key=lambda r: len(r.name))
     return None
 
 
@@ -155,7 +178,15 @@ def run(as_of: date, records: list[dict] | None = None) -> list[dict]:
     for c in _read_csv(CLAIMS_CSV):
         claims_by_cand[c["candidate_id"]].append(c)
     triage = {t["candidate_id"]: t for t in _read_csv(TRIAGE_CSV)}
-    names = {c["candidate_id"]: c["name"] for c in _read_csv(CANDIDATES_CSV)}
+    cand_rows = {c["candidate_id"]: c for c in _read_csv(CANDIDATES_CSV)}
+    names = {cid: c["name"] for cid, c in cand_rows.items()}
+
+    def all_names(cids: list[str]) -> list[str]:
+        out = []
+        for m in cids:
+            c = cand_rows.get(m) or {}
+            out += [c.get("name", "")] + [a for a in (c.get("aliases") or "").split(" | ") if a]
+        return [n for n in dict.fromkeys(out) if n]
     # a later evidence run (e.g. the rescue pass) for the same candidate replaces the earlier one
     latest = {r["candidate_id"]: r for r in records}
     records = list(latest.values())
@@ -173,7 +204,7 @@ def run(as_of: date, records: list[dict] | None = None) -> list[dict]:
             rows.append(wide_row(rec, d, None, [], as_of, names.get(cid) or ""))
             continue
         claims = [c for m in members[cid] for c in claims_by_cand.get(m, [])]
-        reg = registry_for(claims, triage.get(cid))
+        reg = registry_for(claims, triage.get(cid), all_names(members[cid]))
         d = decide(cid, claims, reg, as_of)
         if d.reason == "E7" and rec.get("early_exit") == "foreign_hq":
             # the agent stopped because the firm is foreign but could not quote the address: out of scope, not "name only"
