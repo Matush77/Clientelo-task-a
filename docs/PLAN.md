@@ -195,7 +195,64 @@ Prekryv zoznamov A a B zároveň slúži na odhad, koľko investorov **nenašiel
 
 ## 11. Odhad rozsahu dostupného z verejných zdrojov a spoľahlivosti
 
-*Táto kapitola sa dopĺňa po overení zdrojových čísel (nesmú pochádzať len z pamäte AI) – viď nasledujúci commit.*
+### 11.1 Kotvy – overené čísla
+
+Čísla našli AI agenti, ale do odhadu sa dostali až po strojovom overení: skript stiahol zdroj a overil, že citácia s
+číslom na stránke naozaj je (`python -m investordb.cli check-quotes data/reference/universe_anchors.csv`, výsledok v
+[universe_anchors_checked.csv](../data/reference/universe_anchors_checked.csv)).
+
+| Kotva | Hodnota | Stav k | Zdroj | Overenie |
+|---|---|---|---|---|
+| Aktívne PE + VC firmy v Európe | **3 095** firiem, AUM 1,25 bil. € | 2024 | Invest Europe (cez tech.eu) | ✅ citácia nájdená |
+| Aktívni správcovia PE (vrátane VC) v databáze Preqin | **31 653 – 34 100** | 2025/26 | preqin.com, CBS Library | ✅ |
+| Investori a fondy v databáze Dealroom (všetky typy) | **100 000+** | 2026 | dealroom.co | ✅ |
+| Single family offices vo svete | **8 030** | 2024 | Deloitte Private | ✅ |
+| Aktívni angel investori v USA | **445 535** | 2024 | UNH Center for Venture Research (PDF) | ✅ |
+| Angel investori v európskych sieťach | **~39 400** | 2021 | EBAN | ✅ |
+| Registrované fondy EuVECA v EÚ | **462** | 12/2022 | Európska komisia (REFIT) | ✅ |
+| VC firmy v USA | **3 417** (2023); **2 984** (2025) | 2023 / 2025 | NVCA Yearbook | ⚠️ stránka blokuje sťahovanie (HTTP 403) → ručne |
+| Poradcovia a fondy VC/PE (Form PF) | – | 2025Q4 | SEC | ⚠️ blokované → zatiaľ nepoužité |
+
+Jedno číslo agent uviedol chybne: „~10 300 PE správcov podľa Preqin“ sa na citovanej stránke nenachádza (stránka dnes
+uvádza 34 100). Kontrola ho vyradila – pozri [AI_WORKFLOW.md](AI_WORKFLOW.md), chyba C7.
+
+### 11.2 Odhad: koľko investorov sa dá z verejných zdrojov doložiť
+
+Postup: **známy trh** (kotvy) → **verejne viditeľní** → **doložiteľní datovaným dôkazom** (= čo sa dostane do databázy).
+Podiely v druhom a treťom kroku sú **predpoklady**. Pre VC ich zmeria pilot (podiel zaradených kandidátov, pokrytie cez
+capture–recapture) a tabuľka sa po pilote aktualizuje.
+
+| Typ | Známy trh (kotva) | Predpoklad: podiel doložiteľných s aktivitou v 36 mes. | **Odhad záznamov** | Prečo tento predpoklad |
+|---|---|---|---|---|
+| VC (vrátane CVC, verejných VC) | ~10–15 tis. VC firiem globálne. USA ~3–3,4 tis. (NVCA), Európa ~1,5–2 tis. (časť z 3 095 PE+VC). Preqin pokrýva 31–34 tis. PE+VC správcov | 60–75 % | **6–11 tis.** | VC fondy investície zverejňujú (marketing voči zakladateľom aj investorom), časť firiem je však neaktívna (fondy po investičnom období) |
+| PE (buyout, growth) | ~17–24 tis. (Preqin 31–34 tis. mínus VC) | 40–60 % | **8–13 tis.** | veľké PE transakcie sa ohlasujú; menší správcovia a holdingové štruktúry menej |
+| Family office | 8 030 SFO (Deloitte) + multi-family offices | 10–25 % | **1–2,5 tis.** | FO sa zámerne vyhýbajú publicite; viditeľné sú najmä tie, ktoré investujú do startupov |
+| Angel investori | USA 445 tis. aktívnych (UNH), Európa 39 tis. v sieťach (EBAN), zvyšok sveta neznámy | 3–8 % | **15–40 tis.** | verejne menovaní sú len angel investori v ohlásených kolách; v EÚ navyše GDPR → len vlastné verejné profily |
+| Veľkí súkromní investori, angel siete, akcelerátory | čiastočný prekryv s FO a angel investormi | – | **2–5 tis.** | – |
+| **Spolu** | | | **~32–70 tis., základný odhad ~45 tis.** | |
+
+**Kontrola rozumnosti:** Dealroom eviduje 100 000+ „investorov a fondov“ (vrátane neaktívnych, právnych vehiklov fondov
+a jednorazových investorov). Odhad ~45 tis. **overiteľných a aktívnych** investorov je približne polovica, čo je
+konzistentné s tým, že naše pravidlá (≥ 2 investície, aktivita v 36 mesiacoch, datovaný dôkaz) zámerne vyraďujú
+neaktívnych a nedoložiteľných.
+
+### 11.3 Očakávaná spoľahlivosť
+
+Hypotézy; pre VC ich pilot zmeria a doplní skutočné hodnoty.
+
+| Údaj | VC / PE | Family office | Angel |
+|---|---|---|---|
+| Je to skutočný a aktívny investor (presnosť po kontrolách) | ≥ 95 % | 85–90 % | 80–90 % (zámena mien) |
+| Správny typ | 90–95 % | 80–90 % (FO vs. rodinný holding) | ~90 % |
+| Sektory – vyplnenosť / presnosť | ~90 % / 85–90 % | ~50 % / ~75 % | ~60 % / ~75 % |
+| Tiket – vyplnenosť | 60–75 % | 10–20 % | 20–40 % (len odvodené z kôl) |
+| Celkový kapitál – vyplnenosť | 50–70 % (veľkosti fondov sa ohlasujú) | 5–15 % | ~0 % (nie je verejný) |
+
+**Z čoho odhad vychádza:** (1) z overených kotiev v 11.1; (2) z povahy verejného zverejňovania jednotlivých typov –
+VC a PE fondy zverejňujú investície aj veľkosti fondov, lebo potrebujú dôveru investorov aj zakladateľov, kým family
+office a angel investori nie; (3) po pilote z merania: podiel kandidátov s datovaným dôkazom, vyplnenosť polí,
+presnosť z ručnej kontroly a odhad pokrytia (capture–recapture). Rozpätia sú zámerne široké – najväčšia neistota je
+mimo USA a Európy (Ázia, najmä Čína, kde sú zdroje v miestnom jazyku).
 
 ## 12. Odhad nákladov na rozšírenie na celý svet – metodika
 

@@ -1,0 +1,16 @@
+id,claim,value,as_of,url,quote,agent
+nvca_us_vc_firms_2023,US VC firms at end of 2023 (NVCA Yearbook 2024),3417,2023-12-31,https://nvca.org/nvca-yearbook/,"By the end of 2023, the U.S. VC ecosystem had 3,417 VC firms, which closed a cumulative 13,608 VC deals worth $170.6 billion.",R5
+nvca_us_vc_firms_2025,US VC firms declined in 2025 from prior year (NVCA Yearbook 2026),3054,2025-12-31,https://nvca.org/?p=124853,"First-ever decline, down from 3,054.",R5
+investeurope_aum_2024,European PE+VC AUM 2024 (EUR trillion; secondary source),1.25,2024-12-31,https://tech.eu/2025/07/24/invest-europe-european-private-capital-hits-eur125t-in-2024-growing-26x-over-the-decade/,"in 2024, European private equity and venture capital assets under management grew 7 per cent to €1.25 trillion",R5
+investeurope_firms_2024,Active European PE+VC firms 2024 (Invest Europe via tech.eu),3095,2024-12-31,https://tech.eu/2025/07/24/invest-europe-european-private-capital-hits-eur125t-in-2024-growing-26x-over-the-decade/,"grew 7 per cent to €1.25 trillion, distributed across 3,095 active firms",R1 (quote found by grep of cached page)
+sec_formpf_funds_2025q4,Private funds reported on Form PF 2025Q4 (all types),58891,2025-12-31,https://www.sec.gov/data-research/data-visualizations/private-fund-statistics,Private Funds Reported on Form PF in 2025Q4,R5
+preqin_active_firm_coverage,Preqin active PE firm coverage,31653,,https://www.preqin.com/data/private-equity,"31,653",R5
+cbs_preqin_pe_managers,Active PE fund managers in Preqin (CBS library guide),34100,,https://libguides.cbs.dk/Preqin,"more than 34,100 active private equity fund managers",R5
+deloitte_sfo_2024,Single family offices worldwide 2024 (Deloitte),8030,2024,https://www.deloitte.com/global/en/services/deloitte-private/about/defining-the-family-office-landscape.html,"There are an estimated 8,030 single family offices in the world today, up from 6,130 in 2019, a near third (31%) increase.",R5
+unh_us_angels_2024,Active US angel investors 2024 (UNH CVR),445535,2024,https://paulcollege.unh.edu/sites/default/files/media/2025-12/FY%202024%20Analysis%20Report%20Final.pdf,"The number of active investors in 2024 increased to 445,535 as compared to 422,350 in 2023, an increase of 5.5%.",R5
+eban_eu_angels_2021,Active networked business angels in Europe (EBAN 2021),39400,2021,https://www.eban.org/2022/10/10/,there are approximately 39400 active business angel investors on the European continent.,R5
+euveca_funds_2022,Registered EuVECA funds (EU),462,2022-12-31,https://op.europa.eu/webpub/com/refit-scoreboard/en/policy/8/8-6.html,"As of December 2022, 462 EuVECA funds and 15 EuSEFs funds were registered, despite being in place for more than 8 years.",R5
+dealroom_investors,Investors and funds tracked by Dealroom,100,,https://dealroom.co/products/api,100K+ Investors & funds,R5
+r1_preqin_pe_managers,R1 claim: ~10300 active PE fund managers (Preqin via CBS guide),10300,,https://libguides.cbs.dk/Preqin,"10,300",R1
+r1_sec_vc_advisers,R1 claim: 362 VC advisers on Form PF 2025Q4,362,2025-12-31,https://sec.gov/data-research/data-visualizations/private-fund-statistics/private-funds-number-funds-advisers,362,R1
+r1_unh_us_angels_2019,R1 claim: 323365 active US angels (presented as latest),323365,2019,https://www.eban.org/knowledge-center/unh-finds-fewer-angels-invested-more-in-2019/,"323,365",R1
