@@ -70,10 +70,12 @@ def cmd_check_discovery(args: argparse.Namespace) -> None:
 
 def cmd_evidence(args: argparse.Namespace) -> None:
     """Flatten evidence-agent output into claims.csv and machine-check every claim."""
-    from investordb.evidence import build_claims
+    from investordb.evidence import UNPARSED, build_claims
 
     rows = build_claims([Path(p) for p in args.files] or None)
     print(f"{len(rows)} claims: {dict(Counter(r.auto_check for r in rows))}")
+    if UNPARSED:
+        print(f"WARNING: {len(UNPARSED)} claims could not be parsed (no source_url): {UNPARSED[:10]}")
     for field, n in sorted(Counter((r.field, r.auto_check) for r in rows).items()):
         print(f"  {field[0]:<14} {field[1]:<20} {n}")
 

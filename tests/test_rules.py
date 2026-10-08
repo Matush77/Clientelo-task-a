@@ -127,5 +127,16 @@ def test_vc_and_pe_manager_is_in_scope():
     assert decide("C1", vc(*STRONG, types=("pe", "vc")), reg(), AS_OF).status == "INCLUDED"
 
 
+def test_nested_claim_shape_is_normalized():
+    # regression: one agent wrote {"claim": {source_url, quote...}, "value": ...}; its claims were silently dropped
+    from investordb.evidence import flatten
+
+    record = {"candidate_id": "C1", "website": "https://x.example", "investments": [
+        {"claim": {"source_url": "https://news.example/a", "quote": "X invested in Alpha", "published_date": "2025-01-01"},
+         "value": {"company": "Alpha", "date": "2025-01-01"}}]}
+    rows = flatten(record)
+    assert len(rows) == 1 and rows[0].field == "investments" and rows[0].event_date == "2025-01-01"
+
+
 def test_accelerator_is_out_of_pilot_scope():
     assert decide("C1", vc(*STRONG, types=("accelerator",)), reg(), AS_OF).reason == "OOS_TYPE"

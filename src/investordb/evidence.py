@@ -93,12 +93,26 @@ class ClaimRow:
     fetched_at: str = ""
 
 
+def normalize_claim(claim):
+    """Agents wrote claims in two shapes: flat {value, source_url, quote, ...} (as specified) or nested
+    {"claim": {source_url, quote, ...}, "value": ...} (one agent read the prompt's shorthand literally)."""
+    if isinstance(claim, dict) and isinstance(claim.get("claim"), dict):
+        return {**claim["claim"], **{k: v for k, v in claim.items() if k != "claim"}}
+    return claim
+
+
+UNPARSED: list[str] = []  # claims that had to be skipped - reported, never dropped silently
+
+
 def flatten(record: dict) -> list[ClaimRow]:
     rows: list[ClaimRow] = []
     website = record.get("website")
 
     def add(field: str, idx: int, claim: dict) -> None:
+        claim = normalize_claim(claim)
         if not isinstance(claim, dict) or not claim.get("source_url"):
+            if field != "red_flags" and claim:  # "no investment found" red flags legitimately have no source
+                UNPARSED.append(f"{record.get('candidate_id')}:{field}[{idx}]")
             return
         value = claim.get("value")
         raw_date = (value or {}).get("date") if field == "investments" and isinstance(value, dict) else None
