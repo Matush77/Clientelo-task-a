@@ -1,0 +1,303 @@
+[
+  {
+    "candidate_id": "C012",
+    "name": "Credo Ventures (alias: Credo Ventures a.s.)",
+    "website": "https://www.credoventures.com",
+    "identity": [
+      {
+        "value": {"legal_name": "Credo Ventures a.s.", "company_id": "28538137", "country": "CZ"},
+        "value_text": "Credo Ventures a.s.",
+        "source_url": "https://www.podnikatel.cz/rejstrik/credo-ventures-a-s-28538137/",
+        "quote": "Obchodní firma / název: Credo Ventures a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"legal_name": "Credo Ventures a.s.", "company_id": "28538137", "country": "CZ"},
+        "value_text": "IČO: 28538137",
+        "source_url": "https://www.podnikatel.cz/rejstrik/credo-ventures-a-s-28538137/",
+        "quote": "IČO: 28538137",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Czech Republic",
+      "source_url": "https://www.credoventures.com",
+      "quote": "Prague, Karlovo Náměstí 10, 120 00, Prague, Czech Republic",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital company",
+      "source_url": "https://en.ain.ua/2025/01/23/axoflow-raises-7m",
+      "quote": "Credo Ventures, a Prague-based venture capital company focused on early stage investments in Central Europe",
+      "published_date": "2025-01-23",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "SuperPlane", "date": "2026-06", "round": "pre_seed", "amount": "$2.6 Million"},
+        "value_text": "Led by Credo Ventures",
+        "source_url": "https://raising.fi/news/superplane-pre-seed-june-2026",
+        "quote": "SuperPlane Secures $2.6 Million in Pre-Seed Funding Led by Credo Ventures",
+        "published_date": "2026-06-25",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Axoflow", "date": "2025-01-23", "round": "unknown", "amount": null},
+        "value_text": "Credo Ventures and e2vc, have also significantly increased their stakes",
+        "source_url": "https://en.ain.ua/2025/01/23/axoflow-raises-7m",
+        "quote": "all existing major investors, Credo Ventures and e2vc, have also significantly increased their stakes",
+        "published_date": "2025-01-23",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Talkbase", "date": "2022-10", "round": "unknown", "amount": "přes dva miliony dolarů"},
+        "value_text": "od fondů J&T Ventures a Credo Ventures",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "Talkbase vybral přes dva miliony dolarů (přes 50 milionů korun) od fondů J&T Ventures a Credo Ventures",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Upheal", "date": "2022-10", "round": "pre_seed", "amount": "lehce přes jeden milion dolarů"},
+        "value_text": "s přispěním Credo Ventures",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "Healthtech Upheal získal lehce přes jeden milion dolarů (25 milionů korun) v pre-seedu, které vedl fond Kaya VC s přispěním Credo Ventures, Calm/Storm a řady významných andělů.",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "not thesis-driven",
+      "source_url": "https://www.credoventures.com",
+      "quote": "Backing exceptional people, not thesis-driven.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "value_text": "Pre-Seed",
+      "source_url": "https://startuprise.co.uk/prague-and-krakow-based-credo-ventures-raises-88m-fund-5-to-focus-on-cee-pre-seed-startups-and-global-diaspora/",
+      "quote": "The firm is strengthening its presence in the Pre-Seed niche",
+      "published_date": "2026-03-24",
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "$1M", "max": "$5M", "currency": "USD"},
+      "value_text": "$1M - $5M checks.",
+      "source_url": "https://www.credoventures.com",
+      "quote": "$1M - $5M checks.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": {
+      "value": {"amount": "$88 million", "currency": "USD", "capital_type": "fund_size", "as_of": "2026-03-24"},
+      "value_text": "$88 million",
+      "source_url": "https://startuprise.co.uk/prague-and-krakow-based-credo-ventures-raises-88m-fund-5-to-focus-on-cee-pre-seed-startups-and-global-diaspora/",
+      "quote": "Credo Ventures has launched Credo Stage 5, an $88 million fund",
+      "published_date": "2026-03-24",
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "Credo Stage 5", "size": "$88 million", "vintage": "2026"},
+        "value_text": "Credo Stage 5, an $88 million fund",
+        "source_url": "https://startuprise.co.uk/prague-and-krakow-based-credo-ventures-raises-88m-fund-5-to-focus-on-cee-pre-seed-startups-and-global-diaspora/",
+        "quote": "Credo Ventures has launched Credo Stage 5, an $88 million fund",
+        "published_date": "2026-03-24",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund IV (čtvrtý fond)", "size": "75 milionů eur", "vintage": "2022"},
+        "value_text": "75 milionů eur",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "Oznámilo otevření již čtvrtého fondu, v němž má k dispozici celkem 75 milionů eur (1,8 miliardy korun)",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund III (třetí fond)", "size": "bezmála 100 milionů eur", "vintage": "2019"},
+        "value_text": "S třetím z roku 2019 dosáhl na objem bezmála 100 milionů eur",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "S třetím z roku 2019 dosáhl na objem bezmála 100 milionů eur,",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund II (druhý fond)", "size": "53 milionů eur", "vintage": "2015"},
+        "value_text": "ve druhém z roku 2015 pak od investorů získal 53 milionů eur",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "ve druhém z roku 2015 pak od investorů získal 53 milionů eur.",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund I (první fond)", "size": "18 milionů eur", "vintage": "2010"},
+        "value_text": "Svůj první fond ve výši 18 milionů eur otevíral v roce 2010",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "Svůj první fond ve výši 18 milionů eur otevíral v roce 2010,",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": [],
+    "search_log": [
+      "Credo Ventures investice portfolio",
+      "Credo Ventures a.s. IČO",
+      "Credo Ventures pre-seed round led 2026",
+      "Credo Ventures seed funding round press release 2025 investors include Credo Ventures",
+      "SuperPlane raises pre-seed Credo Ventures"
+    ]
+  },
+  {
+    "candidate_id": "C002",
+    "name": "Investown Technologies s.r.o.",
+    "website": "https://www.investown.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "Investown Technologies s.r.o.", "company_id": "08667144", "country": "CZ"},
+        "value_text": "Investown Technologies s.r.o.",
+        "source_url": "https://www.podnikatel.cz/rejstrik/investown-technologies-s-r-o-08667144/",
+        "quote": "Investown Technologies s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"legal_name": "Investown Technologies s.r.o.", "company_id": "08667144", "country": "CZ"},
+        "value_text": "IČO: 08667144",
+        "source_url": "https://www.investown.cz/kontakt",
+        "quote": "IČO: 08667144",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Zlatníky-Hodkovice",
+      "source_url": "https://www.investown.cz/kontakt",
+      "quote": "Inovační 122, Hodkovice, 252 41 Zlatníky-Hodkovice",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["crowdfunding_platform", "lender"],
+      "value_text": "podílet se na investování do úvěrů z nemovitostí",
+      "source_url": "https://cc.cz/startup-investown-dostal-zelenou-od-cnb-licence-mu-otevira-cestu-do-george-ceske-sporitelny/",
+      "quote": "Investown lidem umožňuje podílet se na investování do úvěrů z nemovitostí.",
+      "published_date": "2023-10-24",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "ALZATA s.r.o.", "date": "2026", "round": "unknown", "amount": null},
+        "value_text": "Investown nám přinesl flexibilní a rychlé financování",
+        "source_url": "https://www.investown.cz/blog",
+        "quote": "„Investown nám přinesl flexibilní a rychlé financování,“ hodnotí spolupráci ALZATA s.r.o.",
+        "published_date": "2026-10-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "M.E estates s.r.o.", "date": "2026", "round": "unknown", "amount": null},
+        "value_text": "Díky pohotovému financování jsme mohli zahájit stavbu hned po akvizici projektu",
+        "source_url": "https://www.investown.cz/blog",
+        "quote": "M.E estates s.r.o.: „Díky pohotovému financování jsme mohli zahájit stavbu hned po akvizici projektu“",
+        "published_date": "2026-09-10",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["proptech_construction"],
+      "value_text": "investičními úvěry do nemovitostí",
+      "source_url": "https://www.investown.cz",
+      "quote": "Investown je online platforma s investičními úvěry do nemovitostí.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "500 Kč", "max": "50 000 000 Kč", "currency": "CZK"},
+      "value_text": "Nejmenší investovatelná částka je 500 Kč, nejvyšší je 50 000 000 Kč.",
+      "source_url": "https://www.investown.cz",
+      "quote": "Nejmenší investovatelná částka je 500 Kč, nejvyšší je 50 000 000 Kč.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "Platform arranging real-estate-secured loans (intermediary/lender); no equity investment into companies found",
+        "value_text": "Investown je online platforma s investičními úvěry do nemovitostí",
+        "source_url": "https://www.investown.cz",
+        "quote": "Investown je online platforma s investičními úvěry do nemovitostí.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "CNB fined the company in 2023 (1 million CZK); according to the CNB it had operated an unlicensed investment-fund-type scheme via loan participations",
+        "value_text": "pokoutný investiční fond",
+        "source_url": "https://cc.cz/cnb-cisti-trh-od-sede-zony-pokutu-milion-korun-udelila-crowdfundingu-investown-fungovani-jiz-zmenil/",
+        "quote": "Investown původně nabízel participaci na úvěrech, podle ČNB tím ale provozoval takzvaný pokoutný investiční fond",
+        "published_date": "2023-02-17",
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["stages", "total_capital", "funds"],
+    "search_log": [
+      "Investown Technologies s.r.o. IČO",
+      "Investown investice do startupů fond",
+      "Investown Solis Residence Dům Holubí s.r.o. úvěr 120 milionů",
+      "Investown Andělská Hora apartmány financování projektu developer"
+    ]
+  },
+  {
+    "candidate_id": "C206",
+    "name": "E.S. invest, s. r. o.",
+    "website": null,
+    "identity": [
+      {
+        "value": {"legal_name": "E.S. invest, s. r. o.", "company_id": "43875408", "country": "SK"},
+        "value_text": "E.S. invest, s. r. o.",
+        "source_url": "https://www.orsr.sk/hladaj_ico.asp?ICO=43875408",
+        "quote": "E.S. invest, s. r. o.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"legal_name": "E.S. invest, s. r. o.", "company_id": "43875408", "country": "SK"},
+        "value_text": "IČO: 43875408",
+        "source_url": "https://www.orsr.sk/hladaj_ico.asp?ICO=43875408",
+        "quote": "IČO: 43875408",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "search_log": [
+      "E.S. invest s.r.o. IČO 43875408",
+      "\"E.S. invest\" s.r.o. investícia do startupu",
+      "\"43875408\" firma",
+      "\"E.S. invest, s. r. o.\"",
+      "\"E.S. invest\" Slovakia investor startup seed Slovensko",
+      "E.S. invest s.r.o. Bratislava investície akcie spoločník konateľ",
+      "43875408 E.S. invest",
+      "startup raises funding round \"E.S. invest\" Slovak investor",
+      "\"ES invest\" s.r.o. Slovensko investičná spoločnosť portfólio"
+    ]
+  }
+]
