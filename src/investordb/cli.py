@@ -68,6 +68,28 @@ def cmd_check_discovery(args: argparse.Namespace) -> None:
         print(f"{name:<12} {dict(counts)}")
 
 
+def cmd_evidence(args: argparse.Namespace) -> None:
+    """Flatten evidence-agent output into claims.csv and machine-check every claim."""
+    from investordb.evidence import build_claims
+
+    rows = build_claims([Path(p) for p in args.files] or None)
+    print(f"{len(rows)} claims: {dict(Counter(r.auto_check for r in rows))}")
+    for field, n in sorted(Counter((r.field, r.auto_check) for r in rows).items()):
+        print(f"  {field[0]:<14} {field[1]:<20} {n}")
+
+
+def cmd_decide(args: argparse.Namespace) -> None:
+    """Apply the inclusion/exclusion rules and write investors / rejected / needs_review tables."""
+    from datetime import date
+
+    from investordb.pipeline import run
+
+    rows = run(date.fromisoformat(args.as_of))
+    for r in rows:
+        print(f"{r['status']:<13} {r['reason']:<16} {r['tier']:<2} {r['candidate_id']} {r['name'][:40]:<40} {r['explanation']}")
+    print(dict(Counter(r["status"] for r in rows)))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="investordb")
     sub = parser.add_subparsers(required=True)
@@ -80,6 +102,14 @@ def main() -> None:
     p = sub.add_parser("check-discovery", help="verify quotes returned by discovery agents")
     p.add_argument("-o", "--output", default="data/processed/discovery_checks.csv")
     p.set_defaults(func=cmd_check_discovery)
+
+    p = sub.add_parser("evidence", help="flatten + machine-check evidence-agent output into claims.csv")
+    p.add_argument("files", nargs="*", help="evidence JSON files (default: all in data/raw/agents/evidence)")
+    p.set_defaults(func=cmd_evidence)
+
+    p = sub.add_parser("decide", help="apply rules, write investors/rejected/needs_review tables")
+    p.add_argument("--as-of", default="2026-10-08", help="reference date for the 36-month activity window")
+    p.set_defaults(func=cmd_decide)
 
     args = parser.parse_args()
     args.func(args)
