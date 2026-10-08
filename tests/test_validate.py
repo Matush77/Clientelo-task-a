@@ -57,6 +57,18 @@ def test_value_in_quote_text():
     assert not value_in_quote("hedge funds", PAGE)
 
 
+def test_footer_text_is_kept():
+    # regression: trafilatura dropped <footer>, so correct imprint quotes (legal name, address) failed the check
+    from investordb.fetch import _html_to_text
+
+    html = ("<html><body><main><p>We invest in seed-stage startups.</p></main><footer><div>Jet Investment, a.s."
+            "<br/>Pisárecká 271/13<br/>634 00 Brno</div><script>var x='hidden';</script></footer></body></html>")
+    text = _html_to_text(html)
+    assert quote_score("Jet Investment, a.s.", text) == 100
+    assert quote_score("Pisárecká 271/13 634 00 Brno", text) == 100
+    assert "hidden" not in text
+
+
 def test_check_claim_statuses():
     assert check_claim("u", "8,030 single family offices", "8030", page=page()).status == "ok"
     assert check_claim("u", "8,030 single family offices", "9999", page=page()).status == "value_not_in_quote"

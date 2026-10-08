@@ -15,6 +15,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import httpx
+import lxml.etree
+import lxml.html
 import trafilatura
 from pypdf import PdfReader
 
@@ -52,8 +54,11 @@ class FetchResult:
         return "ok"
 
 
+EXTRACTOR_VERSION = 2  # v2: + all visible text (footers); bumping it invalidates cached pages
+
+
 def _cache_path(url: str) -> Path:
-    return CACHE_DIR / (hashlib.sha1(url.encode("utf-8")).hexdigest() + ".json")
+    return CACHE_DIR / (hashlib.sha1(f"v{EXTRACTOR_VERSION}:{url}".encode("utf-8")).hexdigest() + ".json")
 
 
 def _pdf_to_text(content: bytes) -> str:
@@ -61,12 +66,23 @@ def _pdf_to_text(content: bytes) -> str:
     return "\n".join((page.extract_text() or "") for page in reader.pages)
 
 
+def _all_visible_text(html: str) -> str:
+    """Every text node except scripts/styles - unlike trafilatura this keeps footers (legal name, IČO, address)."""
+    try:
+        tree = lxml.html.document_fromstring(html)
+    except (ValueError, lxml.etree.ParserError):
+        return ""
+    for el in tree.xpath("//script|//style|//noscript|//template"):
+        el.drop_tree()
+    return " ".join(t.strip() for t in tree.itertext() if t.strip())
+
+
 def _html_to_text(html: str) -> str:
-    # Main-content extraction drops navigation and tables' context; html2txt keeps everything.
-    # Quotes can come from either, so both are kept.
+    # trafilatura gives clean main content, but its cleaning drops <footer> - where imprint data (legal name, IČO,
+    # office address) lives. Quotes can come from any part of the page, so all three layers are kept.
     main = trafilatura.extract(html, include_tables=True, favor_recall=True) or ""
     full = trafilatura.html2txt(html) or ""
-    return main + "\n\n" + full
+    return "\n\n".join((main, full, _all_visible_text(html)))
 
 
 WAYBACK_AVAILABLE = "https://archive.org/wayback/available"
