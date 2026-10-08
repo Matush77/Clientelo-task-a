@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Fingood s.r.o.",
+    "website": "https://www.fingood.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "crowdfunding",
+    "expected_rejection": "E3",
+    "source_url": "https://www.fingood.cz",
+    "quote": "Fingood je česká crowdfundingová platforma, která propojuje investory s podnikateli.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Investown Technologies s.r.o.",
+    "website": "https://www.investown.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "crowdfunding",
+    "expected_rejection": "E3",
+    "source_url": "https://www.investown.cz/",
+    "quote": "Investown je online platforma s investičními úvěry do nemovitostí.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Zonky (Air Bank a.s.)",
+    "website": "https://www.zonky.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "crowdfunding",
+    "expected_rejection": "E3",
+    "source_url": "https://www.zonky.cz",
+    "quote": "Nabízíme půjčky od lidí pro lidi.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Patria Corporate Finance",
+    "website": "https://cf.patria.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "advisory",
+    "expected_rejection": "E3",
+    "source_url": "https://cf.patria.cz",
+    "quote": "Jsme jednou z nejvýznamnějších M&A firem u nás.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Ecovis Corporate Finance CZ",
+    "website": "https://www.ecovis.com/czech-republic/",
+    "hq_country_claimed": "CZ",
+    "control_category": "advisory",
+    "expected_rejection": "E3",
+    "source_url": "https://www.ecovis.com/czech-republic/services/corporate-finance/",
+    "quote": "Our experts assist clients – large Czech and foreign companies – both as buyers and as sellers.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Forvis Mazars CZ",
+    "website": "https://www.forvismazars.com/cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "advisory",
+    "expected_rejection": "E3",
+    "source_url": "https://www.forvismazars.com/cz/cs/nase-sluzby/transakcni-poradenstvi/transakce/akvizice-a-prodeje-firem-m-a",
+    "quote": "Společnost Forvis Mazars poskytuje poradenství",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Investika realitní fond (INVESTIKA, investiční společnost, a.s.)",
+    "website": "https://www.investika.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "real_estate",
+    "expected_rejection": "E4",
+    "source_url": "https://www.investika.cz",
+    "quote": "První skutečně prémiový realitní fond i pro drobné investory.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "Trigea (Nemovitostní fond Trigea)",
+    "website": "https://www.trigea.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "real_estate",
+    "expected_rejection": "E4",
+    "source_url": "https://www.trigea.cz",
+    "quote": "Nemovitostní fond Trigea nakupuje komerční budovy v dobrých lokalitách.",
+    "accessed_date": "2026-10-08"
+  },
+  {
+    "name": "AGROFERT",
+    "website": "https://www.agrofert.cz",
+    "hq_country_claimed": "CZ",
+    "control_category": "group_holding",
+    "expected_rejection": "E6",
+    "source_url": "https://www.agrofert.cz",
+    "quote": "Společnost AGROFERT, a.s., je členem (řídící společností) koncernu AGROFERT.",
+    "accessed_date": "2026-10-08"
+  }
+]

@@ -6,6 +6,7 @@ extracted text is meant to be committed, as proof of what was seen and when.
 
 from __future__ import annotations
 
+import functools
 import hashlib
 import io
 import json
@@ -84,6 +85,7 @@ def archived_snapshot_url(url: str, timeout: float = 30.0) -> str | None:
     return f"https://web.archive.org/web/{closest['timestamp']}id_/{url}"
 
 
+@functools.lru_cache(maxsize=2048)  # blocked pages are not cached on disk; don't re-hit them within one run
 def fetch_with_archive_fallback(url: str, use_cache: bool = True) -> FetchResult:
     """Live page first; if the site blocks us, the closest Wayback snapshot (final_url shows which)."""
     live = fetch(url, use_cache=use_cache)
