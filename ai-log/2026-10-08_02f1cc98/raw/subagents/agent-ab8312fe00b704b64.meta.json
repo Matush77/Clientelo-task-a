@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "HQ triage batch 1 (20 names)",
+  "toolUseId": "toolu_01VT6FcoaCoo53RuUdxu463S",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

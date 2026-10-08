@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "List A discovery Slovakia",
+  "toolUseId": "toolu_01HqGDGPPQzcvGpGdBe57Gp2",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

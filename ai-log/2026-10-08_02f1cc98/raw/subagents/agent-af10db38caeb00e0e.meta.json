@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "List B deal news Slovakia",
+  "toolUseId": "toolu_016Di53ReWDLmEhLoJn9m1RE",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}
