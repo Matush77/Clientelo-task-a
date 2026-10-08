@@ -1,0 +1,40 @@
+[
+  {
+    "candidate_id": "C180",
+    "name": "EQT Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): EQT Ventures s.r.o., IČO 50532481"
+  },
+  {
+    "candidate_id": "C091",
+    "name": "WOOD & Company Financial Services",
+    "other_names": [],
+    "known_website": "www.wood.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): WOOD & Company Financial Services, a.s., IČO 26503808"
+  },
+  {
+    "candidate_id": "C080",
+    "name": "RSJ Investments",
+    "other_names": [],
+    "known_website": "www.rsj.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): RSJ Investments investiční společnost a.s., IČO 05357225"
+  },
+  {
+    "candidate_id": "C024",
+    "name": "KAYA",
+    "other_names": [
+      "KAYA VC",
+      "Kaya"
+    ],
+    "known_website": "www.kaya.vc",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C035",
+    "name": "V4C Investment Advisers Limited",
+    "other_names": [],
+    "known_website": "www.value4capital.com",
+    "registry_hint": null
+  }
+]

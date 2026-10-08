@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C151",
+    "name": "Gi21 Capital",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Gi21 Capital a.s., IČO 19584229"
+  },
+  {
+    "candidate_id": "C001",
+    "name": "Fingood s.r.o.",
+    "other_names": [],
+    "known_website": "https://www.fingood.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Fingood s.r.o., IČO 03328074"
+  },
+  {
+    "candidate_id": "C159",
+    "name": "10VC",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C165",
+    "name": "Preston-Werner Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C027",
+    "name": "Nation1",
+    "other_names": [
+      "Nation 1"
+    ],
+    "known_website": "www.nation1.vc",
+    "registry_hint": null
+  }
+]

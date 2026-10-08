@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C059",
+    "name": "FARKASOVA INTERNATIONAL, s.r.o",
+    "other_names": [],
+    "known_website": "www.farkasovainternational.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): FARKASOVA INTERNATIONAL, s.r.o., IČO 07957360"
+  },
+  {
+    "candidate_id": "C199",
+    "name": "Uroboros Ventures s.r.o.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): , IČO 24808016"
+  },
+  {
+    "candidate_id": "C192",
+    "name": "European Innovation Council",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C155",
+    "name": "Google Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C195",
+    "name": "ZAKA Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C095",
+    "name": "IPO fond 2025+",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C021",
+    "name": "Integral Capital Group",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C019",
+    "name": "i&i Biotech Investments",
+    "other_names": [],
+    "known_website": "www.inibio.eu",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Biotech Investments s.r.o., IČO 10885978"
+  },
+  {
+    "candidate_id": "C023",
+    "name": "Jet Investment",
+    "other_names": [],
+    "known_website": "www.jetinvestment.eu",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Jet Investment, a.s., IČO 03890333"
+  },
+  {
+    "candidate_id": "C076",
+    "name": "PRK Partners",
+    "other_names": [],
+    "known_website": "www.prkpartners.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): PRK Partners s.r.o. advokátní kancelář, IČO 26692392"
+  }
+]

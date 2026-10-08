@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C143",
+    "name": "N1",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C037",
+    "name": "Accolade",
+    "other_names": [],
+    "known_website": "www.accolade.eu",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C094",
+    "name": "Národní rozvojová investiční (NRI)",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C146",
+    "name": "Purple Ventures",
+    "other_names": [
+      "Purple Ventures II"
+    ],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Purple Ventures s.r.o., IČO 05775574"
+  },
+  {
+    "candidate_id": "C156",
+    "name": "Experian",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

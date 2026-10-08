@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C011",
+    "name": "ARX Equity Partners",
+    "other_names": [],
+    "known_website": "www.arxequity.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Arx Equity Partners s.r.o., IČO 64943356"
+  },
+  {
+    "candidate_id": "C009",
+    "name": "AGROFERT",
+    "other_names": [],
+    "known_website": "https://www.agrofert.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): AGROFERT, a.s., IČO 26185610"
+  },
+  {
+    "candidate_id": "C125",
+    "name": "Slovak Investment Holding",
+    "other_names": [],
+    "known_website": "https://www.sih.sk",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Slovak Investment Holding, a. s., IČO 47759097"
+  },
+  {
+    "candidate_id": "C168",
+    "name": "Index Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C079",
+    "name": "RENOMIA",
+    "other_names": [],
+    "known_website": "www.renomia.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): RENOMIA, a. s., IČO 48391301"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C018",
+    "name": "Genesis Capital",
+    "other_names": [
+      "Genesis Capital Equity s.r.o."
+    ],
+    "known_website": "www.genesis.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Genesis Capital Equity s.r.o., IČO 25795856"
+  },
+  {
+    "candidate_id": "C036",
+    "name": "Versute Investments",
+    "other_names": [],
+    "known_website": "www.versute.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): VERSUTE INVESTMENTS a.s., IČO 03965953"
+  },
+  {
+    "candidate_id": "C171",
+    "name": "European Investment Bank (EIB)",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C183",
+    "name": "Genesis Growth Equity Fund I",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C176",
+    "name": "Kaya Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C096",
+    "name": "Eterus Capital",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Eterus Capital, a. s., IČO 44193025"
+  },
+  {
+    "candidate_id": "C197",
+    "name": "Rockaway Ventures",
+    "other_names": [
+      "Rockaway Ventures Fund SICAV a.s., podfond I"
+    ],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): , IČO 75163225"
+  },
+  {
+    "candidate_id": "C077",
+    "name": "QI investiční společnost, a.s.",
+    "other_names": [],
+    "known_website": "www.qiis.cz",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C087",
+    "name": "TMF Czech, a.s.",
+    "other_names": [],
+    "known_website": "www.tmf-group.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): TMF Czech, a.s., IČO 24705101"
+  },
+  {
+    "candidate_id": "C204",
+    "name": "CEC Capital SK, s.r.o.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): , IČO 35897635"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C158",
+    "name": "Long Journey Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C093",
+    "name": "Smart Management VC s.r.o.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C169",
+    "name": "Quadrille",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): QUADRILLE spol. s r.o., IČO 25204254"
+  },
+  {
+    "candidate_id": "C135",
+    "name": "Seed Starter",
+    "other_names": [
+      "Seed Starter ČS"
+    ],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C181",
+    "name": "Wing VC",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

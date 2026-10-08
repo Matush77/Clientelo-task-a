@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C030",
+    "name": "SkyLimit Investments",
+    "other_names": [],
+    "known_website": "www.skylimit.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): SkyLimit Investments s.r.o., IČO 04711629"
+  },
+  {
+    "candidate_id": "C071",
+    "name": "Pale Fire Capital SE",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Pale Fire Capital SE, IČO 04165918"
+  },
+  {
+    "candidate_id": "C160",
+    "name": "N1 Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C085",
+    "name": "Sušánka & partneři",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Sušánka & partneři a.s., IČO 02029014"
+  },
+  {
+    "candidate_id": "C029",
+    "name": "Sandberg Capital",
+    "other_names": [],
+    "known_website": "www.sandbergcapital.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Sandberg Capital s.r.o., IČO 08100373"
+  }
+]

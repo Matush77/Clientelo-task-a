@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C131",
+    "name": "Wezeo",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): WEZEO, s. r. o., IČO 46390227"
+  },
+  {
+    "candidate_id": "C006",
+    "name": "Forvis Mazars CZ",
+    "other_names": [
+      "Forvis Mazars Česká republika"
+    ],
+    "known_website": "https://www.forvismazars.com/cz",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C148",
+    "name": "Dreamcraft Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C115",
+    "name": "G4 INVESTMENTS",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): G4 INVESTMENTS s. r. o., IČO 46753346"
+  },
+  {
+    "candidate_id": "C194",
+    "name": "BADideas.fund",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C164",
+    "name": "BD Partners",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): BD Partners a.s., IČO 19286511"
+  },
+  {
+    "candidate_id": "C092",
+    "name": "Lighthouse Ventures",
+    "other_names": [
+      "Lighthouse Ventures GP s.r.o."
+    ],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Lighthouse Ventures GP s.r.o., IČO 07500912"
+  },
+  {
+    "candidate_id": "C140",
+    "name": "Elevator Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C133",
+    "name": "CB Investment Management",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): CB Investments s. r. o., IČO 36796379"
+  },
+  {
+    "candidate_id": "C116",
+    "name": "Finhold",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): FINHOLD a.s., IČO 28884566"
+  }
+]

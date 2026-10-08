@@ -1,0 +1,39 @@
+[
+  {
+    "candidate_id": "C034",
+    "name": "Tilia Impact Ventures",
+    "other_names": [],
+    "known_website": "www.tilia.vc",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o., IČO 17848911"
+  },
+  {
+    "candidate_id": "C017",
+    "name": "EVERITA Capital",
+    "other_names": [],
+    "known_website": "https://everitacap.com/",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): EVERITA Capital s.r.o., IČO 19067097"
+  },
+  {
+    "candidate_id": "C099",
+    "name": "Neulogy Ventures",
+    "other_names": [
+      "Neulogy Ventures a.s."
+    ],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Neulogy Ventures, a. s., IČO 47367610"
+  },
+  {
+    "candidate_id": "C117",
+    "name": "M3 Partners s.r.o.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): M3 Partners s.r.o., IČO 44736371"
+  },
+  {
+    "candidate_id": "C163",
+    "name": "Caesar VC",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

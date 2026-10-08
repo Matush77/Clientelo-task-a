@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C147",
+    "name": "42Cap",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C184",
+    "name": "Miton",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C186",
+    "name": "Look AI Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Look AI Ventures SICAV, a.s., IČO 17604087"
+  },
+  {
+    "candidate_id": "C025",
+    "name": "MAM Private Equity Fund SICAV a.s.",
+    "other_names": [],
+    "known_website": "www.mam-equity.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): MAM Private Equity Fund SICAV a.s., IČO 19381603"
+  },
+  {
+    "candidate_id": "C007",
+    "name": "Investika realitní fond (INVESTIKA, investiční společnost, a.s.)",
+    "other_names": [],
+    "known_website": "https://www.investika.cz",
+    "registry_hint": null
+  }
+]

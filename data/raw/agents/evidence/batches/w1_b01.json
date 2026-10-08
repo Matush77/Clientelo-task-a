@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C026",
+    "name": "Mid Europa Partners",
+    "other_names": [],
+    "known_website": "www.mideuropa.com",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C185",
+    "name": "Jet Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C005",
+    "name": "Ecovis Corporate Finance CZ",
+    "other_names": [],
+    "known_website": "https://www.ecovis.com/czech-republic/",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): ECOVIS Corporate Finance CZ s.r.o., IČO 27611825"
+  },
+  {
+    "candidate_id": "C126",
+    "name": "Montward",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): MONTWARD s. r. o., IČO 50090526"
+  },
+  {
+    "candidate_id": "C203",
+    "name": "P.S. Capital Group, s.r.o.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): , IČO 46967036"
+  }
+]

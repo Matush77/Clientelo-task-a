@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C050",
+    "name": "CORPIN, a.s.",
+    "other_names": [],
+    "known_website": "www.corpin.net",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): CORPIN, a.s., IČO 24756598"
+  },
+  {
+    "candidate_id": "C004",
+    "name": "Patria Corporate Finance",
+    "other_names": [],
+    "known_website": "https://cf.patria.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Patria Corporate Finance, a.s., IČO 25671413"
+  },
+  {
+    "candidate_id": "C141",
+    "name": "Taiwania Capital",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C134",
+    "name": "Slovak Capital Management, a. s.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C119",
+    "name": "Ments",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

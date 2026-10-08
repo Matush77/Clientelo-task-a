@@ -1,0 +1,37 @@
+[
+  {
+    "candidate_id": "C022",
+    "name": "Inven Capital",
+    "other_names": [],
+    "known_website": "www.invencapital.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Inven Capital, SICAV, a.s., IČO 02059533"
+  },
+  {
+    "candidate_id": "C100",
+    "name": "Venture to Future Fund",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Venture to Future Fund, a.s., IČO 52380483"
+  },
+  {
+    "candidate_id": "C190",
+    "name": "Point Nine Capital",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C175",
+    "name": "AspectWorks Group",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): AspectWorks Group a.s., IČO 05550530"
+  },
+  {
+    "candidate_id": "C178",
+    "name": "Středočeské inovační centrum",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Středočeské inovační centrum, spolek, IČO 04228235"
+  }
+]
