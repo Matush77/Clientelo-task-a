@@ -68,8 +68,33 @@ tabuľka hraničných prípadov, pevný dátum `as_of`, capture–recapture, zje
 **Pozorovanie:** subagenti dostali vo výsledkoch nástrojov systémovú pripomienku hlavnej session (plan mode) a
 správne ju ignorovali – prompt im zakazoval zapisovať súbory.
 
+### Deň 2 – objavovanie kandidátov a triáž
+
+| # | Agent / kód | Chyba / slabina | Ako zachytená | Opatrenie |
+|---|---|---|---|---|
+| C12 | Zoznam A – CZ | **Použil iné nástroje, než dostal:** 20× Bash (curl) a 3× zabudovaný prehliadač namiesto WebFetch – v aplikácii sa mi pritom otvoril panel prehliadača | parser spotreby (`usage.py`) vypísal použité nástroje; agent to čiastočne priznal | v ďalších pokynoch výslovne zakázané (prehliadač, Bash) |
+| C13 | Zoznam A – SK | Spustil lokálne `pdftotext` na stiahnutom PDF (mimo zadaných nástrojov); v projekte nezostali žiadne súbory | správa agenta + kontrola `git status` | to isté |
+| C14 | Zoznam A – SK | **Upravená (neexistujúca) URL:** zo skutočnej URL článku SIH vypustil `/en/` → 404 | strojová kontrola: `url_dead` | tvrdenie vyradené |
+| C15 | Zoznam A – SK/CZ | 3 citácie parafrázované (zhoda 49–72 % namiesto ≥ 90 %) – zo stránok za firewallom citoval spracovaný text WebFetch, nie originál | strojová kontrola: `quote_not_found` | pokyn v2: od WebFetch žiadať doslovný text |
+| C16 | Zoznam A – CZ | Do názvu skopíroval označenie členstva („Tilia Impact Ventures – Čestný člen“) | kontrola duplicít | čistenie názvov v `candidates.py` |
+| C17 | Zoznam B – CZ | Preklep v kľúči JSON (`company_company`) – agent ho sám priznal | správa agenta | údaj sa nepoužíva; schéma sa bude validovať |
+| C18 | Zoznam B – CZ/SK | **Nízka výťažnosť:** 20 a 7 investičných kôl namiesto 25–40; väčšinu rozpočtu minuli na 404, 403 a staré články | správa agentov | obmedzuje odhad úplnosti (capture–recapture); uvedené v obmedzeniach |
+| C19 | Kontrolná sada | Našiel 9 namiesto 12–15 „falošných investorov“ (žiadny fond fondov) | správa agenta | akceptované; doplnené náhodnými firmami z registra |
+| C20 | Triáž sídla (2 agenti) | **Len 6 z 13 odpovedí „zahraničné sídlo“ malo citáciu, ktorá na stránke naozaj je.** Napr. „Dreamcraft Ventures – DK“ bez opory v zdroji | strojová kontrola citácií | neoverená odpoveď sa nepoužije – kandidát ide do plného zberu dôkazov |
+| C21 | Triáž sídla | **Pokus o prompt injection:** výsledky vyhľadávania (Dealroom) obsahovali text adresovaný AI systémom; agent ho podľa vlastných slov ignoroval | správa agenta | žiadna škoda; potvrdzuje, prečo výstup agenta nikdy nepreberáme bez overenia |
+| C22 | **ja + Claude (kód)** | Deduplikácia **zlúčila rôzne firmy** („Innova Capital“ = poľský PE fond, „Inovia Capital“ = kanadský VC; „J&T Ventures“ a „Jet Ventures“) a **nezlúčila tie isté** („Nation1“ / „Nation 1“, „KAYA VC“ / „Kaya“) | ručná kontrola zoznamu zlúčení | pravidlo „prvé slovo značky sa musí zhodovať“ + testy na všetky prípady |
+| C23 | **ja + Claude (kód)** | Záznamy o spotrebe v prepisoch obsahujú výstupné tokeny len zo začiatku odpovede (3–8 tokenov) → podhodnotenie | podozrivo nízke čísla v `usage.py` | výstupné tokeny sa odhadujú z dĺžky textu; zalogovaná hodnota je dolná hranica |
+| C24 | **ja + Claude (kód)** | Náhodný výber z registra visel ~30 min – ARES odmieta dotazy s > 1 000 výsledkami („Capital“: 2 477), kód to skúšal 1 000-krát | pomalý beh | hneď sa preskočí s hlásením |
+
+**Pozitívne:** zo 241 citácií z objavovania kód potvrdil na zdrojovej stránke **236 (98 %)**. Krátke citácie, ktoré
+obsahujú názov subjektu, agenti kopírujú spoľahlivo; problém sú dlhšie citácie zo stránok, ktoré WebFetch spracúva.
+
+**Postreh pre prezentáciu:** z 9 náhodných firiem s „investorským“ názvom z registra je jedna skutočný VC fond
+(Rockaway Ventures). Kontrolná sada „náhodných firiem“ teda nie je automaticky sada neinvestorov – rozhodnúť musia dôkazy.
+
 ## 5. Priebeh práce
 
 | Deň | Čo sa robilo | Agenti |
 |---|---|---|
 | 8. 10. | Analýza zadania, prieskum verejných zdrojov a trhu, návrh plánu, kritika plánu, otázky na mňa (rozsah pilotu, spôsob behu, jazyk, ručná kontrola), založenie repozitára, PLAN.md | R1–R3 (prieskum), R4 (kritik), R5 (overenie čísel) |
+| 8. 10. (deň 2) | Test registrov ARES/RPO, objavovanie kandidátov (zoznamy A a B, kontrolné sady), strojová kontrola 241 citácií, deduplikácia (206 kandidátov), triáž cez registre a sídlo (133 ide do zberu dôkazov), pravidlá + 23 testov, meranie spotreby | 5× objavovanie, 2× triáž sídla, 1× zber dôkazov (CP2) |
