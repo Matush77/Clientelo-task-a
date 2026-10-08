@@ -1,0 +1,26 @@
+session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m_tokens,cache_write_1h_tokens,cache_read_tokens,output_tokens_logged,output_tokens_est,web_searches,web_fetches,tool_calls,duration_s
+02f1cc98,agent-a16856a60fe2725d1,Public investor data sources,Explore,claude-haiku-5-5,7,14,83232,0,339568,12995,12995,15,8,24,238
+02f1cc98,agent-a18a193211a9de7f8,Evidence v2 wave1 batch 03,general-purpose,claude-haiku-5-5,11,22,129273,0,937477,18494,18494,15,16,36,513
+02f1cc98,agent-a20aa9601919c23ba,Evidence v2 wave1 batch 07,general-purpose,claude-haiku-5-5,10,20,87903,0,696043,15046,15046,17,8,30,306
+02f1cc98,agent-a233e3cbe3d72fb1f,Evidence v2 wave1 batch 08,general-purpose,claude-haiku-5-5,11,22,119867,0,927923,18489,18489,10,28,43,457
+02f1cc98,agent-a24c228820114dda1,Evidence v2 wave1 batch 04,general-purpose,claude-haiku-5-5,13,26,130926,0,1166457,20332,20332,12,27,44,507
+02f1cc98,agent-a2a3b3136f606d44f,Evidence v3 rescue batch 1,general-purpose,claude-haiku-5-5,4,8,61711,0,165903,499,804,2,6,11,27
+02f1cc98,agent-a3ca7d6c92e3dbbf3,Red-team the draft plan,Plan,claude-haiku-5-5,2,4,24178,0,65831,20849,20849,0,0,1,100
+02f1cc98,agent-a441bbbd6c88d3e87,Control lookalikes discovery,general-purpose,claude-haiku-5-5,9,18,115281,0,643387,5243,5243,8,18,31,352
+02f1cc98,agent-a4737c76e703f0e07,Evidence v2 wave1 batch 02,general-purpose,claude-haiku-5-5,14,28,135635,0,1317928,26836,26836,17,19,41,600
+02f1cc98,agent-a51ba64ff8b0339fa,Evidence v1 on 3 CP2 candidates,general-purpose,claude-haiku-5-5,25,50,127596,0,2435504,6479,7848,18,25,47,669
+02f1cc98,agent-a5b1280f94bf7bed1,HQ triage batch 2 (19 names),general-purpose,claude-haiku-5-5,7,14,71632,0,437842,15651,15651,13,24,40,214
+02f1cc98,agent-a5d3f49ccabdcd04f,Global investor universe size,Explore,claude-haiku-5-5,8,16,77440,0,399799,10771,10771,17,14,32,215
+02f1cc98,agent-a5f483986f4a265c5,Evidence v3 rescue batch 2,general-purpose,claude-haiku-5-5,3,6,58820,0,106576,434,434,1,1,5,10
+02f1cc98,agent-a648a7cdc05285ab2,Re-verify universe anchor figures,general-purpose,claude-haiku-5-5,8,16,106139,0,499184,283,3974,21,25,48,228
+02f1cc98,agent-a6b5f807f8cef568e,Evidence v2 wave1 batch 06,general-purpose,claude-haiku-5-5,36,72,132895,0,3654986,19888,19888,24,33,62,800
+02f1cc98,agent-a86f7d94df2b46603,Evidence v2 wave1 batch 05,general-purpose,claude-haiku-5-5,13,26,114141,0,1087727,25523,25523,21,15,41,460
+02f1cc98,agent-a9173529cff9591cf,Evidence v2 wave1 batch 10,general-purpose,claude-haiku-5-5,15,30,136632,0,1430871,24804,24804,22,25,53,523
+02f1cc98,agent-a9c5ca4163a707d88,List B deal news Czechia,general-purpose,claude-haiku-5-5,12,24,151460,0,959928,25073,25073,13,24,41,441
+02f1cc98,agent-aa1000bb39bf0321c,List A discovery Czechia,general-purpose,claude-haiku-5-5,20,40,151557,0,1730678,22672,22672,1,0,27,331
+02f1cc98,agent-ab0c29e4cbc993753,List A discovery Slovakia,general-purpose,claude-haiku-5-5,12,24,109815,0,790586,16348,16348,2,12,25,279
+02f1cc98,agent-ab8312fe00b704b64,HQ triage batch 1 (20 names),general-purpose,claude-haiku-5-5,5,10,74215,0,304413,19548,19548,20,20,44,175
+02f1cc98,agent-ad5c340032e784cb7,Slovak VC landscape research,Explore,claude-haiku-5-5,8,16,96057,0,427398,10270,10270,19,8,28,262
+02f1cc98,agent-ae936f58402359b00,Evidence v2 wave1 batch 01,general-purpose,claude-haiku-5-5,12,24,110193,0,969497,24299,24299,20,12,37,427
+02f1cc98,agent-af10db38caeb00e0e,List B deal news Slovakia,general-purpose,claude-haiku-5-5,17,34,131654,0,1410148,12744,12744,17,17,38,452
+02f1cc98,agent-af2374607c015fced,Evidence v2 wave1 batch 09,general-purpose,claude-haiku-5-5,20,40,103410,0,1536687,21314,21314,10,26,41,544
