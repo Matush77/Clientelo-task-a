@@ -1,0 +1,207 @@
+candidate_id,name,aliases,website,hq_claimed,type_claimed,in_list_a,in_list_b,control_category,company_id,scope,n_mentions,first_source
+C001,Fingood s.r.o.,,https://www.fingood.cz,CZ,crowdfunding,0,0,crowdfunding,,evidence,1,https://www.fingood.cz
+C002,Investown Technologies s.r.o.,,https://www.investown.cz,CZ,crowdfunding,0,0,crowdfunding,,evidence,1,https://www.investown.cz/
+C003,Zonky (Air Bank a.s.),,https://www.zonky.cz,CZ,crowdfunding,0,0,crowdfunding,,evidence,1,https://www.zonky.cz
+C004,Patria Corporate Finance,,https://cf.patria.cz,CZ,"advisory,non_investor",1,0,advisory,,evidence,2,https://cf.patria.cz
+C005,Ecovis Corporate Finance CZ,,https://www.ecovis.com/czech-republic/,CZ,advisory,0,0,advisory,,evidence,1,https://www.ecovis.com/czech-republic/services/corporate-finance/
+C006,Forvis Mazars CZ,Forvis Mazars Česká republika,https://www.forvismazars.com/cz,CZ,"advisory,non_investor",1,0,advisory,,evidence,2,https://www.forvismazars.com/cz/cs/nase-sluzby/transakcni-poradenstvi/transakce/akvizice-a-prodeje-firem-m-a
+C007,"Investika realitní fond (INVESTIKA, investiční společnost, a.s.)",,https://www.investika.cz,CZ,real_estate,0,0,real_estate,,evidence,1,https://www.investika.cz
+C008,Trigea (Nemovitostní fond Trigea),,https://www.trigea.cz,CZ,real_estate,0,0,real_estate,,evidence,1,https://www.trigea.cz
+C009,AGROFERT,,https://www.agrofert.cz,CZ,group_holding,0,0,group_holding,,evidence,1,https://www.agrofert.cz
+C010,Abris Capital,,www.abris-capital.com,other,pe,1,0,,,skip:foreign_hq,1,https://cvca.cz/clenstvi/radni-clenove/
+C011,ARX Equity Partners,,www.arxequity.com,CZ,"pe,unknown",1,0,,,evidence,2,https://cvca.cz/clenstvi/radni-clenove/
+C012,Credo Ventures,Credo Ventures a.s.,www.credoventures.com,CZ,vc,1,1,,,evidence,3,https://cvca.cz/clenstvi/radni-clenove/
+C013,CVI,,www.cvi.eu,other,"pe,unknown",1,0,,,skip:foreign_hq,2,https://cvca.cz/clenstvi/radni-clenove/
+C014,Depo Ventures,DEPO Ventures | DEPO Ventures One SCSp | DEPO Ventures Sàrl,,other,vc,1,1,,,evidence,4,https://cvca.cz/clenstvi/radni-clenove/
+C015,Enterprise Investors,,www.ei.com.pl/cz,other,"pe,unknown",1,0,,,skip:foreign_hq,2,https://cvca.cz/clenstvi/radni-clenove/
+C016,Espira Investments s.r.o.,,www.espirainvestments.com,CZ,pe,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C017,EVERITA Capital,,https://everitacap.com/,CZ,pe,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C018,Genesis Capital,Genesis Capital Equity s.r.o.,www.genesis.cz,CZ,"pe,unknown",1,0,,,evidence,2,https://cvca.cz/clenstvi/radni-clenove/
+C019,i&i Biotech Investments,,www.inibio.eu,CZ,vc,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C020,Innova Capital,,www.innovacap.com,other,pe,1,0,,,skip:foreign_hq,1,https://cvca.cz/clenstvi/radni-clenove/
+C021,Integral Capital Group,,,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C022,Inven Capital,,www.invencapital.cz,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C023,Jet Investment,,www.jetinvestment.eu,unknown,unknown,1,0,,,evidence,2,https://cvca.cz/clenstvi/radni-clenove/
+C024,KAYA,KAYA VC | Kaya,www.kaya.vc,CZ,vc,1,1,,,evidence,3,https://cvca.cz/clenstvi/radni-clenove/
+C025,MAM Private Equity Fund SICAV a.s.,,www.mam-equity.cz,CZ,pe,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C026,Mid Europa Partners,,www.mideuropa.com,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C027,Nation1,Nation 1,www.nation1.vc,CZ,vc,1,1,,,evidence,2,https://cvca.cz/clenstvi/radni-clenove/
+C028,Orbit Capital,,www.orbitcapital.com,unknown,"unknown,vc",1,1,,,evidence,2,https://cvca.cz/clenstvi/radni-clenove/
+C029,Sandberg Capital,,www.sandbergcapital.com,unknown,unknown,1,0,,,evidence,2,https://cvca.cz/clenstvi/radni-clenove/
+C030,SkyLimit Investments,,www.skylimit.cz,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C031,Stratum Partners,,www.stratum.eu,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C032,Tensor Ventures,,,unknown,vc,1,1,,,evidence,3,https://cvca.cz/clenstvi/radni-clenove/
+C033,Thein,,www.thein.eu,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C034,Tilia Impact Ventures,,www.tilia.vc,unknown,vc,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C035,V4C Investment Advisers Limited,,www.value4capital.com,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C036,Versute Investments,,www.versute.cz,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/radni-clenove/
+C037,Accolade,,www.accolade.eu,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C038,Asociace pro kapitálový trh ČR,,www.akatcr.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C039,Aon Central and Eastern Europe a.s.,,www.aon.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C040,"ASB Czech Republic, s.r.o.",,www.asbgroup.eu,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C041,BADOKH – Kuhn Dostál advokátní kancelář s.r.o.,,www.badokh.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C042,"Baker & McKenzie s.r.o., advokátní kancelář",,www.bakermckenzie.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C043,BDO Czech Republic s.r.o.,,,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C044,"Bird & Bird, s.r.o.",,www.twobirds.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C045,Bonuvis s.r.o.,,www.bonuvis.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C046,"Burza cenných papírů Praha, a.s.",,www.pse.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C047,"Citibank Europe plc, organizační složka",,www.citibank.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C048,Clifford Chance LLP,,www.cliffordchance.com,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C049,CMS Cameron Mckenna V.o.s.,,www.cms.law,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C050,"CORPIN, a.s.",,www.corpin.net,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C051,"Česká exportní banka, a.s.",,www.ceb.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C052,Česká spořitelna,,www.csas.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C053,Datasite Germany GmbH,,www.datasite.com,other,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C054,Deloitte Česká republika,,www.deloitte.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C055,"Dentons Europe CS LLP, organizační složka",,www.dentons.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C056,DLA Piper Prague LLP,,www.dlapiper.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C057,"EMUN investiční společnost, a.s.",,www.emun.cz,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C058,EY,,www.ey.com,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C059,"FARKASOVA INTERNATIONAL, s.r.o",,www.farkasovainternational.com,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C060,Havel & Partners,HAVEL & PARTNERS,www.havelpartners.cz,CZ,non_investor,1,0,,,skip:non_investor_member,2,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C061,"Chubb European Group Limited, organizační složka",,,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C062,INDUNA,,,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C063,JSK Investments,,www.jskinvestments.cz,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C064,"JŠK, advokátní kancelář, s.r.o.",,www.jsk.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C065,Kinstellar,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C066,"Komerční banka, a.s.",,www.kb.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C067,"Kocián Šolc Balaštík, advokátní kancelář",,www.ksb.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C068,KPMG Česká republika,,www.kpmg.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C069,LHH,,www.lhh.com,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C070,Marsh s.r.o.,,www.marsh.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C071,Pale Fire Capital SE,,,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C072,Pedersen & Partners,,www.pedersenandpartners.com,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C073,"PKF APOGEO Group, SE",,www.pkfapogeo.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C074,PPF banka a.s.,,www.ppfbanka.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C075,PricewaterhouseCoopers ČR,,www.pwc.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C076,PRK Partners,,www.prkpartners.com,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C077,"QI investiční společnost, a.s.",,www.qiis.cz,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C078,Raiffeisenbank a.s.,,www.rb.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C079,RENOMIA,,www.renomia.cz,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C080,RSJ Investments,,www.rsj.com,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C081,RSM CZ,,www.rsm.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C082,SpenglerFox Czech Republic s.r.o.,,www.spenglerfox.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C083,"Squire Patton Boggs, v.o.s., advokátní kancelář",,www.squirepattonboggs.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C084,Stanton Chase Praha,,www.stantonchase.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C085,Sušánka & partneři,,,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C086,TARPAN Partners s.r.o.,,www.tarpanpartners.com,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C087,"TMF Czech, a.s.",,www.tmf-group.com,CZ,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C088,"UniCredit Bank Czech Republic, a.s.",,www.unicreditbank.cz,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C089,"White & Case, advokátní kancelář",,www.whitecase.com,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C090,"WOLF THEISS Rechtsanwälte GmbH & Co KG, organizační složka",,,CZ,non_investor,1,0,,,skip:non_investor_member,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C091,WOOD & Company Financial Services,,www.wood.cz,unknown,unknown,1,0,,,evidence,1,https://cvca.cz/clenstvi/pridruzeni-clenove/
+C092,Lighthouse Ventures,Lighthouse Ventures GP s.r.o.,,CZ,vc,1,1,,,evidence,2,https://www.eif.org/files/records/eif-backed-active-funds.pdf
+C093,Smart Management VC s.r.o.,,,CZ,vc,1,0,,,evidence,1,https://www.eif.org/files/records/eif-backed-active-funds.pdf
+C094,Národní rozvojová investiční (NRI),,,CZ,public_vc,1,0,,,evidence,1,https://www.nrb.cz/narodni-rozvojova-investicni-spolecne-s-mpo-pripravily-deeptech-fond-pro-startupy/
+C095,IPO fond 2025+,,,CZ,public_vc,1,0,,,evidence,1,https://www.nrb.cz/narodni-rozvojova-investicni-spolecne-s-mpo-pripravily-deeptech-fond-pro-startupy/
+C096,Eterus Capital,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/riadni-clenovia.html
+C097,Fond inovácií a technológií,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/riadni-clenovia.html
+C098,Národný holdingový fond s.r.o.,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/riadni-clenovia.html
+C099,Neulogy Ventures,Neulogy Ventures a.s.,,SK,"vc,unknown",1,0,,,evidence,3,https://www.slovca.sk/sk/clenstvo/riadni-clenovia.html
+C100,Venture to Future Fund,,,SK,"vc,unknown,public_vc",1,1,,,evidence,5,https://www.slovca.sk/sk/clenstvo/riadni-clenovia.html
+C101,Vision Ventures,,,unknown,"vc,unknown",1,1,,,evidence,3,https://www.slovca.sk/sk/clenstvo/riadni-clenovia.html
+C102,Across Private Investments,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C103,Aon,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C104,A&O Shearman,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C105,ASB Slovakia,,,SK,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C106,Barger Prekop,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C107,BHM group,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C108,CMS Slovakia,,,SK,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C109,ČSOB,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C110,Danube Capital Advisors,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C111,Dentons,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C112,Highgate Law & Tax,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C113,HKV Law Firm,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C114,HILLBRIDGES,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C115,G4 INVESTMENTS,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C116,Finhold,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C117,M3 Partners s.r.o.,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C118,Forvis Mazars Slovensko,,,SK,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C119,Ments,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C120,KPMG Slovakia,,,SK,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C121,Noerr,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C122,Howden,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C123,PFCEU,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C124,PwC,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C125,Slovak Investment Holding,,https://www.sih.sk,SK,public_vc,1,1,,,evidence,3,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C126,Montward,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C127,Majerník & Miháliková,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C128,TaylorWessing,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C129,V4 Legal,,,unknown,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C130,CLA Slovakia,,,SK,non_investor,1,0,,,skip:non_investor_member,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C131,Wezeo,,,unknown,unknown,1,0,,,evidence,1,https://www.slovca.sk/sk/clenstvo/pridruzeni-clenovia.html
+C132,Zero Gravity Capital,,,unknown,vc,1,0,,,evidence,1,https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/zero-gravity-capital-kapitalova-investicia
+C133,CB Investment Management,,,unknown,vc,1,0,,,evidence,1,https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/cb-investment-management-kapitalova-investicia
+C134,"Slovak Capital Management, a. s.",,,SK,vc,1,0,,,evidence,1,https://www.sih.sk/stranky/cinnosti/slovak-asset-management
+C135,Seed Starter,Seed Starter ČS,,unknown,cvc,1,1,,,evidence,4,https://www.sih.sk/en/aktuality/slovensky-startup-resitech-ziskal-pol-miliona-eur-na-dalsi-rast
+C136,Earlybird,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2025/07/czech-startup-topk-raises-e4-6-million-to-build-an-ai-native-search-engine-for-enterprises/
+C137,Irregular Expressions,,,unknown,unknown,0,1,,,evidence,1,https://www.eu-startups.com/2025/07/czech-startup-topk-raises-e4-6-million-to-build-an-ai-native-search-engine-for-enterprises/
+C138,Seventure Partners,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2026/06/czech-cybersecurity-startup-wultra-lands-e6-8-million-to-support-europes-digital-identity-wallet-rollout/
+C139,J&T Ventures,,,CZ,vc,0,1,,,evidence,5,https://www.eu-startups.com/2026/06/czech-cybersecurity-startup-wultra-lands-e6-8-million-to-support-europes-digital-identity-wallet-rollout/
+C140,Elevator Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2026/06/czech-cybersecurity-startup-wultra-lands-e6-8-million-to-support-europes-digital-identity-wallet-rollout/
+C141,Taiwania Capital,,,unknown,vc,0,1,,,evidence,2,https://www.eu-startups.com/2024/01/prague-based-travel-platform-daytrip-lands-e9-2-million-series-b-to-expand-door-to-door-transfers-internationally/
+C142,Euroventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/01/prague-based-travel-platform-daytrip-lands-e9-2-million-series-b-to-expand-door-to-door-transfers-internationally/
+C143,N1,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/01/prague-based-travel-platform-daytrip-lands-e9-2-million-series-b-to-expand-door-to-door-transfers-internationally/
+C144,Reflex Capital,,,unknown,vc,0,1,,,evidence,2,https://www.eu-startups.com/2024/02/prague-based-choice-raises-e2-3-million-to-help-restaurants-digitize-their-customer-base-and-increase-customer-retention/
+C145,Presto Ventures,,,unknown,vc,0,1,,,evidence,2,https://www.eu-startups.com/2024/02/prague-based-choice-raises-e2-3-million-to-help-restaurants-digitize-their-customer-base-and-increase-customer-retention/
+C146,Purple Ventures,Purple Ventures II,,CZ,vc,0,1,,,evidence,2,https://www.eu-startups.com/2024/09/prague-based-hr-startup-sloneek-secures-e3-6-million-for-european-expansion/
+C147,42Cap,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2025/06/czech-startup-waypoint-ai-raises-e2-7-million-to-deploy-ai-powered-support-engineer/
+C148,Dreamcraft Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2025/06/czech-startup-waypoint-ai-raises-e2-7-million-to-deploy-ai-powered-support-engineer/
+C149,Berkley SkyDeck Fund,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2025/06/czech-startup-waypoint-ai-raises-e2-7-million-to-deploy-ai-powered-support-engineer/
+C150,Lumiere AI Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2025/06/czech-startup-waypoint-ai-raises-e2-7-million-to-deploy-ai-powered-support-engineer/
+C151,Gi21 Capital,,,unknown,vc,0,1,,,evidence,2,https://www.eu-startups.com/2026/05/pragues-zerops-raises-e1-7-million-to-close-the-gap-between-development-and-production-in-cloud-infrastructure/
+C152,FORWARD.one,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2026/04/czech-startup-edmund-raises-e2-5-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance/
+C153,University2Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2026/04/czech-startup-edmund-raises-e2-5-million-to-expand-its-ai-debugging-platform-for-industrial-maintenance/
+C154,DTCP,,,other,pe,0,1,,,skip:foreign_hq,1,https://cc.cz/i-cesko-ma-miliardoveho-ai-sampiona-startupovy-pionyr-nabral-se-svou-firmou-dalsich-600-milionu/
+C155,Google Ventures,,,unknown,cvc,0,1,,,evidence,1,https://cc.cz/i-cesko-ma-miliardoveho-ai-sampiona-startupovy-pionyr-nabral-se-svou-firmou-dalsich-600-milionu/
+C156,Experian,,,unknown,cvc,0,1,,,evidence,1,https://cc.cz/i-cesko-ma-miliardoveho-ai-sampiona-startupovy-pionyr-nabral-se-svou-firmou-dalsich-600-milionu/
+C157,Category Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C158,Long Journey Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C159,10VC,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C160,N1 Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C161,Plug and Play Tech Center,,,unknown,accelerator,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C162,Breakwater VC,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C163,Caesar VC,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C164,BD Partners,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C165,Preston-Werner Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cesky-startup-byvaleho-inzenyra-v-nvidii-a-googlu-ziskal-160-milionu-na-ai-pro-zvladani-byrokracie/
+C166,European Bank for Reconstruction and Development (EBRD),,,unknown,public_vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/06/prague-based-rohlik-group-secures-e160-million-to-expand-its-food-retail-tech-in-dach-and-cee-markets/
+C167,Sofina,,,unknown,unknown,0,1,,,evidence,1,https://www.eu-startups.com/2024/06/prague-based-rohlik-group-secures-e160-million-to-expand-its-food-retail-tech-in-dach-and-cee-markets/
+C168,Index Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/06/prague-based-rohlik-group-secures-e160-million-to-expand-its-food-retail-tech-in-dach-and-cee-markets/
+C169,Quadrille,,,unknown,unknown,0,1,,,evidence,1,https://www.eu-startups.com/2024/06/prague-based-rohlik-group-secures-e160-million-to-expand-its-food-retail-tech-in-dach-and-cee-markets/
+C170,TCF Capital,,,unknown,unknown,0,1,,,evidence,1,https://www.eu-startups.com/2024/06/prague-based-rohlik-group-secures-e160-million-to-expand-its-food-retail-tech-in-dach-and-cee-markets/
+C171,European Investment Bank (EIB),,,unknown,public_vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/06/prague-based-rohlik-group-secures-e160-million-to-expand-its-food-retail-tech-in-dach-and-cee-markets/
+C172,JIC Ventures,,,unknown,vc,0,1,,,evidence,2,https://forbes.cz/jic-ventures-investuje-do-faceup-cesky-startup-ziskal-pres-110-milionu-korun-na-globalni-expanzi/
+C173,Creandum,,,unknown,vc,0,1,,,evidence,1,https://therecursive.com/equilibre-technologies-raises-series-a-at-eur438m-valuation-to-scale-ai-trading-agents
+C174,Impact Ventures,,,other,vc,0,1,,,skip:foreign_hq,1,https://www.eu-startups.com/2024/01/prague-based-hedepy-gets-e1-75-million-to-spread-online-psychotherapy-around-the-world/
+C175,AspectWorks Group,,,unknown,cvc,0,1,,,evidence,1,https://www.eu-startups.com/2024/01/prague-based-hedepy-gets-e1-75-million-to-spread-online-psychotherapy-around-the-world/
+C176,Kaya Ventures,,,unknown,vc,0,1,,,evidence,1,https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/
+C177,Inovia Capital,,,other,vc,0,1,,,skip:foreign_hq,1,https://cc.cz/ceska-umela-inteligence-pise-za-psychoterapeuty-poznamky-ze-sezeni-od-investoru-nabrala-pres-70-milionu/
+C178,Středočeské inovační centrum,,,CZ,public_vc,0,1,,,evidence,1,https://www.lupa.cz/aktuality/cech-hodla-s-ai-namlouvat-audioknihy-pro-svetove-vydavatele-s-novymi-miliony-to-chce-zkusit-z-ameriky
+C179,Bond Ventures,,,other,vc,0,1,,,skip:foreign_hq,1,https://www.lupa.cz/aktuality/cech-hodla-s-ai-namlouvat-audioknihy-pro-svetove-vydavatele-s-novymi-miliony-to-chce-zkusit-z-ameriky
+C180,EQT Ventures,,,unknown,vc,0,1,,,evidence,1,https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/
+C181,Wing VC,,,unknown,vc,0,1,,,evidence,1,https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/
+C182,Y Combinator,,,unknown,accelerator,0,1,,,evidence,1,https://tech.eu/2025/09/30/supernova-raises-92-million-series-a-to-bring-ai-powered-vibe-coding-to-enterprise-product-teams/
+C183,Genesis Growth Equity Fund I,,,unknown,pe,0,1,,,evidence,1,https://www.eu-startups.com/2024/08/prague-based-bookbot-gets-e4-million-to-expand-second-hand-online-bookstore-in-dach-market/
+C184,Miton,,,unknown,unknown,0,1,,,evidence,1,https://www.eu-startups.com/2024/08/prague-based-bookbot-gets-e4-million-to-expand-second-hand-online-bookstore-in-dach-market/
+C185,Jet Ventures,,,CZ,vc,0,1,,,evidence,1,https://siliconcanals.com/slovakia-cequence-secures-2m/
+C186,Look AI Ventures,,,CZ,unknown,0,1,,,evidence,1,https://siliconcanals.com/slovakia-cequence-secures-2m/
+C187,Zero One Hundred,,,unknown,vc,0,1,,,evidence,1,https://en.ain.ua/2025/03/14/slovak-fintech-vestberry-secures-eur22m
+C188,KPN Ventures,,,other,cvc,0,1,,,skip:foreign_hq,1,https://www.eu-startups.com/2024/01/bratislava-based-cloudtalk-raised-e25-million-series-b-to-lead-the-new-era-of-ai-powered-voice-communication/
+C189,Lead Ventures,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/01/bratislava-based-cloudtalk-raised-e25-million-series-b-to-lead-the-new-era-of-ai-powered-voice-communication/
+C190,Point Nine Capital,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/01/bratislava-based-cloudtalk-raised-e25-million-series-b-to-lead-the-new-era-of-ai-powered-voice-communication/
+C191,henQ,,,unknown,vc,0,1,,,evidence,1,https://www.eu-startups.com/2024/01/bratislava-based-cloudtalk-raised-e25-million-series-b-to-lead-the-new-era-of-ai-powered-voice-communication/
+C192,European Innovation Council,,,unknown,public_vc,0,1,,,evidence,1,https://en.ain.ua/2024/03/04/powerful-medical-receives-7-5m-from-eic
+C193,Token Ventures,,,unknown,vc,0,1,,,evidence,1,https://sita.sk/blockmate-ziskal-investiciu-vo-vyske-15-miliona-eur-polovicu-tejto-sumy-poskytne-seed-starter-slovenskej-a-ceskej-sporitelne/
+C194,BADideas.fund,,,unknown,vc,0,1,,,evidence,1,https://sita.sk/blockmate-ziskal-investiciu-vo-vyske-15-miliona-eur-polovicu-tejto-sumy-poskytne-seed-starter-slovenskej-a-ceskej-sporitelne/
+C195,ZAKA Ventures,,,unknown,vc,0,1,,,evidence,1,https://sita.sk/blockmate-ziskal-investiciu-vo-vyske-15-miliona-eur-polovicu-tejto-sumy-poskytne-seed-starter-slovenskej-a-ceskej-sporitelne/
+C196,Diaspora Ventures,,,other,vc,0,1,,,skip:foreign_hq,1,https://sita.sk/blockmate-ziskal-investiciu-vo-vyske-15-miliona-eur-polovicu-tejto-sumy-poskytne-seed-starter-slovenskej-a-ceskej-sporitelne/
+C197,Rockaway Ventures,"Rockaway Ventures Fund SICAV a.s., podfond I",,CZ,"vc,unknown",0,1,name_only,75163225,evidence,2,https://www.startitup.sk/bratislavski-inovatori-postavili-stroj-na-vyrobu-pozornosti-idu-dobyt-trh-v-usa-investori-im-posielaju-pol-miliona-eur/
+C198,Czech Founders VC,,,CZ,vc,0,1,,,evidence,1,https://www.startitup.sk/bratislavski-inovatori-postavili-stroj-na-vyrobu-pozornosti-idu-dobyt-trh-v-usa-investori-im-posielaju-pol-miliona-eur/
+C199,Uroboros Ventures s.r.o.,,,CZ,unknown,0,0,name_only,24808016,evidence,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016
+C200,Tech Ventures s.r.o.,,,CZ,unknown,0,0,name_only,07922345,evidence,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345
+C201,MADU VENTURES s.r.o.,,,CZ,unknown,0,0,name_only,17676011,evidence,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17676011
+C202,Fortress Ventures a.s.,,,CZ,unknown,0,0,name_only,26024039,evidence,1,https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26024039
+C203,"P.S. Capital Group, s.r.o.",,,SK,unknown,0,0,name_only,46967036,evidence,1,https://api.statistics.sk/rpo/v1/entity/264707
+C204,"CEC Capital SK, s.r.o.",,,SK,unknown,0,0,name_only,35897635,evidence,1,https://api.statistics.sk/rpo/v1/entity/244850
+C205,Grbi One s.r.o.,,,SK,unknown,0,0,name_only,44556471,evidence,1,https://api.statistics.sk/rpo/v1/entity/200350
+C206,"E.S. invest, s. r. o.",,,SK,unknown,0,0,name_only,43875408,evidence,1,https://api.statistics.sk/rpo/v1/entity/198718
