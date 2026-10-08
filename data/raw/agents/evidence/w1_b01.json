@@ -1,0 +1,232 @@
+[
+  {
+    "candidate_id": "C026",
+    "website": "https://www.mideuropa.com/",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "offices in Warsaw, London, Bucharest, Luxembourg, and Guernsey",
+      "source_url": "https://www.mideuropa.com/about",
+      "quote": "We are one 50-strong team with offices in Warsaw, London, Bucharest, Luxembourg, and Guernsey,",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity",
+      "source_url": "https://www.mideuropa.com/about",
+      "quote": "MidEuropa pioneered private equity in the region in 1999",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": []
+  },
+  {
+    "candidate_id": "C185",
+    "website": null,
+    "identity": [
+      {
+        "value": {"legal_name": "Jet Investment, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Jet Investment, a.s.",
+        "source_url": "https://www.jetinvestment.cz",
+        "quote": "Jet Investment, a.s.",
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Brno-střed, Pisárky",
+      "source_url": "https://www.jetinvestment.cz",
+      "quote": "634 00 Brno-střed, Pisárky",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture kapitálového fondu",
+      "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/",
+      "quote": "Tak shrnuje Kamil Levinský první rok fungování Jet Venture 1, venture kapitálového fondu investiční skupiny Jet Investment.",
+      "published_date": "2025-12-18",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Cequence", "date": "2025-06-12", "round": "seed", "amount": "42 milionů korun"},
+        "value_text": "42 milionů korun",
+        "source_url": "https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/",
+        "quote": "Hlavním investorem aktuálního, tzv. seed kola je fond Jet Investment brněnského miliardáře Igora Faita, který přispěl částkou 42 milionů korun.",
+        "published_date": "2025-06-12",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Partory", "date": "2024-09-28", "round": "unknown", "amount": null},
+        "value_text": "do společnosti Partory",
+        "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/",
+        "quote": "A rovnou ohlašují i první investici – do společnosti Partory.",
+        "published_date": "2024-09-28",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Jet Venture 1", "size": "50 milionů eur", "currency": "EUR", "vintage": null},
+        "value_text": "Cílová velikost fondu je 50 milionů eur.",
+        "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/",
+        "quote": "Cílová velikost fondu je 50 milionů eur.",
+        "published_date": "2025-12-18",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["website", "ticket", "total_capital", "sectors", "stages"],
+    "early_exit": null,
+    "search_log": [
+      "Jet Ventures venture capital investor Czech",
+      "Jet Ventures Jet Investment official website team Levinský",
+      "jetventures.cz Jet Ventures venture capital",
+      "Cequence Jet Venture 1 investice 42 milionů"
+    ]
+  },
+  {
+    "candidate_id": "C005",
+    "website": "https://www.ecovis.com/czech-republic/",
+    "identity": [
+      {
+        "value": {"legal_name": "ECOVIS Corporate Finance CZ s.r.o.", "company_id": null, "country": "CZ"},
+        "value_text": "ECOVIS Corporate Finance CZ s.r.o.",
+        "source_url": "https://www.ecovis.com/czech-republic/",
+        "quote": "ECOVIS Corporate Finance CZ s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague",
+      "source_url": "https://www.ecovis.com/czech-republic/contact/",
+      "quote": "110 00 Prague",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "Corporate Finance Advisory",
+      "source_url": "https://www.ecovis.com/czech-republic/",
+      "quote": "Corporate Finance Advisory (ECOVIS Corporate Finance CZ s.r.o.)",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "only advises (M&A and transaction advisory)",
+        "value_text": "Corporate Finance Advisory",
+        "source_url": "https://www.ecovis.com/czech-republic/",
+        "quote": "Corporate Finance Advisory (ECOVIS Corporate Finance CZ s.r.o.)",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Ecovis Corporate Finance CZ transakce investor M&A poradenství",
+      "Ecovis Corporate Finance CZ investice do firmy vlastní podíl investor",
+      "ECOVIS Corporate Finance CZ portfolio equity stake acquired own investment",
+      "ECOVIS Corporate Finance CZ investice do startupu"
+    ]
+  },
+  {
+    "candidate_id": "C126",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Montward s.r.o. investice fond",
+      "Montward investor",
+      "Montward Praha společnost",
+      "Montward fond investice do startupů",
+      "Montward venture capital Central Europe fund",
+      "Montward Capital investice"
+    ]
+  },
+  {
+    "candidate_id": "C203",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "P.S. Capital Group s.r.o. investice",
+      "\"PS Capital Group\" Czech investment company",
+      "\"PS Capital Group\" s.r.o.",
+      "PS Capital Group investor startup investice podíl",
+      "PS Capital Group Czech venture fund portfolio company",
+      "P.S. Capital Group investice do firem"
+    ]
+  }
+]

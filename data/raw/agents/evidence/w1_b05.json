@@ -1,0 +1,276 @@
+[
+  {
+    "candidate_id": "C201",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "MADU VENTURES s.r.o. investice",
+      "MADU ventures s.r.o. Czech venture capital firm website",
+      "MADU ventures investícia startup kolo financovania",
+      "\"Madu Ventures\" investor",
+      "MADU VENTURES s.r.o. startup investuje"
+    ]
+  },
+  {
+    "candidate_id": "C191",
+    "website": "https://henq.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Amsterdam-based",
+      "source_url": "https://tech.eu/2020/05/27/henq-4/",
+      "quote": "Amsterdam-based venture capital firm henQ has launched its fourth fund, henQ 4, with a first close of €70 million.",
+      "published_date": "2020-05-27",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital fund",
+      "source_url": "https://henq.vc",
+      "quote": "We're henQ, the venture capital fund for B2B startups.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": {
+      "value": ["enterprise_saas"],
+      "value_text": "B2B software companies",
+      "source_url": "https://tech.eu/2020/05/27/henq-4/",
+      "quote": "The Dutch VC typically leads pre-seed to Series A rounds in B2B software companies across Europe.",
+      "published_date": "2020-05-27",
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed", "series_a"],
+      "value_text": "pre-seed to Series A",
+      "source_url": "https://tech.eu/2020/05/27/henq-4/",
+      "quote": "The Dutch VC typically leads pre-seed to Series A rounds in B2B software companies across Europe.",
+      "published_date": "2020-05-27",
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": null, "max": "€10M", "currency": "EUR"},
+      "value_text": "initial tickets up to €10M",
+      "source_url": "https://henq.vc",
+      "quote": "We back the best European founders with initial tickets up to €10M.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "henQ 4", "size": "€70 million", "currency": "EUR", "vintage": "2020"},
+        "value_text": "henQ 4, with a first close of €70 million",
+        "source_url": "https://tech.eu/2020/05/27/henq-4/",
+        "quote": "Amsterdam-based venture capital firm henQ has launched its fourth fund, henQ 4, with a first close of €70 million.",
+        "published_date": "2020-05-27",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "henQ 3", "size": "€48 million", "currency": "EUR", "vintage": null},
+        "value_text": "€48 million",
+        "source_url": "https://tech.eu/2020/05/27/henq-4/",
+        "quote": "henQ 3 (which landed at €48 million)",
+        "published_date": "2020-05-27",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "total_capital"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "henQ investor startup",
+      "henQ venture capital led funding round 2025 B2B startup",
+      "henQ Amsterdam venture capital B2B fonds kantoor"
+    ]
+  },
+  {
+    "candidate_id": "C202",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Fortress Ventures a.s. investice",
+      "\"Fortress Ventures\" Slovensko OR Česko venture",
+      "fortressventures.sk OR fortressventures.cz startup investor",
+      "\"Fortress Ventures\" a.s. startup fond investícia Bratislava Praha",
+      "\"Fortress Ventures\" fund portfolio startup investment 2024 2025"
+    ]
+  },
+  {
+    "candidate_id": "C097",
+    "website": "https://fondfit.sk",
+    "identity": [],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Trnavská cesta 100, 821 01 Bratislava",
+      "source_url": "https://fondfit.sk",
+      "quote": "Trnavská cesta 100, 821 01 Bratislava",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc", "public_vc"],
+      "value_text": "formou venture kapitálu",
+      "source_url": "https://www.podnikajte.sk/investor/fit-fond-financovanie",
+      "quote": "Jeho poslaním je formou venture kapitálu podporovať a rozvíjať podnikanie, zamestnanosť a inovatívnu ekonomiku.",
+      "published_date": "2014-09-22",
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "Datamolino", "date": "2014", "round": "unknown", "amount": "500 000 eur"},
+        "value_text": "FIT doň investoval 500 000 eur.",
+        "source_url": "https://www.podnikajte.sk/investor/fit-fond-financovanie",
+        "quote": "FIT doň investoval 500 000 eur.",
+        "published_date": "2014-09-22",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Bitmap Galaxy", "date": "2015-06", "round": "unknown", "amount": null},
+        "value_text": "herné štúdiá Bitmap Galaxy a Joint Custody",
+        "source_url": "https://www.startitup.sk/fondfit-oznamuje-dalsie-investicie-obe-do-hernehobiznisu/",
+        "quote": "Fond inovácií a technológií sa tento krát rozhodol podporiť a investovať do ďalších dvoch inovatívnych projektov, ktorými sa stali herné štúdiá Bitmap Galaxy a Joint Custody.",
+        "published_date": "2015-06-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Joint Custody", "date": "2015-06", "round": "unknown", "amount": null},
+        "value_text": "herné štúdiá Bitmap Galaxy a Joint Custody",
+        "source_url": "https://www.startitup.sk/fondfit-oznamuje-dalsie-investicie-obe-do-hernehobiznisu/",
+        "quote": "Fond inovácií a technológií sa tento krát rozhodol podporiť a investovať do ďalších dvoch inovatívnych projektov, ktorými sa stali herné štúdiá Bitmap Galaxy a Joint Custody.",
+        "published_date": "2015-06-30",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "naprieč všetkými oblasťami hospodárstva",
+      "source_url": "https://www.startitup.sk/fondfit-oznamuje-dalsie-investicie-obe-do-hernehobiznisu/",
+      "quote": "Naším cieľom je investovať do inovatívnych slovenských spoločností naprieč všetkými oblasťami hospodárstva.",
+      "published_date": "2015-06-30",
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "20 000", "max": "1 500 000", "currency": "EUR"},
+      "value_text": "od 20 000 do 1 500 000 eur",
+      "source_url": "https://www.podnikajte.sk/investor/fit-fond-financovanie",
+      "quote": "Fond poskytuje investície od 20 000 do 1 500 000 eur, no mladým podnikateľom ponúka okrem kapitálu aj mentoring.",
+      "published_date": "2014-09-22",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "latest verified investment announced in 2015; no newer investments found in the sources checked",
+        "value_text": "FONDFIT oznamuje ďalšie investície",
+        "source_url": "https://www.startitup.sk/fondfit-oznamuje-dalsie-investicie-obe-do-hernehobiznisu/",
+        "quote": "FONDFIT oznamuje ďalšie investície. Obe do herného biznisu!",
+        "published_date": "2015-06-30",
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "stages", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Fond inovácií a technológií investície",
+      "Fond inovácií a technológií Bratislava fond FIT webová stránka",
+      "Fond FIT investícia Elearn.Aero Futureplastix Trigen COGNEXA DATAMOLINO",
+      "Fond FIT Neuroconsan investícia",
+      "Neuroconsan Fond FIT Slovakia funding round"
+    ]
+  },
+  {
+    "candidate_id": "C105",
+    "website": "https://asbgroup.eu/en/",
+    "identity": [],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "811 01 Bratislava, Slovensko",
+      "source_url": "https://asbgroup.eu/en/contact/",
+      "quote": "811 01 Bratislava, Slovensko",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "professional services provider",
+      "source_url": "https://asbgroup.eu/en/",
+      "quote": "ASB Group is a professional services provider, delivering integrated support across accounting, tax advisory,",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "only advisory and professional services; no investments into companies found",
+        "value_text": "professional services provider",
+        "source_url": "https://asbgroup.eu/en/",
+        "quote": "ASB Group is a professional services provider, delivering integrated support across accounting, tax advisory,",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "ASB Slovakia investície",
+      "ASB Slovakia s.r.o. Bratislava ASB Group official website",
+      "ASB Group investment own account fund acquired stake company Slovakia"
+    ]
+  }
+]

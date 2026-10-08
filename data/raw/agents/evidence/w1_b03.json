@@ -1,0 +1,301 @@
+[
+  {
+    "candidate_id": "C143",
+    "website": "https://n1.rocks",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague",
+      "source_url": "https://n1.rocks",
+      "quote": "Národní 135/14, Prague 1",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "early-stage VC",
+      "source_url": "https://n1.rocks",
+      "quote": "An operator-led early-stage VC with one foot in Europe and the other in San Francisco",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Liki24", "date": "2025-07", "round": "series_a", "amount": null},
+        "value_text": "N1 Ventures",
+        "source_url": "https://startuprise.co.uk/ukraine-liki24-secures-9-million-in-series-a-round-to-expand-health-marketplace-across-europe/",
+        "quote": "Investors in this round include u.ventures, TA Ventures, iClub, N1 Ventures, SID Venture Partners,",
+        "published_date": "2025-07-03",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["ai_data", "health_digital"],
+      "value_text": "AI, healthtech, and frontier tech",
+      "source_url": "https://n1.rocks",
+      "quote": "N1 Ventures is an early-stage VC partnering with bold founders in AI, healthtech, and frontier tech.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "value_text": "pre-seed round",
+      "source_url": "https://n1.rocks",
+      "quote": "That's when we raised our pre-seed round and brought N1 on board.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "$60M", "currency": "USD", "capital_type": "aum", "as_of": null},
+      "value_text": "$60M",
+      "source_url": "https://n1.rocks",
+      "quote": "Today, we manage $60M across two funds focused on AI and healthcare.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "N1 Ventures U-Tech", "size": null, "currency": null, "vintage": null},
+        "value_text": "N1 Ventures U-Tech",
+        "source_url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+        "quote": "Fond N1 Ventures U-Tech má za sebou svou první investici, další tři teď dokončuje.",
+        "published_date": "2025-05-28",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "N1 venture capital investment fund investor website",
+      "N1 VC Praha investice pre-seed kolo startup",
+      "Liki24 Series A 7,6 milionu eur N1 Ventures"
+    ]
+  },
+  {
+    "candidate_id": "C037",
+    "website": "https://www.accolade.eu",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["real_estate"],
+      "value_text": "průmyslových nemovitostí",
+      "source_url": "https://www.accolade.eu",
+      "quote": "Investujte s námi do průmyslových nemovitostí",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "only real estate",
+        "value_text": "průmyslových nemovitostí",
+        "source_url": "https://www.accolade.eu",
+        "quote": "Investujte s námi do průmyslových nemovitostí",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "ticket", "total_capital", "funds", "sectors", "stages", "investments"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Accolade Partners investice accolade.eu",
+      "Accolade investice do startupu firmy podíl fond kvalifikovaných investorů",
+      "Accolade Industrial Fund portfolio investment company stake startup acquisition",
+      "Accolade skupina investice do technologické firmy startup podíl akvizice"
+    ]
+  },
+  {
+    "candidate_id": "C094",
+    "website": "https://nrb.cz",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "headquartered in Prague",
+      "source_url": "https://nrb.cz/en/about-the-bank/",
+      "quote": "is headquartered in Prague and serves clients across the country.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["public_vc"],
+      "value_text": "Equity and quasi-equity",
+      "source_url": "https://nrb.cz/en/about-the-bank/",
+      "quote": "Equity and quasi-equity support is delivered through National Development Investment (NRI)",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Národní rozvojová investiční NRI investice",
+      "Národní rozvojový fond ČMZRB správce oficiální web nrf",
+      "Národní rozvojová investiční NRI podíl investice do firmy equity"
+    ]
+  },
+  {
+    "candidate_id": "C146",
+    "website": "https://www.purple-ventures.com",
+    "identity": [
+      {
+        "value": {"legal_name": "Purple Ventures s.r.o.", "company_id": "05775574", "country": "CZ"},
+        "value_text": "Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, ID no: 05775574",
+        "source_url": "https://www.purple-ventures.com",
+        "quote": "© 2025 Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, ID no: 05775574, member of Purple Holding",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Masarykova 26, 602 00 Brno",
+      "source_url": "https://www.purple-ventures.com",
+      "quote": "© 2025 Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, ID no: 05775574, member of Purple Holding",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "We are a venture capital fund",
+      "source_url": "https://www.purple-ventures.com",
+      "quote": "We are a venture capital fund investing into CEE+ tech-enabled innovations in pre-seed and seed stages.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Delta Green", "date": "2024-05", "round": "unknown", "amount": null},
+        "value_text": "Delta Green",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/",
+        "quote": "Vůbec první investice fondu putovala v květnu do českého projektu Delta Green",
+        "published_date": "2024-06-27",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "iVent Pro", "date": "2024", "round": "unknown", "amount": null},
+        "value_text": "iVent Pro",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/",
+        "quote": "Nejnovější investice Purple Ventures putuje do startupu iVent Pro",
+        "published_date": "2024-06-27",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Kilde", "date": "2025", "round": "unknown", "amount": null},
+        "value_text": "Kilde",
+        "source_url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676",
+        "quote": "Mezi ty nejnovější teď patří Kilde.",
+        "published_date": "2025-08-17",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "tech-enabled innovations",
+      "source_url": "https://www.purple-ventures.com",
+      "quote": "We are a venture capital fund investing into CEE+ tech-enabled innovations in pre-seed and seed stages.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "pre-seed and seed stages",
+      "source_url": "https://www.purple-ventures.com",
+      "quote": "We are a venture capital fund investing into CEE+ tech-enabled innovations in pre-seed and seed stages.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "€250k", "max": "€400k", "currency": "EUR"},
+      "value_text": "€250k to €400k initial ticket size",
+      "source_url": "https://www.purple-ventures.com",
+      "quote": "€250k to €400k initial ticket size, later follow-ons",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Purple Ventures 2", "size": "čtyřicet milionů eur", "currency": "EUR", "vintage": null},
+        "value_text": "čtyřicet milionů eur",
+        "source_url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676",
+        "quote": "Váš fond Purple Ventures 2 má objem čtyřicet milionů eur a cíl investovat do více než 50 startupů v období do roku 2028.",
+        "published_date": "2025-08-17",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Purple Ventures investice fond",
+      "Purple Ventures Brno oficiální web purple ventures fond startupy"
+    ]
+  },
+  {
+    "candidate_id": "C156",
+    "website": "https://experian.com/ventures",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["cvc"],
+      "value_text": "Corporate Venture Fund",
+      "source_url": "https://experian.com/ventures",
+      "quote": "Think traditional Corporate Venture Fund",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Palenca", "date": "2024-04", "round": "unknown", "amount": null},
+        "value_text": "Our investment in Palenca",
+        "source_url": "https://latamlist.com/?p=14861",
+        "quote": "Our investment in Palenca, a leader in income verification solutions, aligns with our principles,",
+        "published_date": "2024-04-05",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Experian ventures investments startups Czech Slovakia",
+      "Experian Ventures led funding round startup 2025",
+      "Palenca Series A led by Experian Ventures press release"
+    ]
+  }
+]

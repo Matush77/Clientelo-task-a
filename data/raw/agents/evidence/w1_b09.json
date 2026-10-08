@@ -1,0 +1,291 @@
+[
+  {
+    "candidate_id": "C157",
+    "website": "https://www.categoryvc.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "SF",
+      "source_url": "https://www.categoryvc.com",
+      "quote": "SF",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "at the earliest stages",
+      "source_url": "https://www.categoryvc.com",
+      "quote": "building ambitious AI applications at the earliest stages.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": {
+      "value": ["ai_data"],
+      "value_text": "AI applications",
+      "source_url": "https://www.categoryvc.com",
+      "quote": "building ambitious AI applications at the earliest stages.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "stages", "ticket", "total_capital", "funds", "investments"],
+    "early_exit": "foreign_hq",
+    "search_log": ["Category Ventures venture capital investor"]
+  },
+  {
+    "candidate_id": "C144",
+    "website": "https://www.reflexcapital.com",
+    "identity": [
+      {
+        "value": {"legal_name": "Reflex Capital SE", "company_id": null, "country": "CZ"},
+        "value_text": "Reflex Capital SE",
+        "source_url": "https://www.reflexcapital.com",
+        "quote": "Copyright © 2026 Reflex Capital SE",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 2",
+      "source_url": "https://www.reflexcapital.com",
+      "quote": "120 00 Praha 2",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture kapitálovém fondu Reflex Capital",
+      "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+      "quote": "Na takové transakce má Fryc společně se svými partnery ve venture kapitálovém fondu Reflex Capital i novou sílu.",
+      "published_date": "2023-12-22",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "TopMonks", "date": "2017-09-05", "round": "unknown", "amount": "35 milionů Kč"},
+        "value_text": "35 milionů Kč",
+        "source_url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/",
+        "quote": "České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje Fryce",
+        "published_date": "2017-09-05",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Leadspicker", "date": "2020-05-21", "round": "seed", "amount": "EUR2m"},
+        "value_text": "EUR2m",
+        "source_url": "https://globalprivatecapital.org/?p=22043",
+        "quote": "Reflex Capital and J&T Ventures have made a EUR2m (approximately USD2.2m) seed investment in Czech Republic-based AI-enabled scouting startup Leadspicker.",
+        "published_date": "2020-05-21",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": {
+      "value": {"min": "kolem jednoho milionu eur", "max": "ke hranici dvou milionů", "currency": "EUR"},
+      "value_text": "kolem jednoho milionu eur, někdy ke hranici dvou milionů",
+      "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+      "quote": "Fond obecně investuje částky kolem jednoho milionu eur, někdy ke hranici dvou milionů,",
+      "published_date": "2023-12-22",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "třetí fond", "size": "dvaadvacet milionů eur", "currency": "EUR", "vintage": null},
+        "value_text": "dvaadvacet milionů eur",
+        "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+        "quote": "Uzavřel svůj třetí fond o velikosti dvaadvacet milionů eur, tedy bezmála 540 milionů korun.",
+        "published_date": "2023-12-22",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Reflex 2", "size": "od 30 do 50 milionů eur", "currency": "EUR", "vintage": null},
+        "value_text": "od 30 do 50 milionů eur",
+        "source_url": "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+        "quote": "Reflex 2 by měl mít pro investice nejen do startupů nakonec od 30 do 50 milionů eur, v přepočtu tedy až 1,3 miliardy korun.",
+        "published_date": "2018-10-25",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["sectors", "stages", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Reflex Capital investor startup",
+      "Leadspicker Reflex Capital J&T Ventures seed round",
+      "Reflex Capital Ondřej Fryc investice startup 2025"
+    ]
+  },
+  {
+    "candidate_id": "C008",
+    "website": "https://www.trigea.cz",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 4 – Chodov",
+      "source_url": "https://www.trigea.cz",
+      "quote": "Praha 4 – Chodov",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["real_estate"],
+      "value_text": "nakupuje komerční budovy",
+      "source_url": "https://www.trigea.cz",
+      "quote": "Nemovitostní fond Trigea nakupuje komerční budovy v dobrých lokalitách.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "only real estate: buys commercial buildings",
+        "value_text": "nakupuje komerční budovy",
+        "source_url": "https://www.trigea.cz",
+        "quote": "Nemovitostní fond Trigea nakupuje komerční budovy v dobrých lokalitách.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Trigea nemovitostní fond investice",
+      "Trigea fond investuje do firem startup podíl akcie"
+    ]
+  },
+  {
+    "candidate_id": "C182",
+    "website": "https://www.ycombinator.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "San Francisco",
+      "source_url": "https://www.ycombinator.com",
+      "quote": "Throughout the batch, we host weekly meetups in San Francisco.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["accelerator"],
+      "value_text": "we invest $500k in a select group of startups",
+      "source_url": "https://www.ycombinator.com",
+      "quote": "Four times a year we invest $500k in a select group of startups.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": {
+      "value": {"min": "$500k", "max": "$500k", "currency": "USD"},
+      "value_text": "$500k",
+      "source_url": "https://www.ycombinator.com",
+      "quote": "Four times a year we invest $500k in a select group of startups.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "total_capital", "funds", "investments"],
+    "early_exit": "foreign_hq",
+    "search_log": []
+  },
+  {
+    "candidate_id": "C028",
+    "website": "https://www.orbitcapital.com",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prag",
+      "source_url": "https://www.startbase.de/news/orbit-capital-startet-zweiten-venture-debt-fonds-ueber-100-millionen-euro/",
+      "quote": "Prag, 17. Juni 2025",
+      "published_date": "2025-06-17",
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc", "lender"],
+      "value_text": "investing in scaleups",
+      "source_url": "https://www.unquote.com/cee/news/3027699/orbit-capital-aims-for-eur-200m-with-new-scaleup-fund",
+      "quote": "Orbit Capital, a Czech investment firm, is on the road to raise EUR 200m for its new fund investing in scaleups",
+      "published_date": "2022-08-31",
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "Preply", "date": "2022-07", "round": "unknown", "amount": "USD 8m"},
+        "value_text": "USD 8m",
+        "source_url": "https://www.unquote.com/cee/news/3027699/orbit-capital-aims-for-eur-200m-with-new-scaleup-fund",
+        "quote": "Most recently, Orbit Capital invested USD 8m into Preply",
+        "published_date": "2022-08-31",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": {
+      "value": {"min": "EUR 5m", "max": "EUR 10m", "currency": "EUR"},
+      "value_text": "EUR 5m to EUR 10m",
+      "source_url": "https://www.unquote.com/cee/news/3027699/orbit-capital-aims-for-eur-200m-with-new-scaleup-fund",
+      "quote": "The initial ticket size will range from EUR 5m to EUR 10m",
+      "published_date": "2022-08-31",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Orbit Growth SCSp", "size": "EUR 42m", "currency": "EUR", "vintage": null},
+        "value_text": "EUR 42m",
+        "source_url": "https://www.unquote.com/cee/news/3027699/orbit-capital-aims-for-eur-200m-with-new-scaleup-fund",
+        "quote": "The Luxembourg-domiciled Orbit Growth SCSp fund held a first close on EUR 42m last December",
+        "published_date": "2022-08-31",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "venture debt fund", "size": "EUR 35m", "currency": "EUR", "vintage": null},
+        "value_text": "EUR 35m",
+        "source_url": "https://www.unquote.com/cee/news/3027699/orbit-capital-aims-for-eur-200m-with-new-scaleup-fund",
+        "quote": "Orbit Capital also has a EUR 35m venture debt fund",
+        "published_date": "2022-08-31",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "venture debt fund", "size": "€107M", "currency": "EUR", "vintage": null},
+        "value_text": "€107M",
+        "source_url": "https://tech.eu/2026/07/02/orbit-capital-closes-eur107m-venture-debt-fund-for-cee-scaleups/",
+        "quote": "Orbit Capital closes €107M venture debt fund for CEE scaleups",
+        "published_date": "2026-07-02",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Orbit Capital growth equity scale-ups Czech Slovak fund",
+      "Orbit Capital led Series B growth equity investment CEE scaleup",
+      "Sloneek Series A Orbit Capital",
+      "Preply Series C Orbit Capital $8m"
+    ]
+  }
+]

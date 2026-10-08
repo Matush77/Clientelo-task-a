@@ -1,0 +1,207 @@
+[
+  {
+    "candidate_id": "C050",
+    "website": "https://www.corpin.net",
+    "identity": [
+      {
+        "value": {"legal_name": "CORPIN, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "CORPIN, a.s.",
+        "source_url": "https://www.corpin.net",
+        "quote": "CORPIN, a.s., Vodičkova 31, 110 00 Praha",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha",
+      "source_url": "https://www.corpin.net",
+      "quote": "CORPIN, a.s., Vodičkova 31, 110 00 Praha",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "trusted independent advisor",
+      "source_url": "https://www.corpin.net/en/about-us/",
+      "quote": "acts as a trusted independent advisor to family-owned companies, entrepreneurs, management teams, and investors",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "advice-only corporate finance firm, no investments into companies found",
+        "value_text": "thoughtful advice",
+        "source_url": "https://www.corpin.net/en/about-us/",
+        "quote": "We provide support with thoughtful advice when our clients contemplate or realise the sale or divestment of the business",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "CORPIN a.s. Praha investice podíl ve společnosti",
+      "CORPIN služby transakce investor poradenství",
+      "CORPIN akcionář podíl ve firmě portfolio investice"
+    ]
+  },
+  {
+    "candidate_id": "C004",
+    "website": "https://cf.patria.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "Patria Corporate Finance, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Patria Corporate Finance, a.s.",
+        "source_url": "https://cf.patria.cz",
+        "quote": "Patria Corporate Finance, a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 5",
+      "source_url": "https://cf.patria.cz",
+      "quote": "150 28 Praha 5",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "poradenská společnost v oblasti korporátních financí",
+      "source_url": "https://cf.patria.cz/o-nas",
+      "quote": "Patria byla založena v roce 1994 jako první poradenská společnost v oblasti korporátních financí v České republice.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "corporate finance / M&A advisor only, no investments into companies found",
+        "value_text": "poradenská společnost",
+        "source_url": "https://cf.patria.cz/o-nas",
+        "quote": "Patria byla založena v roce 1994 jako první poradenská společnost v oblasti korporátních financí v České republice.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Patria Corporate Finance investice podíl fond",
+      "Patria Corporate Finance služby transakce investice",
+      "Patria Corporate Finance portfolio investor stake fund"
+    ]
+  },
+  {
+    "candidate_id": "C141",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Taiwania Capital investment Czech Republic startup"
+    ]
+  },
+  {
+    "candidate_id": "C134",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "\"Slovak Capital Management\" a. s. investičná spoločnosť",
+      "Slovak Capital Management a.s. Bratislava",
+      "\"Slovak Capital Management\"",
+      "Slovak Capital Management a.s. investície do spoločností IČO",
+      "Slovak Capital Management o nás kontakt tím"
+    ]
+  },
+  {
+    "candidate_id": "C119",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Ments investiční společnost investice startup",
+      "Ments a.s. IČO sídlo",
+      "Ments investment company Prague venture fund portfolio",
+      "MENTS a.s. podíl ve společnosti investor",
+      "MENTS o nás kontakt investice do startupů"
+    ]
+  }
+]

@@ -1,0 +1,367 @@
+[
+  {
+    "candidate_id": "C033",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity",
+      "source_url": "https://cc.cz/opustil-korporace-a-investuje-do-it-prumyslu-i-vodiku-tomas-budnik-chce-ceskym-firmam-pomoct-ve-svete/",
+      "quote": "je orientovaný na private equity do IT a kybernetické bezpečnosti",
+      "published_date": "2021-12-21",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Aitcom", "date": "2020-12", "round": "unknown", "amount": null},
+        "value_text": "kupuje pardubickou společnost Aitcom",
+        "source_url": "https://www.e15.cz/byznys/technologie-a-media/thein-dal-investuje-kupuje-it-firmu-aitcom-a-podil-v-cross-network-intelligence-1376469",
+        "quote": "Fond J&T Thein podnikatele Tomáše Budníka a J&T Private Equity Group kupuje pardubickou společnost Aitcom",
+        "published_date": "2020-12-22",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Top Alulit", "date": "2024-01", "round": "unknown", "amount": null},
+        "value_text": "Akvizice Top Alulit",
+        "source_url": "https://cc.cz/investicni-skupina-thein-nekdejsiho-kellnerova-manazera-koupila-benesovskou-slevarnu-top-alulit/",
+        "quote": "Akvizice Top Alulit nám umožňuje zvýšit naši kapacitu a kompetence pro výrobu a zpracování.",
+        "published_date": "2024-01-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Síť", "date": "2020", "round": "unknown", "amount": null},
+        "value_text": "Thein koupil společnost Síť",
+        "source_url": "https://www.e15.cz/byznys/technologie-a-media/thein-dal-investuje-kupuje-it-firmu-aitcom-a-podil-v-cross-network-intelligence-1376469",
+        "quote": "Dříve v tomto roce Thein koupil společnost Síť, která byla s loňským obratem přes 500 milionů korun",
+        "published_date": "2020-12-22",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["cybersecurity"],
+      "value_text": "kybernetické bezpečnosti",
+      "source_url": "https://cc.cz/opustil-korporace-a-investuje-do-it-prumyslu-i-vodiku-tomas-budnik-chce-ceskym-firmam-pomoct-ve-svete/",
+      "quote": "je orientovaný na private equity do IT a kybernetické bezpečnosti",
+      "published_date": "2021-12-21",
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "přes 600 milionů korun", "currency": "CZK", "capital_type": "aum", "as_of": "2021-12-21"},
+      "value_text": "přes 600 milionů korun",
+      "source_url": "https://cc.cz/opustil-korporace-a-investuje-do-it-prumyslu-i-vodiku-tomas-budnik-chce-ceskym-firmam-pomoct-ve-svete/",
+      "quote": "přes 600 milionů korun",
+      "published_date": "2021-12-21",
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "J&T Thein SICAV", "size": null, "currency": null, "vintage": null},
+        "value_text": "Fond J&T Thein SICAV",
+        "source_url": "https://www.e15.cz/byznys/technologie-a-media/thein-dal-investuje-kupuje-it-firmu-aitcom-a-podil-v-cross-network-intelligence-1376469",
+        "quote": "Fond J&T Thein SICAV se zaměřuje na investice do společností v oblasti informačních a komunikačních technologií",
+        "published_date": "2020-12-22",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {
+        "value": "Industrial sub-fund reported to have lost investment fund status (headline only, article body not retrievable)",
+        "value_text": "Průmyslová větev přišla o status fondu",
+        "source_url": "https://forbes.cz/thein-tomase-budnika-resi-dalsi-problem-prumyslova-vetev-prisla-o-status-fondu/",
+        "quote": "Thein Tomáše Budníka řeší další problém. Průmyslová větev přišla o status fondu",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "stages", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "Thein investment fund Czech portfolio",
+      "Thein Tomáš Budník investiční skupina o nás kontakt",
+      "J&T Thein SICAV sídlo adresa Praha Thein Private Equity"
+    ]
+  },
+  {
+    "candidate_id": "C014",
+    "website": "https://depoventures.com",
+    "identity": [
+      {
+        "value": {"legal_name": "DEPO VENTURES s.r.o.", "company_id": null, "country": "CZ"},
+        "value_text": "DEPO VENTURES s.r.o.",
+        "source_url": "https://depoventures.com",
+        "quote": "DEPO VENTURES s.r.o. - All rights reserved",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague 7, Czech republic",
+      "source_url": "https://depoventures.com",
+      "quote": "Plynární 10 street, Prague 7, Czech republic",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital firm",
+      "source_url": "https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund",
+      "quote": "Prague-based venture capital firm DEPO Ventures announced the launch of its third angel fund.",
+      "published_date": "2022-10-10",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Kardi AI", "date": "2025-04", "round": "unknown", "amount": null},
+        "value_text": "DEPO Ventures",
+        "source_url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/",
+        "quote": "BrightCap Ventures, DEPO Ventures, and Garage Angels",
+        "published_date": "2025-04-28",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["defense_space", "fintech_insurtech", "industry_manufacturing", "cleantech_energy"],
+      "value_text": "Defence, Space,FinTech, Industry 4.0, Energy",
+      "source_url": "https://depoventures.com",
+      "quote": "Industry Defence, Space,FinTech, Industry 4.0, Energy",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "value_text": "Inception & Pre-seed",
+      "source_url": "https://depoventures.com",
+      "quote": "Stage Inception & Pre-seed",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "€250K", "max": "500K", "currency": "EUR"},
+      "value_text": "Ticket €250K - 500K",
+      "source_url": "https://depoventures.com",
+      "quote": "Ticket €250K - 500K",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "third angel fund", "size": "€20 million", "currency": "EUR", "vintage": "2022"},
+        "value_text": "aiming €20 million",
+        "source_url": "https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund",
+        "quote": "The new fund is aiming €20 million and is currently looking for investors",
+        "published_date": "2022-10-10",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "DEPO Ventures venture capital investments",
+      "DEPO Ventures SCSp Luxembourg fund team office",
+      "DEPO Ventures pre-seed round led 2025 startup raises",
+      "Kardi AI seed round DEPO Ventures investment press release",
+      "Plexo stablecoin startup Prague DEPO Ventures funding",
+      "Tapaya pre-seed DEPO Ventures 2026 raises",
+      "\"Tapaya Raises €1M Pre-Seed to Turn Any Device Into a Payment Terminal\""
+    ]
+  },
+  {
+    "candidate_id": "C145",
+    "website": "https://prestoventures.com",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague 1, Czech Republic",
+      "source_url": "https://prestoventures.com",
+      "quote": "110 00 Prague 1, Czech Republic",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "Venture kapitálové Presto Ventures",
+      "source_url": "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/",
+      "quote": "Venture kapitálové Presto Ventures patří mezi vůbec nejaktivnější startupové fondy u nás.",
+      "published_date": "2024-06-26",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Vidar Systems", "date": "2024-10", "round": "unknown", "amount": null},
+        "value_text": "Vidar Systems",
+        "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/",
+        "quote": "Vidar Systems : A tech firm specializing in portable AI-driven acoustic locating systems.",
+        "published_date": "2024-10-23",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Bavovna", "date": "2024-10", "round": "unknown", "amount": null},
+        "value_text": "Bavovna",
+        "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/",
+        "quote": "Bavovna : The US-Ukrainian team has developed a hybrid AI-driven navigation system",
+        "published_date": "2024-10-23",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Tur.ai", "date": "2024-10", "round": "unknown", "amount": null},
+        "value_text": "Tur.ai",
+        "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/",
+        "quote": "Tur.ai : A Dutch startup developing next-generation robotic process automation (RPA) for enterprises.",
+        "published_date": "2024-10-23",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "GoRamp", "date": "2022-06", "round": "unknown", "amount": null},
+        "value_text": "V GoRamp se významně podílí",
+        "source_url": "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/",
+        "quote": "V GoRamp se významně podílí na částce 1,5 milionu eur, kterou teď do firmy vložilo víc investorů.",
+        "published_date": "2022-06-23",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["defense_space"],
+      "value_text": "Security, defense, and aerospace.",
+      "source_url": "https://prestoventures.com",
+      "quote": "Security, defense, and aerospace.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["seed", "series_a"],
+      "value_text": "Seed TO SERIES A",
+      "source_url": "https://prestoventures.com",
+      "quote": "Seed TO SERIES A",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "€500k", "max": "€5M", "currency": "EUR"},
+      "value_text": "Tickets ranging from €500k to €5M",
+      "source_url": "https://prestoventures.com",
+      "quote": "Tickets ranging from €500k to €5M.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Fund I", "size": null, "currency": null, "vintage": null},
+        "value_text": "With its first fund",
+        "source_url": "https://en.ain.ua/2022/07/12/presto-ventures-launches-e30m-fund-to-support-cee-startups",
+        "quote": "With its first fund, Presto Ventures has invested in 15 startups",
+        "published_date": "2022-07-12",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Fund II", "size": "€30 million", "currency": "EUR", "vintage": "2022"},
+        "value_text": "Fund II, valued at €30 million",
+        "source_url": "https://en.ain.ua/2022/07/12/presto-ventures-launches-e30m-fund-to-support-cee-startups",
+        "quote": "Presto Ventures has launched Fund II, valued at €30 million.",
+        "published_date": "2022-07-12",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Presto Tech Horizons", "size": "150 miliony eur", "currency": "EUR", "vintage": "2024"},
+        "value_text": "Disponuje celkem 150 miliony eur",
+        "source_url": "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/",
+        "quote": "Disponuje celkem 150 miliony eur, v přepočtu 3,7 miliardy korun.",
+        "published_date": "2024-06-26",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Presto Ventures investiční fond investice startup",
+      "\"Presto Ventures\" venture capital investor",
+      "Presto Tech Horizons first investment startup defence seed round led by Presto Ventures",
+      "Occam Industries €3 million raise Presto Tech Horizons led TechCrunch"
+    ]
+  },
+  {
+    "candidate_id": "C110",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Danube Capital Advisors investment",
+      "\"Danube Capital Advisors\" fund startups Central Europe",
+      "DANUBE Capital Advisors s.r.o. Praha investice do firem",
+      "Danube Capital Advisors Czech private equity advisory website",
+      "\"Danube Capital\" investor round seed invested startup Slovakia Czech"
+    ]
+  },
+  {
+    "candidate_id": "C142",
+    "website": null,
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Hungarian VC Euroventures fund",
+      "source_url": "https://trendingtopics.eu/czech-startup-daytrip-secures-e6-1m",
+      "quote": "secured an investment of €6.14 million (CZK 150 million) in a Series A round led by the Hungarian VC Euroventures fund.",
+      "published_date": "2022-02-23",
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "Hungarian VC Euroventures fund",
+      "source_url": "https://trendingtopics.eu/czech-startup-daytrip-secures-e6-1m",
+      "quote": "secured an investment of €6.14 million (CZK 150 million) in a Series A round led by the Hungarian VC Euroventures fund.",
+      "published_date": "2022-02-23",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Daytrip", "date": "2022-02", "round": "series_a", "amount": null},
+        "value_text": "Series A round led by the Hungarian VC Euroventures fund",
+        "source_url": "https://trendingtopics.eu/czech-startup-daytrip-secures-e6-1m",
+        "quote": "secured an investment of €6.14 million (CZK 150 million) in a Series A round led by the Hungarian VC Euroventures fund.",
+        "published_date": "2022-02-23",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["website", "identity", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Euroventures venture capital investor",
+      "Euroventures fund startups Czech Slovakia invests seed",
+      "Euroventures Budapest press release investment round DATAPAO",
+      "Daytrip Series A Euroventures funding round Czech startup",
+      "Datapao Databricks Euroventures investment 2025 announcement"
+    ]
+  }
+]

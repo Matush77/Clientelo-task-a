@@ -1,0 +1,308 @@
+[
+  {
+    "candidate_id": "C095",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["public_vc"],
+      "value_text": "equity investments",
+      "source_url": "https://www.nrb.cz/en/nri-launches-ipo-fund-2025-program-to-support-capital-market-in-the-czech-republic/",
+      "quote": "will make equity investments as part of its investment process through the purchase of shares under the IPO",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "IPO fond 2025+", "size": "CZK 360 million", "currency": "CZK", "vintage": "2025"},
+        "value_text": "CZK 360 million",
+        "source_url": "https://www.nrb.cz/en/nri-launches-ipo-fund-2025-program-to-support-capital-market-in-the-czech-republic/",
+        "quote": "the total allocation of the programme until 2030 is approximately CZK 360 million",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": null}
+    ],
+    "not_found": ["identity", "hq_country", "investments", "sectors", "stages", "ticket", "total_capital"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "IPO fond 2025+ investiční fond",
+      "Národní rozvojová investiční IPO fond 2025+ investice akcie veřejná nabídka START Primoco",
+      "IPO fond 2025 NRI investice do emise akcií START 2026 fond koupil akcie"
+    ]
+  },
+  {
+    "candidate_id": "C021",
+    "website": "https://integralcapgroup.com/",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "hubs in London, Budapest, and Belgrade",
+      "source_url": "https://integralcapgroup.com/",
+      "quote": "We operate out of hubs in London, Budapest, and Belgrade.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity platform",
+      "source_url": "https://integralcapgroup.com/",
+      "quote": "the leading mid-market private equity platform in Central and Eastern Europe.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Integral Capital Group investments",
+      "Integral Capital Group Evolving Europe Principal Investments website team Central Eastern Europe"
+    ]
+  },
+  {
+    "candidate_id": "C019",
+    "website": "https://www.inibio.eu",
+    "identity": [
+      {
+        "value": {"legal_name": "Biotech Investments, s. r. o.", "company_id": null, "country": "CZ"},
+        "value_text": "Biotech Investments, s. r. o.",
+        "source_url": "https://www.inibio.eu",
+        "quote": "Biotech Investments, s. r. o.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 8, Czech Republic",
+      "source_url": "https://www.inibio.eu",
+      "quote": "Pobřežní 394/12, Praha 8, Czech Republic",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "VC funds",
+      "source_url": "https://www.inibio.eu",
+      "quote": "one of the very few VC funds in Europe focused exclusively on life science ventures",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Captain T Cell", "date": "2024-05-22", "round": "seed", "amount": null},
+        "value_text": "A syndicate of experienced life science investors including i&i Biotech Fund I SCSp",
+        "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round",
+        "quote": "A syndicate of experienced life science investors including i&i Biotech Fund I SCSp",
+        "published_date": "2024-05-22",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["life_sciences_medtech"],
+      "value_text": "focused exclusively on life science ventures",
+      "source_url": "https://www.inibio.eu",
+      "quote": "one of the very few VC funds in Europe focused exclusively on life science ventures",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "€0.5M", "max": "€2M", "currency": "EUR"},
+      "value_text": "between €0.5M and €2M",
+      "source_url": "https://www.inibio.eu",
+      "quote": "between €0.5M and €2M",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "i&i Biotech Fund I SCSp", "size": null, "currency": null, "vintage": null},
+        "value_text": "i&i Biotech Fund I SCSp",
+        "source_url": "https://www.inibio.eu",
+        "quote": "i&i Biotech Fund I SCSp",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["stages", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "i&i Biotech Fund investment round led seed Series A portfolio company 2025",
+      "Antiverse Series A 2026 €8 million i&i Biotech Fund",
+      "Theorema i&i Biotech Fund investment 2026 seed round",
+      "Antiverse Series A Soulmates Ventures press release i&i Biotech Fund",
+      "Captain T Cell €8.5 million seed round i&i Biotech Fund May 2024",
+      "\"i&i Biotech Fund I SCSp\" financing round 2025 press release seed",
+      "KyDo Therapeutics Announces €4.45 Million Seed Financing covalent-allosteric inhibitor platform"
+    ]
+  },
+  {
+    "candidate_id": "C023",
+    "website": "https://www.jetinvestment.cz/en",
+    "identity": [
+      {
+        "value": {"legal_name": "Jet Investment, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Jet Investment, a.s.",
+        "source_url": "https://www.jetinvestment.cz/en",
+        "quote": "Jet Investment, a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Pisárecká 271/13",
+      "source_url": "https://www.jetinvestment.cz/en",
+      "quote": "Pisárecká 271/13",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe", "vc", "real_estate"],
+      "value_text": "Private Equity, Real Estate, Venture Capital",
+      "source_url": "https://www.jetinvestment.cz/en",
+      "quote": "Private Equity, Real Estate, Venture Capital",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "AppNava", "date": "2026-09-17", "round": "unknown", "amount": "$1.8 Million"},
+        "value_text": "Jet Investment Invests $1.8 Million in U.S. Startup AppNava",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment Invests $1.8 Million in U.S. Startup AppNava, Which Focuses on Predictive Analytics",
+        "published_date": "2026-09-17",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Phantasma Labs", "date": "2026-09-01", "round": "unknown", "amount": "€2.1 Million"},
+        "value_text": "Jet Investment Announces €2.1 Million Investment in Berlin AI Startup Phantasma Labs",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment Announces €2.1 Million Investment in Berlin AI Startup Phantasma Labs",
+        "published_date": "2026-09-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "GigaScan", "date": "2026-08-26", "round": "unknown", "amount": "€2.1 million"},
+        "value_text": "Jet Investment invests €2.1 million in Swedish deep-tech company GigaScan",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment invests €2.1 million in Swedish deep-tech company GigaScan",
+        "published_date": "2026-08-26",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "DecisionRules", "date": "2026-06-23", "round": "unknown", "amount": "1,5 milionu eur"},
+        "value_text": "Český technologický startup DecisionRules získává investici ve výši 1,5 milionu eur",
+        "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/",
+        "quote": "Český technologický startup DecisionRules získává investici ve výši 1,5 milionu eur",
+        "published_date": "2026-06-23",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["ai_data"],
+      "value_text": "Berlin AI Startup",
+      "source_url": "https://www.jetinvestment.cz/en/news",
+      "quote": "Jet Investment Announces €2.1 Million Investment in Berlin AI Startup Phantasma Labs",
+      "published_date": "2026-09-01",
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "€ 700m+", "currency": "EUR", "capital_type": "aum", "as_of": null},
+      "value_text": "€ 700m+",
+      "source_url": "https://www.jetinvestment.cz/en",
+      "quote": "€ 700m+",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "Jet Venture 1", "size": null, "currency": null, "vintage": null},
+        "value_text": "Jet Venture 1",
+        "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/",
+        "quote": "komentuje výkonný ředitel fondu Jet Venture 1 Kamil Levinský",
+        "published_date": "2026-06-23",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["stages", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "Jet Investment DecisionRules 1,5 milionu eur investice"
+    ]
+  },
+  {
+    "candidate_id": "C076",
+    "website": "https://www.prkpartners.com",
+    "identity": [
+      {
+        "value": {"legal_name": "PRK Partners s.r.o. advokátní kancelář", "company_id": null, "country": "CZ"},
+        "value_text": "PRK Partners s.r.o. advokátní kancelář",
+        "source_url": "https://www.prkpartners.com",
+        "quote": "PRK Partners s.r.o. advokátní kancelář",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague office",
+      "source_url": "https://www.prkpartners.com",
+      "quote": "from our Prague office",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "legal advice",
+      "source_url": "https://www.prkpartners.com",
+      "quote": "PRK Partners provided comprehensive legal advice to the founders of NICEBOY s.r.o.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "only advises: law firm giving legal advice on transactions, no investment into companies found",
+        "value_text": "legal advice",
+        "source_url": "https://www.prkpartners.com",
+        "quote": "PRK Partners provided comprehensive legal advice to the founders of NICEBOY s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": null}
+    ],
+    "not_found": ["investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "PRK Partners investice podíl fond akcie",
+      "PRK Partners fund invests stake company shareholder investor",
+      "PRK Partners advokátní kancelář služby o nás fond investice",
+      "PRK Partners law firm Prague Bratislava investment fund client private equity advised 2026"
+    ]
+  }
+]

@@ -1,0 +1,403 @@
+[
+  {
+    "candidate_id": "C151",
+    "website": "https://gi21capital.com",
+    "identity": [],
+    "hq_country": {
+      "claim": {
+        "value_text": "Prague-based",
+        "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round",
+        "quote": "Led by Gi21 Capital, a Prague-based venture capital and private investment firm",
+        "published_date": "2026-05-18",
+        "derivation": "stated"
+      },
+      "value": "CZ"
+    },
+    "investor_type": {
+      "claim": {
+        "value_text": "venture capital and private investment firm",
+        "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round",
+        "quote": "Led by Gi21 Capital, a Prague-based venture capital and private investment firm",
+        "published_date": "2026-05-18",
+        "derivation": "stated"
+      },
+      "value": ["vc"]
+    },
+    "investments": [
+      {
+        "claim": {
+          "value_text": "Why We Invested in Hermetiq",
+          "source_url": "https://gi21capital.com/blog",
+          "quote": "Why We Invested in Hermetiq",
+          "published_date": "2026-08-27",
+          "derivation": "stated"
+        },
+        "value": {"company": "Hermetiq", "date": "2026-08-27", "round": "unknown", "amount": null}
+      },
+      {
+        "claim": {
+          "value_text": "Zerops Raises $2M Seed Round",
+          "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round",
+          "quote": "Zerops Raises $2M Seed Round",
+          "published_date": "2026-05-18",
+          "derivation": "stated"
+        },
+        "value": {"company": "Zerops", "date": "2026-05", "round": "seed", "amount": "$2M"}
+      },
+      {
+        "claim": {
+          "value_text": "Why We Invested in FaceUp: Bringing Safety and Integrity to Global Workplaces",
+          "source_url": "https://gi21capital.com/blog",
+          "quote": "Why We Invested in FaceUp: Bringing Safety and Integrity to Global Workplaces",
+          "published_date": "2026-05-21",
+          "derivation": "stated"
+        },
+        "value": {"company": "FaceUp", "date": "2026-05-21", "round": "unknown", "amount": null}
+      },
+      {
+        "claim": {
+          "value_text": "AI Meets Music Education: Why Gi21 is Investing in ArtMaster",
+          "source_url": "https://gi21capital.com/blog",
+          "quote": "AI Meets Music Education: Why Gi21 is Investing in ArtMaster",
+          "published_date": "2026-04-29",
+          "derivation": "stated"
+        },
+        "value": {"company": "ArtMaster", "date": "2026-04-29", "round": "unknown", "amount": null}
+      }
+    ],
+    "sectors": {
+      "claim": {
+        "value_text": "Deep Tech, B2B SaaS, AI",
+        "source_url": "https://gi21capital.com",
+        "quote": "Backing technical founders solving complex problems through Deep Tech, B2B SaaS, AI.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      "value": ["ai_data", "enterprise_saas"]
+    },
+    "stages": {
+      "claim": {
+        "value_text": "pre-Seed through growth stages",
+        "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round",
+        "quote": "Gi21 invests from pre-Seed through growth stages.",
+        "published_date": "2026-05-18",
+        "derivation": "stated"
+      },
+      "value": ["pre_seed", "seed", "series_a", "series_b_plus", "growth"]
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Gi21 Capital investment fund",
+      "Gi21 Capital Zerops seed investment",
+      "Gi21 Capital FaceUp Series A funding"
+    ]
+  },
+  {
+    "candidate_id": "C001",
+    "website": "https://www.fingood.cz",
+    "identity": [
+      {
+        "claim": {
+          "value_text": "Fingood s.r.o.",
+          "source_url": "https://www.fingood.cz",
+          "quote": "Fingood s.r.o.",
+          "published_date": null,
+          "derivation": "stated"
+        },
+        "value": {"legal_name": "Fingood s.r.o.", "company_id": null, "country": "CZ"}
+      },
+      {
+        "claim": {
+          "value_text": "IČO: 03328074",
+          "source_url": "https://www.fingood.cz",
+          "quote": "IČO: 03328074",
+          "published_date": null,
+          "derivation": "stated"
+        },
+        "value": {"legal_name": null, "company_id": "03328074", "country": "CZ"}
+      }
+    ],
+    "hq_country": {
+      "claim": {
+        "value_text": "Praha 8",
+        "source_url": "https://www.fingood.cz",
+        "quote": "Thámova 137/16, 186 00 Praha 8",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      "value": "CZ"
+    },
+    "investor_type": {
+      "claim": {
+        "value_text": "česká crowdfundingová platforma",
+        "source_url": "https://www.fingood.cz",
+        "quote": "Fingood je česká crowdfundingová platforma, která propojuje investory s podnikateli.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      "value": ["crowdfunding_platform"]
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "claim": {"value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"},
+        "value": "no investment found"
+      },
+      {
+        "claim": {
+          "value_text": "Firmy získají úvěr a splácí ho v měsíčních splátkách",
+          "source_url": "https://www.fingood.cz",
+          "quote": "Firmy získají úvěr a splácí ho v měsíčních splátkách",
+          "published_date": null,
+          "derivation": "stated"
+        },
+        "value": "lending model: investors fund loans repaid by companies in monthly instalments, not equity"
+      },
+      {
+        "claim": {
+          "value_text": "česká crowdfundingová platforma",
+          "source_url": "https://www.fingood.cz",
+          "quote": "Fingood je česká crowdfundingová platforma, která propojuje investory s podnikateli.",
+          "published_date": null,
+          "derivation": "stated"
+        },
+        "value": "only an intermediary: crowdfunding platform connecting investors with entrepreneurs"
+      }
+    ],
+    "not_found": ["sectors", "stages", "ticket", "total_capital", "funds", "investments"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Fingood s.r.o. fingood.cz investice"
+    ]
+  },
+  {
+    "candidate_id": "C159",
+    "website": "http://www.10vc.com/",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "claim": {
+        "value_text": "We invest in brilliant founders",
+        "source_url": "http://www.10vc.com/",
+        "quote": "We invest in brilliant founders building transformational platforms through breakthrough technologies at Pre-Seed stage.",
+        "published_date": null,
+        "derivation": "inferred"
+      },
+      "value": ["vc"]
+    },
+    "investments": [
+      {
+        "claim": {
+          "value_text": "Fenwick Represents BackOps in $42M Series B Funding",
+          "source_url": "https://www.fenwick.com/insights/experience/fenwick-represents-backops-42m-series-b-funding",
+          "quote": "Fenwick Represents BackOps in $42M Series B Funding",
+          "published_date": "2026-09-16",
+          "derivation": "stated"
+        },
+        "value": {"company": "BackOps", "date": "2026-09-16", "round": "series_b_plus", "amount": "$42M"}
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "claim": {
+        "value_text": "at Pre-Seed stage",
+        "source_url": "http://www.10vc.com/",
+        "quote": "We invest in brilliant founders building transformational platforms through breakthrough technologies at Pre-Seed stage.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      "value": ["pre_seed"]
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "sectors", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "10VC venture capital investments",
+      "10VC seed venture firm official website team contact",
+      "10VC Menlo Park-based venture firm led seed round",
+      "Cascade Bio seed round 10VC",
+      "Cascade Bio Endurance28 $2.8M seed round press release 10VC",
+      "BackOps Series A $26 million 10VC investors"
+    ]
+  },
+  {
+    "candidate_id": "C165",
+    "website": "https://www.pwv.com",
+    "identity": [
+      {
+        "claim": {
+          "value_text": "PWV Capital Management LLC",
+          "source_url": "https://www.pwv.com",
+          "quote": "© 2026 PWV Capital Management LLC",
+          "published_date": null,
+          "derivation": "stated"
+        },
+        "value": {"legal_name": "PWV Capital Management LLC", "company_id": null, "country": "other"}
+      }
+    ],
+    "hq_country": null,
+    "investor_type": {
+      "claim": {
+        "value_text": "PWV Fund I",
+        "source_url": "https://www.pwv.com/news/post-announcing-pwv-fund-i",
+        "quote": "Announcing PWV Fund I: Built by Founders. Backing What's Next.",
+        "published_date": null,
+        "derivation": "inferred"
+      },
+      "value": ["vc"]
+    },
+    "investments": [
+      {
+        "claim": {
+          "value_text": "has secured $2 million in a pre-seed funding round",
+          "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+          "quote": "Myriad AI, a US-based startup with Czech roots, has secured $2 million in a pre-seed funding round.",
+          "published_date": "2024-07-30",
+          "derivation": "stated"
+        },
+        "value": {"company": "Myriad AI", "date": "2024-07-30", "round": "pre_seed", "amount": "$2 million"}
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "claim": {
+          "value_text": "Announcing PWV Fund I",
+          "source_url": "https://www.pwv.com/news/post-announcing-pwv-fund-i",
+          "quote": "Announcing PWV Fund I: Built by Founders. Backing What's Next.",
+          "published_date": null,
+          "derivation": "stated"
+        },
+        "value": {"name": "PWV Fund I", "size": null, "currency": null, "vintage": null}
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["hq_country", "sectors", "stages", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Preston-Werner Ventures investments",
+      "Preston-Werner Ventures pwv.com portfolio announcement",
+      "Preston-Werner Ventures San Francisco-based led seed round 2026",
+      "Langbase seed round Preston-Werner Ventures announcement",
+      "Unkey seed round 2026 Preston-Werner Ventures"
+    ]
+  },
+  {
+    "candidate_id": "C027",
+    "website": "https://n1.rocks",
+    "identity": [],
+    "hq_country": {
+      "claim": {
+        "value_text": "Prague 1",
+        "source_url": "https://n1.rocks",
+        "quote": "Národní 135/14, Prague 1",
+        "published_date": "2026-06-20",
+        "derivation": "inferred"
+      },
+      "value": "CZ"
+    },
+    "investor_type": {
+      "claim": {
+        "value_text": "early-stage VC",
+        "source_url": "https://n1.rocks",
+        "quote": "N1 Ventures is an early-stage VC partnering with bold founders in AI, healthtech, and frontier tech.",
+        "published_date": "2026-06-20",
+        "derivation": "stated"
+      },
+      "value": ["vc"]
+    },
+    "investments": [
+      {
+        "claim": {
+          "value_text": "Český investiční fond N1 Ventures se zapojil do investice v americkém startupu Flick",
+          "source_url": "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/",
+          "quote": "Český investiční fond N1 Ventures se zapojil do investice v americkém startupu Flick",
+          "published_date": "2026-05-15",
+          "derivation": "stated"
+        },
+        "value": {"company": "Flick", "date": "2026-05-15", "round": "unknown", "amount": null}
+      },
+      {
+        "claim": {
+          "value_text": "has secured $2 million in a pre-seed funding round",
+          "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+          "quote": "Myriad AI, a US-based startup with Czech roots, has secured $2 million in a pre-seed funding round.",
+          "published_date": "2024-07-30",
+          "derivation": "stated"
+        },
+        "value": {"company": "Myriad AI", "date": "2024-07-30", "round": "pre_seed", "amount": "$2 million"}
+      }
+    ],
+    "sectors": {
+      "claim": {
+        "value_text": "AI, healthtech",
+        "source_url": "https://n1.rocks",
+        "quote": "N1 Ventures is an early-stage VC partnering with bold founders in AI, healthtech, and frontier tech.",
+        "published_date": "2026-06-20",
+        "derivation": "stated"
+      },
+      "value": ["ai_data", "health_digital"]
+    },
+    "stages": {
+      "claim": {
+        "value_text": "We invest from day zero",
+        "source_url": "https://n1.rocks",
+        "quote": "We invest from day zero and help teams scale globally across Europe and the US.",
+        "published_date": "2026-06-20",
+        "derivation": "inferred"
+      },
+      "value": ["pre_seed", "seed"]
+    },
+    "ticket": null,
+    "total_capital": {
+      "claim": {
+        "value_text": "we manage $60M across two funds",
+        "source_url": "https://n1.rocks",
+        "quote": "Today, we manage $60M across two funds focused on AI and healthcare.",
+        "published_date": "2026-06-20",
+        "derivation": "stated"
+      },
+      "value": {"amount": "$60M", "currency": "USD", "capital_type": "aum", "as_of": "2026-06-20"}
+    },
+    "funds": [
+      {
+        "claim": {
+          "value_text": "přibližně 10 milionů eur",
+          "source_url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+          "quote": "Nový fond chce v nejbližší době investovat do celkem 20 ukrajinských startupů přibližně 10 milionů eur,",
+          "published_date": "2025-05-28",
+          "derivation": "stated"
+        },
+        "value": {"name": "N1 Ventures U-Tech", "size": "přibližně 10 milionů eur", "currency": "EUR", "vintage": null}
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "Nation1 nation1.vc venture capital portfolio",
+      "N1 Ventures Prague seed round led by N1 2026",
+      "Myriad AI pre-seed round investors Nation 1 N1 Ventures",
+      "N1 Ventures U-Tech fund Nation 1 Fund size EUR",
+      "Flick Network seed round N1 Ventures 2026",
+      "Freya Novoflow seed round N1 Ventures November 2025",
+      "N1 Ventures investice seed kolo startup 2025 Marek Moravec"
+    ]
+  }
+]

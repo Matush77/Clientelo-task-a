@@ -1,0 +1,322 @@
+[
+  {
+    "candidate_id": "C180",
+    "website": "https://eqtgroup.com/private-capital/eqt-ventures",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Stockholm",
+      "source_url": "https://eqtgroup.com/news/eqt-ventures-iii-closes-europes-largest-venture-capital-fund-committed-to-early-stage-tech-startups-2022-11-09",
+      "quote": "Stockholm, 9 November 2022 –",
+      "published_date": "2022-11-09",
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital",
+      "source_url": "https://eqtgroup.com/news/eqt-ventures-iii-closes-europes-largest-venture-capital-fund-committed-to-early-stage-tech-startups-2022-11-09",
+      "quote": "EQT has closed Europe’s largest venture capital fund committed to early-stage tech startups.",
+      "published_date": "2022-11-09",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Supernova Studio", "date": "2019-05", "round": "unknown", "amount": null},
+        "value_text": "švédský fond EQT Ventures",
+        "source_url": "https://www.lupa.cz/aktuality/majitel-suse-a-nesetril-investuji-1-6-milionu-dolaru-do-ceskeho-supernova-studio/",
+        "quote": "Na investici se vedle Creda a zakladatele Apiary (koupeno Oraclem) Jakuba Nešetřila podílí také švédský fond EQT Ventures.",
+        "published_date": "2019-05-07",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "EQT Ventures III", "size": "EUR 1.1 billion", "currency": "EUR", "vintage": "2022"},
+        "value_text": "closed with total commitments of EUR 1.1 billion",
+        "source_url": "https://eqtgroup.com/news/eqt-ventures-iii-closes-europes-largest-venture-capital-fund-committed-to-early-stage-tech-startups-2022-11-09",
+        "quote": "EQT Ventures III (the “Fund” or “Ventures III”) closed with total commitments of EUR 1.1 billion",
+        "published_date": "2022-11-09",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "ticket", "total_capital"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "EQT Ventures headquarters Stockholm office",
+      "EQT Ventures investice do české startup společnosti Česko Slovensko"
+    ]
+  },
+  {
+    "candidate_id": "C091",
+    "website": "https://www.wood.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "WOOD & Company Financial Services, a. s.", "company_id": null, "country": "CZ"},
+        "value_text": "WOOD & Company Financial Services, a. s.",
+        "source_url": "https://www.wood.cz",
+        "quote": "WOOD & Company Financial Services, a. s., je regulovaná Českou národní bankou",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Nám. Republiky 1079/1a, 110 00 Praha",
+      "source_url": "https://www.wood.cz",
+      "quote": "Nám. Republiky 1079/1a, 110 00 Praha",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "investičního bankovnictví",
+      "source_url": "https://www.wood.cz",
+      "quote": "Už více než 35 let poskytujeme služby v oblasti investičního bankovnictví",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "CIB Rental, s.r.o.", "date": "2026-06", "round": "unknown", "amount": null},
+        "value_text": "has acquired a 100% stake in CIB Rental, s.r.o. from CIB Group",
+        "source_url": "https://www.oaklins.com/de/de/deals/111974/",
+        "quote": "has acquired a 100% stake in CIB Rental, s.r.o. from CIB Group",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "WOOD & Company Renewables podfond", "size": null, "currency": null, "vintage": null},
+        "value_text": "WOOD & Company Renewables podfond",
+        "source_url": "https://www.wood.cz",
+        "quote": "WOOD & Company Renewables podfond",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "WOOD & Company City – OPF", "size": null, "currency": null, "vintage": null},
+        "value_text": "WOOD & Company City – OPF has acquired CIB Rental",
+        "source_url": "https://www.oaklins.com/de/de/deals/111974/",
+        "quote": "WOOD & Company City – OPF has acquired CIB Rental",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["ticket", "total_capital", "stages", "sectors"],
+    "early_exit": null,
+    "search_log": [
+      "WOOD & Company investuje do společnosti podíl akvizice 2025",
+      "CIB Rental WOOD & Company City OPF byty Praha"
+    ]
+  },
+  {
+    "candidate_id": "C080",
+    "website": "https://www.rsj.com",
+    "identity": [
+      {
+        "value": {"legal_name": "RSJ s. r. o.", "company_id": null, "country": "CZ"},
+        "value_text": "RSJ s. r. o.",
+        "source_url": "https://www.rsj.com/en/contact",
+        "quote": "RSJ s. r. o.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "CZ 110 00 Praha 1",
+      "source_url": "https://www.rsj.com/en/contact",
+      "quote": "CZ 110 00 Praha 1",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["real_estate", "pe"],
+      "value_text": "portfolia investic v oblasti nemovitostí a private equity",
+      "source_url": "https://www.rsj.com",
+      "quote": "RSJ Investments obhospodařuje portfolia investic v oblasti nemovitostí a private equity.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Simply Fair Insurance", "date": "2020", "round": "unknown", "amount": null},
+        "value_text": "koupil podíl ve firmě Simply Fair Insurance",
+        "source_url": "https://ekonomickydenik.cz/podnikani-podivneho-reformatora-janecka-spekulativni-obchody-lithium-i-pojistovna/",
+        "quote": "koupil podíl ve firmě Simply Fair Insurance",
+        "published_date": "2021-11-22",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "RSJ PE Insurtech", "size": null, "currency": null, "vintage": null},
+        "value_text": "RSJ PE Insurtech is a sub-fund of the investment fund RSJ Investments SICAV a.s.",
+        "source_url": "https://rsj.com/en/investments/investments/insurtech",
+        "quote": "RSJ PE Insurtech is a sub-fund of the investment fund RSJ Investments SICAV a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["ticket", "total_capital", "stages", "sectors"],
+    "early_exit": null,
+    "search_log": [
+      "RSJ Investments private equity investice do společnosti podíl",
+      "Simply Fair Insurance Pillow RSJ PE SICAV podíl 80 procent",
+      "Pillow pojišťovna Simply Fair RSJ převod podílu ČNB schválila"
+    ]
+  },
+  {
+    "candidate_id": "C024",
+    "website": "https://www.kaya.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague, Thámova 183/11, 186 00",
+      "source_url": "https://www.kaya.vc",
+      "quote": "Prague, Thámova 183/11, 186 00",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "early-stage venture capital firm",
+      "source_url": "https://siliconcanals.com/better-stack-secures-9-1m/",
+      "quote": "KAYA, founded in 2010 in Prague, is an early-stage venture capital firm dedicated to supporting ambitious founders",
+      "published_date": "2024-01-22",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Better Stack", "date": "2024-01", "round": "unknown", "amount": "$10M"},
+        "value_text": "has secured an additional $10M (nearly €9.17M) in funding from European early-stage investor KAYA",
+        "source_url": "https://siliconcanals.com/better-stack-secures-9-1m/",
+        "quote": "has secured an additional $10M (nearly €9.17M) in funding from European early-stage investor KAYA",
+        "published_date": "2024-01-22",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "building at the frontier of digital, physical, and consumer economies",
+      "source_url": "https://www.kaya.vc",
+      "quote": "We support 60+ teams building at the frontier of digital, physical, and consumer economies.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed", "series_a"],
+      "value_text": "pre-seed through to meaningful scale",
+      "source_url": "https://www.kaya.vc",
+      "quote": "We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "ticket": {
+      "value": {"min": "$1", "max": "$3M", "currency": "USD"},
+      "value_text": "$1–3M Ticket",
+      "source_url": "https://www.kaya.vc",
+      "quote": "$1–3M Ticket",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": {
+      "value": {"amount": "$500M", "currency": "USD", "capital_type": "aum", "as_of": null},
+      "value_text": "$500M AUM Total",
+      "source_url": "https://www.kaya.vc",
+      "quote": "$500M AUM Total",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "ET3", "size": null, "currency": null, "vintage": null},
+        "value_text": "ET3 and ET4 subfunds are supported by InnovFin Equity",
+        "source_url": "https://www.kaya.vc",
+        "quote": "ET3 and ET4 subfunds are supported by InnovFin Equity",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "ET4", "size": null, "currency": null, "vintage": null},
+        "value_text": "ET3 and ET4 subfunds are supported by InnovFin Equity",
+        "source_url": "https://www.kaya.vc",
+        "quote": "ET3 and ET4 subfunds are supported by InnovFin Equity",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "funds_size"],
+    "early_exit": null,
+    "search_log": [
+      "KAYA VC fund Central Europe leads seed round Prague Warsaw 2025",
+      "\"led by KAYA\" seed round startup Czech Poland 2025",
+      "Riptides pre-seed round KAYA Budapest AI startup April 2025",
+      "Riptides raises pre-seed PortfoLion KAYA Hungary largest pre-seed round news"
+    ]
+  },
+  {
+    "candidate_id": "C035",
+    "website": "https://www.value4capital.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Warsaw, Poland",
+      "source_url": "https://www.value4capital.com",
+      "quote": "Warsaw, Poland",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "buyout and growth transactions",
+      "source_url": "https://www.value4capital.com",
+      "quote": "We invest between € 7 - 15 million in buyout and growth transactions.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": {
+      "value": ["growth", "buyout"],
+      "value_text": "buyout and growth transactions",
+      "source_url": "https://www.value4capital.com",
+      "quote": "We invest between € 7 - 15 million in buyout and growth transactions.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "€ 7", "max": "€ 15 million", "currency": "EUR"},
+      "value_text": "We invest between € 7 - 15 million",
+      "source_url": "https://www.value4capital.com",
+      "quote": "We invest between € 7 - 15 million in buyout and growth transactions.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Value4Capital V4C fund invests Central Europe acquires stake 2025"
+    ]
+  }
+]

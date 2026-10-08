@@ -1,0 +1,32 @@
+[
+  {
+    "candidate_id": "C027",
+    "name": "Nation1",
+    "other_names": [
+      "Nation 1"
+    ],
+    "known_website": "www.nation1.vc",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C080",
+    "name": "RSJ Investments",
+    "other_names": [],
+    "known_website": "www.rsj.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): RSJ Investments investiční společnost a.s., IČO 05357225"
+  },
+  {
+    "candidate_id": "C094",
+    "name": "Národní rozvojová investiční (NRI)",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C095",
+    "name": "IPO fond 2025+",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": null
+  }
+]

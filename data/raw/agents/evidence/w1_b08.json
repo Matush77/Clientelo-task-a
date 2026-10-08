@@ -1,0 +1,315 @@
+[
+  {
+    "candidate_id": "C011",
+    "website": "https://www.arxequity.com",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 1",
+      "source_url": "https://www.arxequity.com/contact/",
+      "quote": "110 00 Praha 1",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity firm",
+      "source_url": "https://www.direct4.me/news/details/direct4me-partners-with-arx-equity-partners",
+      "quote": "ARX Equity Partners is a private equity firm with an over 25-year track record",
+      "published_date": "2026-03-16",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Medicofit", "date": "2026-08-26", "round": "unknown", "amount": null},
+        "value_text": "Medicofit",
+        "source_url": "https://www.arxequity.com",
+        "quote": "ARX Equity Partners Acquires Majority Stake in Medicofit, Slovenia's Leading Private Physiotherapy Provider",
+        "published_date": "2026-08-26",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Direct4me, d.o.o.", "date": "2026-03-16", "round": "unknown", "amount": null},
+        "value_text": "Direct4me, d.o.o.",
+        "source_url": "https://www.direct4.me/news/details/direct4me-partners-with-arx-equity-partners",
+        "quote": "has become the lead investor and majority shareholder in Direct4me, d.o.o.",
+        "published_date": "2026-03-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "PROXY Holding a.s. (HLB PROXY)", "date": "2026-01-30", "round": "unknown", "amount": null},
+        "value_text": "HLB PROXY",
+        "source_url": "https://www.arxequity.com",
+        "quote": "ARX Equity Partners Acquires Majority Stake in HLB PROXY",
+        "published_date": "2026-01-30",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["buyout"],
+      "value_text": "Majority Stake",
+      "source_url": "https://www.arxequity.com",
+      "quote": "ARX Equity Partners Acquires Majority Stake in HLB PROXY",
+      "published_date": "2026-01-30",
+      "derivation": "inferred"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "ARX IV Fund", "size": null, "currency": null, "vintage": null},
+        "value_text": "ARX IV Fund",
+        "source_url": "https://www.arxequity.com",
+        "quote": "The ARX IV Fund benefits from the support of the European Union under the Equity Facility for Growth",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "ARX Equity Partners Direct4me investment",
+      "ARX Equity Partners HLB PROXY majority stake",
+      "ARX Equity Partners HLB PROXY akvizice většinový podíl",
+      "Direct4me ARX Equity Partners lead investor smart parcel lockers"
+    ]
+  },
+  {
+    "candidate_id": "C009",
+    "website": "https://www.agrofert.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "AGROFERT, a.s.", "company_id": "26185610", "country": "CZ"},
+        "value_text": "AGROFERT, a.s., IČO 26185610",
+        "source_url": "https://www.agrofert.cz",
+        "quote": "Toto jsou internetové stránky společnosti AGROFERT, a.s., IČO 26185610",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 4",
+      "source_url": "https://www.agrofert.cz",
+      "quote": "se sídlem na adrese Pyšelská 2327/2, Chodov, 149 00 Praha 4",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["group_holding"],
+      "value_text": "řídící společností",
+      "source_url": "https://www.agrofert.cz",
+      "quote": "Společnost AGROFERT, a.s., je členem (řídící společností) koncernu AGROFERT.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "OCI Ammonia Holding B.V.", "date": "2026-04", "round": "unknown", "amount": null},
+        "value_text": "OCI Ammonia Holding",
+        "source_url": "https://www.ceskenoviny.cz/zpravy/agrofert-koupil-nizozemskou-firmu-ktera-ma-v-rotterdamu-terminal-cpavku/2751689",
+        "quote": "Agrofert dokončil nákup nizozemské firmy OCI Ammonia Holding",
+        "published_date": "2026-04-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Maragro Group", "date": "2025-08", "round": "unknown", "amount": null},
+        "value_text": "Maragro",
+        "source_url": "https://www.e15.cz/byznys/agrofert-koupil-vetsinovy-podil-v-rumunske-skupine-maragro-1426578",
+        "quote": "Agrofert koupil většinový podíl v rumunské skupině Maragro",
+        "published_date": "2025-08-08",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Ciz-Agro (Krow)", "date": "2023-11", "round": "unknown", "amount": null},
+        "value_text": "Ciz-Agro",
+        "source_url": "https://www.newstream.cz/zpravy-z-firem/agrofert-rozsiruje-sve-portfolio-za-stovky-milionu-ziskal-vetsinu-v-zemedelskem-podniku-ciz-agro",
+        "quote": "Agrofert rozšiřuje své portfolio. Za stovky milionů získal většinu v Ciz-Agro",
+        "published_date": "2023-11-23",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["agri_food"],
+      "value_text": "zemědělství",
+      "source_url": "https://www.e15.cz/byznys/agrofert-koupil-vetsinovy-podil-v-rumunske-skupine-maragro-1426578",
+      "quote": "Agrofert působí vedle zemědělství také v potravinářství či chemii",
+      "published_date": "2025-08-08",
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "AGROFERT akvizice podíl ve společnosti 2026"
+    ]
+  },
+  {
+    "candidate_id": "C125",
+    "website": "https://www.sih.sk",
+    "identity": [
+      {
+        "value": {"legal_name": "Slovak Investment Holding, a. s.", "company_id": null, "country": "SK"},
+        "value_text": "Slovak Investment Holding, a. s.",
+        "source_url": "https://www.sih.sk/en/stranky/o-nas/o-spolocnosti",
+        "quote": "Slovak Investment Holding, a. s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Bratislava",
+      "source_url": "https://www.sih.sk/en/stranky/o-nas/o-spolocnosti",
+      "quote": "Grösslingová 44 811 09 Bratislava",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["public_vc"],
+      "value_text": "equity and quasi-equity instruments",
+      "source_url": "https://www.sih.sk/en/stranky/o-nas/o-spolocnosti",
+      "quote": "include guarantee, loan, equity and quasi-equity instruments",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "PERRY SOFT a.s.", "date": "2025-09-05", "round": "unknown", "amount": "EUR 2 million"},
+        "value_text": "PERRY SOFT a.s.",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu",
+        "quote": "has invested EUR 2 million in PERRY SOFT a.s.",
+        "published_date": "2025-09-05",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "InoBat", "date": "2024-01", "round": "unknown", "amount": null},
+        "value_text": "InoBat",
+        "source_url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/",
+        "quote": "InoBat has secured another significant investor, Slovak Investment Holding",
+        "published_date": "2024-01-31",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["sectors", "stages", "ticket", "total_capital", "funds", "company_id"],
+    "early_exit": null,
+    "search_log": [
+      "Slovak Investment Holding InoBat investícia 12 mil. EUR",
+      "Slovak Investment Holding portfolio VisionFlow Veslo Definic convertible loan",
+      "Slovak Investment Holding PERRY SOFT convertible loan 2 million"
+    ]
+  },
+  {
+    "candidate_id": "C168",
+    "website": "https://www.indexventures.com",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Index Ventures venture capital firm office investments"
+    ]
+  },
+  {
+    "candidate_id": "C079",
+    "website": "https://www.renomia.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "RENOMIA, a. s.", "company_id": "48391301", "country": "CZ"},
+        "value_text": "48391301",
+        "source_url": "https://www.renomia.cz",
+        "quote": "IČ: 48391301",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Brno",
+      "source_url": "https://www.renomia.cz",
+      "quote": "639 00 Brno",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["group_holding"],
+      "value_text": "Renomia Group",
+      "source_url": "https://www.newstream.cz/money/renomia-vstupuje-na-rakousky-trh-koupila-podil-v-steinmayr-co",
+      "quote": "Největší pojišťovací makléř v Česku a ve střední Evropě Renomia Group koupila podíl v rakouské firmě Steinmayr & Co",
+      "published_date": "2023-11-15",
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "KOBAN (Austria)", "date": "2026-09", "round": "unknown", "amount": null},
+        "value_text": "KOBAN",
+        "source_url": "https://www.renomia.cz",
+        "quote": "RENOMIA výrazně posiluje v Rakousku. Stává se hlavním akcionářem skupiny KOBAN",
+        "published_date": "2026-09-07",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Kancelaria Brokerska Modus", "date": "2025-01", "round": "unknown", "amount": null},
+        "value_text": "Kancelaria Brokerska Modus",
+        "source_url": "https://www.newstream.cz/money/nepalovi-na-nakupech-v-polsku-renomia-ziskala-vetsinu-ve-firme-modus",
+        "quote": "Pojišťovací makléřská společnost Renomia získala většinový podíl v polské společnosti Kancelaria Brokerska Modus.",
+        "published_date": "2025-01-22",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Steinmayr & Co", "date": "2023-11", "round": "unknown", "amount": null},
+        "value_text": "Steinmayr & Co",
+        "source_url": "https://www.newstream.cz/money/renomia-vstupuje-na-rakousky-trh-koupila-podil-v-steinmayr-co",
+        "quote": "Největší pojišťovací makléř v Česku a ve střední Evropě Renomia Group koupila podíl v rakouské firmě Steinmayr & Co",
+        "published_date": "2023-11-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Renewable Energy Insurance Broker", "date": "2023-04", "round": "unknown", "amount": null},
+        "value_text": "Renewable Energy Insurance Broker",
+        "source_url": "https://www.newstream.cz/money/renomia-vstupuje-na-rakousky-trh-koupila-podil-v-steinmayr-co",
+        "quote": "Naposledy v dubnu získala majoritní podíl v bulharské společnosti Renewable Energy Insurance Broker",
+        "published_date": "2023-11-15",
+        "derivation": "inferred"
+      }
+    ],
+    "sectors": {
+      "value": ["fintech_insurtech"],
+      "value_text": "pojištění",
+      "source_url": "https://www.newstream.cz/money/renomia-vstupuje-na-rakousky-trh-koupila-podil-v-steinmayr-co",
+      "quote": "Renomia zajišťuje na mezinárodní úrovni služby risk managementu a pojištění, správy financí či dotačního poradenství.",
+      "published_date": "2023-11-15",
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "RENOMIA KOBAN hlavní akcionář Rakousko"
+    ]
+  }
+]

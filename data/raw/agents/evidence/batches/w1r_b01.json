@@ -1,0 +1,44 @@
+[
+  {
+    "candidate_id": "C024",
+    "name": "KAYA",
+    "other_names": [
+      "KAYA VC",
+      "Kaya"
+    ],
+    "known_website": "www.kaya.vc",
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C014",
+    "name": "Depo Ventures",
+    "other_names": [
+      "DEPO Ventures",
+      "DEPO Ventures One SCSp",
+      "DEPO Ventures Sàrl"
+    ],
+    "known_website": null,
+    "registry_hint": null
+  },
+  {
+    "candidate_id": "C144",
+    "name": "Reflex Capital",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Reflex Capital SE, IČO 24269158"
+  },
+  {
+    "candidate_id": "C028",
+    "name": "Orbit Capital",
+    "other_names": [],
+    "known_website": "www.orbitcapital.com",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): ORBIT Capital GP s.r.o., IČO 08319961"
+  },
+  {
+    "candidate_id": "C019",
+    "name": "i&i Biotech Investments",
+    "other_names": [],
+    "known_website": "www.inibio.eu",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Biotech Investments s.r.o., IČO 10885978"
+  }
+]
