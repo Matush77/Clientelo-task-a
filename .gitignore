@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Local page snapshots (copyrighted third-party content; repo keeps only quotes + sha256)
+data/cache/
+
+# Raw transcript zips before redaction
+ai-log/_incoming/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
