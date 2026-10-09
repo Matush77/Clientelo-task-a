@@ -1,0 +1,143 @@
+[
+  {
+    "candidate_id": "C144",
+    "name": "Reflex Capital",
+    "website": "https://www.reflexcapital.com",
+    "missing": [
+      "sectors"
+    ],
+    "known_sectors": [],
+    "known_stages": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      "Apify",
+      "Choice",
+      "Digitoo",
+      "FaceUp",
+      "Fitify",
+      "Keboola",
+      "Leadspicker",
+      "Merchantee",
+      "TopMonks"
+    ],
+    "known_funds": [
+      {
+        "name": "Reflex 2",
+        "size": "až osmdesát milionů eur",
+        "status": "target"
+      },
+      {
+        "name": "Reflex 2",
+        "size": "od 30 do 50 milionů eur",
+        "status": "target"
+      },
+      {
+        "name": "Reflex 2",
+        "size": "20 milionů eur",
+        "status": "final_close"
+      },
+      {
+        "name": "Reflex 3",
+        "size": "20 milionů eur",
+        "status": "target"
+      },
+      {
+        "name": "Reflex 3",
+        "size": "dvaadvacet milionů eur",
+        "status": "final_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C151",
+    "name": "Gi21 Capital",
+    "website": "https://gi21capital.com",
+    "missing": [
+      "ticket",
+      "total_capital"
+    ],
+    "known_sectors": [
+      "ai_data",
+      "enterprise_saas"
+    ],
+    "known_stages": [
+      "pre_seed",
+      "seed",
+      "series_a",
+      "series_b_plus",
+      "growth"
+    ],
+    "portfolio_companies": [
+      "ArtMaster",
+      "FaceUp",
+      "Hermetiq",
+      "Zerops"
+    ],
+    "known_funds": []
+  },
+  {
+    "candidate_id": "C184",
+    "name": "Miton",
+    "website": "https://www.miton.cz",
+    "missing": [
+      "stages",
+      "total_capital"
+    ],
+    "known_sectors": [
+      "ai_data"
+    ],
+    "known_stages": [],
+    "portfolio_companies": [
+      "Aim",
+      "Bandits",
+      "Boataround",
+      "DeepScout",
+      "Firefish",
+      "GTE",
+      "POS Experts",
+      "PangeAI"
+    ],
+    "known_funds": [
+      {
+        "name": "Miton C",
+        "size": null,
+        "status": null
+      },
+      {
+        "name": "Miton Psychonats",
+        "size": null,
+        "status": null
+      }
+    ]
+  },
+  {
+    "candidate_id": "C186",
+    "name": "Look AI Ventures",
+    "website": "https://lookai.vc",
+    "missing": [
+      "stages",
+      "total_capital"
+    ],
+    "known_sectors": [
+      "ai_data"
+    ],
+    "known_stages": [],
+    "portfolio_companies": [
+      "Digicust",
+      "Embodied AI",
+      "Lucida AI",
+      "SECJUR",
+      "Sodex Innovations",
+      "Trackbar"
+    ],
+    "known_funds": [
+      {
+        "name": "Look AI Ventures fund (LAIV)",
+        "size": "€20 million",
+        "status": "target"
+      }
+    ]
+  }
+]

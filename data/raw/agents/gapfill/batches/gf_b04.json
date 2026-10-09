@@ -1,0 +1,119 @@
+[
+  {
+    "candidate_id": "C195",
+    "name": "ZAKA Ventures",
+    "website": "https://zaka.vc",
+    "missing": [
+      "ticket"
+    ],
+    "known_sectors": [
+      "life_sciences_medtech",
+      "industry_manufacturing"
+    ],
+    "known_stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      "Aerogen Systems",
+      "AxionOrbital Space",
+      "DeepSeq.AI",
+      "FinalDose",
+      "Human Archive",
+      "ParcelBio",
+      "PerfectBit",
+      "WonderTx"
+    ],
+    "known_funds": [
+      {
+        "name": "ZAKA VC Fund I",
+        "size": "€10.5 million",
+        "status": "first_close"
+      },
+      {
+        "name": "ZAKA VC Fund I",
+        "size": "15 milionů eur",
+        "status": "target"
+      },
+      {
+        "name": "ZAKA VC Fund I",
+        "size": "17M",
+        "status": "first_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C197",
+    "name": "Rockaway Ventures",
+    "website": "https://rockawayventures.com",
+    "missing": [
+      "ticket"
+    ],
+    "known_sectors": [
+      "consumer_ecommerce",
+      "travel_hospitality",
+      "mobility_logistics",
+      "media_gaming"
+    ],
+    "known_stages": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      "Apaleo",
+      "Apptronik",
+      "Brand Embassy",
+      "Float",
+      "Gjirafa",
+      "Productboard",
+      "Vivere"
+    ],
+    "known_funds": [
+      {
+        "name": "Rockaway Ventures II",
+        "size": "nearly €55 million",
+        "status": "final_close"
+      },
+      {
+        "name": "Rockaway Ventures Fund",
+        "size": "100 milionů eur",
+        "status": "target"
+      },
+      {
+        "name": "Rockaway Ventures Fund",
+        "size": "EUR 40m",
+        "status": "first_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C198",
+    "name": "Czech Founders VC",
+    "website": "https://czechfounders.vc",
+    "missing": [
+      "sectors"
+    ],
+    "known_sectors": [],
+    "known_stages": [
+      "pre_seed"
+    ],
+    "portfolio_companies": [
+      "Adventurer",
+      "CRUXO",
+      "Carta Genum",
+      "DTS",
+      "Filuta AI",
+      "Lemondia",
+      "Maxfusion",
+      "Merchantee",
+      "StreamBee"
+    ],
+    "known_funds": [
+      {
+        "name": "Czech Founders VC",
+        "size": "deset milionů eur",
+        "status": "final_close"
+      }
+    ]
+  }
+]

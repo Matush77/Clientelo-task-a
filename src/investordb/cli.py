@@ -177,10 +177,16 @@ def cmd_refine(args: argparse.Namespace) -> None:
     if args.step == "check":
         claims = refine.check_outputs()
         print(f"{len(claims)} refined claims checked -> {refine.CLAIMS_REFINED}")
+    if args.step == "gapfill-check":
+        claims = refine.check_gapfill()
+        print(f"{len(claims)} gap-fill claims checked -> {refine.CLAIMS_GAPFILL}")
     result = refine.rebuild_all(as_of)
     print(f"{len(result['rows'])} investors rebuilt -> {refine.INVESTORS_REFINED}; missing output: {result['missing']}")
     for p in result["problems"]:
         print("  integrity: " + p)
+    if args.step == "gapfill-batches":
+        for p in refine.make_gapfill_batches(result):
+            print(p)
     if args.step == "judge-batches":
         for p in refine.make_judge_batches(result, as_of):
             print(p)
@@ -238,8 +244,10 @@ def main() -> None:
     p = sub.add_parser("report", help="compute metrics and write docs/PRECISION_REPORT.md")
     p.set_defaults(func=cmd_report)
 
-    p = sub.add_parser("refine", help="refinement stage D38: batches | check | rebuild | judge-batches | report")
-    p.add_argument("step", choices=["batches", "check", "rebuild", "judge-batches", "report"])
+    p = sub.add_parser("refine", help="refinement D38/D41: batches | check | rebuild | judge-batches | gapfill-batches | "
+                                      "gapfill-check | report")
+    p.add_argument("step", choices=["batches", "check", "rebuild", "judge-batches", "gapfill-batches", "gapfill-check",
+                                    "report"])
     p.add_argument("--as-of", default="2026-10-09")
     p.set_defaults(func=cmd_refine)
 

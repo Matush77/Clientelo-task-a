@@ -25,14 +25,16 @@ CURRENCIES = [
     (r"kč|czk|korun\w*", "CZK"),
     (r"£|gbp|libr\w*|pound\w*", "GBP"),
 ]
-APPROX = re.compile(r"bezmála|takmer|téměř|almost|nearly|about|around|přibližně|približne|cca|~|over|více než|viac ako|přes|vyše", re.I)
+APPROX = re.compile(r"bezmála|takmer|téměř|almost|nearly|about|around|přibližně|približne|cca|~|over|více než|viac ako|přes|vyše|kolem|okolo|zhruba", re.I)
 NUMBER = re.compile(r"\d{1,3}(?:[  .,]\d{3})+(?:[.,]\d+)?(?!\d)|\d+(?:[.,]\d+)?")
 # "30 - 50", "od 30 do 50", "30 až 50", "between 30 and 50", "1-3M"
 RANGE_TAIL = re.compile(r"\s*(?:-|–|až|do|to|and|a)\s*(" + NUMBER.pattern + r")")
 
 # Number words (CZ / SK / EN) - sources write "dvaadvacet milionů eur" (twenty-two million euros)
 _UNITS = {
-    1: "jeden jedna jedno one", 2: "dva dvě dve two", 3: "tři tri three", 4: "čtyři štyri four", 5: "pět päť five",
+    # declined forms too: "kolem jednoho milionu eur", "dvou milionů", "troch miliónov"
+    1: "jeden jedna jedno jednoho jedné jednomu jedného jednej one", 2: "dva dvě dve dvou dvoch two",
+    3: "tři tri tří troch three", 4: "čtyři štyri čtyř štyroch four", 5: "pět päť pěti piatich five",
     6: "šest šesť six", 7: "sedm sedem seven", 8: "osm osem eight", 9: "devět deväť nine",
 }
 _TEENS = {

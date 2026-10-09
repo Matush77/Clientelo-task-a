@@ -1,0 +1,106 @@
+[
+  {
+    "candidate_id": "C099",
+    "name": "Neulogy Ventures",
+    "website": "https://neulogy.vc",
+    "missing": [
+      "stages",
+      "ticket"
+    ],
+    "known_sectors": [
+      "deeptech_hardware"
+    ],
+    "known_stages": [],
+    "portfolio_companies": [
+      "GA Drilling",
+      "GreenWay",
+      "GroupSolver",
+      "SaferPass",
+      "Trustmatic",
+      "Vectary",
+      "Voltia"
+    ],
+    "known_funds": [
+      {
+        "name": "Neulogy Ventures (seed fund and VC fund, combined)",
+        "size": "23 mil. EUR",
+        "status": "final_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C125",
+    "name": "Slovak Investment Holding",
+    "website": "https://www.sih.sk",
+    "missing": [
+      "sectors",
+      "stages",
+      "ticket"
+    ],
+    "known_sectors": [],
+    "known_stages": [],
+    "portfolio_companies": [
+      "AT Crystals",
+      "InoBat",
+      "PERRY SOFT a.s.",
+      "VisionFlow"
+    ],
+    "known_funds": [
+      {
+        "name": "National Development Fund II",
+        "size": "623 mil. EUR",
+        "status": "final_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C132",
+    "name": "Zero Gravity Capital",
+    "website": "https://zerogravitycap.com",
+    "missing": [
+      "sectors",
+      "ticket"
+    ],
+    "known_sectors": [],
+    "known_stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      "CulturePulse",
+      "Wewell"
+    ],
+    "known_funds": [
+      {
+        "name": "Zero Gravity Capital",
+        "size": "EUR 23m",
+        "status": "final_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C135",
+    "name": "Seed Starter",
+    "website": "https://www.seedstarter.cz",
+    "missing": [
+      "sectors",
+      "total_capital"
+    ],
+    "known_sectors": [],
+    "known_stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      "Definic",
+      "Investown",
+      "PalmApp",
+      "Pointee",
+      "Rekenber",
+      "Repsense",
+      "Signi",
+      "Wflow"
+    ],
+    "known_funds": []
+  }
+]

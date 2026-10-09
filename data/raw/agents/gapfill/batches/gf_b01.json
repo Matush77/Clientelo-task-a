@@ -1,0 +1,162 @@
+[
+  {
+    "candidate_id": "C022",
+    "name": "Inven Capital",
+    "website": "https://www.invencapital.cz",
+    "missing": [
+      "stages"
+    ],
+    "known_sectors": [
+      "cleantech_energy"
+    ],
+    "known_stages": [],
+    "portfolio_companies": [
+      "Andercore",
+      "Ember",
+      "Hydrogrid",
+      "Taranis",
+      "Vytal",
+      "eliq"
+    ],
+    "known_funds": [
+      {
+        "name": "Inven Capital, SICAV",
+        "size": "more than €500 million",
+        "status": "final_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C023",
+    "name": "Jet Investment",
+    "website": "https://www.jetinvestment.cz/en",
+    "missing": [
+      "stages",
+      "ticket"
+    ],
+    "known_sectors": [
+      "ai_data"
+    ],
+    "known_stages": [],
+    "portfolio_companies": [
+      "AppNava",
+      "Cequence",
+      "DecisionRules",
+      "GigaScan",
+      "Partory",
+      "Phantasma Labs"
+    ],
+    "known_funds": [
+      {
+        "name": "Jet Venture 1",
+        "size": "padesát milionů eur",
+        "status": "target"
+      },
+      {
+        "name": "Jet Venture 1",
+        "size": "přes třicet milionů eur",
+        "status": "first_close"
+      },
+      {
+        "name": "Jet Venture 1",
+        "size": "50 milionů eur",
+        "status": "target"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C032",
+    "name": "Tensor Ventures",
+    "website": "https://tensor.ventures",
+    "missing": [
+      "ticket"
+    ],
+    "known_sectors": [
+      "deeptech_hardware"
+    ],
+    "known_stages": [
+      "seed",
+      "series_a"
+    ],
+    "portfolio_companies": [
+      "AppFactor"
+    ],
+    "known_funds": [
+      {
+        "name": "Tensor Ventures Fund I SCSp",
+        "size": null,
+        "status": null
+      },
+      {
+        "name": "Tensor Ventures Fund II",
+        "size": "1,25 miliardy korun",
+        "status": "target"
+      },
+      {
+        "name": "Tensor Ventures Fund II",
+        "size": "50 milionů EUR",
+        "status": "target"
+      },
+      {
+        "name": "Tensor Ventures Fund II",
+        "size": "50–60 million euros",
+        "status": "target"
+      },
+      {
+        "name": "Tensor Ventures Fund II",
+        "size": "miliardu",
+        "status": "first_close"
+      },
+      {
+        "name": "Tensor Ventures first fund (opened 2017)",
+        "size": "dvacet milionů eur",
+        "status": "final_close"
+      }
+    ]
+  },
+  {
+    "candidate_id": "C063",
+    "name": "JSK Investments",
+    "website": "https://www.jskinvestments.cz",
+    "missing": [
+      "sectors",
+      "ticket"
+    ],
+    "known_sectors": [],
+    "known_stages": [
+      "pre_seed",
+      "seed"
+    ],
+    "portfolio_companies": [
+      "Andromeda Surgical",
+      "Elin.ai"
+    ],
+    "known_funds": [
+      {
+        "name": "JSK Investments Venture Capital Fund I.",
+        "size": null,
+        "status": null
+      },
+      {
+        "name": "JSK Investments Private and Growth Equity Fund I.",
+        "size": null,
+        "status": null
+      },
+      {
+        "name": "JSK Investments SICAV",
+        "size": "dvě miliardy korun",
+        "status": "first_close"
+      },
+      {
+        "name": "JSK Investments SICAV",
+        "size": "zhruba dvě miliardy korun",
+        "status": "first_close"
+      },
+      {
+        "name": "JSK Investments private equity fund (planned)",
+        "size": "100 milionů eur",
+        "status": "target"
+      }
+    ]
+  }
+]

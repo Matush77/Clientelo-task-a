@@ -75,3 +75,11 @@ def test_eur_rate_uses_the_last_rate_published_before_the_as_of_day(monkeypatch)
     assert money.eur_rate("CZK", "2026-10-09") == 24.403
     assert seen["endPeriod"] == "2026-10-08"
     money.eur_rate.cache_clear()
+
+
+def test_declined_number_words():
+    # Reflex Capital's ticket was written "kolem jednoho milionu eur" and stayed unparsed
+    m = parse_money("kolem jednoho milionu eur")
+    assert (m.amount, m.currency, m.approx) == (1e6, "EUR", True)
+    assert parse_money("dvou milionů eur").amount == 2e6
+    assert parse_money("troch miliónov eur").amount == 3e6

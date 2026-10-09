@@ -33,6 +33,11 @@ CLAIMS_REFINED = PROCESSED / "claims_refined.csv"
 INVESTORS_REFINED = PROCESSED / "investors_refined.csv"
 BATCH_SIZE = 4
 NEW_DEAL_IDX = 100  # idx offset of new deals in claims_refined.csv (deal checks keep their own position)
+# gap filling (D41): only the fields the assignment names that are still empty after refinement
+GAPFILL_DIR = ROOT / "data" / "raw" / "agents" / "gapfill"
+CLAIMS_GAPFILL = PROCESSED / "claims_gapfill.csv"
+GAP_FIELDS = {"sectors": "sectors", "stages": "stages", "ticket": "ticket_min_eur", "total_capital": "total_capital_eur"}
+GAP_SK = {"sectors": "sektory", "stages": "štádiá", "ticket": "tiket", "total_capital": "celkový kapitál"}
 
 
 def _read(path: Path) -> list[dict]:
@@ -267,6 +272,92 @@ def check_outputs() -> list[dict]:
     return new
 
 
+def _codes(c: dict) -> list[str]:
+    v = json.loads(c["value"]) if c.get("value") else None
+    return [v] if isinstance(v, str) else [x for x in (v or []) if isinstance(x, str)]
+
+
+def complete_gaps(row: dict, merged: list[dict], filled: list[dict], not_public: list[str]) -> None:
+    """Gap-fill claims (D41) on top of the rebuilt row: sectors and stages may come as one claim per inferred value,
+    so the row lists all of them; every row says whether its sectors/stages are stated or inferred, and which
+    required fields were searched for but are not public."""
+    added = []
+    for field in ("sectors", "stages"):
+        claims = [c for c in merged if c["field"] == field and c["auto_check"] == "ok"]
+        if any(c in filled for c in claims):
+            row[field] = ",".join(dict.fromkeys(code for c in claims for code in _codes(c)))
+        row[f"{field}_basis"] = ("stated" if any(c.get("derivation") == "stated" for c in claims)
+                                 else "inferred" if claims else "")
+    for field in GAP_FIELDS:
+        if any(c["field"] == field or (field == "total_capital" and c["field"] == "funds") for c in filled) \
+                and row[GAP_FIELDS[field]]:
+            inferred = field in ("sectors", "stages") and row[f"{field}_basis"] == "inferred"
+            added.append(GAP_SK[field] + (" (odvodené z portfólia)" if inferred else ""))
+    if added:
+        row["refine_notes"] = "; ".join(n for n in [row["refine_notes"], "doplnené: " + ", ".join(added)] if n)
+    row["not_public"] = "; ".join(f for f in dict.fromkeys(not_public) if f in GAP_FIELDS and not row[GAP_FIELDS[f]])
+
+
+def load_gapfill() -> list[dict]:
+    out = []
+    for path in sorted(GAPFILL_DIR.glob("gf_b*.json")):
+        out += json.loads(path.read_text(encoding="utf-8"))
+    return out
+
+
+def make_gapfill_batches(result: dict) -> list[Path]:
+    """Investors whose required fields are still empty after refinement, with what the database already knows."""
+    records = []
+    for cid in sorted(result["rows"]):
+        row = result["rows"][cid]
+        missing = [f for f, col in GAP_FIELDS.items() if not row[col]]
+        if not missing:
+            continue
+        ok = [c for c in result["merged"][cid] if c["auto_check"] == "ok"]
+        companies = sorted({str(_value(c).get("company") or "").strip() for c in ok if c["field"] == "investments"} - {""})
+        funds = [{"name": v.get("name"), "size": v.get("size"), "status": v.get("status")}
+                 for c in ok if c["field"] == "funds" for v in [_value(c)]]
+        records.append({"candidate_id": cid, "name": row["name"], "website": row["website"] or None, "missing": missing,
+                        "known_sectors": [x for x in row["sectors"].split(",") if x],
+                        "known_stages": [x for x in row["stages"].split(",") if x],
+                        "portfolio_companies": companies[:20], "known_funds": funds})
+    (GAPFILL_DIR / "batches").mkdir(parents=True, exist_ok=True)
+    paths = []
+    for n, start in enumerate(range(0, len(records), BATCH_SIZE), 1):
+        path = GAPFILL_DIR / "batches" / f"gf_b{n:02d}.json"
+        path.write_text(json.dumps(records[start:start + BATCH_SIZE], ensure_ascii=False, indent=2), encoding="utf-8")
+        paths.append(path)
+    return paths
+
+
+def check_gapfill() -> list[dict]:
+    """Machine-check every gap-fill claim (downloads the pages) -> claims_gapfill.csv."""
+    investors = {r["candidate_id"]: r for r in _read(PROCESSED / "investors.csv")}
+    cand = {c["candidate_id"]: c for c in _read(PROCESSED / "candidates.csv")}
+    names = {cid: [n for m in inv["evidence_ids"].split() if m in cand
+                   for n in [cand[m]["name"], *[a for a in cand[m]["aliases"].split(" | ") if a]]]
+             for cid, inv in investors.items()}
+    rows = []
+    for rec in load_gapfill():
+        cid, web = rec["candidate_id"], investors[rec["candidate_id"]]["website"]
+        for field in ("sectors", "stages"):
+            for i, claim in enumerate(rec.get(field) or []):
+                for r in flatten({"candidate_id": cid, "website": web, field: claim}):
+                    r.idx = i
+                    rows.append(r)
+        for field in ("ticket", "total_capital"):
+            if rec.get(field):
+                rows += flatten({"candidate_id": cid, "website": web, field: rec[field]})
+        rows += flatten({"candidate_id": cid, "website": web, "funds": rec.get("funds") or []})
+    check(rows, names)
+    out = [asdict(r) for r in rows]
+    with CLAIMS_GAPFILL.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(out[0].keys()))
+        w.writeheader()
+        w.writerows(out)
+    return out
+
+
 def rebuild_all(as_of: date) -> dict:
     """Frozen claims + claims_refined.csv + the agents' verdicts -> investors_refined.csv (no downloads)."""
     investors = {r["candidate_id"]: r for r in _read(PROCESSED / "investors.csv")}
@@ -275,11 +366,19 @@ def rebuild_all(as_of: date) -> dict:
     checks = {cid: deal_checks(rec) for cid, rec in outputs.items()}
     old = claims_by_investor(list(investors.values()), _read(PROCESSED / "claims.csv"), only_ok=False)
 
+    gapfill = defaultdict(list)
+    for c in (_read(CLAIMS_GAPFILL) if CLAIMS_GAPFILL.exists() else []):
+        gapfill[c["candidate_id"]].append(c)
+    not_public = {r["candidate_id"]: [n.get("field") for n in r.get("not_public") or []] for r in load_gapfill()}
+
     rows, problems, merged_by = [], [], {}
     for cid, inv in investors.items():
         mine = [c for c in new if c["candidate_id"] == cid]
         merged, notes = merge(old[cid], mine, checks.get(cid, [])) if cid in outputs else (old[cid], ["nespracované"])
+        filled = [c for c in gapfill.get(cid, []) if c["auto_check"] == "ok"]
+        merged = merged + filled
         row = rebuild(inv, merged, notes, as_of)
+        complete_gaps(row, merged, filled, not_public.get(cid, []))
         rows.append(row)
         merged_by[cid] = merged
         problems += integrity(row, merged)
