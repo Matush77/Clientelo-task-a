@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Gap-fill batch gf_b03 (Sonnet)",
+  "toolUseId": "toolu_01QYvBTiEv4KGTJxraCuG8Tp",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "sonnet"
+}

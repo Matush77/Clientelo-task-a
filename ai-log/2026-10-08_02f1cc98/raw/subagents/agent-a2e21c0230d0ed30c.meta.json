@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Gap-fill batch gf_b02 retry (Sonnet)",
+  "toolUseId": "toolu_01PJtftyrgAArAHANu4e1E7z",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "sonnet"
+}
