@@ -150,3 +150,27 @@ def test_merge_unverified_earlier_correction_stops_counting_the_article_date():
     checks = [{"company": "Apaleo", "listed_date": "2025-05-16", "verdict": "corrected", "note": "", "idx": 0}]
     merged, _ = merge(old, new, checks)
     assert counted_deals(merged) == {}
+
+
+def _claim(field, value, derivation="stated", check="ok"):
+    return {"field": field, "auto_check": check, "value": json.dumps(value), "derivation": derivation,
+            "source_url": "https://x.example", "quote": "q", "event_date": ""}
+
+
+def test_gap_fill_lists_every_inferred_sector_and_labels_the_basis():
+    from investordb.refine import complete_gaps
+    row = {"sectors": "", "stages": "seed", "ticket_min_eur": "", "total_capital_eur": "", "refine_notes": ""}
+    old_stage = _claim("stages", ["seed"])
+    filled = [_claim("sectors", ["fintech_insurtech"], "inferred"), _claim("sectors", ["ai_data"], "inferred")]
+    complete_gaps(row, [old_stage] + filled, filled, ["sectors", "ticket"])
+    assert row["sectors"] == "fintech_insurtech,ai_data"
+    assert (row["sectors_basis"], row["stages_basis"]) == ("inferred", "stated")
+    assert row["not_public"] == "ticket"  # sectors were found, so only the ticket stays 'not public'
+    assert "sektory (odvodené z portfólia)" in row["refine_notes"]
+
+
+def test_gap_fill_ignores_claims_that_failed_the_machine_check():
+    from investordb.refine import complete_gaps
+    row = {"sectors": "", "stages": "", "ticket_min_eur": "", "total_capital_eur": "", "refine_notes": "x"}
+    complete_gaps(row, [_claim("sectors", ["ai_data"], check="quote_not_found")], [], ["sectors"])
+    assert row["sectors"] == "" and row["not_public"] == "sectors" and row["refine_notes"] == "x"
