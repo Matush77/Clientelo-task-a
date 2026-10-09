@@ -10,16 +10,16 @@ Všetci subagenti bežali na **Claude Haiku 5.5**. Náklad je prepočítaný na 
 |---|---|
 | zber dôkazov (vrátane opakovaní) | 6.42 |
 | prieskum a plánovanie (jednorazovo) | 0.86 |
+| nezávislý AI overovateľ | 0.81 |
 | objavovanie kandidátov | 0.63 |
 | triáž sídla | 0.40 |
-| nezávislý AI overovateľ | 0.36 |
 | etapa „nedávna investícia“ | 0.28 |
 | kontrola duplicít | 0.06 |
-| **spolu** | **9.01** |
+| **spolu** | **9.45** |
 
 - Na jedného kandidáta (objavovanie + triáž + dôkazy + nedávna investícia): **0.059 USD**
-- Nezávislý overovateľ na jeden záznam: **0.011 USD**
-- **Vyhľadávanie na webe tvorí 75 % nákladov na AI** – samotné tokeny Haiku sú zanedbateľné.
+- Nezávislý overovateľ na jeden záznam: **0.012 USD**
+- **Vyhľadávanie na webe tvorí 74 % nákladov na AI** – samotné tokeny Haiku sú zanedbateľné.
 - Na 1 zaradeného investora pripadlo **5.3 kandidátov**; 2.3 % kandidátov skončilo v ručnej kontrole.
 - Ručná kontrola: **4 min – predpoklad**, nahradí sa meraním z ručnej kontroly na záznam.
 
@@ -41,17 +41,17 @@ Všetci subagenti bežali na **Claude Haiku 5.5**. Náklad je prepočítaný na 
 | Výsledok (1. rok) | nízky | základný | vysoký |
 |---|---|---|---|
 | Kandidátov na spracovanie | 102 144 | 239 400 | 558 600 |
-| AI (Haiku 5.5 + vyhľadávanie) | 5 651 € | 19 225 € | 88 383 € |
+| AI (Haiku 5.5 + vyhľadávanie) | 5 686 € | 19 273 € | 88 459 € |
 | Záznamov na ručnú kontrolu | 7 984 | 26 250 | 47 350 |
 | Ľudská kontrola kvality | 8 516 € | 52 500 € | 236 750 € |
 | Vývoj (jednorazovo) | 10 500 € | 20 250 € | 42 000 € |
-| **Spolu 1. rok** | 24 668 € | 91 975 € | 367 133 € |
-| Na 1 overený záznam | 0.77 € | 2.04 € | 5.24 € |
+| **Spolu 1. rok** | 24 702 € | 92 023 € | 367 209 € |
+| Na 1 overený záznam | 0.77 € | 2.04 € | 5.25 € |
 | Ročná aktualizácia (od 2. roka) | 5 498 € | 18 827 € | 69 576 € |
 
 ## 3. Čo z toho vyplýva
 
-- **Hlavný náklad nie je AI, ale ľudská kontrola kvality.** V základnom scenári AI stojí 19 225 €, ľudská kontrola 52 500 €.
+- **Hlavný náklad nie je AI, ale ľudská kontrola kvality.** V základnom scenári AI stojí 19 273 €, ľudská kontrola 52 500 €.
 - **Najväčšia páka je zhoda AI overovateľa s človekom** (meraná v [PRECISION_REPORT.md](PRECISION_REPORT.md)). Ak je vysoká, človek kontroluje len segmentovú vzorku a záznamy, kde sa AI overovateľ a pravidlá nezhodnú; ak nízka, počet ručne kontrolovaných záznamov rastie.
 - **Druhá páka je vyhľadávanie:** tvorí väčšinu nákladov na AI. Štruktúrované zdroje (registre SEC Form ADV, ESMA, národné registre, zoznamy asociácií) znižujú počet kandidátov na 1 zaradený záznam aj počet vyhľadávaní.
 - **Tretia páka je kvalita zoznamu kandidátov:** v pilote bolo 5,3 kandidáta na 1 zaradeného investora; v krajinách bez dobrých zoznamov (a pri family office / angel investoroch) to bude viac.

@@ -139,7 +139,25 @@ obsahujú názov subjektu, agenti kopírujú spoľahlivo; problém sú dlhšie c
 **Postreh pre prezentáciu:** z 9 náhodných firiem s „investorským“ názvom z registra je jedna skutočný VC fond
 (Rockaway Ventures). Kontrolná sada „náhodných firiem“ teda nie je automaticky sada neinvestorov – rozhodnúť musia dôkazy.
 
-## 5. Priebeh práce
+## 5. Spätný pohľad: čo by som v1 urobil inak
+
+Architektúra (AI agenti na hľadanie a extrakciu + deterministická kontrola v kóde + registre + vopred definované
+metriky a ručná kontrola naslepo) sa osvedčila. Pri danom obmedzení (predplatné Claude Code, bez API kľúča) bola
+správnou voľbou. Vykonanie však malo zbytočné straty:
+
+| Čo | Prečo | Odhadovaný prínos |
+|---|---|---|
+| **Vlastný nástroj na stiahnutie surového textu stránky** (MCP server nad `fetch.py`) namiesto WebFetch, ktorý text sumarizuje | väčšina parafrázovaných citácií a opakovaných behov; agent, ktorý sťahoval cez Bash, mal 89/90 citácií v poriadku | najväčší |
+| **Kalibračná sada 6–8 známych VC** vrátane ťažkých prípadov pred škálovaním (nie 3 záznamy) | problém „agent skončí po 1–2 investíciách“ by sa ukázal pred vlnou 1 | ~15–20 behov agentov |
+| **Významové kontroly od začiatku** (priradenie investora, kontext obchodu, cieľ vs. uzavretý fond) | v1 ich nemala, chyby odhalil až človek pri prezretí formulára | presnosť polí |
+| **Deterministické objavovanie** zoznamov asociácií a EIF namiesto agentov; bez agenta na triáž sídla | triáž sídla vyradila len 6 z 39 | menej behov |
+| **Najviac 4–5 paralelných agentov** | rate limit vyhľadávania a limit relácie spôsobili neúplné dávky | menej opakovaní |
+| **Vlastný typ agenta s obmedzenými nástrojmi** namiesto zákazu v texte pokynu | agenti aj tak občas použili prehliadač alebo Bash | spoľahlivosť |
+| **Schéma s dátumom obchodu oddeleným od dátumu článku** a dôkaz z dvoch citácií na tej istej stránke | najčastejšia chyba v1 (dátumy); stratená investícia NHF/AgeVolt | presnosť aj úplnosť |
+
+Odhad: o 30–40 % menej behov agentov, väčšina opakovaní by odpadla, podobná presnosť a vyššia úplnosť.
+
+## 6. Priebeh práce
 
 | Deň | Čo sa robilo | Agenti |
 |---|---|---|

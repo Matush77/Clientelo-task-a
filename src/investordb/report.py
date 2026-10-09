@@ -166,10 +166,18 @@ def build() -> str:
 
     # --- coverage
     add("\n## 7. Odhad úplnosti (capture–recapture)\n")
-    in_a = sum(1 for i in investors if candidates.get(i["candidate_id"], {}).get("in_list_a") == "1")
-    in_b = sum(1 for i in investors if candidates.get(i["candidate_id"], {}).get("in_list_b") == "1")
-    both_ab = sum(1 for i in investors if candidates.get(i["candidate_id"], {}).get("in_list_a") == "1"
-                  and candidates.get(i["candidate_id"], {}).get("in_list_b") == "1")
+
+    def members(inv: dict) -> list[str]:  # a record merged from duplicates was "found" if any member was
+        expl = dec.get(inv["candidate_id"], {}).get("explanation", "")
+        extra = expl.split("[merged:")[-1].rstrip("]").split(",") if "[merged:" in expl else []
+        return [inv["candidate_id"]] + [m.strip() for m in extra]
+
+    def found(inv: dict, col: str) -> bool:
+        return any(candidates.get(m, {}).get(col) == "1" for m in members(inv))
+
+    in_a = sum(found(i, "in_list_a") for i in investors)
+    in_b = sum(found(i, "in_list_b") for i in investors)
+    both_ab = sum(found(i, "in_list_a") and found(i, "in_list_b") for i in investors)
     if both_ab:
         n, lo, hi = chapman(in_a, in_b, both_ab)
         add(f"Zaradení investori nájdení v zozname A (štruktúrované zdroje): {in_a}, v zozname B (správy o kolách): "

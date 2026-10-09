@@ -91,7 +91,11 @@ def measure() -> Measured:
         search_cost += int(r["web_searches"]) * PRICES["web_search"]
     decisions = _read(PROCESSED / "decisions.csv")
     minutes = [float(r["minutes_spent"]) for r in _read(REVIEW) if (r.get("minutes_spent") or "").strip()]
-    verifier_records = sum(1 for _ in _read(ROOT / "data" / "review" / "review_key.csv"))
+    # records the verifier actually checked, over all passes (v1 and v2 of the pilot)
+    import json
+
+    verifier_records = sum(len(json.loads(p.read_text(encoding="utf-8")))
+                           for p in (ROOT / "data" / "raw" / "agents" / "verifier").rglob("batches/*.json"))
     return Measured(
         cost_by_stage=cost_by_stage,
         evidence_runs=145,

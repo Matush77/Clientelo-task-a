@@ -2,13 +2,15 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-a0f3f1db0a64dbb7a,Verifier batch 6,general-purpose,claude-haiku-5-5,7,14,47833,0,401667,8160,8160,0,15,20,119
 02f1cc98,agent-a15b0ffd04c171d14,Evidence v3 wave2 batch 09,general-purpose,claude-haiku-5-5,12,24,128481,0,996468,21811,21811,21,17,43,438
 02f1cc98,agent-a16856a60fe2725d1,Public investor data sources,Explore,claude-haiku-5-5,7,14,83232,0,339568,12995,12995,15,8,24,238
+02f1cc98,agent-a17a37b0c89a0b4a4,Verifier v2 batch 6,general-purpose,claude-haiku-5-5,12,24,54608,0,751417,10994,10994,2,16,23,240
 02f1cc98,agent-a189635ffb96e1f26,Evidence v3 wave2 batch 02,general-purpose,claude-haiku-5-5,14,28,141660,0,1338551,19980,19980,14,25,44,590
 02f1cc98,agent-a18a193211a9de7f8,Evidence v2 wave1 batch 03,general-purpose,claude-haiku-5-5,11,22,129273,0,937477,18494,18494,15,16,36,513
 02f1cc98,agent-a1d8a5ca0234cc526,Verifier batch 4,general-purpose,claude-haiku-5-5,8,16,65619,0,503533,10632,10632,6,14,25,208
 02f1cc98,agent-a20aa9601919c23ba,Evidence v2 wave1 batch 07,general-purpose,claude-haiku-5-5,10,20,87903,0,696043,15046,15046,17,8,30,306
 02f1cc98,agent-a233e3cbe3d72fb1f,Evidence v2 wave1 batch 08,general-purpose,claude-haiku-5-5,11,22,119867,0,927923,18489,18489,10,28,43,457
-02f1cc98,agent-a237fb10371084d5c,Verifier batch 5,general-purpose,claude-haiku-5-5,10,20,46527,0,614347,1323,1892,2,16,21,207
+02f1cc98,agent-a237fb10371084d5c,Verifier batch 5,general-purpose,claude-haiku-5-5,13,26,70963,0,874026,17314,17314,2,19,26,294
 02f1cc98,agent-a24c228820114dda1,Evidence v2 wave1 batch 04,general-purpose,claude-haiku-5-5,13,26,130926,0,1166457,20332,20332,12,27,44,507
+02f1cc98,agent-a288535925ccf21a7,Verifier v2 batch 1,general-purpose,claude-haiku-5-5,14,28,109608,0,942401,13268,13268,2,24,31,276
 02f1cc98,agent-a2927432fb4c8e3a5,Evidence v3 wave2 batch 11,general-purpose,claude-haiku-5-5,9,18,85668,0,622268,13242,13242,12,12,29,275
 02f1cc98,agent-a2a3b3136f606d44f,Evidence v3 rescue batch 1,general-purpose,claude-haiku-5-5,11,22,199984,0,912076,33053,33053,19,29,53,559
 02f1cc98,agent-a3ca7d6c92e3dbbf3,Red-team the draft plan,Plan,claude-haiku-5-5,2,4,24178,0,65831,20849,20849,0,0,1,100
@@ -17,9 +19,10 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-a4737c76e703f0e07,Evidence v2 wave1 batch 02,general-purpose,claude-haiku-5-5,14,28,135635,0,1317928,26836,26836,17,19,41,600
 02f1cc98,agent-a481cd108a24af19e,Evidence v3 wave2 batch 14,general-purpose,claude-haiku-5-5,12,24,136944,0,1046190,25040,25040,16,22,43,501
 02f1cc98,agent-a49560825e5109580,Verifier batch 3,general-purpose,claude-haiku-5-5,9,18,64272,0,556646,15231,15231,3,17,25,207
-02f1cc98,agent-a4ad8a86879b6c538,Verifier batch 7,general-purpose,claude-haiku-5-5,9,18,49440,0,534539,475,1766,1,16,20,195
+02f1cc98,agent-a4ad8a86879b6c538,Verifier batch 7,general-purpose,claude-haiku-5-5,11,22,62243,0,710507,7402,7402,1,16,22,221
 02f1cc98,agent-a51ba64ff8b0339fa,Evidence v1 on 3 CP2 candidates,general-purpose,claude-haiku-5-5,25,50,127596,0,2435504,6479,7848,18,25,47,669
 02f1cc98,agent-a5b1280f94bf7bed1,HQ triage batch 2 (19 names),general-purpose,claude-haiku-5-5,7,14,71632,0,437842,15651,15651,13,24,40,214
+02f1cc98,agent-a5c2128c7bfb05a33,Verifier v2 batch 4,general-purpose,claude-haiku-5-5,9,18,109935,0,590737,8469,8469,5,19,29,232
 02f1cc98,agent-a5c64374a6aa2fbc9,Evidence v3 re-run (3 unresearched),general-purpose,claude-haiku-5-5,12,24,138046,0,856106,13303,13303,12,16,33,402
 02f1cc98,agent-a5d3f49ccabdcd04f,Global investor universe size,Explore,claude-haiku-5-5,8,16,77440,0,399799,10771,10771,17,14,32,215
 02f1cc98,agent-a5f483986f4a265c5,Evidence v3 rescue batch 2,general-purpose,claude-haiku-5-5,27,54,184387,0,2647008,21698,21698,17,22,44,869
@@ -30,9 +33,11 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-a6eb835a2ab3252cf,Evidence v3 wave2 batch 13,general-purpose,claude-haiku-5-5,11,22,93576,0,807114,15846,15846,16,14,35,285
 02f1cc98,agent-a783f532eabce3ab0,Evidence v3 wave2 batch 03,general-purpose,claude-haiku-5-5,9,18,98877,0,654752,19320,19320,11,14,30,342
 02f1cc98,agent-a7cf0186efe05299f,Verify two suspected duplicate pairs,general-purpose,claude-haiku-5-5,8,16,75352,0,431470,3450,3450,4,6,13,157
+02f1cc98,agent-a828ecbd5de62a85e,Verifier v2 batch 7,general-purpose,claude-haiku-5-5,13,26,74773,0,928396,13988,13988,1,18,25,283
 02f1cc98,agent-a86f7d94df2b46603,Evidence v2 wave1 batch 05,general-purpose,claude-haiku-5-5,13,26,114141,0,1087727,25523,25523,21,15,41,460
 02f1cc98,agent-a896e26da9e14fc3a,Evidence v3 wave2 batch 08,general-purpose,claude-haiku-5-5,19,38,119627,0,1823403,12687,12687,20,21,46,571
 02f1cc98,agent-a897d1867af733795,Evidence v3 wave2 batch 04,general-purpose,claude-haiku-5-5,20,40,119967,0,1678103,20857,20857,16,31,52,580
+02f1cc98,agent-a8a4d15bef31498e4,Verifier v2 batch 3,general-purpose,claude-haiku-5-5,13,26,104952,0,850040,10749,10749,4,15,24,305
 02f1cc98,agent-a8cac1df7bded7c79,Evidence v3 wave2 batch 12,general-purpose,claude-haiku-5-5,11,22,119470,0,840732,25011,25011,18,18,41,428
 02f1cc98,agent-a9173529cff9591cf,Evidence v2 wave1 batch 10,general-purpose,claude-haiku-5-5,15,30,136632,0,1430871,24804,24804,22,25,53,523
 02f1cc98,agent-a9256d450905a1e50,Evidence v3 wave2 batch 01,general-purpose,claude-haiku-5-5,12,24,141148,0,1073219,24674,24674,14,27,46,511
@@ -41,6 +46,8 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-aa31ae805306fe673,Verifier batch 2,general-purpose,claude-haiku-5-5,11,22,58670,0,691718,12557,12557,3,13,22,201
 02f1cc98,agent-ab0c29e4cbc993753,List A discovery Slovakia,general-purpose,claude-haiku-5-5,12,24,109815,0,790586,16348,16348,2,12,25,279
 02f1cc98,agent-ab8312fe00b704b64,HQ triage batch 1 (20 names),general-purpose,claude-haiku-5-5,5,10,74215,0,304413,19548,19548,20,20,44,175
+02f1cc98,agent-abd3070f7b71c3171,Verifier v2 batch 5,general-purpose,claude-haiku-5-5,13,26,69660,0,895708,14304,14304,1,21,27,246
+02f1cc98,agent-acda2923da1506412,Verifier v2 batch 2,general-purpose,claude-haiku-5-5,11,22,97381,0,682385,13362,13362,2,14,22,225
 02f1cc98,agent-ad5c340032e784cb7,Slovak VC landscape research,Explore,claude-haiku-5-5,8,16,96057,0,427398,10270,10270,19,8,28,262
 02f1cc98,agent-ae52194acac28e65e,Verifier batch 1,general-purpose,claude-haiku-5-5,11,22,68802,0,731597,12798,12798,2,26,33,240
 02f1cc98,agent-ae57ad8bee33b49f6,Recent-deal pass batch 2,general-purpose,claude-haiku-5-5,9,18,91296,0,530510,3671,3671,12,8,25,227
