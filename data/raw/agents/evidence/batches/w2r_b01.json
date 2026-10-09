@@ -1,0 +1,23 @@
+[
+  {
+    "candidate_id": "C063",
+    "name": "JSK Investments",
+    "other_names": [],
+    "known_website": "www.jskinvestments.cz",
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): JSK Investments SICAV a.s., IČO 23823445"
+  },
+  {
+    "candidate_id": "C193",
+    "name": "Token Ventures",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Token Ventures s.r.o., IČO 09873155"
+  },
+  {
+    "candidate_id": "C098",
+    "name": "Národný holdingový fond s.r.o.",
+    "other_names": [],
+    "known_website": null,
+    "registry_hint": "possible registry match (unconfirmed, may be a different company): Národný holdingový fond s. r. o., IČO 31384943"
+  }
+]
