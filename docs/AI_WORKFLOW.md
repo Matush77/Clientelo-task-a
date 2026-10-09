@@ -134,6 +134,7 @@ Podrobne v [AUDIT_V2.md](AUDIT_V2.md).
 | C46 | **človek** | Pri prezretí formulára: z článkov často nie je jasný dátum, suma ani to, či peniaze išli do firmy | kvalitatívna kontrola | kvantifikované: 40 % investícií bez dátumu obchodu, 22 % so sumou, kapitál správne v 50 % |
 | C47 | Infraštruktúra | Opakovaná kontrola Sonnetom pre 8 záznamov so zmenenou identitou sa nedokončila – vyčerpaný limit relácie (HTTP 429) | notifikácia o zlyhaní agentov | ich `identity_ok` sa v správe nezapočítava (stará verzia identity) |
 | C48 | Overovateľ Haiku | Napriek zákazu v pokyne raz zavolal zabudovaný prehliadač (bez účinku) | vlastné hlásenie agenta | potvrdzuje, že zákaz v texte pokynu nie je tvrdá hranica → vlastný typ agenta s obmedzenými nástrojmi |
+| C58 | Sonnet 5.5 vs. **človek** (5 záznamov, D40) | Človek potvrdil všetky 4 zaradené a vyradenie návnady. Sonnet sa zhodol v 4/5; pri návnade bez webu (R15) nevedel rozhodnúť, človek, Haiku aj pipeline povedali „nie je investor“. Celkový kapitál človek neoveril ani pri jednom zo 4 zaradených („neviem“) | ručná kontrola vo formulári | AI kontrola je pri rozhodnutí o zaradení spoľahlivá, pri „dôkaze absencie“ opatrná; kapitál je najťažšie overiteľný údaj aj pre človeka |
 | C49 | Sonnet (kontrolór) | V zdôvodnení citoval mená štatutárov firmy z registra (osobné údaje) | kontrola pred commitom | mená fyzických osôb vo výstupoch AI kontroly nahradené `[osoba]` (D14) |
 
 ### Spresnenie silnejším modelom (D38, D39)

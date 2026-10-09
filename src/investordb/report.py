@@ -125,15 +125,23 @@ def build() -> str:
             "slepá AI kontrola dvoma modelmi a kvalitatívny ľudský audit opísaný vyššie.\n")
     else:
         disputed = [r for r, s in spot.items() if s["why_selected"] == "disagreement"]
+        n_inc = sum(key[r]["stratum"] == "included" for r in human_spot)
         control = [r for r, s in spot.items() if s["why_selected"] == "random_control"]
         add(f"- **Claude Sonnet 5.5** posúdil všetkých {len(sonnet)} záznamov vzorky naslepo (rovnaké informácie ako "
             "formulár pre človeka, zdroje si otváral sám) – [pokyn](../prompts/reviewer_agent.md).")
-        add(f"- **Človek** (autor) ručne overil {len(human_spot)} z {len(spot)} vybraných záznamov: všetky, pri "
-            f"ktorých sa Sonnet a Haiku overovateľ nezhodli alebo Sonnet nevedel rozhodnúť ({len(disputed)}), a "
-            f"{len(control)} náhodných kontrolných záznamov. **Kde sa človek a Sonnet líšia, platí odpoveď človeka.**")
+        add(f"- **Človek** (autor) ručne overil {len(human_spot)} záznamov vo formulári (D40): {len(disputed)} sporné "
+            f"medzi AI kontrolórmi a {len(control)} náhodné kontrolné; z nich {n_inc} zaradené a {len(human_spot) - n_inc} "
+            f"{'vyradený (návnada)' if len(human_spot) - n_inc == 1 else 'vyradené'}. Polia (kapitál, zdroje) videl v spresnenej verzii (D38). **Kde sa človek a Sonnet "
+            "líšia, platí odpoveď človeka.**")
         add(f"- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých {len(haiku)} záznamov – druhý AI názor.")
-        add("- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34. Zadanie žiada ručne overenú vzorku – úplnú ručnú "
-            "kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.\n")
+        add("- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34, D40. Zadanie žiada ručne overenú vzorku – úplnú "
+            "ručnú kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.")
+        if findings:
+            add("- Pred formulárom človek urobil kvalitatívny audit, ktorý viedol k dvom opravám pipeline (v2, v3):\n")
+            add("| Záznam | Zistenie | Dôsledok |\n|---|---|---|")
+            for f in findings:
+                add(f"| {f['record']} | {f['finding']} | {f['consequence']} |")
+        add("")
 
     # --- pipeline overview
     status = Counter(d["status"] for d in decisions)
@@ -156,6 +164,10 @@ def build() -> str:
     decided = [r for r in included_ids if final[r]["overall"] != "cannot_tell"]
     add(f"- **Výsledná presnosť** (prísne, „neviem“ = nepotvrdené): {ci(len(correct), len(included_ids))}")
     add(f"- Len rozhodnuté záznamy (bez „neviem“): {ci(len(correct), len(decided))}")
+    if human_spot and not human_full:
+        h_ids = [r for r in included_ids if r in human_spot]
+        h_ok = [r for r in h_ids if human_spot[r]["overall"] == "include"]
+        add(f"- Len záznamy, ktoré ručne overil človek: {ci(len(h_ok), len(h_ids))}")
     if not human_full and sonnet:
         s_ok = [r for r in included_ids if sonnet.get(r, {}).get("overall") == "include"]
         add(f"- Pre porovnanie – len podľa Sonnetu (pred ľudským auditom): {ci(len(s_ok), len(included_ids))}")
@@ -193,12 +205,13 @@ def build() -> str:
         ok = [r for r in dups if final[r]["real_investor"] == "yes" and primary_included(r)]
         add(f"| duplicity (E8) – firma je v databáze cez zlúčený záznam | {ci(len(ok), len(dups))} |")
 
-    # --- fields
+    # --- fields: the zmrazená v3 as judged by Sonnet; the human saw the REFINED fields (D40), reported separately
+    fields_by = human_full or sonnet
     add("\n## 5. Presnosť a vyplnenosť polí (zaradené záznamy)\n")
     add("| Pole | Presnosť (áno / áno+nie) | Vyplnenosť v databáze |\n|---|---|---|")
     fill = {"sectors_ok": "sectors", "ticket_ok": "ticket_min_eur", "capital_ok": "total_capital_eur"}
     for q in FIELDS:
-        c = Counter(final[r][q] for r in included_ids)
+        c = Counter(fields_by[r][q] for r in included_ids if r in fields_by)
         filled = f"{sum(1 for i in investors if i.get(fill[q]))}/{len(investors)}" if q in fill else "–"
         add(f"| {q} | {ci(c['yes'], c['yes'] + c['no'])} | {filled} |")
     if sonnet:
@@ -206,6 +219,15 @@ def build() -> str:
         c = Counter(sonnet[r].get("identity_ok", "cannot_tell") for r in included_ids if r in sonnet and r not in stale)
         add(f"| identity_ok (len Sonnet; bez {len(stale)} záznamov s identitou zmenenou vo v3) | "
             f"{ci(c['yes'], c['yes'] + c['no'])} | – |")
+
+    if human_spot and not human_full:
+        h_inc = [r for r in human_spot if key[r]["stratum"] == "included" and key[r]["status"] == "INCLUDED"]
+        add(f"\nČlovek pri {len(h_inc)} zaradených záznamoch hodnotil polia **spresnenej verzie** (D40); presnosť "
+            "spresnených polí meria podrobne slepá kontrola faktov v [REFINEMENT.md](REFINEMENT.md):\n")
+        add("| Pole (spresnená verzia) | Áno | Nie | Neviem | Neuvedené |\n|---|---|---|---|---|")
+        for q in FIELDS:
+            c = Counter(human_spot[r][q] for r in h_inc)
+            add(f"| {q} | {c['yes']} | {c['no']} | {c['cannot_tell']} | {c['not_given']} |")
 
     # --- how ambiguous the sources themselves are (the human's main qualitative finding, D36)
     inc_ids = {i["candidate_id"] for i in investors} | {m for i in investors for m in i["evidence_ids"].split()}
@@ -285,8 +307,9 @@ def build() -> str:
     add("## 9. Čas ručnej kontroly\n")
     add(f"{len(minutes)} záznamov, priemer **{statistics.mean(minutes):.1f} min**, medián "
         f"{statistics.median(minutes):.1f} min na záznam (vstup pre odhad nákladov).\n" if minutes
-        else "Štruktúrovaná ručná kontrola nebola vyplnená (D36), čas sa preto nemeral. Nákladový model používa "
-             "predpoklad 4 min na záznam a uvádza ho ako predpoklad.\n")
+        else ("Človek pri ručnej kontrole čas na záznam nezaznamenal. " if human_spot or human_full else
+              "Štruktúrovaná ručná kontrola nebola vyplnená (D36), čas sa preto nemeral. ")
+        + "Nákladový model používa predpoklad 4 min na záznam a uvádza ho ako predpoklad.\n")
 
     # --- errors
     add("## 10. Záznamy, pri ktorých sa výsledok líši od pipeline\n")

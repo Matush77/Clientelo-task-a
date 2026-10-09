@@ -14,6 +14,7 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | Vyradených / mimo rozsahu / na ručnú kontrolu | 70 / 35 / 4 |
 | Tvrdení agentov strojovo overených na zdrojovej stránke | 808 z 852 (95 %); pri spresnení 144 zo 147 (98 %) |
 | **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |
+| **Ručná kontrola autora** (5 záznamov, D40) | zaradené potvrdené 4/4, návnada správne vyradená; Sonnet sa s človekom zhodol v 4/5 (v piatom nevedel rozhodnúť); celkový kapitál človek z verejných zdrojov neoveril ani raz („neviem“ 4/4) |
 | Presnosť polí (zmrazená v3) | sektory 17/17, tiket 15/15, zdroje dokladajú investície 19/23 (83 %), celkový kapitál 6/12 (50 %) |
 | **Spresnenie Sonnetom 5.5 – slepá kontrola faktov pred → po** | celkový kapitál 8/15 (53 %) → **14/20 (70 %)**, vyplnený pri 15 → 20 z 24; dátum obchodu 54/68 (79 %) → **78/80 (97,5 %)**; identita v registri 24/24 – [REFINEMENT.md](docs/REFINEMENT.md) |
 | Pokrytie (capture–recapture) | ~78 % z odhadovaných ~31 aktívnych VC so sídlom v CZ/SK |
@@ -76,7 +77,7 @@ dátum článku, ktorý staršiu investíciu len spomína, a ako kapitál cieľo
 
 ## Ako som pracoval s AI (zhrnutie)
 
-Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 57 chýb a slabín).
+Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 58 chýb a slabín).
 
 - **Rozdelenie rolí:**
   - ja rozhodujem o pravidlách a robím kvalitatívny audit;
@@ -113,10 +114,11 @@ Všetky (40) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitej
 ## Čo chýba / obmedzenia
 
 <!-- LIMITS:START -->
-- **Ručne overená vzorka nie je úplná (D34, D36).** Zadanie žiada meranie na ručne overenej vzorke. Štruktúrované
-  ručné odpovede som nevyplnil. Presnosť je preto zmeraná **slepou kontrolou modelom Claude Sonnet 5.5** a porovnaná
-  s druhým modelom (Haiku). Ľudský vstup je kvalitatívny audit formulára – našiel chyby, ktoré viedli k dvom
-  opraveným verziám dát (`pilot-frozen-v2`, `-v3`), a hlavné zistenie o nejasnosti článkov.
+- **Ručne overená vzorka je malá (D34, D36, D40).** Zadanie žiada meranie na ručne overenej vzorke. Ručne som
+  overil 5 záznamov (4 zaradené, 1 návnadu) – všetky v zhode s pipeline; presnosť na celej vzorke (34 záznamov) meria
+  **slepá kontrola modelom Claude Sonnet 5.5**, porovnaná s druhým modelom (Haiku) a s mojou kontrolou (zhoda 4/5,
+  bez priameho rozporu). Predtým môj kvalitatívny audit formulára našiel chyby, ktoré viedli k dvom opraveným verziám
+  dát (`pilot-frozen-v2`, `-v3`), a hlavné zistenie o nejasnosti článkov.
 - **Haiku na výklad článkov nestačí.** Zber dôkazov robil lacný model, ktorý často nerozlíšil dátum článku od dátumu
   obchodu ani cieľový fond od uzavretého. Riešené cieleným spresnením modelom Sonnet 5.5 pri zaradených záznamoch
   (D38): dátumy obchodov 97,5 %, kapitál 70 %. Spresnenie aj kontrolu faktov robil model tej istej rodiny, takže

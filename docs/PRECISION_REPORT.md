@@ -4,9 +4,11 @@
 
 ## 1. Kto hodnotil vzorku
 
-- **Claude Sonnet 5.5** posúdil všetkých 34 záznamov vzorky naslepo. Dostal rovnaké informácie ako formulár pre človeka a zdroje si otváral sám – [pokyn](../prompts/reviewer_agent.md). **Presnosť nižšie je teda presnosť podľa nezávislej AI kontroly silnejším modelom.**
+- **Claude Sonnet 5.5** posúdil všetkých 34 záznamov vzorky naslepo (rovnaké informácie ako formulár pre človeka, zdroje si otváral sám) – [pokyn](../prompts/reviewer_agent.md).
+- **Človek** (autor) ručne overil 5 záznamov vo formulári (D40): 2 sporné medzi AI kontrolórmi a 3 náhodné kontrolné; z nich 4 zaradené a 1 vyradený (návnada). Polia (kapitál, zdroje) videl v spresnenej verzii (D38). **Kde sa človek a Sonnet líšia, platí odpoveď človeka.**
 - **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých 34 záznamov – druhý AI názor.
-- **Človek** (autor) formulár prešiel, **štruktúrované odpovede však nevyplnil** (rozhodnutie D36). Jeho kvalitatívne zistenia viedli k dvom opravám pipeline (v2, v3):
+- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34, D40. Zadanie žiada ručne overenú vzorku – úplnú ručnú kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.
+- Pred formulárom človek urobil kvalitatívny audit, ktorý viedol k dvom opravám pipeline (v2, v3):
 
 | Záznam | Zistenie | Dôsledok |
 |---|---|---|
@@ -15,8 +17,6 @@
 | R31/R32 Jet Investment / Jet Ventures | Rovnaká skupina dvakrát vo vzorke | Vysvetlené: R32 je vyradená duplicita (E8) zlúčená do R31 |
 | R16 CB Investment Management | IČO v zázname nesedí s webom investora | Oprava v2 -> v3: prísne pravidlá identity v registri (D35) |
 | celá vzorka | Z článkov často nie je jasný dátum investície, výška sumy ani to, či peniaze naozaj išli do firmy | Dokumentované ako hlavné obmedzenie; odporúčanie silnejšieho modelu na výklad článkov (D36); kvantifikované v PRECISION_REPORT |
-
-**Obmedzenie:** zadanie žiada ručne overenú vzorku. Formálne ručné meranie presnosti chýba. Nahrádza ho slepá AI kontrola dvoma modelmi a kvalitatívny ľudský audit opísaný vyššie.
 
 ## 2. Výsledok pipeline
 
@@ -35,6 +35,7 @@ Záznam je správny, ak hodnotiteľ zo zdrojov potvrdil **všetky štyri**: skut
 
 - **Výsledná presnosť** (prísne, „neviem“ = nepotvrdené): **23/23 = 100.0 %** (95 % CI 85.7 % – 100.0 %)
 - Len rozhodnuté záznamy (bez „neviem“): **23/23 = 100.0 %** (95 % CI 85.7 % – 100.0 %)
+- Len záznamy, ktoré ručne overil človek: **4/4 = 100.0 %** (95 % CI 51.0 % – 100.0 %)
 - Pre porovnanie – len podľa Sonnetu (pred ľudským auditom): **23/23 = 100.0 %** (95 % CI 85.7 % – 100.0 %)
 - Záznamy vybrané ako zaradené, ktoré po oprave v3 už v databáze nie sú (nezapočítané): R03 (NEEDS_REVIEW REVIEW_IDENTITY)
 
@@ -52,7 +53,7 @@ Vyradenie je správne, ak hodnotiteľ pri aspoň jednej zo štyroch otázok odpo
 | Vrstva | Správne vyradené |
 |---|---|
 | skutočné vyradené záznamy (bez duplicít) – prísne | **3/3 = 100.0 %** (95 % CI 43.8 % – 100.0 %) |
-| kontrolná sada (návnady) – prísne | **3/5 = 60.0 %** (95 % CI 23.1 % – 88.2 %) |
+| kontrolná sada (návnady) – prísne | **4/5 = 80.0 %** (95 % CI 37.6 % – 96.4 %) |
 | kontrolná sada (návnady) – vrátane „ani hodnotiteľ nenašiel dôkaz“ pri E7 | **5/5 = 100.0 %** (95 % CI 56.6 % – 100.0 %) |
 | duplicity (E8) – firma je v databáze cez zlúčený záznam | **1/2 = 50.0 %** (95 % CI 9.5 % – 90.5 %) |
 
@@ -65,6 +66,15 @@ Vyradenie je správne, ak hodnotiteľ pri aspoň jednej zo štyroch otázok odpo
 | ticket_ok | **15/15 = 100.0 %** (95 % CI 79.6 % – 100.0 %) | 14/24 |
 | capital_ok | **6/12 = 50.0 %** (95 % CI 25.4 % – 74.6 %) | 15/24 |
 | identity_ok (len Sonnet; bez 8 záznamov s identitou zmenenou vo v3) | **18/18 = 100.0 %** (95 % CI 82.4 % – 100.0 %) | – |
+
+Človek pri 4 zaradených záznamoch hodnotil polia **spresnenej verzie** (D40); presnosť spresnených polí meria podrobne slepá kontrola faktov v [REFINEMENT.md](REFINEMENT.md):
+
+| Pole (spresnená verzia) | Áno | Nie | Neviem | Neuvedené |
+|---|---|---|---|---|
+| sources_support | 4 | 0 | 0 | 0 |
+| sectors_ok | 3 | 0 | 1 | 0 |
+| ticket_ok | 0 | 0 | 3 | 1 |
+| capital_ok | 0 | 0 | 4 | 0 |
 
 ### Nejasnosť zdrojov (investície zaradených investorov)
 
@@ -80,10 +90,12 @@ Z 297 overených investičných tvrdení: kontext obchodu `deal` 209, `mention` 
 
 | Dvojica | Zhoda celkového verdiktu | Cohenovo κ (rozhodnuté záznamy) |
 |---|---|---|
-| Haiku overovateľ vs. výsledok | **29/34 = 85.3 %** (95 % CI 69.9 % – 93.6 %) | 1.00 |
+| Haiku overovateľ vs. výsledok | **30/34 = 88.2 %** (95 % CI 73.4 % – 95.3 %) | 1.00 |
 | Haiku overovateľ vs. Sonnet | **29/34 = 85.3 %** (95 % CI 69.9 % – 93.6 %) | 1.00 |
+| Sonnet vs. človek – náhodné kontrolné záznamy | **3/3 = 100.0 %** (95 % CI 43.8 % – 100.0 %) | 1.00 |
+| Sonnet vs. človek – sporné záznamy | **1/2 = 50.0 %** (95 % CI 9.5 % – 90.5 %) | 1.00 |
 
-Všetky rozdiely Haiku vs. Sonnet (5) sú prípady, keď jeden model **nevedel rozhodnúť** („cannot_tell“) a druhý áno; v žiadnom zázname si priamo neprotirečia (preto κ = 1,00 na rozhodnutých). Sonnet bol rozhodnejší a navyše našiel chyby v poliach (cieľové fondy v kapitáli, dátumy článkov namiesto dátumov obchodu), ktoré Haiku overovateľ prehliadol.
+Zhoda Sonneta s človekom na **náhodných** kontrolných záznamoch je nestranný odhad spoľahlivosti AI kontroly; na sporných záznamoch ukazuje, kto mal pri ťažkých prípadoch pravdu.
 
 ## 8. Odhad úplnosti (capture–recapture)
 
@@ -91,11 +103,10 @@ Zaradení investori nájdení v zozname A (štruktúrované zdroje): 14, v zozna
 
 ## 9. Čas ručnej kontroly
 
-Štruktúrovaná ručná kontrola nebola vyplnená (D36), čas sa preto nemeral. Nákladový model používa predpoklad 4 min na záznam a uvádza ho ako predpoklad.
+Človek pri ručnej kontrole čas na záznam nezaznamenal. Nákladový model používa predpoklad 4 min na záznam a uvádza ho ako predpoklad.
 
 ## 10. Záznamy, pri ktorých sa výsledok líši od pipeline
 
 | Záznam | Vrstva | Pipeline | Výsledok | Kto | Zdôvodnenie |
 |---|---|---|---|---|---|
-| R15 Uroboros Ventures s.r.o. (C199) | control_reject | REJECTED E7 | cannot_tell | Sonnet 5.5 | real_investor: No website, portfolio or press mention found; ARES lists activities as real estate, wholesale and sports facilities (68200, 46900, 93110, 461), and the firm is also linked to the name Megatenis s.r.o., so nothing shows it invests into companies.; active_36m: No investment by this enti |
 | R17 Tech Ventures s.r.o. (C200) | control_reject | REJECTED E7 | cannot_tell | Sonnet 5.5 | real_investor: No public source shows Tech Ventures s.r.o. investing in companies; ARES/finmag show a 2019 s.r.o. (seat Zdanice, sole owner and director [osoba]) with registered activities in IT, advertising, training and events, not investing.; active_36m: The record lists no investments and no sou |

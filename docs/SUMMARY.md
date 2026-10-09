@@ -22,6 +22,7 @@ každý záznam skutočný investor a každý údaj (sektor, typická investíci
 | Kandidátov z verejných zdrojov | 206 → **24 zaradených** (20 CZ, 4 SK), 70 vyradených, 35 mimo rozsahu, 4 na ručnú kontrolu |
 | Tvrdení overených programom na stránke zdroja | 808 z 852 (95 %) |
 | **Presnosť zaradenia** (slepá kontrola) | **23/23** (95 % CI 86–100 %) |
+| Ručná kontrola autora (5 záznamov) | 4/4 zaradené potvrdené, návnada správne vyradená; zhoda so Sonnetom 4/5 |
 | Správne vyradené | skutočné vyradené 3/3; návnady 3/5 prísne, 5/5 vrátane prípadov, keď dôkaz nenašiel ani kontrolór |
 | Dátum obchodu správny (±2 mesiace) | 79 % → **97,5 %** po spresnení |
 | Celkový kapitál správny | 53 % → **70 %** po spresnení (vyplnený pri 20 z 24) |
@@ -50,7 +51,8 @@ každý záznam skutočný investor a každý údaj (sektor, typická investíci
 ## Obmedzenia
 
 - Malá vzorka (23 zaradených) dáva široký interval spoľahlivosti; na ±5 bodov treba ~140 záznamov na segment.
-- Ručná kontrola autora je zaznamenaná ako kvalitatívny audit, nie ako vyplnený formulár (D36).
+- Ručne overených je len 5 záznamov (D40); celkový kapitál autor z verejných zdrojov neoveril ani pri jednom –
+  potvrdzuje, že kapitál je najťažšie overiteľný údaj.
 - Spresnenie aj kontrolu faktov robil model tej istej rodiny – korelované chyby nemožno vylúčiť.
 - Pilot pokrýva len VC v CZ/SK; odhady pre PE, family office a angel investorov sú hypotézy.
 
