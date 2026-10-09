@@ -112,11 +112,23 @@ def build() -> str:
     # --- rejections
     add("\n## 3. Správnosť vyradenia\n")
     add("Vyradenie je správne, ak kontrolór pri aspoň jednej zo štyroch otázok odpovedal „nie“.\n")
+    add("Duplicity (E8) sa hodnotia zvlášť (rozhodnutie D29): vyradenie duplicity je správne, ak ide o skutočného "
+        "investora **a** jeho zlúčený hlavný záznam je v databáze zaradený – firma je tam teda práve raz.\n")
     add("| Vrstva | Správne vyradené |\n|---|---|")
-    for stratum, label in (("real_reject", "skutočné vyradené záznamy"), ("control_reject", "kontrolná sada (návnady)")):
-        ids = [rid for rid, k in key.items() if k["stratum"] == stratum and rid in human]
+    dec = {d["candidate_id"]: d for d in decisions}
+    for stratum, label in (("real_reject", "skutočné vyradené záznamy (bez duplicít)"),
+                           ("control_reject", "kontrolná sada (návnady)")):
+        ids = [rid for rid, k in key.items() if k["stratum"] == stratum and rid in human and k["reason"] != "E8"]
         ok = [rid for rid in ids if human[rid]["overall"] == "exclude"]
         add(f"| {label} | {ci(len(ok), len(ids))} |")
+    dups = [rid for rid, k in key.items() if k["reason"] == "E8" and rid in human]
+    if dups:
+        def primary_included(rid: str) -> bool:
+            expl = dec.get(key[rid]["candidate_id"], {}).get("explanation", "")
+            primary = expl.split("duplicate of ")[-1].split(" ")[0] if "duplicate of" in expl else ""
+            return dec.get(primary, {}).get("status") == "INCLUDED"
+        ok = [rid for rid in dups if human[rid]["real_investor"] == "yes" and primary_included(rid)]
+        add(f"| duplicity (E8) – firma je v databáze cez zlúčený záznam | {ci(len(ok), len(dups))} |")
 
     # --- fields
     add("\n## 4. Presnosť a vyplnenosť polí\n")
@@ -178,7 +190,7 @@ def build() -> str:
     add("## 9. Chyby nájdené ručnou kontrolou\n")
     errors = [(rid, key[rid]) for rid in key if rid in human and (
         (key[rid]["stratum"] == "included" and human[rid]["overall"] != "include")
-        or (key[rid]["stratum"] != "included" and human[rid]["overall"] != "exclude"))]
+        or (key[rid]["stratum"] != "included" and key[rid]["reason"] != "E8" and human[rid]["overall"] != "exclude"))]
     if errors:
         add("| Záznam | Vrstva | Pipeline | Človek | Poznámka |\n|---|---|---|---|---|")
         for rid, k in errors:
