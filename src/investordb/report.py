@@ -108,8 +108,21 @@ def build() -> str:
 
     # --- who judged
     add("## 1. Kto hodnotil vzorku\n")
+    findings = _read(REVIEW_DIR / "human_findings.csv")
     if human_full:
         add(f"Všetkých {len(human_full)} záznamov vzorky ručne overil človek.\n")
+    elif not human_spot:
+        add(f"- **Claude Sonnet 5.5** posúdil všetkých {len(sonnet)} záznamov vzorky naslepo. Dostal rovnaké informácie "
+            "ako formulár pre človeka a zdroje si otváral sám – [pokyn](../prompts/reviewer_agent.md). **Presnosť nižšie "
+            "je teda presnosť podľa nezávislej AI kontroly silnejším modelom.**")
+        add(f"- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých {len(haiku)} záznamov – druhý AI názor.")
+        add("- **Človek** (autor) formulár prešiel, **štruktúrované odpovede však nevyplnil** (rozhodnutie D36). Jeho "
+            "kvalitatívne zistenia viedli k dvom opravám pipeline (v2, v3):\n")
+        add("| Záznam | Zistenie | Dôsledok |\n|---|---|---|")
+        for f in findings:
+            add(f"| {f['record']} | {f['finding']} | {f['consequence']} |")
+        add("\n**Obmedzenie:** zadanie žiada ručne overenú vzorku. Formálne ručné meranie presnosti chýba. Nahrádza ho "
+            "slepá AI kontrola dvoma modelmi a kvalitatívny ľudský audit opísaný vyššie.\n")
     else:
         disputed = [r for r, s in spot.items() if s["why_selected"] == "disagreement"]
         control = [r for r, s in spot.items() if s["why_selected"] == "random_control"]
@@ -132,7 +145,10 @@ def build() -> str:
     add("\nDôvody vyradenia: " + ", ".join(f"{r} {n}×" for r, n in reasons.most_common()) + "\n")
 
     # --- primary metric
-    included_ids = [rid for rid, k in key.items() if k["stratum"] == "included" and rid in final]
+    # records the CURRENT database includes (a record sampled as included in v2 may have left the database in v3)
+    included_ids = [rid for rid, k in key.items() if k["stratum"] == "included" and k["status"] == "INCLUDED"
+                    and rid in final]
+    left = [rid for rid, k in key.items() if k["stratum"] == "included" and k["status"] != "INCLUDED"]
     add("## 3. Primárna metrika: presnosť zaradených záznamov\n")
     add("Záznam je správny, ak hodnotiteľ zo zdrojov potvrdil **všetky štyri**: skutočný investor ∧ aktívny "
         "v 36 mesiacoch ∧ VC ∧ sídlo CZ/SK.\n")
@@ -143,6 +159,9 @@ def build() -> str:
     if not human_full and sonnet:
         s_ok = [r for r in included_ids if sonnet.get(r, {}).get("overall") == "include"]
         add(f"- Pre porovnanie – len podľa Sonnetu (pred ľudským auditom): {ci(len(s_ok), len(included_ids))}")
+    if left:
+        add(f"- Záznamy vybrané ako zaradené, ktoré po oprave v3 už v databáze nie sú (nezapočítané): "
+            + ", ".join(f"{r} ({key[r]['status']} {key[r]['reason']})" for r in left))
     add("\n| Otázka | Áno | Nie | Neviem |\n|---|---|---|---|")
     for q in PRIMARY:
         c = Counter(final[r][q] for r in included_ids)
@@ -158,7 +177,13 @@ def build() -> str:
                            ("control_reject", "kontrolná sada (návnady)")):
         ids = [r for r, k in key.items() if k["stratum"] == stratum and r in final and k["reason"] != "E8"]
         ok = [r for r in ids if final[r]["overall"] == "exclude"]
-        add(f"| {label} | {ci(len(ok), len(ids))} |")
+        add(f"| {label} – prísne | {ci(len(ok), len(ids))} |")
+        # for E7 ('no evidence of investing') a reviewer who also finds nothing answers 'cannot tell' - that supports
+        # the rejection rather than contradicting it
+        consistent = [r for r in ids if final[r]["overall"] == "exclude"
+                      or (key[r]["reason"] == "E7" and final[r]["overall"] == "cannot_tell")]
+        if len(consistent) != len(ok):
+            add(f"| {label} – vrátane „ani hodnotiteľ nenašiel dôkaz“ pri E7 | {ci(len(consistent), len(ids))} |")
     dups = [r for r, k in key.items() if k["reason"] == "E8" and r in final]
     if dups:
         def primary_included(rid: str) -> bool:
@@ -177,8 +202,26 @@ def build() -> str:
         filled = f"{sum(1 for i in investors if i.get(fill[q]))}/{len(investors)}" if q in fill else "–"
         add(f"| {q} | {ci(c['yes'], c['yes'] + c['no'])} | {filled} |")
     if sonnet:
-        c = Counter(sonnet[r].get("identity_ok", "cannot_tell") for r in included_ids if r in sonnet)
-        add(f"| identity_ok (len Sonnet) | {ci(c['yes'], c['yes'] + c['no'])} | – |")
+        stale = {r["review_id"] for r in _read(REVIEW_DIR / "identity_changed_v3.csv")}
+        c = Counter(sonnet[r].get("identity_ok", "cannot_tell") for r in included_ids if r in sonnet and r not in stale)
+        add(f"| identity_ok (len Sonnet; bez {len(stale)} záznamov s identitou zmenenou vo v3) | "
+            f"{ci(c['yes'], c['yes'] + c['no'])} | – |")
+
+    # --- how ambiguous the sources themselves are (the human's main qualitative finding, D36)
+    inc_ids = {i["candidate_id"] for i in investors} | {m for i in investors for m in i["evidence_ids"].split()}
+    inv_inc = [c for c in claims if c["field"] == "investments" and c["auto_check"] == "ok"
+               and c["candidate_id"] in inc_ids and c.get("deal_context") != "exit" and c.get("attributed") != "0"]
+    if inv_inc:
+        n = len(inv_inc)
+        dated = [c for c in inv_inc if c.get("deal_context") == "deal" and c["event_date"]]
+        day = [c for c in dated if c.get("event_date_precision") == "day"]
+        with_amount = [c for c in inv_inc if (json.loads(c["value"]) or {}).get("amount")]
+        add("\n### Nejasnosť zdrojov (investície zaradených investorov)\n")
+        add(f"Z {n} overených investícií zaradených investorov: **{len(dated)} ({pct(len(dated) / n)})** má dátum, ktorý "
+            f"možno považovať za dátum obchodu (z toho {len(day)} s presnosťou na deň); "
+            f"**{n - len(dated)} ({pct((n - len(dated)) / n)})** je len zmienka bez dátumu obchodu (portfólio, prehľadové "
+            f"články); suma je uvedená pri **{len(with_amount)} ({pct(len(with_amount) / n)})**. Potvrdzuje to zistenie z "
+            "ľudskej kontroly: z verejných článkov často nie je jasné, kedy a koľko investor investoval.\n")
 
     # --- automatic checks
     checks = Counter(c["auto_check"] for c in claims)
@@ -205,8 +248,15 @@ def build() -> str:
     for label, a, b, ids in pairs:
         agree, n, k = kappa(a, b, ids)
         add(f"| {label} | {ci(agree, n)} | {k:.2f} |" if n else f"| {label} | – | – |")
-    add("\nZhoda Sonneta s človekom na **náhodných** kontrolných záznamoch je nestranný odhad spoľahlivosti AI kontroly; "
-        "na sporných záznamoch ukazuje, kto mal pri ťažkých prípadoch pravdu.\n")
+    if human_spot:
+        add("\nZhoda Sonneta s človekom na **náhodných** kontrolných záznamoch je nestranný odhad spoľahlivosti AI "
+            "kontroly; na sporných záznamoch ukazuje, kto mal pri ťažkých prípadoch pravdu.\n")
+    else:
+        disagree = [r for r in key if r in haiku and r in sonnet and haiku[r]["overall"] != sonnet[r]["overall"]]
+        add(f"\nVšetky rozdiely Haiku vs. Sonnet ({len(disagree)}) sú prípady, keď jeden model **nevedel rozhodnúť** "
+            "(„cannot_tell“) a druhý áno; v žiadnom zázname si priamo neprotirečia (preto κ = 1,00 na rozhodnutých). "
+            "Sonnet bol rozhodnejší a navyše našiel chyby v poliach (cieľové fondy v kapitáli, dátumy článkov namiesto "
+            "dátumov obchodu), ktoré Haiku overovateľ prehliadol.\n")
 
     # --- coverage
     add("## 8. Odhad úplnosti (capture–recapture)\n")
@@ -235,7 +285,8 @@ def build() -> str:
     add("## 9. Čas ručnej kontroly\n")
     add(f"{len(minutes)} záznamov, priemer **{statistics.mean(minutes):.1f} min**, medián "
         f"{statistics.median(minutes):.1f} min na záznam (vstup pre odhad nákladov).\n" if minutes
-        else "Čas zatiaľ nie je k dispozícii.\n")
+        else "Štruktúrovaná ručná kontrola nebola vyplnená (D36), čas sa preto nemeral. Nákladový model používa "
+             "predpoklad 4 min na záznam a uvádza ho ako predpoklad.\n")
 
     # --- errors
     add("## 10. Záznamy, pri ktorých sa výsledok líši od pipeline\n")

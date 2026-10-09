@@ -12,6 +12,7 @@ Prices: Anthropic API list prices (see data/reference/api_prices.csv), never fro
 from __future__ import annotations
 
 import csv
+import json
 import statistics
 from dataclasses import dataclass
 from pathlib import Path
@@ -24,14 +25,24 @@ PROCESSED = ROOT / "data" / "processed"
 REVIEW = ROOT / "data" / "review" / "review_results.csv"
 USD_PER_EUR = 1.1186  # ECB reference rate 2026-10-08 (fetched by money.eur_rate in the pilot)
 
-# Claude Haiku 5.5, USD per million tokens (prompts <= 100K tokens) and per search
+# Claude Haiku 5.5, USD per million tokens (prompts <= 100K tokens) and per search - verified on the pricing page
 PRICES = {"input": 0.10, "output": 0.50, "cache_write_5m": 0.125, "cache_write_1h": 0.20, "cache_read": 0.01,
           "web_search": 10.0 / 1000}
+# Claude Sonnet 5.5: $2 / $10, cache writes $2.50 / $4, cache reads $0.20 per MTok (Anthropic API reference, cached
+# 2026-10-06) - exactly 20x Haiku 5.5 for every token type; web search costs the same for every model
+SONNET_FACTOR = 20.0
+
+
+def prices_for(model: str) -> dict[str, float]:
+    if "sonnet" in (model or ""):
+        return {k: (v if k == "web_search" else v * SONNET_FACTOR) for k, v in PRICES.items()}
+    return PRICES
 # In Claude Code, WebFetch hands the agent a short extract; an API pipeline's web_fetch returns page text into the
 # context. Added as extra input tokens per fetched page so the API cost is not understated.
 TOKENS_PER_FETCHED_PAGE = 6000
 
 STAGES = {  # description keywords -> stage (see usage.py / runs.csv)
+    "reviewer": "ai_review", "re-review": "ai_review",
     "verifier": "verifier", "recent-deal": "recent_deal", "evidence": "evidence", "list a": "discovery",
     "list b": "discovery", "lookalike": "discovery", "hq triage": "hq_triage", "duplicate": "duplicate_check",
 }
@@ -42,14 +53,20 @@ def stage_of(description: str) -> str:
     return next((s for k, s in STAGES.items() if k in d), "research_planning")
 
 
+def token_cost(row: dict) -> float:
+    """API-equivalent USD cost of one run's tokens, at the prices of the model that ran it."""
+    p = prices_for(row.get("model", ""))
+    tokens = (int(row["input_tokens"]) + int(row["web_fetches"]) * TOKENS_PER_FETCHED_PAGE) * p["input"]
+    tokens += int(row["output_tokens_est"]) * p["output"]
+    tokens += int(row["cache_write_5m_tokens"]) * p["cache_write_5m"]
+    tokens += int(row["cache_write_1h_tokens"]) * p["cache_write_1h"]
+    tokens += int(row["cache_read_tokens"]) * p["cache_read"]
+    return tokens / 1e6
+
+
 def run_cost(row: dict) -> float:
-    """API-equivalent USD cost of one measured agent run at Haiku 5.5 prices."""
-    tokens = (int(row["input_tokens"]) + int(row["web_fetches"]) * TOKENS_PER_FETCHED_PAGE) * PRICES["input"]
-    tokens += int(row["output_tokens_est"]) * PRICES["output"]
-    tokens += int(row["cache_write_5m_tokens"]) * PRICES["cache_write_5m"]
-    tokens += int(row["cache_write_1h_tokens"]) * PRICES["cache_write_1h"]
-    tokens += int(row["cache_read_tokens"]) * PRICES["cache_read"]
-    return tokens / 1e6 + int(row["web_searches"]) * PRICES["web_search"]
+    """API-equivalent USD cost of one measured agent run (tokens + web searches)."""
+    return token_cost(row) + int(row["web_searches"]) * PRICES["web_search"]
 
 
 def _read(path: Path) -> list[dict]:
@@ -62,6 +79,8 @@ def _read(path: Path) -> list[dict]:
 @dataclass
 class Measured:
     cost_by_stage: dict[str, float]
+    token_cost_by_stage: dict[str, float]
+    ai_review_records: int
     evidence_runs: int  # candidate-evidence runs incl. rescue / re-runs
     candidates: int  # unique candidates that went through evidence
     included: int
@@ -80,24 +99,38 @@ class Measured:
     def verifier_per_record(self) -> float:
         return self.cost_by_stage.get("verifier", 0) / max(self.verifier_records, 1)
 
+    @property
+    def tokens_per_candidate(self) -> float:
+        """Token part (no web search) of the evidence-type stages per candidate, at Haiku prices."""
+        stages = ("discovery", "hq_triage", "evidence", "recent_deal", "duplicate_check")
+        return sum(self.token_cost_by_stage.get(s, 0) for s in stages) / self.candidates
+
+    @property
+    def ai_review_per_record(self) -> float:
+        return self.cost_by_stage.get("ai_review", 0) / max(self.ai_review_records, 1)
+
 
 def measure() -> Measured:
     runs = _read(RUNS)
     cost_by_stage: dict[str, float] = {}
+    token_cost_by_stage: dict[str, float] = {}
     search_cost = 0.0
     for r in runs:
         s = stage_of(r["description"])
         cost_by_stage[s] = cost_by_stage.get(s, 0) + run_cost(r)
+        token_cost_by_stage[s] = token_cost_by_stage.get(s, 0) + token_cost(r)
         search_cost += int(r["web_searches"]) * PRICES["web_search"]
+    reviewed = sum(len(json.loads(p.read_text(encoding="utf-8")))
+                   for p in (ROOT / "data" / "review" / "sonnet").glob("s_b*.json"))
     decisions = _read(PROCESSED / "decisions.csv")
     minutes = [float(r["minutes_spent"]) for r in _read(REVIEW) if (r.get("minutes_spent") or "").strip()]
     # records the verifier actually checked, over all passes (v1 and v2 of the pilot)
-    import json
-
     verifier_records = sum(len(json.loads(p.read_text(encoding="utf-8")))
                            for p in (ROOT / "data" / "raw" / "agents" / "verifier").rglob("batches/*.json"))
     return Measured(
         cost_by_stage=cost_by_stage,
+        token_cost_by_stage=token_cost_by_stage,
+        ai_review_records=reviewed,
         evidence_runs=145,
         candidates=len(decisions),
         included=sum(d["status"] == "INCLUDED" for d in decisions),
@@ -198,8 +231,27 @@ def render(m: Measured) -> str:
                 (f"{e[key]:.2f} €" if key == "per_record_eur" else _eur(e[key])) for e in est]
         add(f"| {label} | " + " | ".join(vals) + " |")
     add("")
-    add("## 3. Čo z toho vyplýva\n")
-    base = est[1]
+    base, s_base = est[1], sc[1]
+    add("## 3. Varianty kvality (základný scenár)\n")
+    add("Pilot ukázal dve slabiny: (1) Haiku pri výklade článkov často nerozlíšil dátum obchodu od dátumu článku a "
+        "cieľový fond od uzavretého, (2) na presnosť polí treba ľudskú kontrolu. Dve varianty, ako za to zaplatiť:\n")
+    extra_sonnet = base["candidates"] * m.tokens_per_candidate * (SONNET_FACTOR - 1) * s_base.language_factor / USD_PER_EUR
+    review_all = s_base.target_records * m.ai_review_per_record / USD_PER_EUR
+    human_reduced = base["human_eur"] * 0.4  # human only on AI disagreements + random control (~40 % of the QA sample)
+    add("| Variant | AI | Ľudská kontrola | Spolu 1. rok | Rozdiel oproti základu |\n|---|---|---|---|---|")
+    add(f"| základ (Haiku na zber, človek na vzorku) | {_eur(base['ai_eur'])} | {_eur(base['human_eur'])} | "
+        f"{_eur(base['year1_eur'])} | – |")
+    v1 = base["year1_eur"] + extra_sonnet
+    add(f"| **Sonnet 5.5 na zber dôkazov** (výklad dátumov, súm, účasti) | {_eur(base['ai_eur'] + extra_sonnet)} | "
+        f"{_eur(base['human_eur'])} | {_eur(v1)} | +{_eur(extra_sonnet)} |")
+    v2 = base["year1_eur"] + extra_sonnet + review_all - (base["human_eur"] - human_reduced)
+    add(f"| Sonnet na zber **aj** AI kontrolu všetkých záznamov, človek len na sporné a náhodné | "
+        f"{_eur(base['ai_eur'] + extra_sonnet + review_all)} | {_eur(human_reduced)} | {_eur(v2)} | "
+        f"{'+' if v2 >= base['year1_eur'] else '−'}{_eur(abs(v2 - base['year1_eur']))} |\n")
+    add(f"Namerané v pilote: tokeny zberu dôkazov stoja {m.tokens_per_candidate:.4f} USD na kandidáta pri Haiku (Sonnet "
+        f"= 20×); AI kontrola Sonnetom stála {m.ai_review_per_record:.3f} USD na záznam. Podiel ľudskej kontroly 40 % "
+        "v poslednom riadku je predpoklad – v pilote sa Sonnet a Haiku líšili v 15 % záznamov, k tomu náhodná kontrola.\n")
+    add("## 4. Čo z toho vyplýva\n")
     add(f"- **Hlavný náklad nie je AI, ale ľudská kontrola kvality.** V základnom scenári AI stojí "
         f"{_eur(base['ai_eur'])}, ľudská kontrola {_eur(base['human_eur'])}.")
     add("- **Najväčšia páka je zhoda AI overovateľa s človekom** (meraná v [PRECISION_REPORT.md](PRECISION_REPORT.md)). "
