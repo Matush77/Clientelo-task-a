@@ -1,0 +1,178 @@
+[
+ {
+  "review_id": "R14",
+  "name": "Investika realitní fond (INVESTIKA, investiční společnost, a.s.)",
+  "website": "https://www.investika.cz",
+  "legal_name": "INVESTIKA, investiční společnost, a.s.",
+  "company_id": "04158911",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04158911",
+  "hq_country": "CZ",
+  "types": "real_estate",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "1229357046",
+  "capital_method": "aum_stated",
+  "capital_note": "přes 30 miliard korun → EUR kurzom ECB 24.403 (2026-10-09)",
+  "funds_target": "",
+  "funds": "INVESTIKA realitní fond (?); MONETIKA peněžní fond (?); EUROMONETIKA depozitní fond (?); EFEKTIKA fond akciových trhů (?); DYNAMIKA fond unikátních příležitostí (?); METALIKA zlatý fond (?); CRYPTONIKA kryptoměnový fond (?)",
+  "investments": [],
+  "sources": [
+   "https://www.investika.cz",
+   "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"
+  ]
+ },
+ {
+  "review_id": "R16",
+  "name": "CB Investment Management",
+  "website": "https://www.cbim.sk",
+  "legal_name": "CB Investment Management s. r. o.",
+  "company_id": "52524531",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/10011750",
+  "hq_country": "SK",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed,seed",
+  "ticket": "",
+  "total_capital_eur": "23200000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
+  "funds": "CB Investment Management Growth One fund (€23.2M)",
+  "investments": [
+   {
+    "company": "DNA ERA",
+    "date": "2021-02-02",
+    "url": "https://www.startitup.sk/velky-uspech-slovensky-startup-ktory-meni-zivoty-ziskal-dolezitu-investiciu-a-mieri-do-zahranicia/"
+   }
+  ],
+  "sources": [
+   "https://www.cbim.sk",
+   "https://www.startitup.sk/velky-uspech-slovensky-startup-ktory-meni-zivoty-ziskal-dolezitu-investiciu-a-mieri-do-zahranicia/"
+  ]
+ },
+ {
+  "review_id": "R22",
+  "name": "Rockaway Ventures",
+  "website": "https://rockawayventures.com",
+  "legal_name": "Rockaway Ventures a.s.",
+  "company_id": "06387136",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06387136",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "consumer_ecommerce,travel_hospitality,mobility_logistics,media_gaming",
+  "stages": "seed,series_a",
+  "ticket": "",
+  "total_capital_eur": "55000000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
+  "funds": "Rockaway Ventures II (nearly €55 million); Rockaway Ventures Fund (?)",
+  "investments": [
+   {
+    "company": "Apptronik",
+    "date": "2026-02",
+    "url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+   },
+   {
+    "company": "Apaleo",
+    "date": "2025-05-16",
+    "url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+   },
+   {
+    "company": "Gjirafa",
+    "date": "2025-05-16",
+    "url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+   },
+   {
+    "company": "Vivere",
+    "date": "2021-09-23",
+    "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+   },
+   {
+    "company": "Productboard",
+    "date": "2021-09-23",
+    "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+   },
+   {
+    "company": "Brand Embassy",
+    "date": "2021-09-23",
+    "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/",
+   "https://rockawayventures.com",
+   "https://startuphub.unwe.bg/bg/news/64138/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html",
+   "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/",
+   "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+  ]
+ },
+ {
+  "review_id": "R28",
+  "name": "Czech Founders VC",
+  "website": "https://czechfounders.vc",
+  "legal_name": "Czech Founders Ventures s.r.o., osoba rizikového kapitálu",
+  "company_id": "17051835",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17051835",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed",
+  "ticket": "50 tisíc – 350 tisíc eur",
+  "total_capital_eur": "10000000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
+  "funds": "Czech Founders VC (deset milionů eur)",
+  "investments": [
+   {
+    "company": "Maxfusion",
+    "date": "2026-01-14",
+    "url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+   },
+   {
+    "company": "Lemondia",
+    "date": "2025-09-17",
+    "url": "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/"
+   },
+   {
+    "company": "DTS",
+    "date": "",
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "StreamBee",
+    "date": "",
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "Filuta AI",
+    "date": "",
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "Adventurer",
+    "date": "",
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "CRUXO",
+    "date": "",
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "Carta Genum",
+    "date": "",
+    "url": "https://czechfounders.vc/our-portfolio"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/",
+   "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/",
+   "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/",
+   "https://czechfounders.vc",
+   "https://czechfounders.vc/our-portfolio"
+  ]
+ }
+]

@@ -1,0 +1,188 @@
+[
+ {
+  "review_id": "R01",
+  "name": "J&T Ventures",
+  "website": "https://www.jtventures.cz",
+  "legal_name": "J&T Ventures III SICAV a.s.",
+  "company_id": "22175903",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22175903",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "sector_agnostic",
+  "stages": "pre_seed,seed,series_a",
+  "ticket": "€300K – €3M",
+  "total_capital_eur": "120000000",
+  "capital_method": "aum_stated",
+  "capital_note": "",
+  "funds_target": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Xund",
+    "date": "2025-03-05",
+    "url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"
+   },
+   {
+    "company": "FetView",
+    "date": "2015-03",
+    "url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/"
+   },
+   {
+    "company": "Supernova.io",
+    "date": "",
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Grid.online",
+    "date": "",
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Daytrip",
+    "date": "",
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Wultra",
+    "date": "",
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Choice",
+    "date": "",
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Sharry",
+    "date": "",
+    "url": "https://www.jtventures.cz/portfolio"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/",
+   "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/",
+   "https://www.jtventures.cz",
+   "https://www.jtventures.cz/portfolio"
+  ]
+ },
+ {
+  "review_id": "R03",
+  "name": "Nation1",
+  "website": "https://n1.rocks",
+  "legal_name": "",
+  "company_id": "",
+  "registry_url": "",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed",
+  "ticket": "",
+  "total_capital_eur": "53638477",
+  "capital_method": "aum_stated",
+  "capital_note": "$60M → EUR kurzom ECB 1.1186 (2026-10-09)",
+  "funds_target": "",
+  "funds": "N1 Ventures U-Tech (?); N1 Ventures U-Tech (přibližně 10 milionů eur); N1 Ventures U-Tech (přibližně 10 milionů eur)",
+  "investments": [
+   {
+    "company": "Myriad AI",
+    "date": "2024-07-30",
+    "url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+   },
+   {
+    "company": "Myriad AI",
+    "date": "2024-07",
+    "url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+   "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+   "https://n1.rocks",
+   "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/",
+   "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup"
+  ]
+ },
+ {
+  "review_id": "R04",
+  "name": "ZAKA Ventures",
+  "website": "https://zaka.vc",
+  "legal_name": "ZAKA VC I, osoba rizikového kapitálu, a.s.",
+  "company_id": "21514992",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21514992",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "life_sciences_medtech,industry_manufacturing",
+  "stages": "pre_seed,seed",
+  "ticket": "",
+  "total_capital_eur": "15000000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
+  "funds": "ZAKA VC Fund I (€15 million)",
+  "investments": [
+   {
+    "company": "DeepSeq.AI",
+    "date": "2026-01-07",
+    "url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+   },
+   {
+    "company": "WonderTx",
+    "date": "",
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "Aerogen Systems",
+    "date": "",
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "FinalDose",
+    "date": "",
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "PerfectBit",
+    "date": "",
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "Human Archive",
+    "date": "",
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "AxionOrbital Space",
+    "date": "",
+    "url": "https://zaka.vc/portfolio"
+   }
+  ],
+  "sources": [
+   "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m",
+   "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery",
+   "https://zaka.vc",
+   "https://zaka.vc/portfolio"
+  ]
+ },
+ {
+  "review_id": "R10",
+  "name": "Forvis Mazars CZ",
+  "website": "https://www.forvismazars.com/cz",
+  "legal_name": "",
+  "company_id": "",
+  "registry_url": "",
+  "hq_country": "CZ",
+  "types": "advisory",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
+  "funds": "",
+  "investments": [],
+  "sources": [
+   "https://www.forvismazars.com/cz"
+  ]
+ }
+]

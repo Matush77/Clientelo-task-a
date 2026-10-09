@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R16",
+    "real_investor": {"answer": "yes", "why": "CB Growth One fund, managed by CB Investment Management, invested EUR 250k in DNA ERA in 2021 (cbim.sk; startitup article of 2 Feb 2021 names CB Investment Management).", "source_url": "https://www.cbim.sk"},
+    "active_36m": {"answer": "cannot_tell", "why": "Only listed investment is DNA ERA (2021). Third-party trackers conflict: Caplight lists a May 2025 3IPK crowdfunding co-investment and Nordic9 one 2024 deal, but no primary source confirms them; Pitchbook shows the fund's last deal in June 2023.", "source_url": "https://www.caplight.com/investor/cbim"},
+    "type_vc": {"answer": "yes", "why": "Growth equity / pre-seed and seed fund that invests directly in Slovak startups (Caplight description; cbim.sk).", "source_url": "https://www.caplight.com/investor/cbim"},
+    "hq_cz_sk": {"answer": "yes", "why": "Office in Bratislava, Slovakia (UNIQ Staromestska 3, 811 03 Bratislava, SK, per cbim.sk).", "source_url": "https://www.cbim.sk"},
+    "sources_support": {"answer": "yes", "why": "DNA ERA investment in 2021 is supported by cbim.sk and the startitup article. The record's day-level date 2021-02-02 equals the article publication date; the sources only state the year 2021."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "cbim.sk gives the CB Growth One fund size as EUR 23.2M, matching total_capital_eur 23200000."},
+    "overall": "cannot_tell"
+  },
+  {
+    "review_id": "R17",
+    "real_investor": {"answer": "cannot_tell", "why": "Record lists no website, investments or sources, and no search found any investing activity. ARES confirms the company but shows only generic activity codes.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345"},
+    "active_36m": {"answer": "no", "why": "No investment is listed and none was found in the ARES record or in web searches for the company name and IC 07922345.", "source_url": null},
+    "type_vc": {"answer": "cannot_tell", "why": "No description of business as a VC was found. ARES lists only generic CZ-NACE codes (including section K, financial and insurance activities, and 73110 advertising).", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345"},
+    "hq_cz_sk": {"answer": "yes", "why": "ARES: registered seat Bucovska 108, 69632 Zdanice, Czech Republic; status active; established 2019-02-22.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345"},
+    "sources_support": {"answer": "cannot_tell", "why": "Record lists no investments and no sources, so there is nothing for sources to support."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "exclude"
+  },
+  {
+    "review_id": "R18",
+    "real_investor": {"answer": "yes", "why": "Zero Gravity Capital, a venture fund, is named as an investor in Wewell's EUR 1.25M seed round (cc.cz, Dec 2023) and in Wewell in June 2022 (startitup).", "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"},
+    "active_36m": {"answer": "yes", "why": "cc.cz article dated 6 Dec 2023 lists Zero Gravity Capital among the investors in Wewell's seed round. That date is after 2023-10-08; the exact investment day is not stated, so the article date is used.", "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"},
+    "type_vc": {"answer": "yes", "why": "Describes itself as a venture capital fund (fond rizikoveho kapitalu) investing from pre-seed to seed, with a pre-seed intro ticket.", "source_url": "https://zerogravitycap.com"},
+    "hq_cz_sk": {"answer": "yes", "why": "zerogravitycap.com lists 'ZGC HQ Bratislava' and 'Slovakia - HQ'.", "source_url": "https://zerogravitycap.com"},
+    "sources_support": {"answer": "yes", "why": "Wewell 2023-12 is supported by cc.cz (article 6 Dec 2023 naming ZGC as investor). Wewell 2022-06 is supported by startitup (28 Jun 2022). CulturePulse has no date in the record and is supported only by the homepage portfolio list."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "yes", "why": "zerogravitycap.com: 'Up to 200k EUR intro investment' for pre-seed, matching the record's 200k EUR."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R19",
+    "real_investor": {"answer": "yes", "why": "DEPO Ventures led the ArcSpace round through its DEPO Ventures One fund (announced 1 Sep 2026) and was an existing backer of Kardi AI (Apr 2025).", "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"},
+    "active_36m": {"answer": "yes", "why": "ArcSpace round led by DEPO Ventures, announced 1 Sep 2026, which is after 2023-10-08.", "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"},
+    "type_vc": {"answer": "yes", "why": "depoventures.com: 'evolved from community builders to professional VC fund GPs'; ain.ua (Oct 2022) calls it a Prague-based venture capital firm.", "source_url": "https://depoventures.com"},
+    "hq_cz_sk": {"answer": "yes", "why": "depoventures.com lists the office at Plynarni 10, Prague 7, Czech Republic.", "source_url": "https://depoventures.com"},
+    "sources_support": {"answer": "yes", "why": "ArcSpace 2026-09-01 is supported by startupcentrum (article dated 1 Sep 2026, round led by DEPO Ventures). Kardi AI 2025-04 is supported by tech.eu (28 Apr 2025, DEPO Ventures named as existing backer). Tatum, Bolt and WanderWallet have no dates in the record and appear only on the depoventures.com portfolio list."},
+    "sectors_ok": {"answer": "yes", "why": "depoventures.com lists 'Defence, Space, FinTech, Industry 4.0, Energy', covering defense_space, fintech, industry_manufacturing and cleantech_energy; insurtech is not stated explicitly."},
+    "ticket_ok": {"answer": "yes", "why": "depoventures.com: 'Ticket EUR 250K - 500K', matching the record."},
+    "capital_ok": {"answer": "not_given", "why": "total_capital_eur is blank. The EUR 20M third angel fund is a target (ain.ua, Oct 2022), not a total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R20",
+    "real_investor": {"answer": "yes", "why": "Lighthouse Ventures led the Ranketta EUR 1M pre-seed round (Nov 2025) and invested in Pekat Vision (cc.cz, 7 Jun 2019).", "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"},
+    "active_36m": {"answer": "yes", "why": "Ranketta pre-seed round led by Lighthouse Ventures, funding date November 2025, which is after 2023-10-08.", "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"},
+    "type_vc": {"answer": "yes", "why": "lhv.vc: 'early-stage venture capital' firm; thesaasnews: 'early-stage venture capital firm based in Prague'.", "source_url": "https://lhv.vc"},
+    "hq_cz_sk": {"answer": "yes", "why": "Office at Evropska 2758/11, Prague 6 (lhv.vc); 'based in Prague, Czech Republic' (thesaasnews).", "source_url": "https://lhv.vc"},
+    "sources_support": {"answer": "yes", "why": "Ranketta 2025-11 is supported by thesaasnews (funding November 2025, led by Lighthouse). Pekat Vision 2019-06-07 is supported by the cc.cz article dated 7 Jun 2019 naming Lighthouse Ventures' investment of several hundred thousand euro."},
+    "sectors_ok": {"answer": "yes", "why": "lhv.vc describes B2B software, fintech and AI as its focus, covering enterprise_saas, fintech_insurtech and ai_data."},
+    "ticket_ok": {"answer": "yes", "why": "lhv.vc: 'From EUR 200k to EUR 1m' per single startup, matching the record."},
+    "capital_ok": {"answer": "yes", "why": "cc.cz interview (6 Apr 2020): 'Fond mel k dispozici 23 milionu eur od svych zacatku' (fund had EUR 23M from the start). Other sources give 22M (2020), 24M (AIN 2022, EUACC) and 28M assets (AIN 2022). The record's 'aum_stated' label may be outdated."},
+    "overall": "include"
+  }
+]

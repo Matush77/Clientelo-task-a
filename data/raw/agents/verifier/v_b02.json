@@ -1,0 +1,202 @@
+[
+ {
+  "review_id": "R06",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Reflex Capital invests fund money in startups, e.g. lead investor in Digitoo's EUR 2.3M seed round (Dec 2023) and co-investor in Leadspicker (EUR 2M seed, 2020).",
+   "source_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Digitoo seed round led by Reflex Capital was announced on 14 Dec 2023, after the 2023-10-08 cutoff.",
+   "source_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Source describes the fund as investing in seed and Series A rounds with typical checks of about EUR 1-2M.",
+   "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Reflex Capital SE has its European office at Rasinovo nabrezi 2000/78, Praha 2 (a US office in San Francisco also exists).",
+   "source_url": "https://www.reflexcapital.com"
+  },
+  "sources_support": {
+   "answer": "cannot_tell",
+   "why": "Dated investments are supported (Digitoo 2023-12-14, Leadspicker 2020-05-21, TopMonks 2017-09-05); the undated entries (second Leadspicker, Fitify, Keboola, Apify, Choice) appear only on the portfolio page without dates."
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "The record has no sectors value."
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "The third-fund article says the fund typically invests about EUR 1M, sometimes up to EUR 2M, which matches the record."
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "The same article says the closed third fund is EUR 22M; it also says the second fund was of similar size, which the record does not count."
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R07",
+  "real_investor": {
+   "answer": "yes",
+   "why": "The JSK fund's venture sub-fund invested EUR 420k in Elin.ai, per Lupa.cz (9 Dec 2024).",
+   "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "The Elin.ai investment is reported on 9 Dec 2024, after the cutoff; the Andromeda Surgical participation is reported on 15 Sep 2026.",
+   "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "The fund's Venture Capital sub-fund takes minority stakes in early-stage startups.",
+   "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "JSK Management s.r.o. is a Czech company (ARES 21285241) with a Praha 1 address on the company's website.",
+   "source_url": "https://www.jskinvestments.cz/cs/projekty"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Elin.ai (Dec 2024) is confirmed by Lupa.cz; Andromeda Surgical (Sep 2026) names JSK as participant per cc.cz, though the amount is hedged; the company's own projects page states no investments are listed yet."
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "The record has no sectors value."
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "The record has no ticket value; the source's EUR 125k is a minimum fund-level investment, not a ticket range."
+  },
+  "capital_ok": {
+   "answer": "cannot_tell",
+   "why": "The source says the [osoba] founders put roughly CZK 2bn into a fund still being launched, with external money targeted later; this is not a closed-fund total, and the EUR conversion at 24.403 is not verified."
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R08",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Venture to Future Fund invests its capital directly in startups, e.g. Sensoneo, Product Fruits and Talentiqa.",
+   "source_url": "https://vff.sk"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Co-invested with Purple Ventures in Talentiqa's EUR 1M round, funding date October 2025.",
+   "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "The fund describes itself as investing in companies from later seed through Series A and B.",
+   "source_url": "https://vff.sk"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Venture to Future Fund, a.s. has its seat at Grosslingova 44, 811 09 Bratislava.",
+   "source_url": "https://vff.sk"
+  },
+  "sources_support": {
+   "answer": "cannot_tell",
+   "why": "Product Fruits (2023-05-10), Sensoneo (2021-10-24) and Talentiqa (Oct 2025) are supported; Nettle AI, SEC Technologies and Twinzo are on vff.sk but undated in the record; no source found links Brightpick to the fund."
+  },
+  "sectors_ok": {
+   "answer": "cannot_tell",
+   "why": "vff.sk says it backs innovative companies across various sectors and names no AI, data or deeptech focus; portfolio examples are consistent but do not state it."
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "vff.sk states a minimum investment of EUR 400k and optimal investments of EUR 1.5-2.0M, matching the record's range."
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "vff.sk states EUR 55M is earmarked for 2020-2026; this is an allocation rather than a formally closed-fund figure."
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R09",
+  "real_investor": {
+   "answer": "no",
+   "why": "The registry lists real estate rental, consulting, trade, brokerage, advertising and market research, with no investment or fund activity; no investments are listed or found.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "No investment into any company is listed or found for CEC Capital SK, s.r.o.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "The registered activities are real estate, consulting and trade, not venture capital.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "The registered seat is in Bratislava, Slovakia.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "sources_support": {
+   "answer": "cannot_tell",
+   "why": "The record lists no sources and no investments, so there is nothing for sources to support."
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "The record has no sectors value."
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "The record has no ticket value."
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "The record has no total capital value."
+  },
+  "overall": "exclude"
+ },
+ {
+  "review_id": "R10",
+  "real_investor": {
+   "answer": "no",
+   "why": "Forvis Mazars is an audit, accounting, tax and advisory firm; its page describes no investments.",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "No investments are listed or found; the firm is not an investor.",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "It is a professional services firm, not a venture capital investor.",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "The site is the Czech one and the legal entity Forvis Mazars s.r.o. is Czech (ARES 62582496).",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "sources_support": {
+   "answer": "cannot_tell",
+   "why": "No investments are listed; the cited page only supports that the firm offers advisory, audit, accounting and tax services."
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "The record has no sectors value."
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "The record has no ticket value."
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "The record has no total capital value."
+  },
+  "overall": "exclude"
+ }
+]

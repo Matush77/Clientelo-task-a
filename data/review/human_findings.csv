@@ -1,0 +1,6 @@
+date,record,finding,consequence
+2026-10-09,R06 Reflex Capital,"Celkový kapitál zobrazený ako 30 € – zjavne chybný",Audit v1 -> v2: prevod súm (rozpätia a čísla slovom) a kontrola rozumnosti
+2026-10-09,R21 Look AI Ventures,"Fond je len plánovaný (zdroj hovorí o zámere ho získať), nie uzavretý",Audit v1 -> v2: cieľové fondy sa nepočítajú do kapitálu
+2026-10-09,R31/R32 Jet Investment / Jet Ventures,"Rovnaká skupina dvakrát vo vzorke",Vysvetlené: R32 je vyradená duplicita (E8) zlúčená do R31
+2026-10-09,R16 CB Investment Management,"IČO v zázname nesedí s webom investora",Oprava v2 -> v3: prísne pravidlá identity v registri (D35)
+2026-10-09,celá vzorka,"Z článkov často nie je jasný dátum investície, výška sumy ani to, či peniaze naozaj išli do firmy",Dokumentované ako hlavné obmedzenie; odporúčanie silnejšieho modelu na výklad článkov (D36); kvantifikované v PRECISION_REPORT

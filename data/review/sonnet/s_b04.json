@@ -1,0 +1,247 @@
+[
+ {
+  "review_id": "R16",
+  "real_investor": {
+   "answer": "yes",
+   "why": "cbim.sk describes a Bratislava-based fund manager whose Growth One fund invests in seed and pre-seed companies (e.g. EUR 250,000 into DNA ERA).",
+   "source_url": "https://www.cbim.sk"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "The only listed deal (DNA ERA) was announced 2 Feb 2021; SIH says the fund's investment window closed in December 2023, and I found no deal dated on or after 2023-10-09 (latest seen: May/June 2023).",
+   "source_url": "https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/cb-investment-management-kapitalova-investicia"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "A state-co-funded (SIH) seed/pre-seed equity fund investing directly into startups, i.e. a venture capital investor.",
+   "source_url": "https://www.cbim.sk"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "The manager is Bratislava-based (offices also in Kosice, Brno, Prague), owned by Crowdberry.",
+   "source_url": "https://www.cbim.sk"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Startitup (2 Feb 2021) states DNA ERA received EUR 250,000 from an investment fund managed by CB Investment Management; the listed date is the article date, year and month match.",
+   "source_url": "https://www.startitup.sk/velky-uspech-slovensky-startup-ktory-meni-zivoty-ziskal-dolezitu-investiciu-a-mieri-do-zahranicia/"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed in the record.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "cbim.sk states the Growth One fund size as EUR 23.2M (2019 vintage; PitchBook reports it as closed); Profesia also gives about EUR 23M.",
+   "source_url": "https://www.cbim.sk"
+  },
+  "identity_ok": {
+   "answer": "no",
+   "why": "CB Investments s. r. o. (ICO 36796379) is a Liptovsky Mikulas company founded 2007 whose registered activities are trade, rentals, transport etc. (main NACE: sporting goods retail); the fund manager CB Investment Management is a different Bratislava entity (Crowdberry subsidiary).",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/677804"
+  },
+  "overall": "exclude"
+ },
+ {
+  "review_id": "R17",
+  "real_investor": {
+   "answer": "cannot_tell",
+   "why": "No public source shows Tech Ventures s.r.o. investing in companies; ARES/finmag show a 2019 s.r.o. (seat Zdanice, sole owner and director [osoba]) with registered activities in IT, advertising, training and events, not investing.",
+   "source_url": "https://www.finmag.cz/obchodni-rejstrik/07922345-tech-ventures-s-r-o"
+  },
+  "active_36m": {
+   "answer": "cannot_tell",
+   "why": "The record lists no investments and no sources; searches found no deal by this entity.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345"
+  },
+  "type_vc": {
+   "answer": "cannot_tell",
+   "why": "No evidence of any venture investing activity or investor profile for this entity.",
+   "source_url": "https://www.finmag.cz/obchodni-rejstrik/07922345-tech-ventures-s-r-o"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "The company seat (Bucovska 108, Zdanice; earlier Prague) and its sole director are in the Czech Republic, although whether it is an investor at all is unproven.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "The record has no investments and no sources.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed in the record.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed in the record.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "cannot_tell",
+   "why": "The ICO 07922345 does exist and match the name, but no source links this company to any investor activity or brand, so it cannot be tied to a VC investor.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345"
+  },
+  "overall": "cannot_tell"
+ },
+ {
+  "review_id": "R18",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Zero Gravity Capital is a fund (SIH-backed, now continued as Zero One Hundred) investing equity into pre-seed/seed startups such as Wewell and CulturePulse.",
+   "source_url": "https://zerogravitycap.com"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "cc.cz (6 Dec 2023) lists Zero Gravity Capital among investors in Wewell's EUR 1.25M seed round, announced that month, which is after 2023-10-09.",
+   "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Startitup calls it a venture capital fund; it invests directly in pre-seed and seed startups.",
+   "source_url": "https://www.startitup.sk/?p=640272"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Website states HQ Bratislava; the Slovak registry shows a Bratislava seat.",
+   "source_url": "https://zerogravitycap.com"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Wewell 2022-06 confirmed by Startitup (28 Jun 2022); Wewell 2023-12 confirmed by cc.cz (6 Dec 2023); CulturePulse is listed as a portfolio company on zerogravitycap.com (the record gives no date).",
+   "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "The website states 'Up to 200k EUR intro investment' for pre-seed, which is a cheque size; this matches the listed 200k EUR as an upper bound.",
+   "source_url": "https://zerogravitycap.com"
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed in the record.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "Zero Gravity Capital s.r.o. (ICO 52651894, Bratislava) bears the brand name and is owned by 0100 Ventures s.r.o. (Zero One Hundred group); SIH names Zero Gravity Capital as the fund manager. Its registered activity is only 'consulting', so a small residual doubt remains.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/10049101"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R19",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Startupcentrum reports the ArcSpace round was led by DEPO Ventures through its DEPO Ventures One fund; Tech.eu lists DEPO Ventures among Kardi AI's backers.",
+   "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "ArcSpace round (over EUR 2M) led by DEPO Ventures One, published 1 Sep 2026; Kardi AI EUR 1.1M round, 28 Apr 2025 - both after 2023-10-09.",
+   "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Described as a Prague-based venture capital firm that runs VC funds (DEPO Ventures One, Pre-seed Fund) alongside an angel network; the recent deals are fund investments. The angel-network side makes this slightly mixed.",
+   "source_url": "https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Office at Plynarni 10, Prague 7; founders [osoba] and [osoba] are Prague-based.",
+   "source_url": "https://depoventures.com"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "ArcSpace (Sep 2026) and Kardi AI (Apr 2025) are confirmed by the cited articles; Tatum, Bolt and WanderWallet are listed on the portfolio page (record gives no date).",
+   "source_url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Website: 'Defence, Space, FinTech, Industry 4.0, Energy' under its critical-infrastructure focus.",
+   "source_url": "https://depoventures.com"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Website states 'Ticket EUR 250K - 500K' (an investment size per company); aggregators show a wider EUR 100K-500K range.",
+   "source_url": "https://depoventures.com"
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No total capital listed; the EUR 20M third angel fund is only a target and is correctly not counted.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES: DEPO VENTURES, s.r.o., ICO 04753101, Plynarni 1617/10, Prague 7, founded 2016 - matches the website address and copyright notice.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04753101"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R20",
+  "real_investor": {
+   "answer": "yes",
+   "why": "lhv.vc describes an early-stage VC investing EUR 200k-1m per startup; the Ranketta round was led by Lighthouse Ventures.",
+   "source_url": "https://lhv.vc"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "TheSaaSNews: Ranketta EUR 1M pre-seed, 'Funding Date: November 2025', led by Lighthouse Ventures.",
+   "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Self-described 'early-stage venture capital'; backed by the Czech ESIF fund of funds (EIF) and investing directly into startups.",
+   "source_url": "https://lhv.vc"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Office at Evropska 2758/11, Prague 6; Prague fund per cc.cz.",
+   "source_url": "https://lhv.vc"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Ranketta (Nov 2025) confirmed by TheSaaSNews; Pekat Vision (cc.cz, 7 Jun 2019) is the fund's first investment, matching the listed 2019-06.",
+   "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Website investment focus: 'B2B Software of various verticals, Fintech, AI'.",
+   "source_url": "https://lhv.vc"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Website: 'From EUR 200k to EUR 1m' as investment in a single startup.",
+   "source_url": "https://lhv.vc"
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "cc.cz (June 2019) says the fund manages total capital of EUR 23M (target to grow to EUR 30M, not counted); figure is dated 2019 and excludes the 2024 Fund II, which has no stated size.",
+   "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES: Lighthouse Ventures GP s.r.o., ICO 07500912, Evropska 2758/11, Prague 6, NACE 66.30 fund management - same address as lhv.vc.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07500912"
+  },
+  "overall": "include"
+ }
+]

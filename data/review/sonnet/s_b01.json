@@ -1,0 +1,247 @@
+[
+ {
+  "review_id": "R01",
+  "real_investor": {
+   "answer": "yes",
+   "why": "J&T Ventures is a bank-backed VC fund (SICAV) that took part in Xund's EUR 6M Pre-Series A round and lists ~31 startups in its portfolio.",
+   "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Xund round led by Lead Ventures with J&T Ventures joining was reported 5 March 2025, after 2023-10-09.",
+   "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Site describes Pre-seed to Series A venture investing; cc.cz calls it a venture capital fund belonging to J&T Banka.",
+   "source_url": "https://www.jtventures.cz"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Office at Sokolovska 700/113a, Praha 8 - Karlin; the registry address of the SICAV is the same.",
+   "source_url": "https://www.jtventures.cz"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Xund (announced 2025-03-05) and FetView (announced 24 March 2015) are confirmed in the articles; the undated names (Supernova.io, Grid.online, Daytrip, Wultra, Choice, Sharry) are listed as active portfolio companies on the portfolio page.",
+   "source_url": "https://www.jtventures.cz/portfolio"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Site states 'Sector Agnostic'; portfolio filters span fintech, healthtech, logistics, B2B/B2C and marketplaces.",
+   "source_url": "https://www.jtventures.cz"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Site states 'Velikost investice' EUR 300K - EUR 3M per investment, which matches the listed ticket.",
+   "source_url": "https://www.jtventures.cz"
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "Firm's own site shows EUR 120M under 'Vyse aktiv' (asset value); note that some third-party directories show EUR 40M and a 2021 deck showed EUR 30M for fund II, so the figure is self-reported.",
+   "source_url": "https://www.jtventures.cz"
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES 08220867 = J&T Ventures CG SICAV a.s., Sokolovska 700/113a Praha 8; J&T Ventures II is a sub-fund of this SICAV and the address matches the J&T Ventures website.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08220867"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R02",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Neulogy Ventures is a Bratislava VC manager investing equity into startups; it is named among the investors in GA Drilling's USD 15M first close and lists 28 portfolio companies.",
+   "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "ThinkGeoEnergy (18 April 2024) reports GA Drilling's USD 15M first close with Slovakia-based Neulogy Ventures among the investors.",
+   "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Early-stage tech/deeptech venture capital manager; SIH page describes a Luxembourg fund managed by Neulogy investing in start-ups and SMEs.",
+   "source_url": "https://neulogy.vc"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Contact page lists registered address Tallerova 4 and office Strakova 3, both Bratislava; the Luxembourg address is only the fund vehicle.",
+   "source_url": "https://neulogy.vc/contact"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "GA Drilling 2024-04-18 confirmed by the article; GroupSolver, GreenWay, Voltia, Vectary, Trustmatic and SaferPass are listed on the portfolio page (undated; Trustmatic and SaferPass are marked exited).",
+   "source_url": "https://neulogy.vc/portfolio"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Homepage states 'Deeptech investments leveraging CEE engineering talent'; note the full portfolio is broader (B2B SaaS, marketplaces, medtech, cleantech).",
+   "source_url": "https://neulogy.vc"
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "Record has no ticket value.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "Record has no capital value.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "RPO entity 47367610 is 'Neulogy Ventures, a. s.' at Tallerova 4 Bratislava, the same registered address shown on neulogy.vc/contact.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/1008262"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R03",
+  "real_investor": {
+   "answer": "yes",
+   "why": "N1 (formerly Nation 1) is an early-stage VC that invested in Myriad AI's USD 2M pre-seed round and other startups from funds it manages.",
+   "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Myriad AI pre-seed with Nation 1 on 30 July 2024; further N1 deals reported in Nov 2025 (Novoflow) and May 2026 (Flick).",
+   "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Site: 'operator-led early-stage VC'; ain.ua calls Nation 1 a Prague-based VC firm investing in seed-stage startups.",
+   "source_url": "https://n1.rocks"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Prague-based per ain.ua; Prague office Narodni 135/14 and Czech managing partners ([osoba], [osoba]); site also lists San Francisco and Luxembourg offices.",
+   "source_url": "https://n1.rocks"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Myriad AI 2024-07-30 is confirmed (the record lists it twice, same deal); the cited lupa.cz and thevccorner pages show N1 in other rounds.",
+   "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "Record has no sector value.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "Record has no ticket value.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "Site states 'we manage $60M across two funds'; USD 60M converted at 1.1186 gives about EUR 53.6M, matching the record (self-reported AUM; Czech press quoted ~EUR 35M for the first fund alone).",
+   "source_url": "https://n1.rocks"
+  },
+  "identity_ok": {
+   "answer": "no",
+   "why": "ARES 09172807 'Nation1 Investment s.r.o.' (Belehradska 858/23, a common seat address) has directors/owners [osoba] and [osoba], who do not appear among N1's partners ([osoba], [osoba], [osoba], [osoba]); no source ties this entity to the N1 funds, and one directory names Smart Management VC s.r.o. as manager.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/09172807"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R04",
+  "real_investor": {
+   "answer": "yes",
+   "why": "ZAKA VC runs ZAKA VC Fund I with outside LPs and invested in DeepSeq.AI and ~80 other startups.",
+   "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "EIN Presswire release dated 7 January 2026 announces ZAKA VC's investment in DeepSeq.AI.",
+   "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Self-described seed and pre-seed VC fund (Fund I, EUR 15M target) investing in startups; its family-office origin does not change that it now invests via a VC fund.",
+   "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Release calls ZAKA a 'Czech-based VC'; ain.ua says it operates from Prague and London; Partner [osoba] is based in Prague and the management company is registered in Prague 2.",
+   "source_url": "https://zaka.vc/team"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "DeepSeq.AI Jan 2026 confirmed by the release; WonderTx, Aerogen Systems, FinalDose, PerfectBit, Human Archive and AxionOrbital Space are on the ZAKA portfolio page (undated).",
+   "source_url": "https://zaka.vc/portfolio"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Site targets 'Health & Biotech and Industrial Tech verticals'; the portfolio is dominated by biotech plus hardtech/robotics.",
+   "source_url": "https://zaka.vc"
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "Record has no ticket value (EUR 130K on the site is the minimum LP ticket, not a cheque).",
+   "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+  },
+  "capital_ok": {
+   "answer": "no",
+   "why": "EUR 15M is the fund's target size; the source says Fund I started with a EUR 10.5M first closing in July 2024, and no final close was found (the site now shows an unspecified-currency '17M'), so a closed-fund sum of EUR 15M is not supported.",
+   "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES 21053987 ZAKA Management s.r.o., Italska 2581/67 Praha 2, is owned by ZAKA Holding s.r.o. with directors [osoba] and [osoba] (matching surnames of founders [osoba] and [osoba]); ZAKA's own pages do not name the entity, so the link rests on name and ownership pattern.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-vr/21053987"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R05",
+  "real_investor": {
+   "answer": "yes",
+   "why": "i&i Biotech Fund I SCSp invests equity in early-stage life-science companies (e.g. EUR 1M in Celeris, seed round of Captain T Cell).",
+   "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Captain T Cell announced its EUR 8.5M seed round with i&i Biotech Fund I SCSp on 22 May 2024; the portfolio also lists 2025-2026 deals (KyDo, T-CURX, Theorema).",
+   "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Site: 'one of the very few VC funds in Europe focused exclusively on life science ventures'.",
+   "source_url": "https://www.inibio.eu"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Fund vehicle is Luxembourg (site lists Luxembourg as headquarters), but its Czech founding partners and investment adviser Biotech Investments s.r.o. sit at Pobrezni 394/12 Praha 8, with a Czech Academy of Sciences/IOCB origin.",
+   "source_url": "https://www.inibio.eu"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Captain T Cell seed 22 May 2024 confirmed; the news page states i&i Bio announced an EUR 1M investment in Celeris Therapeutics (undated in record).",
+   "source_url": "https://www.inibio.eu/news"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Site focus: drug discovery, medtech, diagnostics and AI verticals within life sciences.",
+   "source_url": "https://www.inibio.eu"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Site says the sweet spot is 'between EUR 0.5M and EUR 2M' per company (business creation starts at EUR 150k).",
+   "source_url": "https://www.inibio.eu"
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "Record has no capital value.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES 10885978 Biotech Investments s.r.o., Pobrezni 394/12 Praha 8, is named on inibio.eu as the Prague investment adviser of i&i Biotech Fund I SCSp (it is the adviser, not the fund vehicle itself).",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10885978"
+  },
+  "overall": "include"
+ }
+]

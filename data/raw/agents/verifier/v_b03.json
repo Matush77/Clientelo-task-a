@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R11",
+    "real_investor": {"answer": "yes", "why": "Invests managed fund money (EUR 500m stated) into startups; co-led the Vytal round, with EUR 8m provided alongside NRW.Venture.", "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"},
+    "active_36m": {"answer": "yes", "why": "Vytal round dated 2025-03-11 and Andercore round dated 2026-02-12, both after 2023-10-08.", "source_url": "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/"},
+    "type_vc": {"answer": "yes", "why": "Described as a Prague-based venture capital fund investing in climate tech startups.", "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"},
+    "hq_cz_sk": {"answer": "yes", "why": "Office address Pod Křížkem 1773/2, Praha 4 - Braník on the company website.", "source_url": "https://www.invencapital.cz"},
+    "sources_support": {"answer": "cannot_tell", "why": "Vytal and Andercore are supported with Inven named as investor, but the Andercore date is the article's publication date (the article says Inven's entry was already reported in November); eliq, Ember, Hydrogrid and Taranis have no dates and appear only as portfolio names on the homepage."},
+    "sectors_ok": {"answer": "yes", "why": "Sources describe Inven as a climate tech investor, matching cleantech_energy."},
+    "ticket_ok": {"answer": "yes", "why": "Company website lists Ticket size 2-30m EUR, matching the record."},
+    "capital_ok": {"answer": "yes", "why": "Company website states it invests EUR 500m, matching total_capital_eur 500000000."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R12",
+    "real_investor": {"answer": "yes", "why": "States it invests its own capital (Investujeme vlastní peníze on the cc.cz profile; We invest our own capital on the company site).", "source_url": "https://www.miton.cz/en/about"},
+    "active_36m": {"answer": "yes", "why": "Minority stake in POS Experts reported on 18 Nov 2024; the company site lists 2025 investments in Aim, Bandits and PangeAI.", "source_url": "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/"},
+    "type_vc": {"answer": "yes", "why": "Invests directly in pre-seed and seed startups (led the PangeAI pre-seed; GTE pre-seed and seed via MitonC; profile says from pre-seed to Series A), though it also takes majority stakes in gastronomy companies.", "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"},
+    "hq_cz_sk": {"answer": "yes", "why": "Prague office at Corso IIa, Křižíkova 148/34; cc.cz profile lists Sídlo: Praha.", "source_url": "https://www.miton.cz/en/about"},
+    "sources_support": {"answer": "yes", "why": "Aim, Bandits and PangeAI (2025) are on the about page; POS Experts (2024-11-18) is in the cc.cz article; GTE (2024) and Firefish (2023) are in the blog; Boataround is named as an investor in a 4 May 2026 article, though the record gives it no date."},
+    "sectors_ok": {"answer": "yes", "why": "The about page names 2025 AI projects (Aim, Bandits, PangeAI) and the cc.cz profile lists AI among focus areas, matching ai_data."},
+    "ticket_ok": {"answer": "yes", "why": "cc.cz profile states investujeme 300k–2M €, matching the record."},
+    "capital_ok": {"answer": "not_given", "why": "total_capital_eur is blank in the record."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R13",
+    "real_investor": {"answer": "yes", "why": "Seed Starter (the corporate VC of Česká spořitelna) joined the Repsense round of EUR 1.1m, reported 17 Dec 2025.", "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"},
+    "active_36m": {"answer": "yes", "why": "Repsense investment reported 17 Dec 2025, matching the record date 2025-12, after 2023-10-08.", "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"},
+    "type_vc": {"answer": "yes", "why": "Describes itself as Corporate Venture Capital of Česká spořitelna, investing in pre-seed and seed rounds.", "source_url": "https://www.seedstarter.cz/cs/uvod"},
+    "hq_cz_sk": {"answer": "yes", "why": "Contact address 140 00 Praha 4 on the company website.", "source_url": "https://www.seedstarter.cz/cs/uvod"},
+    "sources_support": {"answer": "cannot_tell", "why": "Repsense (2025-12) is supported by the 17 Dec 2025 article naming Seed Starter in the round; Investown, Signi, PalmApp, Wflow and Rekenber are only listed as portfolio of the bank's investment fund in a 27 Nov 2023 article, which gives no investment dates and does not name Seed Starter as their investor, so the record's 2023-11-27 is the article date."},
+    "sectors_ok": {"answer": "not_given", "why": "sectors is blank in the record."},
+    "ticket_ok": {"answer": "yes", "why": "Company website states 200k – 1M EUR, matching the record."},
+    "capital_ok": {"answer": "not_given", "why": "total_capital_eur is blank in the record."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R14",
+    "real_investor": {"answer": "no", "why": "Managed funds invest in real estate, money-market deposits, gold, crypto and other funds (EFEKTIKA is built on S&P 500 ETFs); no direct investment in companies is shown.", "source_url": "https://www.investika.cz"},
+    "active_36m": {"answer": "no", "why": "No investment into a company is listed in the record, and no source found shows one.", "source_url": "https://www.investika.cz"},
+    "type_vc": {"answer": "no", "why": "An investment company running open-end real estate, money-market, equity, gold and crypto funds, not a venture investor.", "source_url": "https://www.investika.cz"},
+    "hq_cz_sk": {"answer": "yes", "why": "Describes itself as a Czech investment company (česká investiční společnost).", "source_url": "https://www.investika.cz"},
+    "sources_support": {"answer": "cannot_tell", "why": "No investments are listed, and the sources describe fund products and real estate rather than company investments."},
+    "sectors_ok": {"answer": "not_given", "why": "sectors is blank in the record."},
+    "ticket_ok": {"answer": "not_given", "why": "ticket is blank in the record."},
+    "capital_ok": {"answer": "yes", "why": "Newstream (29 May 2025) states over 30 billion CZK under management, matching the record's 30bn CZK converted to EUR; the company site shows higher figures (34bn and 46bn), so 30bn is a floor."},
+    "overall": "exclude"
+  },
+  {
+    "review_id": "R15",
+    "real_investor": {"answer": "no", "why": "No investment is found in any source; the registry NACE codes are wholesale, real estate renting and sports facilities, with no financial or investment code, and no website exists.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"},
+    "active_36m": {"answer": "no", "why": "The record lists no investments and none were found in search.", "source_url": null},
+    "type_vc": {"answer": "no", "why": "No venture activity is evident; the name alone suggests VC but the registry activity codes and absence of any portfolio do not.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"},
+    "hq_cz_sk": {"answer": "yes", "why": "Registered seat Počernická 699/62b, Praha 10 in the ARES registry.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"},
+    "sources_support": {"answer": "cannot_tell", "why": "The record lists no investments and no sources, so there is nothing to support."},
+    "sectors_ok": {"answer": "not_given", "why": "sectors is blank in the record."},
+    "ticket_ok": {"answer": "not_given", "why": "ticket is blank in the record."},
+    "capital_ok": {"answer": "not_given", "why": "total_capital_eur is blank in the record."},
+    "overall": "exclude"
+  }
+]

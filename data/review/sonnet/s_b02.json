@@ -1,0 +1,247 @@
+[
+ {
+  "review_id": "R06",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Reflex Capital is a Prague-based fund that invests its own and partners' money in startups (e.g. EUR 2.3m seed in Digitoo, EUR 2m seed in Leadspicker, CZK 35m in TopMonks).",
+   "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Digitoo seed round led by Reflex Capital dated 14 Dec 2023, after the 2023-10-09 cut-off (the article misspells the name as 'Relfex').",
+   "source_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Early-stage startup VC fund (seed/Series A, several funds, ticket around EUR 1-2m).",
+   "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "European office of Reflex Capital SE at Rasinovo nabrezi 2000/78, Praha 2 (a US office in San Francisco also exists, but the fund is run from Prague).",
+   "source_url": "https://www.reflexcapital.com"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Digitoo (Dec 2023), Leadspicker (May 2020, with J&T Ventures) and TopMonks (Sep 2017) are each shown with a matching date; the other portfolio entries are undated and only appear on the portfolio page.",
+   "source_url": "https://globalprivatecapital.org/?p=22043"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Article quotes 'investuje castky kolem jednoho milionu eur, nekdy ke hranici dvou milionu' for the fund's typical cheque.",
+   "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+  },
+  "capital_ok": {
+   "answer": "no",
+   "why": "EUR 22m is only the closed third fund; Reflex 2 was a similar size (~EUR 20m) and Reflex 1 also exists, so the sum of closed funds is clearly higher than 22m, and the site itself says EUR 150M invested. The 'Reflex 2: 30-50m' figure was a 2018 target, not capital.",
+   "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES: Reflex Capital SE, ICO 24269158, seat Rasinovo nabrezi 2000/78, Praha 2, matching the address on reflexcapital.com.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24269158"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R07",
+  "real_investor": {
+   "answer": "yes",
+   "why": "JSK Investments SICAV invests equity into startups (EUR 420k pre-seed in Elin.ai; participation in Andromeda Surgical's USD 15m Series A).",
+   "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Elin.ai pre-seed (article 9 Dec 2024) and Andromeda Surgical Series A (reported Sep 2026) are both after 2023-10-09.",
+   "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "The SICAV has a Venture Capital sub-fund taking minority stakes in early-stage startups (it also has a separate Private & Growth Equity sub-fund); the observed deals are VC-type.",
+   "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Czech SICAV; website lists Klimentska 1216/46, Praha 1; run by [osoba] in Prague.",
+   "source_url": "https://www.jskinvestments.cz"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "cc.cz (15 Sep 2026) and Vestbee (17 Sep 2026) show JSK in the Andromeda round; the exact deal date is not given and the LinkedIn announcement is reported from August, so month 2026-09 is the article month; Elin.ai Dec 2024 matches the 9 Dec 2024 article.",
+   "source_url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed in the record.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "cannot_tell",
+   "why": "'Roughly CZK 2bn' is the [osoba]' own money put into the whole SICAV (VC plus Private & Growth Equity sub-funds), the fund is still fundraising, and Forbes gives different contributions (CZK 1bn PGE + 0.25bn VC); it is not a sum of closed funds. Conversion at 24.403 CZK/EUR is arithmetically fine.",
+   "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/"
+  },
+  "identity_ok": {
+   "answer": "cannot_tell",
+   "why": "JSK Management s.r.o. (ICO 21285241, Praha 1) is named in the website footer, but the investing entity in the sources is JSK Investments SICAV a.s. (self-managed); the s.r.o. has intermediary/IT activities and nothing shows it manages or holds the fund.",
+   "source_url": "https://www.jskinvestments.cz/cs/kontakt"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R08",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Fund (a.s., SK NACE 6431) providing capital and quasi-capital to companies, co-investing 50:50 with private co-investors; the cited VFF portfolio and the Talentiqa round show equity investments.",
+   "source_url": "https://vff.sk"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Talentiqa round backed by Purple Ventures and Venture to Future Fund, Oct 2025; also Twinzo news dated 13 Dec 2023.",
+   "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Late-seed to Series A/B fund for innovative scalable companies, managed under state-owned Slovak Investment Holding's programme (state body investing directly into startups).",
+   "source_url": "https://vff.sk"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Registered seat Grosslingova 44 and office Karadzicova 8/A, Bratislava.",
+   "source_url": "https://vff.sk"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Talentiqa (Oct 2025) is confirmed by the SaaS news article; Product Fruits (10 May 2023) and Sensoneo (24 Oct 2021) match the dated news items on vff.sk; the other portfolio entries are undated.",
+   "source_url": "https://vff.sk"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "The website says 'various sectors'; the portfolio (Nettle AI, Talentiqa, Brightpick robotics, SEC Technologies, Sensoneo, Twinzo) is consistent with AI/data and deeptech/hardware.",
+   "source_url": "https://vff.sk"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Site: minimum investment EUR 400k, optimal EUR 1.5-2.0m (up to EUR 7m including follow-ons); the record's EUR 400k-2.0m is a fair summary of the cheque size.",
+   "source_url": "https://vff.sk"
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "Site says EUR 55m is allocated for 2020-2026; consistent with the SIH figure of EUR 40.4m plus a EUR 15.3m top-up.",
+   "source_url": "https://vff.sk"
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "RPO: Venture to Future Fund, a.s., ICO 52380483, Grosslingova 44, Bratislava, main activity investment fund; same name and ICO as on vff.sk.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/9905872"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R09",
+  "real_investor": {
+   "answer": "no",
+   "why": "The record has no investments or sources; the registry lists real-estate rental, consulting, trade, advertising and market research as activities (main code 7491), and no public source was found showing this entity invests in companies.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "No investment by this entity was found in any source (the record lists none).",
+   "source_url": ""
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "Nothing indicates a venture-capital activity; the registered business is non-investment.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Registered seat Zamocka 32, Bratislava (only the registered seat is known; no investment team found).",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "The record lists no investments and no sources.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "cannot_tell",
+   "why": "Name and ICO match the Slovak RPO entry, but no source links this company to any investor.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/244850"
+  },
+  "overall": "exclude"
+ },
+ {
+  "review_id": "R10",
+  "real_investor": {
+   "answer": "no",
+   "why": "Forvis Mazars is an audit, accounting, tax and advisory firm; the page shows no investing of own or managed money.",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "No investments listed or found; advisory/transaction services are not investments.",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "An advisory/audit firm, not a venture-capital investor.",
+   "source_url": "https://www.forvismazars.com/cz"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Seat Pod drahou 1637/4, Praha 7 (but it is not an investment team).",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/62582496"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "The record lists no investments.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES: Forvis Mazars s.r.o., ICO 62582496, Praha 7 (NACE 70200, 69200) matches the Forvis Mazars Czech organisation.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/62582496"
+  },
+  "overall": "exclude"
+ }
+]

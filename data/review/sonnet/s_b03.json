@@ -1,0 +1,247 @@
+[
+ {
+  "review_id": "R11",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Inven Capital is a SICAV fund (formerly ČEZ-owned, co-invested with the EIB) that makes equity investments in climate-tech startups, e.g. it led Vytal's EUR 8m round.",
+   "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Vytal round led by Inven Capital on 2025-03-11; Andercore USD 40m round reported 2026-02-12 (Inven holds 9%), with an earlier tick on 2025-11-25.",
+   "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Described as a Prague-based venture capital fund investing in climate tech startups in Europe and Israel (corporate/EIB-backed VC).",
+   "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Website contact address is Praha 4 - Braník and ARES shows the seat at Pod křížkem 1773/2, Praha 4.",
+   "source_url": "https://www.invencapital.cz"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Vytal (2025-03) and Andercore (Feb 2026 article, Inven 9% stake) are confirmed; the four undated names (eliq, Ember, Hydrogrid, Taranis) appear in the portfolio on the website. Caveat: Inven's Andercore entry was first reported by deutsche-startups on 2025-11-25, so the exact deal date may be Nov 2025 rather than Feb 2026, but either way it is inside the window.",
+   "source_url": "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Website says it backs the most impactful startups in the climate tech industry; the portfolio (Vytal, eliq, Hydrogrid, Sunfire, Wint) fits cleantech/energy.",
+   "source_url": "https://www.invencapital.cz"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Website states the investment size as 2-30m EUR, consistent with third-party profiles (EUR 2-30m per company).",
+   "source_url": "https://www.invencapital.cz"
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "Website states total committed capital of EUR 500 million and the EIB press release says Inven's assets under management exceed EUR 500 million.",
+   "source_url": "https://www.invencapital.cz"
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "Website names the entity Inven Capital, SICAV, a.s. and ARES for IČO 02059533 returns the same name, seat in Praha 4 - Braník.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02059533"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R12",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Miton states 'We invest our own capital' and has made minority and lead investments in startups (PangeAI pre-seed lead, Bandits EUR 400k, POS Experts minority stake).",
+   "source_url": "https://www.miton.cz/en/about"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Led PangeAI's pre-seed and invested EUR 400k in Bandits in 2025, and added a stake in POS Experts reported 2024-11-18, all after 2023-10-09.",
+   "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Invests EUR 300k-2M initial cheques at pre-seed/seed/Series A into startups (AI, crypto, e-commerce, gastrotech, mental health) and is called a Czech VC firm; it also holds majority stakes in some gastro companies, which makes the classification slightly mixed.",
+   "source_url": "https://www.miton.cz/en/about"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Prague office at Křižíkova 148/34, Praha 8; ARES shows the same address for MITON CZ, s.r.o.",
+   "source_url": "https://www.miton.cz/en/about"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "About page lists Aim, Bandits, PangeAI as 2025 investments; the blog confirms PangeAI, Bandits, GTE (2024) and Firefish (2023); cc.cz (18.11.2024) confirms POS Experts; trendingtopics (2026-05) names Miton as a Boataround investor (undated in record, so no date issue).",
+   "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "AI/augmented workforce is one of Miton's stated focus areas (Aim, Bandits, PangeAI); note the list is incomplete since crypto/web3, e-commerce, gastrotech and psychedelics are also stated.",
+   "source_url": "https://www.miton.cz/en/about"
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Website states a standard initial investment of EUR 300k-2M, with follow-ons in the same range or higher; Bandits cheque was EUR 400k.",
+   "source_url": "https://www.miton.cz/en/about"
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No total capital is listed in the record.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "MITON CZ, s.r.o. (IČO 25417967, founded 2000-06-06) is registered at Křižíkova 148/34, the same address as the Miton Prague office, and PitchBook gives Miton's founding year as 2000; the website itself shows no legal entity name, so this is a strong but indirect match.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/25417967"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R13",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Seed Starter is Česká spořitelna's investment programme that buys minority equity stakes (usually up to 20%) in startups, e.g. Repsense and Definic rounds.",
+   "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Participated in Repsense's EUR 1.1m round (CzechCrunch, 2025-12-17) and in Definic's EUR 2.5m seed round (article dated 2026-06-12).",
+   "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Its website calls it the 'Corporate Venture Capital of Česká spořitelna', investing at pre-seed and seed.",
+   "source_url": "https://www.seedstarter.cz/cs/uvod"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Website and ARES give the address Olbrachtova 1929/62, Praha 4.",
+   "source_url": "https://www.seedstarter.cz/cs/uvod"
+  },
+  "sources_support": {
+   "answer": "no",
+   "why": "Repsense (Dec 2025) is supported, but the five 2023-11-27 dates for Investown, Signi, PalmApp, Wflow and Rekenber are just the date of the cited article, which gives no deal dates; the real investments were made in 2020-2022 (e.g. Signi March 2021, wflow Feb 2022).",
+   "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors are listed in the record (site only says technologies for banking / client innovation).",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Website states ticket size 200k-1M EUR (record omits the currency).",
+   "source_url": "https://www.seedstarter.cz/cs/uvod"
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No total capital is listed in the record.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "Website names ČS Seed Starter, a.s., IČO 61058769 and ARES returns the same name and Olbrachtova 1929/62 seat.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/61058769"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R14",
+  "real_investor": {
+   "answer": "no",
+   "why": "INVESTIKA is a fund management company whose funds hold real estate, money-market/deposit instruments, a US equity index, gold, crypto and a fund-of-funds; it does not make equity or convertible investments into companies as a venture investor.",
+   "source_url": "https://www.investika.cz"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "No investment into a company is listed or found; its acquisitions are properties (e.g. Galerie Butovice, Royal Trakt Offices), which are not company investments.",
+   "source_url": "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "Real-estate and mutual-fund manager; neither the website nor the article mention venture capital, startups or company equity stakes.",
+   "source_url": "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "INVESTIKA, investiční společnost, a.s. and the holding are seated at U Zvonařky 291/3, Praha 2.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23820632"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "The record lists no investments.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors are listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket is listed in the record.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "Article says INVESTIKA manages assets of over CZK 30 billion; 30bn / 24.403 = EUR 1.229bn matches the listed figure (the site now shows 34-46 bn CZK, so the figure is stale but not wrong). It is AUM of a diversified fund house, not venture capital.",
+   "source_url": "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"
+  },
+  "identity_ok": {
+   "answer": "no",
+   "why": "ARES IČO 23820632 is INVESTIKA HOLDING a.s., founded 2025-10-21 (own-property administration); the fund manager named in the record, INVESTIKA, investiční společnost, a.s., has IČO 04158911, so the listed entity is a different company of the same brand.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23820632"
+  },
+  "overall": "exclude"
+ },
+ {
+  "review_id": "R15",
+  "real_investor": {
+   "answer": "cannot_tell",
+   "why": "No website, portfolio or press mention found; ARES lists activities as real estate, wholesale and sports facilities (68200, 46900, 93110, 461), and the firm is also linked to the name Megatenis s.r.o., so nothing shows it invests into companies.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"
+  },
+  "active_36m": {
+   "answer": "cannot_tell",
+   "why": "No investment by this entity was found in any source; the record lists none.",
+   "source_url": ""
+  },
+  "type_vc": {
+   "answer": "cannot_tell",
+   "why": "No evidence of venture investing; only the company name suggests it.",
+   "source_url": ""
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Registered seat Počernická 699/62b, Praha 10 (managing director [osoba]), though no investment team is documented.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "The record lists no investments or sources.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors are listed in the record.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket is listed in the record.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No total capital is listed in the record.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES IČO 24808016 returns Uroboros Ventures s.r.o., Praha 10, matching the listed name and ID; whether it is an investor is a separate question.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"
+  },
+  "overall": "cannot_tell"
+ }
+]

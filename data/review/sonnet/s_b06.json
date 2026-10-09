@@ -1,0 +1,247 @@
+[
+ {
+  "review_id": "R26",
+  "real_investor": {
+   "answer": "no",
+   "why": "PRK Partners s.r.o. advokátní kancelář is a law firm that advises clients (e.g. NICEBOY founders, J&T Banka); no own or managed investment fund or startup investments found on its site or via search.",
+   "source_url": "https://www.prkpartners.com"
+  },
+  "active_36m": {
+   "answer": "no",
+   "why": "No investment by PRK Partners into any company was found; deals mentioned on the site are legal-advisory mandates where other parties are the investors.",
+   "source_url": "https://www.prkpartners.com"
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "It is a law firm (advisor), not a venture-capital investor.",
+   "source_url": "https://www.prkpartners.com"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "ARES shows the seat at Jáchymova 26/2, Praha 1 (firm has offices in Prague, Bratislava, Ostrava), but it is a law firm, not an investment team.",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26692392"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "No investments are listed in the record.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "ARES IČO 26692392 is 'PRK Partners s.r.o. advokátní kancelář', the same law firm that runs prkpartners.com (the entity is real, but it is not an investor).",
+   "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26692392"
+  },
+  "overall": "exclude"
+ },
+ {
+  "review_id": "R27",
+  "real_investor": {
+   "answer": "yes",
+   "why": "MidEuropa is a private equity firm that buys equity stakes in companies (e.g. a 'significant minority stake' in Oshee, Feb 2026).",
+   "source_url": "https://www.mideuropa.com/about"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "MidEuropa announced a significant minority stake in Oshee on 16 Feb 2026 (and other 2025 deals such as MBL and FAMAR add-on reported by aggregators).",
+   "source_url": "https://www.just-drinks.com/newsletters/mideuropa-partners-takes-oshee-stake"
+  },
+  "type_vc": {
+   "answer": "no",
+   "why": "Self-described private equity firm ('pioneered private equity in the region in 1999'), buyout/growth investor, not venture capital.",
+   "source_url": "https://www.mideuropa.com/about"
+  },
+  "hq_cz_sk": {
+   "answer": "no",
+   "why": "Offices in Warsaw, London, Bucharest, Luxembourg and Guernsey; described as London-headquartered; no Czech/Slovak office.",
+   "source_url": "https://www.just-drinks.com/newsletters/mideuropa-partners-takes-oshee-stake"
+  },
+  "sources_support": {
+   "answer": "not_given",
+   "why": "No investments are listed in the record.",
+   "source_url": ""
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "cannot_tell",
+   "why": "No legal entity or company ID is listed in the record to check.",
+   "source_url": ""
+  },
+  "overall": "exclude"
+ },
+ {
+  "review_id": "R28",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Czech Founders VC is a founder-backed pre-seed fund (regulated as an alternative investment fund) that invests EUR 50-350k tickets into startups, e.g. EUR 350k into Maxfusion.",
+   "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Maxfusion round announced 14 Jan 2026 with EUR 350k from Czech Founders VC; Lemondia pre-seed on 17 Sep 2025 alongside Nextech Ventures.",
+   "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Early-stage (pre-seed) venture investor; cc.cz says it does not differ much from other VC firms but is regulated as an AIF.",
+   "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Website lists offices in Prague 6 and Bratislava; managing partners [osoba], [osoba] (CZ) and [osoba] (operates from Bratislava).",
+   "source_url": "https://czechfounders.vc"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "Maxfusion (14 Jan 2026) and Lemondia (17 Sep 2025) dates match the cc.cz articles; the undated portfolio companies (DTS, StreamBee, Filuta AI, Adventurer, CRUXO, Carta Genum) are all on the official portfolio page.",
+   "source_url": "https://czechfounders.vc/our-portfolio"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed in the record (the site names no sector focus either).",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "yes",
+   "why": "Website: 'Pre-seed tickets. Typically EUR 50-350k' - a cheque size, matching the listed range.",
+   "source_url": "https://czechfounders.vc"
+  },
+  "capital_ok": {
+   "answer": "yes",
+   "why": "cc.cz (Sept 2022): 45 entrepreneurs together paid in EUR 10 million (first EUR 5m raised, then the rest collected), i.e. closed capital, not just a target.",
+   "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/"
+  },
+  "identity_ok": {
+   "answer": "no",
+   "why": "IČO 09761187 is Czech Founders z.ú. (a non-profit institute, Libocká 686/47c); the investment vehicle is a different entity (website names 'Czech Founders Ventures s.r.o.'), and cc.cz says the fund and the non-profit with the same name operate independently.",
+   "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R29",
+  "real_investor": {
+   "answer": "yes",
+   "why": "Gi21 Capital invests in startup rounds (Zerops seed 'Led by Gi21 Capital', FaceUp Series A participation).",
+   "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "Gi21 posts 'Why We Invested in Hermetiq' (27 Aug 2026) and FaceUp Series A (21 May 2026); Zerops seed led by Gi21 in May 2026.",
+   "source_url": "https://gi21capital.com/blog-posts/why-we-invested-in-faceup-bringing-safety-and-integrity-to-global-workplaces"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "Its VC/PE technology division backs technical founders in Deep Tech, B2B SaaS and AI at early-to-growth rounds; third parties call it a Prague-based venture capital firm (the wider group also owns hotels and aviation).",
+   "source_url": "https://gi21capital.com"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "thesaasnews calls Gi21 'a Prague-based venture capital and private investment firm'; ARES seat is Londýnská 2578/54, Praha 2.",
+   "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
+  },
+  "sources_support": {
+   "answer": "no",
+   "why": "Hermetiq (27 Aug 2026), FaceUp (21 May 2026) and Zerops (May 2026) are supported, but the ArtMaster date 2026-04-29 is only the blog-post date: the round (EUR 800k, Purple Ventures lead, Gi21 joined) was reported in March 2025, so that listed date is about 13 months off. Gi21 participation itself is real.",
+   "source_url": "https://vestbee.com/insights/articles/art-master-raises-800k"
+  },
+  "sectors_ok": {
+   "answer": "yes",
+   "why": "Website: 'Backing technical founders solving complex problems through Deep Tech, B2B SaaS, AI'; portfolio (Zerops, Hermetiq, FaceUp) fits AI/data and enterprise SaaS.",
+   "source_url": "https://gi21capital.com"
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "Gi21 Capital a.s. (IČO 19584229, Londýnská 2578/54, Praha 2, est. 2023-08-08) is the same company registered at the Gi21 group address, with [osoba] as board member and shareholder.",
+   "source_url": "https://www.podnikatel.cz/rejstrik/osoby/damir-spoljaric-232570/"
+  },
+  "overall": "include"
+ },
+ {
+  "review_id": "R30",
+  "real_investor": {
+   "answer": "yes",
+   "why": "State-owned SIH invests directly into companies, e.g. EUR 2m convertible loan in PERRY SOFT and a capital increase in InoBat, with public money (via National Development Fund II); not only a fund of funds.",
+   "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+  },
+  "active_36m": {
+   "answer": "yes",
+   "why": "PERRY SOFT investment dated Bratislava, 5 Sep 2025 (EUR 2m of a EUR 3m round, convertible loan); InoBat decision finalised Dec 2023, announced 31 Jan 2024.",
+   "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+  },
+  "type_vc": {
+   "answer": "yes",
+   "why": "State body that invests directly into technology startups (PERRY SOFT, Definic, TrollWall AI etc.) under a Recovery Plan startup component; fits 'state body investing directly into startups'.",
+   "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+  },
+  "hq_cz_sk": {
+   "answer": "yes",
+   "why": "Seat Grösslingová 44, Bratislava; investment team in Bratislava.",
+   "source_url": "https://www.sih.sk/en/stranky/o-nas/o-spolocnosti"
+  },
+  "sources_support": {
+   "answer": "yes",
+   "why": "PERRY SOFT dated 5 Sep 2025 matches SIH's press release; InoBat article is dated 31 Jan 2024 and says SIH decided on a capital increase (decision in Dec 2023, so the 2024-01 date is within about a month; the filing names National Development Fund II, which SIH manages).",
+   "source_url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
+  },
+  "sectors_ok": {
+   "answer": "not_given",
+   "why": "No sectors listed.",
+   "source_url": ""
+  },
+  "ticket_ok": {
+   "answer": "not_given",
+   "why": "No ticket listed.",
+   "source_url": ""
+  },
+  "capital_ok": {
+   "answer": "not_given",
+   "why": "No capital listed.",
+   "source_url": ""
+  },
+  "identity_ok": {
+   "answer": "yes",
+   "why": "The Slovak registry (RPO) entity 1007511 is 'Slovak Investment Holding, a. s.', IČO 47759097, seat Grösslingová 44, Bratislava - the same company as sih.sk.",
+   "source_url": "https://api.statistics.sk/rpo/v1/entity/1007511"
+  },
+  "overall": "include"
+ }
+]

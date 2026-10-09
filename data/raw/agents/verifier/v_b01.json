@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R01",
+    "real_investor": {"answer": "yes", "why": "J&T Ventures CG SICAV a.s. invests in startups, and CzechCrunch names J&T Ventures as a participant in the Xund Pre-Series A round.", "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"},
+    "active_36m": {"answer": "yes", "why": "The Xund round is dated 2025-03-05 (article date) and J&T Ventures is named as a participant.", "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"},
+    "type_vc": {"answer": "yes", "why": "The website describes a fund investing from pre-seed to Series A in startups.", "source_url": "https://www.jtventures.cz"},
+    "hq_cz_sk": {"answer": "yes", "why": "The website gives an office in Praha 8 - Karlin, and ARES lists the registered seat at Sokolovska 700/113a, Praha 8.", "source_url": "https://www.jtventures.cz"},
+    "sources_support": {"answer": "cannot_tell", "why": "Xund (2025-03-05) and FetView (2015-03) are supported by cc.cz articles, but the six portfolio companies without dates are supported only as portfolio names."},
+    "sectors_ok": {"answer": "yes", "why": "The website lists Sector Agnostic among its areas of interest."},
+    "ticket_ok": {"answer": "yes", "why": "The website states an investment size of EUR 300K to 3M."},
+    "capital_ok": {"answer": "yes", "why": "The website shows an assets amount of EUR 120M, and podim.org gives the same AUM figure."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R02",
+    "real_investor": {"answer": "yes", "why": "The GA Drilling article names Slovakia-based Neulogy Ventures as an investor in a USD 15M first close, and the SIH page says Neulogy manages a fund.", "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"},
+    "active_36m": {"answer": "yes", "why": "The GA Drilling article is dated 18 April 2024 and names Neulogy Ventures as an investor.", "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"},
+    "type_vc": {"answer": "yes", "why": "The website describes deeptech investments, the portfolio lists 28 startups, and the investor invests directly in a startup round, although the site does not use the term VC.", "source_url": "https://neulogy.vc"},
+    "hq_cz_sk": {"answer": "yes", "why": "The registered seat is Tallerova 4, Bratislava (RPO), and the office is Strakova 3, Bratislava.", "source_url": "https://neulogy.vc/contact"},
+    "sources_support": {"answer": "cannot_tell", "why": "GA Drilling (2024-04-18) is supported with its date, but the six other portfolio companies are listed without dates."},
+    "sectors_ok": {"answer": "yes", "why": "The website states deeptech investments; hardware is only implied by the portfolio, e.g. GA Drilling."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R03",
+    "real_investor": {"answer": "yes", "why": "Nation 1 led the USD 2M pre-seed round of Myriad AI, and N1 states it manages USD 60M across two funds.", "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"},
+    "active_36m": {"answer": "yes", "why": "The Myriad AI round is dated 30 July 2024, with Nation 1 as lead investor.", "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"},
+    "type_vc": {"answer": "yes", "why": "The N1 website describes an early-stage VC, and ain.ua calls Nation 1 a Prague-based venture capital firm.", "source_url": "https://n1.rocks"},
+    "hq_cz_sk": {"answer": "yes", "why": "N1 lists a Prague office, ain.ua says Prague-based, and ARES lists the seat at Belehradska 858/23, Praha 2.", "source_url": "https://n1.rocks"},
+    "sources_support": {"answer": "yes", "why": "The Myriad AI investment dated 2024-07-30 is supported by the ain.ua article; the second Myriad AI row (2024-07) is the same deal."},
+    "sectors_ok": {"answer": "not_given", "why": "The record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "The N1 website states it manages USD 60M across two funds; the EUR figure is a conversion of that USD statement."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R04",
+    "real_investor": {"answer": "yes", "why": "A press release says ZAKA VC invested in DeepSeq.AI, and ZAKA VC Fund I is managed with outside money.", "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"},
+    "active_36m": {"answer": "yes", "why": "The DeepSeq.AI investment is announced on 7 January 2026, which is after 2023-10-08.", "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"},
+    "type_vc": {"answer": "yes", "why": "The press release calls ZAKA a Czech-based VC, and ain.ua describes a pre-seed and seed fund.", "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"},
+    "hq_cz_sk": {"answer": "yes", "why": "ARES lists the seat of ZAKA Management s.r.o. at Italska 2581/67, Praha 2, and ain.ua says ZAKA operates from Prague and London.", "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"},
+    "sources_support": {"answer": "cannot_tell", "why": "DeepSeq.AI (2026-01-07) is supported with its date, but six portfolio companies (WonderTx, Aerogen Systems, FinalDose, PerfectBit, Human Archive, AxionOrbital Space) appear on the portfolio page without dates."},
+    "sectors_ok": {"answer": "yes", "why": "The press release and zaka.vc both cite a Biotech/Health and Industrial Tech focus."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "cannot_tell", "why": "ain.ua (July 2024) gives a EUR 15M fund size with only a EUR 10.5M first close, while zaka.vc now shows a current fund size of 17M with no currency stated."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R05",
+    "real_investor": {"answer": "cannot_tell", "why": "Biotech Investments s.r.o. is described only as Investment Adviser, while the named investor in the sources is i&i Biotech Fund I SCSp in Luxembourg.", "source_url": "https://www.inibio.eu"},
+    "active_36m": {"answer": "yes", "why": "The Captain T Cell seed round was announced on 22 May 2024 with i&i Biotech Fund I SCSp participating.", "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"},
+    "type_vc": {"answer": "yes", "why": "The website describes a life sciences fund backing early-stage startups.", "source_url": "https://www.inibio.eu"},
+    "hq_cz_sk": {"answer": "cannot_tell", "why": "The fund headquarters is in Luxembourg, the Czech Praha 8 entity is the adviser, and the split of the investment team between locations is not clear.", "source_url": "https://www.inibio.eu"},
+    "sources_support": {"answer": "cannot_tell", "why": "Captain T Cell (2024-05-22) is supported, but the named investor is the Luxembourg fund rather than the record entity, and Celeris Therapeutics has no date."},
+    "sectors_ok": {"answer": "yes", "why": "The website says the fund is comfortable with drug discovery, medtech, diagnostics and AI verticals."},
+    "ticket_ok": {"answer": "yes", "why": "The website says its sweet spot is between EUR 0.5M and EUR 2M."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "cannot_tell"
+  }
+]
