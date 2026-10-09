@@ -1,0 +1,147 @@
+"""docs/REFINEMENT.md - what the refinement stage (D38) changed, and whether it made the data more accurate."""
+
+from __future__ import annotations
+
+from datetime import date
+from pathlib import Path
+
+from investordb.metrics import wilson
+from investordb.refine import JUDGE_DIR, judge_metrics, summary
+
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / "docs" / "REFINEMENT.md"
+
+FIELD_SK = {"funds": "fondy", "investments": "investície"}
+VERDICT_SK = {"confirmed": "dátum potvrdený", "corrected": "dátum opravený", "not_found": "dátum sa nenašiel",
+              "not_this_investor": "investor sa na kole nepodieľal", "new": "nový novší obchod"}
+STATUS_SK = {"final_close": "uzavretý fond", "first_close": "prvé uzavretie", "target": "len cieľ / plán"}
+
+
+def pct(p: float) -> str:
+    return f"{100 * p:.1f} %"
+
+
+def ci(k: int, n: int) -> str:
+    if not n:
+        return "–"
+    p, lo, hi = wilson(k, n)
+    return f"**{k}/{n} = {pct(p)}** (95 % CI {pct(lo)} – {pct(hi)})"
+
+
+def _eur(v: str) -> str:
+    return f"{float(v) / 1e6:,.1f} mil. €".replace(",", " ") if v else "–"
+
+
+def build(result: dict, as_of: date) -> str:
+    s = summary(result)
+    before, rows = result["before"], result["rows"]
+    lines: list[str] = []
+    add = lines.append
+    add("# Spresnenie slabých polí silnejším modelom (D38)\n")
+    add(f"*Generované skriptom `python -m investordb.cli refine report` (`as_of` = {as_of}). Zmrazená databáza "
+        "(tag `pilot-frozen-v3`) zostáva nezmenená a meraná v [PRECISION_REPORT.md](PRECISION_REPORT.md); spresnená "
+        "verzia je v `data/processed/investors_refined.csv`.*\n")
+
+    add("## 1. Prečo\n")
+    add("Slepá kontrola vzorky (Sonnet 5.5) a ručná kontrola autora ukázali, že **kto** je v databáze, je správne "
+        "(23/23), ale dve polia sú slabé: **celkový kapitál** (správny len v 6 z 12 hodnotených záznamov – cieľové "
+        "veľkosti fondov a prvé uzavretia počítané ako uzavreté fondy, staršie fondy chýbali) a **dátumy obchodov** "
+        "(zdroje sedeli v 19 z 23 záznamov – ako dátum obchodu sa niekedy použil dátum článku, ktorý staršiu investíciu "
+        "len spomína). Haiku na takéto čítanie článkov nestačil.\n")
+
+    add("## 2. Ako\n")
+    add("- **Agent:** Claude Sonnet 5.5, [pokyn](../prompts/refine_agent.md), 6 agentov po 4 investoroch – všetkých "
+        f"{len(before)} zaradených. Dostal, čo databáza tvrdí (fondy, datované obchody), a mal to overiť.\n"
+        "- **Úloha A – fondy:** každý fond so stavom zbierky (`final_close` / `first_close` / `target`), sumou a "
+        "doslovnou citáciou. Kapitál = súčet uzavretých fondov + prvých uzavretí; cieľ sa nepočíta. Program navyše "
+        "odmietne sumu, pred ktorou citácia hovorí „target / cieľová / až“ (`target_near`), aj keď agent tvrdí opak.\n"
+        "- **Úloha B – dátumy:** pre každý započítaný obchod dátum, keď bola investícia prvýkrát oznámená, s verdiktom "
+        "potvrdený / opravený / nenájdený / iný investor.\n"
+        "- **Rovnaké strojové kontroly** ako všetky ostatné tvrdenia: citácia na stránke, hodnota v citácii, kontext "
+        "obchodu, priradenie investorovi.\n"
+        "- **Pravidlá zlúčenia:** overený spresnený dátum nahradí pôvodný; dátum, ktorý agent nepotvrdil, sa prestane "
+        "počítať (firma ostane v portfóliu ako zmienka); ak by záznam po spresnení prestal spĺňať pravidlá, nevyradí "
+        "sa, ale ide na ručnú kontrolu (`REVIEW_REFINED`).\n")
+
+    add("## 3. Strojové kontroly spresnených tvrdení\n")
+    add("| Pole | Výsledok kontroly | Počet |\n|---|---|---|")
+    for (field, status), n in sorted(s["auto_check"].items()):
+        add(f"| {FIELD_SK.get(field, field)} | `{status}` | {n} |")
+    add("")
+    add("Stav fondov podľa agenta: " + ", ".join(f"{STATUS_SK.get(k, k)} {v}×" for k, v in s["fund_status"].most_common())
+        + ".  ")
+    add("Verdikty k dátumom obchodov: " + ", ".join(f"{VERDICT_SK.get(k, k)} {v}×" for k, v in s["verdicts"].most_common())
+        + ".\n")
+
+    add("## 4. Čo sa v databáze zmenilo\n")
+    cap_b = sum(1 for r in before.values() if r["total_capital_eur"])
+    cap_a = sum(1 for r in rows.values() if r["total_capital_eur"])
+    cap_changed = [cid for cid in rows if before[cid]["total_capital_eur"] != rows[cid]["total_capital_eur"]]
+    last_changed = [cid for cid in rows if before[cid]["last_investment_date"] != rows[cid]["last_investment_date"]]
+    status_changed = [cid for cid in rows if rows[cid]["status"] != "INCLUDED"]
+    tier_changed = [cid for cid in rows if rows[cid]["status"] == "INCLUDED" and rows[cid]["tier"] != before[cid]["tier"]]
+    add(f"- Kapitál vyplnený: {cap_b}/{len(before)} → **{cap_a}/{len(rows)}**; zmenená hodnota pri **{len(cap_changed)}** "
+        "investoroch.")
+    add(f"- Posledný obchod sa zmenil pri **{len(last_changed)}** investoroch; úroveň dôkazov (A/B) pri "
+        f"**{len(tier_changed)}**.")
+    add(f"- Na ručnú kontrolu po spresnení (`REVIEW_REFINED`): **{len(status_changed)}**"
+        + (": " + ", ".join(rows[c]["name"] for c in status_changed) if status_changed else "") + ".")
+    if result["problems"]:
+        add("- Integritné kontroly: " + "; ".join(result["problems"]))
+    else:
+        add("- Integritné kontroly (každý zaradený má overený datovaný obchod v okne, kapitál má overené tvrdenie): bez chýb.")
+    add("")
+    add("| Investor | Kapitál pred | Kapitál po | Posledný obchod pred | po | Obchody 36 m pred → po | Zmeny |")
+    add("|---|---|---|---|---|---|---|")
+    for cid in sorted(rows, key=lambda c: rows[c]["name"].lower()):
+        b, a = before[cid], rows[cid]
+        notes = a.get("refine_notes", "")
+        status = "" if a["status"] == "INCLUDED" else " **→ na kontrolu**"
+        add(f"| {a['name']}{status} | {_eur(b['total_capital_eur'])} | {_eur(a['total_capital_eur'])} | "
+            f"{b['last_investment_date'] or '–'} | {a['last_investment_date'] or '–'} | "
+            f"{b['n_investments_36m']} → {a['n_investments_36m']} | {notes.replace('|', '/') or '–'} |")
+    add("")
+
+    add("## 5. Je spresnená verzia presnejšia? (slepá kontrola faktov)\n")
+    if not (JUDGE_DIR / "key.csv").exists() or not any(JUDGE_DIR.glob("j_b*.json")):
+        add("*Kontrola faktov ešte nebežala.*\n")
+        return "\n".join(lines)
+    j = judge_metrics()
+    add("Hodnoty z oboch verzií (zmrazenej aj spresnenej) dostal **nový** agent Sonnet 5.5 "
+        "([pokyn](../prompts/refine_judge_agent.md)) zmiešané, zoradené náhodne a **bez informácie, z ktorej verzie "
+        "pochádzajú**. Každú hodnotu overil v zdrojoch. Rovnaká hodnota v oboch verziách sa hodnotila raz. "
+        f"Ohodnotených položiek: {j['answered']} z {j['items']}.\n")
+    add("| Pole | Zmrazená verzia (v3) | Spresnená verzia |\n|---|---|---|")
+    for typ, label in (("capital", "Celkový kapitál správny"), ("deal", "Obchod: investor + dátum (±2 mesiace) správne"),
+                       ("identity", "Identita v registri správna")):
+        b, a = j[(typ, "before")], j[(typ, "after")]
+        add(f"| {label} | {ci(b['yes'], b['n'])} | {ci(a['yes'], a['n'])} |")
+    add("")
+    add("Prísne počítanie: „neviem“ = nepotvrdené. Rozpis odpovedí:\n")
+    add("| Pole | Verzia | Odpovede |\n|---|---|---|")
+    for typ in ("capital", "deal", "identity"):
+        for version, label in (("before", "zmrazená"), ("after", "spresnená")):
+            ans = j[(typ, version)]["answers"]
+            add(f"| {typ} | {label} | " + ", ".join(f"{k} {v}" for k, v in sorted(ans.items())) + " |")
+    add("")
+    wrong = [(k, a) for k, a in j["answers"].items() if a["answer"] != "yes" and j["key"][k]["after"] == "1"]
+    if wrong:
+        add("### Hodnoty spresnenej verzie, ktoré kontrola nepotvrdila\n")
+        add("| Položka | Typ | Odpoveď | Zdôvodnenie |\n|---|---|---|---|")
+        for k, a in sorted(wrong):
+            add(f"| {k} | {j['key'][k]['type']} | {a['answer']} | {str(a.get('why', '')).replace('|', '/')[:300]} |")
+        add("")
+
+    add("## 6. Obmedzenia\n")
+    add("- Spresňoval aj kontroloval model tej istej rodiny (Sonnet 5.5). Kontrolór bol iný agent bez prístupu k "
+        "výstupu spresnenia a nevedel, ktorá hodnota je nová, chyby oboch však môžu byť korelované. Rozhodujúce je "
+        "preto, že každé nové tvrdenie prešlo rovnakými strojovými kontrolami ako zvyšok databázy.\n"
+        "- Kontrola faktov meria hodnoty, ktoré v databáze **sú**. Chýbajúci kapitál (neuvedené) sa do presnosti "
+        "nepočíta – vyplnenosť je uvedená zvlášť v kap. 4.\n"
+        "- Spresnenie je po zmrazení: primárna metrika presnosti záznamov (PRECISION_REPORT) sa ním nemení.\n")
+    return "\n".join(lines)
+
+
+def write(result: dict, as_of: date) -> Path:
+    OUT.write_text(build(result, as_of), encoding="utf-8")
+    return OUT

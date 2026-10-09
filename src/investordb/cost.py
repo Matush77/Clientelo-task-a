@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RUNS = ROOT / "data" / "raw" / "agents" / "runs.csv"
 PROCESSED = ROOT / "data" / "processed"
 REVIEW = ROOT / "data" / "review" / "review_results.csv"
+SPOTCHECK = ROOT / "data" / "review" / "spotcheck_results.csv"
 USD_PER_EUR = 1.1186  # ECB reference rate 2026-10-08 (fetched by money.eur_rate in the pilot)
 
 # Claude Haiku 5.5, USD per million tokens (prompts <= 100K tokens) and per search - verified on the pricing page
@@ -42,7 +43,7 @@ def prices_for(model: str) -> dict[str, float]:
 TOKENS_PER_FETCHED_PAGE = 6000
 
 STAGES = {  # description keywords -> stage (see usage.py / runs.csv)
-    "reviewer": "ai_review", "re-review": "ai_review",
+    "reviewer": "ai_review", "re-review": "ai_review", "refine": "refinement", "fact-check": "refine_check",
     "verifier": "verifier", "recent-deal": "recent_deal", "evidence": "evidence", "list a": "discovery",
     "list b": "discovery", "lookalike": "discovery", "hq triage": "hq_triage", "duplicate": "duplicate_check",
 }
@@ -88,6 +89,7 @@ class Measured:
     verifier_records: int
     review_minutes: float | None  # median minutes per record from the human review
     searches_share: float  # share of AI cost that is web search
+    refined_records: int = 0  # included investors re-extracted by the refinement agent (D38)
 
     @property
     def per_candidate(self) -> float:
@@ -109,6 +111,10 @@ class Measured:
     def ai_review_per_record(self) -> float:
         return self.cost_by_stage.get("ai_review", 0) / max(self.ai_review_records, 1)
 
+    @property
+    def refine_per_record(self) -> float:
+        return self.cost_by_stage.get("refinement", 0) / max(self.refined_records, 1)
+
 
 def measure() -> Measured:
     runs = _read(RUNS)
@@ -123,7 +129,8 @@ def measure() -> Measured:
     reviewed = sum(len(json.loads(p.read_text(encoding="utf-8")))
                    for p in (ROOT / "data" / "review" / "sonnet").glob("s_b*.json"))
     decisions = _read(PROCESSED / "decisions.csv")
-    minutes = [float(r["minutes_spent"]) for r in _read(REVIEW) if (r.get("minutes_spent") or "").strip()]
+    minutes = [float(r["minutes_spent"]) for r in _read(REVIEW) or _read(SPOTCHECK)
+               if (r.get("minutes_spent") or "").strip()]
     # records the verifier actually checked, over all passes (v1 and v2 of the pilot)
     verifier_records = sum(len(json.loads(p.read_text(encoding="utf-8")))
                            for p in (ROOT / "data" / "raw" / "agents" / "verifier").rglob("batches/*.json"))
@@ -138,6 +145,8 @@ def measure() -> Measured:
         verifier_records=verifier_records,
         review_minutes=statistics.median(minutes) if minutes else None,
         searches_share=search_cost / max(sum(cost_by_stage.values()), 1e-9),
+        refined_records=sum(len(json.loads(p.read_text(encoding="utf-8")))
+                            for p in (ROOT / "data" / "raw" / "agents" / "refine").glob("rf_b*.json")),
     )
 
 
@@ -169,6 +178,8 @@ STAGE_LABELS = {
     "research_planning": "prieskum a plánovanie (jednorazovo)", "discovery": "objavovanie kandidátov",
     "hq_triage": "triáž sídla", "evidence": "zber dôkazov (vrátane opakovaní)", "recent_deal": "etapa „nedávna investícia“",
     "duplicate_check": "kontrola duplicít", "verifier": "nezávislý AI overovateľ", "pricing_check": "overenie cenníka",
+    "ai_review": "slepá AI kontrola vzorky (Sonnet 5.5)", "refinement": "spresnenie zaradených záznamov (Sonnet 5.5)",
+    "refine_check": "kontrola faktov pred a po spresnení (Sonnet 5.5)",
 }
 
 
@@ -189,16 +200,18 @@ def render(m: Measured) -> str:
         "(overený strojovo, [api_prices_md_checked.csv](../data/reference/api_prices_md_checked.csv), 9. 10. 2026); "
         f"kurz ECB 1 € = {USD_PER_EUR} USD.*\n")
     add("## 1. Čo stál pilot (namerané)\n")
-    add("Všetci subagenti bežali na **Claude Haiku 5.5**. Náklad je prepočítaný na ceny API (pilot bežal v rámci "
-        "predplatného Claude Code), podľa skutočnej spotreby tokenov zo záznamov agentov (`usage.py`).\n")
+    add("Objavovanie, zber dôkazov a overovateľ bežali na **Claude Haiku 5.5**; slepá kontrola vzorky, spresnenie "
+        "zaradených záznamov a kontrola faktov na **Claude Sonnet 5.5** (20× drahšie tokeny). Náklad je prepočítaný na "
+        "ceny API (pilot bežal v rámci predplatného Claude Code), podľa skutočnej spotreby tokenov zo záznamov agentov "
+        "(`usage.py`), každý beh cenou svojho modelu.\n")
     add("| Etapa | Náklad (USD) |\n|---|---|")
     for stage, cost in sorted(m.cost_by_stage.items(), key=lambda kv: -kv[1]):
         add(f"| {STAGE_LABELS.get(stage, stage)} | {cost:.2f} |")
     add(f"| **spolu** | **{total_usd:.2f}** |\n")
     add(f"- Na jedného kandidáta (objavovanie + triáž + dôkazy + nedávna investícia): **{m.per_candidate:.3f} USD**")
     add(f"- Nezávislý overovateľ na jeden záznam: **{m.verifier_per_record:.3f} USD**")
-    add(f"- **Vyhľadávanie na webe tvorí {100 * m.searches_share:.0f} % nákladov na AI** – samotné tokeny Haiku sú "
-        "zanedbateľné.")
+    add(f"- **Vyhľadávanie na webe tvorí {100 * m.searches_share:.0f} % nákladov na AI** – tokeny Haiku sú lacné; "
+        "drahé sú vyhľadávania a tokeny Sonnetu.")
     add(f"- Na 1 zaradeného investora pripadlo **{m.candidates / max(m.included, 1):.1f} kandidátov**; "
         f"{100 * m.needs_review_share:.1f} % kandidátov skončilo v ručnej kontrole.")
     add(f"- Ručná kontrola: {minutes_note} na záznam.\n")
@@ -234,7 +247,7 @@ def render(m: Measured) -> str:
     base, s_base = est[1], sc[1]
     add("## 3. Varianty kvality (základný scenár)\n")
     add("Pilot ukázal dve slabiny: (1) Haiku pri výklade článkov často nerozlíšil dátum obchodu od dátumu článku a "
-        "cieľový fond od uzavretého, (2) na presnosť polí treba ľudskú kontrolu. Dve varianty, ako za to zaplatiť:\n")
+        "cieľový fond od uzavretého, (2) na presnosť polí treba ľudskú kontrolu. Varianty, ako za to zaplatiť:\n")
     extra_sonnet = base["candidates"] * m.tokens_per_candidate * (SONNET_FACTOR - 1) * s_base.language_factor / USD_PER_EUR
     review_all = s_base.target_records * m.ai_review_per_record / USD_PER_EUR
     human_reduced = base["human_eur"] * 0.4  # human only on AI disagreements + random control (~40 % of the QA sample)
@@ -244,13 +257,21 @@ def render(m: Measured) -> str:
     v1 = base["year1_eur"] + extra_sonnet
     add(f"| **Sonnet 5.5 na zber dôkazov** (výklad dátumov, súm, účasti) | {_eur(base['ai_eur'] + extra_sonnet)} | "
         f"{_eur(base['human_eur'])} | {_eur(v1)} | +{_eur(extra_sonnet)} |")
+    refine_all = s_base.target_records * m.refine_per_record * s_base.language_factor / USD_PER_EUR
+    if m.refined_records:
+        add(f"| **Haiku na zber, Sonnet 5.5 len na spresnenie zaradených záznamov** (D38, odporúčané) | "
+            f"{_eur(base['ai_eur'] + refine_all)} | {_eur(base['human_eur'])} | {_eur(base['year1_eur'] + refine_all)} | "
+            f"+{_eur(refine_all)} |")
     v2 = base["year1_eur"] + extra_sonnet + review_all - (base["human_eur"] - human_reduced)
     add(f"| Sonnet na zber **aj** AI kontrolu všetkých záznamov, človek len na sporné a náhodné | "
         f"{_eur(base['ai_eur'] + extra_sonnet + review_all)} | {_eur(human_reduced)} | {_eur(v2)} | "
         f"{'+' if v2 >= base['year1_eur'] else '−'}{_eur(abs(v2 - base['year1_eur']))} |\n")
     add(f"Namerané v pilote: tokeny zberu dôkazov stoja {m.tokens_per_candidate:.4f} USD na kandidáta pri Haiku (Sonnet "
         f"= 20×); AI kontrola Sonnetom stála {m.ai_review_per_record:.3f} USD na záznam. Podiel ľudskej kontroly 40 % "
-        "v poslednom riadku je predpoklad – v pilote sa Sonnet a Haiku líšili v 15 % záznamov, k tomu náhodná kontrola.\n")
+        "v poslednom riadku je predpoklad – v pilote sa Sonnet a Haiku líšili v 15 % záznamov, k tomu náhodná kontrola."
+        + (f" Spresnenie jedného zaradeného záznamu Sonnetom stálo {m.refine_per_record:.3f} USD (namerané na "
+           f"{m.refined_records} záznamoch) – Sonnet tak beží len na ~1/{m.candidates / max(m.included, 1):.0f} "
+           "kandidátov, a to len na polia, kde Haiku zlyhával." if m.refined_records else "") + "\n")
     add("## 4. Čo z toho vyplýva\n")
     add(f"- **Hlavný náklad nie je AI, ale ľudská kontrola kvality.** V základnom scenári AI stojí "
         f"{_eur(base['ai_eur'])}, ľudská kontrola {_eur(base['human_eur'])}.")
@@ -259,11 +280,14 @@ def render(m: Measured) -> str:
         "ak nízka, počet ručne kontrolovaných záznamov rastie.")
     add("- **Druhá páka je vyhľadávanie:** tvorí väčšinu nákladov na AI. Štruktúrované zdroje (registre SEC Form ADV, "
         "ESMA, národné registre, zoznamy asociácií) znižujú počet kandidátov na 1 zaradený záznam aj počet vyhľadávaní.")
-    add("- **Tretia páka je kvalita zoznamu kandidátov:** v pilote bolo 5,3 kandidáta na 1 zaradeného investora; "
-        "v krajinách bez dobrých zoznamov (a pri family office / angel investoroch) to bude viac.")
-    add("- Model Haiku 5.5 stačí: všetky kroky, kde záleží na presnosti, robí deterministický kód (kontrola citácií, "
-        "pravidlá, registre). Drahší model by zvýšil cenu AI ~20× bez zmeny tejto architektúry.\n")
-    add("## 4. Obmedzenia odhadu\n")
+    add(f"- **Tretia páka je kvalita zoznamu kandidátov:** v pilote bolo {m.candidates / max(m.included, 1):.1f} "
+        "kandidáta na 1 zaradeného investora; v krajinách bez dobrých zoznamov (a pri family office / angel "
+        "investoroch) to bude viac.")
+    add("- **Model podľa úlohy:** Haiku 5.5 stačí na objavovanie a zber, lebo rozhodnutia, kde záleží na presnosti, "
+        "robí deterministický kód (kontrola citácií, pravidlá, registre) – rozhodnutie *kto je investor* bolo správne "
+        "23/23. Na výklad článkov (dátum obchodu, stav fondu) Haiku nestačil; Sonnet je 20× drahší, preto sa oplatí "
+        "púšťať ho cielene len na zaradené záznamy a len na tieto polia (D38).\n")
+    add("## 5. Obmedzenia odhadu\n")
     add("- Pilot meral VC investorov v CZ/SK. Pre PE, family office a angel investorov bude pomer kandidátov k zaradeným "
         "a čas kontroly iný (family office sú menej verejné).")
     add("- Prístup k registrom: ARES (CZ) a RPO (SK) sú zadarmo; v niektorých krajinách sú registre platené alebo bez API – "

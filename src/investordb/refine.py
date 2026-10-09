@@ -246,14 +246,27 @@ def integrity(row: dict, merged: list[dict]) -> list[str]:
     return problems
 
 
-def run(as_of: date) -> dict:
+def check_outputs() -> list[dict]:
+    """Machine-check every refined claim (downloads the pages) -> claims_refined.csv."""
     investors = {r["candidate_id"]: r for r in _read(PROCESSED / "investors.csv")}
-    outputs = {r["candidate_id"]: r for r in load_outputs()}
     cand = {c["candidate_id"]: c for c in _read(PROCESSED / "candidates.csv")}
     names = {cid: [n for m in inv["evidence_ids"].split() if m in cand
                    for n in [cand[m]["name"], *[a for a in cand[m]["aliases"].split(" | ") if a]]]
              for cid, inv in investors.items()}
-    new = checked_claims(list(outputs.values()), investors, names)
+    new = checked_claims(load_outputs(), investors, names)
+    with CLAIMS_REFINED.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(new[0].keys()) + ["verdict"])
+        w.writeheader()
+        for c in new:
+            w.writerow({**c, "verdict": _value(c).get("verdict") or (_value(c).get("status") or "")})
+    return new
+
+
+def rebuild_all(as_of: date) -> dict:
+    """Frozen claims + claims_refined.csv + the agents' verdicts -> investors_refined.csv (no downloads)."""
+    investors = {r["candidate_id"]: r for r in _read(PROCESSED / "investors.csv")}
+    outputs = {r["candidate_id"]: r for r in load_outputs()}
+    new = _read(CLAIMS_REFINED) if CLAIMS_REFINED.exists() else []
     checks = {cid: deal_checks(rec) for cid, rec in outputs.items()}
     old = claims_by_investor(list(investors.values()), _read(PROCESSED / "claims.csv"), only_ok=False)
 
@@ -265,18 +278,12 @@ def run(as_of: date) -> dict:
         rows.append(row)
         merged_by[cid] = merged
         problems += integrity(row, merged)
-
-    with CLAIMS_REFINED.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(new[0].keys()) + ["verdict"])
-        w.writeheader()
-        for c in new:
-            w.writerow({**c, "verdict": _value(c).get("verdict") or (_value(c).get("status") or "")})
     with INVESTORS_REFINED.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         w.writeheader()
         w.writerows(sorted(rows, key=lambda r: r["candidate_id"]))
-    return {"rows": rows, "claims": new, "checks": checks, "merged": merged_by, "problems": problems,
-            "missing": sorted(set(investors) - set(outputs))}
+    return {"before": investors, "rows": {r["candidate_id"]: r for r in rows}, "claims": new, "checks": checks,
+            "merged": merged_by, "old": old, "problems": problems, "missing": sorted(set(investors) - set(outputs))}
 
 
 def summary(result: dict) -> dict:
@@ -284,6 +291,102 @@ def summary(result: dict) -> dict:
     claims, checks = result["claims"], result["checks"]
     return {
         "fund_status": Counter(_value(c).get("status") for c in claims if c["field"] == "funds"),
-        "auto_check": Counter(c["auto_check"] for c in claims),
+        "auto_check": Counter((c["field"], c["auto_check"]) for c in claims),
         "verdicts": Counter(chk["verdict"] for chks in checks.values() for chk in chks),
     }
+
+
+# --- 4. blind fact-check of before vs. after (prompts/refine_judge_agent.md) ----------------------------
+
+JUDGE_DIR = ROOT / "data" / "review" / "refine_judge"
+JUDGE_SEED = 20261010
+JUDGE_BATCH = 4
+
+
+def _capital_item(row: dict, ok: list[dict], on: str) -> dict | None:
+    from investordb.pipeline import total_capital
+    cap = total_capital(ok, on)
+    if cap["eur"] is None:
+        return None
+    basis = []
+    for c in cap["counted"]:
+        v = _value(c)
+        label = v.get("name") or "AUM"
+        amount = v.get("size") or v.get("amount") or ""
+        status = {"final_close": "uzavretý", "first_close": "prvé uzavretie"}.get(v.get("status"), "")
+        basis.append({"fund": label, "amount": amount, "status": status, "source_url": c["source_url"]})
+    return {"type": "capital", "total_eur": round(cap["eur"]), "method": cap["method"], "basis": basis,
+            "key": (round(cap["eur"]), tuple(sorted(b["source_url"] + b["amount"] for b in basis)))}
+
+
+def _deal_items(ok: list[dict]) -> list[dict]:
+    out = []
+    for key, c in counted_deals(ok).items():
+        precision = c.get("event_date_precision") or "day"
+        shown = c["event_date"][:4] if precision == "year" else c["event_date"][:7] if precision == "month" else c["event_date"]
+        out.append({"type": "deal", "company": _value(c).get("company"), "date": shown, "source_url": c["source_url"],
+                    "key": (key, shown[:7], c["source_url"])})
+    return out
+
+
+def make_judge_batches(result: dict, as_of: date) -> list[Path]:
+    """Items from both versions, de-duplicated and shuffled; which version an item came from goes to key.csv only."""
+    import random
+    rng = random.Random(JUDGE_SEED)
+    on = as_of.isoformat()
+    records, key_rows = [], []
+    n = 0
+    for cid in sorted(result["before"]):
+        before_ok = [c for c in result["old"][cid] if c["auto_check"] == "ok"]
+        after_ok = [c for c in result["merged"][cid] if c["auto_check"] == "ok"]
+        inv = result["before"][cid]
+        items: dict[tuple, dict] = {}
+        for version, ok in (("before", before_ok), ("after", after_ok)):
+            found = _deal_items(ok)
+            cap = _capital_item(inv, ok, on)
+            for it in found + ([cap] if cap else []):
+                k = (it["type"],) + it.pop("key")
+                items.setdefault(k, {**it, "versions": set()})["versions"].add(version)
+        listed = list(items.values())
+        rng.shuffle(listed)
+        out_items = [{"item_id": f"{cid}-I00", "type": "identity", "legal_name": inv["legal_name"],
+                      "company_id": inv["company_id"], "registry_url": inv["registry_url"]}]
+        key_rows.append({"item_id": f"{cid}-I00", "candidate_id": cid, "type": "identity", "before": 1, "after": 1})
+        for it in listed:
+            n += 1
+            item_id = f"{cid}-I{len(out_items):02d}"
+            versions = it.pop("versions")
+            out_items.append({"item_id": item_id, **it})
+            key_rows.append({"item_id": item_id, "candidate_id": cid, "type": it["type"],
+                             "before": int("before" in versions), "after": int("after" in versions)})
+        records.append({"investor": inv["name"], "website": inv["website"], "items": out_items})
+    JUDGE_DIR.mkdir(parents=True, exist_ok=True)
+    (JUDGE_DIR / "batches").mkdir(exist_ok=True)
+    with (JUDGE_DIR / "key.csv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(key_rows[0].keys()))
+        w.writeheader()
+        w.writerows(key_rows)
+    paths = []
+    for b, start in enumerate(range(0, len(records), JUDGE_BATCH), 1):
+        path = JUDGE_DIR / "batches" / f"j_b{b:02d}.json"
+        path.write_text(json.dumps(records[start:start + JUDGE_BATCH], ensure_ascii=False, indent=2), encoding="utf-8")
+        paths.append(path)
+    return paths
+
+
+def judge_metrics() -> dict:
+    """Accuracy of the frozen vs. the refined values, from the blind fact-check (strict: cannot_tell = not confirmed)."""
+    key = {r["item_id"]: r for r in _read(JUDGE_DIR / "key.csv")}
+    answers = {}
+    for path in sorted(JUDGE_DIR.glob("j_b*.json")):
+        for a in json.loads(path.read_text(encoding="utf-8")):
+            answers[a["item_id"]] = a
+    out: dict = {"answered": len(answers), "items": len(key)}
+    for typ in ("capital", "deal", "identity"):
+        for version in ("before", "after"):
+            ids = [i for i, k in key.items() if k["type"] == typ and k[version] == "1" and i in answers]
+            got = Counter(answers[i]["answer"] for i in ids)
+            out[(typ, version)] = {"n": len(ids), "yes": got.get("yes", 0), "answers": dict(got)}
+    out["answers"] = answers
+    out["key"] = key
+    return out

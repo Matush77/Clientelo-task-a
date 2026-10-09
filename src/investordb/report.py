@@ -103,7 +103,7 @@ def build() -> str:
 
     as_of = investors[0]["as_of"] if investors else "?"
     add("# Meranie presnosti – pilot VC investori CZ + SK\n")
-    add(f"*Generované skriptom `python -m investordb.cli report` z dát zmrazených tagom `pilot-frozen-v2` "
+    add(f"*Generované skriptom `python -m investordb.cli report` z dát zmrazených tagom `pilot-frozen-v3` "
         f"(`as_of` = {as_of}). Metriky sú definované vopred v [PLAN.md](PLAN.md), kap. 9.*\n")
 
     # --- who judged

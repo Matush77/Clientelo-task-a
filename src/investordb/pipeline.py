@@ -149,13 +149,14 @@ def target_near(quote: str, amount_text: str, window: int = 60) -> bool:
 def total_capital(ok: list[dict], on: str) -> dict:
     """Stated AUM wins; otherwise the sum of all verified CLOSED fund sizes (D17, D30).
     Target / planned funds and ranges are listed separately, never summed; implausible amounts are dropped + flagged."""
-    out = {"eur": None, "method": "", "approx": False, "targets": [], "notes": [], "flags": []}
+    out = {"eur": None, "method": "", "approx": False, "targets": [], "notes": [], "flags": [], "counted": []}
     aum = _first(ok, "total_capital")
     # only an explicit AUM counts here - a single fund's size must not pose as the firm's total capital
     if aum and aum.get("capital_type") == "aum" and (m := parse_money(aum.get("amount"), aum.get("currency"))):
         eur = to_eur(m, on)
         if plausible("aum", eur) and not m.is_range:
             out.update(eur=eur, method="aum_stated", approx=m.approx, notes=[n for n in [_conversion_note(m, on)] if n])
+            out["counted"] = [c for c in ok if c["field"] == "total_capital"][:1]
             return out
         out["flags"].append(f"AUM '{m.raw}' vyradené (rozpätie alebo nereálna hodnota)")
     funds: dict[str, Money] = {}
@@ -186,9 +187,11 @@ def total_capital(ok: list[dict], on: str) -> dict:
             out["flags"].append(f"fond '{name}: {m.raw}' vyradený (nereálna hodnota)")
             continue
         key = core_name(name)
-        if key not in funds and status == "first_close":
-            out["notes"].append(f"{name}: zatiaľ len prvé uzavretie {m.raw}")
-        funds.setdefault(key, m)  # same fund cited twice counts once
+        if key not in funds:  # same fund cited twice counts once
+            funds[key] = m
+            out["counted"].append(c)
+            if status == "first_close":
+                out["notes"].append(f"{name}: zatiaľ len prvé uzavretie {m.raw}")
     if funds:
         out.update(eur=sum(to_eur(m, on) for m in funds.values()), method=f"sum_of_{len(funds)}_closed_funds",
                    approx=any(m.approx for m in funds.values()),

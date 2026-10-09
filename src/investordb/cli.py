@@ -163,6 +163,44 @@ def cmd_spotcheck(args: argparse.Namespace) -> None:
     print(build_spotcheck())
 
 
+def cmd_refine(args: argparse.Namespace) -> None:
+    """Refinement stage (D38): batches -> (Sonnet agents) -> machine checks -> rebuilt rows -> blind fact-check."""
+    from datetime import date
+
+    from investordb import refine
+
+    as_of = date.fromisoformat(args.as_of)
+    if args.step == "batches":
+        for p in refine.make_batches():
+            print(p)
+        return
+    if args.step == "check":
+        claims = refine.check_outputs()
+        print(f"{len(claims)} refined claims checked -> {refine.CLAIMS_REFINED}")
+    result = refine.rebuild_all(as_of)
+    print(f"{len(result['rows'])} investors rebuilt -> {refine.INVESTORS_REFINED}; missing output: {result['missing']}")
+    for p in result["problems"]:
+        print("  integrity: " + p)
+    if args.step == "judge-batches":
+        for p in refine.make_judge_batches(result, as_of):
+            print(p)
+    if args.step == "report":
+        from investordb.refine_report import write
+
+        print(write(result, as_of))
+
+
+def cmd_explorer(args: argparse.Namespace) -> None:
+    """Write docs/explorer.html - every included investor with the sources and quotes behind each value."""
+    from datetime import date
+
+    from investordb.explorer import write
+
+    data = write(date.fromisoformat(args.as_of), {"precision": args.precision, "footer": args.footer},
+                 artifact_out=Path(args.artifact) if args.artifact else None)
+    print(f"{len(data['investors'])} investors -> docs/explorer.html")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="investordb")
     sub = parser.add_subparsers(required=True)
@@ -198,6 +236,18 @@ def main() -> None:
 
     p = sub.add_parser("report", help="compute metrics and write docs/PRECISION_REPORT.md")
     p.set_defaults(func=cmd_report)
+
+    p = sub.add_parser("refine", help="refinement stage D38: batches | check | rebuild | judge-batches | report")
+    p.add_argument("step", choices=["batches", "check", "rebuild", "judge-batches", "report"])
+    p.add_argument("--as-of", default="2026-10-09")
+    p.set_defaults(func=cmd_refine)
+
+    p = sub.add_parser("explorer", help="write docs/explorer.html (interactive view of the included investors)")
+    p.add_argument("--as-of", default="2026-10-09")
+    p.add_argument("--precision", default="")
+    p.add_argument("--footer", default="")
+    p.add_argument("--artifact", default="", help="also write a version without the HTML skeleton to this path")
+    p.set_defaults(func=cmd_explorer)
 
     args = parser.parse_args()
     args.func(args)
