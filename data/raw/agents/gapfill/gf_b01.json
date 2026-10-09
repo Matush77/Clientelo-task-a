@@ -1,0 +1,127 @@
+[
+  {
+    "candidate_id": "C022",
+    "sectors": [],
+    "stages": [
+      {
+        "value": ["growth"],
+        "value_text": "growth stage",
+        "source_url": "https://www.cez.cz/nextcez/en/cez-group/cez-group/energy-start-ups",
+        "quote": "innovative cleantech/smart energy growth stage startups",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": ["series_a"],
+        "value_text": "SeriesA",
+        "source_url": "https://www.invencapital.cz",
+        "quote": "Inven co-leads £11m SeriesA in Ember alongside 2150 and AENU",
+        "published_date": null,
+        "derivation": "inferred"
+      },
+      {
+        "value": ["series_b_plus"],
+        "value_text": "Series B",
+        "source_url": "https://www.invencapital.cz",
+        "quote": "Inven co-leads $40M Series B in Andercore",
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "Inven Capital investuje fáze seed Series A growth cleantech energetika",
+      "Inven Capital CEZ venture capital fund invests growth stage cleantech startups Series A to Series C ticket €2-30 million",
+      "Inven Capital co-leads £11m Series A Ember 2150 AENU"
+    ]
+  },
+  {
+    "candidate_id": "C023",
+    "sectors": [],
+    "stages": [
+      {
+        "value": ["seed"],
+        "value_text": "late seed a pre-series A",
+        "source_url": "https://cc.cz/chceme-z-ceska-moderni-ekonomiku-ne-skanzen-rika-sef-jet-ventures-a-vyjmenovava-5-nejvetsich-prekazek/",
+        "quote": "typicky cílíme na průmyslové inovace v pozdějších fázích fundraisingu, late seed a pre-series A.",
+        "published_date": "2025-06-25",
+        "derivation": "stated"
+      }
+    ],
+    "ticket": {
+      "value": {"min": "jedním", "max": "dvěma miliony eur", "currency": "EUR"},
+      "value_text": "mezi jedním a dvěma miliony eur",
+      "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/",
+      "quote": "což odpovídá naší ideální velikosti ticketu, kdy se chceme u jedné investice pohybovat mezi jedním a dvěma miliony eur.",
+      "published_date": "2025-12-18",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "Jet Venture 1 Jet Investment fond investice do startupů ticket seed série A",
+      "Jet Venture 1 Kamil Levinský investujeme seed série A tickety 1 až 2 miliony eur",
+      "Jet Ventures \"late seed\" \"pre-series A\" průmyslové startupy fond Jet Venture 1 jetventures.cz"
+    ]
+  },
+  {
+    "candidate_id": "C032",
+    "sectors": [],
+    "stages": [],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [
+      {
+        "field": "ticket",
+        "note": "Checked tensor.ventures, its blog, Silicon Canals, The Quantum Insider, cc.cz, E15 and search results; they give only fund sizes and single-deal or round amounts (e.g. EUR 550k Dynanic), never a stated cheque size per company."
+      }
+    ],
+    "search_log": [
+      "Tensor Ventures fond Fund II investuje do startupů ticket milionů eur seed série A",
+      "Tensor Ventures Roman Smola \"Tensor\" fond investujeme do jedné firmy zhruba milion eur tickety",
+      "\"Tensor Ventures\" typical ticket initial investment startups \"€\" seed Series A deeptech Czech fund II interview",
+      "Tensor Ventures founders pitch investment cheque size (restricted to tensor.ventures)"
+    ]
+  },
+  {
+    "candidate_id": "C063",
+    "sectors": [
+      {
+        "value": ["health_digital", "life_sciences_medtech"],
+        "value_text": "Healthtech, medtech, femtech, mental health, agetech and animal health",
+        "source_url": "https://www.jskinvestments.ventures/en",
+        "quote": "Healthtech, medtech, femtech, mental health, agetech and animal health.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": ["ai_data", "deeptech_hardware", "cleantech_energy"],
+        "value_text": "Applied AI, deep tech, robotics, quantum applications, climate technologies",
+        "source_url": "https://www.jskinvestments.ventures/en",
+        "quote": "Applied AI, deep tech, robotics, quantum applications, climate technologies solving high-value real-world problems.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "stages": [],
+    "ticket": {
+      "value": {"min": "€300K", "max": null, "currency": "EUR"},
+      "value_text": "From €300K",
+      "source_url": "https://www.jskinvestments.ventures/en",
+      "quote": "INITIAL INVESTMENT IN PORTFOLIO COMPANIES From €300K",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "JSK Investments venture capital fond zaměření sektory investice do startupů pre-seed seed ticket"
+    ]
+  }
+]

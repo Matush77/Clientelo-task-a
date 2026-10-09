@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path
 
 from investordb.metrics import wilson
-from investordb.refine import CLAIMS_GAPFILL, GAP_FIELDS, GAPFILL_DIR, JUDGE_DIR, judge_metrics, summary
+from investordb.refine import CLAIMS_GAPFILL, GAP_FIELDS, GAPFILL_DIR, JUDGE_DIR, filled, judge_metrics, summary
 
 GAP_LABEL = {"sectors": "Sektory", "stages": "Štádiá", "ticket": "Tiket", "total_capital": "Celkový kapitál"}
 
@@ -30,13 +30,13 @@ def gapfill_section(rows: dict) -> list[str]:
            "portfólia a v dátach je označený `inferred`), tiket a kapitál len ak ich zdroj uvádza. Pole, ktoré nenašiel, "
            "je v stĺpci `not_public` – nie prázdne a nie odhadnuté.\n",
            "| Pole | Vyplnené pred | Doplnené | Verejne neuvedené | Vyplnené po |\n|---|---|---|---|---|"]
-    for field, col in GAP_FIELDS.items():
+    for field in GAP_FIELDS:
         need = [cid for cid, m in missing.items() if field in m]
-        filled = [cid for cid in need if rows[cid][col]]
+        done = [cid for cid in need if filled(rows[cid], field)]
         not_public = [cid for cid in need if field in (rows[cid].get("not_public") or "").split("; ")]
         before = len(rows) - len(need)
-        out.append(f"| {GAP_LABEL[field]} | {before}/{len(rows)} | +{len(filled)} | {len(not_public)} | "
-                   f"**{before + len(filled)}/{len(rows)}** |")
+        out.append(f"| {GAP_LABEL[field]} | {before}/{len(rows)} | +{len(done)} | {len(not_public)} | "
+                   f"**{before + len(done)}/{len(rows)}** |")
     checks = Counter(c["auto_check"] for c in claims)
     out.append(f"\nStrojová kontrola doplnených tvrdení: " + ", ".join(f"`{k}` {v}" for k, v in checks.most_common())
                + ".\n")
@@ -45,12 +45,12 @@ def gapfill_section(rows: dict) -> list[str]:
         r = rows[cid]
         res = []
         for field in need:
-            col = GAP_FIELDS[field]
-            if r[col]:
+            if filled(r, field):
                 if field in ("sectors", "stages"):
                     val = r[field].replace(",", ", ") + (" (odvodené z portfólia)" if r.get(f"{field}_basis") == "inferred" else "")
                 elif field == "ticket":
-                    val = f"{float(r['ticket_min_eur']) / 1e6:.2f} – {float(r['ticket_max_eur'] or r['ticket_min_eur']) / 1e6:.2f} mil. €"
+                    lo, hi = (f"{float(x) / 1e6:.2f}" if x else "?" for x in (r["ticket_min_eur"], r["ticket_max_eur"]))
+                    val = f"{lo} – {hi} mil. €" if r["ticket_min_eur"] else f"do {hi} mil. €"
                 else:
                     val = f"{float(r['total_capital_eur']) / 1e6:.1f} mil. €"
                 res.append(f"{GAP_LABEL[field].lower()}: {val}")

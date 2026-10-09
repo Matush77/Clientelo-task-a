@@ -33,8 +33,9 @@ RANGE_TAIL = re.compile(r"\s*(?:-|–|až|do|to|and|a)\s*(" + NUMBER.pattern + r
 # Number words (CZ / SK / EN) - sources write "dvaadvacet milionů eur" (twenty-two million euros)
 _UNITS = {
     # declined forms too: "kolem jednoho milionu eur", "dvou milionů", "troch miliónov"
-    1: "jeden jedna jedno jednoho jedné jednomu jedného jednej one", 2: "dva dvě dve dvou dvoch two",
-    3: "tři tri tří troch three", 4: "čtyři štyri čtyř štyroch four", 5: "pět päť pěti piatich five",
+    1: "jeden jedna jedno jednoho jedné jednomu jedním jedného jednej jedným one",
+    2: "dva dvě dve dvou dvěma dvoch dvoma two", 3: "tři tri tří třemi troch tromi three",
+    4: "čtyři štyri čtyř čtyřmi štyroch štyrmi four", 5: "pět päť pěti piatich five",
     6: "šest šesť six", 7: "sedm sedem seven", 8: "osm osem eight", 9: "devět deväť nine",
 }
 _TEENS = {

@@ -1,0 +1,115 @@
+[
+  {
+    "candidate_id": "C195",
+    "sectors": [],
+    "stages": [],
+    "ticket": {
+      "value": {"min": "250", "max": "€300k", "currency": "EUR"},
+      "value_text": "€250-300k tickets",
+      "source_url": "https://familyofficehub.io/blog/czech-vc-single-family-office-opens-up-to-third-party-investors/",
+      "quote": "the family office will invest in more startups per year, following its €250-300k tickets in the B2B",
+      "published_date": "2024-07-22",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "WebFetch https://zaka.vc (investment focus, ticket, fund size)",
+      "ZAKA Ventures ticket size investujeme mil. EUR do jedné společnosti",
+      "WebFetch https://zaka.vc (minimum ticket sentence - it is the LP minimum for qualified investors, not a startup cheque, so not used)",
+      "WebFetch https://tech.eu/2024/07/19/zaka-unveils-its-fund-i-15m-for-bridging-the-us-with-the-eu-market/ (130k is the minimum LP ticket, not used)",
+      "WebFetch https://cc.cz/spojeni-dvou-rodin-jejichz-firmy-rocne-utrzi-desitky-miliard-ve-velkem-rozbehly-startupovy-fond/ (2022 article: tickets 20 to 600 thousand EUR; older, not used)",
+      "ZAKA VC fund investuje do startupů částka na jeden startup tisíc eur pre-seed seed",
+      "ZAKA VC \"per startup\" OR \"per company\" OR \"cheques\" OR \"tickets\"",
+      "WebFetch https://familyofficehub.io/blog/czech-vc-single-family-office-opens-up-to-third-party-investors/ (twice, second time to check exact characters)"
+    ]
+  },
+  {
+    "candidate_id": "C197",
+    "sectors": [],
+    "stages": [],
+    "ticket": {
+      "value": {"min": null, "max": "EUR 15 million", "currency": "EUR"},
+      "value_text": "up to EUR 15 million",
+      "source_url": "https://rockawayventures.com/rockaway-ventures-launches-a-fund-focused-on-esg-investment-in-startups-and-announces-its-first-two-acquisitions/",
+      "quote": "We are prepared to invest up to EUR 15 million into each company.",
+      "published_date": "2021-09-22",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "WebFetch https://rockawayventures.com (focus, ticket, fund size)",
+      "Rockaway Ventures ticket size invest per startup seed Series A \"Rockaway Ventures\" invests EUR",
+      "WebFetch https://rockawayventures.com/about (404)",
+      "WebFetch https://cc.cz/rockaway-ventures-oznamilo-druhy-fond-na-startupy-ma-pripravene-14-miliardy-korun/ (no ticket)",
+      "WebFetch https://startuphub.unwe.bg/bg/news/64237/... (HTTP 520)",
+      "Rockaway Ventures Dušan Zábrodský \"invest\" startups \"from €\" OR \"up to €\" OR \"tickets\" late-seed Series A second fund close",
+      "WebFetch https://rockawayventures.com/faq (404)",
+      "WebFetch https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/ (no ticket)",
+      "WebFetch https://techfundingnews.com/early-investors-in-productboard-rockaway-ventures-close-e55m-fund-targeting-cee-and-diaspora-led-tech-startups/ (no ticket)",
+      "Rockaway Ventures investuje do startupů \"tisíc eur\" OR \"milionu eur\" jedna investice tiket Zábrodský druhý fond",
+      "rockawayventures.com Rockaway Ventures II \"we invest\" initial investment startups ticket range",
+      "WebFetch https://rockawayventures.com/rockaway-ventures-launches-a-fund-focused-on-esg-investment-in-startups-and-announces-its-first-two-acquisitions/",
+      "WebFetch https://rockawayventures.com/for-investors/ (no ticket)"
+    ]
+  },
+  {
+    "candidate_id": "C198",
+    "sectors": [
+      {
+        "value": ["proptech_construction"],
+        "value_text": "proptech startup",
+        "source_url": "https://czechfounders.vc/our-portfolio/dts",
+        "quote": "DTS (Digital Transformation System), a proptech startup that is helping companies in the construction industry",
+        "published_date": null,
+        "derivation": "inferred"
+      },
+      {
+        "value": ["ai_data"],
+        "value_text": "AI orchestration and automation platform",
+        "source_url": "https://czechfounders.vc/our-portfolio/filuta-ai",
+        "quote": "Filuta AI is building a general-purpose AI orchestration and automation platform with a low entry barrier",
+        "published_date": null,
+        "derivation": "inferred"
+      },
+      {
+        "value": ["media_gaming"],
+        "value_text": "help streamers grow and succeed",
+        "source_url": "https://czechfounders.vc/our-portfolio/streambee",
+        "quote": "StreamBee is a startup that is creating powerful analytics and tools to help streamers grow and succeed.",
+        "published_date": null,
+        "derivation": "inferred"
+      },
+      {
+        "value": ["life_sciences_medtech"],
+        "value_text": "life-science research",
+        "source_url": "https://czechfounders.vc/our-portfolio/carta-genum",
+        "quote": "in fields such as spatial biology and advanced life-science research.",
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "stages": [],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "WebFetch https://czechfounders.vc (focus, sectors, portfolio) - no sector statement",
+      "WebFetch https://czechfounders.vc/portfolio (404)",
+      "Czech Founders VC pre-seed fund focus sectors deeptech AI SaaS investujeme do oborů",
+      "WebFetch https://czechfounders.vc (list of links)",
+      "\"Czech Founders VC\" fond pre-seed zaměřuje startupy Horký Pavlečka Kristeľ",
+      "WebFetch https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/ (no sector focus stated)",
+      "WebFetch https://forbes.cz/dejcmar-palan-i-suri-czech-founders-zlakali-velka-jmena-do-ctvrtmiliardoveho-fondu/ (no body text)",
+      "WebFetch https://www.therecursive.com/tag/czech-founders/ (no sector statement)",
+      "WebFetch https://czechfounders.vc/our-portfolio/dts",
+      "WebFetch https://czechfounders.vc/our-portfolio/filuta-ai",
+      "WebFetch https://czechfounders.vc/our-portfolio/streambee",
+      "WebFetch https://czechfounders.vc/our-portfolio/carta-genum"
+    ]
+  }
+]

@@ -183,3 +183,9 @@ def test_strict_identity_matching(registry_name, name, rank):
 )
 def test_legal_form(name, form):
     assert legal_form(name) == form
+
+
+def test_ticket_minimum_written_as_a_word_borrows_the_maximum_scale():
+    # Jet Investment: "mezi jedním a dvěma miliony eur" -> min "jedním", max "dvěma miliony eur"
+    lo, hi, flags = ticket_eur({"min": "jedním", "max": "dvěma miliony eur", "currency": "EUR"}, ON)
+    assert (lo, hi, flags) == (1e6, 2e6, [])

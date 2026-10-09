@@ -1,0 +1,132 @@
+[
+  {
+    "candidate_id": "C144",
+    "sectors": [
+      {
+        "value": ["sector_agnostic"],
+        "value_text": "Nevybíráme si primárně obor",
+        "source_url": "https://www.lupa.cz/clanky/ondrej-fryc-reflex-capital-v-podnikani-nejlip-funguje-kdyz-si-drbete-co-vas-svedi/",
+        "quote": "Nevybíráme si primárně obor, ale soustředíme se na zakladatele",
+        "published_date": "2018-06-20",
+        "derivation": "stated"
+      }
+    ],
+    "stages": [],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "Reflex Capital Czech venture fund invests in sectors focus software seed Series A",
+      "Reflex Capital investuje do startupů bez ohledu na obor Jakub Havrlant Reflex 3 fond"
+    ]
+  },
+  {
+    "candidate_id": "C151",
+    "sectors": [],
+    "stages": [],
+    "ticket": {
+      "value": {"min": "€200k", "max": "€1M+", "currency": "EUR"},
+      "value_text": "€200k – €1M+",
+      "source_url": "https://gi21capital.com/investments",
+      "quote": "Check Size €200k – €1M+",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [
+      {
+        "field": "total_capital",
+        "note": "Gi21 invests only its own capital and publishes no AUM or fund size: gi21capital.com (home, /investments, /about/gi21) shows only the '$4B+' valuation of invested companies, the Pulse 2.0 interview (2026-05) says it does not focus on traditional AUM, CzechCrunch (2022) says the sum ready for investment is not disclosed, and the e15 article on Altiora Partners gives only a plan ('v desítkách milionů eur')."
+      }
+    ],
+    "search_log": [
+      "Gi21 Capital investice tickets mil. EUR startup fond velikost",
+      "\"Gi21\" Capital Czech venture investor AI data center fund assets under management",
+      "Damir Špoljarič Gi21 startupy investujeme do jednoho startupu od do tisíc eur milionu korun ticket",
+      "Gi21 Capital invests \"€200k\" OR \"€1M\" OR \"checks\" early-stage deeptech B2B software AI robotics Europe US"
+    ]
+  },
+  {
+    "candidate_id": "C184",
+    "sectors": [],
+    "stages": [
+      {
+        "value": ["pre_seed", "seed", "series_a"],
+        "value_text": "Pre-seed Seed Series A",
+        "source_url": "https://www.miton.cz/en/about",
+        "quote": "When and how much we invest Pre-seed Seed Series A",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": ["pre_seed", "seed", "series_a"],
+        "value_text": "od pre-seedu po Series A",
+        "source_url": "https://cc.cz/profil/miton/",
+        "quote": "Jsme founderům nablízku od pre-seedu po Series A, investujeme 300k–2M € s možností follow-up investic.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [
+      {
+        "field": "total_capital",
+        "note": "Miton invests its own money and is not a classic fund; miton.cz (home, /en/about, /en/psychonauts), the Miton C launch Q&A (2021-11) and CzechCrunch/Forbes articles give no AUM or fund close - only 'tens of millions of Euro set aside' for Miton C and 'desítky milionů korun' for Psychonauts (no figure), and the website's EUR 450M is the valuation of the current portfolio, not capital."
+      }
+    ],
+    "search_log": [
+      "Miton investiční skupina Jakub Havrlant fond Miton C velikost fondu startupy seed investice",
+      "Miton Psychonats fond mil. eur psychedelika investice Miton",
+      "Miton C fond web3 krypto Miton spustil fond milionů eur velikost"
+    ]
+  },
+  {
+    "candidate_id": "C186",
+    "sectors": [],
+    "stages": [
+      {
+        "value": ["pre_seed", "seed"],
+        "value_text": "pre-seed and seed stages",
+        "source_url": "https://emerging-europe.com/from-czechia-a-new-fund-for-cees-ai-start-ups/",
+        "quote": "The LAIV fund focuses on AI start-ups in pre-seed and seed stages with the potential to disrupt major industries.",
+        "published_date": "2023-04-14",
+        "derivation": "stated"
+      }
+    ],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {
+          "name": "Look AI Ventures fund (LAIV)",
+          "known_as": "LAIV",
+          "size": "20 million euros",
+          "currency": "EUR",
+          "vintage": "2022",
+          "status": "target",
+          "status_date": "2023-04"
+        },
+        "value_text": "20 million euros",
+        "source_url": "https://emerging-europe.com/from-czechia-a-new-fund-for-cees-ai-start-ups/",
+        "quote": "is looking to raise 20 million euros to invest in early-stage companies",
+        "published_date": "2023-04-14",
+        "derivation": "stated"
+      }
+    ],
+    "not_public": [
+      {
+        "field": "total_capital",
+        "note": "No AUM, first close or final close of LAIV found: lookai.vc discloses no fund size, the launch articles (Emerging Europe, CzechCrunch, Forbes CZ, 2023-04) give only the EUR 20 million target (fund 'currently in the process of fundraising'), and searches for a later close returned nothing."
+      }
+    ],
+    "search_log": [
+      "Look AI Ventures Prague fund AI startups pre-seed seed investment tickets fund size €20 million first close",
+      "Look AI Ventures fond umělá inteligence startupy investuje pre-seed seed velikost fondu milionů eur",
+      "\"Look AI Ventures\" first close OR \"final close\" OR \"uzavřel\" fond 2025 2026 LAIV"
+    ]
+  }
+]

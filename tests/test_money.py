@@ -83,3 +83,6 @@ def test_declined_number_words():
     assert (m.amount, m.currency, m.approx) == (1e6, "EUR", True)
     assert parse_money("dvou milionů eur").amount == 2e6
     assert parse_money("troch miliónov eur").amount == 3e6
+    # Jet Investment: "mezi jedním a dvěma miliony eur" - a range in the instrumental case
+    m = parse_money("mezi jedním a dvěma miliony eur")
+    assert (m.amount, m.amount_max) == (1e6, 2e6)

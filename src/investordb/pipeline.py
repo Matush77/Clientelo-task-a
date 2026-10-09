@@ -19,7 +19,7 @@ from investordb.candidates import OUT as CANDIDATES_CSV
 from investordb.evidence import CLAIMS_CSV, T4_DOMAINS, _under, domain, load_records
 import re
 
-from investordb.money import TARGET_FUND, Money, eur_rate, parse_money, plausible, to_eur
+from investordb.money import TARGET_FUND, Money, eur_rate, parse_money, plausible, to_eur, words_to_digits
 from investordb.registries import (NON_PROFIT_FORMS, RegistryRecord, ares_get, core_name, legal_form, name_tokens,
                                    rpo_search, strict_match_rank, valid_ico)
 from investordb.rules import Decision, decide
@@ -206,7 +206,9 @@ def ticket_eur(ticket: dict, on: str) -> tuple[float | None, float | None, list[
     t_max = parse_money(ticket.get("max"), ticket.get("currency"))
     if t_min and t_min.is_range and not t_max:  # "€1-3M" written into one field
         t_max = Money(t_min.amount_max, t_min.currency, t_min.approx, t_min.raw)
-    if t_min and t_max and t_min.amount < 1000 <= t_max.amount and not re.search(r"[a-z]", str(ticket.get("min")).lower().replace("eur", "")):
+    # a bare minimum ("250", or a number word: "mezi jedním a dvěma miliony eur") borrows the maximum's scale
+    bare_min = words_to_digits(str(ticket.get("min")).lower()).replace("eur", "")
+    if t_min and t_max and t_min.amount < 1000 <= t_max.amount and not re.search(r"[a-z]", bare_min):
         for factor in (1e6, 1e3):
             if t_max.amount >= factor:
                 t_min = Money(t_min.amount * factor, t_min.currency, t_min.approx, t_min.raw)

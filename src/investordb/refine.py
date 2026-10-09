@@ -40,6 +40,13 @@ GAP_FIELDS = {"sectors": "sectors", "stages": "stages", "ticket": "ticket_min_eu
 GAP_SK = {"sectors": "sektory", "stages": "štádiá", "ticket": "tiket", "total_capital": "celkový kapitál"}
 
 
+def filled(row: dict, field: str) -> bool:
+    """A required field has a value; a ticket stated only as a maximum ('up to EUR 15 million') counts too."""
+    if field == "ticket":
+        return bool(row.get("ticket_min_eur") or row.get("ticket_max_eur"))
+    return bool(row.get(GAP_FIELDS[field]))
+
+
 def _read(path: Path) -> list[dict]:
     with path.open(encoding="utf-8") as f:
         return list(csv.DictReader(f))
@@ -277,25 +284,25 @@ def _codes(c: dict) -> list[str]:
     return [v] if isinstance(v, str) else [x for x in (v or []) if isinstance(x, str)]
 
 
-def complete_gaps(row: dict, merged: list[dict], filled: list[dict], not_public: list[str]) -> None:
+def complete_gaps(row: dict, merged: list[dict], gap_claims: list[dict], not_public: list[str]) -> None:
     """Gap-fill claims (D41) on top of the rebuilt row: sectors and stages may come as one claim per inferred value,
     so the row lists all of them; every row says whether its sectors/stages are stated or inferred, and which
     required fields were searched for but are not public."""
     added = []
     for field in ("sectors", "stages"):
         claims = [c for c in merged if c["field"] == field and c["auto_check"] == "ok"]
-        if any(c in filled for c in claims):
+        if any(c in gap_claims for c in claims):
             row[field] = ",".join(dict.fromkeys(code for c in claims for code in _codes(c)))
         row[f"{field}_basis"] = ("stated" if any(c.get("derivation") == "stated" for c in claims)
                                  else "inferred" if claims else "")
     for field in GAP_FIELDS:
-        if any(c["field"] == field or (field == "total_capital" and c["field"] == "funds") for c in filled) \
-                and row[GAP_FIELDS[field]]:
+        if any(c["field"] == field or (field == "total_capital" and c["field"] == "funds") for c in gap_claims) \
+                and filled(row, field):
             inferred = field in ("sectors", "stages") and row[f"{field}_basis"] == "inferred"
             added.append(GAP_SK[field] + (" (odvodené z portfólia)" if inferred else ""))
     if added:
         row["refine_notes"] = "; ".join(n for n in [row["refine_notes"], "doplnené: " + ", ".join(added)] if n)
-    row["not_public"] = "; ".join(f for f in dict.fromkeys(not_public) if f in GAP_FIELDS and not row[GAP_FIELDS[f]])
+    row["not_public"] = "; ".join(f for f in dict.fromkeys(not_public) if f in GAP_FIELDS and not filled(row, f))
 
 
 def load_gapfill() -> list[dict]:
@@ -310,7 +317,7 @@ def make_gapfill_batches(result: dict) -> list[Path]:
     records = []
     for cid in sorted(result["rows"]):
         row = result["rows"][cid]
-        missing = [f for f, col in GAP_FIELDS.items() if not row[col]]
+        missing = [f for f in GAP_FIELDS if not filled(row, f)]
         if not missing:
             continue
         ok = [c for c in result["merged"][cid] if c["auto_check"] == "ok"]
