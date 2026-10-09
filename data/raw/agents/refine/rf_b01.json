@@ -1,0 +1,258 @@
+[
+  {
+    "candidate_id": "C012",
+    "funds": [
+      {
+        "value": {"name": "Credo Stage 5", "known_as": "Credo Stage 5", "size": "$88 million", "currency": "USD", "vintage": "2026", "status": "final_close", "status_date": "2026-03-23"},
+        "value_text": "$88 million",
+        "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "quote": "Credo Ventures has closed Credo Stage 5, an $88 million fund raised in a single closing",
+        "published_date": "2026-03-23",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund IV (čtvrtý fond)", "known_as": "Credo fund IV (čtvrtý fond)", "size": "€75 million", "currency": "EUR", "vintage": "2022", "status": "final_close", "status_date": "2022-10-11"},
+        "value_text": "€75 million",
+        "source_url": "https://en.ain.ua/2022/10/11/credo-ventures-closes-its-fourth-fund",
+        "quote": "has closed its €75 million fourth fund",
+        "published_date": "2022-10-11",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund III (třetí fond)", "known_as": "Credo fund III (třetí fond)", "size": "bezmála 100 milionů eur", "currency": "EUR", "vintage": "2019", "status": "final_close", "status_date": "2019"},
+        "value_text": "bezmála 100 milionů eur",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "S třetím z roku 2019 dosáhl na objem bezmála 100 milionů eur",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund II (druhý fond)", "known_as": "Credo fund II (druhý fond)", "size": "53 milionů eur", "currency": "EUR", "vintage": "2015", "status": "final_close", "status_date": "2015"},
+        "value_text": "53 milionů eur",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "ve druhém z roku 2015 pak od investorů získal 53 milionů eur",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Credo fund I (první fond)", "known_as": "Credo fund I (první fond)", "size": "18 milionů eur", "currency": "EUR", "vintage": "2010", "status": "final_close", "status_date": "2010"},
+        "value_text": "18 milionů eur",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/",
+        "quote": "Svůj první fond ve výši 18 milionů eur otevíral v roce 2010",
+        "published_date": "2022-11-01",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "SuperPlane", "listed_date": "2026-06-01", "verdict": "confirmed",
+        "note": "Pre-seed led by Credo Ventures, announced 2026-06-24 (tech.eu, thesaasnews also 24 June 2026); listed date is 23 days earlier, within tolerance. Amount reported as EUR 2.28M by one outlet and USD 2.6M by tech.eu.",
+        "value": {"company": "SuperPlane", "date": "2026-06-24", "round": "pre-seed", "amount": "€2.28M"},
+        "value_text": "SuperPlane",
+        "source_url": "https://thesaasnews.com/news/superplane-raises-2-28m-pre-seed",
+        "quote": "SuperPlane raises €2.28M in pre-seed funding led by Credo Ventures to build an open-source control plane for AI agents",
+        "published_date": "2026-06-24",
+        "derivation": "stated"
+      },
+      {
+        "company": "Axoflow", "listed_date": "2025-01-23", "verdict": "confirmed",
+        "note": "Seed round led by EBRD Venture Capital; Credo Ventures took part as an existing investor. Company blog dated 2025-01-21, trade press 2025-01-22/23.",
+        "value": {"company": "Axoflow", "date": "2025-01-22", "round": "seed", "amount": "$7M"},
+        "value_text": "Axoflow",
+        "source_url": "https://startupkitchen.community/axoflow-raises-7m-seed-round-led-by-ebrd-vc-existing-investors-incl-czech-credo-ventures-participating-too/",
+        "quote": "Axoflow Raises $7M Seed Round Led by EBRD VC, existing investors incl. Czech Credo Ventures participating too",
+        "published_date": "2025-01-22",
+        "derivation": "stated"
+      },
+      {
+        "company": "Talkbase", "listed_date": "2022-10-01", "verdict": "confirmed",
+        "note": "Pre-seed round with J&T Ventures and Credo Ventures reported 2022-10-06 by CzechCrunch (TechCrunch 2022-10-20 also lists Credo). Aggregator sites give August 2022 but no primary article found for that date.",
+        "value": {"company": "Talkbase", "date": "2022-10-06", "round": "pre-seed", "amount": "přes dva miliony dolarů"},
+        "value_text": "Talkbase",
+        "source_url": "https://cc.cz/tak-velka-investice-tak-brzy-tu-jeste-nebyla-cesky-startup-talkbase-ziskal-rekordnich-50-milionu/",
+        "quote": "Do investičního kola Talkbase se zapojili jak české fondy J&T Ventures a Credo Ventures",
+        "published_date": "2022-10-06",
+        "derivation": "stated"
+      },
+      {
+        "company": "Upheal", "listed_date": "2022-10-01", "verdict": "corrected",
+        "note": "First announced: pre-seed led by KAYA VC with Credo Ventures, 2022-10-20 (ain.ua), which matches the listed date. Latest follow-on is the USD 10M Series A led by Headline with Credo participating, Nov 2024 (other outlets date it 2024-11-14), so the latest investment is reported here. A Feb 2024 seed with Credo is also reported by secondary sources.",
+        "value": {"company": "Upheal", "date": "2024-11", "round": "Series A", "amount": "$10 million"},
+        "value_text": "Upheal raised $10 million in Series A",
+        "source_url": "https://nordic9.com/news/upheal-raised-10-million-in-series-a-funding-round-led-by-headline-joined-by-credo-ventures-and-kaya-ventures/",
+        "quote": "Upheal raised $10 million in Series A funding round led by Headline, joined by Credo Ventures and Kaya Ventures.",
+        "published_date": "2024-11",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "Credo Ventures Stage 5 fund $88 million close",
+      "SuperPlane pre-seed Credo Ventures",
+      "Axoflow raises $7M Credo Ventures",
+      "Axoflow seed $7 million EBRD Venture Capital Credo Ventures e2vc January 2025",
+      "Talkbase pre-seed Credo Ventures J&T Ventures startup",
+      "Upheal pre-seed Kaya VC Credo Ventures",
+      "Upheal Series A $10 million Headline Credo Ventures Kaya November 2024",
+      "Talkbase Credo Ventures investice pre-seed 2022 Klára Losert",
+      "\"Talkbase\" raises $2 million pre-seed J&T Ventures Credo Ventures Plug and Play 2022",
+      "Credo Ventures fourth fund €75 million closes Credo Stage 4 2022",
+      "Credo Ventures third fund €100 million 2019 closes",
+      "Credo Ventures druhý fond 53 milionů eur 2015 uzavřel",
+      "Credo Ventures closes third fund Credo Stage 3 $100 million institutional investors",
+      "Credo Ventures první fond 18 milionů eur 2010 Kiska Bartoš Habermann",
+      "SuperPlane raises pre-seed Credo Ventures Semaphore founders open-source control plane June 2026"
+    ]
+  },
+  {
+    "candidate_id": "C014",
+    "funds": [
+      {
+        "value": {"name": "third angel fund", "known_as": "third angel fund", "size": "€20 million", "currency": "EUR", "vintage": "2022", "status": "target", "status_date": "2022-10-10"},
+        "value_text": "€20 million",
+        "source_url": "https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund",
+        "quote": "The new fund is aiming €20 million and is currently looking for investors",
+        "published_date": "2022-10-10",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Depo Angels Fund II", "known_as": null, "size": "55 milionů korun", "currency": "CZK", "vintage": "2022", "status": "final_close", "status_date": "2022-08"},
+        "value_text": "55 milionů korun",
+        "source_url": "https://cc.cz/vice-penez-pro-nejmladsi-startupy-depo-ventures-otevira-novy-andelsky-fond-cili-na-pul-miliardy/",
+        "quote": "uzavřelo jej na konci srpna s objemem 55 milionů korun",
+        "published_date": "2022-10-07",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Depo Angels Fund II", "known_as": null, "size": "45 milionů korun", "currency": "CZK", "vintage": "2022", "status": "target", "status_date": "2022-01-25"},
+        "value_text": "45 milionů korun",
+        "source_url": "https://cc.cz/cesti-depo-ventures-oteviraji-druhy-fond-v-desitkach-milionu-prvni-investice-podpori-startup-ktery-ukazuje-data-z-kryptouctu/",
+        "quote": "druhý fond by se měl uzavřít na konci března s celkovým objemem 45 milionů korun",
+        "published_date": "2022-01-25",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Grouport Ventures (first angel fund)", "known_as": null, "size": "35 milionů korun", "currency": "CZK", "vintage": null, "status": "final_close", "status_date": null},
+        "value_text": "35 milionů korun",
+        "source_url": "https://cc.cz/cesti-depo-ventures-oteviraji-druhy-fond-v-desitkach-milionu-prvni-investice-podpori-startup-ktery-ukazuje-data-z-kryptouctu/",
+        "quote": "sesbírali 35 milionů korun a ty postupně pod názvem Grouport Ventures investovali",
+        "published_date": "2022-01-25",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["DEPO Ventures One", "DEPO Angels fund I"],
+    "deal_checks": [
+      {
+        "company": "ArcSpace", "listed_date": "2026-09-01", "verdict": "confirmed",
+        "note": "Round of over EUR 2 million led by DEPO Ventures via its DEPO Ventures One fund; startupcentrum article dated 2026-09-01. Quote names the investor and fund but not the company (page is entirely about ArcSpace). An EU-Startups article with an August 2026 URL path exists but could not be fetched (HTTP 403), so the first announcement may be a few days earlier, still within tolerance.",
+        "value": {"company": "ArcSpace", "date": "2026-09-01", "round": null, "amount": "over €2 million"},
+        "value_text": "DEPO Ventures One",
+        "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/",
+        "quote": "The round was led by DEPO Ventures through its DEPO Ventures One fund.",
+        "published_date": "2026-09-01",
+        "derivation": "stated"
+      },
+      {
+        "company": "Kardi AI", "listed_date": "2025-04-01", "verdict": "confirmed",
+        "note": "EUR 1.1M round of 2025-04-28 with existing backers incl. DEPO Ventures (follow-on; secondary sources say DEPO was already in the 2022 pre-seed and the Dec 2022 round). Latest follow-on matches listed date within tolerance. Quote names the investor but not the company (page is about Kardi AI).",
+        "value": {"company": "Kardi AI", "date": "2025-04-28", "round": "follow-on", "amount": "€1.1M"},
+        "value_text": "DEPO Ventures",
+        "source_url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/",
+        "quote": "The investment round included contributions from existing backers BrightCap Ventures, DEPO Ventures, and Garage Angels",
+        "published_date": "2025-04-28",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "DEPO Ventures fond uzavřel andělský fond milionů korun Ciffra Šíma",
+      "\"DEPO Ventures One\" fund",
+      "DEPO Angels Fund III uzavřen objem milionů korun Depo Ventures třetí fond první uzavření",
+      "ArcSpace raises €2 million DEPO Ventures led round satellite in-orbit",
+      "Kardi AI investice DEPO Ventures BrightCap Garage Angels kolo"
+    ]
+  },
+  {
+    "candidate_id": "C019",
+    "funds": [
+      {
+        "value": {"name": "i&i Biotech Fund I SCSp", "known_as": "i&i Biotech Fund I SCSp", "size": "€53 million", "currency": "EUR", "vintage": "2021", "status": "final_close", "status_date": "2025-11-17"},
+        "value_text": "€53 million",
+        "source_url": "https://www.biospace.com/press-releases/captain-t-cell-closes-financing-round-to-advance-its-proprietary-next-generation-tcr-t-pipeline-into-the-clinic",
+        "quote": "the fund manages €53 million and invests in a diversified portfolio of early-stage companies across central Europe.",
+        "published_date": "2025-11-17",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "i&i Biotech Fund I SCSp", "known_as": "i&i Biotech Fund I SCSp", "size": "more than 45 million EUR", "currency": "EUR", "vintage": "2021", "status": "first_close", "status_date": "2021"},
+        "value_text": "more than 45 million EUR",
+        "source_url": "https://www.uochb.cz/en/ini-bio",
+        "quote": "The fund commenced operation with more than 45 million EUR and specializes in investments in academic spinoffs.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Captain T Cell", "listed_date": "2024-05-22", "verdict": "corrected",
+        "note": "Seed round of EUR 8.5M announced 2024-05-22 with i&i Biotech Fund I SCSp (matches listed date). Latest follow-on: financing round announced 2025-11-17 in which existing investor i&i Biotech Fund I SCSp participated, so the latest investment is reported here. Round size not stated (only a total budget incl. grants). Quote names the investor but not the company (release is about Captain T Cell).",
+        "value": {"company": "Captain T Cell", "date": "2025-11-17", "round": "financing round (follow-on)", "amount": null},
+        "value_text": "i&i Biotech Fund I SCSp",
+        "source_url": "https://www.biospace.com/press-releases/captain-t-cell-closes-financing-round-to-advance-its-proprietary-next-generation-tcr-t-pipeline-into-the-clinic",
+        "quote": "Existing investors i&i Biotech Fund I SCSp, HIL-INVENT and Brandenburg Kapital also participated in the round",
+        "published_date": "2025-11-17",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "\"i&i Biotech Fund I\" SCSp first close EUR million",
+      "i&i Bio Biotech Investments new fund II Zahrádka fund raising EIF Česká spořitelna commitment i&i Biotech Fund"
+    ]
+  },
+  {
+    "candidate_id": "C022",
+    "funds": [
+      {
+        "value": {"name": "Inven Capital, SICAV", "known_as": null, "size": "more than €500 million", "currency": "EUR", "vintage": null, "status": "final_close", "status_date": "2023-02-08"},
+        "value_text": "more than €500 million",
+        "source_url": "https://www.eib.org/en/press/all/2023-047-expanding-strategic-partnership-eib-supports-investments-in-climate-friendly-startups-providing-a-further-eur50-million-to-the-czech-fund-inven-capital",
+        "quote": "With a total fund size of more than €500 million",
+        "published_date": "2023-02-08",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Andercore", "listed_date": "2026-02-12", "verdict": "confirmed",
+        "note": "EUR/USD 40M Series B closed Feb 2026, announced 2026-02-11 (tech.eu); led by Atomico and Project A, Inven Capital joined as a new investor (Inven's own site headline says it co-leads). Listed date is one day later.",
+        "value": {"company": "Andercore", "date": "2026-02-11", "round": "Series B", "amount": "EUR 40M"},
+        "value_text": "Andercore closes a EUR 40M Series B round",
+        "source_url": "https://www.andercore.com/company-profile",
+        "quote": "Andercore closes a EUR 40M Series B round with participation from Atomico, Project A, and Inven Capital",
+        "published_date": "2026-02",
+        "derivation": "stated"
+      },
+      {
+        "company": "Vytal", "listed_date": "2025-03-11", "verdict": "confirmed",
+        "note": "Growth round of EUR 14.2M led by Inven Capital and NRW.Venture (EUR 8M new money), announced 2025-03-11; CEZ release calls it Inven's first investment of 2025.",
+        "value": {"company": "Vytal", "date": "2025-03-11", "round": "growth round", "amount": "€14.2M"},
+        "value_text": "Inven Capital leads €14.2M funding round for Vytal",
+        "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala/",
+        "quote": "Inven Capital leads €14.2M funding round for Vytal",
+        "published_date": "2025-03-11",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "Inven Capital fond ČEZ velikost fondu milionů eur SICAV uzavřel",
+      "Inven Capital fund size EUR million second fund close ČEZ venture capital",
+      "Andercore $40 million Series B Inven Capital co-leads",
+      "Vytal Inven Capital leads growth round extension EUR 14.2 million"
+    ]
+  }
+]

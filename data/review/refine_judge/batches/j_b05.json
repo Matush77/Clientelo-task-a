@@ -1,0 +1,308 @@
+[
+  {
+    "investor": "Presto Ventures",
+    "website": "https://prestoventures.com",
+    "items": [
+      {
+        "item_id": "C145-I00",
+        "type": "identity",
+        "legal_name": "Presto Ventures II a.s., osoba rizikového kapitálu",
+        "company_id": "11678704",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/11678704"
+      },
+      {
+        "item_id": "C145-I01",
+        "type": "deal",
+        "company": "Bavovna",
+        "date": "2024-10",
+        "source_url": "https://en.ain.ua/2024/10/23/presto-tech-horizons-invests-in-bavovna-vidar-turai"
+      },
+      {
+        "item_id": "C145-I02",
+        "type": "deal",
+        "company": "Tur.ai",
+        "date": "2024-10",
+        "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+      },
+      {
+        "item_id": "C145-I03",
+        "type": "deal",
+        "company": "DiffuseDrive",
+        "date": "2025-05",
+        "source_url": "https://www.silicon.co.uk/press-release/from-scarcity-to-scale-diffusedrive-closes-3-5m-to-define-physical-ai-for-automotive-aerospace-defense-and-robotics"
+      },
+      {
+        "item_id": "C145-I04",
+        "type": "capital",
+        "total_eur": 180000000,
+        "basis": [
+          {
+            "fund": "Fund II",
+            "amount": "€30 million",
+            "source_url": "https://en.ain.ua/2022/07/12/presto-ventures-launches-e30m-fund-to-support-cee-startups"
+          },
+          {
+            "fund": "Presto Tech Horizons",
+            "amount": "150 miliony eur",
+            "source_url": "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/"
+          }
+        ]
+      },
+      {
+        "item_id": "C145-I05",
+        "type": "capital",
+        "total_eur": 30000000,
+        "basis": [
+          {
+            "fund": "Fund II",
+            "amount": "€30 million",
+            "source_url": "https://www.privateequitywire.co.uk/presto-ventures-closes-eu30m-fund-ii-invest-central-eastern-european-b2b-startups/"
+          }
+        ]
+      },
+      {
+        "item_id": "C145-I06",
+        "type": "deal",
+        "company": "GoRamp",
+        "date": "2022-06",
+        "source_url": "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/"
+      },
+      {
+        "item_id": "C145-I07",
+        "type": "deal",
+        "company": "GoRamp",
+        "date": "2023-07",
+        "source_url": "https://cc.cz/sluzby-pro-logistiku-z-litvy-se-siri-po-evrope-pomahaji-jim-v-tom-i-ceske-penize/"
+      },
+      {
+        "item_id": "C145-I08",
+        "type": "deal",
+        "company": "Tur.ai",
+        "date": "2024-10",
+        "source_url": "https://en.ain.ua/2024/10/23/presto-tech-horizons-invests-in-bavovna-vidar-turai"
+      }
+    ]
+  },
+  {
+    "investor": "Purple Ventures",
+    "website": "https://www.purple-ventures.com",
+    "items": [
+      {
+        "item_id": "C146-I00",
+        "type": "identity",
+        "legal_name": "Purple Ventures s.r.o.",
+        "company_id": "05775574",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05775574"
+      },
+      {
+        "item_id": "C146-I01",
+        "type": "deal",
+        "company": "iVent Pro",
+        "date": "2024",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+      },
+      {
+        "item_id": "C146-I02",
+        "type": "deal",
+        "company": "Delta Green",
+        "date": "2025-10",
+        "source_url": "https://cc.cz/z-prahy-propojuji-evropske-domacnosti-a-tvori-z-nich-obri-elektrarnu-jejich-cena-je-ve-stamilionech/"
+      },
+      {
+        "item_id": "C146-I03",
+        "type": "capital",
+        "total_eur": 47007879,
+        "basis": [
+          {
+            "fund": "Purple Ventures 2",
+            "amount": "přes 780 milionů (Kč)",
+            "source_url": "https://www.lupa.cz/clanky/jan-stanek-purple-ventures-ai-nektere-firmy-zabiji-tretina-startupu-do-nichz-sly-nedavno-penize-uz-nemusi-davat-smysl/"
+          },
+          {
+            "fund": "Purple Ventures 1",
+            "amount": "15 milionů eur (380 milionů korun)",
+            "source_url": "https://cc.cz/brnensti-purple-ventures-spousti-druhy-fond-do-startupu-chteji-proinvestovat-pres-miliardu-korun/"
+          }
+        ]
+      },
+      {
+        "item_id": "C146-I04",
+        "type": "deal",
+        "company": "iVent Pro",
+        "date": "2024-06",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+      },
+      {
+        "item_id": "C146-I05",
+        "type": "deal",
+        "company": "ArtMaster",
+        "date": "2026-04",
+        "source_url": "https://gi21capital.com/blog-posts/investing-in-artmaster-music-education"
+      },
+      {
+        "item_id": "C146-I06",
+        "type": "capital",
+        "total_eur": 40000000,
+        "basis": [
+          {
+            "fund": "Purple Ventures 2",
+            "amount": "čtyřicet milionů eur",
+            "source_url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676"
+          }
+        ]
+      },
+      {
+        "item_id": "C146-I07",
+        "type": "deal",
+        "company": "Delta Green",
+        "date": "2024-05",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+      }
+    ]
+  },
+  {
+    "investor": "Gi21 Capital",
+    "website": "https://gi21capital.com",
+    "items": [
+      {
+        "item_id": "C151-I00",
+        "type": "identity",
+        "legal_name": "Gi21 Capital a.s.",
+        "company_id": "19584229",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19584229"
+      },
+      {
+        "item_id": "C151-I01",
+        "type": "deal",
+        "company": "Zerops",
+        "date": "2026-05",
+        "source_url": "https://founders-daily-briefing.beehiiv.com/p/zerops-raises-2m"
+      },
+      {
+        "item_id": "C151-I02",
+        "type": "deal",
+        "company": "Hermetiq",
+        "date": "2026-08",
+        "source_url": "https://gi21capital.com/blog-posts/why-we-invested-in-hermetiq"
+      },
+      {
+        "item_id": "C151-I03",
+        "type": "deal",
+        "company": "ArtMaster",
+        "date": "2026-04",
+        "source_url": "https://gi21capital.com/blog"
+      },
+      {
+        "item_id": "C151-I04",
+        "type": "deal",
+        "company": "Hermetiq",
+        "date": "2026-08",
+        "source_url": "https://gi21capital.com/blog"
+      },
+      {
+        "item_id": "C151-I05",
+        "type": "deal",
+        "company": "ArtMaster",
+        "date": "2026-04",
+        "source_url": "https://gi21capital.com/blog-posts/investing-in-artmaster-music-education"
+      },
+      {
+        "item_id": "C151-I06",
+        "type": "deal",
+        "company": "FaceUp",
+        "date": "2026-05",
+        "source_url": "https://gi21capital.com/blog-posts/why-we-invested-in-faceup-bringing-safety-and-integrity-to-global-workplaces"
+      },
+      {
+        "item_id": "C151-I07",
+        "type": "deal",
+        "company": "Zerops",
+        "date": "2026-05",
+        "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
+      },
+      {
+        "item_id": "C151-I08",
+        "type": "deal",
+        "company": "FaceUp",
+        "date": "2026-05",
+        "source_url": "https://gi21capital.com/blog"
+      }
+    ]
+  },
+  {
+    "investor": "Miton",
+    "website": "https://www.miton.cz",
+    "items": [
+      {
+        "item_id": "C184-I00",
+        "type": "identity",
+        "legal_name": "MITON CZ, s.r.o.",
+        "company_id": "25417967",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/25417967"
+      },
+      {
+        "item_id": "C184-I01",
+        "type": "deal",
+        "company": "DeepScout",
+        "date": "2025-03",
+        "source_url": "https://en.ain.ua/2025/03/10/deepscout-secures-eur200k"
+      },
+      {
+        "item_id": "C184-I02",
+        "type": "deal",
+        "company": "GTE",
+        "date": "2024",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+      },
+      {
+        "item_id": "C184-I03",
+        "type": "deal",
+        "company": "PangeAI",
+        "date": "2026-01",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+      },
+      {
+        "item_id": "C184-I04",
+        "type": "deal",
+        "company": "GTE",
+        "date": "2025-01",
+        "source_url": "https://www.miton.cz/en/blog/2024-at-mitonc-six-new-investments-and-filip-siroky-as-general-partner/"
+      },
+      {
+        "item_id": "C184-I05",
+        "type": "deal",
+        "company": "Aim",
+        "date": "2025",
+        "source_url": "https://www.miton.cz/en/about"
+      },
+      {
+        "item_id": "C184-I06",
+        "type": "deal",
+        "company": "POS Experts",
+        "date": "2024-11",
+        "source_url": "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/"
+      },
+      {
+        "item_id": "C184-I07",
+        "type": "deal",
+        "company": "Firefish",
+        "date": "2023",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+      },
+      {
+        "item_id": "C184-I08",
+        "type": "deal",
+        "company": "Bandits",
+        "date": "2025",
+        "source_url": "https://www.miton.cz/en/about"
+      },
+      {
+        "item_id": "C184-I09",
+        "type": "deal",
+        "company": "PangeAI",
+        "date": "2025",
+        "source_url": "https://www.miton.cz/en/about"
+      }
+    ]
+  }
+]

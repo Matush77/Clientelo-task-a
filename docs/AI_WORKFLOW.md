@@ -9,7 +9,8 @@ v [ai-log/](../ai-log/).
 |---|---|---|
 | **Ja (človek)** | – | rozhodujem o rozsahu a pravidlách, schvaľujem plán na kontrolných bodoch, ručne overujem vzorku |
 | **Hlavná session Claude Code** | Claude Opus 5.5 | orchestrácia: navrhuje plán, píše kód a pokyny pre agentov, spúšťa agentov, kontroluje ich výstupy, počíta metriky, píše dokumentáciu, commituje |
-| **Subagenti** | Claude Haiku 5.5 (výhradne) | vyhľadávanie na webe a malé, presne ohraničené úlohy: prieskum, zber kandidátov, zber dôkazov, nezávislé overovanie |
+| **Subagenti – zber** | Claude Haiku 5.5 | vyhľadávanie na webe a malé, presne ohraničené úlohy: prieskum, zber kandidátov, zber dôkazov, nezávislé overovanie |
+| **Subagenti – kontrola a spresnenie** | Claude Sonnet 5.5 (na žiadosť autora) | slepá kontrola vzorky (D34), spresnenie kapitálu a dátumov obchodov pri zaradených záznamoch (D38), slepá kontrola faktov pred a po (D39) |
 | **Python kód** | – (deterministický) | všetko, čo sa dá overiť bez AI: stiahnutie zdroja, kontrola citácie, dátumy, pravidlá, vzorkovanie, metriky |
 
 Prečo Haiku pre subagentov: vyhľadávanie a extrakcia sú jednoduché, opakované úlohy a Haiku je výrazne lacnejší.
@@ -25,7 +26,7 @@ vývoj (v1 → v2…). Pokyny dodržiavajú tieto zásady:
 2. **Povinný zdroj pri každom tvrdení** – URL + doslovná citácia + dátum.
 3. **Povolené „neviem“** – agent musí označiť neoverené veci (`UNVERIFIED`, `not_found`) namiesto domýšľania.
 4. **Zákaz odhadov čísel** – žiadne dopočítavanie AUM ani tiketov.
-5. **Agent nezapisuje súbory** – výstup kontrolujem ja a až potom sa niečo uloží.
+5. **Agent zapíše len svoj výstupný súbor** (od vlny 1; pri objavovaní a triáži vracal text) – surový výstup sa už nemení a do databázy sa dostane až po strojovej kontrole v kóde.
 
 ## 3. Ako kontrolujem výstupy agentov
 
@@ -134,6 +135,18 @@ Podrobne v [AUDIT_V2.md](AUDIT_V2.md).
 | C47 | Infraštruktúra | Opakovaná kontrola Sonnetom pre 8 záznamov so zmenenou identitou sa nedokončila – vyčerpaný limit relácie (HTTP 429) | notifikácia o zlyhaní agentov | ich `identity_ok` sa v správe nezapočítava (stará verzia identity) |
 | C48 | Overovateľ Haiku | Napriek zákazu v pokyne raz zavolal zabudovaný prehliadač (bez účinku) | vlastné hlásenie agenta | potvrdzuje, že zákaz v texte pokynu nie je tvrdá hranica → vlastný typ agenta s obmedzenými nástrojmi |
 | C49 | Sonnet (kontrolór) | V zdôvodnení citoval mená štatutárov firmy z registra (osobné údaje) | kontrola pred commitom | mená fyzických osôb vo výstupoch AI kontroly nahradené `[osoba]` (D14) |
+
+### Spresnenie silnejším modelom (D38, D39)
+
+| # | Kto / čo | Zistenie | Ako zachytené | Opatrenie |
+|---|---|---|---|---|
+| C50 | Sonnet 5.5 (spresnenie) | Prekročil rozpočet 20 volaní na investora (25–30 pri Tilii, Rockaway, Miton) | vlastné hlásenie agentov, záznamy spotreby | náklad sa počíta z nameranej spotreby, nie z rozpočtu v pokyne |
+| C51 | Nástroj WebFetch | Vracia citácie skrátené na ~125 znakov, takže citácia často menuje len firmu alebo len investora | hlásenie agentov; kontrola priradenia v kóde | priradenie sa overuje v okolí citácie na stránke (400 znakov); 4 spresnené obchody kontrolou neprešli a nepoužili sa |
+| C52 | Sonnet 5.5 (spresnenie) | Ako „uzavretý fond“ označil aj alokácie a počiatočný kapitál (napr. Národný rozvojový fond II), sám to priznal | vlastné hlásenie agenta | meria to slepá kontrola faktov (REFINEMENT.md) |
+| C53 | Sonnet 5.5 + kontrola priradenia | Staršie obchody materskej skupiny (Rockaway Capital) priradené k Rockaway Ventures – meno sa zhoduje v prvom slove | vlastné hlásenie agenta | obmedzenie kontroly priradenia pri značkách jednej skupiny; ide o obchody z rokov 2014–2019, aktivitu neovplyvňujú |
+| C54 | Infraštruktúra | Limit relácie (HTTP 429) ukončil 2 zo 6 agentov; jeden už mal výstup zapísaný | notifikácia o zlyhaní, kontrola súborov | výstupný súbor sa zapisuje pred záverečnou odpoveďou; chýbajúca dávka sa spustila znovu |
+| C55 | **Claude (kód)** | Prvá verzia dávok kontroly faktov prezrádzala verziu hodnoty (len spresnené fondy mali stav, len spresnené dátumy deň) | skúšobný beh pred spustením kontroly | položky bez stavu fondu, dátumy na mesiace v oboch verziách + test |
+| C56 | Sonnet 5.5 (spresnenie) | Zdroj z agregátora (startbase.de) a citácia, ktorá na stránke nie je (MintNeuro) | strojová kontrola (`forbidden_source`, `quote_not_found`) | tvrdenia sa nepoužili – strojová kontrola funguje rovnako pre silnejší model |
 
 **Hlavné ponaučenie pre prezentáciu:** strojová kontrola citácií zachytila vymyslené zdroje a parafrázy, no nie
 **nesprávny výklad pravej citácie**. To odhalil až človek – za dve minúty prezerania formulára. Preto sú v postupe

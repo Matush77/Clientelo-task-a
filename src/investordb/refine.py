@@ -200,6 +200,11 @@ def merge(old: list[dict], new: list[dict], checks: list[dict]) -> tuple[list[di
             continue
         if verdict == "confirmed":  # the agent agrees, but its own quote failed the check: the frozen claim stays
             continue
+        if verdict == "corrected" and r and r["event_date"][:10] > chk["listed_date"][:10]:
+            # a LATER date is a follow-on round, not a dispute of the listed one (an article date only ever comes
+            # after the deal); the follow-on could not be verified, so the frozen claim stays as it was
+            notes.append(f"{chk['company']}: novšie kolo ({r['event_date'][:7]}) sa nepodarilo overiť, pôvodný dátum ostáva")
+            continue
         for c in olds:
             if c.get("deal_context") == "deal":
                 c["deal_context"] = "mention"

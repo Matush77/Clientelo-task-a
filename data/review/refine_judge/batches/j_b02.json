@@ -1,0 +1,276 @@
+[
+  {
+    "investor": "Jet Investment",
+    "website": "https://www.jetinvestment.cz/en",
+    "items": [
+      {
+        "item_id": "C023-I00",
+        "type": "identity",
+        "legal_name": "Jet Investment, a.s.",
+        "company_id": "03890333",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03890333"
+      },
+      {
+        "item_id": "C023-I01",
+        "type": "deal",
+        "company": "DecisionRules",
+        "date": "2026-06",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "item_id": "C023-I02",
+        "type": "capital",
+        "total_eur": 700000000,
+        "basis": [
+          {
+            "fund": "AUM",
+            "amount": "€ 700m+",
+            "source_url": "https://www.jetinvestment.cz/en"
+          }
+        ]
+      },
+      {
+        "item_id": "C023-I03",
+        "type": "deal",
+        "company": "AppNava",
+        "date": "2026-09",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "item_id": "C023-I04",
+        "type": "deal",
+        "company": "Phantasma Labs",
+        "date": "2026-09",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "item_id": "C023-I05",
+        "type": "deal",
+        "company": "Partory",
+        "date": "2024-10",
+        "source_url": "https://en.ain.ua/2024/10/01/czech-startup-partory-raises-a-eur1m-investment-round-from-jet-investments-new-fund-to-improve-its-application-and-reach-global-markets"
+      },
+      {
+        "item_id": "C023-I06",
+        "type": "deal",
+        "company": "DecisionRules",
+        "date": "2026-06",
+        "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/"
+      },
+      {
+        "item_id": "C023-I07",
+        "type": "deal",
+        "company": "GigaScan",
+        "date": "2026-08",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "item_id": "C023-I08",
+        "type": "deal",
+        "company": "Partory",
+        "date": "2024-09",
+        "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/"
+      }
+    ]
+  },
+  {
+    "investor": "Tensor Ventures",
+    "website": "https://tensor.ventures",
+    "items": [
+      {
+        "item_id": "C032-I00",
+        "type": "identity",
+        "legal_name": "Tensor Ventures a.s.",
+        "company_id": "06257241",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06257241"
+      },
+      {
+        "item_id": "C032-I01",
+        "type": "capital",
+        "total_eur": 20000000,
+        "basis": [
+          {
+            "fund": "Tensor Ventures first fund (opened 2017)",
+            "amount": "dvacet milionů eur",
+            "source_url": "https://cc.cz/evropsky-investicni-fond-uz-vlozil-penize-do-17-ceskych-fondu-miliardovy-ted-otevira-s-tensor-ventures/"
+          }
+        ]
+      },
+      {
+        "item_id": "C032-I02",
+        "type": "deal",
+        "company": "AppFactor",
+        "date": "2026-02",
+        "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
+      },
+      {
+        "item_id": "C032-I03",
+        "type": "capital",
+        "total_eur": 50000000,
+        "basis": [
+          {
+            "fund": "new Tensor Ventures fund launched October 2024 (name not stated in source)",
+            "amount": "€50 million",
+            "source_url": "https://tech.eu/2024/10/11/tensor-ventures-launches-eur50m-fund-a-boost-for-quantum-biotech-and-climate-tech-startups/"
+          }
+        ]
+      },
+      {
+        "item_id": "C032-I04",
+        "type": "deal",
+        "company": "AppFactor",
+        "date": "2026-02",
+        "source_url": "https://theaiinsider.tech/2026/02/04/tensor-ventures-and-others-invest-4-million-us-in-london-based-appfactor/"
+      }
+    ]
+  },
+  {
+    "investor": "Tilia Impact Ventures",
+    "website": "https://www.tilia.vc",
+    "items": [
+      {
+        "item_id": "C034-I00",
+        "type": "identity",
+        "legal_name": "Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o.",
+        "company_id": "17848911",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17848911"
+      },
+      {
+        "item_id": "C034-I01",
+        "type": "deal",
+        "company": "Munch",
+        "date": "2023-06",
+        "source_url": "https://cc.cz/nesnezeno-pred-vyhozenim-zachranilo-300-tisic-jidel-spojilo-se-s-madary-spolecne-sli-na-slovensko/"
+      },
+      {
+        "item_id": "C034-I02",
+        "type": "deal",
+        "company": "The Village",
+        "date": "2022-07",
+        "source_url": "https://tech.eu/2022/07/04/ramping-up-early-education-with-parent-led-micro-schools-the-village-rakes-in-eur34-million/"
+      },
+      {
+        "item_id": "C034-I03",
+        "type": "deal",
+        "company": "Cyrkl",
+        "date": "2023-10",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "item_id": "C034-I04",
+        "type": "deal",
+        "company": "The Village",
+        "date": "2023-10",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "item_id": "C034-I05",
+        "type": "deal",
+        "company": "Munch",
+        "date": "2023-10",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "item_id": "C034-I06",
+        "type": "capital",
+        "total_eur": 1764537,
+        "basis": [
+          {
+            "fund": "Tilia Impact Ventures",
+            "amount": "43 milionů korun",
+            "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+          }
+        ]
+      },
+      {
+        "item_id": "C034-I07",
+        "type": "deal",
+        "company": "NOLD",
+        "date": "2023-10",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "item_id": "C034-I08",
+        "type": "capital",
+        "total_eur": 27764537,
+        "basis": [
+          {
+            "fund": "Tilia 2",
+            "amount": "26 milionů eur",
+            "source_url": "https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/"
+          },
+          {
+            "fund": "Tilia Impact Ventures",
+            "amount": "43 milionů korun",
+            "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+          }
+        ]
+      },
+      {
+        "item_id": "C034-I09",
+        "type": "deal",
+        "company": "Datlab",
+        "date": "2019-10",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+      },
+      {
+        "item_id": "C034-I10",
+        "type": "deal",
+        "company": "MIWA Technologies",
+        "date": "2019-10",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+      }
+    ]
+  },
+  {
+    "investor": "JSK Investments",
+    "website": "https://www.jskinvestments.cz",
+    "items": [
+      {
+        "item_id": "C063-I00",
+        "type": "identity",
+        "legal_name": "JSK Management s.r.o.",
+        "company_id": "21285241",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21285241"
+      },
+      {
+        "item_id": "C063-I01",
+        "type": "capital",
+        "total_eur": 82071484,
+        "basis": [
+          {
+            "fund": "JSK Investments SICAV",
+            "amount": "zhruba dvě miliardy korun",
+            "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/"
+          }
+        ]
+      },
+      {
+        "item_id": "C063-I02",
+        "type": "deal",
+        "company": "Andromeda Surgical",
+        "date": "2026-09",
+        "source_url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
+      },
+      {
+        "item_id": "C063-I03",
+        "type": "deal",
+        "company": "Elin.ai",
+        "date": "2024-12",
+        "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+      },
+      {
+        "item_id": "C063-I04",
+        "type": "capital",
+        "total_eur": 82071484,
+        "basis": [
+          {
+            "fund": "JSK Investments SICAV",
+            "amount": "dvě miliardy korun",
+            "source_url": "https://www.newstream.cz/money/kijonkova-spousti-vlastni-fond-pro-kvalifikovane-investory"
+          }
+        ]
+      }
+    ]
+  }
+]

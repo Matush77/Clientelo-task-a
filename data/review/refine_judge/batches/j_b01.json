@@ -1,0 +1,257 @@
+[
+  {
+    "investor": "Credo Ventures",
+    "website": "https://www.credoventures.com",
+    "items": [
+      {
+        "item_id": "C012-I00",
+        "type": "identity",
+        "legal_name": "Credo Ventures a.s.",
+        "company_id": "28538137",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/28538137"
+      },
+      {
+        "item_id": "C012-I01",
+        "type": "deal",
+        "company": "Talkbase",
+        "date": "2022-10",
+        "source_url": "https://cc.cz/tak-velka-investice-tak-brzy-tu-jeste-nebyla-cesky-startup-talkbase-ziskal-rekordnich-50-milionu/"
+      },
+      {
+        "item_id": "C012-I02",
+        "type": "deal",
+        "company": "Upheal",
+        "date": "2024-11",
+        "source_url": "https://nordic9.com/news/upheal-raised-10-million-in-series-a-funding-round-led-by-headline-joined-by-credo-ventures-and-kaya-ventures/"
+      },
+      {
+        "item_id": "C012-I03",
+        "type": "deal",
+        "company": "Axoflow",
+        "date": "2025-01",
+        "source_url": "https://en.ain.ua/2025/01/23/axoflow-raises-7m"
+      },
+      {
+        "item_id": "C012-I04",
+        "type": "capital",
+        "total_eur": 324529359,
+        "basis": [
+          {
+            "fund": "Credo Stage 5",
+            "amount": "$88 million",
+            "source_url": "https://startuprise.co.uk/prague-and-krakow-based-credo-ventures-raises-88m-fund-5-to-focus-on-cee-pre-seed-startups-and-global-diaspora/"
+          },
+          {
+            "fund": "Credo fund IV (čtvrtý fond)",
+            "amount": "75 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          },
+          {
+            "fund": "Credo fund III (třetí fond)",
+            "amount": "bezmála 100 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          },
+          {
+            "fund": "Credo fund II (druhý fond)",
+            "amount": "53 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          },
+          {
+            "fund": "Credo fund I (první fond)",
+            "amount": "18 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          }
+        ]
+      },
+      {
+        "item_id": "C012-I05",
+        "type": "deal",
+        "company": "Talkbase",
+        "date": "2022-10",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      },
+      {
+        "item_id": "C012-I06",
+        "type": "deal",
+        "company": "SuperPlane",
+        "date": "2026-06",
+        "source_url": "https://raising.fi/news/superplane-pre-seed-june-2026"
+      },
+      {
+        "item_id": "C012-I07",
+        "type": "capital",
+        "total_eur": 324529359,
+        "basis": [
+          {
+            "fund": "Credo Stage 5",
+            "amount": "$88 million",
+            "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund"
+          },
+          {
+            "fund": "Credo fund IV (čtvrtý fond)",
+            "amount": "€75 million",
+            "source_url": "https://en.ain.ua/2022/10/11/credo-ventures-closes-its-fourth-fund"
+          },
+          {
+            "fund": "Credo fund III (třetí fond)",
+            "amount": "bezmála 100 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          },
+          {
+            "fund": "Credo fund II (druhý fond)",
+            "amount": "53 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          },
+          {
+            "fund": "Credo fund I (první fond)",
+            "amount": "18 milionů eur",
+            "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+          }
+        ]
+      },
+      {
+        "item_id": "C012-I08",
+        "type": "deal",
+        "company": "Upheal",
+        "date": "2022-10",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      },
+      {
+        "item_id": "C012-I09",
+        "type": "deal",
+        "company": "SuperPlane",
+        "date": "2026-06",
+        "source_url": "https://thesaasnews.com/news/superplane-raises-2-28m-pre-seed"
+      }
+    ]
+  },
+  {
+    "investor": "Depo Ventures",
+    "website": "https://depoventures.com",
+    "items": [
+      {
+        "item_id": "C014-I00",
+        "type": "identity",
+        "legal_name": "DEPO VENTURES, s.r.o.",
+        "company_id": "04753101",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04753101"
+      },
+      {
+        "item_id": "C014-I01",
+        "type": "deal",
+        "company": "Kardi AI",
+        "date": "2025-04",
+        "source_url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
+      },
+      {
+        "item_id": "C014-I02",
+        "type": "capital",
+        "total_eur": 3693217,
+        "basis": [
+          {
+            "fund": "Depo Angels Fund II",
+            "amount": "55 milionů korun",
+            "source_url": "https://cc.cz/vice-penez-pro-nejmladsi-startupy-depo-ventures-otevira-novy-andelsky-fond-cili-na-pul-miliardy/"
+          },
+          {
+            "fund": "Grouport Ventures (first angel fund)",
+            "amount": "35 milionů korun",
+            "source_url": "https://cc.cz/cesti-depo-ventures-oteviraji-druhy-fond-v-desitkach-milionu-prvni-investice-podpori-startup-ktery-ukazuje-data-z-kryptouctu/"
+          }
+        ]
+      },
+      {
+        "item_id": "C014-I03",
+        "type": "deal",
+        "company": "ArcSpace",
+        "date": "2026-09",
+        "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"
+      }
+    ]
+  },
+  {
+    "investor": "i&i Biotech Investments",
+    "website": "https://www.inibio.eu",
+    "items": [
+      {
+        "item_id": "C019-I00",
+        "type": "identity",
+        "legal_name": "Biotech Investments s.r.o.",
+        "company_id": "10885978",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10885978"
+      },
+      {
+        "item_id": "C019-I01",
+        "type": "capital",
+        "total_eur": 53000000,
+        "basis": [
+          {
+            "fund": "i&i Biotech Fund I SCSp",
+            "amount": "€53 million",
+            "source_url": "https://www.biospace.com/press-releases/captain-t-cell-closes-financing-round-to-advance-its-proprietary-next-generation-tcr-t-pipeline-into-the-clinic"
+          }
+        ]
+      },
+      {
+        "item_id": "C019-I02",
+        "type": "deal",
+        "company": "Captain T Cell",
+        "date": "2024-05",
+        "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"
+      }
+    ]
+  },
+  {
+    "investor": "Inven Capital",
+    "website": "https://www.invencapital.cz",
+    "items": [
+      {
+        "item_id": "C022-I00",
+        "type": "identity",
+        "legal_name": "Inven Capital, SICAV, a.s.",
+        "company_id": "02059533",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02059533"
+      },
+      {
+        "item_id": "C022-I01",
+        "type": "capital",
+        "total_eur": 500000000,
+        "basis": [
+          {
+            "fund": "AUM",
+            "amount": "EUR 500m",
+            "source_url": "https://www.invencapital.cz"
+          }
+        ]
+      },
+      {
+        "item_id": "C022-I02",
+        "type": "deal",
+        "company": "Vytal",
+        "date": "2025-03",
+        "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"
+      },
+      {
+        "item_id": "C022-I03",
+        "type": "deal",
+        "company": "Vytal",
+        "date": "2025-03",
+        "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala/"
+      },
+      {
+        "item_id": "C022-I04",
+        "type": "deal",
+        "company": "Andercore",
+        "date": "2026-02",
+        "source_url": "https://www.andercore.com/company-profile"
+      },
+      {
+        "item_id": "C022-I05",
+        "type": "deal",
+        "company": "Andercore",
+        "date": "2026-02",
+        "source_url": "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/"
+      }
+    ]
+  }
+]

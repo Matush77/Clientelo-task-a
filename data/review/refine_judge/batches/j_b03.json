@@ -1,0 +1,205 @@
+[
+  {
+    "investor": "Lighthouse Ventures",
+    "website": "https://lhv.vc",
+    "items": [
+      {
+        "item_id": "C092-I00",
+        "type": "identity",
+        "legal_name": "Lighthouse Ventures GP s.r.o.",
+        "company_id": "07500912",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07500912"
+      },
+      {
+        "item_id": "C092-I01",
+        "type": "deal",
+        "company": "Ranketta",
+        "date": "2025-11",
+        "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+      },
+      {
+        "item_id": "C092-I02",
+        "type": "deal",
+        "company": "Pekat Vision",
+        "date": "2019-06",
+        "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+      },
+      {
+        "item_id": "C092-I03",
+        "type": "capital",
+        "total_eur": 23000000,
+        "basis": [
+          {
+            "fund": "AUM",
+            "amount": "23 milionů eur",
+            "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+          }
+        ]
+      },
+      {
+        "item_id": "C092-I04",
+        "type": "deal",
+        "company": "Merchantee",
+        "date": "2026-06",
+        "source_url": "https://raising.fi/news/merchantee-undisclosed-june-2026"
+      }
+    ]
+  },
+  {
+    "investor": "Neulogy Ventures",
+    "website": "https://neulogy.vc",
+    "items": [
+      {
+        "item_id": "C099-I00",
+        "type": "identity",
+        "legal_name": "Neulogy Ventures, a. s.",
+        "company_id": "47367610",
+        "registry_url": "https://api.statistics.sk/rpo/v1/entity/1008262"
+      },
+      {
+        "item_id": "C099-I01",
+        "type": "deal",
+        "company": "GA Drilling",
+        "date": "2024-04",
+        "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+      },
+      {
+        "item_id": "C099-I02",
+        "type": "capital",
+        "total_eur": 23000000,
+        "basis": [
+          {
+            "fund": "Neulogy Ventures (seed fund and VC fund, combined)",
+            "amount": "23 mil. EUR",
+            "source_url": "https://www.startitup.sk/?p=8860"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "investor": "Venture to Future Fund",
+    "website": "https://vff.sk",
+    "items": [
+      {
+        "item_id": "C100-I00",
+        "type": "identity",
+        "legal_name": "Venture to Future Fund, a.s.",
+        "company_id": "52380483",
+        "registry_url": "https://api.statistics.sk/rpo/v1/entity/9905872"
+      },
+      {
+        "item_id": "C100-I01",
+        "type": "capital",
+        "total_eur": 55000000,
+        "basis": [
+          {
+            "fund": "Venture to Future Fund",
+            "amount": "55 mil. EUR",
+            "source_url": "https://vff.sk"
+          }
+        ]
+      },
+      {
+        "item_id": "C100-I02",
+        "type": "deal",
+        "company": "Sensoneo",
+        "date": "2023-06",
+        "source_url": "https://sensoneo.com/series-a-investment/"
+      },
+      {
+        "item_id": "C100-I03",
+        "type": "deal",
+        "company": "Talentiqa",
+        "date": "2025-10",
+        "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+      },
+      {
+        "item_id": "C100-I04",
+        "type": "deal",
+        "company": "Sensoneo",
+        "date": "2021-10",
+        "source_url": "https://vff.sk"
+      },
+      {
+        "item_id": "C100-I05",
+        "type": "capital",
+        "total_eur": 40400000,
+        "basis": [
+          {
+            "fund": "Venture to Future Fund",
+            "amount": "40.4 mil. EUR",
+            "source_url": "https://www.sih.sk/en/aktuality/venture-to-future-fund-navysuje-kapital-o-15-3-miliona-eur-na-podporu-slovenskych-startupov"
+          }
+        ]
+      },
+      {
+        "item_id": "C100-I06",
+        "type": "deal",
+        "company": "Product Fruits",
+        "date": "2023-05",
+        "source_url": "https://vff.sk/novinky/nase-investicne-portfolio-sa-rozsirilo-o-spolocnost-product-fruits-ktora-ziskala-investiciu-vo-vyske-1-6-miliona-eur-19"
+      },
+      {
+        "item_id": "C100-I07",
+        "type": "deal",
+        "company": "Product Fruits",
+        "date": "2023-05",
+        "source_url": "https://vff.sk"
+      }
+    ]
+  },
+  {
+    "investor": "Slovak Investment Holding",
+    "website": "https://www.sih.sk",
+    "items": [
+      {
+        "item_id": "C125-I00",
+        "type": "identity",
+        "legal_name": "Slovak Investment Holding, a. s.",
+        "company_id": "47759097",
+        "registry_url": "https://api.statistics.sk/rpo/v1/entity/1007511"
+      },
+      {
+        "item_id": "C125-I01",
+        "type": "deal",
+        "company": "InoBat",
+        "date": "2024-01",
+        "source_url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
+      },
+      {
+        "item_id": "C125-I02",
+        "type": "deal",
+        "company": "PERRY SOFT a.s.",
+        "date": "2025-09",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+      },
+      {
+        "item_id": "C125-I03",
+        "type": "capital",
+        "total_eur": 623000000,
+        "basis": [
+          {
+            "fund": "National Development Fund II",
+            "amount": "623 mil. EUR",
+            "source_url": "https://sih.sk/en/stranky/cinnosti/national-development-fund-ii/o-spolocnosti-ndf-ii"
+          }
+        ]
+      },
+      {
+        "item_id": "C125-I04",
+        "type": "deal",
+        "company": "AT Crystals",
+        "date": "2026-09",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-slovenskej-deep-tech-spolocnosti-at-crystals"
+      },
+      {
+        "item_id": "C125-I05",
+        "type": "deal",
+        "company": "VisionFlow",
+        "date": "2026-09",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-1-4-miliona-eur-do-visionflow-slovensky-startup-vyvija-softverovu-datovu-infrastrukturu-pre-umelu-inteligenciu"
+      }
+    ]
+  }
+]

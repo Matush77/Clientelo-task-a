@@ -131,3 +131,22 @@ def test_judge_items_are_deduplicated_and_carry_no_version(tmp_path, monkeypatch
                           "registry_url"} for i in items)
     key = (tmp_path / "key.csv").read_text(encoding="utf-8")
     assert key.count(",deal,1,1") == 1 and key.count(",deal,1,0") == 1 and key.count(",deal,0,1") == 1
+
+
+def test_merge_unverified_later_follow_on_keeps_the_listed_date():
+    # i&i Biotech: the agent reported a later follow-on (2025-11) for Captain T Cell, but its quote did not pass the
+    # deal-context check; the original 2024-05 round was never disputed and must keep counting
+    old = [deal("Captain T Cell", "2024-05-22")]
+    new = [deal("Captain T Cell", "2025-11-17", idx=0, context="mention", verdict="corrected")]
+    checks = [{"company": "Captain T Cell", "listed_date": "2024-05-22", "verdict": "corrected", "note": "", "idx": 0}]
+    merged, notes = merge(old, new, checks)
+    assert [c["event_date"] for c in counted_deals(merged).values()] == ["2024-05-22"]
+
+
+def test_merge_unverified_earlier_correction_stops_counting_the_article_date():
+    # Rockaway / Apaleo: listed 2025-05 (a fund-close article), agent says the round was 2024-11, unverified
+    old = [deal("Apaleo", "2025-05-16")]
+    new = [deal("Apaleo", "2024-11-20", idx=0, context="mention", verdict="corrected")]
+    checks = [{"company": "Apaleo", "listed_date": "2025-05-16", "verdict": "corrected", "note": "", "idx": 0}]
+    merged, _ = merge(old, new, checks)
+    assert counted_deals(merged) == {}

@@ -1,0 +1,252 @@
+[
+  {
+    "investor": "Look AI Ventures",
+    "website": "https://lookai.vc",
+    "items": [
+      {
+        "item_id": "C186-I00",
+        "type": "identity",
+        "legal_name": "Look AI Ventures SICAV, a.s.",
+        "company_id": "17604087",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17604087"
+      },
+      {
+        "item_id": "C186-I01",
+        "type": "deal",
+        "company": "Embodied AI",
+        "date": "2026-09",
+        "source_url": "https://lookai.vc"
+      },
+      {
+        "item_id": "C186-I02",
+        "type": "deal",
+        "company": "Lucida AI",
+        "date": "2026-06",
+        "source_url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/"
+      },
+      {
+        "item_id": "C186-I03",
+        "type": "deal",
+        "company": "Sodex Innovations",
+        "date": "2026-07",
+        "source_url": "https://lookai.vc"
+      },
+      {
+        "item_id": "C186-I04",
+        "type": "deal",
+        "company": "Sodex Innovations",
+        "date": "2026-07",
+        "source_url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026"
+      }
+    ]
+  },
+  {
+    "investor": "ZAKA Ventures",
+    "website": "https://zaka.vc",
+    "items": [
+      {
+        "item_id": "C195-I00",
+        "type": "identity",
+        "legal_name": "ZAKA VC I, osoba rizikového kapitálu, a.s.",
+        "company_id": "21514992",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21514992"
+      },
+      {
+        "item_id": "C195-I01",
+        "type": "capital",
+        "total_eur": 10500000,
+        "basis": [
+          {
+            "fund": "ZAKA VC Fund I",
+            "amount": "€10.5 million",
+            "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+          }
+        ]
+      },
+      {
+        "item_id": "C195-I02",
+        "type": "deal",
+        "company": "ParcelBio",
+        "date": "2026-05",
+        "source_url": "https://pulse2.com/parcelbio-13-million-seed-financing-raised-to-advance-next-generation-mrna-medicines/"
+      },
+      {
+        "item_id": "C195-I03",
+        "type": "deal",
+        "company": "DeepSeq.AI",
+        "date": "2026-01",
+        "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+      },
+      {
+        "item_id": "C195-I04",
+        "type": "capital",
+        "total_eur": 15000000,
+        "basis": [
+          {
+            "fund": "ZAKA VC Fund I",
+            "amount": "€15 million",
+            "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "investor": "Rockaway Ventures",
+    "website": "https://rockawayventures.com",
+    "items": [
+      {
+        "item_id": "C197-I00",
+        "type": "identity",
+        "legal_name": "Rockaway Ventures a.s.",
+        "company_id": "06387136",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06387136"
+      },
+      {
+        "item_id": "C197-I01",
+        "type": "deal",
+        "company": "Productboard",
+        "date": "2021-09",
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      },
+      {
+        "item_id": "C197-I02",
+        "type": "deal",
+        "company": "Vivere",
+        "date": "2021-09",
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      },
+      {
+        "item_id": "C197-I03",
+        "type": "deal",
+        "company": "Brand Embassy",
+        "date": "2014-02",
+        "source_url": "https://www.lupa.cz/clanky/brand-embassy-ziskala-milion-dolaru-startupyard-a-nydrle-firmu-opousteji/"
+      },
+      {
+        "item_id": "C197-I04",
+        "type": "deal",
+        "company": "Gjirafa",
+        "date": "2025-05",
+        "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+      },
+      {
+        "item_id": "C197-I05",
+        "type": "deal",
+        "company": "Brand Embassy",
+        "date": "2021-09",
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      },
+      {
+        "item_id": "C197-I06",
+        "type": "deal",
+        "company": "Float",
+        "date": "2026-03",
+        "source_url": "https://nordic9.com/news/float-secured-investment-from-rockaway-ventures-and-eifo/"
+      },
+      {
+        "item_id": "C197-I07",
+        "type": "capital",
+        "total_eur": 95000000,
+        "basis": [
+          {
+            "fund": "Rockaway Ventures II",
+            "amount": "nearly €55 million",
+            "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+          },
+          {
+            "fund": "Rockaway Ventures Fund",
+            "amount": "EUR 40m",
+            "source_url": "https://www.unquote.com/cee/news/3028705/rockaway-plans-third-closing-for-rockaway-ventures-fund-this-autumn"
+          }
+        ]
+      },
+      {
+        "item_id": "C197-I08",
+        "type": "deal",
+        "company": "Apaleo",
+        "date": "2025-05",
+        "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+      },
+      {
+        "item_id": "C197-I09",
+        "type": "capital",
+        "total_eur": 55000000,
+        "basis": [
+          {
+            "fund": "Rockaway Ventures II",
+            "amount": "nearly €55 million",
+            "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+          }
+        ]
+      },
+      {
+        "item_id": "C197-I10",
+        "type": "deal",
+        "company": "Productboard",
+        "date": "2019-02",
+        "source_url": "https://cc.cz/cesky-startup-productboard-vybral-dalsich-10-milionu-dolaru-mezi-investory-jsou-i-credo-a-reflex-capital/"
+      },
+      {
+        "item_id": "C197-I11",
+        "type": "deal",
+        "company": "Gjirafa",
+        "date": "2019-03",
+        "source_url": "https://techcrunch.com/2019/03/25/gjirafa-raises-a-6-7m-series-b-from-rockaway-capital-to-digitise-the-balkans"
+      },
+      {
+        "item_id": "C197-I12",
+        "type": "deal",
+        "company": "Apptronik",
+        "date": "2026-02",
+        "source_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+      }
+    ]
+  },
+  {
+    "investor": "Czech Founders VC",
+    "website": "https://czechfounders.vc",
+    "items": [
+      {
+        "item_id": "C198-I00",
+        "type": "identity",
+        "legal_name": "Czech Founders Ventures s.r.o., osoba rizikového kapitálu",
+        "company_id": "17051835",
+        "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17051835"
+      },
+      {
+        "item_id": "C198-I01",
+        "type": "deal",
+        "company": "Lemondia",
+        "date": "2025-09",
+        "source_url": "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/"
+      },
+      {
+        "item_id": "C198-I02",
+        "type": "deal",
+        "company": "Maxfusion",
+        "date": "2026-01",
+        "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+      },
+      {
+        "item_id": "C198-I03",
+        "type": "capital",
+        "total_eur": 10000000,
+        "basis": [
+          {
+            "fund": "Czech Founders VC",
+            "amount": "deset milionů eur",
+            "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/"
+          }
+        ]
+      },
+      {
+        "item_id": "C198-I04",
+        "type": "deal",
+        "company": "Merchantee",
+        "date": "2026-06",
+        "source_url": "https://www.lupa.cz/aktuality/cesky-startup-dava-e-shopum-ai-ktera-za-ne-rozhoduje-na-trzistich-s-novou-investici-vyhlizi-dalsi-trhy/"
+      }
+    ]
+  }
+]
