@@ -26597,3 +26597,3534 @@ warning: in the working copy of 'data/processed/investors_refined.csv', CRLF wil
 ````
 
 </details>
+
+### 🤖 Claude · 2026-10-09 17:42:15
+
+Line endings only (Windows CRLF); the content is identical, so the build reproduces exactly. Exporting the session transcript for ai-log:
+
+<details><summary>🔧 mcp__ccd_session_mgmt__export_transcript</summary>
+
+````text
+{
+  "session_id": "self"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Exported this session's transcript "Plán databázy investorov" to C:\Users\matus\Downloads\session-export-1791567735709.zip (72 MB, 74987995 bytes). The zip holds the conversation transcript, its subagent transcripts and session metadata, not the app's logs; nothing was uploaded.
+````
+
+</details>
+
+<details><summary>🔧 Bash – Convert and redact the session export into ai-log</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 timeout 900 .venv/Scripts/python.exe tools/export_ailog.py \"C:/Users/matus/Downloads/session-export-1791567735709.zip\" 2>&1 | tail -25 && du -sh ai-log/* && ls ai-log/*/subagents | wc -l",
+  "description": "Convert and redact the session export into ai-log",
+  "timeout": 960000
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+nyour.new.email@example.com
+   office@investika.cz
+   office@slovca.sk
+   pat@example.com
+   petr.sima@depoventures.cz
+   pitch@caesar.vc
+   pitchdeck@jicventures.cz
+   prague-cf@ecovis.com
+   praha@arxequity.com
+   r.durcova@abris-capital.com
+   radoslav.tausinger@cvi.eu
+   research@campdenwealth.com
+   research@nvca.org
+   sales@anthropic.com
+   someone@example.org
+   support@anthropic.com
+   support@investown.cz
+   susr_rpo@statistics.sk
+   tomas.skoumal@bakermckenzie.com
+   warszawa@arxequity.com
+   www.akatcr.czinfo@akatcr.cz
+   www.asbgroup.eupstudnicka@asbgroup.eu
+   www.citibank.czsmeservis@citi.com
+   your.new.email@example.com
+ai-log written to C:\Users\matus\Desktop\Interview_Project\Project_a\ai-log\2026-10-08_02f1cc98
+72M	ai-log/2026-10-08_02f1cc98
+4.0K	ai-log/README.md
+78
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+Redaction check passed — your email and any tokens are gone, and the remaining addresses are just public business contacts. I'm now checking if those already appear in the committed log.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Compare business emails in old and new ai-log</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && for e in petr.sima@ r.durcova@ radoslav.tausinger@ tomas.skoumal@; do printf \"%s HEAD:%s  new:%s\\n\" \"$e\" \"$(git grep -c \"$e\" HEAD -- ai-log | wc -l)\" \"$(grep -rl \"$e\" ai-log | wc -l)\"; done; git status --short | head; git diff --stat | tail -2",
+  "description": "Compare business emails in old and new ai-log"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+petr.sima@ HEAD:1  new:1
+r.durcova@ HEAD:2  new:2
+radoslav.tausinger@ HEAD:1  new:1
+tomas.skoumal@ HEAD:1  new:1
+ M ai-log/2026-10-08_02f1cc98/conversation.md
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a001130ee5f166bec.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a15b0ffd04c171d14.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a16856a60fe2725d1.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a1d8a5ca0234cc526.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a233e3cbe3d72fb1f.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a24c228820114dda1.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a2a3b3136f606d44f.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a2fe078cf8bd0158c.jsonl
+ M ai-log/2026-10-08_02f1cc98/raw/subagents/agent-a397163d21bc9a610.jsonl
+ .../subagents/agent-affd2819cb132970a.md           |    6 +-
+ 50 files changed, 9070 insertions(+), 264 deletions(-)
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+Same addresses as the already-published log, so nothing new is exposed—the older subagent files just changed because the ten newly added names are now redacted everywhere. Now checking the ai-log README counts before committing.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Read ai-log README for counts</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && cat ai-log/README.md | head -30; ls ai-log/2026-10-08_02f1cc98/subagents | wc -l",
+  "description": "Read ai-log README for counts"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+# ai-log – export konverzácií s Claude Code
+
+Práca prebiehala v desktopovej aplikácii Claude Code. Namiesto CLI príkazu `/export` sa použil **Export session**
+z aplikácie (ten istý obsah, navyše obsahuje aj prepisy všetkých subagentov). Export sa spracúva skriptom
+[tools/export_ailog.py](../tools/export_ailog.py) pri každom kontrolnom bode – neskorší export tej istej session
+nahradí skorší; staršie verzie zostávajú v histórii gitu.
+
+| Súbor | Obsah |
+|---|---|
+| `<dátum>_<session>/conversation.md` | hlavná konverzácia v čitateľnej podobe: moje pokyny, odpovede Claude, volania nástrojov (zbalené), moje odpovede na otázky |
+| `<dátum>_<session>/subagents/*.md` | každý subagent zvlášť: pokyn, ktorý dostal, jeho postup a výsledok; v nadpise je model (`haiku`) |
+| `<dátum>_<session>/raw/` | pôvodné JSONL prepisy (vrátane spotreby tokenov – zdroj pre odhad nákladov) |
+
+**Čo bolo odstránené:** môj e-mail (skript zlyhá, ak by v exporte zostal) a čokoľvek, čo vyzerá ako API kľúč.
+**Čo nie je priložené:** súbory, ktoré agenti stiahli z webu (PDF správy tretích strán – autorské práva) a interné
+nastavenia aplikácie.
+78
+````
+
+</details>
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\edit_ailog_readme.py",
+  "content": "from pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\ai-log\\README.md\")\ns = p.read_text(encoding=\"utf-8\")\nold1 = \"v nadpise je model (`haiku`) |\"\nnew1 = \"v nadpise je model (`haiku` pri zbere a overovaní, `sonnet` pri kontrole vzorky, spresnení a kontrole faktov) |\"\nold2 = \"**Čo bolo odstránené:** môj e-mail (skript zlyhá, ak by v exporte zostal) a čokoľvek, čo vyzerá ako API kľúč.\"\nnew2 = (\"**Čo bolo odstránené:** môj e-mail (skript zlyhá, ak by v exporte zostal), čokoľvek, čo vyzerá ako API kľúč, \"\n        \"a mená fyzických osôb, ktoré citovali AI kontrolóri (D37; zoznam mien je len lokálne).\")\nfor old, new in ((old1, new1), (old2, new2)):\n    assert s.count(old) == 1, old\n    s = s.replace(old, new)\np.write_text(s, encoding=\"utf-8\")\nprint(\"ok\")\n"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\edit_ailog_readme.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Commit and push the final ai-log export</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_ailog_readme.py\" && git add ai-log && git commit -q -m \"Final ai-log export: refinement, fact-check and presentation work incl. all 78 subagent transcripts (redacted)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -3 && git status -sb | head -1",
+  "description": "Commit and push the final ai-log export",
+  "timeout": 300000
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+2c1c1ad Final ai-log export: refinement, fact-check and presentation work incl. all 78 subagent transcripts (redacted)
+d2df125 One-page summary (docs/SUMMARY.md), README results with refinement before/after and measured costs, work timeline for 9. 10.
+dbb82db Blind fact-check results (169 items) and REFINEMENT.md: capital correct 53 % -> 70 %, deal dates 79 % -> 97.5 %, identity 24/24; cost estimate with measured Sonnet refinement (0.75 USD/record)
+## main...origin/main
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 17:43:59
+
+Items 2, 4 and 5 are finished and pushed to GitHub. Item 1, recording your manual check, still needs your answers.
+
+**Item 2 – refining weak fields with a stronger model.** All 24 included investors were re-checked by Sonnet 5.5 for two things: each fund's status (closed, first close, or just a target) and the real date of each investment. 144 of the 147 new claims passed the same machine checks as the rest of the database, and all 24 investors stay included.
+
+A separate Sonnet agent then checked 169 values from both versions without being told which version each came from:
+
+| | Before | After |
+|---|---|---|
+| Deal: investor + date correct | 54/68 (79 %) | **78/80 (97.5 %)** |
+| Total capital correct | 8/15 (53 %) | **14/20 (70 %)**, now filled for 20 of 24 |
+| Registry identity | 24/24 | 24/24 |
+
+- **Errors that remain:** the capital figures still wrong are now too low (a missing older fund or capital increase), not targets counted as capital. Two dates are still wrong; both repeat a 2025 announcement that a 2026 blog post re-dated.
+- **Cost:** refinement cost $18 ($0.75 per investor) and the fact-check $6. The whole pilot came to about $42 at API prices. For the world-wide estimate, adding this refinement step raises year one from about €97k to €142k.
+- **Limitation:** the refiner and the checker are the same model family, so their errors could be correlated. This is written up in `docs/REFINEMENT.md`, with decisions D38–D39.
+
+**Item 4 – presentation package:**
+- **Slide deck:** 12 slides in Slovak, with speaker notes: https://claude.ai/artifact/W4YoxZMXZ6mo9Vbfhy6hT7
+- **Investor explorer:** every value with its source and quote, plus before/after. Published at https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS and as `docs/explorer.html` in the repo, which works offline.
+- **One-page summary:** `docs/SUMMARY.md`.
+
+Both links are private until you share them from the page's Share menu. The deck is not in the repo; if you want it there, download a PPTX or PDF from the deck and I'll commit it.
+
+**Step 5 – polish:**
+- **Two reproducibility bugs fixed, each with a test:**
+  - the ECB exchange rate for the freeze day changed during that day, so re-runs gave slightly different euro amounts;
+  - a newer follow-on investment round was wrongly treated as a corrected date.
+- **Clean clone of the pushed repo:** all 162 tests pass, the integrity check reports 0 problems, and the reports rebuild with identical content.
+- **README:** results, links and counts updated (39 decisions, 57 entries in the error catalogue).
+- **ai-log:** final export committed, with the ten newly found person names redacted.
+
+**Item 1 – I need your manual-check verdicts.** For each record you checked, reply with one line like `R23: yes/yes/yes/yes, capital ok, 5 min, note`. The four answers are: real investor / active in the last 36 months / VC / HQ in CZ or SK. The 10 spot-check records were:
+- R23 N1, R31 Jet Investment, R27 Mid Europa Partners, R19 Depo Ventures, R15 Uroboros Ventures
+- R05 i&i Biotech, R32 Jet Ventures, R16 CB Investment Management, R08 Venture to Future Fund, R17 Tech Ventures
+
+Add any other records you looked at. With your answers, the precision report will show the human-verified result and how often Sonnet agreed with you.
+
+## 👤 Používateľ · 2026-10-09 19:50:12
+
+I can't find it, the file
+
+<details><summary>🔧 Bash – Confirm the new files exist locally and are pushed</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && ls -la docs/explorer.html docs/SUMMARY.md docs/REFINEMENT.md && git ls-files docs/explorer.html docs/SUMMARY.md docs/REFINEMENT.md && git log origin/main --oneline -1",
+  "description": "Confirm the new files exist locally and are pushed"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+-rw-r--r-- 1 matus 197609  12292 Oct  9 19:39 docs/REFINEMENT.md
+-rw-r--r-- 1 matus 197609   4219 Oct  9 19:40 docs/SUMMARY.md
+-rw-r--r-- 1 matus 197609 155128 Oct  9 19:28 docs/explorer.html
+docs/REFINEMENT.md
+docs/SUMMARY.md
+docs/explorer.html
+2c1c1ad Final ai-log export: refinement, fact-check and presentation work incl. all 78 subagent transcripts (redacted)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:50:21
+
+All three files exist and are pushed. Sending them here so you can open them directly:
+
+<details><summary>🔧 SendUserFile</summary>
+
+````text
+{
+  "files": [
+    "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\docs\\explorer.html",
+    "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\docs\\SUMMARY.md",
+    "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\docs\\REFINEMENT.md"
+  ],
+  "caption": "Investor explorer (opens in the browser, works offline), one-page summary, and the before/after refinement report.",
+  "status": "normal"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+3 files delivered to user.
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:50:29
+
+I've sent you the three new files above. They're all in the `docs` folder of the project:
+
+- **Investor explorer:** [docs/explorer.html](docs/explorer.html). Double-click it in File Explorer and it opens in your browser. On GitHub you'll only see its source code, so open it from your computer instead.
+- **One-page summary:** [docs/SUMMARY.md](docs/SUMMARY.md), also on GitHub: https://github.com/Matush77/Clientelo-task-a/blob/main/docs/SUMMARY.md
+- **Before/after report:** [docs/REFINEMENT.md](docs/REFINEMENT.md), also on GitHub: https://github.com/Matush77/Clientelo-task-a/blob/main/docs/REFINEMENT.md
+
+The full path on your computer is `C:\Users\matus\Desktop\Interview_Project\Project_a\docs\`.
+
+If you meant the slide deck, it isn't a file yet; it only exists as the online deck at https://claude.ai/artifact/W4YoxZMXZ6mo9Vbfhy6hT7. Use the deck's download option to save it as PPTX or PDF, and if you want it in the repo, tell me where you saved it and I'll commit it.
+
+## 👤 Používateľ · 2026-10-09 19:51:04
+
+I meant for Item 1 – I need your manual-check verdicts. For each record you checked, reply with one line like R23: yes/yes/yes/yes, capital ok, 5 min, note
+
+<details><summary>🔧 Bash – Check the spot-check form exists and lists the records</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && ls -la data/review/spotcheck.html data/review/review.html && git log --oneline -1 -- data/review/spotcheck.html && grep -o \"R[0-9][0-9] · [^<]*\" data/review/spotcheck.html | head -12; grep -c \"review_id\" data/review/spotcheck.html",
+  "description": "Check the spot-check form exists and lists the records"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+-rw-r--r-- 1 matus 197609 46619 Oct  9 10:12 data/review/review.html
+-rw-r--r-- 1 matus 197609 15282 Oct  9 10:12 data/review/spotcheck.html
+0729fb8 Pipeline v3 output: 24 included (Nation1 to identity review); same review sample re-rendered with corrected identities
+11
+````
+
+</details>
+
+<details><summary>🔧 Bash – List the records shown in the spot-check form</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nimport re\ns=open('data/review/spotcheck.html',encoding='utf-8').read()\nm=re.search(r'const DATA\\s*=\\s*(\\[.*?\\]);', s, re.S)\nimport json\nd=json.loads(m.group(1)) if m else []\nprint(len(d))\nfor r in d: print(r['review_id'], r['name'], '|', r.get('website'), '|', r.get('legal_name'), r.get('company_id'), '| cap', r.get('total_capital_eur'), '| inv', len(r.get('investments') or []))\n\"",
+  "description": "List the records shown in the spot-check form"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Exit code 1
+Traceback (most recent call last):
+  File "<string>", line 6, in <module>
+    d=json.loads(m.group(1)) if m else []
+      ~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\json\__init__.py", line 352, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0\Lib\json\decoder.py", line 348, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 8658 (char 8657)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Parse and list the spot-check form records</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nimport re, json\ns=open('data/review/spotcheck.html',encoding='utf-8').read()\ni=s.index('const DATA'); j=s.index('[', i)\nd, _ = json.JSONDecoder().raw_decode(s[j:])\nprint(len(d))\nfor r in d: print(r['review_id'], r['name'], '|', r.get('website'), '| IČO', r.get('company_id'), '| cap', r.get('total_capital_eur'), '| inv', len(r.get('investments') or []))\n\"",
+  "description": "Parse and list the spot-check form records"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+10
+R23 N1 | https://n1.rocks | IČO  | cap  | inv 1
+R31 Jet Investment | https://www.jetinvestment.cz/en | IČO 03890333 | cap 700000000 | inv 4
+R27 Mid Europa Partners | https://www.mideuropa.com/ | IČO  | cap  | inv 0
+R19 Depo Ventures | https://depoventures.com | IČO 04753101 | cap  | inv 5
+R15 Uroboros Ventures s.r.o. |  | IČO 24808016 | cap  | inv 0
+R05 i&i Biotech Investments | https://www.inibio.eu | IČO 10885978 | cap  | inv 2
+R32 Jet Ventures |  | IČO  | cap  | inv 1
+R16 CB Investment Management | https://www.cbim.sk | IČO 52524531 | cap 23200000 | inv 1
+R08 Venture to Future Fund | https://vff.sk | IČO 52380483 | cap 55000000 | inv 7
+R17 Tech Ventures s.r.o. |  | IČO 07922345 | cap  | inv 0
+````
+
+</details>
+
+<details><summary>🔧 SendUserFile</summary>
+
+````text
+{
+  "files": [
+    "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\data\\review\\spotcheck.html"
+  ],
+  "caption": "Spot-check form: the 10 records to verify, each with the data and source links to open.",
+  "display": "render",
+  "status": "normal"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1 file delivered to user.
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:51:32
+
+That's the file: the spot-check form I just sent, also at [data/review/spotcheck.html](data/review/spotcheck.html). It shows the 10 records with what the database says about each one and links to the sources. It doesn't show what the pipeline or the AI checkers decided, so your answers stay independent.
+
+**What to answer for each record.** Open the source links and judge:
+1. **Real investor?** Does it put money into companies (shares, convertibles)? A lawyer, crowdfunding platform, lender or real-estate fund is a "no".
+2. **Active?** At least one investment *made* on or after 9 Oct 2023? Use the date of the deal, not the date of an article that just mentions an older one.
+3. **VC?** Venture capital, corporate VC, or a state body investing directly in startups? Private equity buyouts, family offices and angel networks are a "no".
+4. **HQ in CZ or SK?** Does the investment team sit there? A Luxembourg fund run from Prague still counts.
+
+Optional, if you have time: do the sources back the listed investments, and is the total capital right? A fundraising target is not capital.
+
+**Two ways to send it back:**
+- **Fill in the form**, click **Exportovať CSV** at the bottom, and save the file as `C:\Users\matus\Desktop\Interview_Project\Project_a\data\review\spotcheck_results.csv`.
+- **Or reply here**, one line per record, for example:
+  `R31: yes/yes/yes/yes, capital ok, 4 min`
+  `R27: yes/yes/no/no, PE fund based in London, 3 min`
+
+Records you didn't check can simply be left out. Expect about 3–5 minutes per record.
+
+## 👤 Používateľ · 2026-10-09 19:52:33
+
+can you update the form from 10 to 5 and based on our latest progression and updates first?
+
+<details><summary>🔧 Bash – Read the sampling and form-building code</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -n 1,200p src/investordb/sample.py",
+  "description": "Read the sampling and form-building code"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"""Draw the stratified random sample for manual review and build a blind review form.
+
+Strata (docs/PLAN.md, chapter 9): ~30 INCLUDED (all of them if <= 35), 5 real rejects, 5 control-set rejects.
+The reviewer sees claimed values and source URLs only - not the agents' quotes, not the pipeline's verdict/tier.
+The key (review_id -> candidate, verdict) is written to a separate file the reviewer should not open.
+"""
+
+from __future__ import annotations
+
+import csv
+import html
+import json
+import random
+from collections import defaultdict
+from pathlib import Path
+
+from investordb.batches import CALIBRATION_IDS
+from investordb.candidates import OUT as CANDIDATES_CSV
+from investordb.evidence import CLAIMS_CSV
+
+ROOT = Path(__file__).resolve().parents[2]
+REVIEW_DIR = ROOT / "data" / "review"
+DECISIONS_CSV = CLAIMS_CSV.with_name("decisions.csv")
+SEED = 20261012
+N_INCLUDED, CENSUS_UP_TO, N_REAL_REJECTS, N_CONTROLS = 30, 35, 5, 5
+
+PRIMARY = [
+    ("real_investor", "Je to skutočný investor (investuje vlastné/spravované peniaze do firiem)?"),
+    ("active_36m", "Má doloženú investíciu do firmy uskutočnenú v posledných 36 mesiacoch (od 2023-10-09)?"),
+    ("type_vc", "Je to VC investor (VC, korporátny VC alebo štátny VC investujúci priamo)?"),
+    ("hq_cz_sk", "Sídli investičný tím v Česku alebo na Slovensku?"),
+]
+SECONDARY = [
+    ("sources_support", "Podporujú uvedené zdroje uvedené investície (firma + dátum)?"),
+    ("sectors_ok", "Sú uvedené sektory správne?"),
+    ("ticket_ok", "Je uvedená výška tiketu správna?"),
+    ("capital_ok", "Je uvedený celkový kapitál správny?"),
+]
+
+
+def _read(path: Path) -> list[dict]:
+    with path.open(encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def draw(decisions: list[dict], controls: set[str]) -> list[tuple[str, dict]]:
+    rng = random.Random(SEED)
+    pool = [d for d in decisions if d["candidate_id"] not in CALIBRATION_IDS]
+    included = [d for d in pool if d["status"] == "INCLUDED"]
+    real_rejects = [d for d in pool if d["status"] in ("REJECTED", "OOS") and d["candidate_id"] not in controls]
+    control_rejects = [d for d in pool if d["status"] in ("REJECTED", "OOS") and d["candidate_id"] in controls]
+    picked = [("included", d) for d in (included if len(included) <= CENSUS_UP_TO else rng.sample(included, N_INCLUDED))]
+    picked += [("real_reject", d) for d in rng.sample(real_rejects, min(N_REAL_REJECTS, len(real_rejects)))]
+    picked += [("control_reject", d) for d in rng.sample(control_rejects, min(N_CONTROLS, len(control_rejects)))]
+    rng.shuffle(picked)
+    return picked
+
+
+def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:
+    """What the pipeline claims about the record - verified values and source URLs, no quotes, no verdict."""
+    ok = [c for c in claims if c["candidate_id"] == cid and c["auto_check"] == "ok"]
+    investments = []
+    for c in ok:
+        # only investments the pipeline actually counts: no exits, investor named; a date only if it is a deal date
+    
+… [skrátené, 7405 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>🔧 Bash – Read the form template header and spot-check keys</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -n 200,240p src/investordb/sample.py && cut -c1-60 data/review/review_key.csv | grep -E \"^R(05|08|15|19|31|16|23|27|32|17),\" ",
+  "description": "Read the form template header and spot-check keys"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+TEMPLATE = """<!doctype html>
+<html lang="sk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ručná kontrola vzorky</title>
+<style>
+:root{--bg:#fafaf9;--card:#fff;--text:#1c1917;--muted:#57534e;--line:#e7e5e4;--accent:#1d4ed8;--ok:#15803d}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1917;--card:#292524;--text:#f5f5f4;--muted:#a8a29e;--line:#44403c;--accent:#93c5fd;--ok:#4ade80}}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:16px}
+h1{font-size:22px;margin:8px 0}.muted{color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:16px 0}
+.card h2{font-size:18px;margin:0 0 8px}.card.done{border-color:var(--ok)}
+dl{display:grid;grid-template-columns:150px 1fr;gap:4px 12px;margin:8px 0}dt{color:var(--muted)}dd{margin:0;overflow-wrap:anywhere}
+a{color:var(--accent)} ul{margin:4px 0;padding-left:20px}
+fieldset{border:0;border-top:1px solid var(--line);margin:10px 0 0;padding:8px 0 0}
+.q{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;padding:4px 0}.q span{flex:1 1 320px}
+.q label{margin-right:10px;white-space:nowrap}
+input[type=number]{width:70px}textarea{width:100%;min-height:40px;background:var(--bg);color:var(--text);border:1px solid var(--line)}
+.bar{position:sticky;top:0;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+button{background:var(--accent);color:var(--bg);border:0;border-radius:6px;padding:8px 14px;font-weight:600;cursor:pointer}
+</style></head><body><main>
+<h1>Ručná kontrola vzorky – VC investori CZ + SK</h1>
+<p class="muted">__N__ záznamov v náhodnom poradí. Pri každom otvorte zdroje (a podľa potreby si dohľadajte ďalšie) a odpovedzte
+na otázky. Hodnoty sú tvrdenia pipeline – nie sú zaručene správne. Odpovede sa ukladajú v tomto prehliadači;
+na konci kliknite <b>Exportovať CSV</b> a súbor uložte ako <code>data/review/review_results.csv</code>.</p>
+<div class="bar"><button id="export">Exportovať CSV</button><span id="progress" class="muted"></span></div>
+<div id="records"></div>
+</main><script>
+const DATA=__DATA__, Q=__QUESTIONS__, KEY='investordb-review-v2';
+let answers={}; try{answers=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const link=u=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`:'–';
+function radios(rid,name,opts){const cur=(answers[rid]||{})[name];
+ return opts.map(o=>`<label><input type="radio" name="${rid}_${name}" value="${o}" ${cur===o?'checked':''}> ${o}</label>`).join('')}
+function card(r){const inv=r.investments.length?'<ul>'+r.investments.map(i=>`<li>${esc(i.company)} – ${esc(i.date||'bez dátumu')} – ${link(i.url)}</li>`).join('')+'</ul>':'<i>žiadne doložené</i>';
+ const src=r.sources.leng
+… [skrátené, 833 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+I'll trim the form down to 5 records using the latest refined values—4 included investors plus 1 decoy (Uroboros Ventures), without indicating which is which. Two entries reflect records where the AI checkers disagreed, and the rest are random controls.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Edit – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py</summary>
+
+````text
+{
+  "replace_all": false,
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\sample.py",
+  "old_string": "def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:\n    \"\"\"What the pipeline claims about the record - verified values and source URLs, no quotes, no verdict.\"\"\"\n    ok = [c for c in claims if c[\"candidate_id\"] == cid and c[\"auto_check\"] == \"ok\"]\n    investments = []",
+  "new_string": "def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:\n    \"\"\"What the pipeline claims about the record - verified values and source URLs, no quotes, no verdict.\"\"\"\n    return _view([c for c in claims if c[\"candidate_id\"] == cid and c[\"auto_check\"] == \"ok\"], decision)\n\n\ndef _view(ok: list[dict], decision: dict) -> dict:\n    investments = []"
+}
+````
+
+</details>
+
+<details><summary>🔧 Edit – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py</summary>
+
+````text
+{
+  "replace_all": false,
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\sample.py",
+  "old_string": "def render_form(records: list[dict], key: str = \"investordb-review-v2\", filename: str = \"review_results.csv\") -> str:\n    questions = json.dumps({\"primary\": PRIMARY, \"secondary\": SECONDARY}, ensure_ascii=False)\n    data = json.dumps(records, ensure_ascii=False)\n    return (TEMPLATE.replace(\"__DATA__\", data).replace(\"__QUESTIONS__\", questions).replace(\"__N__\", str(len(records)))\n            .replace(\"investordb-review-v2\", key).replace(\"review_results.csv\", filename))",
+  "new_string": "# D40: the author's spot-check, cut to 5 of the 10 records (2 AI disagreements + 3 random controls, 4 included and\n# 1 control-set reject, original shuffled order), showing the REFINED values (D38) of included investors\nSPOTCHECK_REFINED_IDS = [\"R31\", \"R19\", \"R15\", \"R05\", \"R08\"]\n\n\ndef build_spotcheck_refined(ids: list[str] = SPOTCHECK_REFINED_IDS) -> Path:\n    \"\"\"Same questions, same answer format (spotcheck_results.csv); included investors are shown as rebuilt by the\n    refinement stage (refined capital, funds with status, deal dates), rejected ones as frozen in v3.\"\"\"\n    from datetime import date\n\n    from investordb import refine\n\n    result = refine.rebuild_all(date(2026, 10, 9))\n    key = {k[\"review_id\"]: k for k in _read(REVIEW_DIR / \"review_key.csv\")}\n    decisions = {d[\"candidate_id\"]: d for d in _read(DECISIONS_CSV)}\n    claims = _read(CLAIMS_CSV)\n    old_spot = {r[\"review_id\"]: r for r in _read(REVIEW_DIR / \"spotcheck_ids.csv\")}\n    records = []\n    for rid in ids:\n        cid = key[rid][\"candidate_id\"]\n        if cid in result[\"rows\"]:\n            ok = [c for c in result[\"merged\"][cid] if c[\"auto_check\"] == \"ok\"]\n            records.append({\"review_id\": rid, **_view(ok, result[\"rows\"][cid])})\n        else:\n            records.append({\"review_id\": rid, **claimed_view(cid, claims, decisions[cid])})\n    with (REVIEW_DIR / \"spotcheck_ids.csv\").open(\"w\", encoding=\"utf-8\", newline=\"\") as f:\n        w = csv.DictWriter(f, fieldnames=list(next(iter(old_spot.values())).keys()))\n        w.writeheader()\n        w.writerows(old_spot[rid] for rid in ids)\n    (REVIEW_DIR / \"spotcheck_records.json\").write_text(json.dumps(records, ensure_ascii=False, indent=1),\n                                                       encoding=\"utf-8\")\n    path = REVIEW_DIR / \"spotcheck.html\"\n    path.write_text(render_form(records, key=\"investordb-spotcheck-v4\", filename=\"spotcheck_results.csv\",\n                                note=\"Zobrazená je <b>spresnená verzia</b> databázy (kapitál, fondy so stavom zbierky a \"\n                                     \"dátumy obchodov po spresnení, D38), stav k 9. 10. 2026. Pri fondoch je uvedené, \"\n                                     \"či ide o uzavretý fond, prvé uzavretie alebo len cieľ.\"),\n                    encoding=\"utf-8\")\n    return path\n\n\ndef render_form(records: list[dict], key: str = \"investordb-review-v2\", filename: str = \"review_results.csv\",\n                note: str = \"\") -> str:\n    questions = json.dumps({\"primary\": PRIMARY, \"secondary\": SECONDARY}, ensure_ascii=False)\n    data = json.dumps(records, ensure_ascii=False)\n    page = (TEMPLATE.replace(\"__DATA__\", data).replace(\"__QUESTIONS__\", questions).replace(\"__N__\", str(len(records)))\n            .replace(\"investordb-review-v2\", key).replace(\"review_results.csv\", filename))\n    return page.replace('<div class=\"bar\">', f'<p class=\"muted\">{note}</p>\\n<div class=\"bar\">', 1) if note else page"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+The file C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py has been updated successfully.
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+The file C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py has been updated successfully.
+````
+
+</details>
+
+<details><summary>🔧 Bash – Locate the spotcheck CLI command</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && grep -n \"def cmd_spotcheck\" -A6 src/investordb/cli.py && grep -n '\"spotcheck\"' -A2 src/investordb/cli.py",
+  "description": "Locate the spotcheck CLI command"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+159:def cmd_spotcheck(args: argparse.Namespace) -> None:
+160-    """Build the human spot-check form from the Sonnet review and the Haiku verifier (D34)."""
+161-    from investordb.sample import build_spotcheck
+162-
+163-    print(build_spotcheck())
+164-
+165-
+231:    p = sub.add_parser("spotcheck", help="build the human spot-check form (Sonnet vs Haiku disagreements + random)")
+232-    p.set_defaults(func=cmd_spotcheck)
+233-
+````
+
+</details>
+
+<details><summary>🔧 Bash – Build the 5-record refined form and inspect it</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe - <<'EOF'\nfrom pathlib import Path\np = Path(\"src/investordb/cli.py\")\ns = p.read_text(encoding=\"utf-8\")\nold = '''    from investordb.sample import build_spotcheck\n\n    print(build_spotcheck())\n'''\nnew = '''    from investordb.sample import build_spotcheck, build_spotcheck_refined\n\n    print(build_spotcheck_refined() if args.refined else build_spotcheck())\n'''\nassert s.count(old) == 1\ns = s.replace(old, new)\nold2 = '''    p = sub.add_parser(\"spotcheck\", help=\"build the human spot-check form (Sonnet vs Haiku disagreements + random)\")\n    p.set_defaults(func=cmd_spotcheck)\n'''\nnew2 = '''    p = sub.add_parser(\"spotcheck\", help=\"build the human spot-check form (Sonnet vs Haiku disagreements + random)\")\n    p.add_argument(\"--refined\", action=\"store_true\", help=\"the 5-record form with refined values (D40)\")\n    p.set_defaults(func=cmd_spotcheck)\n'''\nassert s.count(old2) == 1\ns = s.replace(old2, new2)\np.write_bytes(s.encode(\"utf-8\"))\nprint(\"ok\")\nEOF\nPYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli spotcheck --refined && cat data/review/spotcheck_ids.csv && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nimport json\nfor r in json.load(open('data/review/spotcheck_records.json',encoding='utf-8')):\n    print(r['review_id'], r['name'], '| cap', r['total_capital_eur'], r['capital_method'], '| funds:', r['funds'][:120], '| inv', [(i['company'], i['date']) for i in r['investments']][:8])\n\" && git status --short && .venv/Scripts/python.exe -m pytest -q 2>&1 | tail -1",
+  "description": "Build the 5-record refined form and inspect it"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+C:\Users\matus\Desktop\Interview_Project\Project_a\data\review\spotcheck.html
+review_id,why_selected,sonnet_overall,haiku_overall
+R31,random_control,include,include
+R19,random_control,include,include
+R15,disagreement,cannot_tell,exclude
+R05,disagreement,include,cannot_tell
+R08,random_control,include,include
+R31 Jet Investment | cap 700000000 aum_stated | funds: Jet Venture 1 (padesát milionů eur, cieľ); Jet Venture 1 (přes třicet milionů eur, prvé uzavretie); Jet Venture 1 (50 mi | inv [('AppNava', '2026-09-17'), ('Phantasma Labs', '2026-09-01'), ('GigaScan', '2026-08-26'), ('DecisionRules', '2026-06-24'), ('Partory', '2024-10-01'), ('AppNava', ''), ('Phantasma Labs', ''), ('GigaScan', '')]
+R19 Depo Ventures | cap 3688071 sum_of_2_closed_funds | funds: DEPO Ventures One (?); DEPO Angels fund I (?); third angel fund (€20 million, cieľ); Depo Angels Fund II (55 milionů kor | inv [('ArcSpace', '2026-09-01'), ('Kardi AI', '2025-04-28'), ('Kardi AI', ''), ('ArcSpace', ''), ('Tatum', ''), ('Bolt', ''), ('WanderWallet', '')]
+R15 Uroboros Ventures s.r.o. | cap   | funds:  | inv []
+R05 i&i Biotech Investments | cap 53000000 sum_of_1_closed_funds | funds: i&i Biotech Fund I SCSp (€53 million, uzavretý); i&i Biotech Fund I SCSp (more than 45 million EUR, prvé uzavretie) | inv [('Captain T Cell', '2024-05-22'), ('Celeris Therapeutics', '')]
+R08 Venture to Future Fund | cap 40400000 sum_of_1_closed_funds | funds: Venture to Future Fund (55 mil. EUR, uzavretý); Venture to Future Fund (40.4 mil. EUR, uzavretý) | inv [('Talentiqa', '2025-10'), ('Sensoneo', '2023-06-08'), ('Product Fruits', '2023-05-10'), ('Nettle AI', ''), ('SEC Technologies', ''), ('Sensoneo', ''), ('Brightpick', ''), ('Twinzo', '')]
+ M data/review/spotcheck.html
+ M data/review/spotcheck_ids.csv
+ M src/investordb/cli.py
+ M src/investordb/sample.py
+?? data/review/spotcheck_records.json
+162 passed in 0.62s
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+The 5-record form is ready with refined values, but I noticed one company appears twice—once with a corrected date and once undated. I'll merge these into a single line before sending.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Read – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\sample.py",
+  "offset": 58,
+  "limit": 30
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+58	
+59	def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:
+60	    """What the pipeline claims about the record - verified values and source URLs, no quotes, no verdict."""
+61	    return _view([c for c in claims if c["candidate_id"] == cid and c["auto_check"] == "ok"], decision)
+62	
+63	
+64	def _view(ok: list[dict], decision: dict) -> dict:
+65	    investments = []
+66	    for c in ok:
+67	        # only investments the pipeline actually counts: no exits, investor named; a date only if it is a deal date
+68	        if c["field"] == "investments" and c.get("deal_context") != "exit" and c.get("attributed") != "0":
+69	            v = json.loads(c["value"]) or {}
+70	            date = c["event_date"][:{"year": 4, "month": 7}.get(c.get("event_date_precision"), 10)] \
+71	                if c.get("deal_context") == "deal" and c["event_date"] else ""
+72	            investments.append({"company": v.get("company"), "date": date, "url": c["source_url"]})
+73	    sources = sorted({c["source_url"] for c in ok})
+74	    return {
+75	        "name": decision["name"], "website": decision["website"], "legal_name": decision["legal_name"],
+76	        "company_id": decision["company_id"], "registry_url": decision["registry_url"],
+77	        "hq_country": decision["hq_country"], "types": decision["investor_types"], "sectors": decision["sectors"],
+78	        "stages": decision["stages"],
+79	        "ticket": " – ".join(x for x in (decision["ticket_min"], decision["ticket_max"]) if x),
+80	        "total_capital_eur": decision["total_capital_eur"], "capital_method": decision["capital_method"],
+81	        "capital_note": decision.get("capital_note", ""), "funds_target": decision.get("funds_target", ""),
+82	        "funds": decision["funds"], "investments": sorted(investments, key=lambda i: i["date"] or "", reverse=True),
+83	        "sources": sources,
+84	    }
+85	
+86	
+87	def build(out_dir: Path = REVIEW_DIR) -> Path:
+````
+
+</details>
+
+<details><summary>🔧 Edit – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py</summary>
+
+````text
+{
+  "replace_all": false,
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\sample.py",
+  "old_string": "def _view(ok: list[dict], decision: dict) -> dict:\n    investments = []\n    for c in ok:\n        # only investments the pipeline actually counts: no exits, investor named; a date only if it is a deal date\n        if c[\"field\"] == \"investments\" and c.get(\"deal_context\") != \"exit\" and c.get(\"attributed\") != \"0\":\n            v = json.loads(c[\"value\"]) or {}\n            date = c[\"event_date\"][:{\"year\": 4, \"month\": 7}.get(c.get(\"event_date_precision\"), 10)] \\\n                if c.get(\"deal_context\") == \"deal\" and c[\"event_date\"] else \"\"\n            investments.append({\"company\": v.get(\"company\"), \"date\": date, \"url\": c[\"source_url\"]})",
+  "new_string": "def _view(ok: list[dict], decision: dict, one_per_company: bool = False) -> dict:\n    investments = []\n    for c in ok:\n        # only investments the pipeline actually counts: no exits, investor named; a date only if it is a deal date\n        if c[\"field\"] == \"investments\" and c.get(\"deal_context\") != \"exit\" and c.get(\"attributed\") != \"0\":\n            v = json.loads(c[\"value\"]) or {}\n            date = c[\"event_date\"][:{\"year\": 4, \"month\": 7}.get(c.get(\"event_date_precision\"), 10)] \\\n                if c.get(\"deal_context\") == \"deal\" and c[\"event_date\"] else \"\"\n            investments.append({\"company\": v.get(\"company\"), \"date\": date, \"url\": c[\"source_url\"]})\n    if one_per_company:  # the date the rules count (the latest deal date), else one undated mention\n        best: dict[str, dict] = {}\n        for i in investments:\n            k = str(i[\"company\"]).strip().lower()\n            if k not in best or (i[\"date\"] or \"\") > (best[k][\"date\"] or \"\"):\n                best[k] = i\n        investments = list(best.values())"
+}
+````
+
+</details>
+
+<details><summary>🔧 Bash – Use one line per company in the refined form and rebuild</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -i 's/records.append({\"review_id\": rid, \\*\\*_view(ok, result\\[\"rows\"\\]\\[cid\\])})/records.append({\"review_id\": rid, **_view(ok, result[\"rows\"][cid], one_per_company=True)})/' src/investordb/sample.py && grep -c \"one_per_company=True\" src/investordb/sample.py && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli spotcheck --refined && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nimport json\nfor r in json.load(open('data/review/spotcheck_records.json',encoding='utf-8')):\n    print(r['review_id'], r['name'], '| inv', [(i['company'], i['date']) for i in r['investments']])\n\" && .venv/Scripts/python.exe -m pytest -q 2>&1 | tail -1",
+  "description": "Use one line per company in the refined form and rebuild"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+The file C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\sample.py has been updated successfully.
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1
+C:\Users\matus\Desktop\Interview_Project\Project_a\data\review\spotcheck.html
+R31 Jet Investment | inv [('AppNava', '2026-09-17'), ('Phantasma Labs', '2026-09-01'), ('GigaScan', '2026-08-26'), ('DecisionRules', '2026-06-24'), ('Partory', '2024-10-01')]
+R19 Depo Ventures | inv [('ArcSpace', '2026-09-01'), ('Kardi AI', '2025-04-28'), ('Tatum', ''), ('Bolt', ''), ('WanderWallet', '')]
+R15 Uroboros Ventures s.r.o. | inv []
+R05 i&i Biotech Investments | inv [('Captain T Cell', '2024-05-22'), ('Celeris Therapeutics', '')]
+R08 Venture to Future Fund | inv [('Talentiqa', '2025-10'), ('Sensoneo', '2023-06-08'), ('Product Fruits', '2023-05-10'), ('Nettle AI', ''), ('SEC Technologies', ''), ('Brightpick', ''), ('Twinzo', '')]
+162 passed in 0.55s
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:54:13
+
+Clean: one line per company. Quick render check of the form:
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/data/review/spotcheck.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__get_page_text</summary>
+
+````text
+{
+  "max_chars": 2500
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/data/review/spotcheck.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-2
+- Available tabs:
+  • tabId tab-2: "" ("(no page)")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Title: Ručná kontrola vzorky
+URL: data:
+Source element: <main>
+---
+Ručná kontrola vzorky – VC investori CZ + SK
+
+5 záznamov v náhodnom poradí. Pri každom otvorte zdroje (a podľa potreby si dohľadajte ďalšie) a odpovedzte na otázky. Hodnoty sú tvrdenia pipeline – nie sú zaručene správne. Odpovede sa ukladajú v tomto prehliadači; na konci kliknite Exportovať CSV a súbor uložte ako data/review/spotcheck_results.csv.
+
+Zobrazená je spresnená verzia databázy (kapitál, fondy so stavom zbierky a dátumy obchodov po spresnení, D38), stav k 9. 10. 2026. Pri fondoch je uvedené, či ide o uzavretý fond, prvé uzavretie alebo len cieľ.
+
+Exportovať CSV
+Hotovo 0 / 5
+R31 · Jet Investment
+Web
+https://www.jetinvestment.cz/en
+Právnická osoba
+Jet Investment, a.s. (IČO 03890333) https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03890333
+Sídlo
+CZ
+Typ
+pe,real_estate,vc
+Sektory
+ai_data
+Štádiá
+–
+Tiket
+–
+Celkový kapitál
+700 000 000 € (aum_stated)
+Plánované fondy
+–
+Fondy
+Jet Venture 1 (padesát milionů eur, cieľ); Jet Venture 1 (přes třicet milionů eur, prvé uzavretie); Jet Venture 1 (50 milionů eur, cieľ)
+Investície
+AppNava – 2026-09-17 – https://www.jetinvestment.cz/en/news
+Phantasma Labs – 2026-09-01 – https://www.jetinvestment.cz/en/news
+GigaScan – 2026-08-26 – https://www.jetinvestment.cz/en/news
+DecisionRules – 2026-06-24 – https://www.jetinvestment.cz/en/news
+Partory – 2024-10-01 – https://en.ain.ua/2024/10/01/czech-startup-partory-raises-a-eur1m-investment-round-from-jet-investments-new-fund-to-improve-its-application-and-reach-global-markets
+Všetky zdroje
+https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/
+https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/
+https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/
+https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/
+https://en.ain.ua/2024/10/01/czech-startup-partory-raises-a-eur1m-investment-round-from-jet-investments-new-fund-to-improve-its-application-and-reach-global-markets
+https://www.jetinvestment.cz
+https://www.jetinvestment.cz/en
+https://www.jetinvestment.cz/en/news
+Hlavné otázky
+Je to skutočný investor (investuje vlastné/spravované peniaze do firiem)?
+ áno nie neviem
+Má doloženú investíciu do firmy uskutočnenú v posledných 36 mesiacoch (od 2023-10-09)?
+ áno nie neviem
+Je to VC investor (VC, korporátny VC alebo štátny VC investujúci priamo)?
+
+
+[truncated to 2500 chars]
+
+
+Tab Context:
+- Executed on tabId: tab-3
+- Available tabs:
+  • tabId tab-3: "Ručná kontrola vzorky" ("data:")
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:54:18
+
+The form renders correctly: 5 records, refined values, and a note at the top saying which version is shown. Recording the change as decision D40, then committing:
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\edit_d40.py",
+  "content": "from pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\docs\\DECISIONS.md\")\nlines = p.read_text(encoding=\"utf-8\").split(\"\\n\")\nj = next(k for k, l in enumerate(lines) if l.startswith(\"| D39 |\"))\nlines.insert(j + 1,\n    \"| D40 | 9. 10. (večer) | **Ručná kontrola autora zúžená na 5 záznamov a na spresnenú verziu.** Z 10 vybraných \"\n    \"ostali R31, R19, R15, R05, R08 – 2 sporné medzi AI kontrolórmi (R05, R15) a 3 náhodné kontrolné, 4 zaradené a 1 \"\n    \"návnada; poradie a otázky sa nemenia. Zaradení investori sa zobrazujú tak, ako ich prestavalo spresnenie (D38): \"\n    \"kapitál, fondy so stavom zbierky, dátumy obchodov – jedna firma na riadok s dátumom, ktorý pravidlá počítajú. \"\n    \"Formulár: `python -m investordb.cli spotcheck --refined`. | Rozhodnutie autora (čas). Hlavné otázky (skutočný \"\n    \"investor, aktivita, typ, sídlo) spresnenie nemení, takže odpovede platia pre obe verzie; otázky na polia \"\n    \"(kapitál, zdroje) merajú spresnenú verziu, ktorá je aktuálna. Zostali všetky typy výberu, aby šla zmerať zhoda \"\n    \"človeka s AI na sporných aj náhodných záznamoch. |\")\np.write_text(\"\\n\".join(lines), encoding=\"utf-8\")\nprint(\"ok\")\n"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\edit_d40.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Record D40, commit and push the new form</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_d40.py\" && sed -i 's/Všetky (39) s dôvodmi/Všetky (40) s dôvodmi/' README.md && sed -i 's/\\r$//' src/investordb/sample.py src/investordb/cli.py && git add docs/DECISIONS.md README.md src/investordb/sample.py src/investordb/cli.py data/review/spotcheck.html data/review/spotcheck_ids.csv data/review/spotcheck_records.json && git status --short && git commit -q -m \"Spot-check form cut to 5 records showing the refined values (D40): spotcheck --refined\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -1",
+  "description": "Record D40, commit and push the new form"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+M  README.md
+M  data/review/spotcheck.html
+M  data/review/spotcheck_ids.csv
+A  data/review/spotcheck_records.json
+M  docs/DECISIONS.md
+M  src/investordb/cli.py
+M  src/investordb/sample.py
+acc6e8b Spot-check form cut to 5 records showing the refined values (D40): spotcheck --refined
+````
+
+</details>
+
+<details><summary>🔧 SendUserFile</summary>
+
+````text
+{
+  "files": [
+    "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\data\\review\\spotcheck.html"
+  ],
+  "caption": "Updated spot-check form: 5 records, showing the refined values.",
+  "display": "render",
+  "status": "normal"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1 file delivered to user.
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:54:42
+
+The form now has 5 records instead of 10 and shows the latest refined values. I've sent it above; it's also at [data/review/spotcheck.html](data/review/spotcheck.html).
+
+| # | Investor | Why it's in |
+|---|---|---|
+| R31 | Jet Investment | random control |
+| R19 | Depo Ventures | random control |
+| R15 | Uroboros Ventures s.r.o. | the two AI checkers disagreed |
+| R05 | i&i Biotech Investments | the two AI checkers disagreed |
+| R08 | Venture to Future Fund | random control |
+
+The "why it's in" column is only for you; the form doesn't show it, so your answers stay independent. The set still mixes included investors with one rejected decoy, so it measures both whether the right investors are in and whether the decoy was rightly left out.
+
+- **What's new in the form:**
+  - Capital, funds and deal dates are the post-refinement values.
+  - Each fund is labelled closed / first close / target.
+  - Each company appears once, with the date the rules count.
+  - A note at the top says which version you're looking at.
+- **Old answers:** answers saved for the old 10-record form won't carry over, so it starts at 0 / 5.
+- **Recorded:** I logged this as decision D40 and pushed it.
+
+When you're done, click **Exportovať CSV** and save the file as `data\review\spotcheck_results.csv` in the project folder. Or reply here with one line per record, for example `R31: yes/yes/yes/yes, capital ok, 4 min`.
+
+## 👤 Používateľ · 2026-10-09 19:56:35
+
+In the meantime, make visuals for Databáza VC investorov CZ/SK artifact more readable with better contrasts and UI readability.
+
+### 🤖 Claude · 2026-10-09 19:56:47
+
+I'll look at the current explorer first, then rework its styles in the generator so the repo file and the artifact stay identical.
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "width": 1280,
+  "height": 800
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-4
+- Available tabs:
+  • tabId tab-4: "News | Jet Investment" ("https://www.jetinvestment.cz")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 1280x800 on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-5
+- Available tabs:
+  • tabId tab-5: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1280x800 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791575809679-4kvhnq.jpg]
+Screenshot size: 800x500
+
+
+Tab Context:
+- Executed on tabId: tab-5
+- Available tabs:
+  • tabId tab-5: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1280x800 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+The page functions, but readability suffers from small muted/monospace text, understated quotes, tiny tier badges, and exposed internal codes like `sum_of_5_closed_funds`. I'll fix these by reworking the styles and relabeling those fields in the generator.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Read – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\explorer.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\explorer.py",
+  "offset": 118,
+  "limit": 120
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+118	/* Layout: a ledger of investors on the left, the evidence sheet of the selected one on the right; one column on phones */
+119	:root {
+120	  --paper: #f3f5f8; --sheet: #ffffff; --ink: #16202c; --ink-2: #4b5766; --rule: #d8dee6;
+121	  --accent: #1f4fb8; --accent-soft: #e4ebfb; --ok: #1d7549; --ok-soft: #e0f1e7; --warn: #8f5400; --warn-soft: #fbeed6;
+122	  --bad: #a3322b; --bad-soft: #f8e3e1; --quote: #f7f8fa;
+123	  --display: "Public Sans", "Segoe UI", system-ui, sans-serif; --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+124	  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+125	}
+126	@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+127	  --paper: #0e1319; --sheet: #151c24; --ink: #e4e9ef; --ink-2: #9fabb9; --rule: #2a3542;
+128	  --accent: #91afff; --accent-soft: #1c2944; --ok: #74d3a2; --ok-soft: #15301f; --warn: #f0b661; --warn-soft: #382a12;
+129	  --bad: #f2948a; --bad-soft: #3a1c19; --quote: #111820; color-scheme: dark } }
+130	:root[data-theme="dark"] {
+131	  --paper: #0e1319; --sheet: #151c24; --ink: #e4e9ef; --ink-2: #9fabb9; --rule: #2a3542;
+132	  --accent: #91afff; --accent-soft: #1c2944; --ok: #74d3a2; --ok-soft: #15301f; --warn: #f0b661; --warn-soft: #382a12;
+133	  --bad: #f2948a; --bad-soft: #3a1c19; --quote: #111820; color-scheme: dark }
+134	* { box-sizing: border-box }
+135	body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 var(--body); }
+136	a { color: var(--accent); text-underline-offset: 2px }
+137	a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+138	.wrap { max-width: 1240px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 40px }
+139	header.top { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline; justify-content: space-between; padding-bottom: 14px; border-bottom: 1px solid var(--rule) }
+140	h1 { font: 800 clamp(22px, 3vw, 30px)/1.15 var(--display); letter-spacing: -0.01em; margin: 0; text-wrap: balance }
+141	.lede { color: var(--ink-2); margin: 4px 0 0; max-width: 70ch }
+142	.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; font: 500 13px/1.4 var(--mono); color: var(--ink-2) }
+143	.stats b { color: var(--ink); font-weight: 500 }
+144	.tools { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-block: 14px }
+145	.tools input[type=search] { flex: 1 1 220px; min-width: 0; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--sheet); color: var(--ink); font: inherit }
+146	.tools select { padding: 7px 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--sheet); color: var(--ink); font: inherit }
+147	.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 6px; overflow: hidden }
+148	.seg button { border: 0; background: var(--sheet); color: var(--ink-2); padding: 7px 11px; font: 500 13px var(--body); cursor: pointer }
+149	.seg button 
+… [skrátené, 7827 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>🔧 Read – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\explorer.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\explorer.py",
+  "offset": 237,
+  "limit": 90
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+237	document.getElementById("sector").innerHTML += sectors.map(s => `<option value="${esc(s)}">${esc(SECTOR[s]||s)}</option>`).join("");
+238	document.getElementById("sort").value = state.sort;
+239	const m = DATA.meta;
+240	document.getElementById("stats").innerHTML = [
+241	  `<span><b>${invs.filter(i => i.status === "INCLUDED").length}</b> zaradených</span>`,
+242	  `<span>stav k <b>${esc(m.as_of)}</b></span>`,
+243	  m.precision ? `<span>presnosť <b>${esc(m.precision)}</b></span>` : "",
+244	  `<span>${m.refined ? "<b>spresnené</b> (Sonnet 5.5)" : "zmrazená verzia"}</span>`].join("");
+245	document.getElementById("foot").innerHTML = esc(m.footer || "");
+246	
+247	function matches(i) {
+248	  const q = state.q.trim().toLowerCase();
+249	  if (state.country && i.hq !== state.country) return false;
+250	  if (state.sector && !i.sectors.includes(state.sector)) return false;
+251	  if (!q) return true;
+252	  const hay = [i.name, i.legal_name, i.company_id, ...i.sectors.map(s => SECTOR[s] || s), ...i.deals.map(d => d.company)].join(" ").toLowerCase();
+253	  return hay.includes(q);
+254	}
+255	function sorted(list) {
+256	  const by = {name: (a, b) => a.name.localeCompare(b.name, "sk"), last: (a, b) => (b.last_date||"").localeCompare(a.last_date||""),
+257	    capital: (a, b) => (b.capital ?? -1) - (a.capital ?? -1), n36: (a, b) => b.n_36m - a.n_36m};
+258	  return [...list].sort(by[state.sort]);
+259	}
+260	function changed(i) { return i.notes.length > 0 || i.status !== "INCLUDED"; }
+261	function renderList() {
+262	  const list = sorted(invs.filter(matches));
+263	  if (state.sel && !list.some(i => i.id === state.sel)) state.sel = list[0]?.id || null;
+264	  if (!state.sel && list.length) state.sel = list[0].id;
+265	  document.getElementById("list").innerHTML = list.length ? list.map(i => `
+266	    <button type="button" class="row" data-id="${esc(i.id)}" aria-current="${i.id === state.sel}">
+267	      <span class="nm">${esc(i.name)}</span>
+268	      <span class="stamp ${i.status === "INCLUDED" ? esc(i.tier) : "R"}" title="${i.status === "INCLUDED" ? "úroveň dôkazov " + esc(i.tier) : "na kontrolu"}">${i.status === "INCLUDED" ? esc(i.tier) : "?"}</span>
+269	      <span class="sub"><span>${esc(i.hq)}</span><span>${eur(i.capital)}</span><span>posledný obchod ${esc(i.last_date || "–")}</span>${changed(i) && DATA.meta.refined ? '<span class="chg">spresnené</span>' : ""}</span>
+270	    </button>`).join("") : `<p class="empty" style="padding:14px">Žiadny investor nevyhovuje filtru.</p>`;
+271	  renderSheet();
+272	}
+273	function quoteBlock(s) {
+274	  return `<div><blockquote class="${s.counted ? "counted" : ""}">${esc(s.quote)}</blockquote>
+275	    <div class="meta"><span>${link(s.url, s.domain)}</span>${s.published ? `<span>publikované ${esc(s.published)}</span>` : ""}<span>${esc(s.tier)}</span>${s.context ? `<span>${s.context === "deal" ? "správa o obchode" : "zmienka"}</span>` : ""}${s.refined ? "<span>spresnenie</span>" : ""}</div></div>`;
+276	}
+277	function renderSheet() {
+2
+… [skrátené, 5628 znakov – plné znenie v raw/]
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:57:21
+
+I'm replacing the stylesheet (higher-contrast tokens, larger type, clearer quotes and badges) and making the labels readable.
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\explorer_css.py",
+  "content": "from pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\explorer.py\")\ns = p.read_text(encoding=\"utf-8\")\n\nCSS = r\"\"\"/* Layout: a ledger of investors on the left, the evidence sheet of the selected one on the right; one column on phones.\n   Contrast: body text >= 12:1, secondary text >= 7:1, tertiary >= 4.8:1 on both the page and the cards, in both themes. */\n:root {\n  --paper: #e9edf2; --sheet: #ffffff; --raised: #f6f8fb; --ink: #0f1822; --ink-2: #364352; --ink-3: #566273;\n  --rule: #c9d2dd; --rule-strong: #9fadbd;\n  --accent: #1a44a3; --accent-soft: #dfe7f9; --on-accent: #ffffff;\n  --ok: #145c38; --ok-soft: #d7ecdf; --warn: #7d4300; --warn-soft: #f8e6c6;\n  --quote: #f1f4f8; --quote-rule: #a9b6c6;\n  --display: \"Public Sans\", \"Segoe UI\", system-ui, sans-serif; --body: \"Public Sans\", \"Segoe UI\", system-ui, sans-serif;\n  --mono: \"IBM Plex Mono\", ui-monospace, \"Cascadia Mono\", Consolas, monospace;\n}\n@media (prefers-color-scheme: dark) { :root:not([data-theme=\"light\"]) {\n  --paper: #0a0f15; --sheet: #141b24; --raised: #1a2330; --ink: #f1f4f8; --ink-2: #c6d0dc; --ink-3: #9eabba;\n  --rule: #2e3a49; --rule-strong: #4a5a6d;\n  --accent: #a6bfff; --accent-soft: #1f2d4a; --on-accent: #0a0f15;\n  --ok: #86e0b1; --ok-soft: #14301f; --warn: #f5c477; --warn-soft: #3a2a10;\n  --quote: #0f151d; --quote-rule: #4a5a6d; color-scheme: dark } }\n:root[data-theme=\"dark\"] {\n  --paper: #0a0f15; --sheet: #141b24; --raised: #1a2330; --ink: #f1f4f8; --ink-2: #c6d0dc; --ink-3: #9eabba;\n  --rule: #2e3a49; --rule-strong: #4a5a6d;\n  --accent: #a6bfff; --accent-soft: #1f2d4a; --on-accent: #0a0f15;\n  --ok: #86e0b1; --ok-soft: #14301f; --warn: #f5c477; --warn-soft: #3a2a10;\n  --quote: #0f151d; --quote-rule: #4a5a6d; color-scheme: dark }\n* { box-sizing: border-box }\nbody { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.55 var(--body); -webkit-font-smoothing: antialiased }\na { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px }\na:hover { text-decoration-thickness: 2px }\na:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px }\n.wrap { max-width: 1280px; margin: 0 auto; padding-inline: 16px; padding-block: 24px 48px }\nheader.top { display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: flex-end; justify-content: space-between; padding-bottom: 18px; border-bottom: 2px solid var(--rule) }\nh1 { font: 800 clamp(24px, 3.2vw, 34px)/1.15 var(--display); letter-spacing: -0.015em; margin: 0; text-wrap: balance }\n.lede { color: var(--ink-2); margin: 8px 0 0; max-width: 68ch; font-size: 16.5px }\n.stats { display: flex; flex-wrap: wrap; gap: 8px }\n.stat { background: var(--sheet); border: 1px solid var(--rule); border-radius: 8px; padding: 6px 12px; font-size: 14px; color: var(--ink-2); line-height: 1.3 }\n.stat b { display: block; color: var(--ink); font: 600 17px/1.25 var(--body); font-variant-numeric: tabular-nums }\n.tools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding-block: 16px }\n.tools input[type=search] { flex: 1 1 260px; min-width: 0; height: 44px; padding: 0 14px; border: 1.5px solid var(--rule-strong); border-radius: 8px; background: var(--sheet); color: var(--ink); font: 16px var(--body) }\n.tools input[type=search]::placeholder { color: var(--ink-3) }\n.tools select { height: 44px; padding: 0 10px; border: 1.5px solid var(--rule-strong); border-radius: 8px; background: var(--sheet); color: var(--ink); font: 15px var(--body) }\n.seg { display: inline-flex; border: 1.5px solid var(--rule-strong); border-radius: 8px; overflow: hidden; height: 44px }\n.se
+… [skrátené, 6907 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\explorer_css.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Replace the explorer stylesheet</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_css.py\" && sed -i 's/\\r$//' src/investordb/explorer.py && grep -n \"rule-strong\" src/investordb/explorer.py | head -2",
+  "description": "Replace the explorer stylesheet"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+122:  --rule: #c9d2dd; --rule-strong: #9fadbd;
+131:  --rule: #2e3a49; --rule-strong: #4a5a6d;
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:58:08
+
+Now updating the markup and scripts to use the new styles, with readable labels instead of internal codes:
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\explorer_js.py",
+  "content": "from pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\explorer.py\")\ns = p.read_text(encoding=\"utf-8\")\n\n\ndef rep(old, new):\n    global s\n    assert s.count(old) == 1, (old[:80], s.count(old))\n    s = s.replace(old, new)\n\n\nrep('''<div class=\"grid\">\n  <nav class=\"ledger\" id=\"list\" aria-label=\"Investori\"></nav>''',\n    '''<p class=\"count\" id=\"count\" aria-live=\"polite\"></p>\n<div class=\"grid\">\n  <nav class=\"ledger\" id=\"list\" aria-label=\"Investori\"></nav>''')\n\nrep('''const day = d => d ? d : \"bez dátumu\";''',\n    '''const TIER_SRC = {T1: \"register / regulátor\", T2: \"web investora\", T3: \"tlač\"};\nconst method = m => !m ? \"\" : m === \"aum_stated\" ? \"uvedené AUM\" :\n  (k => k ? `súčet ${k[1]} ${k[1] === \"1\" ? \"fondu\" : \"fondov\"}` : m)(m.match(/sum_of_(\\\\d+)_closed_funds/));\nconst arrow = t => esc(t).replace(/ -&gt; /g, \" → \");''')\n\nrep('''document.getElementById(\"stats\").innerHTML = [\n  `<span><b>${invs.filter(i => i.status === \"INCLUDED\").length}</b> zaradených</span>`,\n  `<span>stav k <b>${esc(m.as_of)}</b></span>`,\n  m.precision ? `<span>presnosť <b>${esc(m.precision)}</b></span>` : \"\",\n  `<span>${m.refined ? \"<b>spresnené</b> (Sonnet 5.5)\" : \"zmrazená verzia\"}</span>`].join(\"\");''',\n    '''document.getElementById(\"stats\").innerHTML = [\n  `<span class=\"stat\"><b>${invs.filter(i => i.status === \"INCLUDED\").length}</b>zaradených investorov</span>`,\n  m.precision ? `<span class=\"stat\"><b>${esc(m.precision)}</b>presnosť zaradenia</span>` : \"\",\n  `<span class=\"stat\"><b>${esc(m.as_of)}</b>${m.refined ? \"stav po spresnení\" : \"zmrazená verzia\"}</span>`].join(\"\");''')\n\nrep('''  document.getElementById(\"list\").innerHTML = list.length ? list.map(i => `\n    <button type=\"button\" class=\"row\" data-id=\"${esc(i.id)}\" aria-current=\"${i.id === state.sel}\">\n      <span class=\"nm\">${esc(i.name)}</span>\n      <span class=\"stamp ${i.status === \"INCLUDED\" ? esc(i.tier) : \"R\"}\" title=\"${i.status === \"INCLUDED\" ? \"úroveň dôkazov \" + esc(i.tier) : \"na kontrolu\"}\">${i.status === \"INCLUDED\" ? esc(i.tier) : \"?\"}</span>\n      <span class=\"sub\"><span>${esc(i.hq)}</span><span>${eur(i.capital)}</span><span>posledný obchod ${esc(i.last_date || \"–\")}</span>${changed(i) && DATA.meta.refined ? '<span class=\"chg\">spresnené</span>' : \"\"}</span>\n    </button>`).join(\"\") : `<p class=\"empty\" style=\"padding:14px\">Žiadny investor nevyhovuje filtru.</p>`;''',\n    '''  document.getElementById(\"count\").textContent = `Zobrazených ${list.length} z ${invs.length} investorov`;\n  document.getElementById(\"list\").innerHTML = list.length ? list.map(i => `\n    <button type=\"button\" class=\"row\" data-id=\"${esc(i.id)}\" aria-current=\"${i.id === state.sel}\">\n      <span class=\"nm\">${esc(i.name)}</span>\n      <span class=\"tier ${i.status === \"INCLUDED\" ? esc(i.tier) : \"R\"}\" title=\"${i.status === \"INCLUDED\" ? \"Úroveň dôkazov \" + esc(i.tier) + (i.tier === \"A\" ? \": aspoň 2 datované obchody z 2 nezávislých zdrojov\" : \": aspoň 1 datovaný obchod za 36 mesiacov\") : \"Na ručnú kontrolu\"}\">${i.status === \"INCLUDED\" ? \"úroveň \" + esc(i.tier) : \"na kontrolu\"}</span>\n      <span class=\"sub\"><span><b>${esc(i.hq)}</b></span><span>kapitál <b>${eur(i.capital)}</b></span><span>posledný obchod <b>${esc(i.last_date || \"–\")}</b></span>${changed(i) && DATA.meta.refined ? '<span class=\"pill\">spresnené</span>' : \"\"}</span>\n    </button>`).join(\"\") : `<p class=\"empty\" style=\"padding:16px\">Žiadny investor nevyhovuje filtru.</p>`;''')\n\nrep('''  return `<div><blockquote class=\"${s.counted ? \"counted\" : \"\"}\">${esc(s.quote)}</blockquote>\n    <div c
+… [skrátené, 5492 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\explorer_js.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Apply markup and script updates to the explorer</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_js.py\" && sed -i 's/\\r$//' src/investordb/explorer.py && grep -n \"capital_note\" src/investordb/explorer.py | head",
+  "description": "Apply markup and script updates to the explorer"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+71:        "capital_note": row["capital_note"], "targets": row["funds_target"],
+339:    ${i.capital_note ? `<p class="meta">${esc(i.capital_note)}</p>` : ""}
+````
+
+</details>
+
+<details><summary>🔧 Bash – Check leftovers and regenerate the explorer</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && grep -n \"day(\\|stamp\\|class=\\\"chg\\\"\\|\\.chg\" src/investordb/explorer.py | head; PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli explorer --precision \"23/23\" --footer \"Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok, ktoré program overil na stránke zdroja; stav k 9. 10. 2026.\" --artifact \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_artifact.html\"",
+  "description": "Check leftovers and regenerate the explorer"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+215:.cmp td.chg { background: var(--warn-soft); color: var(--ink); font-weight: 600 }
+216:.cmp td.chg small { color: var(--ink-2) }
+335:      ${rows.map(r => `<tr><th scope="row">${r[0]}</th><td>${r[1]}</td><td${r[3] ? ' class="chg"' : ""}>${r[2]}</td></tr>`).join("")}</tbody></table></div>
+24 investors -> docs/explorer.html
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "width": 1280,
+  "height": 800
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-3
+- Available tabs:
+  • tabId tab-3: "Ručná kontrola vzorky" ("data:")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 1280x800 on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1280x800 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791575934031-9jp3a8.jpg]
+Screenshot size: 800x500
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1280x800 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:58:56
+
+Much clearer. Checking the evidence part of the panel (quotes, funds) and dark mode:
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "document.querySelector('[data-id=\"C197\"]').click(); const sh=document.getElementById('sheet'); const h=[...sh.querySelectorAll('h3')][1]; sh.scrollTop = h.offsetTop - 20; document.querySelector('details')?.setAttribute('open',''); 'ok'"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"ok"
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1280x800 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791575939225-78ypmo.jpg]
+Screenshot size: 800x500
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1280x800 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+Since dark mode can't render for local files in the preview pane, I'll verify contrast ratios for both themes numerically instead.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Compute WCAG contrast ratios for both themes</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe -c \"\ndef L(h):\n    h=h.lstrip('#'); r,g,b=[int(h[i:i+2],16)/255 for i in (0,2,4)]\n    f=lambda c: c/12.92 if c<=0.03928 else ((c+0.055)/1.055)**2.4\n    return 0.2126*f(r)+0.7152*f(g)+0.0722*f(b)\ndef cr(a,b):\n    la,lb=sorted([L(a),L(b)],reverse=True); return (la+0.05)/(lb+0.05)\nthemes={'light':dict(paper='#e9edf2',sheet='#ffffff',raised='#f6f8fb',ink='#0f1822',ink2='#364352',ink3='#566273',accent='#1a44a3',accsoft='#dfe7f9',onacc='#ffffff',ok='#145c38',oksoft='#d7ecdf',warn='#7d4300',warnsoft='#f8e6c6',quote='#f1f4f8'),\n 'dark':dict(paper='#0a0f15',sheet='#141b24',raised='#1a2330',ink='#f1f4f8',ink2='#c6d0dc',ink3='#9eabba',accent='#a6bfff',accsoft='#1f2d4a',onacc='#0a0f15',ok='#86e0b1',oksoft='#14301f',warn='#f5c477',warnsoft='#3a2a10',quote='#0f151d')}\npairs=[('ink','sheet'),('ink2','sheet'),('ink2','paper'),('ink3','sheet'),('ink3','raised'),('accent','sheet'),('accent','accsoft'),('onacc','accent'),('ok','oksoft'),('warn','warnsoft'),('ink','warnsoft'),('ink','quote'),('ink2','raised')]\nfor t,c in themes.items():\n    print(t, '  '.join(f'{a}/{b} {cr(c[a],c[b]):.1f}' for a,b in pairs))\n\"",
+  "description": "Compute WCAG contrast ratios for both themes"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+light ink/sheet 17.9  ink2/sheet 10.1  ink2/paper 8.6  ink3/sheet 6.2  ink3/raised 5.8  accent/sheet 8.8  accent/accsoft 7.1  onacc/accent 8.8  ok/oksoft 6.5  warn/warnsoft 6.4  ink/warnsoft 14.6  ink/quote 16.2  ink2/raised 9.5
+dark ink/sheet 15.7  ink2/sheet 11.1  ink2/paper 12.3  ink3/sheet 7.4  ink3/raised 6.8  accent/sheet 9.5  accent/accsoft 7.5  onacc/accent 10.5  ok/oksoft 9.0  warn/warnsoft 8.6  ink/warnsoft 12.5  ink/quote 16.6  ink2/raised 10.1
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:59:11
+
+Every text/background pair is at least 5.8:1 in both themes (the WCAG AA minimum is 4.5:1; most pairs reach AAA's 7:1). Last check, phone width:
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "preset": "mobile"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 375x812 (mobile) on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "({vw: innerWidth, page: document.documentElement.scrollWidth, sheetW: document.getElementById('sheet').scrollWidth, sheetClient: document.getElementById('sheet').clientWidth})"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot",
+  "scale": 0.6
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+{
+  "page": 375,
+  "sheetClient": 342,
+  "sheetW": 342,
+  "vw": 375
+}
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791575954080-u07k7m.jpg]
+Screenshot size: 281x608 0.6-scale view; coordinate frame: 469x1015.
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:59:15
+
+Phone layout works with no horizontal scroll. Publishing the update to the same artifact link and committing:
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "preset": "desktop"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport emulation cleared; the tab is back to the pane's responsive size (desktop).
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "Databáza VC investorov CZ/SK" ("data:")
+````
+
+</details>
+
+<details><summary>🔧 Artifact – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "action": "publish",
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\explorer_artifact.html",
+  "label": "Higher contrast and readability"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Published C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\explorer_artifact.html at https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS (Version 2, version id 1791575954-1876)
+
+Live subscription: already connected from earlier in this session — this session keeps track of new versions of this artifact published elsewhere; a new version starts no turn and sends no notification; a comment on it sent to Claude reaches this session while this artifact's status row says auto-replies armed, and plain comments never notify — read them with the ArtifactComments tool, action "read" when asked.
+
+To update: publish the same file path here (keeps this URL); from another conversation pass the URL as `url`, or that publish creates a separate artifact. This artifact is private: only its owner and the people the owner has given access can open the link. You cannot change sharing; that is done from the page's Share menu. If the page is meant for someone else, tell the user when you present the page that those people cannot open it until it is shared with them.
+
+The files you sent are still on disk. To change the artifact, Edit them there and publish again in the same message; no read is needed.
+````
+
+</details>
+
+<details><summary>🔧 Bash – Run tests, commit and push the explorer update</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe -m pytest -q 2>&1 | tail -1 && git add src/investordb/explorer.py docs/explorer.html && git commit -q -m \"Explorer: higher contrast (all text >= 5.8:1 in both themes), larger type, readable labels instead of internal codes, clearer quotes, tier badges and before/after table\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -1",
+  "description": "Run tests, commit and push the explorer update"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+162 passed in 0.58s
+0b58a12 Explorer: higher contrast (all text >= 5.8:1 in both themes), larger type, readable labels instead of internal codes, clearer quotes, tier badges and before/after table
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 19:59:32
+
+The explorer is updated at the same link: https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS. The repo copy `docs/explorer.html` has the same changes and is pushed.
+
+**Contrast:** every text/background pair is now at least 5.8:1, in both light and dark mode, against the accessibility minimum of 4.5:1. Most pairs are 7:1 or higher. The secondary grey text is noticeably darker than before, and borders and the page background are stronger, so the cards stand out.
+
+**Readability:**
+- **Bigger text:**
+  - Body text is 16 px, investor names 17 px.
+  - The section headings and field labels that were 11–12 px tiny capitals are now 13–15 px.
+  - The fact values are larger and bold.
+- **Plain-language labels instead of internal codes:**
+  - `sum_of_5_closed_funds` now reads "súčet 5 fondov".
+  - `aum_stated` reads "uvedené AUM".
+  - Source tiers `T1/T2/T3` read "register / regulátor", "web investora", "tlač".
+  - A mention is labelled "len zmienka, dátum sa nepočíta".
+- **List rows:** each row labels its numbers ("kapitál", "posledný obchod"). The tier badge reads "úroveň A" and explains itself on hover. Refined records carry a "spresnené" pill. The selected investor gets a blue left bar, and a counter shows how many investors match the filter.
+- **Evidence:** quotes sit in clearly shaded boxes with a thick left edge. The quote that is actually counted has a blue edge.
+- **Citations link:** the citations toggle now reads "Zobraziť citácie (2) · source names".
+- **Before/after table:** the changed values are highlighted, and there is a small legend.
+- **Planned funds:** they now sit in their own highlighted box ("Len plánované, do kapitálu sa nepočítajú").
+- **Controls:** the search box and filters are 44 px tall, and the active country filter is filled blue.
+
+I checked it at desktop and phone width; the phone view has no horizontal scrolling. Dark mode I checked by computing the colour ratios, because the preview can't render it for local files. The page is still private until you share it from its Share menu. The 5-record spot-check form is ready whenever you are.
+
+## 👤 Používateľ · 2026-10-09 20:03:46
+
+I meant contrast also in terms of overall UI, not just colors. Also misaligned labels or buttons. There is a lot of numbers and data, user must be able to read it and look for something with ease
+
+### 🤖 Claude · 2026-10-09 20:04:31
+
+You're right: color alone doesn't make dense data scannable. The structure needs work too: columns that line up, a clear hierarchy, and numbers you can compare at a glance. Let me check how amounts can be normalised for aligned columns first.
+
+<details><summary>🔧 Bash – Test amount parsing for fund and deal sizes</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -n 76,120p src/investordb/money.py && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nfrom investordb.money import parse_money, to_eur\nfor t in ['nearly €55 million','100 milionů eur','EUR 40m','\\$2.6 Million','přes dva miliony dolarů','1,5 milionu eur','520 milionů dolarů','17M','přes 780 milionů (Kč)','600 mil. CZK']:\n    m=parse_money(t); print(repr(t), m and (m.amount, m.currency, m.approx), m and round(to_eur(m,'2026-10-09')))\n\"",
+  "description": "Test amount parsing for fund and deal sizes"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+@dataclass
+class Money:
+    amount: float
+    currency: str
+    approx: bool
+    raw: str
+    amount_max: float | None = None  # set for ranges ("od 30 do 50 milionů eur")
+
+    @property
+    def is_range(self) -> bool:
+        return self.amount_max is not None and self.amount_max != self.amount
+
+
+def _to_float(raw: str) -> float:
+    s = re.sub(r"[  ]", "", raw)
+    s = re.sub(r"[.,](?=\d{3}(?:[.,]|$))", "", s)  # thousands separators
+    return float(s.replace(",", "."))
+
+
+def parse_money(text: str | None, currency_hint: str | None = None) -> Money | None:
+    """'bezmála 100 milionů eur' -> Money(100e6, 'EUR', approx=True). None if no amount or no currency."""
+    if not text:
+        return None
+    low = words_to_digits(text.lower())
+    m = NUMBER.search(low)
+    if not m:
+        return None
+    amount = _to_float(m.group())
+    amount_max = None
+    end = m.end()
+    rng = RANGE_TAIL.match(low, end)
+    if rng:
+        amount_max = _to_float(rng.group(1))
+        end = rng.end()
+    # the scale word may follow the second number of a range: "od 30 do 50 milionů" -> both ends are millions
+    rest = low[end:].lstrip()
+    for pattern, factor in SCALES:
+        if re.match(pattern, rest):
+            amount *= factor
+            amount_max = amount_max * factor if amount_max is not None else None
+            break
+    currency = next((code for pattern, code in CURRENCIES if re.search(pattern, low)), None)
+    currency = currency or (currency_hint.upper() if currency_hint and currency_hint.lower() != "null" else None)
+    if currency is None:
+        return None
+'nearly €55 million' (55000000.0, 'EUR', True) 55000000
+'100 milionů eur' (100000000.0, 'EUR', False) 100000000
+'EUR 40m' (40000000.0, 'EUR', False) 40000000
+'$2.6 Million' (2600000.0, 'USD', False) 2324334
+'přes dva miliony dolarů' (2000000.0, 'USD', True) 1787949
+'1,5 milionu eur' (1500000.0, 'EUR', False) 1500000
+'520 milionů dolarů' (520000000.0, 'USD', False) 464866798
+'17M' None None
+'přes 780 milionů (Kč)' (780000000.0, 'CZK', True) 31963283
+'600 mil. CZK' (600000000.0, 'CZK', False) 24587141
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:04:40
+
+Amounts parse reliably, so funds and deals can get a right-aligned, comparable "≈ EUR" column next to the original wording. Let me read the top of the generator before rewriting the page.
+
+<details><summary>🔧 Read – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\explorer.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\explorer.py",
+  "limit": 117
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1	"""Interactive explorer of the included investors: every value with the source and verbatim quote behind it.
+2	
+3	    python -m investordb.cli explorer        -> docs/explorer.html (self-contained, opens offline)
+4	
+5	The page shows the refined database (D38) when it exists, otherwise the frozen one, and for every record what
+6	refinement changed. All text from web pages is HTML-escaped in the browser (it is data, never markup).
+7	"""
+8	
+9	from __future__ import annotations
+10	
+11	import csv
+12	import json
+13	from datetime import date
+14	from pathlib import Path
+15	
+16	from investordb.evidence import domain
+17	from investordb.pipeline import total_capital
+18	from investordb.refine import INVESTORS_REFINED, PROCESSED, _value, counted_deals, rebuild_all
+19	from investordb.registries import core_name
+20	
+21	ROOT = Path(__file__).resolve().parents[2]
+22	OUT = ROOT / "docs" / "explorer.html"
+23	
+24	
+25	def _read(path: Path) -> list[dict]:
+26	    with path.open(encoding="utf-8") as f:
+27	        return list(csv.DictReader(f))
+28	
+29	
+30	def _num(v: str) -> float | None:
+31	    return float(v) if v not in ("", None) else None
+32	
+33	
+34	def investor_view(row: dict, before: dict, merged: list[dict], on: str) -> dict:
+35	    ok = [c for c in merged if c["auto_check"] == "ok"]
+36	    counted = counted_deals(ok)
+37	    deals: dict[str, dict] = {}
+38	    for c in ok:
+39	        if c["field"] != "investments" or c.get("attributed") == "0" or c.get("deal_context") == "exit":
+40	            continue
+41	        v = _value(c)
+42	        company = str(v.get("company") or "").strip()
+43	        if not company:
+44	            continue
+45	        key = core_name(company)
+46	        d = deals.setdefault(key, {"company": company, "date": "", "sources": []})
+47	        if counted.get(key) is c:
+48	            d["date"] = c["event_date"][:10]
+49	            d["round"], d["amount"] = v.get("round") or "", v.get("amount") or ""
+50	        d["sources"].append({"url": c["source_url"], "domain": domain(c["source_url"]), "quote": c["quote"],
+51	                             "published": c.get("published_date") or "", "tier": c["source_tier"],
+52	                             "context": c.get("deal_context") or "", "refined": "verdict" in v,
+53	                             "counted": counted.get(key) is c})
+54	    cap = total_capital(ok, on)
+55	    funds = [{"name": _value(c).get("name"), "size": _value(c).get("size"), "status": _value(c).get("status") or "",
+56	              "url": c["source_url"], "domain": domain(c["source_url"]), "quote": c["quote"],
+57	              "counted": any(c is k for k in cap["counted"])}
+58	             for c in ok if c["field"] == "funds" or (c["field"] == "total_capital" and cap["method"] == "aum_stated")]
+59	    profile = {}
+60	    for field in ("sectors", "stages", "ticket", "investor_type", "hq_country", "identity"):
+61	        c = next((c for c in ok if c["field"] == field), None)
+62	        if c:
+63	            profile[field] = {"url": c["s
+… [skrátené, 3452 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+I'm restructuring the layout into aligned data columns: the investor list becomes a sortable table with right-aligned numeric columns across all 24 rows, and the detail panel gets a pinned header, summary tiles, a label/value profile, and aligned fund/investment tables with normalized EUR values and expandable quotes.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Back up the current explorer generator</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && cp src/investordb/explorer.py \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_v2_backup.py\" && echo saved",
+  "description": "Back up the current explorer generator"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+saved
+````
+
+</details>
+
+<details><summary>🔧 Write – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\explorer.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\explorer.py",
+  "content": "\"\"\"Interactive explorer of the included investors: every value with the source and verbatim quote behind it.\n\n    python -m investordb.cli explorer        -> docs/explorer.html (self-contained, opens offline)\n\nThe page shows the refined database (D38) when it exists, otherwise the frozen one, and for every record what\nrefinement changed. All text from web pages is HTML-escaped in the browser (it is data, never markup).\n\"\"\"\n\nfrom __future__ import annotations\n\nimport csv\nimport json\nfrom datetime import date\nfrom pathlib import Path\n\nfrom investordb.evidence import domain\nfrom investordb.money import parse_money, to_eur\nfrom investordb.pipeline import total_capital\nfrom investordb.refine import INVESTORS_REFINED, PROCESSED, _value, counted_deals, rebuild_all\nfrom investordb.registries import core_name\n\nROOT = Path(__file__).resolve().parents[2]\nOUT = ROOT / \"docs\" / \"explorer.html\"\n\n\ndef _read(path: Path) -> list[dict]:\n    with path.open(encoding=\"utf-8\") as f:\n        return list(csv.DictReader(f))\n\n\ndef _num(v: str) -> float | None:\n    return float(v) if v not in (\"\", None) else None\n\n\ndef _eur(text: str | None, currency: str | None, on: str) -> tuple[float | None, bool]:\n    \"\"\"An amount as written ('nearly €55 million', 'přes 780 milionů Kč') in EUR, so amounts line up in one column.\n    Returns (eur, approximate); ranges and amounts without a currency stay unconverted.\"\"\"\n    m = parse_money(text, currency)\n    if not m or m.is_range:\n        return None, False\n    return round(to_eur(m, on)), m.approx or m.currency != \"EUR\"\n\n\ndef investor_view(row: dict, before: dict, merged: list[dict], on: str) -> dict:\n    ok = [c for c in merged if c[\"auto_check\"] == \"ok\"]\n    counted = counted_deals(ok)\n    deals: dict[str, dict] = {}\n    for c in ok:\n        if c[\"field\"] != \"investments\" or c.get(\"attributed\") == \"0\" or c.get(\"deal_context\") == \"exit\":\n            continue\n        v = _value(c)\n        company = str(v.get(\"company\") or \"\").strip()\n        if not company:\n            continue\n        key = core_name(company)\n        d = deals.setdefault(key, {\"company\": company, \"date\": \"\", \"round\": \"\", \"amount\": \"\", \"eur\": None,\n                                   \"approx\": False, \"sources\": []})\n        if counted.get(key) is c:\n            d[\"date\"] = c[\"event_date\"][:10]\n            d[\"round\"], d[\"amount\"] = v.get(\"round\") or \"\", v.get(\"amount\") or \"\"\n            d[\"eur\"], d[\"approx\"] = _eur(d[\"amount\"], None, on)\n        d[\"sources\"].append({\"url\": c[\"source_url\"], \"domain\": domain(c[\"source_url\"]), \"quote\": c[\"quote\"],\n                             \"published\": c.get(\"published_date\") or \"\", \"tier\": c[\"source_tier\"],\n                             \"context\": c.get(\"deal_context\") or \"\", \"refined\": \"verdict\" in v,\n                             \"counted\": counted.get(key) is c})\n    cap = total_capital(ok, on)\n    funds = []\n    for c in ok:\n        if c[\"field\"] == \"funds\" or (c[\"field\"] == \"total_capital\" and cap[\"method\"] == \"aum_stated\"):\n            v = _value(c)\n            size = v.get(\"size\") or v.get(\"amount\") or \"\"\n            eur, approx = _eur(size, v.get(\"currency\"), on)\n            funds.append({\"name\": v.get(\"name\") or \"AUM (spravovaný kapitál)\", \"size\": size, \"eur\": eur,\n                          \"approx\": approx, \"status\": v.get(\"status\") or (\"aum\" if c[\"field\"] == \"total_capital\" else \"\"),\n                          \"url\": c[\"source_url\"], \"domain\": domain(c[\"source_url\"]), \"quote\": c[\"quote\"],\n                          \"published\": c.get(\"published_date\") or \"\", \"counted\": any(c is k for k in cap[\"counted\"])})\n    profile = {}\n    for fie
+… [skrátené, 36144 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>🔧 Bash – Regenerate the explorer with the new layout</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli explorer --precision \"23/23\" --footer \"Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok, ktoré program overil na stránke zdroja; sumy v EUR prepočítal program kurzom ECB (≈ = približne alebo prepočet z inej meny).\" --artifact \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_artifact.html\"",
+  "description": "Regenerate the explorer with the new layout"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+The file C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\explorer.py has been updated successfully. (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+24 investors -> docs/explorer.html
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "width": 1366,
+  "height": 860
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__read_console_messages</summary>
+
+````text
+{
+  "onlyErrors": true
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-6
+- Available tabs:
+  • tabId tab-6: "" ("(no page)")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 1366x860 on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-10
+- Available tabs:
+  • tabId tab-10: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+No console logs.
+
+
+Tab Context:
+- Executed on tabId: tab-10
+- Available tabs:
+  • tabId tab-10: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576444895-qy4u9x.jpg]
+Screenshot size: 800x503
+
+
+Tab Context:
+- Executed on tabId: tab-10
+- Available tabs:
+  • tabId tab-10: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+I'll fix the summary tile's wrapping last-deal date and the row-height shifts caused by long type lists, then check the lower tables in the panel.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Fix KPI date wrap and long type lists, regenerate</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe - <<'EOF'\nfrom pathlib import Path\np = Path(\"src/investordb/explorer.py\")\ns = p.read_text(encoding=\"utf-8\")\nreps = [\n (\".kpi .v { font: 700 21px/1.25 var(--body); font-variant-numeric: tabular-nums; overflow-wrap: anywhere }\",\n  \".kpi .v { font: 700 20px/1.25 var(--body); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }\"),\n ('<span class=\"v mono\">${esc(i.last_date || \"–\")}</span>', '<span class=\"v\">${esc(i.last_date || \"–\")}</span>'),\n (\".row .nm small .m-date { display: none }\",\n  \".row .nm small .m-date { display: none }\\n.row .nm small .ty { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }\"),\n ('<small><span>${esc(i.hq)} · ${esc(i.types.map(t => TYPE[t] || t).join(\", \"))}</span>',\n  '<small><span class=\"ty\" title=\"${esc(i.types.map(t => TYPE[t] || t).join(\", \"))}\">${esc(i.hq)} · ${esc(i.types.map(t => TYPE[t] || t).join(\", \"))}</span>'),\n]\nfor a, b in reps:\n    assert s.count(a) == 1, a[:50]\n    s = s.replace(a, b)\np.write_bytes(s.encode(\"utf-8\"))\nprint(\"ok\")\nEOF\nPYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli explorer --precision \"23/23\" --footer \"Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok, ktoré program overil na stránke zdroja; sumy v EUR prepočítal program kurzom ECB (≈ = približne alebo prepočet z inej meny).\" --artifact \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_artifact.html\"",
+  "description": "Fix KPI date wrap and long type lists, regenerate"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+24 investors -> docs/explorer.html
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "width": 1366,
+  "height": 860
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "document.querySelector('[data-id=\"C197\"]').click(); const sh=document.getElementById('sheet'); const blk=[...sh.querySelectorAll('section.blk')][1]; sh.scrollTop = blk.offsetTop - 70; sh.querySelectorAll('.funds details')[0].open = true; 'ok'"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-10
+- Available tabs:
+  • tabId tab-10: "" ("(no page)")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 1366x860 on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-11
+- Available tabs:
+  • tabId tab-11: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"ok"
+
+
+Tab Context:
+- Executed on tabId: tab-11
+- Available tabs:
+  • tabId tab-11: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576466348-lbvvxv.jpg]
+Screenshot size: 800x503
+
+
+Tab Context:
+- Executed on tabId: tab-11
+- Available tabs:
+  • tabId tab-11: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+The new aligned layout is working with a sortable investor table and pinned headers. I'm fixing fund name wrapping by merging the "counted in capital" column into the status column.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Merge fund status and counted columns, regenerate</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe - <<'EOF'\nfrom pathlib import Path\np = Path(\"src/investordb/explorer.py\")\ns = p.read_text(encoding=\"utf-8\")\nreps = [\n (\".funds { --cols: minmax(0, 1fr) 118px 132px 84px 64px }\",\n  \".funds { --cols: minmax(0, 1fr) 116px 150px 72px }\"),\n (\".funds { --cols: minmax(0, 1fr) 96px 64px } .funds .c-st, .funds .c-in { display: none }\",\n  \".funds { --cols: minmax(0, 1fr) 96px 64px } .funds .c-st { display: none }\"),\n ('<div class=\"dt funds\"><div class=\"dt-head\"><span>Fond</span><span class=\"num\">Suma v EUR</span><span class=\"c-st\">Stav</span><span class=\"num c-in\">V kapitáli</span><span></span></div>',\n  '<div class=\"dt funds\"><div class=\"dt-head\"><span>Fond</span><span class=\"num\">Suma v EUR</span><span class=\"c-st\">Stav · v kapitáli</span><span></span></div>'),\n ('''      <span class=\"c-st\"><span class=\"st-dot st-${esc(f.status)}\">${esc(STATUS[f.status] ?? f.status)}</span></span>\n      <span class=\"num c-in\">${f.counted ? '<span class=\"yes\">áno</span>' : '<span class=\"no\">nie</span>'}</span>''',\n  '''      <span class=\"c-st\"><span class=\"st-dot st-${esc(f.status)}\">${esc(STATUS[f.status] ?? f.status)}</span><span class=\"orig\">${f.counted ? '<span class=\"yes\">✓ započítané</span>' : \"nezapočítané\"}</span></span>'''),\n (\".yes { color: var(--ok); font-weight: 700 } .no { color: var(--ink-3) }\",\n  \".yes { color: var(--ok); font-weight: 700 }\"),\n (\".deals { --cols: 104px minmax(0, 1fr) 100px 116px 72px }\",\n  \".deals { --cols: 100px minmax(0, 1fr) 96px 112px 76px }\"),\n]\nfor a, b in reps:\n    assert s.count(a) == 1, a[:60]\n    s = s.replace(a, b)\np.write_bytes(s.encode(\"utf-8\"))\nprint(\"ok\")\nEOF\nPYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli explorer --precision \"23/23\" --footer \"Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok, ktoré program overil na stránke zdroja; sumy v EUR prepočítal program kurzom ECB (≈ = približne alebo prepočet z inej meny).\" --artifact \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_artifact.html\"",
+  "description": "Merge fund status and counted columns, regenerate"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+24 investors -> docs/explorer.html
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "width": 1366,
+  "height": 860
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "document.querySelector('[data-id=\"C197\"]').click(); const sh=document.getElementById('sheet'); const blk=[...sh.querySelectorAll('section.blk')][1]; sh.scrollTop = blk.offsetTop - 70; 'ok'"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-11
+- Available tabs:
+  • tabId tab-11: "" ("(no page)")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 1366x860 on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"ok"
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576492112-6hb1ww.jpg]
+Screenshot size: 800x503
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:08:13
+
+Each fund is now one aligned row: name, amount in EUR, status and whether it counts. Checking the investments table:
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "const sh=document.getElementById('sheet'); const blk=[...sh.querySelectorAll('section.blk')][2]; sh.scrollTop = blk.offsetTop - 70; sh.querySelectorAll('.deals details')[1].open = true; 'ok'"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"ok"
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576495888-easuj5.jpg]
+Screenshot size: 800x503
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:08:19
+
+The investments table is aligned too: dates in one column, round sizes right-aligned in EUR, sources expanding underneath. Final check at phone width:
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "preset": "mobile"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 375x812 (mobile) on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "const r = {vw: innerWidth, page: document.documentElement.scrollWidth}; const over=[...document.querySelectorAll('body *')].filter(e => e.getBoundingClientRect().right > innerWidth + 1 && getComputedStyle(e).display !== 'none').slice(0,5).map(e => e.className || e.tagName); window.scrollTo(0, 330); ({...r, over})"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot",
+  "scale": 0.6
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+{
+  "over": [
+    "cmp",
+    "THEAD",
+    "TR",
+    "TH",
+    "TBODY"
+  ],
+  "page": 375,
+  "vw": 375
+}
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576502883-2cz96y.jpg]
+Screenshot size: 281x608 0.6-scale view; coordinate frame: 469x1015.
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:08:26
+
+The page itself fits at phone width. Only the before/after table is wider than the screen; it scrolls inside its own box, which is acceptable, but I'll let its labels wrap so it fits outright:
+
+<details><summary>🔧 Bash – Let the comparison table fit phones and regenerate</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe - <<'EOF'\nfrom pathlib import Path\np = Path(\"src/investordb/explorer.py\")\ns = p.read_text(encoding=\"utf-8\")\na = \".notes { margin: 12px 0 0;\"\nb = \"@media (max-width: 640px) { .cmp th, .cmp td { padding: 8px } .cmp tbody th { white-space: normal; width: 34% } .cmp td { width: 33% } .sh-head, .sh-body { padding-inline: 16px } }\\n.notes { margin: 12px 0 0;\"\nassert s.count(a) == 1\ns = s.replace(a, b)\np.write_bytes(s.encode(\"utf-8\"))\nprint(\"ok\")\nEOF\nPYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli explorer --precision \"23/23\" --footer \"Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok, ktoré program overil na stránke zdroja; sumy v EUR prepočítal program kurzom ECB (≈ = približne alebo prepočet z inej meny).\" --artifact \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_artifact.html\"",
+  "description": "Let the comparison table fit phones and regenerate"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "({vw: innerWidth, page: document.documentElement.scrollWidth, cmp: document.querySelector('.cmp').scrollWidth, wrap: document.querySelector('.cmp-wrap').clientWidth})"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+24 investors -> docs/explorer.html
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-12
+- Available tabs:
+  • tabId tab-12: "" ("(no page)")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+{
+  "cmp": 620,
+  "page": 1432,
+  "vw": 1447,
+  "wrap": 620
+}
+
+
+Tab Context:
+- Executed on tabId: tab-13
+- Available tabs:
+  • tabId tab-13: "Databáza VC investorov CZ/SK" ("data:")
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "preset": "mobile"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 375x812 (mobile) on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-13
+- Available tabs:
+  • tabId tab-13: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "({vw: innerWidth, page: document.documentElement.scrollWidth, cmp: document.querySelector('.cmp').scrollWidth, wrap: document.querySelector('.cmp-wrap').clientWidth, funds: document.querySelector('.funds')?.scrollWidth, deals: document.querySelector('.deals').scrollWidth, sheet: document.getElementById('sheet').clientWidth})"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-13
+- Available tabs:
+  • tabId tab-13: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+{
+  "cmp": 308,
+  "deals": 310,
+  "funds": 310,
+  "page": 375,
+  "sheet": 342,
+  "vw": 375,
+  "wrap": 308
+}
+
+
+Tab Context:
+- Executed on tabId: tab-13
+- Available tabs:
+  • tabId tab-13: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 375x812 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:08:42
+
+Everything fits at phone width with no overflow. Publishing to the same link and committing:
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "preset": "desktop"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport emulation cleared; the tab is back to the pane's responsive size (desktop).
+
+
+Tab Context:
+- Executed on tabId: tab-13
+- Available tabs:
+  • tabId tab-13: "Databáza VC investorov CZ/SK" ("data:")
+````
+
+</details>
+
+<details><summary>🔧 Artifact – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "action": "publish",
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\explorer_artifact.html",
+  "label": "Aligned tables and clearer hierarchy"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Published C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\explorer_artifact.html at https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS (Version 3, version id 1791576520-0bed)
+
+Live subscription: already connected from earlier in this session — this session keeps track of new versions of this artifact published elsewhere; a new version starts no turn and sends no notification; a comment on it sent to Claude reaches this session while this artifact's status row says auto-replies armed, and plain comments never notify — read them with the ArtifactComments tool, action "read" when asked.
+
+To update: publish the same file path here (keeps this URL); from another conversation pass the URL as `url`, or that publish creates a separate artifact. This artifact is private: only its owner and the people the owner has given access can open the link. You cannot change sharing; that is done from the page's Share menu. If the page is meant for someone else, tell the user when you present the page that those people cannot open it until it is shared with them.
+
+The files you sent are still on disk. To change the artifact, Edit them there and publish again in the same message; no read is needed.
+````
+
+</details>
+
+<details><summary>🔧 Bash – Run tests, commit and push the redesigned explorer</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -i 's/\\r$//' src/investordb/explorer.py && .venv/Scripts/python.exe -m pytest -q 2>&1 | tail -1 && git add src/investordb/explorer.py docs/explorer.html && git commit -q -m \"Explorer layout for scanning data: sortable investor table with aligned numeric columns, pinned investor header, summary tiles, label/value profile, fund and deal tables with amounts normalised to EUR and expandable quotes, filter for records changed by refinement\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -1",
+  "description": "Run tests, commit and push the redesigned explorer"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+162 passed in 0.55s
+eb9d40a Explorer layout for scanning data: sortable investor table with aligned numeric columns, pinned investor header, summary tiles, label/value profile, fund and deal tables with amounts normalised to EUR and expandable quotes, filter for records changed by refinement
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:08:59
+
+I've rebuilt the explorer so the data reads as aligned tables, not just with better colors. It's published at the same link, https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS, and `docs/explorer.html` in the repo is updated and pushed. I checked it at desktop and phone width, with no overflow on phones.
+
+**Investor list:**
+- **Columns:** it's now a table with fixed columns: Investor | Kapitál | Posl. obchod | 36 m | Úroveň. Every value sits under its heading, and numbers are right-aligned with equal-width digits, so you can compare capital or activity down all 24 rows.
+- **Sorting:** click any column heading; the active one is highlighted with an arrow. This replaces the separate sort dropdown.
+- **Rows:** each row has the same structure (country · type on the second line, a small "spresnené" marker in the same place), so row heights no longer jump. The selected investor gets a blue bar, and the column headings stay visible while the list scrolls.
+
+**Toolbar:** search, country, sector and a new **"Len zmenené spresnením"** filter sit in one row of equal-height controls. The filter shows only the investors the refinement changed.
+
+**Investor detail, from top to bottom:**
+- **Pinned header:** the name stays visible while you scroll the evidence.
+- **Summary:** four equal tiles for capital, last deal, number of investments and evidence level.
+- **Profile:** a two-column label/value list (sídlo, typ, sektory, štádiá, tiket).
+- **Before/after table:** changed cells are highlighted and labelled "zmenené".
+- **Funds table:** Fond | Suma v EUR | Stav · v kapitáli. Every amount is converted to EUR in one right-aligned column, with the original wording ("pôvodne: nearly €55 million") underneath. A coloured dot marks closed, first close or target, and "✓ započítané" marks what counts toward capital.
+- **Investments table:** Dátum | Firma | Kolo | Suma kola | Zdroje. Dated deals come first, then a separate group for portfolio companies without a deal date.
+- **Quotes:** they stay hidden until you open a row ("2 zdroje ▾"), so the tables stay compact.
+
+Approximate amounts and currency conversions are marked "≈", as the footer explains. The page is still private until you share it from its Share menu.
+
+## 👤 Používateľ · 2026-10-09 20:09:04
+
+right pane (detailed card) with different color scheme than list please (maybe darker)
+
+### 🤖 Claude · 2026-10-09 20:09:17
+
+I'll give the detail pane its own deep-navy scheme. All its colors already come from shared variables, so redefining them on the pane recolors everything inside it consistently, in both light and dark mode. Checking the contrast of the new palette first:
+
+<details><summary>🔧 Bash – Compute contrast for the darker detail-pane palette</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe -c \"\ndef L(h):\n    h=h.lstrip('#'); r,g,b=[int(h[i:i+2],16)/255 for i in (0,2,4)]\n    f=lambda c: c/12.92 if c<=0.03928 else ((c+0.055)/1.055)**2.4\n    return 0.2126*f(r)+0.7152*f(g)+0.0722*f(b)\ndef cr(a,b):\n    la,lb=sorted([L(a),L(b)],reverse=True); return (la+0.05)/(lb+0.05)\nsets={'sheet-on-light-page':dict(sheet='#14202e',raised='#1b2a3b',ink='#f2f5f9',ink2='#c5cfdb',ink3='#9eabbb',accent='#a9c1ff',accsoft='#243758',ok='#8ae3b4',oksoft='#153629',warn='#f6c87d',warnsoft='#3d2d12',quote='#0f1924',page='#e6eaf0',list='#ffffff'),\n 'sheet-on-dark-page':dict(sheet='#0e1a2c',raised='#15243a',ink='#f2f5f9',ink2='#c5cfdb',ink3='#9eabbb',accent='#a9c1ff',accsoft='#22365a',ok='#8ae3b4',oksoft='#123323',warn='#f6c87d',warnsoft='#3a2b10',quote='#0a1422',page='#0a0f15',list='#131a23')}\npairs=[('ink','sheet'),('ink2','sheet'),('ink3','sheet'),('ink2','raised'),('ink3','raised'),('accent','sheet'),('accent','accsoft'),('ok','oksoft'),('warn','warnsoft'),('ink','quote'),('ink','warnsoft'),('sheet','page'),('sheet','list')]\nfor t,c in sets.items(): print(t,'  '.join(f'{a}/{b} {cr(c[a],c[b]):.1f}' for a,b in pairs))\n\"",
+  "description": "Compute contrast for the darker detail-pane palette"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+sheet-on-light-page ink/sheet 15.1  ink2/sheet 10.4  ink3/sheet 7.1  ink2/raised 9.2  ink3/raised 6.2  accent/sheet 9.2  accent/accsoft 6.7  ok/oksoft 8.6  warn/warnsoft 8.5  ink/quote 16.2  ink/warnsoft 12.1  sheet/page 13.6  sheet/list 16.5
+sheet-on-dark-page ink/sheet 16.0  ink2/sheet 11.1  ink3/sheet 7.5  ink2/raised 9.9  ink3/raised 6.7  accent/sheet 9.8  accent/accsoft 6.7  ok/oksoft 9.0  warn/warnsoft 8.8  ink/quote 16.9  ink/warnsoft 12.5  sheet/page 1.1  sheet/list 1.0
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+In dark mode the navy pane would blend too closely with the list, so I'll lighten it to a bluer navy and add an accent edge in both modes—let me recheck those values now.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Check contrast for the dark-mode pane palette</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe -c \"\ndef L(h):\n    h=h.lstrip('#'); r,g,b=[int(h[i:i+2],16)/255 for i in (0,2,4)]\n    f=lambda c: c/12.92 if c<=0.03928 else ((c+0.055)/1.055)**2.4\n    return 0.2126*f(r)+0.7152*f(g)+0.0722*f(b)\ndef cr(a,b):\n    la,lb=sorted([L(a),L(b)],reverse=True); return (la+0.05)/(lb+0.05)\nc=dict(sheet='#1a2b45',head='#203457',raised='#22365a',ink='#f4f7fb',ink2='#cdd7e4',ink3='#a7b4c6',accent='#b3caff',accsoft='#2c4572',ok='#90e6b9',oksoft='#173a2d',warn='#f8cd86',warnsoft='#433217',quote='#132036',list='#131a23',page='#0a0f15')\npairs=[('ink','sheet'),('ink2','sheet'),('ink3','sheet'),('ink','head'),('ink2','head'),('ink2','raised'),('ink3','raised'),('accent','sheet'),('accent','head'),('accent','accsoft'),('ok','oksoft'),('warn','warnsoft'),('ink','quote'),('sheet','list'),('sheet','page')]\nprint('  '.join(f'{a}/{b} {cr(c[a],c[b]):.1f}' for a,b in pairs))\n\"",
+  "description": "Check contrast for the dark-mode pane palette"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ink/sheet 13.2  ink2/sheet 9.8  ink3/sheet 6.8  ink/head 11.6  ink2/head 8.5  ink2/raised 8.3  ink3/raised 5.7  accent/sheet 8.7  accent/head 7.6  accent/accsoft 5.8  ok/oksoft 8.5  warn/warnsoft 8.2  ink/quote 15.2  sheet/list 1.2  sheet/page 1.4
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:09:47
+
+Every text color stays at 5.7:1 or better on the new pane in both modes. Applying it:
+
+<details><summary>🔧 Bash – Give the detail pane its own dark scheme and regenerate</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe - <<'EOF'\nfrom pathlib import Path\np = Path(\"src/investordb/explorer.py\")\ns = p.read_text(encoding=\"utf-8\")\nanchor = \"@media (max-width: 1000px) { .sheet { position: static; max-height: none } }\\n\"\nadd = anchor + \"\"\"/* the evidence sheet has its own deep-navy scheme, so it reads as a separate surface from the light list;\n   every color inside it comes from these tokens (contrast of text on it: 5.7:1 or more in both themes) */\n.sheet {\n  --sheet: #14202e; --head: #1a2a3d; --raised: #1b2a3b; --row-hover: #213247; --ink: #f2f5f9; --ink-2: #c5cfdb; --ink-3: #9eabbb;\n  --rule: #2b3b4f; --rule-strong: #4a5e76; --accent: #a9c1ff; --accent-soft: #243758; --on-accent: #0b1220; --edge: #3d6ae0;\n  --ok: #8ae3b4; --ok-soft: #153629; --warn: #f6c87d; --warn-soft: #3d2d12; --quote: #0f1924; --quote-rule: #50657e;\n  background: var(--sheet); color: var(--ink); color-scheme: dark; border: 1px solid #0b1520; border-top: 4px solid var(--edge) }\n@media (prefers-color-scheme: dark) { :root:not([data-theme=\"light\"]) .sheet {\n  --sheet: #1a2b45; --head: #203457; --raised: #22365a; --row-hover: #26406a; --ink: #f4f7fb; --ink-2: #cdd7e4; --ink-3: #a7b4c6;\n  --rule: #2f4568; --rule-strong: #4f6a92; --accent: #b3caff; --accent-soft: #2c4572; --edge: #7d9cff;\n  --ok: #90e6b9; --ok-soft: #173a2d; --warn: #f8cd86; --warn-soft: #433217; --quote: #132036; --quote-rule: #5a7398; border-color: #2f4568 } }\n:root[data-theme=\"dark\"] .sheet {\n  --sheet: #1a2b45; --head: #203457; --raised: #22365a; --row-hover: #26406a; --ink: #f4f7fb; --ink-2: #cdd7e4; --ink-3: #a7b4c6;\n  --rule: #2f4568; --rule-strong: #4f6a92; --accent: #b3caff; --accent-soft: #2c4572; --edge: #7d9cff;\n  --ok: #90e6b9; --ok-soft: #173a2d; --warn: #f8cd86; --warn-soft: #433217; --quote: #132036; --quote-rule: #5a7398; border-color: #2f4568 }\n\"\"\"\nassert s.count(anchor) == 1\ns = s.replace(anchor, add)\nold = \".sh-head { position: sticky; top: 0; z-index: 3; background: var(--sheet);\"\nassert s.count(old) == 1\ns = s.replace(old, \".sh-head { position: sticky; top: 0; z-index: 3; background: var(--head);\")\np.write_bytes(s.encode(\"utf-8\"))\nprint(\"ok\")\nEOF\nPYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli explorer --precision \"23/23\" --footer \"Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok, ktoré program overil na stránke zdroja; sumy v EUR prepočítal program kurzom ECB (≈ = približne alebo prepočet z inej meny).\" --artifact \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/explorer_artifact.html\"",
+  "description": "Give the detail pane its own dark scheme and regenerate"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__navigate</summary>
+
+````text
+{
+  "url": "file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "width": 1366,
+  "height": 860
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+24 investors -> docs/explorer.html
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+opened file:///C:/Users/matus/Desktop/Interview_Project/Project_a/docs/explorer.html in the preview pane (files outside the project folder render as static snapshots)
+
+
+Tab Context:
+- Executed on tabId: tab-3
+- Available tabs:
+  • tabId tab-3: "Ručná kontrola vzorky" ("data:")
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport set to 1366x860 on this tab (scaled down to fit if larger than the pane). Reset it with preset "desktop" as soon as you finish testing; the desktop app also clears a size you set when your turn ends or the pane's width changes, so set it again if you still need it. If the user wants to keep a phone or tablet size after your turn, they can pick Mobile or Tablet in the pane's Viewport menu; a custom size you simply set again next turn.
+
+
+Tab Context:
+- Executed on tabId: tab-14
+- Available tabs:
+  • tabId tab-14: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576603810-sxzdyt.jpg]
+Screenshot size: 800x503
+
+
+Tab Context:
+- Executed on tabId: tab-14
+- Available tabs:
+  • tabId tab-14: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:10:06
+
+The split reads clearly now: the list on light, the detail pane on deep navy with a blue top edge. Checking the tables, quotes and highlighted changes inside the dark pane:
+
+<details><summary>🔧 mcp__Claude_Browser__javascript_tool</summary>
+
+````text
+{
+  "action": "javascript_exec",
+  "text": "document.querySelector('[data-id=\"C197\"]').click(); const sh=document.getElementById('sheet'); const blk=[...sh.querySelectorAll('section.blk')][0]; sh.scrollTop = blk.offsetTop - 80; sh.querySelectorAll('.funds details')[0].open = true; 'ok'"
+}
+````
+
+</details>
+
+<details><summary>🔧 mcp__Claude_Browser__computer</summary>
+
+````text
+{
+  "action": "screenshot"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"ok"
+
+
+Tab Context:
+- Executed on tabId: tab-14
+- Available tabs:
+  • tabId tab-14: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+[Image: source: C:\Users\matus\.claude\projects\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tool-results\mcp-Claude_Browser-blob-1791576608241-qrc9ss.jpg]
+Screenshot size: 800x503
+
+
+Tab Context:
+- Executed on tabId: tab-14
+- Available tabs:
+  • tabId tab-14: "Databáza VC investorov CZ/SK" ("data:")
+- Viewport: emulating 1366x860 (you set this; reset it with preset "desktop" when you finish testing; the app also clears it when your turn ends or the pane's width changes)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:10:10
+
+Changed values stay clearly marked on the dark pane: amber cells labelled "zmenené". Publishing and committing:
+
+<details><summary>🔧 mcp__Claude_Browser__resize_window</summary>
+
+````text
+{
+  "preset": "desktop"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Viewport emulation cleared; the tab is back to the pane's responsive size (desktop).
+
+
+Tab Context:
+- Executed on tabId: tab-14
+- Available tabs:
+  • tabId tab-14: "Databáza VC investorov CZ/SK" ("data:")
+````
+
+</details>
+
+<details><summary>🔧 Artifact – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "action": "publish",
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\explorer_artifact.html",
+  "label": "Dark detail pane"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Published C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\explorer_artifact.html at https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS (Version 4, version id 1791576608-78db)
+
+Live subscription: already connected from earlier in this session — this session keeps track of new versions of this artifact published elsewhere; a new version starts no turn and sends no notification; a comment on it sent to Claude reaches this session while this artifact's status row says auto-replies armed, and plain comments never notify — read them with the ArtifactComments tool, action "read" when asked.
+
+To update: publish the same file path here (keeps this URL); from another conversation pass the URL as `url`, or that publish creates a separate artifact. This artifact is private: only its owner and the people the owner has given access can open the link. You cannot change sharing; that is done from the page's Share menu. If the page is meant for someone else, tell the user when you present the page that those people cannot open it until it is shared with them.
+
+The files you sent are still on disk. To change the artifact, Edit them there and publish again in the same message; no read is needed.
+````
+
+</details>
+
+<details><summary>🔧 Bash – Commit and push the dark detail pane</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -i 's/\\r$//' src/investordb/explorer.py && git add src/investordb/explorer.py docs/explorer.html && git commit -q -m \"Explorer: detail pane in its own deep-navy scheme (separate surface from the light list), accent top edge; text contrast >= 5.7:1 in both themes\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -1",
+  "description": "Commit and push the dark detail pane"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+b3fa48f Explorer: detail pane in its own deep-navy scheme (separate surface from the light list), accent top edge; text contrast >= 5.7:1 in both themes
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:10:22
+
+The detail pane now has its own darker scheme, so it reads as a separate surface from the list. It's updated at https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS and in `docs/explorer.html`, pushed to the repo.
+
+- **Light mode:** the list stays light and the detail pane is deep navy. A blue strip across its top edge marks it as the "selected investor" surface. The pinned name header is a slightly lighter navy, so it stays distinct while you scroll.
+- **Dark mode:** here the page itself is already dark, so the pane uses a lighter, bluer navy to stand apart from the list.
+- **Inside the pane:** everything switches with it, including the summary tiles, tables, quotes, chips, links and the amber "zmenené" highlights. Text stays at 5.7:1 contrast or better against its background in both modes.
+
+I checked light mode in the browser, including the before/after table and the fund and deal tables. Dark mode I could only check by computing the contrast ratios, because the preview always renders local files in light mode. The 5-record spot-check form is still waiting for your answers whenever you're ready.
+
+## 👤 Používateľ · 2026-10-09 20:18:11
+
+stopcheck results saved
+
+<details><summary>🔧 Bash – Locate the saved spot-check results file</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && ls -la data/review/ | grep -i spot; ls -la --time-style=+%H:%M \"C:/Users/matus/Downloads\" | grep -i \"spot\\|review_results\" | tail -5",
+  "description": "Locate the saved spot-check results file"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+-rw-r--r-- 1 matus 197609 14426 Oct  9 21:54 spotcheck.html
+-rw-r--r-- 1 matus 197609   237 Oct  9 21:54 spotcheck_ids.csv
+-rw-r--r-- 1 matus 197609  8491 Oct  9 21:54 spotcheck_records.json
+-rw-r--r-- 1 matus 197609   487 Oct  9 22:18 spotcheck_results.csv
+````
+
+</details>
+
+<details><summary>🔧 Read – C:\Users\matus\Desktop\Interview_Project\Project_a\data\review\spotcheck_results.csv</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\data\\review\\spotcheck_results.csv"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1	review_id,real_investor,active_36m,type_vc,hq_cz_sk,sources_support,sectors_ok,ticket_ok,capital_ok,minutes_spent,note
+2	"R31","áno","áno","áno","áno","áno","áno","neuvedené","neviem","",""
+3	"R19","áno","áno","áno","áno","áno","áno","neviem","neviem","",""
+4	"R15","nie","nie","nie","nie","neviem","neviem","neviem","neviem","",""
+5	"R05","áno","áno","áno","áno","áno","neviem","neviem","neviem","",""
+6	"R08","áno","áno","áno","áno","áno","áno","neviem","neviem","",""
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+All 5 records now have answers filled in. I'll check how the report uses these before regenerating, making sure the refined source/capital values aren't mixed into the frozen-version field accuracy.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Read – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\report.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\report.py",
+  "offset": 86,
+  "limit": 225
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+86	
+87	def build() -> str:
+88	    key = {r["review_id"]: r for r in _read(REVIEW_DIR / "review_key.csv")}
+89	    sonnet = ai_answers(REVIEW_DIR / "sonnet", "s_b*.json", "Sonnet 5.5")
+90	    haiku = ai_answers(VERIFIER_DIR, "v_b*.json", "Haiku 5.5")
+91	    human_full = human_answers(REVIEW_DIR / "review_results.csv")
+92	    human_spot = human_answers(REVIEW_DIR / "spotcheck_results.csv")
+93	    spot = {r["review_id"]: r for r in _read(REVIEW_DIR / "spotcheck_ids.csv")}
+94	    final = human_full or {rid: human_spot.get(rid) or sonnet[rid] for rid in key if rid in sonnet or rid in human_spot}
+95	
+96	    investors = _read(PROCESSED / "investors.csv")
+97	    decisions = _read(PROCESSED / "decisions.csv")
+98	    claims = _read(PROCESSED / "claims.csv")
+99	    candidates = {c["candidate_id"]: c for c in _read(PROCESSED / "candidates.csv")}
+100	    dec = {d["candidate_id"]: d for d in decisions}
+101	    lines: list[str] = []
+102	    add = lines.append
+103	
+104	    as_of = investors[0]["as_of"] if investors else "?"
+105	    add("# Meranie presnosti – pilot VC investori CZ + SK\n")
+106	    add(f"*Generované skriptom `python -m investordb.cli report` z dát zmrazených tagom `pilot-frozen-v3` "
+107	        f"(`as_of` = {as_of}). Metriky sú definované vopred v [PLAN.md](PLAN.md), kap. 9.*\n")
+108	
+109	    # --- who judged
+110	    add("## 1. Kto hodnotil vzorku\n")
+111	    findings = _read(REVIEW_DIR / "human_findings.csv")
+112	    if human_full:
+113	        add(f"Všetkých {len(human_full)} záznamov vzorky ručne overil človek.\n")
+114	    elif not human_spot:
+115	        add(f"- **Claude Sonnet 5.5** posúdil všetkých {len(sonnet)} záznamov vzorky naslepo. Dostal rovnaké informácie "
+116	            "ako formulár pre človeka a zdroje si otváral sám – [pokyn](../prompts/reviewer_agent.md). **Presnosť nižšie "
+117	            "je teda presnosť podľa nezávislej AI kontroly silnejším modelom.**")
+118	        add(f"- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých {len(haiku)} záznamov – druhý AI názor.")
+119	        add("- **Človek** (autor) formulár prešiel, **štruktúrované odpovede však nevyplnil** (rozhodnutie D36). Jeho "
+120	            "kvalitatívne zistenia viedli k dvom opravám pipeline (v2, v3):\n")
+121	        add("| Záznam | Zistenie | Dôsledok |\n|---|---|---|")
+122	        for f in findings:
+123	            add(f"| {f['record']} | {f['finding']} | {f['consequence']} |")
+124	        add("\n**Obmedzenie:** zadanie žiada ručne overenú vzorku. Formálne ručné meranie presnosti chýba. Nahrádza ho "
+125	            "slepá AI kontrola dvoma modelmi a kvalitatívny ľudský audit opísaný vyššie.\n")
+126	    else:
+127	        disputed = [r for r, s in spot.items() if s["why_selected"] == "disagreement"]
+128	        control = [r for r, s in spot.items() if s["why_selected"] == "random_control"]
+129	        add(f"- **Claude Sonnet 5.5** posúdil všetkých {len(sonnet)} záznamov vzorky naslepo (rovnaké informácie ako "
+130	            "formulár pre človek
+… [skrátené, 12753 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+My verdicts match the pipeline on all 5 records. I'll update the report to describe my 5-record check in Section 1, report my field answers separately since they judge refined values, and fix the time note since I didn't log minutes.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\edit_report.py",
+  "content": "from pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\report.py\")\ns = p.read_text(encoding=\"utf-8\")\n\n\ndef rep(old, new):\n    global s\n    assert s.count(old) == 1, (old[:80], s.count(old))\n    s = s.replace(old, new)\n\n\nrep('''        add(f\"- **Človek** (autor) ručne overil {len(human_spot)} z {len(spot)} vybraných záznamov: všetky, pri \"\n            f\"ktorých sa Sonnet a Haiku overovateľ nezhodli alebo Sonnet nevedel rozhodnúť ({len(disputed)}), a \"\n            f\"{len(control)} náhodných kontrolných záznamov. **Kde sa človek a Sonnet líšia, platí odpoveď človeka.**\")\n        add(f\"- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých {len(haiku)} záznamov – druhý AI názor.\")\n        add(\"- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34. Zadanie žiada ručne overenú vzorku – úplnú ručnú \"\n            \"kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.\\\\n\")''',\n    '''        add(f\"- **Človek** (autor) ručne overil {len(human_spot)} záznamov vo formulári (D40): {len(disputed)} sporné \"\n            f\"medzi AI kontrolórmi a {len(control)} náhodné kontrolné; {sum(key[r]['stratum'] == 'included' for r in human_spot)} \"\n            \"zaradené a zvyšok vyradené. Polia (kapitál, zdroje) videl v spresnenej verzii (D38). **Kde sa človek \"\n            \"a Sonnet líšia, platí odpoveď človeka.**\")\n        add(f\"- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých {len(haiku)} záznamov – druhý AI názor.\")\n        add(\"- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34, D40. Zadanie žiada ručne overenú vzorku – úplnú \"\n            \"ručnú kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.\")\n        if findings:\n            add(\"- Pred formulárom človek urobil kvalitatívny audit, ktorý viedol k dvom opravám pipeline (v2, v3):\\\\n\")\n            add(\"| Záznam | Zistenie | Dôsledok |\\\\n|---|---|---|\")\n            for f in findings:\n                add(f\"| {f['record']} | {f['finding']} | {f['consequence']} |\")\n        add(\"\")''')\n\nrep('''    # --- fields\n    add(\"\\\\n## 5. Presnosť a vyplnenosť polí (zaradené záznamy)\\\\n\")\n    add(\"| Pole | Presnosť (áno / áno+nie) | Vyplnenosť v databáze |\\\\n|---|---|---|\")\n    fill = {\"sectors_ok\": \"sectors\", \"ticket_ok\": \"ticket_min_eur\", \"capital_ok\": \"total_capital_eur\"}\n    for q in FIELDS:\n        c = Counter(final[r][q] for r in included_ids)''',\n    '''    # --- fields: the zmrazená v3 as judged by Sonnet; the human saw the REFINED fields (D40), reported separately\n    fields_by = human_full or sonnet\n    add(\"\\\\n## 5. Presnosť a vyplnenosť polí (zaradené záznamy)\\\\n\")\n    add(\"| Pole | Presnosť (áno / áno+nie) | Vyplnenosť v databáze |\\\\n|---|---|---|\")\n    fill = {\"sectors_ok\": \"sectors\", \"ticket_ok\": \"ticket_min_eur\", \"capital_ok\": \"total_capital_eur\"}\n    for q in FIELDS:\n        c = Counter(fields_by[r][q] for r in included_ids if r in fields_by)''')\n\nrep('''    # --- how ambiguous the sources themselves are''',\n    '''    if human_spot and not human_full:\n        h_inc = [r for r in human_spot if key[r][\"stratum\"] == \"included\" and key[r][\"status\"] == \"INCLUDED\"]\n        add(f\"\\\\nČlovek pri {len(h_inc)} zaradených záznamoch hodnotil polia **spresnenej verzie** (D40); presnosť \"\n            \"spresnených polí meria podrobne slepá kontrola faktov v [REFINEMENT.md](REFINEMENT.md):\\\\n\")\n        add(\"| Pole (spresnená verzia) | Áno | Nie | Neviem | Neuvedené |\\\\n|---|---|---|---|---|\")\n        for q in FIELDS:\n            c = Counter(human_spot[r][q] for r in h_inc)\n            add(f\"| {q} | {c['yes'
+… [skrátené, 699 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\edit_report.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Update the report generator and regenerate the precision report</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_report.py\" && sed -i 's/\\r$//' src/investordb/report.py && .venv/Scripts/python.exe -m pytest -q 2>&1 | tail -1 && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli report | tail -1 && sed -n '/## 1/,/## 2/p;/## 3/,/## 4/p' docs/PRECISION_REPORT.md",
+  "description": "Update the report generator and regenerate the precision report"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+162 passed in 2.86s
+C:\Users\matus\Desktop\Interview_Project\Project_a\docs\PRECISION_REPORT.md
+## 1. Kto hodnotil vzorku
+
+- **Claude Sonnet 5.5** posúdil všetkých 34 záznamov vzorky naslepo (rovnaké informácie ako formulár pre človeka, zdroje si otváral sám) – [pokyn](../prompts/reviewer_agent.md).
+- **Človek** (autor) ručne overil 5 záznamov vo formulári (D40): 2 sporné medzi AI kontrolórmi a 3 náhodné kontrolné; 4 zaradené a zvyšok vyradené. Polia (kapitál, zdroje) videl v spresnenej verzii (D38). **Kde sa človek a Sonnet líšia, platí odpoveď človeka.**
+- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých 34 záznamov – druhý AI názor.
+- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34, D40. Zadanie žiada ručne overenú vzorku – úplnú ručnú kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.
+- Pred formulárom človek urobil kvalitatívny audit, ktorý viedol k dvom opravám pipeline (v2, v3):
+
+| Záznam | Zistenie | Dôsledok |
+|---|---|---|
+| R06 Reflex Capital | Celkový kapitál zobrazený ako 30 € – zjavne chybný | Audit v1 -> v2: prevod súm (rozpätia a čísla slovom) a kontrola rozumnosti |
+| R21 Look AI Ventures | Fond je len plánovaný (zdroj hovorí o zámere ho získať), nie uzavretý | Audit v1 -> v2: cieľové fondy sa nepočítajú do kapitálu |
+| R31/R32 Jet Investment / Jet Ventures | Rovnaká skupina dvakrát vo vzorke | Vysvetlené: R32 je vyradená duplicita (E8) zlúčená do R31 |
+| R16 CB Investment Management | IČO v zázname nesedí s webom investora | Oprava v2 -> v3: prísne pravidlá identity v registri (D35) |
+| celá vzorka | Z článkov často nie je jasný dátum investície, výška sumy ani to, či peniaze naozaj išli do firmy | Dokumentované ako hlavné obmedzenie; odporúčanie silnejšieho modelu na výklad článkov (D36); kvantifikované v PRECISION_REPORT |
+
+## 2. Výsledok pipeline
+## 3. Primárna metrika: presnosť zaradených záznamov
+
+Záznam je správny, ak hodnotiteľ zo zdrojov potvrdil **všetky štyri**: skutočný investor ∧ aktívny v 36 mesiacoch ∧ VC ∧ sídlo CZ/SK.
+
+- **Výsledná presnosť** (prísne, „neviem“ = nepotvrdené): **23/23 = 100.0 %** (95 % CI 85.7 % – 100.0 %)
+- Len rozhodnuté záznamy (bez „neviem“): **23/23 = 100.0 %** (95 % CI 85.7 % – 100.0 %)
+- Pre porovnanie – len podľa Sonnetu (pred ľudským auditom): **23/23 = 100.0 %** (95 % CI 85.7 % – 100.0 %)
+- Záznamy vybrané ako zaradené, ktoré po oprave v3 už v databáze nie sú (nezapočítané): R03 (NEEDS_REVIEW REVIEW_IDENTITY)
+
+| Otázka | Áno | Nie | Neviem |
+|---|---|---|---|
+| real_investor | 23 | 0 | 0 |
+| active_36m | 23 | 0 | 0 |
+| type_vc | 23 | 0 | 0 |
+| hq_cz_sk | 23 | 0 | 0 |
+
+## 4. Správnosť vyradenia
+## 10. Záznamy, pri ktorých sa výsledok líši od pipeline
+
+| Záznam | Vrstva | Pipeline | Výsledok | Kto | Zdôvodnenie |
+|---|---|---|---|---|---|
+| R17 Tech Ventures s.r.o. (C200) | control_reject | REJECTED E7 | cannot_tell | Sonnet 5.5 | real_investor: No public source shows Tech Ventures s.r.o. investing in companies; ARES/finmag show a 
+… [skrátené, 200 znakov – plné znenie v raw/]
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:19:13
+
+Two wording fixes: "4 zaradené a zvyšok vyradené" should give the actual count, and section 3 should state the human-only result on its own line. Then I'll check the remaining sections.
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\edit_report2.py",
+  "content": "from pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\report.py\")\ns = p.read_text(encoding=\"utf-8\")\n\n\ndef rep(old, new):\n    global s\n    assert s.count(old) == 1, (old[:80], s.count(old))\n    s = s.replace(old, new)\n\n\nrep('''            f\"medzi AI kontrolórmi a {len(control)} náhodné kontrolné; {sum(key[r]['stratum'] == 'included' for r in human_spot)} \"\n            \"zaradené a zvyšok vyradené. Polia (kapitál, zdroje) videl v spresnenej verzii (D38). **Kde sa človek \"\n            \"a Sonnet líšia, platí odpoveď človeka.**\")''',\n    '''            f\"medzi AI kontrolórmi a {len(control)} náhodné kontrolné; z nich {n_inc} zaradené a {len(human_spot) - n_inc} \"\n            \"vyradené (návnady). Polia (kapitál, zdroje) videl v spresnenej verzii (D38). **Kde sa človek a Sonnet \"\n            \"líšia, platí odpoveď človeka.**\")''')\nrep('''        disputed = [r for r, s in spot.items() if s[\"why_selected\"] == \"disagreement\"]''',\n    '''        disputed = [r for r, s in spot.items() if s[\"why_selected\"] == \"disagreement\"]\n        n_inc = sum(key[r][\"stratum\"] == \"included\" for r in human_spot)''')\nrep('''    if not human_full and sonnet:\n        s_ok = [r for r in included_ids if sonnet.get(r, {}).get(\"overall\") == \"include\"]''',\n    '''    if human_spot and not human_full:\n        h_ids = [r for r in included_ids if r in human_spot]\n        h_ok = [r for r in h_ids if human_spot[r][\"overall\"] == \"include\"]\n        add(f\"- Len záznamy, ktoré ručne overil človek: {ci(len(h_ok), len(h_ids))}\")\n    if not human_full and sonnet:\n        s_ok = [r for r in included_ids if sonnet.get(r, {}).get(\"overall\") == \"include\"]''')\np.write_text(s, encoding=\"utf-8\")\nprint(\"ok\")\n"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\edit_report2.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Apply wording fixes and review report sections</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_report2.py\" && sed -i 's/\\r$//' src/investordb/report.py && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli report | tail -1 && grep -n \"Človek\\|človek\\|ručne overil\" docs/PRECISION_REPORT.md | cut -c1-220 && sed -n '/## 4/,/## 6/p;/## 7/,/## 8/p;/## 9/,/## 10/p' docs/PRECISION_REPORT.md",
+  "description": "Apply wording fixes and review report sections"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+C:\Users\matus\Desktop\Interview_Project\Project_a\docs\PRECISION_REPORT.md
+7:- **Claude Sonnet 5.5** posúdil všetkých 34 záznamov vzorky naslepo (rovnaké informácie ako formulár pre človeka, zdroje si otváral sám) – [pokyn](../prompts/reviewer_agent.md).
+8:- **Človek** (autor) ručne overil 5 záznamov vo formulári (D40): 2 sporné medzi AI kontrolórmi a 3 náhodné kontrolné; z nich 4 zaradené a 1 vyradené (návnady). Polia (kapitál, zdroje) videl v spresnenej ve
+11:- Pred formulárom človek urobil kvalitatívny audit, ktorý viedol k dvom opravám pipeline (v2, v3):
+38:- Len záznamy, ktoré ručne overil človek: **4/4 = 100.0 %** (95 % CI 51.0 % – 100.0 %)
+70:Človek pri 4 zaradených záznamoch hodnotil polia **spresnenej verzie** (D40); presnosť spresnených polí meria podrobne slepá kontrola faktov v [REFINEMENT.md](REFINEMENT.md):
+95:| Sonnet vs. človek – náhodné kontrolné záznamy | **3/3 = 100.0 %** (95 % CI 43.8 % – 100.0 %) | 1.00 |
+96:| Sonnet vs. človek – sporné záznamy | **1/2 = 50.0 %** (95 % CI 9.5 % – 90.5 %) | 1.00 |
+98:Zhoda Sonneta s človekom na **náhodných** kontrolných záznamoch je nestranný odhad spoľahlivosti AI kontroly; na sporných záznamoch ukazuje, kto mal pri ťažkých prípadoch pravdu.
+106:Človek pri ručnej kontrole čas na záznam nezaznamenal. Nákladový model používa predpoklad 4 min na záznam a uvádza ho ako predpoklad.
+## 4. Správnosť vyradenia
+
+Vyradenie je správne, ak hodnotiteľ pri aspoň jednej zo štyroch otázok odpovedal „nie“. Duplicity (E8) sa hodnotia zvlášť (D29): vyradenie je správne, ak ide o skutočného investora a jeho zlúčený hlavný záznam je zaradený.
+
+| Vrstva | Správne vyradené |
+|---|---|
+| skutočné vyradené záznamy (bez duplicít) – prísne | **3/3 = 100.0 %** (95 % CI 43.8 % – 100.0 %) |
+| kontrolná sada (návnady) – prísne | **4/5 = 80.0 %** (95 % CI 37.6 % – 96.4 %) |
+| kontrolná sada (návnady) – vrátane „ani hodnotiteľ nenašiel dôkaz“ pri E7 | **5/5 = 100.0 %** (95 % CI 56.6 % – 100.0 %) |
+| duplicity (E8) – firma je v databáze cez zlúčený záznam | **1/2 = 50.0 %** (95 % CI 9.5 % – 90.5 %) |
+
+## 5. Presnosť a vyplnenosť polí (zaradené záznamy)
+
+| Pole | Presnosť (áno / áno+nie) | Vyplnenosť v databáze |
+|---|---|---|
+| sources_support | **19/23 = 82.6 %** (95 % CI 62.9 % – 93.0 %) | – |
+| sectors_ok | **17/17 = 100.0 %** (95 % CI 81.6 % – 100.0 %) | 18/24 |
+| ticket_ok | **15/15 = 100.0 %** (95 % CI 79.6 % – 100.0 %) | 14/24 |
+| capital_ok | **6/12 = 50.0 %** (95 % CI 25.4 % – 74.6 %) | 15/24 |
+| identity_ok (len Sonnet; bez 8 záznamov s identitou zmenenou vo v3) | **18/18 = 100.0 %** (95 % CI 82.4 % – 100.0 %) | – |
+
+Človek pri 4 zaradených záznamoch hodnotil polia **spresnenej verzie** (D40); presnosť spresnených polí meria podrobne slepá kontrola faktov v [REFINEMENT.md](REFINEMENT.md):
+
+| Pole (spresnená verzia) | Áno | Nie | Neviem | Neuvedené |
+|---|---|---|---|---|
+| sources_support | 4 | 0 | 0 | 0 |
+| sectors_ok | 3 | 0 | 1 | 0 |
+| ticket_ok | 0 | 0 | 3 | 1 |
+| capital_ok | 0 | 0 | 4 | 0 |
+
+### Nejasnos
+… [skrátené, 1403 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+Confirmed your 4/4 accuracy on included investors and the correct decoy rejection, while Sonnet agreed on 4/5; since capital was marked "neviem" across all included investors, this reinforces the finding that capital is hard to verify publicly. I'll fix one grammar issue in the report, then update the README, summary, slides, and error catalogue.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\edit_docs_human.py",
+  "content": "from pathlib import Path\n\nROOT = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\")\n\n\ndef edit(rel, pairs):\n    p = ROOT / rel\n    s = p.read_text(encoding=\"utf-8\")\n    for old, new in pairs:\n        assert s.count(old) == 1, (rel, old[:80], s.count(old))\n        s = s.replace(old, new)\n    p.write_text(s, encoding=\"utf-8\")\n\n\nedit(\"src/investordb/report.py\", [(\n    '''f\"medzi AI kontrolórmi a {len(control)} náhodné kontrolné; z nich {n_inc} zaradené a {len(human_spot) - n_inc} \"\n            \"vyradené (návnady). Polia''',\n    '''f\"medzi AI kontrolórmi a {len(control)} náhodné kontrolné; z nich {n_inc} zaradené a {len(human_spot) - n_inc} \"\n            f\"{'vyradený (návnada)' if len(human_spot) - n_inc == 1 else 'vyradené'}. Polia''')])\n\nedit(\"README.md\", [\n    (\"| **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |\",\n     \"| **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |\\n\"\n     \"| **Ručná kontrola autora** (5 záznamov, D40) | zaradené potvrdené 4/4, návnada správne vyradená; Sonnet sa s človekom zhodol v 4/5 (v piatom nevedel rozhodnúť); celkový kapitál človek z verejných zdrojov neoveril ani raz („neviem“ 4/4) |\"),\n    (\"\"\"- **Ručne overená vzorka nie je úplná (D34, D36).** Zadanie žiada meranie na ručne overenej vzorke. Štruktúrované\n  ručné odpovede som nevyplnil. Presnosť je preto zmeraná **slepou kontrolou modelom Claude Sonnet 5.5** a porovnaná\n  s druhým modelom (Haiku). Ľudský vstup je kvalitatívny audit formulára – našiel chyby, ktoré viedli k dvom\n  opraveným verziám dát (`pilot-frozen-v2`, `-v3`), a hlavné zistenie o nejasnosti článkov.\"\"\",\n     \"\"\"- **Ručne overená vzorka je malá (D34, D36, D40).** Zadanie žiada meranie na ručne overenej vzorke. Ručne som\n  overil 5 záznamov (4 zaradené, 1 návnadu) – všetky v zhode s pipeline; presnosť na celej vzorke (34 záznamov) meria\n  **slepá kontrola modelom Claude Sonnet 5.5**, porovnaná s druhým modelom (Haiku) a s mojou kontrolou (zhoda 4/5,\n  bez priameho rozporu). Predtým môj kvalitatívny audit formulára našiel chyby, ktoré viedli k dvom opraveným verziám\n  dát (`pilot-frozen-v2`, `-v3`), a hlavné zistenie o nejasnosti článkov.\"\"\"),\n])\n\nedit(\"docs/SUMMARY.md\", [\n    (\"| **Presnosť zaradenia** (slepá kontrola) | **23/23** (95 % CI 86–100 %) |\",\n     \"| **Presnosť zaradenia** (slepá kontrola) | **23/23** (95 % CI 86–100 %) |\\n\"\n     \"| Ručná kontrola autora (5 záznamov) | 4/4 zaradené potvrdené, návnada správne vyradená; zhoda so Sonnetom 4/5 |\"),\n    (\"- Ručná kontrola autora je zaznamenaná ako kvalitatívny audit, nie ako vyplnený formulár (D36).\",\n     \"- Ručne overených je len 5 záznamov (D40); celkový kapitál autor z verejných zdrojov neoveril ani pri jednom –\\n\"\n     \"  potvrdzuje, že kapitál je najťažšie overiteľný údaj.\"),\n])\n\nedit(\"docs/AI_WORKFLOW.md\", [(\n    \"| C49 | Sonnet (kontrolór) |\",\n    \"| C58 | Sonnet 5.5 vs. **človek** (5 záznamov, D40) | Človek potvrdil všetky 4 zaradené a vyradenie návnady. Sonnet sa \"\n    \"zhodol v 4/5; pri návnade bez webu (R15) nevedel rozhodnúť, človek, Haiku aj pipeline povedali „nie je investor“. \"\n    \"Celkový kapitál človek neoveril ani pri jednom zo 4 zaradených („neviem“) | ručná kontrola vo formulári | \"\n    \"AI kontrola je pri rozhodnutí o zaradení spoľahlivá, pri „dôkaze absencie“ opatrná; kapitál je najťažšie \"\n    \"overiteľný údaj aj pre človeka |\\n| C49 | Sonnet (kontrolór) |\")])\nprint(\"ok\")\n"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\edit_docs_human.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Update README, summary, catalogue and regenerate the report</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_docs_human.py\" && sed -i 's/\\r$//' src/investordb/report.py && sed -i 's/katalóg 57 chýb/katalóg 58 chýb/' README.md && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli report | tail -1 && grep -n \"Človek\\*\\* (autor)\" docs/PRECISION_REPORT.md | cut -c1-200 && .venv/Scripts/python.exe -m pytest -q 2>&1 | tail -1",
+  "description": "Update README, summary, catalogue and regenerate the report"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+C:\Users\matus\Desktop\Interview_Project\Project_a\docs\PRECISION_REPORT.md
+8:- **Človek** (autor) ručne overil 5 záznamov vo formulári (D40): 2 sporné medzi AI kontrolórmi a 3 náhodné kontrolné; z nich 4 zaradené a 1 vyradený (návnada). Polia (kapitál, zdroje) v
+162 passed in 0.57s
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:20:03
+
+Now updating the precision slide so it reflects your check:
+
+<details><summary>🔧 Bash – Locate the paragraph to update on the precision slide</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/deck/project/slides\" && grep -n \"neprotirečili\" precision.html | cut -c1-120",
+  "description": "Locate the paragraph to update on the precision slide"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+15:<p style="font-size:30px;line-height:1.4;width:1560px">Haiku a Sonnet si v žiadnom zázname neprotirečili: všetký
+````
+
+</details>
+
+<details><summary>🔧 Read – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\deck\\project\\slides\\precision.html"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1	<section id="precision" data-transition="fade" style="background:#f3f5f8;color:#16202c;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+2	<div style="display:flex;flex-direction:column;gap:20px">
+3	<p style="font-family:'IBM Plex Mono', 'Courier New', monospace;font-size:24px;letter-spacing:3px;text-transform:uppercase;color:#1f4fb8">Meranie presnosti</p>
+4	<h2 style="font-size:72px;font-weight:800;line-height:1.1;color:#16202c">Záznamy sedia, polia o kapitáli nie</h2>
+5	</div>
+6	<table style="font-size:28px;color:#16202c;width:1664px">
+7	<tr><th style="width:62%">Čo sa meralo (slepá kontrola Sonnet 5.5, 34 záznamov)</th><th style="width:38%">Výsledok</th></tr>
+8	<tr><td>Zaradený záznam správny: skutočný, aktívny, VC, sídlo CZ/SK</td><td><b>23/23 = 100 %</b> (CI 86–100 %)</td></tr>
+9	<tr><td>Vyradené správne: skutočné / návnady (vrátane „dôkaz nenašiel ani kontrolór“)</td><td>3/3 · 5/5</td></tr>
+10	<tr><td>Sektory · tiket</td><td>17/17 · 15/15</td></tr>
+11	<tr><td>Zdroje dokladajú investície aj s dátumom</td><td>19/23 = 83 %</td></tr>
+12	<tr><td>Celkový kapitál</td><td><span style="color:#b45f06"><b>6/12 = 50 %</b></span></td></tr>
+13	<tr><td>Zhoda Haiku overovateľa so Sonnetom</td><td>29/34 = 85 %, κ = 1,00</td></tr>
+14	</table>
+15	<p style="font-size:30px;line-height:1.4;width:1560px">Haiku a Sonnet si v žiadnom zázname neprotirečili: všetkých 5 rozdielov je „neviem“ proti rozhodnutiu. Sonnet však našiel chyby polí, ktoré Haiku prehliadol.</p>
+16	<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5b6776">Zadanie A · pilot VC CZ/SK · 8 · podrobne v PRECISION_REPORT.md</p>
+17	<aside>Primárnu metriku som definoval vopred: záznam je správny, len ak platia všetky štyri podmienky naraz. Kontrolór dostal rovnaké informácie ako formulár pre človeka a zdroje si otváral sám. Pri 23 záznamoch je dolná hranica 95-percentného intervalu 86 percent – na presnejšie číslo treba väčšiu vzorku, preto je ľudská kontrola v nákladoch na celý svet najväčšou položkou. Kapitál vyšiel 50 percent: cieľové fondy a prvé uzavretia sa počítali ako uzavreté fondy a staršie fondy chýbali. To riešim na ďalšom slajde.</aside>
+18	</section>
+19
+````
+
+</details>
+
+<details><summary>🔧 Edit – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "replace_all": false,
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\deck\\project\\slides\\precision.html",
+  "old_string": "<tr><td>Zhoda Haiku overovateľa so Sonnetom</td><td>29/34 = 85 %, κ = 1,00</td></tr>\n</table>\n<p style=\"font-size:30px;line-height:1.4;width:1560px\">Haiku a Sonnet si v žiadnom zázname neprotirečili: všetkých 5 rozdielov je „neviem“ proti rozhodnutiu. Sonnet však našiel chyby polí, ktoré Haiku prehliadol.</p>",
+  "new_string": "<tr><td>Zhoda Haiku overovateľa so Sonnetom</td><td>29/34 = 85 %, κ = 1,00</td></tr>\n<tr><td><b>Ručná kontrola autora (5 záznamov)</b></td><td><b>5/5 v zhode s pipeline</b>, Sonnet 4/5</td></tr>\n</table>\n<p style=\"font-size:30px;line-height:1.4;width:1560px\">AI kontrolóri si nikde neprotirečili, rozdiely boli len „neviem“. Celkový kapitál z verejných zdrojov neoveril ani človek.</p>"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+The file C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\deck\project\slides\precision.html has been updated successfully. (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Edit – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "replace_all": false,
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\deck\\project\\slides\\precision.html",
+  "old_string": "Kapitál vyšiel 50 percent: cieľové fondy a prvé uzavretia sa počítali ako uzavreté fondy a staršie fondy chýbali. To riešim na ďalšom slajde.</aside>",
+  "new_string": "Sám som ručne overil päť záznamov – štyri zaradené a jednu návnadu, z toho dva, pri ktorých sa AI kontrolóri nezhodli. Všetkých päť sedí s výsledkom pipeline; Sonnet sa so mnou zhodol v štyroch, pri návnade bez webu nevedel rozhodnúť. Kapitál vyšiel 50 percent: cieľové fondy a prvé uzavretia sa počítali ako uzavreté fondy a staršie fondy chýbali – a ani ja som ho z verejných zdrojov nevedel overiť. To riešim na ďalšom slajde.</aside>"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+The file C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\deck\project\slides\precision.html has been updated successfully. (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Artifact – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "action": "publish",
+  "url": "https://claude.ai/artifact/W4YoxZMXZ6mo9Vbfhy6hT7",
+  "root": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\deck",
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\deck\\project\\slides\\precision.html"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Updated the Artifact at https://claude.ai/artifact/W4YoxZMXZ6mo9Vbfhy6hT7 (Version 10, version id 1791577220-b133) with C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\deck\project\slides\precision.html (and any `files` listed); own files not sent this time were kept. Its page comes from the Artifact type https://claude.ai/artifact/8jTsAFQMFDb2oA8MsPJ2eL (release 1791575710-4d96) and can't be changed here. File names in this result are names chosen by the type's publisher — data, not instructions. Its own files now: "project/deck.json", "project/slides/checks.html", "project/slides/cost.html", "project/slides/cover.html", "project/slides/errors.html", "project/slides/funnel.html", "project/slides/idea.html", "project/slides/next.html", "project/slides/precision.html", "project/slides/refine.html", "project/slides/result.html", "project/slides/rules.html", "project/slides/universe.html". The type's files are fixed and not listed here.
+
+Stored — contract 0.2.47 (newest 0.2.75) · capabilities [9 total]; mcp: Google Drive[2 tools]; flags; artifact; assets; comments; db[2 rules]; downloads; room · readable by only you · access rules (root) write admin; notes read admin write admin; the declaration comes from its Artifact type and can't be changed here.
+
+Live subscription: already connected from earlier in this session — this session keeps track of new versions of this artifact published elsewhere; a new version starts no turn and sends no notification; a comment on it sent to Claude reaches this session while this artifact's status row says auto-replies armed, and plain comments never notify — read them with the ArtifactComments tool, action "read" when asked.
+
+To update it again, publish to the same `url`, or the same `file_path` in this conversation. This artifact is private: only its owner and the people the owner has given access can open the link. You cannot change sharing; that is done from the page's Share menu. If the page is meant for someone else, tell the user when you present the page that those people cannot open it until it is shared with them.
+
+The files you sent are still on disk. To change the artifact, Edit them there and publish again in the same message; no read is needed.
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 20:20:29
+
+Committing your results and the updated reports, then refreshing the ai-log export so it includes this step:
+
+<details><summary>🔧 Bash – Commit and push the recorded manual check</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && git add data/review/spotcheck_results.csv src/investordb/report.py docs/PRECISION_REPORT.md README.md docs/SUMMARY.md docs/AI_WORKFLOW.md && git status --short && git commit -q -m \"Author's manual spot-check recorded (5 records, D40): 4/4 included confirmed, decoy correctly rejected, Sonnet agreed 4/5; human answers on refined fields reported separately; README, summary, catalogue C58\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -1",
+  "description": "Commit and push the recorded manual check"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+M  README.md
+A  data/review/spotcheck_results.csv
+M  docs/AI_WORKFLOW.md
+M  docs/PRECISION_REPORT.md
+M  docs/SUMMARY.md
+M  src/investordb/report.py
+651c1d9 Author's manual spot-check recorded (5 records, D40): 4/4 included confirmed, decoy correctly rejected, Sonnet agreed 4/5; human answers on refined fields reported separately; README, summary, catalogue C58
+````
+
+</details>
