@@ -58,7 +58,10 @@ def draw(decisions: list[dict], controls: set[str]) -> list[tuple[str, dict]]:
 
 def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:
     """What the pipeline claims about the record - verified values and source URLs, no quotes, no verdict."""
-    ok = [c for c in claims if c["candidate_id"] == cid and c["auto_check"] == "ok"]
+    return _view([c for c in claims if c["candidate_id"] == cid and c["auto_check"] == "ok"], decision)
+
+
+def _view(ok: list[dict], decision: dict, one_per_company: bool = False) -> dict:
     investments = []
     for c in ok:
         # only investments the pipeline actually counts: no exits, investor named; a date only if it is a deal date
@@ -67,6 +70,13 @@ def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:
             date = c["event_date"][:{"year": 4, "month": 7}.get(c.get("event_date_precision"), 10)] \
                 if c.get("deal_context") == "deal" and c["event_date"] else ""
             investments.append({"company": v.get("company"), "date": date, "url": c["source_url"]})
+    if one_per_company:  # the date the rules count (the latest deal date), else one undated mention
+        best: dict[str, dict] = {}
+        for i in investments:
+            k = str(i["company"]).strip().lower()
+            if k not in best or (i["date"] or "") > (best[k]["date"] or ""):
+                best[k] = i
+        investments = list(best.values())
     sources = sorted({c["source_url"] for c in ok})
     return {
         "name": decision["name"], "website": decision["website"], "legal_name": decision["legal_name"],
@@ -192,11 +202,53 @@ def build_spotcheck(target: int = 10, min_random: int = 3) -> Path:
     return path
 
 
-def render_form(records: list[dict], key: str = "investordb-review-v2", filename: str = "review_results.csv") -> str:
+# D40: the author's spot-check, cut to 5 of the 10 records (2 AI disagreements + 3 random controls, 4 included and
+# 1 control-set reject, original shuffled order), showing the REFINED values (D38) of included investors
+SPOTCHECK_REFINED_IDS = ["R31", "R19", "R15", "R05", "R08"]
+
+
+def build_spotcheck_refined(ids: list[str] = SPOTCHECK_REFINED_IDS) -> Path:
+    """Same questions, same answer format (spotcheck_results.csv); included investors are shown as rebuilt by the
+    refinement stage (refined capital, funds with status, deal dates), rejected ones as frozen in v3."""
+    from datetime import date
+
+    from investordb import refine
+
+    result = refine.rebuild_all(date(2026, 10, 9))
+    key = {k["review_id"]: k for k in _read(REVIEW_DIR / "review_key.csv")}
+    decisions = {d["candidate_id"]: d for d in _read(DECISIONS_CSV)}
+    claims = _read(CLAIMS_CSV)
+    old_spot = {r["review_id"]: r for r in _read(REVIEW_DIR / "spotcheck_ids.csv")}
+    records = []
+    for rid in ids:
+        cid = key[rid]["candidate_id"]
+        if cid in result["rows"]:
+            ok = [c for c in result["merged"][cid] if c["auto_check"] == "ok"]
+            records.append({"review_id": rid, **_view(ok, result["rows"][cid], one_per_company=True)})
+        else:
+            records.append({"review_id": rid, **claimed_view(cid, claims, decisions[cid])})
+    with (REVIEW_DIR / "spotcheck_ids.csv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(next(iter(old_spot.values())).keys()))
+        w.writeheader()
+        w.writerows(old_spot[rid] for rid in ids)
+    (REVIEW_DIR / "spotcheck_records.json").write_text(json.dumps(records, ensure_ascii=False, indent=1),
+                                                       encoding="utf-8")
+    path = REVIEW_DIR / "spotcheck.html"
+    path.write_text(render_form(records, key="investordb-spotcheck-v4", filename="spotcheck_results.csv",
+                                note="Zobrazená je <b>spresnená verzia</b> databázy (kapitál, fondy so stavom zbierky a "
+                                     "dátumy obchodov po spresnení, D38), stav k 9. 10. 2026. Pri fondoch je uvedené, "
+                                     "či ide o uzavretý fond, prvé uzavretie alebo len cieľ."),
+                    encoding="utf-8")
+    return path
+
+
+def render_form(records: list[dict], key: str = "investordb-review-v2", filename: str = "review_results.csv",
+                note: str = "") -> str:
     questions = json.dumps({"primary": PRIMARY, "secondary": SECONDARY}, ensure_ascii=False)
     data = json.dumps(records, ensure_ascii=False)
-    return (TEMPLATE.replace("__DATA__", data).replace("__QUESTIONS__", questions).replace("__N__", str(len(records)))
+    page = (TEMPLATE.replace("__DATA__", data).replace("__QUESTIONS__", questions).replace("__N__", str(len(records)))
             .replace("investordb-review-v2", key).replace("review_results.csv", filename))
+    return page.replace('<div class="bar">', f'<p class="muted">{note}</p>\n<div class="bar">', 1) if note else page
 
 
 TEMPLATE = """<!doctype html>

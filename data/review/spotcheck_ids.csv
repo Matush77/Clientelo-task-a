@@ -1,11 +1,6 @@
 review_id,why_selected,sonnet_overall,haiku_overall
-R23,disagreement,include,cannot_tell
 R31,random_control,include,include
-R27,random_control,exclude,exclude
 R19,random_control,include,include
 R15,disagreement,cannot_tell,exclude
 R05,disagreement,include,cannot_tell
-R32,random_control,include,include
-R16,disagreement,exclude,cannot_tell
 R08,random_control,include,include
-R17,disagreement,cannot_tell,exclude

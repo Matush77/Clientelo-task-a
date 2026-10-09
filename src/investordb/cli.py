@@ -158,9 +158,9 @@ def cmd_sample(args: argparse.Namespace) -> None:
 
 def cmd_spotcheck(args: argparse.Namespace) -> None:
     """Build the human spot-check form from the Sonnet review and the Haiku verifier (D34)."""
-    from investordb.sample import build_spotcheck
+    from investordb.sample import build_spotcheck, build_spotcheck_refined
 
-    print(build_spotcheck())
+    print(build_spotcheck_refined() if args.refined else build_spotcheck())
 
 
 def cmd_refine(args: argparse.Namespace) -> None:
@@ -229,6 +229,7 @@ def main() -> None:
     p.set_defaults(func=cmd_sample)
 
     p = sub.add_parser("spotcheck", help="build the human spot-check form (Sonnet vs Haiku disagreements + random)")
+    p.add_argument("--refined", action="store_true", help="the 5-record form with refined values (D40)")
     p.set_defaults(func=cmd_spotcheck)
 
     p = sub.add_parser("cost", help="write docs/COST_ESTIMATE.md from measured usage")

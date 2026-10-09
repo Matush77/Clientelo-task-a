@@ -101,7 +101,7 @@ Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 57 chýb a slab�
 
 ## Kľúčové rozhodnutia
 
-Všetky (39) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitejšie:
+Všetky (40) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitejšie:
 
 - Pilot **CZ + SK** namiesto len SK (samotné SK má príliš málo aktívnych VC na zmysluplné meranie).
 - Investor = **≥ 2 investície do firiem, ≥ 1 v posledných 36 mesiacoch** (výnimka: nový fond).
