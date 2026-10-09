@@ -7,18 +7,61 @@ registered under 7020 "management consultancy").
 
 from __future__ import annotations
 
+import hashlib
+import json
 import re
+import time
 from dataclasses import dataclass, field
+from pathlib import Path
 
 import httpx
 
 ARES = "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty"
 RPO = "https://api.statistics.sk/rpo/v1"
 TIMEOUT = 30.0
+CACHE_DIR = Path(__file__).resolve().parents[2] / "data" / "cache" / "registry"
+
+
+class _Response:
+    """Minimal stand-in for httpx.Response, so cached and failed calls look like real ones to callers."""
+
+    def __init__(self, status_code: int, payload):
+        self.status_code = status_code
+        self._payload = payload
+
+    def json(self):
+        return self._payload
+
+
+def _request(method: str, url: str, **kwargs) -> _Response:
+    """Registry call with a disk cache and retries. A call that keeps failing returns status 599 instead of raising,
+    so one slow API response cannot crash a whole pipeline run (the record then simply has no registry match)."""
+    key = hashlib.sha1(json.dumps([method, url, kwargs], sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+    cache_file = CACHE_DIR / f"{key}.json"
+    if cache_file.exists():
+        cached = json.loads(cache_file.read_text(encoding="utf-8"))
+        return _Response(cached["status"], cached["payload"])
+    for attempt in range(3):
+        try:
+            resp = httpx.request(method, url, timeout=TIMEOUT, **kwargs)
+            try:
+                payload = resp.json()
+            except ValueError:
+                payload = {}
+            if resp.status_code < 500:
+                CACHE_DIR.mkdir(parents=True, exist_ok=True)
+                cache_file.write_text(json.dumps({"status": resp.status_code, "payload": payload}, ensure_ascii=False),
+                                      encoding="utf-8")
+                return _Response(resp.status_code, payload)
+        except httpx.HTTPError:
+            pass
+        time.sleep(2 * (attempt + 1))
+    return _Response(599, {})
 
 LEGAL_SUFFIXES = re.compile(
     r"\b(s\.?\s?r\.?\s?o\.?|spol\.?\s?s\s?r\.?\s?o\.?|a\.?\s?s\.?|k\.?\s?s\.?|v\.?\s?o\.?\s?s\.?|se|sicav|"
     r"investi[čc]n[íý] fond|podfond|správ\.?\s?spol\.?|správcovská spoločnosť|investiční společnost|"
+    r"osoba rizikového kapitálu|otevřený podílový fond|"
     r"gmbh|ltd|llc|b\.?v\.?|s\.?a\.?r\.?l\.?)\b",
     re.I,
 )
@@ -67,13 +110,13 @@ def _ares_record(s: dict) -> RegistryRecord:
 
 
 def ares_get(ico: str) -> RegistryRecord | None:
-    resp = httpx.get(f"{ARES}/{ico.strip()}", timeout=TIMEOUT)
+    resp = _request("GET", f"{ARES}/{ico.strip()}")
     return _ares_record(resp.json()) if resp.status_code == 200 else None
 
 
 def ares_search(name: str, limit: int = 10, offset: int = 0) -> tuple[int, list[RegistryRecord]]:
     """(total matches, records). ARES refuses queries with >1000 matches; the total is then parsed from the error."""
-    resp = httpx.post(f"{ARES}/vyhledat", json={"obchodniJmeno": name, "pocet": limit, "start": offset}, timeout=TIMEOUT)
+    resp = _request("POST", f"{ARES}/vyhledat", json={"obchodniJmeno": name, "pocet": limit, "start": offset})
     data = resp.json()
     if resp.status_code != 200:
         match = re.search(r"\(([\d\s\xa0]+)\)", data.get("popis", ""))
@@ -103,7 +146,7 @@ def _rpo_address(addresses: list[dict] | None) -> str:
 
 def rpo_get(rpo_id: int | str) -> RegistryRecord | None:
     url = f"{RPO}/entity/{rpo_id}"
-    resp = httpx.get(url, params={"showHistoricalData": "false"}, timeout=TIMEOUT)
+    resp = _request("GET", url, params={"showHistoricalData": "false"})
     if resp.status_code != 200:
         return None
     d = resp.json()
@@ -126,7 +169,7 @@ def rpo_get(rpo_id: int | str) -> RegistryRecord | None:
 
 def rpo_search(name: str = "", ico: str = "", limit: int = 10) -> list[RegistryRecord]:
     params = {"identifier": ico} if ico else {"fullName": name}
-    resp = httpx.get(f"{RPO}/search", params=params, timeout=TIMEOUT)
+    resp = _request("GET", f"{RPO}/search", params=params)
     if resp.status_code != 200:
         return []
     ids = [r["id"] for r in resp.json().get("results", [])][:limit]
