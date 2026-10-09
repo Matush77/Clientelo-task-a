@@ -134,6 +134,18 @@ def _conversion_note(m: Money, on: str) -> str:
     return "" if m.currency == "EUR" else f"{m.raw} → EUR kurzom ECB {eur_rate(m.currency, on)} ({on})"
 
 
+# words that introduce an amount as a goal or an upper bound: "target size of EUR 150 million", "až 150 milionů"
+TARGET_BEFORE = re.compile(TARGET_FUND.pattern + r"|\baž\b|\bup to\b|\bdo výše\b|\bdo výšky\b", re.I)
+
+
+def target_near(quote: str, amount_text: str, window: int = 60) -> bool:
+    """True if the words right before the amount make it a target ('contracts for EUR 27M of the targeted EUR 40M'
+    -> 'EUR 27M' is not a target, 'EUR 40M' is)."""
+    i = quote.lower().find(amount_text.lower())
+    before = quote[max(0, i - window):i] if i >= 0 else quote
+    return bool(TARGET_BEFORE.search(before))
+
+
 def total_capital(ok: list[dict], on: str) -> dict:
     """Stated AUM wins; otherwise the sum of all verified CLOSED fund sizes (D17, D30).
     Target / planned funds and ranges are listed separately, never summed; implausible amounts are dropped + flagged."""
@@ -147,25 +159,40 @@ def total_capital(ok: list[dict], on: str) -> dict:
             return out
         out["flags"].append(f"AUM '{m.raw}' vyradené (rozpätie alebo nereálna hodnota)")
     funds: dict[str, Money] = {}
-    for c in ok:
-        if c["field"] != "funds":
-            continue
+    # refined claims (D38) carry a fundraising status; for one fund the latest proven status wins (first -> final close).
+    # Claims without a status keep their original order (stable sort), so frozen results do not change.
+    rank = {"first_close": 1, "final_close": 2}
+
+    def latest_first(c: dict) -> tuple:
+        f = json.loads(c["value"]) or {}
+        if not f.get("status"):
+            return (0, "", 0)
+        return (1, str(f.get("status_date") or c.get("published_date") or ""), rank.get(f["status"], 0))
+    claims = sorted((c for c in ok if c["field"] == "funds"), key=latest_first, reverse=True)
+    for c in claims:
         f = json.loads(c["value"]) or {}
         m = parse_money(f.get("size"), f.get("currency"))
         if not m:
             continue
-        name = f.get("name") or "fond"
-        if m.is_range or TARGET_FUND.search(c["quote"]):
+        name, status = f.get("name") or "fond", f.get("status")
+        if status:  # the agent read the status; still refuse an amount that the quote itself introduces as a target
+            is_target = m.is_range or status == "target" or target_near(c["quote"], c.get("value_text") or m.raw)
+        else:
+            is_target = m.is_range or bool(TARGET_FUND.search(c["quote"]))
+        if is_target:
             out["targets"].append(f"{name}: {m.raw} (cieľ / plán)")
             continue
         if not plausible("fund", to_eur(m, on)):
             out["flags"].append(f"fond '{name}: {m.raw}' vyradený (nereálna hodnota)")
             continue
-        funds.setdefault(core_name(name), m)  # same fund cited twice counts once
+        key = core_name(name)
+        if key not in funds and status == "first_close":
+            out["notes"].append(f"{name}: zatiaľ len prvé uzavretie {m.raw}")
+        funds.setdefault(key, m)  # same fund cited twice counts once
     if funds:
         out.update(eur=sum(to_eur(m, on) for m in funds.values()), method=f"sum_of_{len(funds)}_closed_funds",
                    approx=any(m.approx for m in funds.values()),
-                   notes=[n for m in funds.values() if (n := _conversion_note(m, on))])
+                   notes=out["notes"] + [n for m in funds.values() if (n := _conversion_note(m, on))])
     return out
 
 
@@ -188,6 +215,9 @@ def ticket_eur(ticket: dict, on: str) -> tuple[float | None, float | None, list[
     return (lo if plausible("ticket", lo) else None), (hi if plausible("ticket", hi) else None), flags
 
 
+FUND_STATUS_SK = {"final_close": "uzavretý", "first_close": "prvé uzavretie", "target": "cieľ"}
+
+
 def wide_row(rec: dict, d: Decision, reg: RegistryRecord | None, ok: list[dict], as_of: date, name: str) -> dict:
     on = as_of.isoformat()
     ticket = _first(ok, "ticket") or {}
@@ -206,7 +236,9 @@ def wide_row(rec: dict, d: Decision, reg: RegistryRecord | None, ok: list[dict],
         ticket_min_eur=_eur(t_min_eur), ticket_max_eur=_eur(t_max_eur),
         total_capital_eur=_eur(cap["eur"]), capital_method=cap["method"], capital_approx=int(cap["approx"]),
         capital_note="; ".join(cap["notes"]), funds_target="; ".join(cap["targets"]),
-        funds="; ".join(f"{f.get('name')} ({f.get('size') or '?'})" for f in funds),
+        funds="; ".join(f"{f.get('name')} ({f.get('size') or '?'}"
+                        + (f", {FUND_STATUS_SK.get(f['status'], f['status'])})" if f.get("status") else ")")
+                        for f in funds),
         data_flags="; ".join(cap["flags"] + ticket_flags),
         n_investments=d.n_investments, n_investments_36m=d.n_recent,
         last_investment_date=_display_date(last) if last else "",

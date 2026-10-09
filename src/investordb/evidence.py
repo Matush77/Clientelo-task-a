@@ -149,8 +149,10 @@ def candidate_names() -> dict[str, list[str]]:
         return {r["candidate_id"]: [r["name"]] + [a for a in r["aliases"].split(" | ") if a] for r in csv.DictReader(f)}
 
 
-def check(rows: list[ClaimRow]) -> None:
+def check(rows: list[ClaimRow], extra_names: dict[str, list[str]] | None = None) -> None:
     names = candidate_names()
+    for cid, more in (extra_names or {}).items():  # e.g. names of merged duplicates (refinement, D38)
+        names.setdefault(cid, []).extend(more)
     # legal names the agents verified count as names too ("Biotech Investments, s. r. o.")
     for r in rows:
         if r.field == "identity":
