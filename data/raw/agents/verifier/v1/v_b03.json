@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R11",
+    "real_investor": {"answer": "yes", "why": "Inven describes itself as a venture capital fund investing EUR 500m from institutional investors and corporates, and co-led the Vytal round.", "source_url": "https://www.invencapital.cz"},
+    "active_36m": {"answer": "yes", "why": "Inven led Vytal's growth round, reported 11 March 2025, which is after 2023-10-08.", "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"},
+    "type_vc": {"answer": "yes", "why": "Described as a Prague-based venture capital fund investing in climate tech startups.", "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"},
+    "hq_cz_sk": {"answer": "yes", "why": "Registered seat is Pod Křížkem 1773/2, Praha 4 (ARES), and the website gives the same Prague address.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02059533"},
+    "sources_support": {"answer": "cannot_tell", "why": "Vytal is supported with its date; eliq, Ember, Hydrogrid and Taranis are named only on the homepage with no dates, so their investment dates cannot be checked."},
+    "sectors_ok": {"answer": "yes", "why": "Climate tech and energy focus is supported by the ain.ua article and the homepage portfolio (Zolar, eliq, Hydrogrid)."},
+    "ticket_ok": {"answer": "yes", "why": "Homepage lists 'Ticket size 2-30m EUR', matching the record."},
+    "capital_ok": {"answer": "yes", "why": "Homepage states it invests EUR 500m from institutional investors and corporates, matching the record's EUR 500m."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R12",
+    "real_investor": {"answer": "yes", "why": "Miton's own site says 'We invest our own capital' and lists startup investments.", "source_url": "https://www.miton.cz/en/about"},
+    "active_36m": {"answer": "yes", "why": "Miton's site dates its investments in Aim, Bandits and PangeAI to 2025, and the POS Experts stake was reported on 18 Nov 2024.", "source_url": "https://www.miton.cz/en/about"},
+    "type_vc": {"answer": "yes", "why": "Site is headed 'VC our own way' and runs startup funds (MitonC, Miton Psychonauts).", "source_url": "https://www.miton.cz/en/about"},
+    "hq_cz_sk": {"answer": "yes", "why": "Miton's Prague office at Corso IIa Křižíkova 148/34 is listed on its site; the company is MITON CZ, s.r.o.", "source_url": "https://www.miton.cz/en/about"},
+    "sources_support": {"answer": "no", "why": "Boataround is dated 2026-05-04, which is only the trendingtopics article date; the article names Miton as an investor without a date, and Miton's own site dates its Boataround entry to 2020. The other pairs are supported at least by year (Aim, Bandits, PangeAI 2025; POS Experts 2024; GTE 2024; Firefish 2023)."},
+    "sectors_ok": {"answer": "yes", "why": "AI projects Aim, Bandits and PangeAI are described on the Miton site and blog, matching 'ai_data'."},
+    "ticket_ok": {"answer": "yes", "why": "Miton's blog states it invested EUR 400k in Bandits, inside the 300k-2M range (currency assumed EUR)."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R13",
+    "real_investor": {"answer": "yes", "why": "Seed Starter, the Česká spořitelna CVC, joined the Definic and Repsense rounds and reportedly directed CZK 180m into eight startups.", "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"},
+    "active_36m": {"answer": "yes", "why": "Seed Starter joined the seed round of Definic, reported 12 June 2026, which is after 2023-10-08.", "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"},
+    "type_vc": {"answer": "yes", "why": "Seed Starter describes itself as 'Corporate Venture Capital of Česká spořitelna' investing in pre-seed and seed rounds.", "source_url": "https://www.seedstarter.cz/cs/uvod"},
+    "hq_cz_sk": {"answer": "yes", "why": "Registered seat is Olbrachtova 1929/62, Praha 4 (ARES), and the website lists the same Prague address.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/61058769"},
+    "sources_support": {"answer": "cannot_tell", "why": "Definic and Repsense are supported as Seed Starter co-investments, but the record dates equal article dates (Repsense article is 17 Dec 2025, record says 2025-12-01); the five 2023 companies appear in a 27 Nov 2023 article with no investment dates."},
+    "sectors_ok": {"answer": "not_given", "why": "The record has no sectors value."},
+    "ticket_ok": {"answer": "yes", "why": "seedstarter.cz states 'Ticket size 200k – 1M EUR', matching the record."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R14",
+    "real_investor": {"answer": "no", "why": "Investika is a Czech investment company whose products are real estate and retail securities, crypto and gold funds; no direct investment into companies is described.", "source_url": "https://www.investika.cz"},
+    "active_36m": {"answer": "no", "why": "The record lists no company investments, and the sources describe only property and fund products.", "source_url": "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"},
+    "type_vc": {"answer": "no", "why": "It is a real estate and retail fund manager, not a venture capital investor in startups.", "source_url": "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"},
+    "hq_cz_sk": {"answer": "yes", "why": "Registered seat is U Zvonařky 291/3, Praha 2 (ARES).", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23820632"},
+    "sources_support": {"answer": "cannot_tell", "why": "There are no listed company investments to support, and the sources describe only property and fund products."},
+    "sectors_ok": {"answer": "not_given", "why": "The record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "Newstream (29 May 2025) states assets over CZK 30bn, which matches the record's EUR 1.23bn; the homepage now shows higher figures (CZK 34bn and 46bn)."},
+    "overall": "exclude"
+  },
+  {
+    "review_id": "R15",
+    "real_investor": {"answer": "cannot_tell", "why": "No website, investments or sources are given, and the ARES entry shows only NACE codes for wholesale and property renting, not investing.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"},
+    "active_36m": {"answer": "cannot_tell", "why": "No investments are listed and a web search found no source.", "source_url": null},
+    "type_vc": {"answer": "cannot_tell", "why": "The name suggests a venture business, but a web search found no evidence of startup investing.", "source_url": null},
+    "hq_cz_sk": {"answer": "yes", "why": "Registered seat is Počernická 699/62b, Praha 10 (ARES).", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016"},
+    "sources_support": {"answer": "cannot_tell", "why": "No sources or investments are listed."},
+    "sectors_ok": {"answer": "not_given", "why": "The record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "cannot_tell"
+  }
+]

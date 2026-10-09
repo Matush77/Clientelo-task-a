@@ -13,8 +13,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": [
@@ -35,8 +33,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": [
@@ -55,10 +51,8 @@
   "sectors": "",
   "stages": "pre_seed",
   "ticket": "50 tisíc – 350 tisíc eur",
-  "total_capital_eur": "10000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "total_capital_eur": "",
+  "capital_method": "",
   "funds": "Czech Founders VC (deset milionů eur)",
   "investments": [
    {
@@ -73,32 +67,32 @@
    },
    {
     "company": "DTS",
-    "date": "",
+    "date": null,
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "StreamBee",
-    "date": "",
+    "date": null,
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "Filuta AI",
-    "date": "",
+    "date": null,
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "Adventurer",
-    "date": "",
+    "date": null,
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "CRUXO",
-    "date": "",
+    "date": null,
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "Carta Genum",
-    "date": "",
+    "date": null,
     "url": "https://czechfounders.vc/our-portfolio"
    }
   ],
@@ -124,8 +118,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
    {
@@ -140,7 +132,7 @@
    },
    {
     "company": "Zerops",
-    "date": "2026-05",
+    "date": "2026-05-01",
     "url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
    },
    {
@@ -169,8 +161,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
    {
@@ -180,7 +170,7 @@
    },
    {
     "company": "InoBat",
-    "date": "2024-01",
+    "date": "2024-01-01",
     "url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
    }
   ],

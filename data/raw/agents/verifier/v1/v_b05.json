@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R21",
+    "real_investor": {"answer": "yes", "why": "Look AI Ventures is a fund that invests in AI start-ups; the site lists about 23 portfolio companies and the fund took part in Sodex Innovations' 2026 round.", "source_url": "https://lookai.vc"},
+    "active_36m": {"answer": "yes", "why": "raising.fi reports Look AI Ventures as an investor in Sodex Innovations' EUR 4M round on 13 July 2026, and tech.eu (30 June 2026) names it among the investors in Lucida AI's seed round.", "source_url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026"},
+    "type_vc": {"answer": "yes", "why": "The site calls it a pre-Series A venture capital fund, and tech.eu (April 2023) describes an early-stage AI-focused fund.", "source_url": "https://lookai.vc"},
+    "hq_cz_sk": {"answer": "yes", "why": "The site states the fund is based in Prague, Czech Republic, with an office address in Prague 5.", "source_url": "https://lookai.vc"},
+    "sources_support": {"answer": "cannot_tell", "why": "Sodex (13 Jul 2026) and Lucida AI (30 Jun 2026) are supported by their listed sources; Digicust, Embodied AI, Trackbar and SECJUR have null dates, and lookai.vc confirms only portfolio membership without dates."},
+    "sectors_ok": {"answer": "yes", "why": "tech.eu (2023) says the fund is exclusively for AI start-ups, which matches the record's ai_data sector."},
+    "ticket_ok": {"answer": "yes", "why": "tech.eu (2023) gives a targeted investment of EUR 250,000 per start-up; this is a target rather than a minimum."},
+    "capital_ok": {"answer": "cannot_tell", "why": "The only source (tech.eu, April 2023) says the fund aims to raise EUR 20 million; no source confirms the amount actually closed."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R22",
+    "real_investor": {"answer": "yes", "why": "Rockaway Ventures II is a VC fund; lupa.cz reports that Rockaway investors entered Apptronik, and the fund's notable investments include Apaleo and Gjirafa.", "source_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"},
+    "active_36m": {"answer": "yes", "why": "lupa.cz (article dated 13 Feb 2026) reports Rockaway's entry into Apptronik's Series A extension; the record's 2026-02-01 date is not stated in the source but is in the same period.", "source_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"},
+    "type_vc": {"answer": "yes", "why": "rockawayventures.com and startuphub.unwe.bg (15 May 2025) describe a VC fund that targets late-seed and Series A tech start-ups.", "source_url": "https://rockawayventures.com"},
+    "hq_cz_sk": {"answer": "yes", "why": "startuphub.unwe.bg headlines the firm as Prague-based Rockaway Ventures and calls it Czech-based.", "source_url": "https://startuphub.unwe.bg/bg/news/64138/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html"},
+    "sources_support": {"answer": "no", "why": "Apptronik is supported (lupa.cz, Feb 2026), but the 2025-05-16 dates for Apaleo and Gjirafa and the 2021-09-23 dates for Vivere, Productboard and Brand Embassy are article publication dates; the sources name these companies without investment dates."},
+    "sectors_ok": {"answer": "yes", "why": "rockawayventures.com lists retail/e-commerce, travel and hospitality, digital logistics and digital media; mobility and gaming are not named explicitly, so the match is partial."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "tech.eu (16 May 2025) reports that Rockaway Ventures II closed at nearly EUR 55 million."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R23",
+    "real_investor": {"answer": "yes", "why": "n1.rocks describes an operator-led early-stage VC that manages USD 60M across two funds, and cc.cz (28 May 2025) reports that its Ukrainian-focused project invested in Respeecher.", "source_url": "https://n1.rocks"},
+    "active_36m": {"answer": "yes", "why": "startuprise.co.uk (3 Jul 2025) names N1 Ventures among the investors in Liki24's USD 9M Series A; the record's 2025-07-01 date is not stated in the source but is in the same month.", "source_url": "https://startuprise.co.uk/ukraine-liki24-secures-9-million-in-series-a-round-to-expand-health-marketplace-across-europe/"},
+    "type_vc": {"answer": "yes", "why": "The firm describes itself as an operator-led early-stage VC.", "source_url": "https://n1.rocks"},
+    "hq_cz_sk": {"answer": "yes", "why": "The site lists a Prague 1 office (Narodni 135/14); third-party profiles name Prague as the base, though the site also lists San Francisco and Luxembourg offices.", "source_url": "https://n1.rocks"},
+    "sources_support": {"answer": "yes", "why": "The Liki24 investment (N1 Ventures named) is supported by startuprise.co.uk. The record name 'N1' is N1 Ventures, and its registry fields are blank."},
+    "sectors_ok": {"answer": "not_given", "why": "The record has no sector value."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R24",
+    "real_investor": {"answer": "yes", "why": "thesaasnews says Tensor Ventures led AppFactor's USD 4M seed round; tensor.ventures says it participates in seed and Series A rounds.", "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"},
+    "active_36m": {"answer": "yes", "why": "thesaasnews gives the funding date as February 2026 (page updated 5 Feb 2026), which matches the record's 2026-02-01.", "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"},
+    "type_vc": {"answer": "yes", "why": "thesaasnews calls Tensor Ventures a European venture capital firm specializing in deep tech, and it invests at seed and Series A.", "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"},
+    "hq_cz_sk": {"answer": "yes", "why": "The site gives a Prague contact address (Pernerova 697/35, Karlin) and tech.eu calls the fund Czech-Luxembourg; the GP and Fund I are registered in Luxembourg, so this is a judgement rather than a direct statement of the team's seat.", "source_url": "https://tensor.ventures/"},
+    "sources_support": {"answer": "yes", "why": "thesaasnews supports Tensor Ventures as lead investor in AppFactor, with funding in February 2026, which matches the record's date by month."},
+    "sectors_ok": {"answer": "cannot_tell", "why": "The site and tech.eu support deep tech (quantum, AI, biotech, climate, security), but neither names hardware."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "tech.eu (11 Oct 2024) reports the launch of a new EUR 50 million fund."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R25",
+    "real_investor": {"answer": "yes", "why": "The fund invests in pre-seed and seed start-ups, and cc.cz (27 Jun 2024) reports its investments in Delta Green (with Tilia and Credo) and iVent Pro.", "source_url": "https://www.purple-ventures.com"},
+    "active_36m": {"answer": "yes", "why": "cc.cz (27 Jun 2024) says the fund's first investment, Delta Green, was made in May 2024, matching the record's 2024-05-01 and falling after 2023-10-08.", "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"},
+    "type_vc": {"answer": "yes", "why": "The site describes a venture capital fund investing in pre-seed and seed start-ups.", "source_url": "https://www.purple-ventures.com"},
+    "hq_cz_sk": {"answer": "yes", "why": "The site footer gives Purple Ventures s.r.o., Masarykova 26, 602 00 Brno, and a news item calls it Brno-based.", "source_url": "https://www.purple-ventures.com"},
+    "sources_support": {"answer": "no", "why": "Delta Green's May 2024 date is supported, but the iVent Pro date 2024-01-01 is not stated (the 27 Jun 2024 article only calls it the latest investment), and the Kilde date 2025-01-01 is not stated (the 17 Aug 2025 e15 interview gives valuations, not a date)."},
+    "sectors_ok": {"answer": "yes", "why": "The site describes tech-enabled start-ups without a sector limit, and cc.cz names portfolio companies in smart energy, cloud HR and event tech, which fits sector-agnostic."},
+    "ticket_ok": {"answer": "yes", "why": "The site states an initial ticket of EUR 250k to 400k."},
+    "capital_ok": {"answer": "not_given", "why": "The record's total_capital_eur is blank; the funds field mentions a EUR 40 million Purple Ventures 2, but that is not in the total capital field."},
+    "overall": "include"
+  }
+]

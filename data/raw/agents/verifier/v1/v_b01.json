@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R01",
+    "real_investor": {"answer": "yes", "why": "J&T Ventures CG SICAV (a J&T bank fund) invests in startups, including as a participant in the Xund Pre-Series A round.", "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"},
+    "active_36m": {"answer": "yes", "why": "Xund Pre-Series A (EUR 6M) with J&T Ventures participating was reported on 5 Mar 2025; the article date is used because the round date is not stated.", "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"},
+    "type_vc": {"answer": "yes", "why": "The website describes a pre-seed to Series A fund for CEE/SEE founders with a EUR 300K to EUR 3M ticket.", "source_url": "https://www.jtventures.cz"},
+    "hq_cz_sk": {"answer": "yes", "why": "ARES registered seat is Sokolovska 700/113a, Praha 8 (CZ), matching the Karlin office on the website.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08220867"},
+    "sources_support": {"answer": "cannot_tell", "why": "Xund (5 Mar 2025) is supported; the FetView date 2015-03-01 is not stated (the cc.cz article is dated 24 Mar 2015 and gives no investment date); the six undated portfolio names are on the portfolio page."},
+    "sectors_ok": {"answer": "yes", "why": "The website states Sector Agnostic."},
+    "ticket_ok": {"answer": "yes", "why": "The website states a ticket of EUR 300K to EUR 3M."},
+    "capital_ok": {"answer": "yes", "why": "The website states EUR 120M assets under management; a secondary search snippet gives over EUR 80M across three funds, a conflict to note."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R02",
+    "real_investor": {"answer": "yes", "why": "Neulogy Ventures is named as an investor in the GA Drilling USD 15M first close (18 Apr 2024) and in the StratifAI pre-seed round.", "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"},
+    "active_36m": {"answer": "yes", "why": "StratifAI pre-seed round announced 2 Sep 2024 with Neulogy Ventures named among investors.", "source_url": "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"},
+    "type_vc": {"answer": "yes", "why": "The website describes deeptech investments in moonshot ideas at pre-seed stage, and the firm is a fund manager of start-up funds.", "source_url": "https://neulogy.vc"},
+    "hq_cz_sk": {"answer": "yes", "why": "The registry shows the company as a Slovak a.s. with seat at Tallerova 4, Bratislava (SK); the website names no HQ.", "source_url": "https://api.statistics.sk/rpo/v1/entity/1008262"},
+    "sources_support": {"answer": "yes", "why": "The GA Drilling (18 Apr 2024) and StratifAI (2 Sep 2024) dates match the cited articles, and the six undated companies (GroupSolver, GreenWay, Voltia, Vectary, Trustmatic, SaferPass) appear on the portfolio page."},
+    "sectors_ok": {"answer": "cannot_tell", "why": "The website says deeptech, but no source says hardware; the label narrows the stated focus."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R03",
+    "real_investor": {"answer": "yes", "why": "N1 (Nation 1) led the Myriad AI pre-seed round (30 Jul 2024), and N1 funds invested in Novoflow, Flick and Respeecher.", "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"},
+    "active_36m": {"answer": "yes", "why": "N1 Ventures joined the Flick seed round reported on 15 May 2026; the article date is used because the round date is not stated.", "source_url": "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/"},
+    "type_vc": {"answer": "yes", "why": "The website describes N1 Ventures as an early-stage VC in AI, healthtech and frontier tech.", "source_url": "https://n1.rocks"},
+    "hq_cz_sk": {"answer": "yes", "why": "The ARES seat is Belehradska 858/23, Praha 2 (CZ) and the website lists a Prague office, though it also lists San Francisco and Luxembourg and names no HQ.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09172807"},
+    "sources_support": {"answer": "no", "why": "The Taikun date 2026-06-20 has no support (n1.rocks lists Taikun only as exited to Cloudera, and press reports date the Cloudera acquisition to 2025); the second Myriad AI date 2024-07-01 is not in the cited article (dated 30 Jul 2024); the Novoflow date 2025-11-01 differs from the cited article date (4 Nov 2025); Flick and Respeecher dates are only article dates."},
+    "sectors_ok": {"answer": "not_given", "why": "The record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "cannot_tell", "why": "The website states USD 60M across two funds; the record's EUR 53,638,477 appears in no source and no conversion is given."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R04",
+    "real_investor": {"answer": "yes", "why": "ZAKA VC invests from ZAKA VC Fund I in startups, including the DeepSeq.AI round announced 7 Jan 2026, and has a large portfolio.", "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"},
+    "active_36m": {"answer": "yes", "why": "The DeepSeq.AI investment by ZAKA VC was announced on 7 Jan 2026.", "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"},
+    "type_vc": {"answer": "yes", "why": "The website describes a seed and pre-seed VC fund investing in startups.", "source_url": "https://zaka.vc"},
+    "hq_cz_sk": {"answer": "yes", "why": "The ARES seat is Italska 2581/67, Praha 2 (CZ) and the team operates from Prague and London, though the website lists four locations with no single HQ.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21053987"},
+    "sources_support": {"answer": "yes", "why": "The DeepSeq.AI investment matches the 7 Jan 2026 press release, and the six undated companies (WonderTx, Aerogen Systems, FinalDose, PerfectBit, Human Archive, AxionOrbital Space) are on the portfolio page."},
+    "sectors_ok": {"answer": "yes", "why": "The website names Health and Biotech and Industrial Tech verticals, matching life_sciences_medtech and industry_manufacturing."},
+    "ticket_ok": {"answer": "not_given", "why": "The record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "An article dated 19 Jul 2024 states ZAKA VC Fund I was sized EUR 15 million; the website now shows a current fund size of 17M with no currency, so the figure may be stale."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R05",
+    "real_investor": {"answer": "cannot_tell", "why": "The Prague entity Biotech Investments s.r.o. is described as the investment adviser to the Luxembourg vehicle i&i Biotech Fund I SCSp, which is the named investor, so the sources do not show it investing rather than only advising.", "source_url": "https://www.inibio.eu"},
+    "active_36m": {"answer": "yes", "why": "The Captain T Cell seed round (EUR 8.5M), announced 22 May 2024, names i&i Biotech Fund I SCSp as a participant.", "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"},
+    "type_vc": {"answer": "yes", "why": "The website describes early-stage biotech venture capital focused on life sciences.", "source_url": "https://www.inibio.eu"},
+    "hq_cz_sk": {"answer": "yes", "why": "The adviser Biotech Investments s.r.o. has its ARES seat at Pobrezni 394/12, Praha 8 (CZ), though the fund's HQ is in Luxembourg.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10885978"},
+    "sources_support": {"answer": "yes", "why": "The Captain T Cell date (22 May 2024) matches the cited article, and inibio.eu/news reports a EUR 1M investment by the fund in Celeris Therapeutics (undated in the record); the sources name the fund, not the Prague entity."},
+    "sectors_ok": {"answer": "yes", "why": "The website focuses on life sciences, including drug discovery, medtech, diagnostics and AI."},
+    "ticket_ok": {"answer": "yes", "why": "The website states its sweet spot is between EUR 0.5M and EUR 2M."},
+    "capital_ok": {"answer": "not_given", "why": "The record has no total capital value."},
+    "overall": "cannot_tell"
+  }
+]

@@ -61,9 +61,12 @@ def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:
     ok = [c for c in claims if c["candidate_id"] == cid and c["auto_check"] == "ok"]
     investments = []
     for c in ok:
-        if c["field"] == "investments":
+        # only investments the pipeline actually counts: no exits, investor named; a date only if it is a deal date
+        if c["field"] == "investments" and c.get("deal_context") != "exit" and c.get("attributed") != "0":
             v = json.loads(c["value"]) or {}
-            investments.append({"company": v.get("company"), "date": c["event_date"] or v.get("date"), "url": c["source_url"]})
+            date = c["event_date"][:{"year": 4, "month": 7}.get(c.get("event_date_precision"), 10)] \
+                if c.get("deal_context") == "deal" and c["event_date"] else ""
+            investments.append({"company": v.get("company"), "date": date, "url": c["source_url"]})
     sources = sorted({c["source_url"] for c in ok})
     return {
         "name": decision["name"], "website": decision["website"], "legal_name": decision["legal_name"],
@@ -72,6 +75,7 @@ def claimed_view(cid: str, claims: list[dict], decision: dict) -> dict:
         "stages": decision["stages"],
         "ticket": " – ".join(x for x in (decision["ticket_min"], decision["ticket_max"]) if x),
         "total_capital_eur": decision["total_capital_eur"], "capital_method": decision["capital_method"],
+        "capital_note": decision.get("capital_note", ""), "funds_target": decision.get("funds_target", ""),
         "funds": decision["funds"], "investments": sorted(investments, key=lambda i: i["date"] or "", reverse=True),
         "sources": sources,
     }
@@ -149,7 +153,7 @@ na konci kliknite <b>Exportovať CSV</b> a súbor uložte ako <code>data/review/
 <div class="bar"><button id="export">Exportovať CSV</button><span id="progress" class="muted"></span></div>
 <div id="records"></div>
 </main><script>
-const DATA=__DATA__, Q=__QUESTIONS__, KEY='investordb-review-v1';
+const DATA=__DATA__, Q=__QUESTIONS__, KEY='investordb-review-v2';
 let answers={}; try{answers=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const link=u=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u)}</a>`:'–';
@@ -164,7 +168,8 @@ function card(r){const inv=r.investments.length?'<ul>'+r.investments.map(i=>`<li
  <dt>Web</dt><dd>${link(r.website)}</dd><dt>Právnická osoba</dt><dd>${esc(r.legal_name)||'–'} ${r.company_id?'(IČO '+esc(r.company_id)+')':''} ${r.registry_url?link(r.registry_url):''}</dd>
  <dt>Sídlo</dt><dd>${esc(r.hq_country)||'–'}</dd><dt>Typ</dt><dd>${esc(r.types)||'–'}</dd><dt>Sektory</dt><dd>${esc(r.sectors)||'–'}</dd>
  <dt>Štádiá</dt><dd>${esc(r.stages)||'–'}</dd><dt>Tiket</dt><dd>${esc(r.ticket)||'–'}</dd>
- <dt>Celkový kapitál</dt><dd>${r.total_capital_eur?Number(r.total_capital_eur).toLocaleString('sk')+' € ('+esc(r.capital_method)+')':'–'}</dd>
+ <dt>Celkový kapitál</dt><dd>${r.total_capital_eur?Number(r.total_capital_eur).toLocaleString('sk')+' € ('+esc(r.capital_method)+')':'–'}${r.capital_note?'<br><small>'+esc(r.capital_note)+'</small>':''}</dd>
+ <dt>Plánované fondy</dt><dd>${esc(r.funds_target)||'–'}</dd>
  <dt>Fondy</dt><dd>${esc(r.funds)||'–'}</dd><dt>Investície</dt><dd>${inv}</dd><dt>Všetky zdroje</dt><dd>${src}</dd></dl>
  <fieldset><b>Hlavné otázky</b>${p}</fieldset><fieldset><b>Polia</b>${s}</fieldset>
  <fieldset><label>Minúty na záznam <input type="number" min="0" name="${r.review_id}_minutes_spent" value="${esc(a.minutes_spent)}"></label>

@@ -13,8 +13,6 @@
   "ticket": "€300K – €3M",
   "total_capital_eur": "120000000",
   "capital_method": "aum_stated",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
    {
@@ -24,37 +22,37 @@
    },
    {
     "company": "FetView",
-    "date": "2015-03",
+    "date": "2015-03-01",
     "url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/"
    },
    {
     "company": "Supernova.io",
-    "date": "",
+    "date": null,
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Grid.online",
-    "date": "",
+    "date": null,
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Daytrip",
-    "date": "",
+    "date": null,
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Wultra",
-    "date": "",
+    "date": null,
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Choice",
-    "date": "",
+    "date": null,
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Sharry",
-    "date": "",
+    "date": null,
     "url": "https://www.jtventures.cz/portfolio"
    }
   ],
@@ -75,14 +73,17 @@
   "hq_country": "SK",
   "types": "vc",
   "sectors": "deeptech_hardware",
-  "stages": "",
+  "stages": "pre_seed",
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
+   {
+    "company": "StratifAI",
+    "date": "2024-09-02",
+    "url": "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"
+   },
    {
     "company": "GA Drilling",
     "date": "2024-04-18",
@@ -90,32 +91,32 @@
    },
    {
     "company": "GroupSolver",
-    "date": "",
+    "date": null,
     "url": "https://neulogy.vc"
    },
    {
     "company": "GreenWay",
-    "date": "",
+    "date": null,
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "Voltia",
-    "date": "",
+    "date": null,
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "Vectary",
-    "date": "",
+    "date": null,
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "Trustmatic",
-    "date": "",
+    "date": null,
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "SaferPass",
-    "date": "",
+    "date": null,
     "url": "https://neulogy.vc/portfolio"
    }
   ],
@@ -124,7 +125,8 @@
    "https://neulogy.vc/contact",
    "https://neulogy.vc/portfolio",
    "https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/neulogy-ventures-kapitalova-investicia",
-   "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+   "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/",
+   "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"
   ]
  },
  {
@@ -141,10 +143,28 @@
   "ticket": "",
   "total_capital_eur": "53638477",
   "capital_method": "aum_stated",
-  "capital_note": "$60M → EUR kurzom ECB 1.1186 (2026-10-09)",
-  "funds_target": "",
   "funds": "N1 Ventures U-Tech (?); N1 Ventures U-Tech (přibližně 10 milionů eur); N1 Ventures U-Tech (přibližně 10 milionů eur)",
   "investments": [
+   {
+    "company": "Taikun",
+    "date": "2026-06-20",
+    "url": "https://n1.rocks"
+   },
+   {
+    "company": "Flick",
+    "date": "2026-05-15",
+    "url": "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/"
+   },
+   {
+    "company": "Novoflow",
+    "date": "2025-11-01",
+    "url": "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup"
+   },
+   {
+    "company": "Respeecher",
+    "date": "2025-05-28",
+    "url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/"
+   },
    {
     "company": "Myriad AI",
     "date": "2024-07-30",
@@ -152,7 +172,7 @@
    },
    {
     "company": "Myriad AI",
-    "date": "2024-07",
+    "date": "2024-07-01",
     "url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
    }
   ],
@@ -177,9 +197,7 @@
   "stages": "pre_seed,seed",
   "ticket": "",
   "total_capital_eur": "15000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "capital_method": "sum_of_1_funds",
   "funds": "ZAKA VC Fund I (€15 million)",
   "investments": [
    {
@@ -189,32 +207,32 @@
    },
    {
     "company": "WonderTx",
-    "date": "",
+    "date": null,
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "Aerogen Systems",
-    "date": "",
+    "date": null,
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "FinalDose",
-    "date": "",
+    "date": null,
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "PerfectBit",
-    "date": "",
+    "date": null,
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "Human Archive",
-    "date": "",
+    "date": null,
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "AxionOrbital Space",
-    "date": "",
+    "date": null,
     "url": "https://zaka.vc/portfolio"
    }
   ],
@@ -239,8 +257,6 @@
   "ticket": "€0.5M – €2M",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "i&i Biotech Fund I SCSp (?); i&i Biotech Fund I SCSp (?)",
   "investments": [
    {
@@ -250,7 +266,7 @@
    },
    {
     "company": "Celeris Therapeutics",
-    "date": "",
+    "date": null,
     "url": "https://www.inibio.eu/news"
    }
   ],

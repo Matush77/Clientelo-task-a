@@ -13,6 +13,8 @@
   "ticket": "€300K – €3M",
   "total_capital_eur": "120000000",
   "capital_method": "aum_stated",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
    {
@@ -22,37 +24,37 @@
    },
    {
     "company": "FetView",
-    "date": "2015-03-01",
+    "date": "2015-03",
     "url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/"
    },
    {
     "company": "Supernova.io",
-    "date": null,
+    "date": "",
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Grid.online",
-    "date": null,
+    "date": "",
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Daytrip",
-    "date": null,
+    "date": "",
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Wultra",
-    "date": null,
+    "date": "",
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Choice",
-    "date": null,
+    "date": "",
     "url": "https://www.jtventures.cz/portfolio"
    },
    {
     "company": "Sharry",
-    "date": null,
+    "date": "",
     "url": "https://www.jtventures.cz/portfolio"
    }
   ],
@@ -73,17 +75,14 @@
   "hq_country": "SK",
   "types": "vc",
   "sectors": "deeptech_hardware",
-  "stages": "pre_seed",
+  "stages": "",
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
-   {
-    "company": "StratifAI",
-    "date": "2024-09-02",
-    "url": "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"
-   },
    {
     "company": "GA Drilling",
     "date": "2024-04-18",
@@ -91,32 +90,32 @@
    },
    {
     "company": "GroupSolver",
-    "date": null,
+    "date": "",
     "url": "https://neulogy.vc"
    },
    {
     "company": "GreenWay",
-    "date": null,
+    "date": "",
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "Voltia",
-    "date": null,
+    "date": "",
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "Vectary",
-    "date": null,
+    "date": "",
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "Trustmatic",
-    "date": null,
+    "date": "",
     "url": "https://neulogy.vc/portfolio"
    },
    {
     "company": "SaferPass",
-    "date": null,
+    "date": "",
     "url": "https://neulogy.vc/portfolio"
    }
   ],
@@ -125,8 +124,7 @@
    "https://neulogy.vc/contact",
    "https://neulogy.vc/portfolio",
    "https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/neulogy-ventures-kapitalova-investicia",
-   "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/",
-   "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"
+   "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
   ]
  },
  {
@@ -143,28 +141,10 @@
   "ticket": "",
   "total_capital_eur": "53638477",
   "capital_method": "aum_stated",
+  "capital_note": "$60M → EUR kurzom ECB 1.1186 (2026-10-09)",
+  "funds_target": "",
   "funds": "N1 Ventures U-Tech (?); N1 Ventures U-Tech (přibližně 10 milionů eur); N1 Ventures U-Tech (přibližně 10 milionů eur)",
   "investments": [
-   {
-    "company": "Taikun",
-    "date": "2026-06-20",
-    "url": "https://n1.rocks"
-   },
-   {
-    "company": "Flick",
-    "date": "2026-05-15",
-    "url": "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/"
-   },
-   {
-    "company": "Novoflow",
-    "date": "2025-11-01",
-    "url": "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup"
-   },
-   {
-    "company": "Respeecher",
-    "date": "2025-05-28",
-    "url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/"
-   },
    {
     "company": "Myriad AI",
     "date": "2024-07-30",
@@ -172,7 +152,7 @@
    },
    {
     "company": "Myriad AI",
-    "date": "2024-07-01",
+    "date": "2024-07",
     "url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
    }
   ],
@@ -197,7 +177,9 @@
   "stages": "pre_seed,seed",
   "ticket": "",
   "total_capital_eur": "15000000",
-  "capital_method": "sum_of_1_funds",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "ZAKA VC Fund I (€15 million)",
   "investments": [
    {
@@ -207,32 +189,32 @@
    },
    {
     "company": "WonderTx",
-    "date": null,
+    "date": "",
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "Aerogen Systems",
-    "date": null,
+    "date": "",
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "FinalDose",
-    "date": null,
+    "date": "",
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "PerfectBit",
-    "date": null,
+    "date": "",
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "Human Archive",
-    "date": null,
+    "date": "",
     "url": "https://zaka.vc/portfolio"
    },
    {
     "company": "AxionOrbital Space",
-    "date": null,
+    "date": "",
     "url": "https://zaka.vc/portfolio"
    }
   ],
@@ -257,6 +239,8 @@
   "ticket": "€0.5M – €2M",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "i&i Biotech Fund I SCSp (?); i&i Biotech Fund I SCSp (?)",
   "investments": [
    {
@@ -266,7 +250,7 @@
    },
    {
     "company": "Celeris Therapeutics",
-    "date": null,
+    "date": "",
     "url": "https://www.inibio.eu/news"
    }
   ],
@@ -288,8 +272,10 @@
   "sectors": "",
   "stages": "seed,series_a",
   "ticket": "kolem jednoho milionu eur – ke hranici dvou milionů",
-  "total_capital_eur": "30",
-  "capital_method": "sum_of_1_funds",
+  "total_capital_eur": "22000000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "Reflex 2: od 30 do 50 milionů eur (cieľ / plán)",
   "funds": "třetí fond (dvaadvacet milionů eur); Reflex 2 (od 30 do 50 milionů eur); třetí fond (dvaadvacet milionů eur)",
   "investments": [
    {
@@ -309,27 +295,27 @@
    },
    {
     "company": "Leadspicker",
-    "date": null,
+    "date": "",
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Fitify",
-    "date": null,
+    "date": "",
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Keboola",
-    "date": null,
+    "date": "",
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Apify",
-    "date": null,
+    "date": "",
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Choice",
-    "date": null,
+    "date": "",
     "url": "https://www.reflexcapital.com/portfolio"
    }
   ],
@@ -355,18 +341,20 @@
   "sectors": "",
   "stages": "pre_seed,seed",
   "ticket": "",
-  "total_capital_eur": "",
-  "capital_method": "",
+  "total_capital_eur": "81957136",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "zhruba dvě miliardy korun → EUR kurzom ECB 24.403 (2026-10-09)",
+  "funds_target": "",
   "funds": "JSK Investments SICAV (zhruba dvě miliardy korun); JSK Investments Venture Capital Fund I. (?); JSK Investments Private and Growth Equity Fund I. (?)",
   "investments": [
    {
     "company": "Andromeda Surgical",
-    "date": "2026-09-01",
+    "date": "2026-09",
     "url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
    },
    {
     "company": "Elin.ai",
-    "date": "2024-12-01",
+    "date": "2024-12",
     "url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
    }
   ],
@@ -392,12 +380,14 @@
   "stages": "seed,series_a,series_b_plus",
   "ticket": "400tis. EUR – 2,0 mil. EUR",
   "total_capital_eur": "55000000",
-  "capital_method": "sum_of_1_funds",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Venture to Future Fund (55 mil. EUR)",
   "investments": [
    {
     "company": "Talentiqa",
-    "date": "2025-10-01",
+    "date": "2025-10",
     "url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
    },
    {
@@ -412,22 +402,22 @@
    },
    {
     "company": "Nettle AI",
-    "date": null,
+    "date": "",
     "url": "https://vff.sk"
    },
    {
     "company": "SEC Technologies",
-    "date": null,
+    "date": "",
     "url": "https://vff.sk"
    },
    {
     "company": "Brightpick",
-    "date": null,
+    "date": "",
     "url": "https://vff.sk"
    },
    {
     "company": "Twinzo",
-    "date": null,
+    "date": "",
     "url": "https://vff.sk"
    }
   ],
@@ -450,6 +440,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": []
@@ -468,6 +460,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": [
@@ -488,8 +482,15 @@
   "ticket": "2 – 30m EUR",
   "total_capital_eur": "500000000",
   "capital_method": "aum_stated",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
+   {
+    "company": "Andercore",
+    "date": "2026-02-12",
+    "url": "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/"
+   },
    {
     "company": "Vytal",
     "date": "2025-03-11",
@@ -497,27 +498,28 @@
    },
    {
     "company": "eliq",
-    "date": null,
+    "date": "",
     "url": "https://www.invencapital.cz"
    },
    {
     "company": "Ember",
-    "date": null,
+    "date": "",
     "url": "https://www.invencapital.cz"
    },
    {
     "company": "Hydrogrid",
-    "date": null,
+    "date": "",
     "url": "https://www.invencapital.cz"
    },
    {
     "company": "Taranis",
-    "date": null,
+    "date": "",
     "url": "https://www.invencapital.cz"
    }
   ],
   "sources": [
    "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala",
+   "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/",
    "https://www.invencapital.cz"
   ]
  },
@@ -535,26 +537,23 @@
   "ticket": "300k – 2M",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Miton C (?); Miton Psychonats (?)",
   "investments": [
    {
-    "company": "Boataround",
-    "date": "2026-05-04",
-    "url": "https://www.trendingtopics.eu/boataround-boot-charter-firma-erhaelt-millioneninvestments/"
-   },
-   {
     "company": "Aim",
-    "date": "2025-01-01",
+    "date": "2025",
     "url": "https://www.miton.cz/en/about"
    },
    {
     "company": "Bandits",
-    "date": "2025-01-01",
+    "date": "2025",
     "url": "https://www.miton.cz/en/about"
    },
    {
     "company": "PangeAI",
-    "date": "2025-01-01",
+    "date": "2025",
     "url": "https://www.miton.cz/en/about"
    },
    {
@@ -564,13 +563,18 @@
    },
    {
     "company": "GTE",
-    "date": "2024-01-01",
+    "date": "2024",
     "url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
    },
    {
     "company": "Firefish",
-    "date": "2023-01-01",
+    "date": "2023",
     "url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+   },
+   {
+    "company": "Boataround",
+    "date": "",
+    "url": "https://www.trendingtopics.eu/boataround-boot-charter-firma-erhaelt-millioneninvestments/"
    }
   ],
   "sources": [
@@ -594,16 +598,13 @@
   "ticket": "200k – 1M",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
    {
-    "company": "Definic",
-    "date": "2026-06-12",
-    "url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"
-   },
-   {
     "company": "Repsense",
-    "date": "2025-12-01",
+    "date": "2025-12",
     "url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"
    },
    {
@@ -653,6 +654,8 @@
   "ticket": "",
   "total_capital_eur": "1229357046",
   "capital_method": "aum_stated",
+  "capital_note": "přes 30 miliard korun → EUR kurzom ECB 24.403 (2026-10-09)",
+  "funds_target": "",
   "funds": "INVESTIKA realitní fond (?); MONETIKA peněžní fond (?); EUROMONETIKA depozitní fond (?); EFEKTIKA fond akciových trhů (?); DYNAMIKA fond unikátních příležitostí (?); METALIKA zlatý fond (?); CRYPTONIKA kryptoměnový fond (?)",
   "investments": [],
   "sources": [
@@ -674,6 +677,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": []
@@ -691,7 +696,9 @@
   "stages": "pre_seed,seed",
   "ticket": "",
   "total_capital_eur": "23200000",
-  "capital_method": "sum_of_1_funds",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "CB Investment Management Growth One fund (€23.2M)",
   "investments": [
    {
@@ -719,6 +726,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": []
@@ -737,21 +746,23 @@
   "ticket": "200k €",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
    {
     "company": "Wewell",
-    "date": "2023-12-01",
+    "date": "2023-12",
     "url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
    },
    {
     "company": "Wewell",
-    "date": "2022-06-01",
+    "date": "2022-06",
     "url": "https://www.startitup.sk/?p=640272"
    },
    {
     "company": "CulturePulse",
-    "date": null,
+    "date": "",
     "url": "https://zerogravitycap.com"
    }
   ],
@@ -773,8 +784,10 @@
   "sectors": "defense_space,fintech_insurtech,industry_manufacturing,cleantech_energy",
   "stages": "pre_seed",
   "ticket": "€250K – 500K",
-  "total_capital_eur": "20000000",
-  "capital_method": "sum_of_1_funds",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "capital_note": "",
+  "funds_target": "third angel fund: €20 million (cieľ / plán)",
   "funds": "third angel fund (€20 million); DEPO Ventures One (?); DEPO Angels fund I (?)",
   "investments": [
    {
@@ -784,22 +797,22 @@
    },
    {
     "company": "Kardi AI",
-    "date": "2025-04-01",
+    "date": "2025-04",
     "url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
    },
    {
     "company": "Tatum",
-    "date": null,
+    "date": "",
     "url": "https://depoventures.com/portfolio"
    },
    {
     "company": "Bolt",
-    "date": null,
+    "date": "",
     "url": "https://depoventures.com/portfolio"
    },
    {
     "company": "WanderWallet",
-    "date": null,
+    "date": "",
     "url": "https://depoventures.com/portfolio"
    }
   ],
@@ -825,11 +838,13 @@
   "ticket": "€200k – €1m",
   "total_capital_eur": "23000000",
   "capital_method": "aum_stated",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Lighthouse Seed Fund (?)",
   "investments": [
    {
     "company": "Ranketta",
-    "date": "2025-11-01",
+    "date": "2025-11",
     "url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
    },
    {
@@ -856,8 +871,10 @@
   "sectors": "ai_data",
   "stages": "",
   "ticket": "€250,000",
-  "total_capital_eur": "20000000",
-  "capital_method": "sum_of_1_funds",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "capital_note": "",
+  "funds_target": "Look AI Ventures fund (LAIV): €20 million (cieľ / plán)",
   "funds": "Look AI Ventures fund (LAIV) (€20 million)",
   "investments": [
    {
@@ -872,22 +889,22 @@
    },
    {
     "company": "Digicust",
-    "date": null,
+    "date": "",
     "url": "https://lookai.vc"
    },
    {
     "company": "Embodied AI",
-    "date": null,
+    "date": "",
     "url": "https://lookai.vc"
    },
    {
     "company": "Trackbar",
-    "date": null,
+    "date": "",
     "url": "https://lookai.vc"
    },
    {
     "company": "SECJUR",
-    "date": null,
+    "date": "",
     "url": "https://lookai.vc"
    }
   ],
@@ -911,12 +928,14 @@
   "stages": "seed,series_a",
   "ticket": "",
   "total_capital_eur": "55000000",
-  "capital_method": "sum_of_1_funds",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Rockaway Ventures II (nearly €55 million); Rockaway Ventures Fund (?)",
   "investments": [
    {
     "company": "Apptronik",
-    "date": "2026-02-01",
+    "date": "2026-02",
     "url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
    },
    {
@@ -967,11 +986,13 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
    {
     "company": "Liki24",
-    "date": "2025-07-01",
+    "date": "2025-07",
     "url": "https://startuprise.co.uk/ukraine-liki24-secures-9-million-in-series-a-round-to-expand-health-marketplace-across-europe/"
    }
   ],
@@ -994,12 +1015,14 @@
   "stages": "seed,series_a",
   "ticket": "",
   "total_capital_eur": "50000000",
-  "capital_method": "sum_of_1_funds",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Tensor Ventures Fund I SCSp (?); new Tensor Ventures fund launched October 2024 (name not stated in source) (€50 million)",
   "investments": [
    {
     "company": "AppFactor",
-    "date": "2026-02-01",
+    "date": "2026-02",
     "url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
    }
   ],
@@ -1021,23 +1044,20 @@
   "sectors": "sector_agnostic",
   "stages": "pre_seed,seed",
   "ticket": "€250k – €400k",
-  "total_capital_eur": "",
-  "capital_method": "",
+  "total_capital_eur": "40000000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Purple Ventures 2 (čtyřicet milionů eur)",
   "investments": [
    {
-    "company": "Kilde",
-    "date": "2025-01-01",
-    "url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676"
-   },
-   {
     "company": "Delta Green",
-    "date": "2024-05-01",
+    "date": "2024-05",
     "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
    },
    {
     "company": "iVent Pro",
-    "date": "2024-01-01",
+    "date": "2024",
     "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
    }
   ],
@@ -1061,6 +1081,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": [
@@ -1081,6 +1103,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": [
@@ -1099,8 +1123,10 @@
   "sectors": "",
   "stages": "pre_seed",
   "ticket": "50 tisíc – 350 tisíc eur",
-  "total_capital_eur": "",
-  "capital_method": "",
+  "total_capital_eur": "10000000",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Czech Founders VC (deset milionů eur)",
   "investments": [
    {
@@ -1115,32 +1141,32 @@
    },
    {
     "company": "DTS",
-    "date": null,
+    "date": "",
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "StreamBee",
-    "date": null,
+    "date": "",
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "Filuta AI",
-    "date": null,
+    "date": "",
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "Adventurer",
-    "date": null,
+    "date": "",
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "CRUXO",
-    "date": null,
+    "date": "",
     "url": "https://czechfounders.vc/our-portfolio"
    },
    {
     "company": "Carta Genum",
-    "date": null,
+    "date": "",
     "url": "https://czechfounders.vc/our-portfolio"
    }
   ],
@@ -1166,6 +1192,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
    {
@@ -1180,7 +1208,7 @@
    },
    {
     "company": "Zerops",
-    "date": "2026-05-01",
+    "date": "2026-05",
     "url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
    },
    {
@@ -1209,6 +1237,8 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
    {
@@ -1218,7 +1248,7 @@
    },
    {
     "company": "InoBat",
-    "date": "2024-01-01",
+    "date": "2024-01",
     "url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
    }
   ],
@@ -1242,6 +1272,8 @@
   "ticket": "",
   "total_capital_eur": "700000000",
   "capital_method": "aum_stated",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Jet Venture 1 (50 milionů eur); Jet Venture 1 (?)",
   "investments": [
    {
@@ -1285,13 +1317,10 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "",
   "investments": [
-   {
-    "company": "Cequence",
-    "date": "2025-06-12",
-    "url": "https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/"
-   },
    {
     "company": "Partory",
     "date": "2024-09-28",
@@ -1318,7 +1347,9 @@
   "stages": "pre_seed,seed",
   "ticket": "0.3 – 1.2m",
   "total_capital_eur": "1762078",
-  "capital_method": "sum_of_1_funds",
+  "capital_method": "sum_of_1_closed_funds",
+  "capital_note": "43 milionů korun → EUR kurzom ECB 24.403 (2026-10-09)",
+  "funds_target": "",
   "funds": "Tilia Impact Ventures (43 milionů korun); Tilia 2 (?)",
   "investments": [
    {
@@ -1371,27 +1402,19 @@
   "stages": "seed,series_a",
   "ticket": "€500k – €5M",
   "total_capital_eur": "180000000",
-  "capital_method": "sum_of_2_funds",
+  "capital_method": "sum_of_2_closed_funds",
+  "capital_note": "",
+  "funds_target": "",
   "funds": "Fund I (?); Fund II (€30 million); Presto Tech Horizons (150 miliony eur)",
   "investments": [
    {
-    "company": "Vidar Systems",
-    "date": "2024-10-01",
-    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
-   },
-   {
-    "company": "Bavovna",
-    "date": "2024-10-01",
-    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
-   },
-   {
     "company": "Tur.ai",
-    "date": "2024-10-01",
+    "date": "2024-10",
     "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
    },
    {
     "company": "GoRamp",
-    "date": "2022-06-01",
+    "date": "2022-06",
     "url": "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/"
    }
   ],

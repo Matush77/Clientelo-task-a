@@ -1,0 +1,50 @@
+[
+  {
+    "review_id": "R31",
+    "real_investor": {"answer": "yes", "why": "Invests managed money through its Jet Venture 1 VC fund; the cc.cz article reports the EUR 1.5M DecisionRules round came via that fund.", "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/"},
+    "active_36m": {"answer": "yes", "why": "News page dates the AppNava investment 17.09.2026, Phantasma Labs 01.09.2026 and GigaScan 26.08.2026, all after 2023-10-08.", "source_url": "https://www.jetinvestment.cz/en/news"},
+    "type_vc": {"answer": "yes", "why": "Homepage lists Venture Capital as a strategy, and the news describes direct startup investments (DecisionRules, AppNava, Phantasma Labs).", "source_url": "https://www.jetinvestment.cz/en"},
+    "hq_cz_sk": {"answer": "yes", "why": "Registered office Pisarecka 271/13, Brno per ARES; the news page contact address is also in Brno.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03890333"},
+    "sources_support": {"answer": "yes", "why": "News page lists AppNava, Phantasma Labs and GigaScan with the recorded dates; the cc.cz article dated 23.06.2026 supports DecisionRules."},
+    "sectors_ok": {"answer": "yes", "why": "News headlines describe AI and data deals (AppNava predictive analytics, Phantasma Labs AI, Hermetiq AI), though one deal is a bakery and no sector mandate is stated."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "yes", "why": "Homepage states AUM 'EUR 700m+', consistent with the recorded 700,000,000."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R32",
+    "real_investor": {"answer": "yes", "why": "Jet Ventures is the venture capital arm of the Brno Jet Investment group and invests fund money (Jet Venture 1) into Partory and Cequence; the record has no separate legal entity.", "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/"},
+    "active_36m": {"answer": "yes", "why": "Cequence investment dated 12.06.2025 in the cc.cz article (publication date), which is after 2023-10-08.", "source_url": "https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/"},
+    "type_vc": {"answer": "yes", "why": "Described as the venture capital fund (venture kapitalovy fond) of Jet Investment making seed investments in startups.", "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/"},
+    "hq_cz_sk": {"answer": "yes", "why": "The fund's team sits in the Brno-based Jet Investment group (article headline 'Brnenski prumyslnici kolem Igora Faita'; group registered office in Brno).", "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/"},
+    "sources_support": {"answer": "yes", "why": "Partory (article dated 28.09.2024) and Cequence (article dated 12.06.2025) are supported; the Cequence article names 'fond Jet Investment' rather than Jet Ventures as lead investor."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R33",
+    "real_investor": {"answer": "yes", "why": "Registered as an 'osoba rizikoveho kapitalu' (VC manager) that invests in early-stage startups by equity or convertible debt, per tilia.vc.", "source_url": "https://www.tilia.vc/"},
+    "active_36m": {"answer": "yes", "why": "NOLD investment is reported in a newstream article dated 18.10.2023, after the 2023-10-08 cutoff; that article date is the only date given.", "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"},
+    "type_vc": {"answer": "yes", "why": "tilia.vc describes early-stage equity and convertible investing in CEE founders, and ARES classes the entity as a risk-capital company.", "source_url": "https://www.tilia.vc/"},
+    "hq_cz_sk": {"answer": "yes", "why": "Office at Drtinova 557/10, Praha 5 per tilia.vc, matching the ARES registered office.", "source_url": "https://www.tilia.vc/"},
+    "sources_support": {"answer": "cannot_tell", "why": "NOLD (article 18.10.2023) and Datlab/MIWA (article 08.10.2019) match the recorded dates, but Munch, Cyrkl and The Village are only named as portfolio companies, so their 2023-10-18 dates are article dates, not investment dates."},
+    "sectors_ok": {"answer": "cannot_tell", "why": "tilia.vc says 'Sector-agnostic, Impact-driven'; portfolio examples cover food waste, recycling, govtech and edtech, but no sector focus is stated."},
+    "ticket_ok": {"answer": "yes", "why": "tilia.vc states an initial ticket of 0.3 - 1.2m EUR, matching the record."},
+    "capital_ok": {"answer": "yes", "why": "A 2019 cc.cz article says the fund had CZK 43m at opening; the recorded EUR 1,762,078 is that amount converted, but it is the opening size only."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R34",
+    "real_investor": {"answer": "yes", "why": "Presto Ventures is a VC firm managing funds, including Presto Tech Horizons (EUR 150m), which made the Oct 2024 investments; the ARES entity is a risk-capital company.", "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"},
+    "active_36m": {"answer": "yes", "why": "Presto Tech Horizons announced its first investments (Vidar Systems, Bavovna, Tur.ai) on 23.10.2024, after the cutoff; the recorded 2024-10-01 is not in the source, but any date in that window is after 2023-10-08.", "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"},
+    "type_vc": {"answer": "yes", "why": "Presto Ventures is described as a VC firm investing seed to Series A rounds.", "source_url": "https://prestoventures.com"},
+    "hq_cz_sk": {"answer": "yes", "why": "Office at Slovansky dum, Senovazne namesti 869/28, Prague 1 per prestoventures.com; ARES registered office Revolucni 763/15, Praha 1.", "source_url": "https://prestoventures.com"},
+    "sources_support": {"answer": "cannot_tell", "why": "Companies Vidar, Bavovna, Tur.ai and GoRamp are supported, but no source gives the recorded dates; the sources date the announcement 23.10.2024 and the GoRamp article 23.06.2022."},
+    "sectors_ok": {"answer": "yes", "why": "prestoventures.com states a focus on security, defense and aerospace, matching defense_space."},
+    "ticket_ok": {"answer": "yes", "why": "prestoventures.com states tickets from EUR 500k to EUR 5M, matching the record."},
+    "capital_ok": {"answer": "yes", "why": "Fund II is EUR 30m (en.ain.ua, 12.07.2022) and the new fund EUR 150m (prestoventures.com, startuprise); their sum equals the recorded EUR 180m."},
+    "overall": "include"
+  }
+]

@@ -1,6 +1,6 @@
 review_id,candidate_id,stratum,status,reason,tier
 R01,C139,included,INCLUDED,,B
-R02,C099,included,INCLUDED,,B
+R02,C099,included,INCLUDED,,A
 R03,C027,included,INCLUDED,,A
 R04,C195,included,INCLUDED,,B
 R05,C019,included,INCLUDED,,B
@@ -9,7 +9,7 @@ R07,C063,included,INCLUDED,,A
 R08,C100,included,INCLUDED,,A
 R09,C204,control_reject,REJECTED,E7,
 R10,C006,control_reject,REJECTED,E3,
-R11,C022,included,INCLUDED,,A
+R11,C022,included,INCLUDED,,B
 R12,C184,included,INCLUDED,,A
 R13,C135,included,INCLUDED,,B
 R14,C007,control_reject,REJECTED,E4,
@@ -23,7 +23,7 @@ R21,C186,included,INCLUDED,,A
 R22,C197,included,INCLUDED,,A
 R23,C143,real_reject,REJECTED,E8,
 R24,C032,included,INCLUDED,,B
-R25,C146,included,INCLUDED,,B
+R25,C146,included,INCLUDED,,A
 R26,C076,real_reject,REJECTED,E7,
 R27,C026,real_reject,OOS,OOS_HQ,
 R28,C198,included,INCLUDED,,B

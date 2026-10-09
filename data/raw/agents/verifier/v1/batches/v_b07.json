@@ -13,8 +13,6 @@
   "ticket": "",
   "total_capital_eur": "700000000",
   "capital_method": "aum_stated",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "Jet Venture 1 (50 milionů eur); Jet Venture 1 (?)",
   "investments": [
    {
@@ -58,10 +56,13 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
+   {
+    "company": "Cequence",
+    "date": "2025-06-12",
+    "url": "https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/"
+   },
    {
     "company": "Partory",
     "date": "2024-09-28",
@@ -88,9 +89,7 @@
   "stages": "pre_seed,seed",
   "ticket": "0.3 – 1.2m",
   "total_capital_eur": "1762078",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "43 milionů korun → EUR kurzom ECB 24.403 (2026-10-09)",
-  "funds_target": "",
+  "capital_method": "sum_of_1_funds",
   "funds": "Tilia Impact Ventures (43 milionů korun); Tilia 2 (?)",
   "investments": [
    {
@@ -143,19 +142,27 @@
   "stages": "seed,series_a",
   "ticket": "€500k – €5M",
   "total_capital_eur": "180000000",
-  "capital_method": "sum_of_2_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "capital_method": "sum_of_2_funds",
   "funds": "Fund I (?); Fund II (€30 million); Presto Tech Horizons (150 miliony eur)",
   "investments": [
    {
+    "company": "Vidar Systems",
+    "date": "2024-10-01",
+    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+   },
+   {
+    "company": "Bavovna",
+    "date": "2024-10-01",
+    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+   },
+   {
     "company": "Tur.ai",
-    "date": "2024-10",
+    "date": "2024-10-01",
     "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
    },
    {
     "company": "GoRamp",
-    "date": "2022-06",
+    "date": "2022-06-01",
     "url": "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/"
    }
   ],

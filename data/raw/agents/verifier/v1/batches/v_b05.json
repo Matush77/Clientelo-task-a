@@ -11,10 +11,8 @@
   "sectors": "ai_data",
   "stages": "",
   "ticket": "€250,000",
-  "total_capital_eur": "",
-  "capital_method": "",
-  "capital_note": "",
-  "funds_target": "Look AI Ventures fund (LAIV): €20 million (cieľ / plán)",
+  "total_capital_eur": "20000000",
+  "capital_method": "sum_of_1_funds",
   "funds": "Look AI Ventures fund (LAIV) (€20 million)",
   "investments": [
    {
@@ -29,22 +27,22 @@
    },
    {
     "company": "Digicust",
-    "date": "",
+    "date": null,
     "url": "https://lookai.vc"
    },
    {
     "company": "Embodied AI",
-    "date": "",
+    "date": null,
     "url": "https://lookai.vc"
    },
    {
     "company": "Trackbar",
-    "date": "",
+    "date": null,
     "url": "https://lookai.vc"
    },
    {
     "company": "SECJUR",
-    "date": "",
+    "date": null,
     "url": "https://lookai.vc"
    }
   ],
@@ -68,14 +66,12 @@
   "stages": "seed,series_a",
   "ticket": "",
   "total_capital_eur": "55000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "capital_method": "sum_of_1_funds",
   "funds": "Rockaway Ventures II (nearly €55 million); Rockaway Ventures Fund (?)",
   "investments": [
    {
     "company": "Apptronik",
-    "date": "2026-02",
+    "date": "2026-02-01",
     "url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
    },
    {
@@ -126,13 +122,11 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
    {
     "company": "Liki24",
-    "date": "2025-07",
+    "date": "2025-07-01",
     "url": "https://startuprise.co.uk/ukraine-liki24-secures-9-million-in-series-a-round-to-expand-health-marketplace-across-europe/"
    }
   ],
@@ -155,14 +149,12 @@
   "stages": "seed,series_a",
   "ticket": "",
   "total_capital_eur": "50000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "capital_method": "sum_of_1_funds",
   "funds": "Tensor Ventures Fund I SCSp (?); new Tensor Ventures fund launched October 2024 (name not stated in source) (€50 million)",
   "investments": [
    {
     "company": "AppFactor",
-    "date": "2026-02",
+    "date": "2026-02-01",
     "url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
    }
   ],
@@ -184,20 +176,23 @@
   "sectors": "sector_agnostic",
   "stages": "pre_seed,seed",
   "ticket": "€250k – €400k",
-  "total_capital_eur": "40000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "total_capital_eur": "",
+  "capital_method": "",
   "funds": "Purple Ventures 2 (čtyřicet milionů eur)",
   "investments": [
    {
+    "company": "Kilde",
+    "date": "2025-01-01",
+    "url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676"
+   },
+   {
     "company": "Delta Green",
-    "date": "2024-05",
+    "date": "2024-05-01",
     "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
    },
    {
     "company": "iVent Pro",
-    "date": "2024",
+    "date": "2024-01-01",
     "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
    }
   ],

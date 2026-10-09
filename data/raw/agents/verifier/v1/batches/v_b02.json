@@ -11,10 +11,8 @@
   "sectors": "",
   "stages": "seed,series_a",
   "ticket": "kolem jednoho milionu eur – ke hranici dvou milionů",
-  "total_capital_eur": "22000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "Reflex 2: od 30 do 50 milionů eur (cieľ / plán)",
+  "total_capital_eur": "30",
+  "capital_method": "sum_of_1_funds",
   "funds": "třetí fond (dvaadvacet milionů eur); Reflex 2 (od 30 do 50 milionů eur); třetí fond (dvaadvacet milionů eur)",
   "investments": [
    {
@@ -34,27 +32,27 @@
    },
    {
     "company": "Leadspicker",
-    "date": "",
+    "date": null,
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Fitify",
-    "date": "",
+    "date": null,
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Keboola",
-    "date": "",
+    "date": null,
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Apify",
-    "date": "",
+    "date": null,
     "url": "https://www.reflexcapital.com/portfolio"
    },
    {
     "company": "Choice",
-    "date": "",
+    "date": null,
     "url": "https://www.reflexcapital.com/portfolio"
    }
   ],
@@ -80,20 +78,18 @@
   "sectors": "",
   "stages": "pre_seed,seed",
   "ticket": "",
-  "total_capital_eur": "81957136",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "zhruba dvě miliardy korun → EUR kurzom ECB 24.403 (2026-10-09)",
-  "funds_target": "",
+  "total_capital_eur": "",
+  "capital_method": "",
   "funds": "JSK Investments SICAV (zhruba dvě miliardy korun); JSK Investments Venture Capital Fund I. (?); JSK Investments Private and Growth Equity Fund I. (?)",
   "investments": [
    {
     "company": "Andromeda Surgical",
-    "date": "2026-09",
+    "date": "2026-09-01",
     "url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
    },
    {
     "company": "Elin.ai",
-    "date": "2024-12",
+    "date": "2024-12-01",
     "url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
    }
   ],
@@ -119,14 +115,12 @@
   "stages": "seed,series_a,series_b_plus",
   "ticket": "400tis. EUR – 2,0 mil. EUR",
   "total_capital_eur": "55000000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "capital_method": "sum_of_1_funds",
   "funds": "Venture to Future Fund (55 mil. EUR)",
   "investments": [
    {
     "company": "Talentiqa",
-    "date": "2025-10",
+    "date": "2025-10-01",
     "url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
    },
    {
@@ -141,22 +135,22 @@
    },
    {
     "company": "Nettle AI",
-    "date": "",
+    "date": null,
     "url": "https://vff.sk"
    },
    {
     "company": "SEC Technologies",
-    "date": "",
+    "date": null,
     "url": "https://vff.sk"
    },
    {
     "company": "Brightpick",
-    "date": "",
+    "date": null,
     "url": "https://vff.sk"
    },
    {
     "company": "Twinzo",
-    "date": "",
+    "date": null,
     "url": "https://vff.sk"
    }
   ],
@@ -179,8 +173,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": []
@@ -199,8 +191,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": [

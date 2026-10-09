@@ -12,9 +12,7 @@
   "stages": "pre_seed,seed",
   "ticket": "",
   "total_capital_eur": "23200000",
-  "capital_method": "sum_of_1_closed_funds",
-  "capital_note": "",
-  "funds_target": "",
+  "capital_method": "sum_of_1_funds",
   "funds": "CB Investment Management Growth One fund (€23.2M)",
   "investments": [
    {
@@ -42,8 +40,6 @@
   "ticket": "",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [],
   "sources": []
@@ -62,23 +58,21 @@
   "ticket": "200k €",
   "total_capital_eur": "",
   "capital_method": "",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "",
   "investments": [
    {
     "company": "Wewell",
-    "date": "2023-12",
+    "date": "2023-12-01",
     "url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
    },
    {
     "company": "Wewell",
-    "date": "2022-06",
+    "date": "2022-06-01",
     "url": "https://www.startitup.sk/?p=640272"
    },
    {
     "company": "CulturePulse",
-    "date": "",
+    "date": null,
     "url": "https://zerogravitycap.com"
    }
   ],
@@ -100,10 +94,8 @@
   "sectors": "defense_space,fintech_insurtech,industry_manufacturing,cleantech_energy",
   "stages": "pre_seed",
   "ticket": "€250K – 500K",
-  "total_capital_eur": "",
-  "capital_method": "",
-  "capital_note": "",
-  "funds_target": "third angel fund: €20 million (cieľ / plán)",
+  "total_capital_eur": "20000000",
+  "capital_method": "sum_of_1_funds",
   "funds": "third angel fund (€20 million); DEPO Ventures One (?); DEPO Angels fund I (?)",
   "investments": [
    {
@@ -113,22 +105,22 @@
    },
    {
     "company": "Kardi AI",
-    "date": "2025-04",
+    "date": "2025-04-01",
     "url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
    },
    {
     "company": "Tatum",
-    "date": "",
+    "date": null,
     "url": "https://depoventures.com/portfolio"
    },
    {
     "company": "Bolt",
-    "date": "",
+    "date": null,
     "url": "https://depoventures.com/portfolio"
    },
    {
     "company": "WanderWallet",
-    "date": "",
+    "date": null,
     "url": "https://depoventures.com/portfolio"
    }
   ],
@@ -154,13 +146,11 @@
   "ticket": "€200k – €1m",
   "total_capital_eur": "23000000",
   "capital_method": "aum_stated",
-  "capital_note": "",
-  "funds_target": "",
   "funds": "Lighthouse Seed Fund (?)",
   "investments": [
    {
     "company": "Ranketta",
-    "date": "2025-11",
+    "date": "2025-11-01",
     "url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
    },
    {

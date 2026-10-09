@@ -1,0 +1,62 @@
+[
+  {
+    "review_id": "R26",
+    "real_investor": {"answer": "no", "why": "Website describes a law practice advising on deals and financing; no investment into companies by the firm itself is shown.", "source_url": "https://www.prkpartners.com"},
+    "active_36m": {"answer": "no", "why": "No investment into any company is shown; the firm appears only as legal adviser to others (2026 deals).", "source_url": "https://www.prkpartners.com"},
+    "type_vc": {"answer": "no", "why": "It is a law firm (advokatni kancelar), not a venture capital investor.", "source_url": "https://www.prkpartners.com"},
+    "hq_cz_sk": {"answer": "yes", "why": "ARES lists the registered seat at Jachymova 26/2, Praha 1.", "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26692392"},
+    "sources_support": {"answer": "cannot_tell", "why": "No investments are listed to support; the only source is the homepage, which describes legal work only."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "exclude"
+  },
+  {
+    "review_id": "R27",
+    "real_investor": {"answer": "yes", "why": "Mid Europa is a private equity firm investing managed money (EUR 6.8bn raised and managed), giving majority or minority funding of EUR 50m to 300m to companies.", "source_url": "https://www.mideuropa.com/about"},
+    "active_36m": {"answer": "cannot_tell", "why": "The About page lists no dated investments in companies; it shows only deal awards and exits from 2021 to 2025.", "source_url": "https://www.mideuropa.com/about"},
+    "type_vc": {"answer": "no", "why": "It is a private equity buyout and growth investor with large tickets, not a venture capital investor.", "source_url": "https://www.mideuropa.com/about"},
+    "hq_cz_sk": {"answer": "no", "why": "Listed offices are Warsaw, London, Bucharest, Luxembourg and Guernsey; no Czech or Slovak office is mentioned.", "source_url": "https://www.mideuropa.com/about"},
+    "sources_support": {"answer": "cannot_tell", "why": "No investments are listed to support; the only source is the About page, which names no dated investments."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "exclude"
+  },
+  {
+    "review_id": "R28",
+    "real_investor": {"answer": "yes", "why": "Press reports Czech Founders VC investing EUR 350k in Maxfusion and EUR 300k in the Lemondia pre-seed round. Caveat: the registry entity is Czech Founders z.u., while the website footer names Czech Founders Ventures s.r.o., so the legal entity holding the investments is not confirmed.", "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"},
+    "active_36m": {"answer": "yes", "why": "The Maxfusion investment by Czech Founders VC is reported in an article dated 14 January 2026, which is after 2023-10-08.", "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"},
+    "type_vc": {"answer": "yes", "why": "Homepage describes pre-seed tickets of EUR 50k to 350k into startups, which is direct early-stage venture investing.", "source_url": "https://czechfounders.vc"},
+    "hq_cz_sk": {"answer": "yes", "why": "Homepage lists a Prague 6 office and a Bratislava office; ARES seat is Libocka 686/47c, Praha 6.", "source_url": "https://czechfounders.vc"},
+    "sources_support": {"answer": "cannot_tell", "why": "Maxfusion (14 Jan 2026) and Lemondia (17 Sep 2025) are supported with dates by cc.cz articles. The six undated entries (DTS, StreamBee, Filuta AI, Adventurer, CRUXO, Carta Genum) appear only as names on the portfolio page, which shows no dates."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "yes", "why": "Homepage states pre-seed tickets typically EUR 50-350k, matching the record."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value. The fund size in the funds field (EUR 10m) is not found on the homepage or portfolio page."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R29",
+    "real_investor": {"answer": "yes", "why": "Gi21 states it deploys principal capital into AI-first startups; blog posts titled 'Why We Invested in' and the Zerops seed round (Gi21 as lead) confirm investments.", "source_url": "https://gi21capital.com"},
+    "active_36m": {"answer": "yes", "why": "Blog headlines date investments to 27 Aug 2026 (Hermetiq), 21 May 2026 (FaceUp) and 29 Apr 2026 (ArtMaster).", "source_url": "https://gi21capital.com/blog"},
+    "type_vc": {"answer": "yes", "why": "TheSaaSNews calls Gi21 a Prague-based venture capital and private investment firm that leads seed rounds in startups.", "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"},
+    "hq_cz_sk": {"answer": "yes", "why": "TheSaaSNews says Prague-based; ARES lists the registered seat at Londynska 2578/54, Praha 2.", "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"},
+    "sources_support": {"answer": "cannot_tell", "why": "Hermetiq, FaceUp and ArtMaster are supported by dated blog headlines. Zerops is supported as a Gi21-led seed round, but the source shows 'Updated May 18, 2026' (URL dated 14 May), not the 2026-05-01 in the record."},
+    "sectors_ok": {"answer": "yes", "why": "Homepage names Deep Tech, B2B SaaS and AI as focus areas, matching ai_data and enterprise_saas."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "include"
+  },
+  {
+    "review_id": "R30",
+    "real_investor": {"answer": "yes", "why": "SIH invested EUR 2m in PERRY SOFT via the National Development Fund II (convertible loan), and made a capital increase in InoBat; both are investments into companies with public money.", "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"},
+    "active_36m": {"answer": "yes", "why": "The PERRY SOFT investment is reported on 5 Sep 2025, which is after 2023-10-08.", "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"},
+    "type_vc": {"answer": "yes", "why": "State holding investing directly in startups: the PERRY SOFT article calls it a technology startup, and SIH joined InoBat's Series C. SIH describes its approach as repayable financial assistance, so this is borderline.", "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"},
+    "hq_cz_sk": {"answer": "yes", "why": "Contact address is Grosslingova 44, 811 09 Bratislava, Slovakia.", "source_url": "https://www.sih.sk/en/stranky/o-nas/o-spolocnosti"},
+    "sources_support": {"answer": "cannot_tell", "why": "PERRY SOFT (5 Sep 2025, EUR 2m) is supported with its date. InoBat is supported as an investment (Series C, capital increase), but the record date 2024-01-01 is not in the source: the news is dated 31 Jan 2024 and says the decision was finalised in December."},
+    "sectors_ok": {"answer": "not_given", "why": "Record has no sectors value."},
+    "ticket_ok": {"answer": "not_given", "why": "Record has no ticket value."},
+    "capital_ok": {"answer": "not_given", "why": "Record has no total capital value."},
+    "overall": "include"
+  }
+]
