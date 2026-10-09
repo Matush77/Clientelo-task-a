@@ -1,0 +1,181 @@
+[
+  {
+    "candidate_id": "C023",
+    "name": "Jet Investment",
+    "website": "https://www.jetinvestment.cz/en",
+    "legal_name": "Jet Investment, a.s.",
+    "known_funds": [
+      {
+        "name": "Jet Venture 1",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/"
+      },
+      {
+        "name": "Jet Venture 1",
+        "size": "50 milionů eur",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "AppNava",
+        "listed_date": "2026-09-17",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "company": "Phantasma Labs",
+        "listed_date": "2026-09-01",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "company": "GigaScan",
+        "listed_date": "2026-08-26",
+        "source_url": "https://www.jetinvestment.cz/en/news"
+      },
+      {
+        "company": "DecisionRules",
+        "listed_date": "2026-06-23",
+        "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/"
+      },
+      {
+        "company": "Partory",
+        "listed_date": "2024-09-28",
+        "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Cequence"
+    ]
+  },
+  {
+    "candidate_id": "C032",
+    "name": "Tensor Ventures",
+    "website": "https://tensor.ventures",
+    "legal_name": "Tensor Ventures a.s.",
+    "known_funds": [
+      {
+        "name": "Tensor Ventures Fund I SCSp",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://tensor.ventures/"
+      },
+      {
+        "name": "new Tensor Ventures fund launched October 2024 (name not stated in source)",
+        "size": "€50 million",
+        "currency": "EUR",
+        "vintage": "2024",
+        "source_url": "https://tech.eu/2024/10/11/tensor-ventures-launches-eur50m-fund-a-boost-for-quantum-biotech-and-climate-tech-startups/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "AppFactor",
+        "listed_date": "2026-02-01",
+        "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
+      }
+    ],
+    "other_portfolio_companies": []
+  },
+  {
+    "candidate_id": "C034",
+    "name": "Tilia Impact Ventures",
+    "website": "https://www.tilia.vc",
+    "legal_name": "Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o.",
+    "known_funds": [
+      {
+        "name": "Tilia Impact Ventures",
+        "size": "43 milionů korun",
+        "currency": "CZK",
+        "vintage": null,
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+      },
+      {
+        "name": "Tilia 2",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "NOLD",
+        "listed_date": "2023-10-18",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "company": "Munch",
+        "listed_date": "2023-10-18",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "company": "Cyrkl",
+        "listed_date": "2023-10-18",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "company": "The Village",
+        "listed_date": "2023-10-18",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+      },
+      {
+        "company": "Datlab",
+        "listed_date": "2019-10-08",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+      },
+      {
+        "company": "MIWA Technologies",
+        "listed_date": "2019-10-08",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+      }
+    ],
+    "other_portfolio_companies": []
+  },
+  {
+    "candidate_id": "C063",
+    "name": "JSK Investments",
+    "website": "https://www.jskinvestments.cz",
+    "legal_name": "JSK Management s.r.o.",
+    "known_funds": [
+      {
+        "name": "JSK Investments SICAV",
+        "size": "zhruba dvě miliardy korun",
+        "currency": "CZK",
+        "vintage": null,
+        "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/"
+      },
+      {
+        "name": "JSK Investments Venture Capital Fund I.",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://www.jskinvestments.cz"
+      },
+      {
+        "name": "JSK Investments Private and Growth Equity Fund I.",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://www.jskinvestments.cz"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Andromeda Surgical",
+        "listed_date": "2026-09-01",
+        "source_url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
+      },
+      {
+        "company": "Elin.ai",
+        "listed_date": "2024-12-01",
+        "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+      }
+    ],
+    "other_portfolio_companies": []
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "candidate_id": "C145",
+    "name": "Presto Ventures",
+    "website": "https://prestoventures.com",
+    "legal_name": "Presto Ventures II a.s., osoba rizikového kapitálu",
+    "known_funds": [
+      {
+        "name": "Fund I",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://en.ain.ua/2022/07/12/presto-ventures-launches-e30m-fund-to-support-cee-startups"
+      },
+      {
+        "name": "Fund II",
+        "size": "€30 million",
+        "currency": "EUR",
+        "vintage": "2022",
+        "source_url": "https://en.ain.ua/2022/07/12/presto-ventures-launches-e30m-fund-to-support-cee-startups"
+      },
+      {
+        "name": "Presto Tech Horizons",
+        "size": "150 miliony eur",
+        "currency": "EUR",
+        "vintage": "2024",
+        "source_url": "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Tur.ai",
+        "listed_date": "2024-10-01",
+        "source_url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+      },
+      {
+        "company": "GoRamp",
+        "listed_date": "2022-06-01",
+        "source_url": "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Bavovna",
+      "Vidar Systems"
+    ]
+  },
+  {
+    "candidate_id": "C146",
+    "name": "Purple Ventures",
+    "website": "https://www.purple-ventures.com",
+    "legal_name": "Purple Ventures s.r.o.",
+    "known_funds": [
+      {
+        "name": "Purple Ventures 2",
+        "size": "čtyřicet milionů eur",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Delta Green",
+        "listed_date": "2024-05-01",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+      },
+      {
+        "company": "iVent Pro",
+        "listed_date": "2024-01-01",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Kilde"
+    ]
+  },
+  {
+    "candidate_id": "C151",
+    "name": "Gi21 Capital",
+    "website": "https://gi21capital.com",
+    "legal_name": "Gi21 Capital a.s.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "Hermetiq",
+        "listed_date": "2026-08-27",
+        "source_url": "https://gi21capital.com/blog"
+      },
+      {
+        "company": "FaceUp",
+        "listed_date": "2026-05-21",
+        "source_url": "https://gi21capital.com/blog"
+      },
+      {
+        "company": "Zerops",
+        "listed_date": "2026-05-01",
+        "source_url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
+      },
+      {
+        "company": "ArtMaster",
+        "listed_date": "2026-04-29",
+        "source_url": "https://gi21capital.com/blog"
+      }
+    ],
+    "other_portfolio_companies": []
+  },
+  {
+    "candidate_id": "C184",
+    "name": "Miton",
+    "website": "https://www.miton.cz",
+    "legal_name": "MITON CZ, s.r.o.",
+    "known_funds": [
+      {
+        "name": "Miton C",
+        "size": null,
+        "currency": null,
+        "vintage": "2021",
+        "source_url": "https://www.miton.cz/en/about"
+      },
+      {
+        "name": "Miton Psychonats",
+        "size": null,
+        "currency": null,
+        "vintage": "2020",
+        "source_url": "https://www.miton.cz/en/about"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Aim",
+        "listed_date": "2025-01-01",
+        "source_url": "https://www.miton.cz/en/about"
+      },
+      {
+        "company": "Bandits",
+        "listed_date": "2025-01-01",
+        "source_url": "https://www.miton.cz/en/about"
+      },
+      {
+        "company": "PangeAI",
+        "listed_date": "2025-01-01",
+        "source_url": "https://www.miton.cz/en/about"
+      },
+      {
+        "company": "POS Experts",
+        "listed_date": "2024-11-18",
+        "source_url": "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/"
+      },
+      {
+        "company": "GTE",
+        "listed_date": "2024-01-01",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+      },
+      {
+        "company": "Firefish",
+        "listed_date": "2023-01-01",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Boataround"
+    ]
+  }
+]

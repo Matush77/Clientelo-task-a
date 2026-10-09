@@ -1,0 +1,110 @@
+[
+  {
+    "candidate_id": "C092",
+    "name": "Lighthouse Ventures",
+    "website": "https://lhv.vc",
+    "legal_name": "Lighthouse Ventures GP s.r.o.",
+    "known_funds": [
+      {
+        "name": "Lighthouse Seed Fund",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://lhv.vc"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Ranketta",
+        "listed_date": "2025-11-01",
+        "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+      },
+      {
+        "company": "Pekat Vision",
+        "listed_date": "2019-06-07",
+        "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+      }
+    ],
+    "other_portfolio_companies": []
+  },
+  {
+    "candidate_id": "C099",
+    "name": "Neulogy Ventures",
+    "website": "https://neulogy.vc",
+    "legal_name": "Neulogy Ventures, a. s.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "GA Drilling",
+        "listed_date": "2024-04-18",
+        "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "GreenWay",
+      "GroupSolver",
+      "SaferPass",
+      "Trustmatic",
+      "Vectary",
+      "Voltia"
+    ]
+  },
+  {
+    "candidate_id": "C100",
+    "name": "Venture to Future Fund",
+    "website": "https://vff.sk",
+    "legal_name": "Venture to Future Fund, a.s.",
+    "known_funds": [
+      {
+        "name": "Venture to Future Fund",
+        "size": "55 mil. EUR",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://vff.sk"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Talentiqa",
+        "listed_date": "2025-10-01",
+        "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+      },
+      {
+        "company": "Product Fruits",
+        "listed_date": "2023-05-10",
+        "source_url": "https://vff.sk"
+      },
+      {
+        "company": "Sensoneo",
+        "listed_date": "2021-10-24",
+        "source_url": "https://vff.sk"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Brightpick",
+      "Nettle AI",
+      "SEC Technologies",
+      "Twinzo"
+    ]
+  },
+  {
+    "candidate_id": "C125",
+    "name": "Slovak Investment Holding",
+    "website": "https://www.sih.sk",
+    "legal_name": "Slovak Investment Holding, a. s.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "PERRY SOFT a.s.",
+        "listed_date": "2025-09-05",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+      },
+      {
+        "company": "InoBat",
+        "listed_date": "2024-01-01",
+        "source_url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
+      }
+    ],
+    "other_portfolio_companies": []
+  }
+]

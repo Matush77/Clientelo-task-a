@@ -1,0 +1,171 @@
+[
+  {
+    "candidate_id": "C012",
+    "name": "Credo Ventures",
+    "website": "https://www.credoventures.com",
+    "legal_name": "Credo Ventures a.s.",
+    "known_funds": [
+      {
+        "name": "Credo Stage 5",
+        "size": "$88 million",
+        "currency": null,
+        "vintage": "2026",
+        "source_url": "https://startuprise.co.uk/prague-and-krakow-based-credo-ventures-raises-88m-fund-5-to-focus-on-cee-pre-seed-startups-and-global-diaspora/"
+      },
+      {
+        "name": "Credo fund IV (čtvrtý fond)",
+        "size": "75 milionů eur",
+        "currency": null,
+        "vintage": "2022",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      },
+      {
+        "name": "Credo fund III (třetí fond)",
+        "size": "bezmála 100 milionů eur",
+        "currency": null,
+        "vintage": "2019",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      },
+      {
+        "name": "Credo fund II (druhý fond)",
+        "size": "53 milionů eur",
+        "currency": null,
+        "vintage": "2015",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      },
+      {
+        "name": "Credo fund I (první fond)",
+        "size": "18 milionů eur",
+        "currency": null,
+        "vintage": "2010",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "SuperPlane",
+        "listed_date": "2026-06-01",
+        "source_url": "https://raising.fi/news/superplane-pre-seed-june-2026"
+      },
+      {
+        "company": "Axoflow",
+        "listed_date": "2025-01-23",
+        "source_url": "https://en.ain.ua/2025/01/23/axoflow-raises-7m"
+      },
+      {
+        "company": "Talkbase",
+        "listed_date": "2022-10-01",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      },
+      {
+        "company": "Upheal",
+        "listed_date": "2022-10-01",
+        "source_url": "https://cc.cz/novy-fond-odchod-andreje-kisky-i-tri-dalsi-partneri-v-credo-ventures-se-deji-velke-veci/"
+      }
+    ],
+    "other_portfolio_companies": []
+  },
+  {
+    "candidate_id": "C014",
+    "name": "Depo Ventures",
+    "website": "https://depoventures.com",
+    "legal_name": "DEPO VENTURES, s.r.o.",
+    "known_funds": [
+      {
+        "name": "third angel fund",
+        "size": "€20 million",
+        "currency": "EUR",
+        "vintage": "2022",
+        "source_url": "https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund"
+      },
+      {
+        "name": "DEPO Ventures One",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"
+      },
+      {
+        "name": "DEPO Angels fund I",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://depoventures.com"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "ArcSpace",
+        "listed_date": "2026-09-01",
+        "source_url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"
+      },
+      {
+        "company": "Kardi AI",
+        "listed_date": "2025-04-01",
+        "source_url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Bolt",
+      "Tatum",
+      "WanderWallet"
+    ]
+  },
+  {
+    "candidate_id": "C019",
+    "name": "i&i Biotech Investments",
+    "website": "https://www.inibio.eu",
+    "legal_name": "Biotech Investments s.r.o.",
+    "known_funds": [
+      {
+        "name": "i&i Biotech Fund I SCSp",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://www.inibio.eu"
+      },
+      {
+        "name": "i&i Biotech Fund I SCSp",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Captain T Cell",
+        "listed_date": "2024-05-22",
+        "source_url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Celeris Therapeutics"
+    ]
+  },
+  {
+    "candidate_id": "C022",
+    "name": "Inven Capital",
+    "website": "https://www.invencapital.cz",
+    "legal_name": "Inven Capital, SICAV, a.s.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "Andercore",
+        "listed_date": "2026-02-12",
+        "source_url": "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/"
+      },
+      {
+        "company": "Vytal",
+        "listed_date": "2025-03-11",
+        "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Ember",
+      "Hydrogrid",
+      "Taranis",
+      "eliq"
+    ]
+  }
+]

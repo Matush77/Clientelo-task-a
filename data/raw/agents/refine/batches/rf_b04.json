@@ -1,0 +1,140 @@
+[
+  {
+    "candidate_id": "C132",
+    "name": "Zero Gravity Capital",
+    "website": "https://zerogravitycap.com",
+    "legal_name": "Zero Gravity Capital s.r.o.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "Wewell",
+        "listed_date": "2023-12-01",
+        "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "CulturePulse"
+    ]
+  },
+  {
+    "candidate_id": "C135",
+    "name": "Seed Starter",
+    "website": "https://www.seedstarter.cz",
+    "legal_name": "ČS Seed Starter, a.s.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "Repsense",
+        "listed_date": "2025-12-01",
+        "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"
+      },
+      {
+        "company": "Investown",
+        "listed_date": "2023-11-27",
+        "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+      },
+      {
+        "company": "Signi",
+        "listed_date": "2023-11-27",
+        "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+      },
+      {
+        "company": "PalmApp",
+        "listed_date": "2023-11-27",
+        "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+      },
+      {
+        "company": "Wflow",
+        "listed_date": "2023-11-27",
+        "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+      },
+      {
+        "company": "Rekenber",
+        "listed_date": "2023-11-27",
+        "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Definic"
+    ]
+  },
+  {
+    "candidate_id": "C139",
+    "name": "J&T Ventures",
+    "website": "https://www.jtventures.cz",
+    "legal_name": "J&T Ventures III SICAV a.s.",
+    "known_funds": [],
+    "deals_to_check": [
+      {
+        "company": "Xund",
+        "listed_date": "2025-03-05",
+        "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"
+      },
+      {
+        "company": "FetView",
+        "listed_date": "2015-03-01",
+        "source_url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Choice",
+      "Daytrip",
+      "Grid.online",
+      "Sharry",
+      "Supernova.io",
+      "Wultra"
+    ]
+  },
+  {
+    "candidate_id": "C144",
+    "name": "Reflex Capital",
+    "website": "https://www.reflexcapital.com",
+    "legal_name": "Reflex Capital SE",
+    "known_funds": [
+      {
+        "name": "třetí fond",
+        "size": "dvaadvacet milionů eur",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+      },
+      {
+        "name": "Reflex 2",
+        "size": "od 30 do 50 milionů eur",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"
+      },
+      {
+        "name": "třetí fond",
+        "size": "dvaadvacet milionů eur",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Digitoo",
+        "listed_date": "2023-12-14",
+        "source_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+      },
+      {
+        "company": "Leadspicker",
+        "listed_date": "2020-05-21",
+        "source_url": "https://globalprivatecapital.org/?p=22043"
+      },
+      {
+        "company": "TopMonks",
+        "listed_date": "2017-09-05",
+        "source_url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Apify",
+      "Choice",
+      "Fitify",
+      "Keboola"
+    ]
+  }
+]

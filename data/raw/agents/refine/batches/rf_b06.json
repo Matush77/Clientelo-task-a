@@ -1,0 +1,155 @@
+[
+  {
+    "candidate_id": "C186",
+    "name": "Look AI Ventures",
+    "website": "https://lookai.vc",
+    "legal_name": "Look AI Ventures SICAV, a.s.",
+    "known_funds": [
+      {
+        "name": "Look AI Ventures fund (LAIV)",
+        "size": "€20 million",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://tech.eu/2023/04/13/czech-republic-has-a-new-investment-fund-for-ai-start-ups"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Sodex Innovations",
+        "listed_date": "2026-07-13",
+        "source_url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026"
+      },
+      {
+        "company": "Lucida AI",
+        "listed_date": "2026-06-30",
+        "source_url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Digicust",
+      "Embodied AI",
+      "SECJUR",
+      "Trackbar"
+    ]
+  },
+  {
+    "candidate_id": "C195",
+    "name": "ZAKA Ventures",
+    "website": "https://zaka.vc",
+    "legal_name": "ZAKA VC I, osoba rizikového kapitálu, a.s.",
+    "known_funds": [
+      {
+        "name": "ZAKA VC Fund I",
+        "size": "€15 million",
+        "currency": "EUR",
+        "vintage": "2024",
+        "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "DeepSeq.AI",
+        "listed_date": "2026-01-07",
+        "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Aerogen Systems",
+      "AxionOrbital Space",
+      "FinalDose",
+      "Human Archive",
+      "PerfectBit",
+      "WonderTx"
+    ]
+  },
+  {
+    "candidate_id": "C197",
+    "name": "Rockaway Ventures",
+    "website": "https://rockawayventures.com",
+    "legal_name": "Rockaway Ventures a.s.",
+    "known_funds": [
+      {
+        "name": "Rockaway Ventures II",
+        "size": "nearly €55 million",
+        "currency": "EUR",
+        "vintage": null,
+        "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+      },
+      {
+        "name": "Rockaway Ventures Fund",
+        "size": null,
+        "currency": null,
+        "vintage": null,
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Apptronik",
+        "listed_date": "2026-02-01",
+        "source_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+      },
+      {
+        "company": "Apaleo",
+        "listed_date": "2025-05-16",
+        "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+      },
+      {
+        "company": "Gjirafa",
+        "listed_date": "2025-05-16",
+        "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+      },
+      {
+        "company": "Vivere",
+        "listed_date": "2021-09-23",
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      },
+      {
+        "company": "Productboard",
+        "listed_date": "2021-09-23",
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      },
+      {
+        "company": "Brand Embassy",
+        "listed_date": "2021-09-23",
+        "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+      }
+    ],
+    "other_portfolio_companies": []
+  },
+  {
+    "candidate_id": "C198",
+    "name": "Czech Founders VC",
+    "website": "https://czechfounders.vc",
+    "legal_name": "Czech Founders Ventures s.r.o., osoba rizikového kapitálu",
+    "known_funds": [
+      {
+        "name": "Czech Founders VC",
+        "size": "deset milionů eur",
+        "currency": "EUR",
+        "vintage": "2022",
+        "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/"
+      }
+    ],
+    "deals_to_check": [
+      {
+        "company": "Maxfusion",
+        "listed_date": "2026-01-14",
+        "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+      },
+      {
+        "company": "Lemondia",
+        "listed_date": "2025-09-17",
+        "source_url": "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/"
+      }
+    ],
+    "other_portfolio_companies": [
+      "Adventurer",
+      "CRUXO",
+      "Carta Genum",
+      "DTS",
+      "Filuta AI",
+      "StreamBee"
+    ]
+  }
+]
