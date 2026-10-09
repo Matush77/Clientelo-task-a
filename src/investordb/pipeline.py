@@ -22,7 +22,7 @@ from investordb.registries import RegistryRecord, ares_get, core_name, rpo_searc
 from investordb.rules import Decision, decide
 from investordb.candidates import match_key
 from investordb.registries import ares_search
-from investordb.triage import TRIAGE_CSV, registry_name_matches
+from investordb.triage import TRIAGE_CSV, has_investment_signal, registry_name_matches
 
 PROCESSED = CLAIMS_CSV.parent
 ALIASES_CSV = CANDIDATES_CSV.parents[1] / "seeds" / "aliases.csv"
@@ -66,13 +66,20 @@ def registry_for(claims: list[dict], triage: dict | None, names: list[str] = ())
                 return recs[0]
     for name, country in legal_names + [(n, hq) for n in names if n]:
         country = country if country in ("CZ", "SK") else hq
-        found = ares_search(match_key(name) or name, limit=10)[1] if country in ("CZ", "") else []
-        if country in ("SK", "") and not found:
-            found = rpo_search(name=match_key(name) or name, limit=3)
+        # raw name too: normalising "J&T Ventures" to "j t ventures" makes ARES find nothing
+        queries = list(dict.fromkeys(q for q in (name, match_key(name), match_key(name).split(" ")[0]) if q))
+        found = []
+        for q in queries:
+            if country in ("CZ", ""):
+                found += ares_search(q, limit=50 if " " not in q else 10)[1]
+            if country in ("SK", "") and not found:
+                found += rpo_search(name=q, limit=5)
+            if any(r.active and registry_name_matches(r.name, name) for r in found):
+                break
         matches = [r for r in found if r.active and registry_name_matches(r.name, name)]
         if matches:
-            # the management company, not one of its fund vehicles ("... AF II., osoba rizikového kapitálu")
-            return min(matches, key=lambda r: len(r.name))
+            # prefer a name that marks an investment vehicle, then the shortest (management company over sub-funds)
+            return min(matches, key=lambda r: (not has_investment_signal(r.name), len(r.name)))
     return None
 
 
@@ -187,8 +194,12 @@ def run(as_of: date, records: list[dict] | None = None) -> list[dict]:
             c = cand_rows.get(m) or {}
             out += [c.get("name", "")] + [a for a in (c.get("aliases") or "").split(" | ") if a]
         return [n for n in dict.fromkeys(out) if n]
-    # a later evidence run (e.g. the rescue pass) for the same candidate replaces the earlier one
-    latest = {r["candidate_id"]: r for r in records}
+    # later runs for the same candidate (rescue, recent-deal pass) add to the earlier record field by field;
+    # a non-empty later value wins, an empty one never erases (the recent-deal pass only returns investments)
+    latest: dict[str, dict] = {}
+    for r in records:
+        merged = latest.setdefault(r["candidate_id"], {})
+        merged.update({k: v for k, v in r.items() if v not in (None, "", [], {})})
     records = list(latest.values())
     primary_of = merge_duplicates(records, claims_by_cand)
     members: dict[str, list[str]] = defaultdict(list)
@@ -204,7 +215,9 @@ def run(as_of: date, records: list[dict] | None = None) -> list[dict]:
             rows.append(wide_row(rec, d, None, [], as_of, names.get(cid) or ""))
             continue
         claims = [c for m in members[cid] for c in claims_by_cand.get(m, [])]
-        reg = registry_for(claims, triage.get(cid), all_names(members[cid]))
+        web_name = domain(rec.get("website")).rsplit(".", 1)[0].replace(".", " ").replace("-", " ")  # zaka.vc -> "zaka"
+        web_name = f"{web_name} {domain(rec.get('website')).rsplit('.', 1)[-1]}" if web_name else ""  # -> "zaka vc"
+        reg = registry_for(claims, triage.get(cid), all_names(members[cid]) + ([web_name] if web_name else []))
         d = decide(cid, claims, reg, as_of)
         if d.reason == "E7" and rec.get("early_exit") == "foreign_hq":
             # the agent stopped because the firm is foreign but could not quote the address: out of scope, not "name only"

@@ -11,8 +11,10 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
+import re
+
 from investordb.candidates import OUT as CANDIDATES_CSV, match_key, same_entity
-from investordb.registries import RegistryRecord, ares_search, rpo_search
+from investordb.registries import RegistryRecord, ares_search, core_name, rpo_search
 
 TRIAGE_CSV = CANDIDATES_CSV.with_name("triage.csv")
 
@@ -21,18 +23,32 @@ INVESTMENT_WORDS = {"investment", "investments", "ventures", "venture", "capital
                     "funds", "holding", "invest", "vc", "gp", "advisors", "advisers"}
 
 
+INVESTMENT_VEHICLE = re.compile(r"rizikového kapitálu|sicav|investi[čc]n[íý] fond|podílový fond", re.I)
+
+
+def has_investment_signal(registry_name: str) -> bool:
+    """Does the registered name itself say it is an investment vehicle?"""
+    return bool(INVESTMENT_VEHICLE.search(registry_name)) or bool(set(core_name(registry_name).split()) & INVESTMENT_WORDS)
+
+
 def registry_name_matches(registry_name: str, name: str) -> bool:
     reg, cand = match_key(registry_name), match_key(name)
     if not reg or not cand:
         return False
+    # One-word company names collide: "KAYA, spol. s r.o." and "ZAKA, s.r.o." are unrelated firms that merely share
+    # a VC's brand. Such a name only counts if the registered name itself marks an investment vehicle.
+    if len(reg.split()) == 1 and not has_investment_signal(registry_name):
+        return False
     if same_entity(reg, cand):
         return True
-    if not reg.startswith(cand + " "):
+    # one name is the other plus extra words, in either direction ("ZAKA Ventures" brand vs "ZAKA VC I" entity)
+    short, long_ = sorted((reg, cand), key=len)
+    if not long_.startswith(short + " "):
         return False
-    # "Reflex Capital" -> "Reflex Capital Partners s.r.o." (multi-word brand prefix), or a one-word brand followed only
-    # by investment words: "Nation1" -> "Nation1 Investment s.r.o." yes, "KAYA" -> "KAYA CONSTRUCTION s.r.o." no
-    extra = set(reg[len(cand):].split())
-    return len(cand.split()) >= 2 or extra <= INVESTMENT_WORDS
+    # multi-word prefix ("Reflex Capital" -> "Reflex Capital Partners s.r.o."), or a one-word name whose extra words are
+    # only investment words: "Nation1" -> "Nation1 Investment" yes, "KAYA" -> "KAYA CONSTRUCTION" no
+    extra = set(long_[len(short):].split())
+    return (len(short.split()) >= 2 and short == cand) or extra <= INVESTMENT_WORDS
 
 
 def _accept(rec: RegistryRecord, name: str) -> bool:
