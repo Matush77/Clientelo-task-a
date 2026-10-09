@@ -134,6 +134,7 @@ def wide_row(rec: dict, d: Decision, reg: RegistryRecord | None, ok: list[dict],
         last_investment=(json.loads(last["value"]) or {}).get("company", "") if last else "",
         last_investment_source=last["source_url"] if last else "",
         status=d.status, reason=d.reason, tier=d.tier, explanation=d.explanation, as_of=as_of.isoformat(),
+        evidence_ids=" ".join(sorted({c["candidate_id"] for c in ok}) or [d.candidate_id]),
     )
 
 
