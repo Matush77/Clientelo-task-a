@@ -98,6 +98,20 @@ správne ju ignorovali – prompt im zakazoval zapisovať súbory.
 | C30 | **ja + Claude (kód)** | Kontrolór **odmietal správne citácie z pätičky** webu (obchodné meno, IČO, adresa) – knižnica trafilatura pätičku pri čistení zahadzuje. Sídlo overené len 14/31 | nápadne veľa zlyhaní práve pri sídle a identite; overenie na surovom HTML | tretia vrstva textu (všetok viditeľný text) + regresný test → 28/31 |
 | C31 | **ja + Claude (kód)** | Duplicita sa riešila až po rozhodnutí a zahodila dôkazy slabšieho záznamu (N1 vs. Nation1) | prehľad rozhodnutí | zlúčenie pred rozhodnutím (D23) |
 
+### Vlna 2 a dokončenie zberu
+
+| # | Agent / kód | Chyba / slabina | Ako zachytená | Opatrenie |
+|---|---|---|---|---|
+| C32 | Infraštruktúra | **Limity nástrojov:** pri 8 paralelných agentoch WebSearch vracal `too_many_requests`; dve dávky zastavil limit relácie (WebFetch) – 3 kandidáti neboli preskúmaní vôbec, 2 len čiastočne | správy agentov (poctivo nahlásili „NOT RESEARCHED“ namiesto vymýšľania) | znížená paralelnosť; opakovaný beh pre nedokončených |
+| C33 | **ja + Claude (kód)** | Úprava súboru cez PowerShell (`Get-Content`/`Set-Content`) prečítala UTF-8 ako ANSI a **pokazila diakritiku** v regulárnom výraze právnych foriem („správ“ → „sprÃ¡v“) – normalizácia názvov by potichu prestala fungovať | zlyhaná úprava a následná kontrola súboru | oprava + porovnanie s poslednou verziou v gite; súbory sa odvtedy upravujú len nástrojom Edit |
+| C34 | **ja + Claude (kód)** | **Chybné priradenie identity** pri jednoslovných značkách: KAYA → nesúvisiaca „KAYA, spol. s r.o.“, ZAKA → „ZAKA, s.r.o.“, Miton → jedna z 55 firiem MITON | ručná kontrola zoznamu priradených právnických osôb pred zmrazením | pravidlo D27 + regresné testy |
+| C35 | **ja + Claude (kód)** | Volania registrov bez opakovania a bez ošetrenia chýb – jeden timeout ARES zhodil celý beh | pád behu | opakovanie, cache na disku, zlyhanie = „bez zhody“ |
+| C36 | Zber dôkazov v3 | **Ďalšie pokusy o prompt injection** (Tilia, EVERITA, TCF/Töpfer, Espira, Dealroom) – spolu ~9 počas pilotu; všetky agenti ignorovali | správy agentov | žiadny dopad; dôvod, prečo sa výstup agenta nikdy nepreberá bez strojovej kontroly |
+
+**Úspešné v3 opatrenia:** postup „najprv stránka portfólia“ zvýšil počet nájdených investícií (KAYA 1 → 6, Depo 1 → 7,
+Neulogy 8); agenti správne rozlišovali minimálny vklad LP do fondu od tiketu do startupu (ZAKA) a objem poradenských
+mandátov od kapitálu (Sušánka). Podiel strojovo potvrdených tvrdení stúpol na ~96 %.
+
 **Úspešné v2 opatrenia:** skoré ukončenie funguje (poradcovia, realitné fondy a zahraničné fondy končia po 2–5
 volaniach); pravidlo „len vlastný kapitál“ správne vylúčilo venture debt (Orbit – Sloneek) aj záväzok do fondu (NRI).
 
