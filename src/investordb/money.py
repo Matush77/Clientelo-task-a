@@ -8,6 +8,7 @@ from __future__ import annotations
 import functools
 import re
 from dataclasses import dataclass
+from datetime import date, timedelta
 
 import httpx
 
@@ -141,10 +142,13 @@ def plausible(kind: str, eur: float | None) -> bool:
 
 @functools.lru_cache(maxsize=64)
 def eur_rate(currency: str, on: str) -> float:
-    """Units of `currency` per 1 EUR on (or last business day before) the date `on` (YYYY-MM-DD)."""
+    """Units of `currency` per 1 EUR: the last ECB reference rate published BEFORE the date `on` (YYYY-MM-DD).
+    The rate of day `on` itself appears only in its afternoon, so using it would make a run on the freeze day give
+    different numbers in the morning and in the evening."""
     if currency == "EUR":
         return 1.0
-    resp = httpx.get(ECB_URL.format(cur=currency), params={"endPeriod": on, "lastNObservations": 1, "format": "csvdata"},
+    end = (date.fromisoformat(on) - timedelta(days=1)).isoformat()
+    resp = httpx.get(ECB_URL.format(cur=currency), params={"endPeriod": end, "lastNObservations": 1, "format": "csvdata"},
                      timeout=30)
     resp.raise_for_status()
     header, row = resp.text.splitlines()[:2]

@@ -51,3 +51,27 @@ def test_no_currency_no_amount():
     assert parse_money("30 million") is None
     assert parse_money("undisclosed", "EUR") is None
     assert parse_money(None) is None
+
+
+def test_eur_rate_uses_the_last_rate_published_before_the_as_of_day(monkeypatch):
+    # on the freeze day itself the ECB rate appears only in the afternoon: asking for it made morning and evening runs
+    # of the same as_of differ (24.403 vs 24.369 CZK/EUR on 2026-10-09)
+    import investordb.money as money
+
+    seen = {}
+
+    class Resp:
+        text = "KEY,OBS_VALUE\nEXR.D.CZK.EUR.SP00.A,24.403"
+
+        def raise_for_status(self):
+            pass
+
+    def fake_get(url, params, timeout):
+        seen.update(params)
+        return Resp()
+
+    monkeypatch.setattr(money.httpx, "get", fake_get)
+    money.eur_rate.cache_clear()
+    assert money.eur_rate("CZK", "2026-10-09") == 24.403
+    assert seen["endPeriod"] == "2026-10-08"
+    money.eur_rate.cache_clear()
