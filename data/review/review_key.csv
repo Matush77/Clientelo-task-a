@@ -1,7 +1,7 @@
 review_id,candidate_id,stratum,status,reason,tier
 R01,C139,included,INCLUDED,,B
 R02,C099,included,INCLUDED,,B
-R03,C027,included,INCLUDED,,A
+R03,C027,included,NEEDS_REVIEW,REVIEW_IDENTITY,
 R04,C195,included,INCLUDED,,B
 R05,C019,included,INCLUDED,,B
 R06,C144,included,INCLUDED,,A
