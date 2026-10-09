@@ -1,0 +1,511 @@
+[
+  {
+    "candidate_id": "C018",
+    "website": "https://www.genesis.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "Genesis Capital Equity s.r.o.", "company_id": null, "country": "CZ"},
+        "value_text": "Genesis Capital Equity s.r.o.",
+        "source_url": "https://www.genesis.cz/kontakt",
+        "quote": "Genesis Capital Equity s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 10",
+      "source_url": "https://www.genesis.cz/kontakt",
+      "quote": "101 00 Praha 10",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "Fondy se orientují na investice do malých a středních podniků",
+      "source_url": "https://www.genesis.cz",
+      "quote": "Fondy se orientují na investice do malých a středních podniků v České republice",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "PFX", "date": "2023-10-03", "round": "unknown", "amount": null},
+        "value_text": "PFX",
+        "source_url": "https://cc.cz/cesti-genesis-capital-vstupuji-do-mistni-firmy-ktera-tvorila-efekty-pro-stranger-things/",
+        "quote": "domácího fondu Genesis Capital, který právě vstupuje do studia PFX",
+        "published_date": "2023-10-03",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Datart", "date": "2022-08-30", "round": "unknown", "amount": null},
+        "value_text": "Datartu",
+        "source_url": "https://www.e15.cz/rozhovory/podil-v-datartu-se-nam-pekne-zhodnoti-ve-hre-je-i-burza-rika-ondrej-vicar-z-genesis-capital-1392693",
+        "quote": "Podíl v Datartu se nám pěkně zhodnotí, ve hře je i burza, říká Ondřej Vičar z Genesis Capital",
+        "published_date": "2022-08-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Kasper Kovo", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Kasper Kovo",
+        "source_url": "https://forbes.cz/investice-do-trutnovskeho-prumyslu-genesis-capital-koupil-podil-firmy-kasper-kovo/",
+        "quote": "Investice do trutnovského průmyslu. Genesis Capital koupil podíl firmy Kasper Kovo",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "z nejrůznějších sektorů ekonomiky",
+      "source_url": "https://www.genesis.cz",
+      "quote": "Podíleli jsme se na podpoře růstu a rozvoje více než 90 podniků z nejrůznějších sektorů ekonomiky.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "EUR 10 million", "max": "EUR 45 million", "currency": "EUR"},
+      "value_text": "equity tickets ranging between EUR 10 million and EUR 45 million",
+      "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+      "quote": "The funds primarily target investments with equity tickets ranging between EUR 10 million and EUR 45 million.",
+      "published_date": "2026-06-10",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Genesis Private Equity Fund V", "size": "EUR 286 million", "currency": "EUR", "vintage": null},
+        "value_text": "EUR 286 million",
+        "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+        "quote": "with the current size of EUR 286 million",
+        "published_date": "2026-06-10",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Genesis Growth Equity Fund I", "size": "40 milionů euro", "currency": "EUR", "vintage": null},
+        "value_text": "40 milionů euro",
+        "source_url": "https://www.genesis.cz",
+        "quote": "Aktuálně je k investování otevřen fond Genesis Growth Equity Fund I (GGEF I) o velikosti 40 milionů euro",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Genesis Private Equity Fund IV", "size": null, "currency": null, "vintage": null},
+        "value_text": "GPEF IV",
+        "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+        "quote": "the predecessor fund GPEF IV is invested in 12 active portfolio investments",
+        "published_date": "2026-06-10",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["stages", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "\"Genesis Growth Equity Fund\" I",
+      "Genesis Capital Cross Masters investice",
+      "\"Genesis Private Equity Fund V\" investice 2026 koupil podíl",
+      "Genesis Capital Growth LLP Group majoritní podíl 2025"
+    ]
+  },
+  {
+    "candidate_id": "C036",
+    "website": "https://www.versute.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "VERSUTE INVESTMENTS a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "VERSUTE INVESTMENTS a.s.",
+        "source_url": "https://versute.cz/cs_cz/kontakt/",
+        "quote": "VERSUTE INVESTMENTS a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 1",
+      "source_url": "https://versute.cz/cs_cz/kontakt/",
+      "quote": "Vodičkova 33, 110 00 Praha 1",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "manažer Private Equity fondů",
+      "source_url": "https://www.versute.cz",
+      "quote": "Versute Investments je investiční a poradenská společnost působící jako manažer Private Equity fondů",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "PRP", "date": "2026", "round": "unknown", "amount": null},
+        "value_text": "PRP",
+        "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "quote": "PRP",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "ALFA 3", "date": "2025-08-04", "round": "unknown", "amount": null},
+        "value_text": "ALFA 3, s.r.o.",
+        "source_url": "https://www.versute.cz",
+        "quote": "Versute Investments a private equity fond kupují podíl ve společnosti ALFA 3, s.r.o.",
+        "published_date": "2025-08-04",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "UNIPAP", "date": "2025-09-24", "round": "unknown", "amount": null},
+        "value_text": "UNIPAP",
+        "source_url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/dva-fondy-zabalily-unipap.html",
+        "quote": "Two funds wrapped up UNIPAP",
+        "published_date": "2025-09-24",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "TIYO", "date": "2023", "round": "unknown", "amount": null},
+        "value_text": "TIYO",
+        "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "quote": "TIYO",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "BABIČKIN DVOR AGRO SERVIS", "date": "2021", "round": "unknown", "amount": null},
+        "value_text": "BABIČKIN DVOR AGRO SERVIS",
+        "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "quote": "BABIČKIN DVOR AGRO SERVIS",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "BOCO Pardubice", "date": "2018", "round": "unknown", "amount": null},
+        "value_text": "BOCO Pardubice",
+        "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "quote": "BOCO Pardubice",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["buyout"],
+      "value_text": "Odkup na úvěrovou páku",
+      "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+      "quote": "Odkup na úvěrovou páku",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "VERSUTE Private Equity Fund Otevřený", "size": null, "currency": null, "vintage": null},
+        "value_text": "VERSUTE Private Equity Fund Otevřený",
+        "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "quote": "VERSUTE Private Equity Fund Otevřený",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "BHS Private Equity Fund", "size": "CZK 1.5 billion", "currency": "CZK", "vintage": null},
+        "value_text": "CZK 1.5 billion",
+        "source_url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/dva-fondy-zabalily-unipap.html",
+        "quote": "BHS Private Equity Fund, advised by Versute Investments, manages assets worth CZK 1.5 billion.",
+        "published_date": "2025-09-24",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["sectors", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Versute Investments Unipap koupila podíl"
+    ]
+  },
+  {
+    "candidate_id": "C171",
+    "website": "https://www.eib.org",
+    "identity": [
+      {
+        "value": {"legal_name": "European Investment Bank", "company_id": null, "country": "other"},
+        "value_text": "European Investment Bank",
+        "source_url": "https://www.eib.org/en/index.htm",
+        "quote": "The European Investment Bank is one of the world’s main financers of climate action.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "other",
+      "value_text": "headquarters in Luxembourg",
+      "source_url": "https://www.eib.org/en/contact/offices",
+      "quote": "With its headquarters in Luxembourg, the European Investment Bank also has offices",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["lender"],
+      "value_text": "financers of climate action",
+      "source_url": "https://www.eib.org/en/index.htm",
+      "quote": "The European Investment Bank is one of the world’s main financers of climate action.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "European Investment Bank headquarters Luxembourg equity investments venture capital",
+      "eib.org contact European Investment Bank 98-100 boulevard Konrad Adenauer Luxembourg"
+    ]
+  },
+  {
+    "candidate_id": "C183",
+    "website": "https://growth.genesis.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "Genesis Capital Growth s.r.o.", "company_id": null, "country": "CZ"},
+        "value_text": "Genesis Capital Growth s.r.o.",
+        "source_url": "https://www.genesis.cz/kontakt",
+        "quote": "Genesis Capital Growth s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 10",
+      "source_url": "https://www.genesis.cz/kontakt",
+      "quote": "101 00 Praha 10",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "fond rozvojového kapitálu",
+      "source_url": "https://growth.genesis.cz/",
+      "quote": "Jsme tým zkušených investičních profesionálů řídící fond rozvojového kapitálu",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "R2B2", "date": null, "round": "unknown", "amount": null},
+        "value_text": "R2B2",
+        "source_url": "https://growth.genesis.cz/",
+        "quote": "R2B2",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "HC electronics", "date": null, "round": "unknown", "amount": null},
+        "value_text": "HC electronics",
+        "source_url": "https://growth.genesis.cz/",
+        "quote": "HC electronics",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "JP-PROLAK", "date": null, "round": "unknown", "amount": null},
+        "value_text": "JP-PROLAK",
+        "source_url": "https://growth.genesis.cz/",
+        "quote": "JP-PROLAK",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "SEA Enterprises", "date": null, "round": "unknown", "amount": null},
+        "value_text": "SEA Enterprises",
+        "source_url": "https://growth.genesis.cz/",
+        "quote": "SEA Enterprises",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "UPS Technology", "date": null, "round": "unknown", "amount": null},
+        "value_text": "UPS Technology",
+        "source_url": "https://growth.genesis.cz/",
+        "quote": "UPS Technology",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "CARUSSEL", "date": null, "round": "unknown", "amount": null},
+        "value_text": "CARUSSEL",
+        "source_url": "https://growth.genesis.cz/",
+        "quote": "CARUSSEL",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["growth"],
+      "value_text": "fond rozvojového kapitálu",
+      "source_url": "https://growth.genesis.cz/",
+      "quote": "Jsme tým zkušených investičních profesionálů řídící fond rozvojového kapitálu",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "ticket": {
+      "value": {"min": "1", "max": "4 miliony euro", "currency": "EUR"},
+      "value_text": "1-4 miliony euro",
+      "source_url": "https://www.genesis.cz",
+      "quote": "investice 1-4 miliony euro",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Genesis Growth Equity Fund I", "size": "40 milionů euro", "currency": "EUR", "vintage": null},
+        "value_text": "40 milionů euro",
+        "source_url": "https://www.genesis.cz",
+        "quote": "Aktuálně je k investování otevřen fond Genesis Growth Equity Fund I (GGEF I) o velikosti 40 milionů euro",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {
+        "value": "team behind GGEF I to continue independently; no successor fund planned",
+        "value_text": "will pursue its future activities independently of Genesis Capital",
+        "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+        "quote": "will pursue its future activities independently of Genesis Capital",
+        "published_date": "2026-06-10",
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["sectors", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "\"Genesis Growth Equity Fund\" I",
+      "Genesis Capital Cross Masters investice",
+      "Genesis Capital Growth GGEF investice 2025 podíl společnost",
+      "LLP Group Genesis Growth Equity Fund I investice"
+    ]
+  },
+  {
+    "candidate_id": "C176",
+    "website": "https://www.kaya.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague",
+      "source_url": "https://www.kaya.vc",
+      "quote": "Prague: Thámova 183/11, 186 00",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "pre-seed through to meaningful scale",
+      "source_url": "https://www.kaya.vc",
+      "quote": "We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "Rohlik.cz", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Rohlik.cz",
+        "source_url": "https://www.kaya.vc/portfolio",
+        "quote": "Rohlik.cz",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Booksy", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Booksy",
+        "source_url": "https://www.kaya.vc/portfolio",
+        "quote": "Booksy",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Docplanner", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Docplanner",
+        "source_url": "https://www.kaya.vc/portfolio",
+        "quote": "Docplanner",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "E2B", "date": null, "round": "unknown", "amount": null},
+        "value_text": "E2B",
+        "source_url": "https://www.kaya.vc/portfolio",
+        "quote": "E2B",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Better Stack", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Better Stack",
+        "source_url": "https://www.kaya.vc/portfolio",
+        "quote": "Better Stack",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Viktor", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Viktor",
+        "source_url": "https://www.kaya.vc/portfolio",
+        "quote": "Viktor",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "digital, physical, and consumer economies",
+      "source_url": "https://www.kaya.vc",
+      "quote": "We support 60+ teams building at the frontier of digital, physical, and consumer economies.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "pre-seed through to meaningful scale",
+      "source_url": "https://www.kaya.vc",
+      "quote": "We invest in ambitious & gritty founders from CEE; pre-seed through to meaningful scale.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "$500M", "currency": "USD", "capital_type": "aum", "as_of": null},
+      "value_text": "$500M total AUM",
+      "source_url": "https://www.kaya.vc",
+      "quote": "$500M total AUM",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "KAYA current fund", "size": "$85M", "currency": "USD", "vintage": null},
+        "value_text": "$85M",
+        "source_url": "https://www.kaya.vc",
+        "quote": "an $85M current fund",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "Kaya Ventures investment fund",
+      "Kaya VC Prague venture capital fund official website",
+      "Kaya VC invests seed round 2025 Czech startup",
+      "Stormy seed round Kaya VC 2025 announcement",
+      "Riptides pre-seed 2025 Kaya VC lead investor"
+    ]
+  }
+]

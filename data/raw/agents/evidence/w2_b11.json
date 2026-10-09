@@ -1,0 +1,204 @@
+[
+  {
+    "candidate_id": "C131",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Wezeo investice startup",
+      "Wezeo",
+      "Wezeo s.r.o. Česká republika",
+      "Wezeo investor fond startupy"
+    ]
+  },
+  {
+    "candidate_id": "C006",
+    "website": "https://www.forvismazars.com/cz",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Česká republika",
+      "source_url": "https://www.forvismazars.com/cz",
+      "quote": "Copyright 2026 - Forvis Mazars - Česká republika",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "poradenské a konzultační služby",
+      "source_url": "https://www.forvismazars.com/cz",
+      "quote": "Forvis Mazars nabízí auditorské, daňové, poradenské a konzultační služby po celém světě",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "services firm, not an investor (audit, tax, advisory)",
+        "value_text": "poradenské a konzultační služby",
+        "source_url": "https://www.forvismazars.com/cz",
+        "quote": "Forvis Mazars nabízí auditorské, daňové, poradenské a konzultační služby po celém světě",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"}
+    ],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "\"Forvis Mazars investice fond portfolio\"",
+      "\"Forvis Mazars Česká republika investice do startupů\"",
+      "\"Forvis Mazars Czech Republic investment in startup equity stake fund\""
+    ]
+  },
+  {
+    "candidate_id": "C148",
+    "website": "https://dreamcraft.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Copenhagen",
+      "source_url": "https://dreamcraft.vc",
+      "quote": "Sankt Annae Plads 28, DK-1250 Copenhagen K",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Dreamcraft Ventures investor"
+    ]
+  },
+  {
+    "candidate_id": "C115",
+    "website": "https://g4.sk",
+    "identity": [],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Bratislava",
+      "source_url": "https://g4.sk",
+      "quote": "Bratislava – mestská časť Staré Mesto 811 09",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["family_office"],
+      "value_text": "butikový „invitation-only friends and family” office",
+      "source_url": "https://g4.sk",
+      "quote": "G4 je butikový „invitation-only friends and family” office, ktorý spravuje investície úzkej skupiny ľudí v objeme zhruba 50 mil. eur.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "UIPATH", "date": null, "round": "unknown", "amount": null},
+        "value_text": "UIPATH",
+        "source_url": "https://g4.sk",
+        "quote": "Sme skromným spoluinvestorom v najúspešnejšej stredoeurópskej technologickej firme – UIPATH",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "zhruba 50 mil. eur", "currency": "EUR", "capital_type": "aum", "as_of": null},
+      "value_text": "zhruba 50 mil. eur",
+      "source_url": "https://g4.sk",
+      "quote": "G4 je butikový „invitation-only friends and family” office, ktorý spravuje investície úzkej skupiny ľudí v objeme zhruba 50 mil. eur.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "funds", "ticket", "stages", "sectors"],
+    "early_exit": null,
+    "search_log": [
+      "G4 Investments s.r.o. investice",
+      "G4 Investments Gogolák investícia 2025"
+    ]
+  },
+  {
+    "candidate_id": "C194",
+    "website": "https://badideas.fund",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Riga-based",
+      "source_url": "https://en.ain.ua/2022/07/07/badideas-fund-invests-100k-in-breezit/",
+      "quote": "The Riga-based BADideas.fund has invested its first €100,000 in a pre-seed round for Lithuanian event",
+      "published_date": "2022-07-07",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["angel_network"],
+      "value_text": "early-stage angel syndicate",
+      "source_url": "https://en.ain.ua/2022/07/07/badideas-fund-invests-100k-in-breezit/",
+      "quote": "Freshly founded, BADideas.fund is an early-stage angel syndicate providing €50k-€100k funding for CEE startups.",
+      "published_date": "2022-07-07",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Breezit", "date": "2022-07", "round": "unknown", "amount": null},
+        "value_text": "Breezit",
+        "source_url": "https://en.ain.ua/2022/07/07/badideas-fund-invests-100k-in-breezit/",
+        "quote": "The fund has chosen Lithuania's Breezit as its first company for investment.",
+        "published_date": "2022-07-07",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "Pre-seed and seed",
+      "source_url": "https://badideas.fund",
+      "quote": "Pre-seed and seed. CEE.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "€200K", "max": "€1.5M", "currency": "EUR"},
+      "value_text": "€200K to €1.5M",
+      "source_url": "https://badideas.fund",
+      "quote": "€200K to €1.5M",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "BADideas.fund investice",
+      "BADideas.fund portfolio startups website"
+    ]
+  }
+]

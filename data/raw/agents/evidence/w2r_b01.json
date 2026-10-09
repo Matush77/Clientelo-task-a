@@ -1,0 +1,300 @@
+[
+  {
+    "candidate_id": "C063",
+    "website": "https://www.jskinvestments.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "JSK Management s.r.o.", "company_id": null, "country": "CZ"},
+        "value_text": "JSK Management s.r.o.",
+        "source_url": "https://www.jskinvestments.cz/cs/kontakt",
+        "quote": "© 2026 All rights reserved (c) JSK Management s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"legal_name": "JSK Management s.r.o.", "company_id": "21285241", "country": "CZ"},
+        "value_text": "21285241",
+        "source_url": "https://www.jskinvestments.cz/cs/kontakt",
+        "quote": "21285241",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 1",
+      "source_url": "https://www.jskinvestments.cz/cs/kontakt",
+      "quote": "110 00 Praha 1",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "Venture Capital",
+      "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/",
+      "quote": "Druhý podfond Venture Capital se zaměřuje na menšinové vstupy do perspektivních startupů v raných fázích.",
+      "published_date": "2025-09-30",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Andromeda Surgical", "date": "2026-09", "round": "unknown", "amount": null},
+        "value_text": "Andromeda Surgical",
+        "source_url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/",
+        "quote": "Fond JSK Investments se zapojil do investice do amerického startupu Andromeda Surgical",
+        "published_date": "2026-09-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Elin.ai", "date": "2024-12", "round": "unknown", "amount": "420 tisíc eur"},
+        "value_text": "420 tisíc eur",
+        "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/",
+        "quote": "JSK Investments Simony Kijonkové investoval 420 tisíc eur do AI startupu Elin.ai",
+        "published_date": "2024-12-09",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "v raných fázích",
+      "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/",
+      "quote": "Druhý podfond Venture Capital se zaměřuje na menšinové vstupy do perspektivních startupů v raných fázích.",
+      "published_date": "2025-09-30",
+      "derivation": "inferred"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "JSK Investments SICAV", "size": "zhruba dvě miliardy korun", "currency": "CZK", "vintage": null},
+        "value_text": "zhruba dvě miliardy korun",
+        "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/",
+        "quote": "zhruba dvě miliardy korun",
+        "published_date": "2025-09-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "JSK Investments Venture Capital Fund I.", "size": null, "currency": null, "vintage": null},
+        "value_text": "JSK Investments Venture Capital Fund I.",
+        "source_url": "https://www.jskinvestments.cz",
+        "quote": "JSK Investments Venture Capital Fund I.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "JSK Investments Private and Growth Equity Fund I.", "size": null, "currency": null, "vintage": null},
+        "value_text": "JSK Investments Private and Growth Equity Fund I.",
+        "source_url": "https://www.jskinvestments.cz",
+        "quote": "JSK Investments Private and Growth Equity Fund I.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {
+        "value": "own portfolio page lists no investments yet",
+        "value_text": "Zde zatím nemáme žádné investice",
+        "source_url": "https://www.jskinvestments.cz/cs/projekty",
+        "quote": "Zde zatím nemáme žádné investice",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["sectors", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "JSK Investments Andromeda Surgical investice",
+      "JSK Investments SICAV investoval do amerického medtech startupu Andromeda Surgical tisková zpráva"
+    ]
+  },
+  {
+    "candidate_id": "C193",
+    "website": "https://token-ventures.com",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "investment firm",
+      "source_url": "https://token-ventures.com",
+      "quote": "Token Ventures is a specialized investment firm focused on digital assets and crypto startups.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "MoonPay Commerce", "date": null, "round": "unknown", "amount": null},
+        "value_text": "MoonPay Commerce",
+        "source_url": "https://token-ventures.com",
+        "quote": "MoonPay Commerce",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Arcium", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Arcium",
+        "source_url": "https://token-ventures.com",
+        "quote": "Arcium",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Aleph", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Aleph",
+        "source_url": "https://token-ventures.com",
+        "quote": "Aleph",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Heliotics", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Heliotics",
+        "source_url": "https://token-ventures.com",
+        "quote": "Heliotics",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Blockmate", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Blockmate",
+        "source_url": "https://token-ventures.com",
+        "quote": "Blockmate",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Teneo", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Teneo",
+        "source_url": "https://token-ventures.com",
+        "quote": "Teneo",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["fintech_insurtech"],
+      "value_text": "digital assets and crypto startups",
+      "source_url": "https://token-ventures.com",
+      "quote": "Token Ventures is a specialized investment firm focused on digital assets and crypto startups.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "early-stage capital (pre-seed/seed)",
+      "source_url": "https://token-ventures.com",
+      "quote": "We provide early-stage capital (pre-seed/seed) to projects with exceptional teams and strong fundamentals.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "trades liquid digital assets on secondary markets (not equity in companies)",
+        "value_text": "We actively manage a portfolio of digital assets on secondary markets",
+        "source_url": "https://token-ventures.com",
+        "quote": "We actively manage a portfolio of digital assets on secondary markets, utilizing fundamental and quantitative research.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "\"Token Ventures\" s.r.o. investice",
+      "Teneo seed round 2025 Token Ventures",
+      "AI Data Service DePIN seed round Token Ventures",
+      "Teneo Protocol seed round $3 million investors Token Ventures announcement",
+      "\"Token Ventures\" seed round led investors 2025 announces funding",
+      "\"Token Ventures\" investment 2026 raises pre-seed"
+    ]
+  },
+  {
+    "candidate_id": "C098",
+    "website": "https://www.nhfond.sk",
+    "identity": [
+      {
+        "value": {"legal_name": "Národný holdingový fond, s.r.o.", "company_id": null, "country": "SK"},
+        "value_text": "Národný holdingový fond, s.r.o.",
+        "source_url": "https://www.nhfond.sk/o-nas/nas-tim/",
+        "quote": "Máte otázky? Neváhajte a kontaktujte Národný holdingový fond, s.r.o.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Bratislava",
+      "source_url": "https://www.nhfond.sk/o-nas/nas-tim/",
+      "quote": "Karadžičova 2, 811 09 Bratislava, Slovenská republika",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc", "public_vc"],
+      "value_text": "rizikového kapitálu",
+      "source_url": "https://www.nhfond.sk",
+      "quote": "Špecializovaná dcérska spoločnosť Slovak Business Agency, ktorá implementuje podporu formou rizikového kapitálu.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "AgeVolt", "date": "2025-02", "round": "unknown", "amount": null},
+        "value_text": "Národného holdingového fondu",
+        "source_url": "https://www.startitup.sk/slovenska-firma-ziskala-investiciu-vo-vyske-13-miliona-eur-meni-buducnost-nabijania-a-planuje-expanziu/",
+        "quote": "Kapitál pochádza od Národného holdingového fondu, spravovaného Slovak Business Agency, a fondu Impact Ventures",
+        "published_date": "2025-02-21",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["growth"],
+      "value_text": "vo fáze rastu",
+      "source_url": "https://www.nhfond.sk",
+      "quote": "Eterus Capital je partnerom pre financovanie podnikateľa vo fáze rastu.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Národný holdingový fond", "size": null, "currency": null, "vintage": null},
+        "value_text": "Národný holdingový fond",
+        "source_url": "https://www.nhfond.sk/o-nas/nas-tim/",
+        "quote": "Národný holdingový fond",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Fond inovácií a technológií", "size": null, "currency": null, "vintage": null},
+        "value_text": "Fond inovácií a technológií",
+        "source_url": "https://www.nhfond.sk/o-nas/nas-tim/",
+        "quote": "Fond inovácií a technológií",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Eterus Capital", "size": null, "currency": null, "vintage": null},
+        "value_text": "Eterus Capital",
+        "source_url": "https://www.nhfond.sk",
+        "quote": "Eterus Capital je partnerom pre financovanie podnikateľa vo fáze rastu.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["sectors", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Národný holdingový fond s.r.o. investície",
+      "Národný holdingový fond investoval do startupu 2025",
+      "AgeVolt funding round February 2025 investors National Holding Fund Slovakia",
+      "AgeVolt raises seed funding 2025 Impact Ventures IPM Group investors press release"
+    ]
+  }
+]

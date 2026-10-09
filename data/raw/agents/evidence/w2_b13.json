@@ -1,0 +1,260 @@
+[
+  {
+    "candidate_id": "C059",
+    "website": "https://www.farkasovainternational.com",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Headquartered in Prague, Czech Republic",
+      "source_url": "https://www.farkasovainternational.com",
+      "quote": "Headquartered in Prague, Czech Republic",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "talent advisory firm",
+      "source_url": "https://www.farkasovainternational.com",
+      "quote": "Farkasova International is a leading executive leadership search and talent advisory firm.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "executive search and talent advisory firm, not an investor into companies",
+        "value_text": "talent advisory firm",
+        "source_url": "https://www.farkasovainternational.com",
+        "quote": "Farkasova International is a leading executive leadership search and talent advisory firm.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found"
+      }
+    ],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "FARKASOVA INTERNATIONAL s.r.o. farkasovainternational.com",
+      "Farkasova International investice startup",
+      "\"Farkasova International\" portfolio investor",
+      "\"Farkasová\" International venture fond startup"
+    ]
+  },
+  {
+    "candidate_id": "C199",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Uroboros Ventures s.r.o. investice",
+      "\"Uroboros Ventures\"",
+      "\"Ouroboros Ventures\" s.r.o.",
+      "Uroboros Ventures portfolio startup seed",
+      "Uroboros Ventures fond Praha startupy"
+    ]
+  },
+  {
+    "candidate_id": "C192",
+    "website": "https://eic.ec.europa.eu",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "1000 Brussels",
+      "source_url": "https://commission.europa.eu/about/departments-and-executive-agencies/european-innovation-council-and-small-and-medium-sized-enterprises-executive-agency_en",
+      "quote": "1000 Brussels",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["public_vc"],
+      "value_text": "Equity investment supporting the scale-up of breakthrough innovation",
+      "source_url": "https://eic.ec.europa.eu/index_en",
+      "quote": "Equity investment supporting the scale-up of breakthrough innovation.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "European Innovation Council EISMEA Brussels headquarters equity investment"
+    ]
+  },
+  {
+    "candidate_id": "C155",
+    "website": "https://gv.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "San Francisco Bay Area",
+      "source_url": "https://www.gv.com/about/",
+      "quote": "San Francisco Bay Area",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "independent venture capital firm",
+      "source_url": "https://www.gv.com/about/",
+      "quote": "an independent venture capital firm",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Google Ventures GV Alphabet venture capital arm headquarters Mountain View"
+    ]
+  },
+  {
+    "candidate_id": "C195",
+    "website": "https://zaka.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Czech-based",
+      "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery",
+      "quote": "a prominent Czech-based VC",
+      "published_date": "2026-01-07",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "VC fund",
+      "source_url": "https://zaka.vc",
+      "quote": "We are a seed & pre-seed VC fund, investing mainly in the US and Europe.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "WonderTx", "date": null, "round": "unknown", "amount": null},
+        "value_text": "WonderTx",
+        "source_url": "https://zaka.vc/portfolio",
+        "quote": "WonderTx",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Aerogen Systems", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Aerogen Systems",
+        "source_url": "https://zaka.vc/portfolio",
+        "quote": "Aerogen Systems",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "FinalDose", "date": null, "round": "unknown", "amount": null},
+        "value_text": "FinalDose",
+        "source_url": "https://zaka.vc/portfolio",
+        "quote": "FinalDose",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "PerfectBit", "date": null, "round": "unknown", "amount": null},
+        "value_text": "PerfectBit",
+        "source_url": "https://zaka.vc/portfolio",
+        "quote": "PerfectBit",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Human Archive", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Human Archive",
+        "source_url": "https://zaka.vc/portfolio",
+        "quote": "Human Archive",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "AxionOrbital Space", "date": null, "round": "unknown", "amount": null},
+        "value_text": "AxionOrbital Space",
+        "source_url": "https://zaka.vc/portfolio",
+        "quote": "AxionOrbital Space",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "DeepSeq.AI", "date": "2026-01-07", "round": "unknown", "amount": null},
+        "value_text": "DeepSeq",
+        "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery",
+        "quote": "We are pleased to welcome DeepSeq to the Zaka VC portfolio",
+        "published_date": "2026-01-07",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["life_sciences_medtech", "industry_manufacturing"],
+      "value_text": "Health & Biotech and Industrial Tech",
+      "source_url": "https://zaka.vc",
+      "quote": "Especially looking for startups in the Health & Biotech and Industrial Tech verticals.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "seed & pre-seed",
+      "source_url": "https://zaka.vc",
+      "quote": "We are a seed & pre-seed VC fund, investing mainly in the US and Europe.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "ZAKA VC Fund I", "size": "€15 million", "currency": "EUR", "vintage": "2024"},
+        "value_text": "€15 million",
+        "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m",
+        "quote": "ZAKA VC Fund I sized €15 million is now starting with a €10.5 million first closing in July 2024",
+        "published_date": "2024-07-19",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "ZAKA Ventures investice",
+      "ZAKA VC pre-seed round led 2026",
+      "ZAKA Ateios Systems Series A 2026 press release",
+      "\"ZAKA VC\" HexemBio seed round announces",
+      "\"ZAKA\" ParcelBio seed round 2026 announces investors"
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "candidate_id": "C198",
+    "website": "https://czechfounders.vc",
+    "identity": [
+      {"value": {"legal_name": "Czech Founders Ventures s.r.o.", "company_id": null, "country": "CZ"}, "value_text": "Czech Founders Ventures s.r.o.", "source_url": "https://czechfounders.vc", "quote": "© Czech Founders Ventures s.r.o.", "published_date": null, "derivation": "stated"}
+    ],
+    "hq_country": {"value": "CZ", "value_text": "Prague office", "source_url": "https://czechfounders.vc", "quote": "Prague office: Worklounge, Gen. Píky 430/26, 160 00 Prague 6, Czechia", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "investors", "source_url": "https://czechfounders.vc", "quote": "45+ exceptional founders-turned-mentors and investors including:", "published_date": null, "derivation": "inferred"},
+    "investments": [
+      {"value": {"company": "DTS", "date": null, "round": "unknown", "amount": null}, "value_text": "DTS", "source_url": "https://czechfounders.vc/our-portfolio", "quote": "DTS", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "StreamBee", "date": null, "round": "unknown", "amount": null}, "value_text": "StreamBee", "source_url": "https://czechfounders.vc/our-portfolio", "quote": "StreamBee", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Filuta AI", "date": null, "round": "unknown", "amount": null}, "value_text": "Filuta AI", "source_url": "https://czechfounders.vc/our-portfolio", "quote": "Filuta AI", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Adventurer", "date": null, "round": "unknown", "amount": null}, "value_text": "Adventurer", "source_url": "https://czechfounders.vc/our-portfolio", "quote": "Adventurer", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "CRUXO", "date": null, "round": "unknown", "amount": null}, "value_text": "CRUXO", "source_url": "https://czechfounders.vc/our-portfolio", "quote": "CRUXO", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Carta Genum", "date": null, "round": "unknown", "amount": null}, "value_text": "Carta Genum", "source_url": "https://czechfounders.vc/our-portfolio", "quote": "Carta Genum", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Maxfusion", "date": "2026-01-14", "round": "unknown", "amount": "350 tisíc eur"}, "value_text": "350 tisíc eur", "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/", "quote": "získání investice 350 tisíc eur (8,4 milionu korun) od Czech Founders VC", "published_date": "2026-01-14", "derivation": "stated"},
+      {"value": {"company": "Lemondia", "date": "2025-09-17", "round": "pre_seed", "amount": "300 tisíc eur"}, "value_text": "300 tisíc eur", "source_url": "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/", "quote": "300 tisíc eur (přes sedm milionů korun) do projektu v rámci tzv. pre-seed kola posílají Czech Founders VC a Nextech Ventures", "published_date": "2025-09-17", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["pre_seed"], "value_text": "Pre-seed tickets", "source_url": "https://czechfounders.vc", "quote": "Pre-seed tickets. Typically €50-350k.", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": "50 tisíc", "max": "350 tisíc eur", "currency": "EUR"}, "value_text": "od 50 tisíc do 350 tisíc eur", "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/", "quote": "částky v rozmezí od 50 tisíc do 350 tisíc eur", "published_date": "2022-09-07", "derivation": "stated"},
+    "total_capital": null,
+    "funds": [
+      {"value": {"name": "Czech Founders VC", "size": "deset milionů eur", "currency": "EUR", "vintage": "2022"}, "value_text": "deset milionů eur", "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/", "quote": "Všichni zde zmínění složili dohromady deset milionů eur, přibližně čtvrt miliardy korun", "published_date": "2022-09-07", "derivation": "stated"}
+    ],
+    "red_flags": [],
+    "not_found": ["sectors", "total_capital"],
+    "early_exit": null,
+    "search_log": ["Czech Founders VC investice", "Czech Founders VC Maxfusion investice 2026", "\"Carta Genum\" Czech Founders investice", "Lemondia Czech Founders VC investice"]
+  },
+  {
+    "candidate_id": "C062",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": ["INDUNA investiční společnost portfolio", "INDUNA venture capital", "Induna fond investiční společnost", "INDUNA investor startup seed round", "\"Induna Capital\" OR \"INDUNA s.r.o.\" investment fund"]
+  },
+  {
+    "candidate_id": "C170",
+    "website": "https://tcfcap.com",
+    "identity": [],
+    "hq_country": {"value": "CZ", "value_text": "Praha 1", "source_url": "https://tcfcap.com/contact/contact-a", "quote": "Palác Schiller, Na Příkopě 9, 110 00, Praha 1", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["family_office"], "value_text": "investiční skupina Tomáše Čupra", "source_url": "https://tcfcap.com", "quote": "TCF Capital je investiční skupina Tomáše Čupra, zakladatele Rohlík Group.", "published_date": null, "derivation": "inferred"},
+    "investments": [
+      {"value": {"company": "Duvo", "date": null, "round": "unknown", "amount": null}, "value_text": "Duvo", "source_url": "https://tcfcap.com/about/about-a", "quote": "Duvo", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Veloq", "date": null, "round": "unknown", "amount": null}, "value_text": "Veloq", "source_url": "https://tcfcap.com/about/about-a", "quote": "Veloq", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "ROHLIK GROUP", "date": null, "round": "unknown", "amount": null}, "value_text": "ROHLIK GROUP", "source_url": "https://tcfcap.com/about/about-a", "quote": "ROHLIK GROUP", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Toepfer", "date": null, "round": "unknown", "amount": null}, "value_text": "Toepfer", "source_url": "https://tcfcap.com/about/about-a", "quote": "Toepfer", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Macromo", "date": "2025-04", "round": "unknown", "amount": null}, "value_text": "majoritní podíl hlasovacích práv", "source_url": "https://cc.cz/tomas-cupr-slape-do-longevity-investuje-do-ceskeho-startupu-ktery-hlida-zdravi/", "quote": "Ve středu přes svůj investiční fond TCF v Macromo získal majoritní podíl hlasovacích práv", "published_date": "2025-04-10", "derivation": "stated"},
+      {"value": {"company": "Keboola", "date": null, "round": "unknown", "amount": null}, "value_text": "Keboola", "source_url": "https://cc.cz/tomas-cupr-spousti-investicni-skupinu-jeji-hodnota-diky-rohliku-prekracuje-17-miliard-a-ma-rychle-rust/", "quote": "TCF Capital rovněž drží pozice v českých startupech, jako jsou Keboola, FlexDog či Rossum.", "published_date": "2023-06-27", "derivation": "stated"},
+      {"value": {"company": "FlexDog", "date": null, "round": "unknown", "amount": null}, "value_text": "FlexDog", "source_url": "https://cc.cz/tomas-cupr-spousti-investicni-skupinu-jeji-hodnota-diky-rohliku-prekracuje-17-miliard-a-ma-rychle-rust/", "quote": "TCF Capital rovněž drží pozice v českých startupech, jako jsou Keboola, FlexDog či Rossum.", "published_date": "2023-06-27", "derivation": "stated"},
+      {"value": {"company": "Rossum", "date": null, "round": "unknown", "amount": null}, "value_text": "Rossum", "source_url": "https://cc.cz/tomas-cupr-spousti-investicni-skupinu-jeji-hodnota-diky-rohliku-prekracuje-17-miliard-a-ma-rychle-rust/", "quote": "TCF Capital rovněž drží pozice v českých startupech, jako jsou Keboola, FlexDog či Rossum.", "published_date": "2023-06-27", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["growth"], "value_text": "růstové investice", "source_url": "https://cc.cz/tomas-cupr-spousti-investicni-skupinu-jeji-hodnota-diky-rohliku-prekracuje-17-miliard-a-ma-rychle-rust/", "quote": "Jednak se chce zaměřit na růstové investice o velikosti kolem 30 až 50 milionů eur", "published_date": "2023-06-27", "derivation": "stated"},
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "most capital placed in the founder's own Rohlík Group", "value_text": "Většinu jsem dal do Rohlíku", "source_url": "https://cc.cz/tomas-cupr-spousti-investicni-skupinu-jeji-hodnota-diky-rohliku-prekracuje-17-miliard-a-ma-rychle-rust/", "quote": "Většinu jsem dal do Rohlíku, hodně jsem se zadlužil, abych v něm mohl koupit velký podíl", "published_date": "2023-06-27", "derivation": "stated"}
+    ],
+    "not_found": ["identity", "sectors", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": ["TCF Capital investice", "TCF Capital Tomáš Čupr investoval startup 2025", "TCF Capital Čupr Duvo Macromo Veloq investice"]
+  },
+  {
+    "candidate_id": "C139",
+    "website": "https://www.jtventures.cz",
+    "identity": [],
+    "hq_country": {"value": "CZ", "value_text": "Praha 8 – Karlín", "source_url": "https://www.jtventures.cz", "quote": "Praha 8 – Karlín, 186 00", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "venture kapitálový fond", "source_url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/", "quote": "Zhruba rok starý venture kapitálový fond J&T VENTURES patřící J&T bance, ohlašuje investici do dvou zajímavých projektů.", "published_date": "2015-03-24", "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Supernova.io", "date": null, "round": "unknown", "amount": null}, "value_text": "Supernova.io", "source_url": "https://www.jtventures.cz/portfolio", "quote": "Supernova.io", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Grid.online", "date": null, "round": "unknown", "amount": null}, "value_text": "Grid.online", "source_url": "https://www.jtventures.cz/portfolio", "quote": "Grid.online", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Daytrip", "date": null, "round": "unknown", "amount": null}, "value_text": "Daytrip", "source_url": "https://www.jtventures.cz/portfolio", "quote": "Daytrip", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Wultra", "date": null, "round": "unknown", "amount": null}, "value_text": "Wultra", "source_url": "https://www.jtventures.cz/portfolio", "quote": "Wultra", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Choice", "date": null, "round": "unknown", "amount": null}, "value_text": "Choice", "source_url": "https://www.jtventures.cz/portfolio", "quote": "Choice", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Sharry", "date": null, "round": "unknown", "amount": null}, "value_text": "Sharry", "source_url": "https://www.jtventures.cz/portfolio", "quote": "Sharry", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Xund", "date": "2025-03-05", "round": "unknown", "amount": null}, "value_text": "Xund", "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/", "quote": "J&T Ventures a Lead Ventures investují do vídeňského scaleupu Xund, celkem 6 milionů eur", "published_date": "2025-03-05", "derivation": "stated"},
+      {"value": {"company": "FetView", "date": "2015-03", "round": "unknown", "amount": null}, "value_text": "FetView", "source_url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/", "quote": "Konkrétně se jedná o zdravotnický software FetView sídlící v Praze a ICE GATEWAY GmbH", "published_date": "2015-03-24", "derivation": "stated"}
+    ],
+    "sectors": {"value": ["sector_agnostic"], "value_text": "Sector Agnostic", "source_url": "https://www.jtventures.cz", "quote": "Sector Agnostic", "published_date": null, "derivation": "stated"},
+    "stages": {"value": ["pre_seed", "seed", "series_a"], "value_text": "Pre-seed až Series A", "source_url": "https://www.jtventures.cz", "quote": "Pre-seed až Series A", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": "€300K", "max": "€3M", "currency": "EUR"}, "value_text": "€300K – €3M", "source_url": "https://www.jtventures.cz", "quote": "€300K – €3M", "published_date": null, "derivation": "stated"},
+    "total_capital": {"value": {"amount": "€120M", "currency": "EUR", "capital_type": "aum", "as_of": null}, "value_text": "€120M", "source_url": "https://www.jtventures.cz", "quote": "€120M", "published_date": null, "derivation": "stated"},
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "funds"],
+    "early_exit": null,
+    "search_log": ["J&T Ventures portfolio investice", "J&T Ventures investoval kolo 2025 startup", "XUND J&T Ventures investice kolo", "J&T Ventures Choice Series A 2026 investice"]
+  },
+  {
+    "candidate_id": "C200",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": ["Tech Ventures s.r.o. investice startup", "\"Tech Ventures\" venture capital Česko startup investice", "\"Tech Ventures s.r.o.\" Česká republika", "Tech Ventures investor Czech startup funding round led", "Tech Ventures Praha investiční fond startupy"]
+  }
+]

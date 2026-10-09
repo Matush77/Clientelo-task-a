@@ -1,0 +1,133 @@
+[
+  {
+    "candidate_id": "C114",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"}
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Hillbridges venture capital investice",
+      "\"Hillbridges\" s.r.o. investor",
+      "Hillbridges investuje investícia startup",
+      "Hillbridges",
+      "Oriens KONŠTRUKTA Industry akvizícia Hillbridges"
+    ]
+  },
+  {
+    "candidate_id": "C132",
+    "website": "https://zerogravitycap.com",
+    "identity": [],
+    "hq_country": {"value": "SK", "value_text": "Slovakia - HQ", "source_url": "https://zerogravitycap.com", "quote": "Slovakia - HQ", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "Venture capital fund", "source_url": "https://zerogravitycap.com", "quote": "Venture capital fund Zero Gravity Capital expands its portfolio with a new investment", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Wewell", "date": "2022-06", "round": "unknown", "amount": null}, "value_text": "Wewell", "source_url": "https://www.startitup.sk/?p=640272", "quote": "Fond Zero Gravity Capital spája sily s technologickým startupom Wewell založenom na umelej inteligencii.", "published_date": "2022-06-28", "derivation": "stated"},
+      {"value": {"company": "Wewell", "date": "2023-12", "round": "seed", "amount": "1,25 milionu eur"}, "value_text": "1,25 milionu eur", "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/", "quote": "Celkem 1,25 milionu eur, tedy asi 30,5 milionu korun, v seedovém kole.", "published_date": "2023-12-06", "derivation": "stated"},
+      {"value": {"company": "CulturePulse", "date": null, "round": "unknown", "amount": null}, "value_text": "CulturePulse", "source_url": "https://zerogravitycap.com", "quote": "where the CulturePulse project became a new portfolio company.", "published_date": null, "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["pre_seed", "seed"], "value_text": "Pre-Seed", "source_url": "https://zerogravitycap.com", "quote": "Pre-Seed", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": null, "max": "200k €", "currency": "EUR"}, "value_text": "Up to 200k € intro investment", "source_url": "https://zerogravitycap.com", "quote": "Up to 200k € intro investment", "published_date": null, "derivation": "stated"},
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Zero Gravity Capital venture fond investice",
+      "Zero Gravity Capital investuje 2025 seed kolo",
+      "Zero Gravity Capital Patron seed kolo investícia",
+      "Zero Gravity Capital Wewell AI kosmetika investícia",
+      "Zero One Hundred fond seed kolo 2025 IntellCRE Reno Vestberry",
+      "WebFetch https://zerogravitycap.com",
+      "WebFetch https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/",
+      "WebFetch https://www.startitup.sk/?p=640272"
+    ]
+  },
+  {
+    "candidate_id": "C149",
+    "website": "https://skydeck.berkeley.edu",
+    "identity": [],
+    "hq_country": {"value": "other", "value_text": "Berkeley, CA 94704", "source_url": "https://skydeck.berkeley.edu", "quote": "Berkeley, CA 94704", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "seed investors", "source_url": "https://skydeck.berkeley.edu", "quote": "One of the most active seed investors in the Bay Area, the Fund has made over 130 investments in 3 years!", "published_date": null, "derivation": "inferred"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Berkley SkyDeck Fund investments portfolio",
+      "WebFetch https://skydeck.berkeley.edu"
+    ]
+  },
+  {
+    "candidate_id": "C153",
+    "website": "https://u2v.vc",
+    "identity": [],
+    "hq_country": {"value": "other", "value_text": "Standorte in Berlin, Aachen und London", "source_url": "https://www.startbase.de/news/u2v-startet-60-millionen-euro-fonds-fuer-deep-tech-spin-offs-europaeischer-hochschulen/", "quote": "U2V ist ein 2025 gegründeter europäischer Frühphaseninvestor mit Standorten in Berlin, Aachen und London.", "published_date": "2025-12-10", "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "Frühphaseninvestor", "source_url": "https://www.startbase.de/news/u2v-startet-60-millionen-euro-fonds-fuer-deep-tech-spin-offs-europaeischer-hochschulen/", "quote": "Der neue Frühphaseninvestor U2V – University2Ventures hat das erste Closing seines 60-Millionen-Euro-Fonds I bekanntgegeben.", "published_date": "2025-12-10", "derivation": "inferred"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "University2Ventures investments portfolio",
+      "WebFetch https://u2v.vc",
+      "U2V University2Ventures Berlin pre-seed investment 2025",
+      "WebFetch https://www.startbase.de/news/u2v-startet-60-millionen-euro-fonds-fuer-deep-tech-spin-offs-europaeischer-hochschulen/"
+    ]
+  },
+  {
+    "candidate_id": "C031",
+    "website": "https://www.stratum.eu",
+    "identity": [],
+    "hq_country": {"value": "CZ", "value_text": "Prague 2", "source_url": "https://www.stratum.eu", "quote": "120 00 Prague 2", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["pe"], "value_text": "private equity manager", "source_url": "https://www.stratum.eu", "quote": "Stratum Partners is a private equity manager focused on Central Europe.", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "ELIS DESIGN", "date": "2026-04-29", "round": "unknown", "amount": null}, "value_text": "ELIS DESIGN", "source_url": "https://www.stratum.eu/news", "quote": "GGEF I makes an investment in ELIS DESIGN, a Czech designer and online retailer", "published_date": "2026-04-29", "derivation": "stated"},
+      {"value": {"company": "Poptávej.cz", "date": "2025-12-16", "round": "unknown", "amount": null}, "value_text": "Poptávej.cz", "source_url": "https://www.stratum.eu/news", "quote": "GGEF I acquires majority stake in Poptávej.cz, an online digital marketplace connecting craftsmen with customers", "published_date": "2025-12-16", "derivation": "stated"},
+      {"value": {"company": "Poptávej.cz", "date": "2025-12", "round": "unknown", "amount": null}, "value_text": "Poptávej.cz", "source_url": "https://cc.cz/dalsi-exit-cesti-investori-prodali-byznys-se-remeslniky-aby-se-mohli-soustredit-na-vetsi-projekty/", "quote": "Pro kupující společnost Genesis Capital představuje akvizice Poptávej.cz významný krok k plnému zainvestování fondu", "published_date": "2025-12-04", "derivation": "stated"},
+      {"value": {"company": "Cross Masters", "date": "2025-11-13", "round": "unknown", "amount": null}, "value_text": "Cross Masters", "source_url": "https://www.stratum.eu/news", "quote": "GGEF I acquires majority stake in Cross Masters, an IT consultancy in marketing and advertising technologies", "published_date": "2025-11-13", "derivation": "stated"},
+      {"value": {"company": "LLP Group", "date": "2025-01-08", "round": "unknown", "amount": null}, "value_text": "LLP Group", "source_url": "https://www.stratum.eu/news", "quote": "GGEF I has acquired a majority stake in LLP Group, a leading business software consultancy", "published_date": "2025-01-08", "derivation": "stated"},
+      {"value": {"company": "TechPlasty", "date": "2024-10-15", "round": "unknown", "amount": null}, "value_text": "TechPlasty", "source_url": "https://www.stratum.eu/news", "quote": "GGEF I acquires a majority stake in TechPlasty, a leading Slovak company operating in the technical plastics sector", "published_date": "2024-10-15", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["growth"], "value_text": "growth capital fund", "source_url": "https://www.stratum.eu", "quote": "GGEF I, a growth capital fund specialising in investments into small and medium-sized companies", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": "€ 2", "max": "10 million", "currency": "EUR"}, "value_text": "€ 2–10 million", "source_url": "https://www.stratum.eu", "quote": "We provide equity investments of € 2–10 million", "published_date": null, "derivation": "stated"},
+    "total_capital": null,
+    "funds": [
+      {"value": {"name": "Stratum II", "size": "EUR 65 million", "currency": "EUR", "vintage": null}, "value_text": "EUR 65 million", "source_url": "https://www.stratum.eu/news", "quote": "Stratum Partners launches new Private Equity Fund Stratum II with target size of EUR 65 million", "published_date": "2026-07-16", "derivation": "stated"},
+      {"value": {"name": "GGEF I", "size": null, "currency": null, "vintage": null}, "value_text": "GGEF I", "source_url": "https://www.stratum.eu", "quote": "GGEF I, a growth capital fund specialising in investments into small and medium-sized companies", "published_date": null, "derivation": "stated"},
+      {"value": {"name": "GGEF II", "size": null, "currency": null, "vintage": null}, "value_text": "GGEF II", "source_url": "https://cc.cz/dalsi-exit-cesti-investori-prodali-byznys-se-remeslniky-aby-se-mohli-soustredit-na-vetsi-projekty/", "quote": "zatímco skupina dokončuje přípravu nového fondu GGEF II.", "published_date": "2025-12-04", "derivation": "stated"}
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Stratum Partners stratum.eu investments",
+      "Stratum Partners GGEF I Poptávej.cz iFORO Group",
+      "WebFetch https://www.stratum.eu",
+      "WebFetch https://www.stratum.eu/news",
+      "WebFetch https://cc.cz/dalsi-exit-cesti-investori-prodali-byznys-se-remeslniky-aby-se-mohli-soustredit-na-vetsi-projekty/"
+    ]
+  }
+]

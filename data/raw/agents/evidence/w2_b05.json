@@ -1,0 +1,288 @@
+[
+  {
+    "candidate_id": "C022",
+    "website": "https://www.invencapital.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "Inven Capital, SICAV, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Inven Capital, SICAV, a.s.",
+        "source_url": "https://www.invencapital.cz",
+        "quote": "Inven Capital, SICAV, a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 4 - Braník",
+      "source_url": "https://www.invencapital.cz",
+      "quote": "Praha 4 - Braník",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "find and support the most impactful startups",
+      "source_url": "https://www.invencapital.cz",
+      "quote": "We use our talents, knowledge and passion to find and support the most impactful startups in the climate tech industry",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {"value": {"company": "eliq", "date": null, "round": "unknown", "amount": null}, "value_text": "eliq", "source_url": "https://www.invencapital.cz", "quote": "eliq", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Ember", "date": null, "round": "unknown", "amount": null}, "value_text": "Ember", "source_url": "https://www.invencapital.cz", "quote": "Ember", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Forto", "date": null, "round": "unknown", "amount": null}, "value_text": "Forto", "source_url": "https://www.invencapital.cz", "quote": "Forto", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Sunfire", "date": null, "round": "unknown", "amount": null}, "value_text": "Sunfire", "source_url": "https://www.invencapital.cz", "quote": "Sunfire", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Hydrogrid", "date": null, "round": "unknown", "amount": null}, "value_text": "Hydrogrid", "source_url": "https://www.invencapital.cz", "quote": "Hydrogrid", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Taranis", "date": null, "round": "unknown", "amount": null}, "value_text": "Taranis", "source_url": "https://www.invencapital.cz", "quote": "Taranis", "published_date": null, "derivation": "stated"},
+      {
+        "value": {"company": "Vytal", "date": "2025-03-11", "round": "growth", "amount": "€14.2M"},
+        "value_text": "Vytal",
+        "source_url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala",
+        "quote": "Czech VC firm Inven Capital leads €14.2M funding round for Vytal, a German sustainability company",
+        "published_date": "2025-03-11",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Andercore", "date": "2026-02-12", "round": "unknown", "amount": "40 Millionen US-Dollar"},
+        "value_text": "investieren 40 Millionen US-Dollar in Andercore",
+        "source_url": "https://www.deutsche-startups.de/2026/02/12/andercore-sammelt-40-millionen-ein-blockbrain-erhaelt-175-millionen-twentyfour-bekommt-118-millionen/",
+        "quote": "Der tschechische ClimateTech-Investor Inven Capital, Atomico, Project A und Co. investieren 40 Millionen US-Dollar in Andercore.",
+        "published_date": "2026-02-12",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["cleantech_energy"],
+      "value_text": "climate tech industry",
+      "source_url": "https://www.invencapital.cz",
+      "quote": "We use our talents, knowledge and passion to find and support the most impactful startups in the climate tech industry",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "2", "max": "30m EUR", "currency": "EUR"},
+      "value_text": "2-30m EUR",
+      "source_url": "https://www.invencapital.cz",
+      "quote": "2-30m EUR",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": {
+      "value": {"amount": "EUR 500m", "currency": "EUR", "capital_type": "aum", "as_of": null},
+      "value_text": "EUR 500m",
+      "source_url": "https://www.invencapital.cz",
+      "quote": "EUR 500m from institutional investors and global corporates",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["stages", "funds", "identity.company_id"],
+    "early_exit": null,
+    "search_log": [
+      "Inven Capital led round 2025 climate tech startup",
+      "Vytal Inven Capital funding round March 2025 reusable packaging",
+      "Andercore Series B 2026 Inven Capital"
+    ]
+  },
+  {
+    "candidate_id": "C100",
+    "website": "https://vff.sk",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture kapitálový fond",
+      "source_url": "https://vff.sk",
+      "quote": "Sme slovenský venture kapitálový fond so zameraním na podporu inovatívnych lokálnych podnikov.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {"value": {"company": "Nettle AI", "date": null, "round": "unknown", "amount": null}, "value_text": "Nettle AI", "source_url": "https://vff.sk", "quote": "Nettle AI vyvíja sofistikované nástroje poháňané umelou inteligenciou, ktoré predstavujú", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "SEC Technologies", "date": null, "round": "unknown", "amount": null}, "value_text": "SEC Technologies", "source_url": "https://vff.sk", "quote": "SEC Technologies je slovenská technologická firma, ktorá vyvinula zariadenie Falcon 4G", "published_date": null, "derivation": "stated"},
+      {
+        "value": {"company": "Sensoneo", "date": "2021-10-24", "round": "unknown", "amount": "2 milióny eur"},
+        "value_text": "Sensoneo",
+        "source_url": "https://vff.sk",
+        "quote": "Sensoneo získalo investíciu 2 milióny eur z Fondu Európskej rady pre inovácie a Venture to Future Fund",
+        "published_date": "2021-10-24",
+        "derivation": "stated"
+      },
+      {"value": {"company": "Brightpick", "date": null, "round": "unknown", "amount": null}, "value_text": "Brightpick", "source_url": "https://vff.sk", "quote": "Brightpick vyvíja autonómne roboty poháňané umelou inteligenciou na automatizáciu skladových procesov.", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Twinzo", "date": null, "round": "unknown", "amount": null}, "value_text": "Twinzo", "source_url": "https://vff.sk", "quote": "Twinzo poskytuje unikátne riešenie 3D digitálneho dvojčaťa výrobných, skladových, kancelárskych", "published_date": null, "derivation": "stated"},
+      {
+        "value": {"company": "Product Fruits", "date": "2023-05-10", "round": "unknown", "amount": "1,6 milióna eur"},
+        "value_text": "Product Fruits",
+        "source_url": "https://vff.sk",
+        "quote": "Naše investičné portfólio sa rozšírilo o spoločnosť Product Fruits, ktorá získala investíciu vo výške 1,6 milióna eur",
+        "published_date": "2023-05-10",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Talentiqa", "date": "2025-10", "round": "unknown", "amount": null},
+        "value_text": "Venture to Future Fund",
+        "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/",
+        "quote": "The funding round was backed equally by Purple Ventures and Venture to Future Fund.",
+        "published_date": "2025-10-07",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["ai_data", "deeptech_hardware"],
+      "value_text": "umelou inteligenciou",
+      "source_url": "https://vff.sk",
+      "quote": "Brightpick vyvíja autonómne roboty poháňané umelou inteligenciou na automatizáciu skladových procesov.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["seed", "series_a", "series_b_plus"],
+      "value_text": "od neskoršieho Seed kola po Series A,B",
+      "source_url": "https://vff.sk",
+      "quote": "Cielime na malé a stredné podniky v rastovej fáze od neskoršieho Seed kola po Series A,B",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "400tis. EUR", "max": "2,0 mil. EUR", "currency": "EUR"},
+      "value_text": "400tis. EUR, aj keď optimálne investujeme medzi 1,5 – 2,0 mil. EUR",
+      "source_url": "https://vff.sk",
+      "quote": "Minimálna výška našej investície je 400tis. EUR, aj keď optimálne investujeme medzi 1,5 – 2,0 mil. EUR.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Venture to Future Fund", "size": "55 mil. EUR", "currency": "EUR", "vintage": null},
+        "value_text": "55 mil. EUR",
+        "source_url": "https://vff.sk",
+        "quote": "V rokoch 2020 - 2026 máme vyčlenených 55 mil. EUR, aby sme našli a zafinancovali práve váš projekt.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Venture to Future Fund investice",
+      "Venture to Future Fund investícia 2025 startup kolo",
+      "Talentiqa Purple Ventures Venture to Future Fund EU-Startups"
+    ]
+  },
+  {
+    "candidate_id": "C190",
+    "website": "https://pointnine.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "aus Berlin",
+      "source_url": "https://www.startbase.de/news/point-nine-schliesst-sechsten-fonds/",
+      "quote": "Der Wagniskapitalgeber aus Berlin will 180 Millionen Euro für Start-ups in der Seed-Phase bereitstellen.",
+      "published_date": "2022-09-27",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "Wagniskapitalgeber",
+      "source_url": "https://www.startbase.de/news/point-nine-schliesst-sechsten-fonds/",
+      "quote": "Der Wagniskapitalgeber aus Berlin will 180 Millionen Euro für Start-ups in der Seed-Phase bereitstellen.",
+      "published_date": "2022-09-27",
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": {
+      "value": ["ai_data"],
+      "value_text": "investing globally in AI",
+      "source_url": "https://pointnine.com",
+      "quote": "We're a small equal partnership, based in Europe, investing globally in AI for the digital, physical and biological world.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["seed"],
+      "value_text": "Seed-Phase",
+      "source_url": "https://www.startbase.de/news/point-nine-schliesst-sechsten-fonds/",
+      "quote": "Der Wagniskapitalgeber aus Berlin will 180 Millionen Euro für Start-ups in der Seed-Phase bereitstellen.",
+      "published_date": "2022-09-27",
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "$1", "max": "10 million", "currency": "USD"},
+      "value_text": "$1-10 million",
+      "source_url": "https://pointnine.com",
+      "quote": "We invest $1-10 million per company",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "sechster Fonds", "size": "180 Millionen Euro", "currency": "EUR", "vintage": null},
+        "value_text": "180 Millionen Euro",
+        "source_url": "https://www.startbase.de/news/point-nine-schliesst-sechsten-fonds/",
+        "quote": "Der Wagniskapitalgeber aus Berlin will 180 Millionen Euro für Start-ups in der Seed-Phase bereitstellen.",
+        "published_date": "2022-09-27",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "total_capital", "investments"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Point Nine Capital portfolio investments",
+      "Point Nine Capital Berlin-based seed VC news"
+    ]
+  },
+  {
+    "candidate_id": "C175",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "AspectWorks Group investice",
+      "AspectWorks Group Prague company website",
+      "AspectWorks Salesforce partner Praha kontakt",
+      "AspectWorks Group equity stake investor startup"
+    ]
+  },
+  {
+    "candidate_id": "C178",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Středočeské inovační centrum investice do startupů",
+      "SIC Ventures Středočeské inovační centrum pre-seed investice startup",
+      "SIC Ventures investoval do firmy podíl Středočeský kraj"
+    ]
+  }
+]

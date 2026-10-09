@@ -1,0 +1,125 @@
+[
+  {
+    "candidate_id": "C158",
+    "website": "https://www.longjourney.vc",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {"value": ["vc"], "value_text": "Early Stage Investing", "source_url": "https://www.longjourney.vc", "quote": "Long Journey Ventures - Early Stage Investing for the long-term.", "published_date": null, "derivation": "inferred"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "sectors", "stages", "ticket", "total_capital", "funds", "investments"],
+    "early_exit": null,
+    "search_log": [
+      "Long Journey Ventures investice",
+      "Long Journey Ventures led seed round 2025 San Francisco",
+      "VectorShift seed round Long Journey Ventures",
+      "Long Journey Ventures $181.8 million fund San Francisco-based venture firm",
+      "BusRight seed round Long Journey Ventures led 2026",
+      "\"Long Journey Ventures\" announces seed funding round 2025 investors include",
+      "\"San Francisco-based\" \"Long Journey Ventures\"",
+      "BusRight $7 million Series A Las Olas Venture Capital Ubiquity Underscore Long Journey Ventures",
+      "Substrate $100 million seed round investors Long Journey Ventures"
+    ]
+  },
+  {
+    "candidate_id": "C093",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "stated"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Smart Management VC s.r.o. investice",
+      "\"Smart Management VC\" fond",
+      "\"Smart Management VC\" startup investuje",
+      "\"Smart Management VC\"",
+      "Smart Management VC s.r.o. startup seed investícia investícia do startupov"
+    ]
+  },
+  {
+    "candidate_id": "C169",
+    "website": "https://www.quadrillecapital.com",
+    "identity": [],
+    "hq_country": {"value": "other", "value_text": "Paris, France", "source_url": "https://www.quadrillecapital.com", "quote": "16, place de la Madeleine 75008 Paris, France", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["pe"], "value_text": "Growth Equity", "source_url": "https://www.quadrillecapital.com", "quote": "Investments in Growth Equity companies,", "published_date": null, "derivation": "inferred"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": {"value": {"amount": "€1.6bn", "currency": "EUR", "capital_type": "aum", "as_of": null}, "value_text": "€1.6bn Assets Under Management", "source_url": "https://www.quadrillecapital.com", "quote": "€1.6bn Assets Under Management", "published_date": null, "derivation": "stated"},
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "ticket", "funds", "investments"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Quadrille venture capital investice"
+    ]
+  },
+  {
+    "candidate_id": "C135",
+    "website": "https://www.seedstarter.cz",
+    "identity": [
+      {"value": {"legal_name": "ČS Seed Starter, a.s.", "company_id": null, "country": "CZ"}, "value_text": "ČS Seed Starter, a.s.", "source_url": "https://www.seedstarter.cz/cs/uvod", "quote": "ČS Seed Starter, a.s.", "published_date": null, "derivation": "stated"},
+      {"value": {"legal_name": null, "company_id": "61058769", "country": "CZ"}, "value_text": "IČ: 61058769", "source_url": "https://www.seedstarter.cz/cs/uvod", "quote": "IČ: 61058769", "published_date": null, "derivation": "stated"}
+    ],
+    "hq_country": {"value": "CZ", "value_text": "Praha 4", "source_url": "https://www.seedstarter.cz/cs/uvod", "quote": "140 00 Praha 4, Česká republika", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["cvc"], "value_text": "collaborate with Česká spořitelna", "source_url": "https://www.seedstarter.cz/cs/uvod", "quote": "We pave the way for the best startups to collaborate with Česká spořitelna and other members of the Erste Group.", "published_date": null, "derivation": "inferred"},
+    "investments": [
+      {"value": {"company": "Investown", "date": null, "round": "unknown", "amount": null}, "value_text": "Investown", "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/", "quote": "Investiční fond banky má ve svém portfoliu už startupy Investown, Signi, PalmApp, Wflow a Rekenber.", "published_date": "2023-11-27", "derivation": "stated"},
+      {"value": {"company": "Signi", "date": null, "round": "unknown", "amount": null}, "value_text": "Signi", "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/", "quote": "Investiční fond banky má ve svém portfoliu už startupy Investown, Signi, PalmApp, Wflow a Rekenber.", "published_date": "2023-11-27", "derivation": "stated"},
+      {"value": {"company": "PalmApp", "date": null, "round": "unknown", "amount": null}, "value_text": "PalmApp", "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/", "quote": "Investiční fond banky má ve svém portfoliu už startupy Investown, Signi, PalmApp, Wflow a Rekenber.", "published_date": "2023-11-27", "derivation": "stated"},
+      {"value": {"company": "Wflow", "date": null, "round": "unknown", "amount": null}, "value_text": "Wflow", "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/", "quote": "Investiční fond banky má ve svém portfoliu už startupy Investown, Signi, PalmApp, Wflow a Rekenber.", "published_date": "2023-11-27", "derivation": "stated"},
+      {"value": {"company": "Rekenber", "date": null, "round": "unknown", "amount": null}, "value_text": "Rekenber", "source_url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/", "quote": "Investiční fond banky má ve svém portfoliu už startupy Investown, Signi, PalmApp, Wflow a Rekenber.", "published_date": "2023-11-27", "derivation": "stated"},
+      {"value": {"company": "Definic", "date": "2026-06-12", "round": "seed", "amount": null}, "value_text": "Definic", "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/", "quote": "Slovenský startup Definic, donedávna známý pod názvem Nordics, úspěšně uzavřel seed investiční kolo", "published_date": "2026-06-12", "derivation": "stated"},
+      {"value": {"company": "Repsense", "date": "2025-12", "round": "unknown", "amount": null}, "value_text": "Repsense", "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/", "quote": "Repsense, litevský startup s kancelářemi i v Praze, umí měřit a předpovídat, jak se informace šíří", "published_date": "2025-12-17", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["pre_seed", "seed"], "value_text": "Pre-seed & Seed", "source_url": "https://www.seedstarter.cz/cs/uvod", "quote": "Pre-seed & Seed", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": "200k", "max": "1M", "currency": "EUR"}, "value_text": "200k – 1M EUR", "source_url": "https://www.seedstarter.cz/cs/uvod", "quote": "200k – 1M EUR", "published_date": null, "derivation": "stated"},
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["sectors", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Seed Starter ČS investice",
+      "seedstarter.cz Seed Starter Česká spořitelna portfolio",
+      "Definic Seed Starter Česká spořitelna J&T Ventures 2,5 mil. EUR",
+      "Repsense Seed Starter Česká spořitelna seed investice"
+    ]
+  },
+  {
+    "candidate_id": "C181",
+    "website": "https://www.wing.vc",
+    "identity": [],
+    "hq_country": {"value": "other", "value_text": "Palo Alto CA", "source_url": "https://www.wing.vc", "quote": "© 2026 Wing VC, Palo Alto CA, All Rights Reserved.", "published_date": null, "derivation": "stated"},
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Wing VC investice startup"
+    ]
+  }
+]

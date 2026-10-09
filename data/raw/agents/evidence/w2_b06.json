@@ -1,0 +1,282 @@
+[
+  {
+    "candidate_id": "C164",
+    "website": "https://www.bdpartners.cz/",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "early-stage founders",
+      "source_url": "https://www.bdpartners.cz/",
+      "quote": "most ambitious early-stage founders",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Freya", "date": "2025-11-24", "round": "unknown", "amount": null},
+        "value_text": "BD Partners",
+        "source_url": "https://www.lupa.cz/aktuality/mluvi-jako-lide-a-chapou-kontext-hlasovi-ai-agenti-se-kterymi-prisel-startup-ceskeho-zakladatele-ziskali-3-5-milionu-dolaru/",
+        "quote": "Mezi další investory patří BD Partners, Rebel Fund, Domino Ventures, 212 VC a několik angel investorů.",
+        "published_date": "2025-11-24",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "BD Partners venture capital investor website",
+      "\"BD Partners\" investice startup",
+      "BD Partners portfolio team investment Prague",
+      "BD Partners WanderWallet pre-seed investice 2026",
+      "WanderWallet BD Partners DEPO Ventures pre-seed",
+      "WanderWallet 430 000 eur pre-seed BDPartners DEPO Ventures",
+      "BDPartners investuje startup pre-seed seed kolo",
+      "Freya Voice AI seed BD Partners investice",
+      "BD Partners a.s. investiční firma Praha Dejvice Freya Rebel Fund"
+    ]
+  },
+  {
+    "candidate_id": "C092",
+    "website": "https://lhv.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague 6",
+      "source_url": "https://lhv.vc",
+      "quote": "Evropská 2758/11 160 00, Prague 6",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "early-stage venture capital",
+      "source_url": "https://lhv.vc",
+      "quote": "Lighthouse Ventures is an early-stage venture capital, focused on technology projects with global vision",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Pekat Vision", "date": "2019-06-07", "round": "unknown", "amount": "vyšší stovky tisíc eur"},
+        "value_text": "Pekat Vision",
+        "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/",
+        "quote": "Český fond Lighthouse Ventures vložil vyšší stovky tisíc eur do brněnského AI startupu Pekat Vision",
+        "published_date": "2019-06-07",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Ranketta", "date": "2025-11", "round": "pre_seed", "amount": "€1 million"},
+        "value_text": "Ranketta",
+        "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/",
+        "quote": "Ranketta, a Brno, Czech Republic-based AI visibility platform, has raised €1 million in pre-Seed funding.",
+        "published_date": "2025-11-27",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["enterprise_saas", "fintech_insurtech", "ai_data"],
+      "value_text": "B2B Software of various verticals, Fintech, AI",
+      "source_url": "https://lhv.vc",
+      "quote": "B2B Software of various verticals, Fintech, AI",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "Idea / Seed",
+      "source_url": "https://lhv.vc",
+      "quote": "Idea / Seed",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "€200k", "max": "€1m", "currency": "EUR"},
+      "value_text": "From €200k to €1m",
+      "source_url": "https://lhv.vc",
+      "quote": "From €200k to €1m",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": {
+      "value": {"amount": "23 milionů eur", "currency": "EUR", "capital_type": "aum", "as_of": "2019-06-07"},
+      "value_text": "23 milionů eur",
+      "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/",
+      "quote": "Lighthouse Ventures, který celkově spravuje kapitál ve výši 23 milionů eur, tedy necelých 600 milionů korun.",
+      "published_date": "2019-06-07",
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "Lighthouse Seed Fund", "size": null, "currency": null, "vintage": null},
+        "value_text": "Lighthouse Seed Fund",
+        "source_url": "https://lhv.vc",
+        "quote": "Lighthouse Seed Fund benefits from the support and financing of the Czech ESIF Fund of Funds (CZFoF).",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity"],
+    "early_exit": null,
+    "search_log": [
+      "Lighthouse Ventures GP s.r.o. venture capital fond",
+      "Lighthouse Ventures venture capital Czech investice startup",
+      "Lighthouse Ventures fond portfolio kontakt Praha startup",
+      "Lighthouse Ventures Lighthouse Accelerator Zálešák Avidor oficiální web",
+      "Lighthouse Ventures investice seed startup 2025",
+      "Ranketta Lighthouse Ventures Gi21 pre-seed kolo"
+    ]
+  },
+  {
+    "candidate_id": "C140",
+    "website": "https://www.elevator-ventures.com/",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Vienna-based",
+      "source_url": "https://siliconcanals.com/elevator-ventures-launches-70m-fund/",
+      "quote": "Vienna-based Elevator Ventures, the venture capital manager of Raiffeisen Bank International (RBI)",
+      "published_date": "2024-04-08",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital firm",
+      "source_url": "https://www.elevator-ventures.com/",
+      "quote": "Elevator Ventures is the venture capital firm backed by Raiffeisen Bank International, Raiffeisen-Holding Niederösterreich-Wien, and Raiffeisen-Landesbank Steiermark",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Elevator Ventures venture capital investice",
+      "Elevator Ventures Wien Venture Capital Raiffeisen Büro"
+    ]
+  },
+  {
+    "candidate_id": "C133",
+    "website": "https://www.cbim.sk",
+    "identity": [
+      {
+        "value": {"legal_name": "CB Investment Management s. r. o.", "company_id": "52 524 5311", "country": "SK"},
+        "value_text": "IČO: 52 524 5311",
+        "source_url": "https://www.cbim.sk",
+        "quote": "IČO: 52 524 5311",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "811 03 Bratislava, SK",
+      "source_url": "https://www.cbim.sk",
+      "quote": "811 03 Bratislava, SK",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "seed and pre-seed businesses",
+      "source_url": "https://www.cbim.sk",
+      "quote": "CB Investment Management Growth One fund was founded in 2019 in order to help seed and pre-seed businesses based in Slovakia.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "DNA ERA", "date": "2021-02-02", "round": "unknown", "amount": "250 000 EUR"},
+        "value_text": "DNA ERA",
+        "source_url": "https://www.startitup.sk/velky-uspech-slovensky-startup-ktory-meni-zivoty-ziskal-dolezitu-investiciu-a-mieri-do-zahranicia/",
+        "quote": "DNA ERA získala dôležitú investíciu vo výške 250 000 EUR od investičného fondu v správe CB Investment Management.",
+        "published_date": "2021-02-02",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "seed and pre-seed businesses",
+      "source_url": "https://www.cbim.sk",
+      "quote": "CB Investment Management Growth One fund was founded in 2019 in order to help seed and pre-seed businesses based in Slovakia.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "CB Investment Management Growth One fund", "size": "€23.2M", "currency": "EUR", "vintage": null},
+        "value_text": "€23.2M",
+        "source_url": "https://www.cbim.sk",
+        "quote": "€23.2M",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["sectors", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "CB Investment Management venture capital fond",
+      "CB Investment Management investice startup Česko",
+      "\"CB Investment Management\" investícia 2024 2025 startup fond Growth One",
+      "DNA ERA CB Investment Management Growth One 250 000 eur",
+      "DNA ERA startitup investícia CB Investment Management Growth One 2021"
+    ]
+  },
+  {
+    "candidate_id": "C116",
+    "website": "https://www.finhold.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "FINHOLD a.s.", "company_id": "28884566", "country": "CZ"},
+        "value_text": "IČ: 28884566",
+        "source_url": "https://www.finhold.cz",
+        "quote": "IČ: 28884566",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Příbram I, Obecnická 285, PSČ 261 01",
+      "source_url": "https://www.finhold.cz",
+      "quote": "Sídlo: Příbram I, Obecnická 285, PSČ 261 01",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"}
+    ],
+    "not_found": ["investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Finhold venture capital investice",
+      "FINHOLD a.s. investice do startupů fond",
+      "FINHOLD a.s. Příbram RAVAK holding dceřiné společnosti podíl investice",
+      "FINHOLD a.s. Příbram investor startup podíl společnost"
+    ]
+  }
+]

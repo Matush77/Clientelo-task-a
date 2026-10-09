@@ -1,0 +1,129 @@
+[
+  {
+    "candidate_id": "C101",
+    "website": "https://visionventures.vc/",
+    "identity": [],
+    "hq_country": {"value": "SK", "value_text": "Bratislava, Slovakia", "source_url": "https://visionventures.vc/", "quote": "Bottova 2 SKY PARK Offices Bottova 7939/2A811 09 Bratislava, Slovakia", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "VC investor", "source_url": "https://visionventures.vc/", "quote": "Vision Ventures is a VC investor focused on pre-seed and seed investments in Slovakia", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Cequence", "date": null, "round": "unknown", "amount": null}, "value_text": "Cequence", "source_url": "https://visionventures.vc/portfolio", "quote": "Cequence", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Seerlinq", "date": null, "round": "unknown", "amount": null}, "value_text": "Seerlinq", "source_url": "https://visionventures.vc/portfolio", "quote": "Seerlinq", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Airvolute", "date": null, "round": "unknown", "amount": null}, "value_text": "Airvolute", "source_url": "https://visionventures.vc/portfolio", "quote": "Airvolute", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "TramaTM", "date": null, "round": "unknown", "amount": null}, "value_text": "TramaTM", "source_url": "https://visionventures.vc/portfolio", "quote": "TramaTM", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "BiteBerry", "date": null, "round": "unknown", "amount": null}, "value_text": "BiteBerry", "source_url": "https://visionventures.vc/portfolio", "quote": "BiteBerry", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "CloseRocket", "date": null, "round": "unknown", "amount": null}, "value_text": "CloseRocket", "source_url": "https://visionventures.vc/portfolio", "quote": "CloseRocket", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Sloneek", "date": "2020-11-04", "round": "unknown", "amount": "350 tisíc eur"}, "value_text": "Sloneek", "source_url": "https://cc.cz/cesko-slovensky-startup-sloneek-nabira-miliony-od-vision-ventures-se-svym-personalnim-systemem-miri-do-evropy/", "quote": "Sloneek získal investici 350 tisíc eur (9,5 milionu korun) od slovenského venture kapitálového fondu Vision Ventures", "published_date": "2020-11-04", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["pre_seed", "seed"], "value_text": "pre-seed and seed", "source_url": "https://visionventures.vc/", "quote": "VC fund focused on pre-seed and seed investments in Slovakia.", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": null, "max": "1.6 million €", "currency": "EUR"}, "value_text": "1.6 million €", "source_url": "https://visionventures.vc/", "quote": "Investment up to 1.6 million €", "published_date": null, "derivation": "stated"},
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Vision Ventures venture capital Czech",
+      "\"Vision Ventures\" seed kolo investice 2025",
+      "Vision Ventures Bratislava investoval seed startup 2025 Slovensko",
+      "\"Vision Ventures\" Deep.SA seed round 2026",
+      "\"Vision Ventures\" Tomáš Bél Gabriel Horváth investícia kolo 2025",
+      "Eatster Vision Ventures investícia pre-seed"
+    ]
+  },
+  {
+    "candidate_id": "C162",
+    "website": "https://breakwater.vc",
+    "identity": [],
+    "hq_country": {"value": "other", "value_text": "Seattle-based", "source_url": "https://members.viatec.ca/news-archive/Details/meet-seattle-s-newest-seed-fund-breakwater-ventures-emerges-to-back-early-stage-startups-202260", "quote": "There's a new Seattle-based investment firm looking to support software startups", "published_date": "2024-02-14", "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "We invest early", "source_url": "https://breakwater.vc", "quote": "We invest early — pre seed and seed — in companies turning compute into labor capacity.", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Upward", "date": "2025-11-07", "round": "unknown", "amount": "$8 million"}, "value_text": "Upward", "source_url": "https://www.builtinseattle.com/articles/upward-raises-8m-round-20251107", "quote": "Seattle-based Upward recently secured $8 million in a funding round co-led by Dundee Venture Capital and Breakwater", "published_date": "2025-11-07", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Breakwater VC venture capital fund",
+      "Breakwater VC fund investments seed",
+      "Breakwater Ventures led seed round Upwardli",
+      "Breakwater Ventures Seattle seed fund pre-seed"
+    ]
+  },
+  {
+    "candidate_id": "C003",
+    "website": "https://www.zonky.cz",
+    "identity": [
+      {"value": {"legal_name": "Air Bank a.s.", "company_id": null, "country": "CZ"}, "value_text": "Air Bank a.s.", "source_url": "https://www.zonky.cz", "quote": "© 2026 Air Bank a.s., člen skupiny PPF, poskytovatel služby Zonky", "published_date": null, "derivation": "inferred"}
+    ],
+    "hq_country": null,
+    "investor_type": {"value": ["lender"], "value_text": "půjčky", "source_url": "https://www.zonky.cz", "quote": "Nabízíme půjčky od lidí pro lidi.", "published_date": null, "derivation": "stated"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found", "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": "inferred"},
+      {"value": "lends to consumers only (P2P loans), no investments in companies seen", "value_text": "půjčky", "source_url": "https://www.zonky.cz", "quote": "Nabízíme půjčky od lidí pro lidi.", "published_date": null, "derivation": "stated"}
+    ],
+    "not_found": ["hq_country", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Zonky investice do startupu firmy",
+      "Zonky podíl ve firmě investice do společnosti 2025",
+      "Zonky Rentiér investuje do spotřebitelských půjček, ne do firem"
+    ]
+  },
+  {
+    "candidate_id": "C172",
+    "website": "https://www.jic.cz/ventures/",
+    "identity": [],
+    "hq_country": {"value": "CZ", "value_text": "Brno", "source_url": "https://www.jic.cz/ventures/", "quote": "Purkynova 127 (INMEC building), 612 00 Brno – Medlánky, Czech Republic", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "VC fund", "source_url": "https://www.jic.cz/ventures/", "quote": "JIC Ventures is a Brno-born VC fund backing technology founders from pre-seed to exit.", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Gina Software", "date": "2015-11-19", "round": "unknown", "amount": null}, "value_text": "Gina Software", "source_url": "https://www.lupa.cz/clanky/brnensky-jic-ventures-zacina-investovat-ziskal-podil-v-gina-software/", "quote": "Brněnský JIC Ventures začíná investovat. Získal podíl v Gina Software", "published_date": "2015-11-19", "derivation": "stated"},
+      {"value": {"company": "Harangi Sound", "date": "2022-01-20", "round": "unknown", "amount": "500 tisíc korun"}, "value_text": "Harangi Sound", "source_url": "https://cc.cz/dvacet-milionu-pro-jihomoravske-technologicke-startupy-jic-rozbiha-vlastni-fond-a-hlasi-investici-do-reproduktoru/", "quote": "500 tisíc korun získal brněnský výrobce designových reproduktorů Harangi Sound", "published_date": "2022-01-20", "derivation": "stated"},
+      {"value": {"company": "FaceUp", "date": null, "round": "unknown", "amount": null}, "value_text": "FaceUp", "source_url": "https://forbes.cz/jic-ventures-investuje-do-faceup-cesky-startup-ziskal-pres-110-milionu-korun-na-globalni-expanzi/", "quote": "JIC Ventures investuje do FaceUp.", "published_date": null, "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["pre_seed", "seed"], "value_text": "pre-seed and seed", "source_url": "https://www.jic.cz/en/about-us/pro-media/jic-launches-a-venture-capital-fund-for-startups-p", "quote": "JIC Ventures will focus primarily on startups in the pre-seed and seed stages and plans to invest", "published_date": "2026-04-07", "derivation": "stated"},
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {"value": {"name": "JIC Ventures", "size": "400 miliony korun", "currency": "CZK", "vintage": "2026"}, "value_text": "400 miliony korun", "source_url": "https://www.lupa.cz/aktuality/v-brne-vznikl-fond-pro-startupy-ktery-bude-investovat-i-penize-kraje/", "quote": "V Brně dnes odstartoval nový venture kapitálový fond, který hodlá se 400 miliony korun pomoct rozvíjet zdejší technologie.", "published_date": "2026-04-07", "derivation": "inferred"}
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "JIC Ventures investice startupy",
+      "JIC Ventures fond Brno oficiální web kontakt"
+    ]
+  },
+  {
+    "candidate_id": "C136",
+    "website": "https://www.earlybird.com",
+    "identity": [],
+    "hq_country": {"value": "other", "value_text": "Berlin", "source_url": "https://www.earlybird.com", "quote": "Berlin, Münzstraße 23, 10178 Berlin, London", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "venture capital investor", "source_url": "https://www.earlybird.com", "quote": "We’re a venture capital investor powering Europe’s tech innovators with financial resources", "published_date": null, "derivation": "stated"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Earlybird Venture Capital offices headquarters"
+    ]
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "candidate_id": "C096",
+    "website": "https://eterus.sk",
+    "identity": [],
+    "hq_country": {"value": "SK", "value_text": "Gorkého 4, Bratislava", "source_url": "https://eterus.sk", "quote": "Gorkého 4, Bratislava", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["pe"], "value_text": "private equity", "source_url": "https://eterus.sk", "quote": "Do inovácií sme formou private equity investovali už viac než 40 mil. EUR.", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Sygic", "date": null, "round": "unknown", "amount": null}, "value_text": "Sygic", "source_url": "https://eterus.sk/portfolio", "quote": "Sygic", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "HOPIN", "date": null, "round": "unknown", "amount": null}, "value_text": "HOPIN", "source_url": "https://eterus.sk/portfolio", "quote": "HOPIN", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Eyerim", "date": null, "round": "unknown", "amount": null}, "value_text": "Eyerim", "source_url": "https://eterus.sk/portfolio", "quote": "Eyerim", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Saneca Pharma", "date": null, "round": "unknown", "amount": null}, "value_text": "Saneca Pharma", "source_url": "https://eterus.sk/portfolio", "quote": "Saneca Pharma", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "GroupSolver", "date": null, "round": "unknown", "amount": null}, "value_text": "GroupSolver", "source_url": "https://eterus.sk/portfolio", "quote": "GroupSolver", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "MTBIKER", "date": null, "round": "unknown", "amount": null}, "value_text": "MTBIKER", "source_url": "https://eterus.sk/portfolio", "quote": "MTBIKER", "published_date": null, "derivation": "stated"},
+      {"value": {"company": "Dr. Martin Dental Clinic", "date": "2024-05", "round": "unknown", "amount": null}, "value_text": "Dr. Martin Dental Clinic", "source_url": "https://www.oaklins.com/se/en/deals/110583/", "quote": "Dr. Martin Dental Clinic, a leading network of dental clinics in Slovakia, has received a significant investment from Eterus Capital and Ethernum Capital", "published_date": "2024-05", "derivation": "stated"},
+      {"value": {"company": "EC Pharmacies", "date": "2024-08", "round": "unknown", "amount": null}, "value_text": "EC Pharmacies", "source_url": "https://www.oaklins.com/se/en/deals/110584/", "quote": "Eterus Capital has acquired a majority stake in EC Pharmacies", "published_date": "2024-08", "derivation": "stated"}
+    ],
+    "sectors": null,
+    "stages": {"value": ["growth"], "value_text": "vo fáze rastu", "source_url": "https://eterus.sk", "quote": "Eterus je partner pre financovanie spoločností vo fáze rastu, so schopným managementom a overeným konceptom.", "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": "2", "max": "2,5 mil. EUR", "currency": "EUR"}, "value_text": "v rozmedzí 2 - 2,5 mil. EUR", "source_url": "https://eterus.sk", "quote": "Zameriavame sa na investície v rozmedzí 2 - 2,5 mil. EUR, pričom preferovaná dĺžka investície predstavuje 5-7 rokov.", "published_date": null, "derivation": "stated"},
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Eterus Capital investiční společnost",
+      "Eterus Capital správcovská spoločnosť portfólio o nás",
+      "Eterus Ethernum Dr. Martin dental investícia 2024"
+    ]
+  },
+  {
+    "candidate_id": "C197",
+    "website": "https://rockawayventures.com",
+    "identity": [],
+    "hq_country": {"value": "CZ", "value_text": "Czech-based", "source_url": "https://startuphub.unwe.bg/bg/news/64138/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html", "quote": "Czech-based", "published_date": "2025-05-15", "derivation": "stated"},
+    "investor_type": {"value": ["vc"], "value_text": "support startups with proven traction", "source_url": "https://rockawayventures.com", "quote": "The goal of the Rockaway Ventures fund is to support startups with proven traction in the late seed or Series A stage", "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Apptronik", "date": "2026-02", "round": "series_a", "amount": null}, "value_text": "Apptronik", "source_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/", "quote": "Čeští investoři z Rockaway finančně vstoupili do americké společnosti Apptronik, která vyvíjí humanoidní roboty.", "published_date": "2026-02-13", "derivation": "stated"},
+      {"value": {"company": "Apaleo", "date": null, "round": "unknown", "amount": null}, "value_text": "Apaleo", "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/", "quote": "Notable investments include German cloud-native hotel management platform Apaleo", "published_date": "2025-05-16", "derivation": "stated"},
+      {"value": {"company": "Gjirafa", "date": null, "round": "unknown", "amount": null}, "value_text": "Gjirafa", "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/", "quote": "Albanian e-commerce and media platform Gjirafa.", "published_date": "2025-05-16", "derivation": "stated"},
+      {"value": {"company": "Vivere", "date": null, "round": "unknown", "amount": null}, "value_text": "Vivere", "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/", "quote": "Druhým investičním zářezem se stal německý projekt Vivere", "published_date": "2021-09-23", "derivation": "stated"},
+      {"value": {"company": "Productboard", "date": null, "round": "unknown", "amount": null}, "value_text": "Productboard", "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/", "quote": "Productboard, Brand Embassy či Storyous – to jsou tři z celkem dvaadvaceti startupů", "published_date": "2021-09-23", "derivation": "stated"},
+      {"value": {"company": "Brand Embassy", "date": null, "round": "unknown", "amount": null}, "value_text": "Brand Embassy", "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/", "quote": "Productboard, Brand Embassy či Storyous – to jsou tři z celkem dvaadvaceti startupů", "published_date": "2021-09-23", "derivation": "stated"}
+    ],
+    "sectors": {"value": ["consumer_ecommerce", "travel_hospitality", "mobility_logistics", "media_gaming"], "value_text": "retail and e-commerce, travel & hospitality, digital logistics, digital media", "source_url": "https://rockawayventures.com", "quote": "retail and e-commerce, travel & hospitality, digital logistics, digital media", "published_date": null, "derivation": "stated"},
+    "stages": {"value": ["seed", "series_a"], "value_text": "late seed or Series A", "source_url": "https://rockawayventures.com", "quote": "The goal of the Rockaway Ventures fund is to support startups with proven traction in the late seed or Series A stage", "published_date": null, "derivation": "stated"},
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {"value": {"name": "Rockaway Ventures II", "size": "nearly €55 million", "currency": "EUR", "vintage": null}, "value_text": "nearly €55 million", "source_url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/", "quote": "has closed its second fund, Rockaway Ventures II, at nearly €55 million.", "published_date": "2025-05-16", "derivation": "stated"},
+      {"value": {"name": "Rockaway Ventures Fund", "size": null, "currency": null, "vintage": null}, "value_text": "Rockaway Ventures Fund", "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/", "quote": "Její nový fond zvaný Rockaway Ventures Fund má cílovou velikost 100 milionů eur, tedy zhruba 2,5 miliardy korun", "published_date": "2021-09-23", "derivation": "stated"}
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Rockaway Ventures investice",
+      "Rockaway Ventures portfolio startup seed round 2025",
+      "Rockaway Ventures Fund official website startups Europe",
+      "Prague-based Rockaway Ventures closes second fund 55 million",
+      "Apptronik Series A Rockaway Ventures Google Mercedes-Benz John Deere"
+    ]
+  },
+  {
+    "candidate_id": "C077",
+    "website": "https://www.qiis.cz",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "QI investiční společnost a.s. fondy",
+      "QI investiční společnost fond nemovitosti kvalifikovaní investoři 2024",
+      "QI investiční společnost investice do společností akcie startup"
+    ]
+  },
+  {
+    "candidate_id": "C087",
+    "website": "https://www.tmf-group.com",
+    "identity": [
+      {"value": {"legal_name": "TMF Czech a.s.", "company_id": null, "country": "CZ"}, "value_text": "TMF Czech a.s.", "source_url": "https://www.tmf-group.com/en/locations/europe/czech-republic/", "quote": "TMF Czech a.s.", "published_date": null, "derivation": "stated"}
+    ],
+    "hq_country": {"value": "CZ", "value_text": "Prague 2", "source_url": "https://www.tmf-group.com/en/locations/europe/czech-republic/", "quote": "Kateřinská 40 Business Center (Kateřinská 40, 120 00, Prague 2)", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["advisory"], "value_text": "compliance and administrative services", "source_url": "https://www.tmf-group.com/en/locations/europe/czech-republic/", "quote": "Providing critical compliance and administrative services in Czech Republic and around the world", "published_date": null, "derivation": "stated"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "only administrative services, not investing", "value_text": "compliance and administrative services", "source_url": "https://www.tmf-group.com/en/locations/europe/czech-republic/", "quote": "Providing critical compliance and administrative services in Czech Republic and around the world", "published_date": null, "derivation": "stated"},
+      {"value": "no investment found"}
+    ],
+    "not_found": ["ticket", "total_capital", "funds", "stages", "sectors", "investments"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "\"TMF Czech\" a.s. fond investice",
+      "TMF Czech a.s. Praha služby společnost investice",
+      "TMF Czech investment portfolio startup funding round"
+    ]
+  },
+  {
+    "candidate_id": "C204",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "CEC Capital SK s.r.o. investícia",
+      "CEC Capital Slovensko s.r.o. fond investuje startup",
+      "\"CEC Capital\" Bratislava investment fund",
+      "CEC Capital Slovakia venture capital startup portfolio"
+    ]
+  }
+]

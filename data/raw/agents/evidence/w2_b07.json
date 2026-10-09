@@ -1,0 +1,381 @@
+[
+  {
+    "candidate_id": "C034",
+    "website": "https://www.tilia.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague",
+      "source_url": "https://www.tilia.vc/",
+      "quote": "Drtinova 557/10, 150 00 Prague",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "Venture kapitálový fond",
+      "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+      "quote": "Venture kapitálový fond Tilia investorky Silke Horákové a partnerů bude mít brzy mladšího bratra, Tilia 2.",
+      "published_date": "2023-10-18",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Datlab", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Datlab",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
+        "quote": "Jako svou první investici si Horáková s Vítkem vybrali projekt Datlab.",
+        "published_date": "2019-10-08",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "MIWA Technologies", "date": "2019-10-08", "round": "unknown", "amount": null},
+        "value_text": "MIWA Technologies",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
+        "quote": "Druhou investicí v portfoliu Tilia Impact Ventures se nyní stává společnost MIWA Technologies.",
+        "published_date": "2019-10-08",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "NOLD", "date": "2023-10-18", "round": "unknown", "amount": null},
+        "value_text": "bulharskou platformu NOLD",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+        "quote": "Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros Silke Horáková, má nový přírůstek, bulharskou platformu NOLD.",
+        "published_date": "2023-10-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Munch", "date": null, "round": "unknown", "amount": null},
+        "value_text": "maďarská Munch",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+        "quote": "Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).",
+        "published_date": "2023-10-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Cyrkl", "date": null, "round": "unknown", "amount": null},
+        "value_text": "česká Cyrkl",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+        "quote": "Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).",
+        "published_date": "2023-10-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "The Village", "date": null, "round": "unknown", "amount": null},
+        "value_text": "polská The Village",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+        "quote": "Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).",
+        "published_date": "2023-10-18",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["agri_food", "cleantech_energy", "govtech_legaltech", "edtech"],
+      "value_text": "boje proti plýtvání potravinami",
+      "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+      "quote": "Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).",
+      "published_date": "2023-10-18",
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed"],
+      "value_text": "Early stage",
+      "source_url": "https://www.tilia.vc/",
+      "quote": "Early stage",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "ticket": {
+      "value": {"min": "0.3", "max": "1.2m", "currency": "EUR"},
+      "value_text": "0.3 - 1.2m EUR initial ticket",
+      "source_url": "https://www.tilia.vc/",
+      "quote": "0.3 - 1.2m EUR initial ticket",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Tilia Impact Ventures", "size": "43 milionů korun", "currency": "CZK", "vintage": null},
+        "value_text": "43 milionů korun",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
+        "quote": "měl fond k dispozici 43 milionů korun",
+        "published_date": "2019-10-08",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia 2", "size": null, "currency": null, "vintage": null},
+        "value_text": "Tilia 2",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+        "quote": "Venture kapitálový fond Tilia investorky Silke Horákové a partnerů bude mít brzy mladšího bratra, Tilia 2.",
+        "published_date": "2023-10-18",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "total_capital", "tilia_2_size", "tilia_portfolio_page"],
+    "early_exit": null,
+    "search_log": [
+      "Tilia Impact Ventures portfolio investice",
+      "Tilia Impact Ventures 2025 investice startup kolo"
+    ]
+  },
+  {
+    "candidate_id": "C017",
+    "website": "https://everitacap.com/",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 6",
+      "source_url": "https://everitacap.com/",
+      "quote": "Evropská 11/2758, 160 00 Praha 6",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity experience",
+      "source_url": "https://everitacap.com/",
+      "quote": "Our partners combine 30 years of private equity experience in this region",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Pekarna Hrstić", "date": "2026-03-31", "round": "unknown", "amount": null},
+        "value_text": "Pekarna Hrstić",
+        "source_url": "https://everitacap.com/news/",
+        "quote": "EVERITA Capital invests growth capital in Pekarna Hrstić from Split",
+        "published_date": "2026-03-31",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Clintrial", "date": "2026-09-01", "round": "unknown", "amount": null},
+        "value_text": "Clintrial",
+        "source_url": "https://www.investorsinhealthcare.com/articles/category/news/czech-republic-everita-capital-acquires-majority-stake-in-clintrial/",
+        "quote": "Everita Capital acquires majority stake in Clintrial",
+        "published_date": "2026-09-01",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["life_sciences_medtech"],
+      "value_text": "clinical trial centre",
+      "source_url": "https://www.investorsinhealthcare.com/articles/category/news/czech-republic-everita-capital-acquires-majority-stake-in-clintrial/",
+      "quote": "a Prague-based clinical trial centre",
+      "published_date": "2026-09-01",
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["growth"],
+      "value_text": "beyond the startup phase",
+      "source_url": "https://everitacap.com/",
+      "quote": "We partner with businesses beyond the startup phase that have already achieved at least €3m in revenue.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "ticket": {
+      "value": {"min": "€2m", "max": "5m", "currency": "EUR"},
+      "value_text": "€2m–5m equity tickets",
+      "source_url": "https://everitacap.com/",
+      "quote": "We invest €2m–5m equity tickets in strong minority or majority stakes.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "EVERITA Fund", "size": null, "currency": null, "vintage": null},
+        "value_text": "EVERITA Fund",
+        "source_url": "https://everitacap.com/news/",
+        "quote": "European Investment Fund approves a EUR 20 million investment in EVERITA Fund",
+        "published_date": "2024-12-27",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "total_capital", "fund_size", "fund_vintage"],
+    "early_exit": null,
+    "search_log": [
+      "EVERITA Capital CLINTRIAL investice",
+      "EVERITA Capital Pekarna Hrstić",
+      "EVERITA Capital Summalingua JK Education Premier Clinic"
+    ]
+  },
+  {
+    "candidate_id": "C099",
+    "website": "https://neulogy.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Bratislava",
+      "source_url": "https://neulogy.vc/contact",
+      "quote": "811 01 Bratislava",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "supporting start-ups",
+      "source_url": "https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/neulogy-ventures-kapitalova-investicia",
+      "quote": "The fund comprises two investment compartments supporting start-ups and growth-oriented small and medium-sized enterprises",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "GroupSolver", "date": null, "round": "unknown", "amount": null},
+        "value_text": "GroupSolver",
+        "source_url": "https://neulogy.vc",
+        "quote": "When GroupSolver was just a cool idea, investment by Neulogy Ventures allowed us to build a business.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "GA Drilling", "date": "2024-04-18", "round": "unknown", "amount": null},
+        "value_text": "Neulogy Ventures",
+        "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/",
+        "quote": "Slovakia-based, Neulogy Ventures",
+        "published_date": "2024-04-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "StratifAI", "date": "2024-09-02", "round": "pre_seed", "amount": null},
+        "value_text": "StratifAI",
+        "source_url": "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers",
+        "quote": "StratifAI Secures $1.5 Million in Pre-Seed Funding to Revolutionize Precision Oncology with AI-Driven Biomarkers",
+        "published_date": "2024-09-02",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "GreenWay", "date": null, "round": "unknown", "amount": null},
+        "value_text": "GreenWay",
+        "source_url": "https://neulogy.vc/portfolio",
+        "quote": "GreenWay",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Voltia", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Voltia",
+        "source_url": "https://neulogy.vc/portfolio",
+        "quote": "Voltia",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Vectary", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Vectary",
+        "source_url": "https://neulogy.vc/portfolio",
+        "quote": "Vectary",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Trustmatic", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Trustmatic",
+        "source_url": "https://neulogy.vc/portfolio",
+        "quote": "Trustmatic",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "SaferPass", "date": null, "round": "unknown", "amount": null},
+        "value_text": "SaferPass",
+        "source_url": "https://neulogy.vc/portfolio",
+        "quote": "SaferPass",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["deeptech_hardware"],
+      "value_text": "Deeptech investments",
+      "source_url": "https://neulogy.vc",
+      "quote": "Deeptech investments leveraging CEE engineering talent.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["pre_seed"],
+      "value_text": "Pre-Seed",
+      "source_url": "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers",
+      "quote": "StratifAI Secures $1.5 Million in Pre-Seed Funding to Revolutionize Precision Oncology with AI-Driven Biomarkers",
+      "published_date": "2024-09-02",
+      "derivation": "inferred"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "Neulogy Ventures investice",
+      "Neulogy Ventures",
+      "Neulogy Ventures investuje 2025 seed kolo",
+      "Neulogy Ventures GA Drilling Series D",
+      "GA Drilling first close $15M Nabors alfa8 Neulogy Ventures press release",
+      "StratifAI pre-seed Neulogy Ventures",
+      "GreenWay Neulogy Ventures growth investice 2025"
+    ]
+  },
+  {
+    "candidate_id": "C117",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["website", "identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "M3 Partners s.r.o. investice",
+      "M3 Partners s.r.o. Slovensko investícia",
+      "M3 Partners investor startup",
+      "M3 Partners Bratislava venture capital",
+      "M3 Partners s.r.o. investícia kolo startup"
+    ]
+  },
+  {
+    "candidate_id": "C163",
+    "website": "https://caesar.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Berlin, Germany",
+      "source_url": "https://caesar.vc",
+      "quote": "10119 Berlin, Germany",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Caesar VC investor"
+    ]
+  }
+]

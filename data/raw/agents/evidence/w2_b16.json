@@ -1,0 +1,156 @@
+[
+  {
+    "candidate_id": "C016",
+    "website": "https://www.espirainvestments.com",
+    "identity": [
+      {"value": {"legal_name": "ESPIRA Investments s.r.o.", "company_id": "05528089", "country": "CZ"},
+       "value_text": "ID: 05528089", "source_url": "https://www.espirainvestments.com",
+       "quote": "ID: 05528089", "published_date": null, "derivation": "stated"}
+    ],
+    "hq_country": {"value": "CZ", "value_text": "Prague 1", "source_url": "https://www.espirainvestments.com",
+                   "quote": "110 00, Prague 1", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["pe"], "value_text": "private equity fund", "source_url": "https://www.espirainvestments.com",
+                      "quote": "ESPIRA Investments is a private equity fund investing in CEE businesses that have a proven business model, annual revenue exceeding €2,000,000, and a positive EBITDA.",
+                      "published_date": null, "derivation": "stated"},
+    "investments": [
+      {"value": {"company": "Premier Clinic", "date": "2022-02-08", "round": "unknown", "amount": null}, "value_text": "Premier Clinic",
+       "source_url": "https://www.espirainvestments.com/espira-invests-in-czech-premier-clinic-in-partnership-with-founder-to-support-further-growth/",
+       "quote": "ESPIRA invests in Czech Premier Clinic in partnership with founder to support further growth.",
+       "published_date": "2022-02-08", "derivation": "stated"},
+      {"value": {"company": "Summa Linguae Technologies", "date": null, "round": "unknown", "amount": null}, "value_text": "Summa Linguae Technologies",
+       "source_url": "https://www.espirainvestments.com/investments/", "quote": "Summa Linguae Technologies",
+       "published_date": null, "derivation": "stated"},
+      {"value": {"company": "JK Education", "date": null, "round": "unknown", "amount": null}, "value_text": "JK Education",
+       "source_url": "https://www.espirainvestments.com/investments/", "quote": "JK Education",
+       "published_date": null, "derivation": "stated"},
+      {"value": {"company": "ICON Communication Centres", "date": null, "round": "unknown", "amount": null}, "value_text": "ICON Communication Centres",
+       "source_url": "https://www.espirainvestments.com/investments/", "quote": "ICON Communication Centres",
+       "published_date": null, "derivation": "stated"}
+    ],
+    "sectors": {"value": ["edtech", "consumer_ecommerce", "health_digital", "industry_manufacturing"],
+                "value_text": "Education, consumer, healthcare, services, and specialty manufacturing",
+                "source_url": "https://www.espirainvestments.com",
+                "quote": "Education, consumer, healthcare, services, and specialty manufacturing.",
+                "published_date": null, "derivation": "stated"},
+    "stages": {"value": ["growth"], "value_text": "grow faster with a financial investment partner",
+               "source_url": "https://www.espirainvestments.com",
+               "quote": "Your business is doing well and growing – but you could grow faster with a financial investment partner.",
+               "published_date": null, "derivation": "stated"},
+    "ticket": {"value": {"min": "€1", "max": "3M", "currency": "EUR"}, "value_text": "€1-3M equity investment per transaction",
+               "source_url": "https://www.espirainvestments.com", "quote": "€1-3M equity investment per transaction.",
+               "published_date": null, "derivation": "stated"},
+    "total_capital": null,
+    "funds": [
+      {"value": {"name": "ESPIRA Fund", "size": null, "currency": null, "vintage": null}, "value_text": "ESPIRA Fund",
+       "source_url": "https://www.espirainvestments.com",
+       "quote": "ESPIRA Fund exits Czech call center ICON Communication Centres to yoummday, an innovative work-from-home platform.",
+       "published_date": null, "derivation": "stated"}
+    ],
+    "red_flags": [
+      {"value": "last recorded investment 2022-02-08; no deal dated after 2023-10-01 found in searches",
+       "value_text": "ESPIRA invests in Czech Premier Clinic",
+       "source_url": "https://www.espirainvestments.com/espira-invests-in-czech-premier-clinic-in-partnership-with-founder-to-support-further-growth/",
+       "quote": "ESPIRA invests in Czech Premier Clinic in partnership with founder to support further growth.",
+       "published_date": "2022-02-08", "derivation": "inferred"}
+    ],
+    "not_found": ["total_capital", "fund_size", "dated_deal_after_2023-10-01", "non_website_source_for_deals"],
+    "early_exit": null,
+    "search_log": [
+      "\"ESPIRA Investments\" investice 2025",
+      "ESPIRA fund Summa Linguae Technologies investment growth",
+      "\"ESPIRA\" private equity Mamajová 2024 akvizice",
+      "\"ESPIRA Investments\" acquires majority stake 2024",
+      "NOTE: INCOMPLETE - WebFetch blocked by session limit (resets 3:20am Europe/Prague) before podnikajte.sk and cc.cz articles could be verified word-for-word; non-website source and fund sizes still open"
+    ]
+  },
+  {
+    "candidate_id": "C086",
+    "website": "https://www.tarpanpartners.com",
+    "identity": [
+      {"value": {"legal_name": "TARPAN Partners", "company_id": "24733792", "country": "CZ"},
+       "value_text": "Identifikační číslo: 24733792", "source_url": "https://www.tarpangroup.net/tarpan-partners",
+       "quote": "Identifikační číslo: 24733792", "published_date": null, "derivation": "stated"}
+    ],
+    "hq_country": {"value": "CZ", "value_text": "Praha 1", "source_url": "https://www.tarpangroup.net/tarpan-partners",
+                   "quote": "110 00 Praha 1", "published_date": null, "derivation": "stated"},
+    "investor_type": {"value": ["advisory"], "value_text": "nezávislá poradenská společnost",
+                      "source_url": "https://www.tarpangroup.net/tarpan-partners",
+                      "quote": "TARPAN Partners je nezávislá poradenská společnost zaměřená na ekonomické a finanční poradenství",
+                      "published_date": null, "derivation": "stated"},
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "self-described independent advisory firm (economic and financial advisory); no investment into a company verified yet",
+       "value_text": "nezávislá poradenská společnost", "source_url": "https://www.tarpangroup.net/tarpan-partners",
+       "quote": "TARPAN Partners je nezávislá poradenská společnost zaměřená na ekonomické a finanční poradenství",
+       "published_date": null, "derivation": "stated"}
+    ],
+    "not_found": ["investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "\"TARPAN Partners\" investice 2025",
+      "NOTE: INCOMPLETE - WebFetch blocked by session limit (resets 3:20am Europe/Prague) after the website check; portfolio page and dated deals not yet verified. Search lead only (not citable): June 2025 seed co-investment in Filuta AI reported by aggregator pages"
+    ]
+  },
+  {
+    "candidate_id": "C063",
+    "website": "https://www.jskinvestments.cz",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "NOT RESEARCHED - WebFetch blocked by session limit (resets 3:20am Europe/Prague); candidate must be re-run. This record is a placeholder, not a finding."
+    ]
+  },
+  {
+    "candidate_id": "C193",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "NOT RESEARCHED - WebFetch blocked by session limit (resets 3:20am Europe/Prague); candidate must be re-run. This record is a placeholder, not a finding."
+    ]
+  },
+  {
+    "candidate_id": "C098",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "NOT RESEARCHED - WebFetch blocked by session limit (resets 3:20am Europe/Prague); candidate must be re-run. This record is a placeholder, not a finding."
+    ]
+  }
+]

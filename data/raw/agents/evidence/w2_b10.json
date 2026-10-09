@@ -1,0 +1,443 @@
+[
+  {
+    "candidate_id": "C102",
+    "website": "https://across.sk",
+    "identity": [
+      {
+        "value": {"legal_name": "Across Private Investments, o.c.p., a.s.", "company_id": null, "country": "SK"},
+        "value_text": "Across Private Investments, o.c.p., a.s.",
+        "source_url": "https://across.sk/",
+        "quote": "Across Private Investments, o.c.p., a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "811 03 Bratislava",
+      "source_url": "https://across.sk/kontakt/",
+      "quote": "811 03 Bratislava",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["other"],
+      "value_text": "spravuje investície klientov",
+      "source_url": "https://across.sk/",
+      "quote": "Across už 25 rokov spravuje investície klientov s najvyššími nárokmi na výnosy a bezpečnosť.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Horský hotel Sliezsky dom", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Horský hotel Sliezsky dom",
+        "source_url": "https://www.epravo.sk/top/aktualne/v-acrosse-sa-daju-zhodnotit-aj-zazitky-3311.html",
+        "quote": "Medzi najvýznamnejšie investície na Slovensku patrí Horský hotel Sliezsky dom, Hotel Salamandra",
+        "published_date": "2016-04-28",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Sunčani Hvar Hotels", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Sunčani Hvar Hotels",
+        "source_url": "https://www.epravo.sk/top/aktualne/v-acrosse-sa-daju-zhodnotit-aj-zazitky-3311.html",
+        "quote": "Medzi aktivity Acrossu v oblasti hotelierstva a cestovného ruchu spadá aj hotelová sieť Sunčani Hvar Hotels",
+        "published_date": "2016-04-28",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["travel_hospitality"],
+      "value_text": "cestovného ruchu a hotelierstva",
+      "source_url": "https://www.epravo.sk/top/aktualne/v-acrosse-sa-daju-zhodnotit-aj-zazitky-3311.html",
+      "quote": "Aktivity z oblasti cestovného ruchu a hotelierstva sú jednou z hlavných oblastí",
+      "published_date": "2016-04-28",
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "vyše 200 miliónov Euro", "currency": "EUR", "capital_type": "aum", "as_of": "2016-04-15"},
+      "value_text": "vyše 200 miliónov Euro",
+      "source_url": "https://www.epravo.sk/top/aktualne/zhodnocujeme-peniaze-uspesnym-ludom-3270.html",
+      "quote": "Aktuálne spravujeme celkové aktíva v objeme vyše 200 miliónov Euro.",
+      "published_date": "2016-04-15",
+      "derivation": "stated"
+    },
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "last documented investments in companies (hotels) date from a 2016 commercial notice written by Across; no later investment into companies found",
+        "value_text": "Medzi najvýznamnejšie investície",
+        "source_url": "https://www.epravo.sk/top/aktualne/v-acrosse-sa-daju-zhodnotit-aj-zazitky-3311.html",
+        "quote": "Medzi najvýznamnejšie investície na Slovensku patrí Horský hotel Sliezsky dom, Hotel Salamandra",
+        "published_date": "2016-04-28",
+        "derivation": "stated"
+      },
+      {
+        "value": "primarily an investment-services firm and manager of client portfolios (intermediary), not a direct investor into companies on its own site",
+        "value_text": "spravuje investície klientov",
+        "source_url": "https://across.sk/",
+        "quote": "Across už 25 rokov spravuje investície klientov s najvyššími nárokmi na výnosy a bezpečnosť.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["stages", "ticket", "funds", "company_id"],
+    "early_exit": null,
+    "search_log": [
+      "Across Private Investments o.c.p. a.s. investice",
+      "Across Private Investments hotely investícia klienti"
+    ]
+  },
+  {
+    "candidate_id": "C107",
+    "website": "https://bhmgroup.eu",
+    "identity": [
+      {
+        "value": {"legal_name": "BHM group a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "BHM group a.s.",
+        "source_url": "https://bhmgroup.eu",
+        "quote": "© 2025 BHM group a.s. Všechna práva vyhrazena.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["group_holding"],
+      "value_text": "investiční skupina",
+      "source_url": "https://bhmgroup.eu",
+      "quote": "BHM group je evropská investiční skupina, která řídí desítky společností napříč Evropou",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Tedisel Medical", "date": "2026-07-15", "round": "unknown", "amount": null},
+        "value_text": "Tedisel Medical",
+        "source_url": "https://www.investorsinhealthcare.com/articles/category/news/spain-bhms-reinsberg-group-expands-portfolio-in-spain-with-acquisition-of-tedisel-medical/",
+        "quote": "is expanding its portfolio with the acquisition of Spain-based Tedisel Medical",
+        "published_date": "2026-07-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Carebot", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Carebot",
+        "source_url": "https://bhmgroup.eu/portfolio",
+        "quote": "Carebot",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "CloudTalk", "date": null, "round": "unknown", "amount": null},
+        "value_text": "CloudTalk",
+        "source_url": "https://bhmgroup.eu/portfolio",
+        "quote": "CloudTalk",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Yieldigo", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Yieldigo",
+        "source_url": "https://bhmgroup.eu/portfolio",
+        "quote": "Yieldigo",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Winda Energy", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Winda Energy",
+        "source_url": "https://bhmgroup.eu/portfolio",
+        "quote": "Winda Energy",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Adrezliving", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Adrezliving",
+        "source_url": "https://bhmgroup.eu/portfolio",
+        "quote": "Adrezliving",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "ALVO Medical", "date": null, "round": "unknown", "amount": null},
+        "value_text": "ALVO Medical",
+        "source_url": "https://bhmgroup.eu/portfolio",
+        "quote": "ALVO Medical",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["life_sciences_medtech", "cleantech_energy", "proptech_construction", "travel_hospitality"],
+      "value_text": "obnovitelné zdroje energie",
+      "source_url": "https://bhmgroup.eu",
+      "quote": "BHM group se v energetickém průmyslu soustředí na obnovitelné zdroje energie",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["hq_country", "stages", "ticket", "total_capital", "funds", "company_id"],
+    "early_exit": null,
+    "search_log": [
+      "BHM group a.s. investice portfolio",
+      "BHM group Brandon Medical 70 % podíl Reinsberg"
+    ]
+  },
+  {
+    "candidate_id": "C032",
+    "website": "https://tensor.ventures",
+    "identity": [
+      {
+        "value": {"legal_name": "Tensor Ventures GP S.à r.l.", "company_id": null, "country": "other"},
+        "value_text": "Tensor Ventures GP S.à r.l.",
+        "source_url": "https://tensor.ventures/",
+        "quote": "Tensor Ventures GP S.à r.l.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Karlín, 186 00 Praha",
+      "source_url": "https://tensor.ventures/",
+      "quote": "Karlín, 186 00 Praha",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "deep tech",
+      "source_url": "https://tensor.ventures/",
+      "quote": "Tensor Ventures explores deep tech innovation's frontiers & invests in uncharted territories.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "AppFactor", "date": "2026-02", "round": "seed", "amount": "$4 million"},
+        "value_text": "AppFactor",
+        "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/",
+        "quote": "AppFactor, a London, UK-based agentic orchestration platform, has raised $4 million in a Seed round. The round was led by Tensor Ventures, with participation from Begin Capital, Adara Ventures, and Narwhal Investments.",
+        "published_date": "2026-02-05",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["deeptech_hardware"],
+      "value_text": "deep tech",
+      "source_url": "https://tensor.ventures/",
+      "quote": "Tensor Ventures explores deep tech innovation's frontiers & invests in uncharted territories.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["seed", "series_a"],
+      "value_text": "Seed and Series A",
+      "source_url": "https://tensor.ventures/",
+      "quote": "We participate in Seed and Series A rounds.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Tensor Ventures Fund I SCSp", "size": null, "currency": null, "vintage": null},
+        "value_text": "Tensor Ventures Fund I SCSp",
+        "source_url": "https://tensor.ventures/",
+        "quote": "& Tensor Ventures Fund I SCSp,",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "new Tensor Ventures fund launched October 2024 (name not stated in source)", "size": "€50 million", "currency": "EUR", "vintage": "2024"},
+        "value_text": "€50 million",
+        "source_url": "https://tech.eu/2024/10/11/tensor-ventures-launches-eur50m-fund-a-boost-for-quantum-biotech-and-climate-tech-startups/",
+        "quote": "This week, Tensor Ventures launched a new €50 million fund.",
+        "published_date": "2024-10-11",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["ticket", "total_capital", "investments_beyond_AppFactor"],
+    "early_exit": null,
+    "search_log": [
+      "Tensor Ventures a.s. investice startup",
+      "Tensor Ventures tensor.vc deeptech fond kontakt",
+      "AppFactor seed round Tensor Ventures Begin Capital Adara Ventures",
+      "Tensor Ventures Co-investment Fund 50 milionů eur EIF Národní plán obnovy",
+      "Tensor Ventures led seed round 2025 deep tech startup Czech investor"
+    ]
+  },
+  {
+    "candidate_id": "C205",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {"value": "no investment found"}
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds", "website"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Grbi One s.r.o. investice",
+      "\"Grbi One\"",
+      "GRBI ONE s.r.o. investor startup fond",
+      "Grbi One investuje startup kolo",
+      "44556471 Grbi One"
+    ]
+  },
+  {
+    "candidate_id": "C187",
+    "website": "https://0100.vc",
+    "identity": [],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Slovakian VC firm",
+      "source_url": "https://techloy.com/zero-one-hundred-fund-to-invest-in-cee-startups",
+      "quote": "Slovakian VC firm Zero One Hundred to invest €60 million in startups",
+      "published_date": "2022-12-30",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "VC company",
+      "source_url": "https://en.ain.ua/2025/03/14/slovak-fintech-vestberry-secures-eur22m",
+      "quote": "Zero One Hundred, a VC company founded by company builders",
+      "published_date": "2025-03-14",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Vestberry", "date": "2025-03-14", "round": "unknown", "amount": null},
+        "value_text": "Zero One Hundred",
+        "source_url": "https://en.ain.ua/2025/03/14/slovak-fintech-vestberry-secures-eur22m",
+        "quote": "Other investors include Venture to Future Fund and Zero One Hundred",
+        "published_date": "2025-03-14",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Powerful Medical", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Powerful Medical",
+        "source_url": "https://0100.vc/",
+        "quote": "Powerful Medical",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "SuperScale", "date": null, "round": "unknown", "amount": null},
+        "value_text": "SuperScale",
+        "source_url": "https://0100.vc/",
+        "quote": "SuperScale",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Swapp", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Swapp",
+        "source_url": "https://0100.vc/",
+        "quote": "Swapp",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "PatronGo", "date": null, "round": "unknown", "amount": null},
+        "value_text": "PatronGo",
+        "source_url": "https://0100.vc/",
+        "quote": "PatronGo",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "4Trans", "date": null, "round": "unknown", "amount": null},
+        "value_text": "4Trans",
+        "source_url": "https://0100.vc/",
+        "quote": "4Trans",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "CulturePulse", "date": null, "round": "unknown", "amount": null},
+        "value_text": "CulturePulse",
+        "source_url": "https://0100.vc/",
+        "quote": "CulturePulse",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["fintech_insurtech", "mobility_logistics", "health_digital", "edtech", "ai_data"],
+      "value_text": "fintech, mobility, healthtech, edtech and data",
+      "source_url": "https://www.unquote.com/cee/news/3028445/zero-one-hundred-targets-eur-15m-for-new-funds-first-close",
+      "quote": "Its five focus sectors are fintech, mobility, healthtech, edtech and data",
+      "published_date": "2023-01-06",
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["seed", "series_a"],
+      "value_text": "seed, pre-Series A and Series A",
+      "source_url": "https://www.unquote.com/cee/news/3028445/zero-one-hundred-targets-eur-15m-for-new-funds-first-close",
+      "quote": "It targets startups carrying out seed, pre-Series A and Series A rounds",
+      "published_date": "2023-01-06",
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "EUR 1.5m", "max": "EUR 3m", "currency": "EUR"},
+      "value_text": "average EUR 1.5m ticket that could go up to EUR 3m",
+      "source_url": "https://www.unquote.com/cee/news/3028445/zero-one-hundred-targets-eur-15m-for-new-funds-first-close",
+      "quote": "deploying an average EUR 1.5m ticket that could go up to EUR 3m",
+      "published_date": "2023-01-06",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "0100 VC RAIF F.C.I.C. PLC.", "size": null, "currency": null, "vintage": null},
+        "value_text": "0100 VC RAIF F.C.I.C. PLC.",
+        "source_url": "https://0100.vc/",
+        "quote": "This website and all its content belong exclusively to 0100 VC RAIF F.C.I.C. PLC.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Fund II (second fund)", "size": "€60 million", "currency": "EUR", "vintage": null},
+        "value_text": "€60 million",
+        "source_url": "https://techloy.com/zero-one-hundred-fund-to-invest-in-cee-startups",
+        "quote": "has announced plans to significantly expand its operations and invest €60 million (~$64 million)",
+        "published_date": "2022-12-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Zero Gravity Capital (first fund)", "size": null, "currency": null, "vintage": null},
+        "value_text": "Zero Gravity Capital",
+        "source_url": "https://techloy.com/zero-one-hundred-fund-to-invest-in-cee-startups",
+        "quote": "The company's first fund, Zero Gravity Capital fund, established three years ago,",
+        "published_date": "2022-12-30",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Zero One Hundred venture capital investor",
+      "0100 VC Zero One Hundred invests seed round 2025",
+      "Zero One Hundred 0100 VC Bratislava s.r.o. Fund II",
+      "Zero One Hundred 0100 VC seed investment IntellCRE Vestberry Biteberry"
+    ]
+  }
+]

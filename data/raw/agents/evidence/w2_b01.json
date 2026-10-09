@@ -1,0 +1,499 @@
+[
+  {
+    "candidate_id": "C147",
+    "website": "https://www.42cap.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Münchner",
+      "source_url": "https://munich-startup.de/news/42cap-schliesst-fruhphasenfonds",
+      "quote": "Der Münchner Wagniskapitalgeber 42CAP schließt seinen zweiten Fonds mit 50 Millionen Euro.",
+      "published_date": "2019-06-28",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "Wagniskapitalgeber",
+      "source_url": "https://munich-startup.de/news/42cap-schliesst-fruhphasenfonds",
+      "quote": "Der Münchner Wagniskapitalgeber 42CAP schließt seinen zweiten Fonds mit 50 Millionen Euro.",
+      "published_date": "2019-06-28",
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": ["42Cap venture capital investice"]
+  },
+  {
+    "candidate_id": "C184",
+    "website": "https://www.miton.cz",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague",
+      "source_url": "https://www.miton.cz/en/about",
+      "quote": "Prague Office",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "We invest our own capital",
+      "source_url": "https://www.miton.cz/en/about",
+      "quote": "We invest our own capital.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "Aim", "date": "2025", "round": "unknown", "amount": null},
+        "value_text": "Aim",
+        "source_url": "https://www.miton.cz/en/about",
+        "quote": "We invested in AI projects Aim, Bandits and PangeAI.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Bandits", "date": "2025", "round": "unknown", "amount": null},
+        "value_text": "Bandits",
+        "source_url": "https://www.miton.cz/en/about",
+        "quote": "We invested in AI projects Aim, Bandits and PangeAI.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "PangeAI", "date": "2025", "round": "unknown", "amount": null},
+        "value_text": "PangeAI",
+        "source_url": "https://www.miton.cz/en/about",
+        "quote": "We invested in AI projects Aim, Bandits and PangeAI.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "GTE", "date": "2024", "round": "pre_seed", "amount": null},
+        "value_text": "GTE",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/",
+        "quote": "Through MitonC, we had already invested in GTE during its pre-seed and seed rounds in 2024.",
+        "published_date": "2026-01-07",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "POS Experts", "date": "2024-11-18", "round": "unknown", "amount": null},
+        "value_text": "POS Experts",
+        "source_url": "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/",
+        "quote": "A přidal investici do menšinového podílu v POS Experts.",
+        "published_date": "2024-11-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Boataround", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Miton",
+        "source_url": "https://www.trendingtopics.eu/boataround-boot-charter-firma-erhaelt-millioneninvestments/",
+        "quote": "Zu den Investoren der Firma gehören neben Crowdberry etwa Reflex Capital und Miton gehören.",
+        "published_date": "2026-05-04",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Firefish", "date": "2023", "round": "unknown", "amount": null},
+        "value_text": "Firefish",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/",
+        "quote": "Through MitonC, we had already invested in Firefish in 2023",
+        "published_date": "2026-01-07",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["ai_data"],
+      "value_text": "AI projects",
+      "source_url": "https://www.miton.cz/en/about",
+      "quote": "We invested in AI projects Aim, Bandits and PangeAI.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": {
+      "value": ["pre_seed", "seed", "series_a"],
+      "value_text": "Pre-seed",
+      "source_url": "https://www.miton.cz/en/about",
+      "quote": "Pre-seed,",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "ticket": {
+      "value": {"min": "300k", "max": "2M", "currency": "EUR"},
+      "value_text": "300k-2M €",
+      "source_url": "https://www.miton.cz/en/about",
+      "quote": "300k-2M €",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Miton C", "size": null, "currency": null, "vintage": "2021"},
+        "value_text": "Miton C",
+        "source_url": "https://www.miton.cz/en/about",
+        "quote": "We launch Miton C, a fund focused on web3 and crypto projects.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Miton Psychonats", "size": null, "currency": null, "vintage": "2020"},
+        "value_text": "Miton Psychonats",
+        "source_url": "https://www.miton.cz/en/about",
+        "quote": "We launch Miton Psychonats, the mental health fund.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Miton venture capital investice startup",
+      "Boataround Miton investice 2026 kolo",
+      "Miton pre-seed Series A ticket investice startup Praha portfolio Miton investor",
+      "Boataround kolo 2025 Miton Reflex Coopex Crowdberry",
+      "PangeAI seed round Miton"
+    ]
+  },
+  {
+    "candidate_id": "C186",
+    "website": "https://lookai.vc",
+    "identity": [
+      {
+        "value": {"legal_name": "Look AI Ventures SICAV, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "Look AI Ventures SICAV, a.s.",
+        "source_url": "https://lookai.vc",
+        "quote": "Look AI Ventures SICAV, a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague 5",
+      "source_url": "https://lookai.vc",
+      "quote": "Karla Engliše 5, Prague 5",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital fund",
+      "source_url": "https://lookai.vc",
+      "quote": "Look AI Ventures is a pre-Series A venture capital fund based in Prague, Czech Republic",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Lucida AI", "date": "2026-06-30", "round": "seed", "amount": null},
+        "value_text": "Look AI Ventures",
+        "source_url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/",
+        "quote": "The seed round was led by UK-based Velocity Capital, with participation from Next Tier Ventures, Look AI Ventures,",
+        "published_date": "2026-06-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Sodex Innovations", "date": "2026-07-13", "round": "unknown", "amount": null},
+        "value_text": "Look AI Ventures",
+        "source_url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026",
+        "quote": "New investors such as Bloomhaus and Look AI Ventures joined the round",
+        "published_date": "2026-07-13",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Digicust", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Digicust",
+        "source_url": "https://lookai.vc",
+        "quote": "Digicust",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Embodied AI", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Embodied AI",
+        "source_url": "https://lookai.vc",
+        "quote": "Embodied AI",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Trackbar", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Trackbar",
+        "source_url": "https://lookai.vc",
+        "quote": "Trackbar",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "SECJUR", "date": null, "round": "unknown", "amount": null},
+        "value_text": "SECJUR",
+        "source_url": "https://lookai.vc",
+        "quote": "SECJUR",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["ai_data"],
+      "value_text": "exclusively on AI startups",
+      "source_url": "https://lookai.vc",
+      "quote": "Look AI Ventures fund (LAIV) is the first investment fund in the Czech Republic that focuses exclusively on AI startups",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "€250,000", "max": null, "currency": "EUR"},
+      "value_text": "€250,000",
+      "source_url": "https://tech.eu/2023/04/13/czech-republic-has-a-new-investment-fund-for-ai-start-ups",
+      "quote": "The targeted investment amount in one start-up is €250,000 and mentorship will be provided.",
+      "published_date": "2023-04-13",
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Look AI Ventures fund (LAIV)", "size": "€20 million", "currency": "EUR", "vintage": null},
+        "value_text": "€20 million",
+        "source_url": "https://tech.eu/2023/04/13/czech-republic-has-a-new-investment-fund-for-ai-start-ups",
+        "quote": "Aiming to raise €20 million, the fund will support early stage AI-driven companies",
+        "published_date": "2023-04-13",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["stages", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Look AI Ventures investice",
+      "Look AI Ventures Lucida AI $7M seed round",
+      "Look AI Ventures Sodex Innovations €4M round"
+    ]
+  },
+  {
+    "candidate_id": "C025",
+    "website": "https://www.mam-equity.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "MAM Private Equity Fund SICAV a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "MAM Private Equity Fund SICAV a.s.",
+        "source_url": "https://www.mam-equity.cz",
+        "quote": "MAM Private Equity Fund SICAV a.s. je fondem kvalifikovaných investorů dle zákona č. 240/2013 Sb.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "Private Equity",
+      "source_url": "https://www.mam-equity.cz",
+      "quote": "MAM Private Equity Fund SICAV a.s. je fondem kvalifikovaných investorů dle zákona č. 240/2013 Sb.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Raycom", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Raycom",
+        "source_url": "https://www.mam-equity.cz",
+        "quote": "Skupina Raycom, patří mezi přední value-added distributory komponent pro výstavbu telekomunikačních sítí v ČR.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "COMGUARD a.s.", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Comguard a.s.",
+        "source_url": "https://www.mam-equity.cz",
+        "quote": "Skupina Comguard a.s. je přední value-added distributor v oblasti kybernetické bezpečnosti",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "UNIPAP Packaging a.s.", "date": "2025-09-24", "round": "unknown", "amount": null},
+        "value_text": "UNIPAP",
+        "source_url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/dva-fondy-zabalily-unipap.html",
+        "quote": "Two funds wrapped up UNIPAP",
+        "published_date": "2025-09-24",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "PJ EXPEDIS a MUFF Logistics", "date": null, "round": "unknown", "amount": null},
+        "value_text": "PJ EXPEDIS a MUFF Logistics",
+        "source_url": "https://www.mam-equity.cz",
+        "quote": "PJ EXPEDIS a MUFF Logistics patří mezi významné poskytovatele logistických a servisních služeb",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "ME Logistics Holding", "date": "2026-09-08", "round": "unknown", "amount": null},
+        "value_text": "ME Logistics Holding",
+        "source_url": "https://www.mam-equity.cz",
+        "quote": "MAM Private Equity Fund drží 36% podíl ve společnosti ME Logistics Holding",
+        "published_date": "2026-09-08",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["iot_telecom", "cybersecurity", "mobility_logistics", "industry_manufacturing"],
+      "value_text": "telekomunikačních sítí",
+      "source_url": "https://www.mam-equity.cz",
+      "quote": "Skupina Raycom, patří mezi přední value-added distributory komponent pro výstavbu telekomunikačních sítí v ČR.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "MAM Private Equity Fund SICAV a.s.", "size": "724 mil. Kč", "currency": "CZK", "vintage": null},
+        "value_text": "724 mil. Kč",
+        "source_url": "https://www.mam-equity.cz",
+        "quote": "Aktiva pod správou (AUM) fondu k 30.06.2026 činily 724 mil. Kč.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["hq_country", "stages", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "MAM Private Equity Fund SICAV investice",
+      "MAM Private Equity Fund SICAV WOOPE investiční společnost sídlo Praha"
+    ]
+  },
+  {
+    "candidate_id": "C007",
+    "website": "https://www.investika.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "INVESTIKA, investiční společnost, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "INVESTIKA, investiční společnost, a.s.",
+        "source_url": "https://www.investika.cz",
+        "quote": "INVESTIKA, investiční společnost, a.s. mění doručovací adresu",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 5",
+      "source_url": "https://www.investika.cz",
+      "quote": "Karla Engliše 3219/4 150 00 Praha 5 – Anděl",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["real_estate"],
+      "value_text": "nemovitostí",
+      "source_url": "https://www.investika.cz",
+      "quote": "Zhodnocujte své finance investicí do špičkových nemovitostí napříč střední Evropou.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "přes 30 miliard korun", "currency": "CZK", "capital_type": "aum", "as_of": "2025"},
+      "value_text": "přes 30 miliard korun",
+      "source_url": "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku",
+      "quote": "Spravuje aktiva v celkové hodnotě přes 30 miliard korun",
+      "published_date": "2025-05-29",
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "INVESTIKA realitní fond", "size": null, "currency": null, "vintage": null},
+        "value_text": "INVESTIKA realitní fond",
+        "source_url": "https://www.investika.cz",
+        "quote": "INVESTIKA realitní fond",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "MONETIKA peněžní fond", "size": null, "currency": null, "vintage": null},
+        "value_text": "MONETIKA peněžní fond",
+        "source_url": "https://www.investika.cz",
+        "quote": "MONETIKA peněžní fond",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "EUROMONETIKA depozitní fond", "size": null, "currency": null, "vintage": null},
+        "value_text": "EUROMONETIKA depozitní fond",
+        "source_url": "https://www.investika.cz",
+        "quote": "EUROMONETIKA depozitní fond",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "EFEKTIKA fond akciových trhů", "size": null, "currency": null, "vintage": null},
+        "value_text": "EFEKTIKA fond akciových trhů",
+        "source_url": "https://www.investika.cz",
+        "quote": "EFEKTIKA fond akciových trhů",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "DYNAMIKA fond unikátních příležitostí", "size": null, "currency": null, "vintage": null},
+        "value_text": "DYNAMIKA fond unikátních příležitostí",
+        "source_url": "https://www.investika.cz",
+        "quote": "DYNAMIKA fond unikátních příležitostí",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "METALIKA zlatý fond", "size": null, "currency": null, "vintage": null},
+        "value_text": "METALIKA zlatý fond",
+        "source_url": "https://www.investika.cz",
+        "quote": "METALIKA zlatý fond",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "CRYPTONIKA kryptoměnový fond", "size": null, "currency": null, "vintage": null},
+        "value_text": "CRYPTONIKA kryptoměnový fond",
+        "source_url": "https://www.investika.cz",
+        "quote": "CRYPTONIKA kryptoměnový fond",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [
+      {
+        "value": "only real estate",
+        "value_text": "investicí do špičkových nemovitostí",
+        "source_url": "https://www.investika.cz",
+        "quote": "Zhodnocujte své finance investicí do špičkových nemovitostí napříč střední Evropou.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["investments", "sectors", "stages", "ticket"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Investika investiční společnost investice startup",
+      "Investika DYNAMIKA fond unikátních příležitostí investuje do firem",
+      "Investika kapitálová účast ve společnosti investice do firmy akcie podíl"
+    ]
+  }
+]

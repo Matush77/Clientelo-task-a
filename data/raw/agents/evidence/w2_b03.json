@@ -1,0 +1,266 @@
+[
+  {
+    "candidate_id": "C057",
+    "website": "https://www.emun.cz",
+    "identity": [
+      {
+        "value": {"legal_name": "EMUN investiční společnost, a.s.", "company_id": null, "country": "CZ"},
+        "value_text": "EMUN investiční společnost, a.s.",
+        "source_url": "https://www.emun.cz/kontakt",
+        "quote": "EMUN investiční společnost, a.s.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"legal_name": null, "company_id": "28495349", "country": "CZ"},
+        "value_text": "IČO: 28495349",
+        "source_url": "https://www.emun.cz/kontakt",
+        "quote": "IČO: 28495349, DIČ: CZ28495349",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 1",
+      "source_url": "https://www.emun.cz/kontakt",
+      "quote": "Anežská 986/10 / 110 00 Praha 1",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "investice do největších globálních jednorožců",
+      "source_url": "https://www.e15.cz/finexpert/investujeme/v-emunu-otevreli-novy-fond-vabi-investory-na-openai-nebo-revolut-uz-vybrali-ctvrt-miliardy-1428118",
+      "quote": "Nový fond Emun Global Unicorns cílí na investice do největších globálních jednorožců.",
+      "published_date": "2025-10-16",
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "OpenAI", "date": null, "round": "unknown", "amount": null},
+        "value_text": "OpenAI",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "SpaceX", "date": null, "round": "unknown", "amount": null},
+        "value_text": "SpaceX",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Revolut", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Revolut",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Anthropic", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Anthropic",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "xAI", "date": null, "round": "unknown", "amount": null},
+        "value_text": "xAI",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Kraken", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Kraken",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Stripe", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Stripe",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Databricks", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Databricks",
+        "source_url": "https://cc.cz/akcie-openai-spacex-nebo-revolutu-chteji-vsichni-zhave-investicni-zbozi-se-otevira-i-cechum/",
+        "quote": "Expozici má mít aktuálně na firmy jako OpenAI, SpaceX, Revolut, Anthropic, xAI, Kraken, Stripe nebo Databricks.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": {
+      "value": ["growth"],
+      "value_text": "největších globálních jednorožců",
+      "source_url": "https://www.e15.cz/finexpert/investujeme/v-emunu-otevreli-novy-fond-vabi-investory-na-openai-nebo-revolut-uz-vybrali-ctvrt-miliardy-1428118",
+      "quote": "Nový fond Emun Global Unicorns cílí na investice do největších globálních jednorožců.",
+      "published_date": "2025-10-16",
+      "derivation": "inferred"
+    },
+    "ticket": null,
+    "total_capital": {
+      "value": {"amount": "přes 16 miliard Kč", "currency": "CZK", "capital_type": "aum", "as_of": null},
+      "value_text": "přes 16 miliard Kč",
+      "source_url": "https://www.emun.cz",
+      "quote": "Obhospodařujeme přes 16 miliard Kč investičního majetku.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "funds": [
+      {
+        "value": {"name": "Emun Global Unicorns", "size": "přes 200 milionů korun", "currency": "CZK", "vintage": null},
+        "value_text": "přes 200 milionů korun",
+        "source_url": "https://www.e15.cz/finexpert/investujeme/v-emunu-otevreli-novy-fond-vabi-investory-na-openai-nebo-revolut-uz-vybrali-ctvrt-miliardy-1428118",
+        "quote": "Nový fond již získal do správy přes 200 milionů korun.",
+        "published_date": "2025-10-16",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["sectors", "ticket"],
+    "early_exit": null,
+    "search_log": [
+      "EMUN investiční společnost investice do startupů firem fond",
+      "Emun Global Unicorns fond portfolio OpenAI SpaceX držba",
+      "Emun Global Private Infrastructure fond"
+    ]
+  },
+  {
+    "candidate_id": "C173",
+    "website": "https://www.creandum.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "Stockholm, Berlin and San Francisco",
+      "source_url": "https://www.maddyness.com/uk/2021/03/01/asking-the-right-questions-a-profile-of-creandum/",
+      "quote": "Today the investment team counts a total of 12 team members across Stockholm, Berlin and San Francisco.",
+      "published_date": "2021-03-01",
+      "derivation": "stated"
+    },
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Creandum venture capital investice portfolio"
+    ]
+  },
+  {
+    "candidate_id": "C161",
+    "website": "https://www.plugandplaytechcenter.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "kalifornském Sunnyvale",
+      "source_url": "https://www.novinky.cz/clanek/finance-americane-lovi-v-ceskych-vodach-genialni-mozky-lakaji-je-do-silicon-valley-53964",
+      "quote": "CzechAccelerator agentury CzechInvest je součástí Plug and Play Tech Center v kalifornském Sunnyvale",
+      "published_date": "2010-08-18",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["accelerator"],
+      "value_text": "Plug and Play Tech Center",
+      "source_url": "https://www.novinky.cz/clanek/finance-americane-lovi-v-ceskych-vodach-genialni-mozky-lakaji-je-do-silicon-valley-53964",
+      "quote": "v kalifornském Plug and Play Tech Center",
+      "published_date": "2010-08-18",
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Plug and Play Tech Center Czech investice startup"
+    ]
+  },
+  {
+    "candidate_id": "C167",
+    "website": "https://www.sofinagroup.com",
+    "identity": [],
+    "hq_country": {
+      "value": "other",
+      "value_text": "holding belge",
+      "source_url": "https://www.test-achats.be/invest/investir/actions/analysis/2025/04/sofina-conseil-gagnant-hausse",
+      "quote": "Sofina est un holding belge contrôlé par les familles Boël, Solvay et Janssen.",
+      "published_date": "2025-04-01",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["group_holding"],
+      "value_text": "holding belge",
+      "source_url": "https://www.test-achats.be/invest/investir/actions/analysis/2025/04/sofina-conseil-gagnant-hausse",
+      "quote": "Sofina est un holding belge contrôlé par les familles Boël, Solvay et Janssen.",
+      "published_date": "2025-04-01",
+      "derivation": "stated"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "foreign_hq",
+    "search_log": [
+      "Sofina investment company portfolio Czech"
+    ]
+  },
+  {
+    "candidate_id": "C123",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": null,
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "inferred"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "investor_type", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "\"PFCEU\" s.r.o. 36282600",
+      "PFCEU investiční fond investice",
+      "PFCEU Pro Financial Consulting Pezinok investície startupy",
+      "PFCEU",
+      "PFCEU Pezinok investičné služby"
+    ]
+  }
+]

@@ -1,0 +1,491 @@
+[
+  {
+    "candidate_id": "C030",
+    "website": "https://www.skylimit.cz",
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity fond",
+      "source_url": "https://www.skylimit.cz",
+      "quote": "SkyLimit Industry SICAV a.s. (dále jen SkyLimit) je private equity fond zaměřený na investice do malých",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "STS Olbramovice", "date": null, "round": "unknown", "amount": null},
+        "value_text": "STS Olbramovice",
+        "source_url": "https://www.skylimit.cz/portfolio",
+        "quote": "STS Olbramovice a.s. je tradiční český výrobce zemědělské techniky.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "INOX Technology", "date": null, "round": "unknown", "amount": null},
+        "value_text": "INOX Technology",
+        "source_url": "https://www.skylimit.cz/portfolio",
+        "quote": "INOX Technology a.s. je česká společnost z Jablonce nad Nisou.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Ventos Energy Solutions", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Ventos Energy Solutions",
+        "source_url": "https://www.skylimit.cz/portfolio",
+        "quote": "Ventos Energy Solutions a.s., založená v roce 1993 v Rumburku.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "TECHNIK PARTNER", "date": null, "round": "unknown", "amount": null},
+        "value_text": "TECHNIK PARTNER",
+        "source_url": "https://www.skylimit.cz/portfolio",
+        "quote": "TECHNIK PARTNER a.s. je česká společnost z Bořanovic u Prahy.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "VMK CZ Automation", "date": null, "round": "unknown", "amount": null},
+        "value_text": "VMK CZ Automation",
+        "source_url": "https://www.skylimit.cz/portfolio",
+        "quote": "VMK CZ Automation a.s. je česká společnost z Ústí nad Orlicí.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Prozax", "date": "2025-09-10", "round": "unknown", "amount": null},
+        "value_text": "Prozax",
+        "source_url": "https://www.ceskenoviny.cz/tiskove/zpravy/fond-skylimit-posiluje-v-oblasti-prumyslove-automatizace-dokoncil-akvizici-spolecnosti-prozax/2718984",
+        "quote": "Private equity fond SkyLimit Industry SICAV, který vlastní a rozvíjí české strojírenské firmy, koupil společnost Prozax",
+        "published_date": "2025-09-10",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["industry_manufacturing"],
+      "value_text": "strojírenských",
+      "source_url": "https://www.skylimit.cz",
+      "quote": "Prostřednictvím investičního fondu se zaměřujeme na investice do malých a středně velkých strojírenských",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "stages": {
+      "value": ["buyout"],
+      "value_text": "odkupů majoritních podílů",
+      "source_url": "https://www.skylimit.cz",
+      "quote": "Fond investuje od roku 2016 do odkupů majoritních podílů ve strojírenských společnostech",
+      "published_date": "2025-06-25",
+      "derivation": "stated"
+    },
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "SkyLimit Industry SICAV", "size": null, "currency": null, "vintage": "2016"},
+        "value_text": "SkyLimit Industry SICAV",
+        "source_url": "https://www.skylimit.cz",
+        "quote": "SkyLimit Industry SICAV je prvním otevřeným private equity fondem, který již od roku 2016 nabízí",
+        "published_date": "2025-06-25",
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["identity", "hq_country", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "fetch https://www.skylimit.cz (homepage)",
+      "fetch https://www.skylimit.cz/portfolio",
+      "SkyLimit Industry SICAV akvizice 2025",
+      "fetch ceskenoviny.cz Prozax acquisition article"
+    ]
+  },
+  {
+    "candidate_id": "C071",
+    "website": "https://palefirecapital.com",
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Praha 1",
+      "source_url": "https://palefirecapital.com/en/",
+      "quote": "Žatecká 55/14, Praha 1, 110 00",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "long-term partner",
+      "source_url": "https://palefirecapital.com/en/",
+      "quote": "We invest in high-quality companies as a long-term partner",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "investments": [
+      {
+        "value": {"company": "Phreesia", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Phreesia",
+        "source_url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-akcie-fondy-cesti-investori-vsadili-na-americke-zdravotnictvi-a-web-pro-remeslniky-300429",
+        "quote": "Investice do podílu ve společnosti Phreesia nebyla jediným nákupem PFC na americké burze.",
+        "published_date": "2026-03-03",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Angi", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Angi",
+        "source_url": "https://www.seznamzpravy.cz/clanek/ekonomika-finance-akcie-fondy-cesti-investori-vsadili-na-americke-zdravotnictvi-a-web-pro-remeslniky-300429",
+        "quote": "Investiční skupina totiž přikoupila podle dat agentury Bloomberg i balík akcií technologické firmy Angi",
+        "published_date": "2026-03-03",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Zuri", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Zuri",
+        "source_url": "https://palefirecapital.com/en/portfolio/",
+        "quote": "Zuri se trochu vymyká našim ostatním investicím, ale myslíme si, že občas je správné podpořit i velmi ambiciózní projekt.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Favi", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Favi",
+        "source_url": "https://palefirecapital.com/en/portfolio/",
+        "quote": "Favi jsme exitovali v roce 2022.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Saunia", "date": "2019-06", "round": "unknown", "amount": null},
+        "value_text": "Saunia",
+        "source_url": "https://cc.cz/2019/06/pale-fire-capital-jde-do-saunoveho-sveta-do-saunie-od-spoluzakladatelu-invia-cz-investuje-150-milionu-korun/",
+        "quote": "Saunia se tak přidává do portfolia Pale Fire Capital",
+        "published_date": "2019-06-25",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Mobilní rozhlas Ondřeje Svrčka", "date": "2018", "round": "unknown", "amount": null},
+        "value_text": "Mobilní rozhlas Ondřeje Svrčka",
+        "source_url": "https://palefirecapital.com/en/portfolio/",
+        "quote": "Do projektu s původním názvem Mobilní rozhlas Ondřeje Svrčka jsme vstoupili v roce 2018.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "itrinity", "date": null, "round": "unknown", "amount": null},
+        "value_text": "itrinity",
+        "source_url": "https://palefirecapital.com/en/portfolio/",
+        "quote": "itrinity je dynamicky rostoucí technologická společnost se sídlem na Slovensku a v České republice,",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["consumer_ecommerce"],
+      "value_text": "e-commerce",
+      "source_url": "https://palefirecapital.com/en/pale-fire-capital-closes-its-first-decade-with-a-e413-million-portfolio-and-expands-into-family-owned-businesses/",
+      "quote": "In its first decade, Pale Fire Capital focused on technology and e-commerce companies.",
+      "published_date": "2026-07-02",
+      "derivation": "stated"
+    },
+    "stages": null,
+    "ticket": {
+      "value": {"min": "tens of millions of euros", "max": null, "currency": "EUR"},
+      "value_text": "tens of millions of euros",
+      "source_url": "https://palefirecapital.com/en/",
+      "quote": "Our investments typically range in the tens of millions of euros of our own capital.",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": {
+      "value": {"amount": "EUR 2 billion", "currency": "EUR", "capital_type": "aum", "as_of": "2026-07-02"},
+      "value_text": "EUR 2 billion",
+      "source_url": "https://palefirecapital.com/en/pale-fire-capital-closes-its-first-decade-with-a-e413-million-portfolio-and-expands-into-family-owned-businesses/",
+      "quote": "The total value of assets under management amounts to EUR 2 billion.",
+      "published_date": "2026-07-02",
+      "derivation": "stated"
+    },
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "stages", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "\"Pale Fire Capital SE\" investice",
+      "fetch https://palefirecapital.com/en/",
+      "fetch https://palefirecapital.com/en/portfolio/",
+      "Pale Fire Capital koupila podíl 2026 investice do firmy",
+      "fetch palefirecapital.com 10-year anniversary article",
+      "fetch seznamzpravy.cz Phreesia article",
+      "fetch palefirecapital.com/en/ (ticket and focus wording)",
+      "fetch cc.cz Saunia article (2019)"
+    ]
+  },
+  {
+    "candidate_id": "C160",
+    "website": null,
+    "identity": [],
+    "hq_country": {
+      "value": "CZ",
+      "value_text": "Prague-based",
+      "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+      "quote": "a Prague-based venture capital firm",
+      "published_date": "2024-07-30",
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["vc"],
+      "value_text": "venture capital firm",
+      "source_url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+      "quote": "a Prague-based venture capital firm",
+      "published_date": "2024-07-30",
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Liki24", "date": "2025", "round": "unknown", "amount": null},
+        "value_text": "Liki24",
+        "source_url": "https://inventure.com.ua/en/news/ukraine/ukrainian-startups-attracted-dollar526-million-in-investment-in-2025",
+        "quote": "Liki24 9,0 TA Ventures, ICLUB, u.ventures, N1 Ventures",
+        "published_date": "2026-01-02",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Advanto", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Advanto",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "Do projektu Advanto zase N1 vložil peníze",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Snuggs", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Snuggs",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "patří Snuggs, Hedepy, Ydistri, VRgineers, Daytrip či Filuta AI",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Hedepy", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Hedepy",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "patří Snuggs, Hedepy, Ydistri, VRgineers, Daytrip či Filuta AI",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Ydistri", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Ydistri",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "patří Snuggs, Hedepy, Ydistri, VRgineers, Daytrip či Filuta AI",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "VRgineers", "date": null, "round": "unknown", "amount": null},
+        "value_text": "VRgineers",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "patří Snuggs, Hedepy, Ydistri, VRgineers, Daytrip či Filuta AI",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Daytrip", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Daytrip",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "patří Snuggs, Hedepy, Ydistri, VRgineers, Daytrip či Filuta AI",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Filuta AI", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Filuta AI",
+        "source_url": "https://cc.cz/z-nation-1-je-n1-cesti-startupovi-investori-chystaji-druhy-fond-chteji-do-nej-ziskat-necelou-miliardu/",
+        "quote": "patří Snuggs, Hedepy, Ydistri, VRgineers, Daytrip či Filuta AI",
+        "published_date": "2023-09-18",
+        "derivation": "stated"
+      }
+    ],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [],
+    "not_found": ["identity", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": null,
+    "search_log": [
+      "N1 Ventures investice startup (rate-limited, no results)",
+      "N1 Ventures venture capital fund",
+      "\"N1 Ventures\" Prague early-stage Marek Moravec Klára Kocárová",
+      "fetch https://www.n1.vc (TLS error)",
+      "fetch https://nation1.vc (connection refused)",
+      "fetch cc.cz \"Z Nation 1 je N1\" article",
+      "fetch https://n1.vc (host not found)",
+      "\"N1 Ventures\" Myriad AI seed kolo investor 2025",
+      "fetch en.ain.ua Myriad AI pre-seed article",
+      "fetch cc.cz \"Z Nation 1 je N1\" portfolio sentence",
+      "N1 fond Moravec Trojan investoval kolo startup 2025",
+      "fetch inventure.com.ua 2025 Ukrainian startup investments"
+    ]
+  },
+  {
+    "candidate_id": "C029",
+    "website": "https://www.sandbergcapital.com",
+    "identity": [
+      {
+        "value": {"legal_name": "Sandberg Capital, správ. spol., a.s.", "company_id": null, "country": "SK"},
+        "value_text": "Sandberg Capital, správ. spol., a.s.",
+        "source_url": "https://www.sandbergcapital.com",
+        "quote": "Spoločnosť Sandberg Capital, správ. spol., a.s., so sídlom: Dvořákovo nábrežie 8",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "hq_country": {
+      "value": "SK",
+      "value_text": "Bratislava",
+      "source_url": "https://www.sandbergcapital.com",
+      "quote": "Dvořákovo nábrežie 8, 811 02 Bratislava",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investor_type": {
+      "value": ["pe"],
+      "value_text": "private equity",
+      "source_url": "https://www.sandbergcapital.com",
+      "quote": "vykonáva správu alternatívnych investičných fondov, ktoré sú zamerané na investovanie do private equity",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "investments": [
+      {
+        "value": {"company": "Daktela", "date": "2024-09-30", "round": "unknown", "amount": null},
+        "value_text": "Daktela",
+        "source_url": "https://daktela.com/press-releases/investment-fund-sandberg-capital-raises-stake-in-technology-company-daktela",
+        "quote": "Slovakian investment fund Sandberg Capital, which joined Daktela in 2021, has increased its stake to 65%.",
+        "published_date": "2024-09-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Travelnode", "date": "2025-04-25", "round": "unknown", "amount": null},
+        "value_text": "Travelnode",
+        "source_url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q2/arx-a-sandberg-spolecne-ziskavaji-travelnode.html",
+        "quote": "Together, they have taken an 80% stake in its parent company, Travelnode, for a sum in the lower tens of millions of euros.",
+        "published_date": "2025-04-25",
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Seyfor", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Seyfor",
+        "source_url": "https://www.sandbergcapital.com",
+        "quote": "Seyfor vytvára softvér a riešenia, ktoré podnikateľom zjednodušujú a zlepšujú ich život.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Sanagro", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Sanagro",
+        "source_url": "https://www.sandbergcapital.com",
+        "quote": "Sanagro sa radí medzi top producentov v rastlinnej výrobe na Slovensku s vysokým podielom v BIO kvalite.",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "Terno", "date": null, "round": "unknown", "amount": null},
+        "value_text": "Terno",
+        "source_url": "https://www.sandbergcapital.com",
+        "quote": "Terno: Stále modernejší retail",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"company": "TITANS freelancers", "date": null, "round": "unknown", "amount": null},
+        "value_text": "TITANS freelancers",
+        "source_url": "https://www.sandbergcapital.com",
+        "quote": "TITANS freelancers – posila pre vaše IT projekty",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "sectors": {
+      "value": ["sector_agnostic"],
+      "value_text": "menšie a stredne veľké spoločnosti",
+      "source_url": "https://www.sandbergcapital.com",
+      "quote": "Zameriavame sa na menšie a stredne veľké spoločnosti s potenciálom rastu.",
+      "published_date": null,
+      "derivation": "inferred"
+    },
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [
+      {
+        "value": {"name": "Sandberg Investment Fund II", "size": "130 milionů eur", "currency": "EUR", "vintage": null},
+        "value_text": "130 milionů eur",
+        "source_url": "https://forbes.cz/slovenska-sandberg-capital-shromazdila-ve-svem-druhem-fondu-130-milonu-eur/",
+        "quote": "Slovenská Sandberg Capital shromáždila ve svém druhém fondu 130 milionů eur",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "red_flags": [],
+    "not_found": ["stages", "ticket", "total_capital"],
+    "early_exit": null,
+    "search_log": [
+      "Sandberg Capital investícia Daktela Titans Seyfor 2025",
+      "Travelnode Sandberg Capital ARX Equity Partners majority stake",
+      "fetch https://www.sandbergcapital.com (portfolio, offices, team)",
+      "fetch daktela.com press release (Sandberg stake 65%)",
+      "fetch forbes.cz Sandberg second fund 130 million EUR",
+      "fetch deloitte.com Travelnode transaction article",
+      "fetch deloitte.com Travelnode (fund and stake sentences)",
+      "fetch https://www.sandbergcapital.com (legal name and private equity disclaimer)"
+    ]
+  },
+  {
+    "candidate_id": "C085",
+    "website": null,
+    "identity": [],
+    "hq_country": null,
+    "investor_type": {
+      "value": ["advisory"],
+      "value_text": "poradenském mandátu",
+      "source_url": "https://www.echo24.cz/a/NHLz9/ze-susanka--partneri-se-stala-akciova-spolecnost-prinasi-nove-investicni-prilezitosti-a-rozsiruje-pusobnost-do-zahranici",
+      "quote": "V poradenském mandátu má přes 1,6 miliardy korun",
+      "published_date": "2025-02-13",
+      "derivation": "inferred"
+    },
+    "investments": [],
+    "sectors": null,
+    "stages": null,
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "red_flags": [
+      {
+        "value": "no investment found",
+        "value_text": null,
+        "source_url": null,
+        "quote": null,
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": "advises and offers client access to foreign funds; no direct investment into companies found",
+        "value_text": "V poradenském mandátu",
+        "source_url": "https://www.echo24.cz/a/NHLz9/ze-susanka--partneri-se-stala-akciova-spolecnost-prinasi-nove-investicni-prilezitosti-a-rozsiruje-pusobnost-do-zahranici",
+        "quote": "V poradenském mandátu má přes 1,6 miliardy korun",
+        "published_date": "2025-02-13",
+        "derivation": "stated"
+      }
+    ],
+    "not_found": ["identity", "hq_country", "investments", "sectors", "stages", "ticket", "total_capital", "funds"],
+    "early_exit": "no_investment_found",
+    "search_log": [
+      "Sušánka & partneři investice",
+      "Sušánka a partneři private equity venture capital web",
+      "susankapartneri.cz Jan Sušánka",
+      "\"Susanka & Partneri\" investiční poradenství akciová společnost",
+      "fetch echo24.cz Sušánka & partneři article (13 Feb 2025)"
+    ]
+  }
+]
