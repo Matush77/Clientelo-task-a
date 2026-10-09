@@ -26,7 +26,7 @@ N_INCLUDED, CENSUS_UP_TO, N_REAL_REJECTS, N_CONTROLS = 30, 35, 5, 5
 
 PRIMARY = [
     ("real_investor", "Je to skutočný investor (investuje vlastné/spravované peniaze do firiem)?"),
-    ("active_36m", "Má doloženú investíciu do firmy v posledných 36 mesiacoch (od 2023-10-08)?"),
+    ("active_36m", "Má doloženú investíciu do firmy uskutočnenú v posledných 36 mesiacoch (od 2023-10-09)?"),
     ("type_vc", "Je to VC investor (VC, korporátny VC alebo štátny VC investujúci priamo)?"),
     ("hq_cz_sk", "Sídli investičný tím v Česku alebo na Slovensku?"),
 ]
