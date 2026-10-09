@@ -353,7 +353,7 @@ Sentences longer than 125 characters are split into shorter exact fragments, eac
 - "Slovenský PE fond Sandberg Capital za jednotky milionů eur (100 až 200 milionů korun)"
 - "Andělský fond Depo Ventures se spolupodílí na pre-seed ve výšce 3,4 milionu eur (83 milionů korun)"
 - "již předtím startup získal 17 milionů korun od Startup W
-… [skrátené, 2042 znakov – plné znenie v raw/]
+… [skrátené, 2048 znakov – plné znenie v raw/]
 ````
 
 </details>

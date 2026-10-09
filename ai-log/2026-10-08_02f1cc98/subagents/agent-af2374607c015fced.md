@@ -170,19 +170,19 @@ Today is 2026-10-08.
 ````text
 Web search results for query: "Reflex Capital investor startup"
 
-Links: [{"title":"Reflex Capital Investor","url":"https://mindmaps.femtech.health/firms/36751"},{"title":"reflex capital se","url":"https://superscout.co/investor/reflex-capital-se"},{"title":"Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"pokud muzete rozjedte svuj byznys bez ciziho kapitalu rika fryc z reflex capital","url":"https://forbes.cz/pokud-muzete-rozjedte-svuj-byznys-bez-ciziho-kapitalu-rika-fryc-z-reflex-capital/"},{"title":"Valuace startupů spadly hodně, mají už ale aspoň realističtější požadavky, říká Ondřej Fryc","url":"https://cc.cz/valuace-startupu-spadly-hodne-maji-uz-ale-aspon-realistictejsi-pozadavky-rika-ondrej-fryc/"},{"title":"Nová síla pro Reflex Capital Ondřeje Fryce. Ve třetím fondu má na startupy přes půl miliardy","url":"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"},{"title":"České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje Fryce","url":"https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/"},{"title":"Reflex Capital and J&T Ventures Invest USD2.2m in Czech AI-Enabled Scouting Startup Leadspicker","url":"https://dev.globalprivatecapital.org/newsroom/reflex-capital-and-jt-ventures-invest-usd2-2m-in-czech-ai-enabled-scouting-startup-leadspicker/"},{"title":"reflex capital","url":"https://dev.actual.seedtable.com/investors/reflex-capital"}]
+Links: [{"title":"Reflex Capital Investor","url":"https://mindmaps.femtech.health/firms/36751"},{"title":"reflex capital se","url":"https://superscout.co/investor/reflex-capital-se"},{"title":"Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"pokud muzete rozjedte svuj byznys bez ciziho kapitalu rika [REDACTED] z reflex capital","url":"https://forbes.cz/pokud-muzete-rozjedte-svuj-byznys-bez-ciziho-kapitalu-rika-[REDACTED]-z-reflex-capital/"},{"title":"Valuace startupů spadly hodně, mají už ale aspoň realističtější požadavky, říká [REDACTED]","url":"https://cc.cz/valuace-startupu-spadly-hodne-maji-uz-ale-aspon-realistictejsi-pozadavky-rika-ondrej-[REDACTED]/"},{"title":"Nová síla pro Reflex Capital Ondřeje [REDACTED]e. Ve třetím fondu má na startupy přes půl miliardy","url":"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"},{"title":"České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje [REDACTED]e","url":"https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/"},{"title":"Reflex Capital and J&T Ventures Invest USD2.2m in Czech AI-Enabled Scouting Startup Leadspicker","url":"https://dev.globalprivatecapital.org/newsroom/reflex-capital-and-jt-ventures-invest-usd2-2m-in-czech-ai-enabled-scouting-startup-leadspicker/"},{"title":"reflex capital","url":"https://dev.actual.seedtable.com/investors/reflex-capital"}]
 
-**Reflex Capital** is a Prague-based venture capital firm founded in 2012 that invests in early-stage startups. Its best-known figure is Ondřej Fryc, founder of the Mall e-shop, who serves as the fund's general partner.
+**Reflex Capital** is a Prague-based venture capital firm founded in 2012 that invests in early-stage startups. Its best-known figure is [REDACTED], founder of the Mall e-shop, who serves as the fund's general partner.
 
 **Focus and check sizes**
 - Directory listings place the firm in Prague and describe it as a micro VC. One listing gives the contact email info@reflexcapital.com. It primarily invests in technology-driven startups at the pre-seed, seed, seed-plus, and Series A stages.
-- Its typical check is roughly €1–2 million. Fryc has said that a small fund lets the firm stay close to what happens inside each company. With a typical investment between one and two million euros, a small fund lets them know what is happening in startups and actively help them.
+- Its typical check is roughly €1–2 million. [REDACTED] has said that a small fund lets the firm stay close to what happens inside each company. With a typical investment between one and two million euros, a small fund lets them know what is happening in startups and actively help them.
 - Sector interests named in one profile include AI, healthcare, consumer products, SaaS, and proptech. Another lists foodtech, CRM, and enterprise software.
 
 **Origins and funds**
-- The firm started as a family office in which Fryc invested his own money before deciding to take on outside investors. Reflex Capital began as a family office, where Fryc invested his own funds.
-- Its third fund closed at €22 million, which is roughly half a billion Czech crowns. Reflex Capital enters the new year with fresh momentum after closing its th
-… [skrátené, 1628 znakov – plné znenie v raw/]
+- The firm started as a family office in which [REDACTED] invested his own money before deciding to take on outside investors. Reflex Capital began as a family office, where [REDACTED] invested his own funds.
+- Its third fund closed at €22 million, which is roughly half a billion Czech crowns. Reflex Capit
+… [skrátené, 1703 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -311,7 +311,7 @@ The footer also contains two social media icon links (X and LinkedIn), which hav
 - "€150M invested"
 - "We at Reflex Capital are entrepreneurs, just like you."
 - "We managed our own companies and sought investments ourselves."
-- "The Czech startup simplifies the cooperation of screens of various brands and receives tens of millions of crowns from Reflex Capital Ondřej Fryc" (headline, truncated)
+- "The Czech startup simplifies the cooperation of screens of various brands and receives tens of millions of crowns from Reflex Capital [REDACTED]" (headline, truncated)
 - "OUR CURRENT INVESTMENTS" (section heading), followed by "learn more"
 - Navigation links: "OUR INVESTMENTS", "Power Team", "Contact"
 - "LET'S GET STARTED." (contact call to action)
@@ -354,8 +354,8 @@ The footer also contains two social media icon links (X and LinkedIn), which hav
 
 ````text
 {
-  "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Reflex Capital / Fryc / TopMonks / investice / milionů, and the article's publication date exactly as shown on the page."
+  "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/",
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Reflex Capital / [REDACTED] / TopMonks / investice / milionů, and the article's publication date exactly as shown on the page."
 }
 ````
 
@@ -365,8 +365,8 @@ The footer also contains two social media icon links (X and LinkedIn), which hav
 
 ````text
 {
-  "url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Reflex Capital / fond / fondu / miliard / miliony / Fryc / EUR / eur / €, and the article's publication date exactly as shown on the page."
+  "url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Reflex Capital / fond / fondu / miliard / miliony / [REDACTED] / EUR / eur / €, and the article's publication date exactly as shown on the page."
 }
 ````
 
@@ -379,9 +379,9 @@ The footer also contains two social media icon links (X and LinkedIn), which hav
 
 **Sentences containing the requested terms.** Each quote is under 125 characters, and the remaining content is paraphrased in English. Not every matching sentence is reproduced in full, since that would mostly copy the article.
 
-1. "Nechceme mít velký fond, říká zakladatel Ondřej Fryc."
+1. "Nechceme mít velký fond, říká zakladatel [REDACTED]."
 2. "Uzavřel svůj třetí fond o velikosti dvaadvacet milionů eur, tedy bezmála 540 milionů korun."
-3. "Na takové transakce má Fryc společně se svými partnery ve venture kapitálovém fondu Reflex Capital i novou sílu."
+3. "Na takové transakce má [REDACTED] společně se svými partnery ve venture kapitálovém fondu Reflex Capital i novou sílu."
 4. "Původně jsme chtěli dvacet milionů, nakonec jsme upsali dvaadvacet, ale investory jsme také odmítali,"
 5. "Fond obecně investuje částky kolem jednoho milionu eur, někdy ke hranici dvou milionů,"
 6. "Posledně se Reflex účastnil největšího letošního kola označovaného jako Series A"
@@ -401,13 +401,13 @@ The footer also contains two social media icon links (X and LinkedIn), which hav
 
 **Excerpts from the article (each quote is truncated to 125 characters or fewer):**
 
-1. Headline: "České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje Fryce"
+1. Headline: "České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje [REDACTED]e"
 2. Lead paragraph, opening: "Firma, která v minulosti vytvořila aplikace pro projekty Price f(X), PurposeFly, Techloop.io, GoRealEurope nebo 2pocket"…
-3. Describing the fund's ownership: "Ten provozuje původní zakladatel eshopu MALL.cz, Ondřej Fryc."
+3. Describing the fund's ownership: "Ten provozuje původní zakladatel eshopu MALL.cz, [REDACTED]."
 4. Founder's quote on the funding's purpose: "Investice od Reflexu nám pomůže financovat tuto naši ‚startupovou‘ větev,"
-5. Founder's comment on the investors: "Ondřej Fryc a jeho parta z Reflex Capital za sebou mají pár úspěšných zářezů a k tomu moc pěkné portfolio"…
-6. Fryc's comment on the investment: "Zakladatel a generální partner fondu Reflex Capital, Ondřej Fryc k investici, která by měla posloužit"…
-7. Fryc's quote on the decision: "Je to právě kvalita ‚jeho‘ startupů a kvalita jeho týmu, která nás přesvědčila k investici"…
+5. Founder's comment on the investors: "[REDACTED] a jeho parta z Reflex Capital za sebou mají pár úspěšných zářezů a k tomu moc pěkné portfolio"…
+6. [REDACTED]'s comment on the investment: "Zakladatel a generální partner fondu Reflex Capital, [REDACTED] k investici, která by měla posloužit"…
+7. [REDACTED]'s quote on the decision: "Je to právě kvalita ‚jeho‘ startupů a kvalita jeho týmu, která nás přesvědčila k investici"…
 8. Photo caption: "Spoluzakladatel TopMonks Jiří Fabián uprostřed, druhý zakladatel TopMonks Jiří Píša vlevo"
 9. Introduction: "České technologické studio TopMonks, které se kromě zakázkového vývoje aplikací věnuje i vývoji"…
 10. Related-article teaser: "Zakladatel TopMonks, PurposeFly a organizátor Wisephory Jiří Fabián: řídíme se heslem pořád se uč a pořád někoho uč"
@@ -487,7 +487,7 @@ REMINDER: You MUST include the sources above in your response to the user using 
 ````text
 {
   "url": "https://startupintros.com/news/2024-06-01-reflex-seed-3",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Reflex Capital, Reflex, Fryc, the startup name, the round / investment amount, and the article's publication date exactly as shown on the page."
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Reflex Capital, Reflex, [REDACTED], the startup name, the round / investment amount, and the article's publication date exactly as shown on the page."
 }
 ````
 
@@ -496,7 +496,7 @@ REMINDER: You MUST include the sources above in your response to the user using 
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-The page doesn't mention "Reflex Capital" or "Fryc." These sentences and fields mention Reflex, the round amount, or the date:
+The page doesn't mention "Reflex Capital" or "[REDACTED]." These sentences and fields mention Reflex, the round amount, or the date:
 
 - "Reflex - $9M Seed | Startup Intros" (page title)
 - "Seed funding round for Reflex raising $9M in June 2024"
@@ -526,7 +526,7 @@ The page doesn't mention "Reflex Capital" or "Fryc." These sentences and fields 
 
 ````text
 {
-  "query": "Reflex Capital Ondřej Fryc investice startup 2025",
+  "query": "Reflex Capital [REDACTED] investice startup 2025",
   "mode": "standard"
 }
 ````
@@ -536,14 +536,14 @@ The page doesn't mention "Reflex Capital" or "Fryc." These sentences and fields 
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-Web search results for query: "Reflex Capital Ondřej Fryc investice startup 2025"
+Web search results for query: "Reflex Capital [REDACTED] investice startup 2025"
 
-Links: [{"title":"Ondřej Fryc: Past zvaná „valuace“ aneb pozor na investory s veto právem","url":"https://cc.cz/ondrej-fryc-past-zvana-valuace-aneb-pozor-na-investory-s-veto-pravem/"},{"title":"Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Predict your next investment","url":"https://www.cbinsights.com/investor/incomming-ventures"},{"title":"České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje Fryce","url":"https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/"},{"title":"ondrej fryc vetsina lidi na investice do start upu proste nema","url":"https://www.newstream.cz/newstream-tv/ondrej-fryc-vetsina-lidi-na-investice-do-start-upu-proste-nema"},{"title":"ondrej fryc reflex capital otevre dalsi fond","url":"https://www.newstream.cz/money/ondrej-fryc-reflex-capital-otevre-dalsi-fond"},{"title":"pokud muzete rozjedte svuj byznys bez ciziho kapitalu rika fryc z reflex capital","url":"https://forbes.cz/pokud-muzete-rozjedte-svuj-byznys-bez-ciziho-kapitalu-rika-fryc-z-reflex-capital/"},{"title":"jak na uspesny startup zasadni je dobry produkt i vize mini sixta a fryc","url":"https://forbes.cz/jak-na-uspesny-startup-zasadni-je-dobry-produkt-i-vize-mini-sixta-a-fryc/"},{"title":"Hlavní obsah","url":"https://seznamzpravy.cz/clanek/audio-podcast-agenda-kdyz-vlada-zastropovala-ceny-lide-zacali-hned-utracet-rika-investor-215657"}]
+Links: [{"title":"[REDACTED]: Past zvaná „valuace“ aneb pozor na investory s veto právem","url":"https://cc.cz/ondrej-[REDACTED]-past-zvana-valuace-aneb-pozor-na-investory-s-veto-pravem/"},{"title":"Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Predict your next investment","url":"https://www.cbinsights.com/investor/incomming-ventures"},{"title":"České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje [REDACTED]e","url":"https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/"},{"title":"ondrej [REDACTED] vetsina lidi na investice do start upu proste nema","url":"https://www.newstream.cz/newstream-tv/ondrej-[REDACTED]-vetsina-lidi-na-investice-do-start-upu-proste-nema"},{"title":"ondrej [REDACTED] reflex capital otevre dalsi fond","url":"https://www.newstream.cz/money/ondrej-[REDACTED]-reflex-capital-otevre-dalsi-fond"},{"title":"pokud muzete rozjedte svuj byznys bez ciziho kapitalu rika [REDACTED] z reflex capital","url":"https://forbes.cz/pokud-muzete-rozjedte-svuj-byznys-bez-ciziho-kapitalu-rika-[REDACTED]-z-reflex-capital/"},{"title":"jak na uspesny startup zasadni je dobry produkt i vize mini sixta a [REDACTED]","url":"https://forbes.cz/jak-na-uspesny-startup-zasadni-je-dobry-produkt-i-vize-mini-sixta-a-[REDACTED]/"},{"title":"Hlavní obsah","url":"https://seznamzpravy.cz/clanek/audio-podcast-agenda-kdyz-vlada-zastropovala-ceny-lide-zacali-hned-utracet-rika-investor-215657"}]
 
 Links: [{"title":"Reflex I, a series of Human Element Master Fund LP logo","url":"https://filingflow.app/companies/0002090131"},{"title":"www.datanyze.com","url":"https://www.datanyze.com/people/Bill-Fry/6025801708"},{"title":"806407 Market Commentary  December 2025","url":"https://nesbittburns.bmo.com/fry.investment.team/blog/806407-Market-Commentary--December-2025/"},{"title":"Live stream preview","url":"https://tv.nyse.com/nyse-tv-highlights/season:3/videos/airwallex-exec-explains-what-s-driving-growth-as-arr-surpasses-1-billion"},{"title":"simo n","url":"https://fintel.io/so/mx/simo n"},{"title":"Finance   ·   Refinance","url":"https://commercialobserver.com/?p=512174"},{"title":"806413 Market Commentary  June 2025","url":"https://nesbittburns.bmo.com/fry.investment.team/blog/806413-Market-Commentary--June-2025/"},{"title":"806414 Market Commentary  May 2025","url":"https://nesbittburns.bmo.com/fry.investment.team/blog/806414-Market-Commentary--May-2025/"},{"title":"chart to watch can cash flow positive companies bounce back after 2025","url":"https://www.janushenderson.com/en-cn/investor/article/chart-to-watch-can-cash-flow-positive-companies-bounce-back-after-2025/"}]
 
-I couldn't confirm any specific 2025 deal from these results. Most articles don't show publication dates, and my second
-… [skrátené, 2460 znakov – plné znenie v raw/]
+I couldn't confirm any specific 2025 deal from the
+… [skrátené, 2559 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -552,8 +552,8 @@ I couldn't confirm any specific 2025 deal from these results. Most articles don'
 
 ````text
 {
-  "url": "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions the fund name, fond, miliard, miliony, korun, Reflex, Fryc, investice, startupů, and the article's publication date exactly as shown on the page."
+  "url": "https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions the fund name, fond, miliard, miliony, korun, Reflex, [REDACTED], investice, startupů, and the article's publication date exactly as shown on the page."
 }
 ````
 
@@ -584,7 +584,7 @@ Here are the sentences and headings from the page that match your keywords, repr
 7. "MIPIM Startup Competition Winner Spaceti Lands in NYC"
 8. "Czech Startup VOS.health Scores Additional EUR800,000 Funding to Continue Developing Mental Health App"
 9. "Ein Startup, das hilft Lieferprozesse zu verbessern"
-10. "The Czech startup simplifies the cooperation of screens of various brands and receives tens of millions of crowns from Reflex Capital Ondřej Fryc"
+10. "The Czech startup simplifies the cooperation of screens of various brands and receives tens of millions of crowns from Reflex Capital [REDACTED]"
 
 The page contains no matches for seed, pre-seed, series, sectors, industries, check size, or ticket.
 ````
@@ -598,15 +598,15 @@ The page contains no matches for seed, pre-seed, series, sectors, industries, ch
 
 **Sentences with the keywords (Czech, shortened to meet the 125-character quote limit):**
 
-1. Title: "Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun"
-2. "Český miliardář Ondřej Fryc, jenž stál u zrodu e-commerce skupiny Mall Group, kterou posléze úspěšně prodal,"
+1. Title: "Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun"
+2. "Český miliardář [REDACTED], jenž stál u zrodu e-commerce skupiny Mall Group, kterou posléze úspěšně prodal,"
 3. "Až dosud investoval primárně prostřednictvím svého fondu Reflex Capital"
 4. "Nyní se ovšem pod Reflex Capital uskupuje další investiční fond, který dostal název Reflex 2."
 5. The article says Reflex 2 would have investments "od 30 do 50 milionů eur" and, in conversion, "v přepočtu tedy až 1,3 miliardy korun."
 6. The fund would invest in roughly 20 to 25 different companies, according to E15 (paraphrased).
 7. Capital is contributed by pre-selected investors, mainly existing partners of Reflex Capital, and the fund is not open to outside investors (paraphrased).
-8. Spread Capital was the first fund, founded by Ondřej Fryc with Josef Chvojka, and later partners joined (paraphrased).
-9. Photo captions identify "Zakladatel Reflex Capital a investor Ondřej Fryc" and "Ondřej Fryc (Reflex Capital)."
+8. Spread Capital was the first fund, founded by [REDACTED] with Josef Chvojka, and later partners joined (paraphrased).
+9. Photo captions identify "Zakladatel Reflex Capital a investor [REDACTED]" and "[REDACTED] (Reflex Capital)."
 
 I shortened or paraphrased the longer sentences because word-for-word reproduction would exceed the 125-character limit per quote. Text outside the quotation marks is my own wording.
 ````
@@ -617,7 +617,7 @@ I shortened or paraphrased the longer sentences because word-for-word reproducti
 
 ````text
 {
-  "url": "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+  "url": "https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
   "prompt": "Find the sentence that contains the words 'od 30 do 50 milionů eur' and return it word-for-word exactly as written in the article, in Czech, without summarising or translating. Also return the sentence that contains 'Reflex 2' word-for-word."
 }
 ````
@@ -1225,8 +1225,8 @@ No sentence states Orbit Capital's seat, headquarters, office, founding, or othe
 ````text
 {
   "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\data\\raw\\agents\\evidence\\w1_b09.json",
-  "content": "[\n  {\n    \"candidate_id\": \"C157\",\n    \"website\": \"https://www.categoryvc.com\",\n    \"identity\": [],\n    \"hq_country\": {\n      \"value\": \"other\",\n      \"value_text\": \"SF\",\n      \"source_url\": \"https://www.categoryvc.com\",\n      \"quote\": \"SF\",\n      \"published_date\": null,\n      \"derivation\": \"inferred\"\n    },\n    \"investor_type\": {\n      \"value\": [\"vc\"],\n      \"value_text\": \"at the earliest stages\",\n      \"source_url\": \"https://www.categoryvc.com\",\n      \"quote\": \"building ambitious AI applications at the earliest stages.\",\n      \"published_date\": null,\n      \"derivation\": \"inferred\"\n    },\n    \"investments\": [],\n    \"sectors\": {\n      \"value\": [\"ai_data\"],\n      \"value_text\": \"AI applications\",\n      \"source_url\": \"https://www.categoryvc.com\",\n      \"quote\": \"building ambitious AI applications at the earliest stages.\",\n      \"published_date\": null,\n      \"derivation\": \"stated\"\n    },\n    \"stages\": null,\n    \"ticket\": null,\n    \"total_capital\": null,\n    \"funds\": [],\n    \"red_flags\": [],\n    \"not_found\": [\"identity\", \"stages\", \"ticket\", \"total_capital\", \"funds\", \"investments\"],\n    \"early_exit\": \"foreign_hq\",\n    \"search_log\": [\"Category Ventures venture capital investor\"]\n  },\n  {\n    \"candidate_id\": \"C144\",\n    \"website\": \"https://www.reflexcapital.com\",\n    \"identity\": [\n      {\n        \"value\": {\"legal_name\": \"Reflex Capital SE\", \"company_id\": null, \"country\": \"CZ\"},\n        \"value_text\": \"Reflex Capital SE\",\n        \"source_url\": \"https://www.reflexcapital.com\",\n        \"quote\": \"Copyright © 2026 Reflex Capital SE\",\n        \"published_date\": null,\n        \"derivation\": \"stated\"\n      }\n    ],\n    \"hq_country\": {\n      \"value\": \"CZ\",\n      \"value_text\": \"Praha 2\",\n      \"source_url\": \"https://www.reflexcapital.com\",\n      \"quote\": \"120 00 Praha 2\",\n      \"published_date\": null,\n      \"derivation\": \"inferred\"\n    },\n    \"investor_type\": {\n      \"value\": [\"vc\"],\n      \"value_text\": \"venture kapitálovém fondu Reflex Capital\",\n      \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\",\n      \"quote\": \"Na takové transakce má Fryc společně se svými partnery ve venture kapitálovém fondu Reflex Capital i novou sílu.\",\n      \"published_date\": \"2023-12-22\",\n      \"derivation\": \"stated\"\n    },\n    \"investments\": [\n      {\n        \"value\": {\"company\": \"TopMonks\", \"date\": \"2017-09-05\", \"round\": \"unknown\", \"amount\": \"35 milionů Kč\"},\n        \"value_text\": \"35 milionů Kč\",\n        \"source_url\": \"https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/\",\n        \"quote\": \"České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje Fryce\",\n        \"published_date\": \"2017-09-05\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"Leadspicker\", \"date\": \"2020-05-21\", \"round\": \"seed\", \"amount\": \"EUR2m\"},\n        \"value_text\": \"EUR2m\",\n        \"source_url\": \"https://globalprivatecapital.org/?p=22043\",\n        \"quote\": \"Reflex Capital and J&T Ventures have made a EUR2m (approximately USD2.2m) seed investment in Czech Republic-based AI-enabled scouting startup Leadspicker.\",\n        \"published_date\": \"2020-05-21\",\n        \"derivation\": \"stated\"\n      }\n    ],\n    \"sectors\": null,\n    \"stages\": null,\n    \"ticket\": {\n      \"value\": {\"min\": \"kolem jednoho milionu eur\", \"max\": \"ke hranici dvou milionů\", \"currency\": \"EUR\"},\n      \"value_text\": \"kolem jednoho milionu eur,
-… [skrátené, 8855 znakov – plné znenie v raw/]
+  "content": "[\n  {\n    \"candidate_id\": \"C157\",\n    \"website\": \"https://www.categoryvc.com\",\n    \"identity\": [],\n    \"hq_country\": {\n      \"value\": \"other\",\n      \"value_text\": \"SF\",\n      \"source_url\": \"https://www.categoryvc.com\",\n      \"quote\": \"SF\",\n      \"published_date\": null,\n      \"derivation\": \"inferred\"\n    },\n    \"investor_type\": {\n      \"value\": [\"vc\"],\n      \"value_text\": \"at the earliest stages\",\n      \"source_url\": \"https://www.categoryvc.com\",\n      \"quote\": \"building ambitious AI applications at the earliest stages.\",\n      \"published_date\": null,\n      \"derivation\": \"inferred\"\n    },\n    \"investments\": [],\n    \"sectors\": {\n      \"value\": [\"ai_data\"],\n      \"value_text\": \"AI applications\",\n      \"source_url\": \"https://www.categoryvc.com\",\n      \"quote\": \"building ambitious AI applications at the earliest stages.\",\n      \"published_date\": null,\n      \"derivation\": \"stated\"\n    },\n    \"stages\": null,\n    \"ticket\": null,\n    \"total_capital\": null,\n    \"funds\": [],\n    \"red_flags\": [],\n    \"not_found\": [\"identity\", \"stages\", \"ticket\", \"total_capital\", \"funds\", \"investments\"],\n    \"early_exit\": \"foreign_hq\",\n    \"search_log\": [\"Category Ventures venture capital investor\"]\n  },\n  {\n    \"candidate_id\": \"C144\",\n    \"website\": \"https://www.reflexcapital.com\",\n    \"identity\": [\n      {\n        \"value\": {\"legal_name\": \"Reflex Capital SE\", \"company_id\": null, \"country\": \"CZ\"},\n        \"value_text\": \"Reflex Capital SE\",\n        \"source_url\": \"https://www.reflexcapital.com\",\n        \"quote\": \"Copyright © 2026 Reflex Capital SE\",\n        \"published_date\": null,\n        \"derivation\": \"stated\"\n      }\n    ],\n    \"hq_country\": {\n      \"value\": \"CZ\",\n      \"value_text\": \"Praha 2\",\n      \"source_url\": \"https://www.reflexcapital.com\",\n      \"quote\": \"120 00 Praha 2\",\n      \"published_date\": null,\n      \"derivation\": \"inferred\"\n    },\n    \"investor_type\": {\n      \"value\": [\"vc\"],\n      \"value_text\": \"venture kapitálovém fondu Reflex Capital\",\n      \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\",\n      \"quote\": \"Na takové transakce má [REDACTED] společně se svými partnery ve venture kapitálovém fondu Reflex Capital i novou sílu.\",\n      \"published_date\": \"2023-12-22\",\n      \"derivation\": \"stated\"\n    },\n    \"investments\": [\n      {\n        \"value\": {\"company\": \"TopMonks\", \"date\": \"2017-09-05\", \"round\": \"unknown\", \"amount\": \"35 milionů Kč\"},\n        \"value_text\": \"35 milionů Kč\",\n        \"source_url\": \"https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/\",\n        \"quote\": \"České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje [REDACTED]e\",\n        \"published_date\": \"2017-09-05\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"Leadspicker\", \"date\": \"2020-05-21\", \"round\": \"seed\", \"amount\": \"EUR2m\"},\n        \"value_text\": \"EUR2m\",\n        \"source_url\": \"https://globalprivatecapital.org/?p=22043\",\n        \"quote\": \"Reflex Capital and J&T Ventures have made a EUR2m (approximately USD2.2m) seed investment in Czech Republic-based AI-enabled scouting startup Leadspicker.\",\n        \"published_date\": \"2020-05-21\",\n        \"derivation\": \"stated\"\n      }\n    ],\n    \"sectors\": null,\n    \"stages\": null,\n    \"ticket\": {\n      \"value\": {\"min\": \"kolem jednoho milionu eur\", \"max\": \"ke hranici dvou milionů\", \"currency\": \"EUR\"},\n      \"value_text\": \"ko
+… [skrátené, 8896 znakov – plné znenie v raw/]
 ````
 
 </details>

@@ -964,12 +964,12 @@ Zero Gravity Capital (ZGC), a Slovak venture fund, has invested in Wewell, a Cze
 
 - **What Wewell does:** The app lets users scan a product's barcode and analyzes its ingredients and whether it suits a skin type the user has described. Wewell lets people photograph the barcode of various cosmetic products and, using its data and algorithms, evaluates the product's composition and whether it suits the user's skin. Users complete a questionnaire at sign-up about skin sensitivity and possible ingredient intolerances, and the app builds a skin profile to tailor product recommendations.
 - **ZGC's early investment:** One report describes a pre-seed round of several hundreds of thousands of euros from Zero Gravity Capital.
-- **Later round:** Reports describe a seed round totaling €1.25 million, with Slovak fund Crowdberry Investment Management, Zero Gravity Capital (part of the Zero One Hundred investment activities), and angel investor Jakub Borovička as investors. The amount is also described as about 30.5 million Czech crowns.
+- **Later round:** Reports describe a seed round totaling €1.25 million, with Slovak fund Crowdberry Investment Management, Zero Gravity Capital (part of the Zero One Hundred investment activities), and angel investor [REDACTED]a as investors. The amount is also described as about 30.5 million Czech crowns.
 - **About ZGC:** It is a venture capital fund in Slovakia fuelling early-stage innovations. It belongs to the 0100 Ventures ecosystem and gives portfolio companies business benefits and services.
 - **Wewell's growth:** The app has recently added an online marketplace and can connect users with e-shops. It currently operates in the Czech and Slovak markets, with plans to enter other European countries.
 
-**Caveats:** The sources don't agree on the round's stage or timing. One profile lists $1.3M raised, Dec 2023, S
-… [skrátené, 478 znakov – plné znenie v raw/]
+**Caveats:** The sources don't agree on the round's stage or timing. One profile lists $1.3M raised, Dec 2023, Seed 
+… [skrátené, 474 znakov – plné znenie v raw/]
 ````
 
 </details>

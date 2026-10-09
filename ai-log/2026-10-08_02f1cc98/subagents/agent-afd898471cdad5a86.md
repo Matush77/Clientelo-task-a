@@ -235,7 +235,7 @@ Here's a summary of the page instead. It's the website of Tilia Impact Ventures,
 - **Value proposition:** patient mission-aligned capital, impact measurement and KPI support, access to a network of co-investors and mentors, and hands-on operational help, including office space in Impact Hub.
 - **Portfolio:** 21 companies, 48% with gender-diverse founding teams. Examples include Munch (food-waste marketplace), MIWA (packaging-free retail system), Cyrkl (waste-to-resource marketplace), and Shen.AI (vital-signs measurement).
 - **Reported impact (as of Q4 2025):** 292,000+ people from disadvantaged groups reached, 5,800 tons of food saved, 1.2 million tons of GHG emissions avoided, and 5.0 million tons of materials and packaging waste prevented.
-- **Team:** Silke Horáková and Petr Vítek are co-founders and partners, joined by other partners, an investment committee, and an advisory board.
+- **Team:** [REDACTED]á and Petr Vítek are co-founders and partners, joined by other partners, an investment committee, and an advisory board.
 
 If you tell me what you're trying to do with this page, such as comparing investors, checking the portfolio, or drafting an outreach note, I can help with that.
 ````
@@ -417,10 +417,10 @@ Links: [{"title":"neulogy ventures","url":"https://www.vestbee.com/vc-list/neulo
 - **Support model:** It offers hands-on help, including strategic guidance, business development support, and fundraising assistance. Neulogy Ventures emphasizes a hands-on approach, offering strategic guidance, business development support, and fundraising assistance to its portfolio companies.
 - **Investment size:** One profile lists tickets of €200K to €3M, with a particular interest in Slovak SMEs. They provide investment sizes ranging from €200K to €3M, with a particular interest in SMEs established or operating in Slovakia. Another lists a $0–1M ticket, so these figures don't line up.
 - **Backers:** One listing names the European Investment Fund and the Luxembourg Future Fund as notable limited partners. Notable known LPs: European Investment Fund (EIF), The Luxembourg Future Fund
-- **Team:** One directory lists Christian Mandl as Managing Partner and Terezia Jacova as Investment Manager.
+- **Team:** One directory lists [REDACTED] as Managing Partner and Terezia Jacova as Investment Manager.
 
-**Confli
-… [skrátené, 743 znakov – plné znenie v raw/]
+**Conflicting
+… [skrátené, 738 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -575,15 +575,15 @@ Web search results for query: "Tilia Impact Ventures portfolio investice"
 
 Links: [{"title":"Tilia Impact Ventures","url":"https://funding.tech.eu/investors/Tilia%20Impact%20Ventures"},{"title":"Tilia Impact Ventures","url":"https://unicorn-nest.com/funds/tilia-impact-ventures/"},{"title":"Tilia Impact Ventures","url":"https://venturecapitalarchive.com/venture-funds/tilia-impact-ventures-tilia-vc"},{"title":"Tilia Impact Ventures (investor - Venture Capital)","url":"https://nordic9.com/companies/tilia-impact-ventures/"},{"title":"tilia impact ventures","url":"https://www.vcsheet.com/fund/tilia-impact-ventures"},{"title":"CEE VC SUMMIT 2025","url":"https://vestbee.com/blog/articles/vc-of-the-month-tilia-impact-ventures"},{"title":"Assisted fundraising","url":"https://hub.waveup.com/funds/tilia-impact-ventures"},{"title":"pavel petrek","url":"https://www.vcsheet.com/who/pavel-petrek"},{"title":"tilia impact ventures","url":"https://dev.seedtable.com/investors/tilia-impact-ventures"}]
 
-Links: [{"title":"Silke Horáková a Petr Vítek posílají miliony korun do startupu MIWA, který z obchodů odstraňuje jednorázové plasty","url":"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"},{"title":"Kam zajít, co ochutnat a co stojí za pozornost","url":"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"},{"title":"pavel petrek","url":"https://www.vcsheet.com/who/pavel-petrek"},{"title":"petr vitek","url":"https://www.vcsheet.com/who/petr-vitek"},{"title":"tilia impact ventures","url":"https://www.vcsheet.com/fund/tilia-impact-ventures"},{"title":"Tilia Impact Ventures","url":"https://venturecapitalarchive.com/venture-funds/tilia-impact-ventures-tilia-vc"},{"title":"andrew gray","url":"https://www.vcsheet.com/who/andrew-gray"},{"title":"silke horakova impaktove investovani je v kursu delame vetsi fond","url":"https://www.newstream.cz/newstream-tv/silke-horakova-impaktove-investovani-je-v-kursu-delame-vetsi-fond"},{"title":"silke horakova","url":"https://www.vcsheet.com/who/silke-horakova"}]
+Links: [{"title":"[REDACTED]á a Petr Vítek posílají miliony korun do startupu MIWA, který z obchodů odstraňuje jednorázové plasty","url":"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"},{"title":"Kam zajít, co ochutnat a co stojí za pozornost","url":"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"},{"title":"pavel petrek","url":"https://www.vcsheet.com/who/pavel-petrek"},{"title":"petr vitek","url":"https://www.vcsheet.com/who/petr-vitek"},{"title":"tilia impact ventures","url":"https://www.vcsheet.com/fund/tilia-impact-ventures"},{"title":"Tilia Impact Ventures","url":"https://venturecapitalarchive.com/venture-funds/tilia-impact-ventures-tilia-vc"},{"title":"andrew gray","url":"https://www.vcsheet.com/who/andrew-gray"},{"title":"silke horakova impaktove investovani je v kursu delame vetsi fond","url":"https://www.newstream.cz/newstream-tv/silke-horakova-impaktove-investovani-je-v-kursu-delame-vetsi-fond"},{"title":"silke horakova","url":"https://www.vcsheet.com/who/silke-horakova"}]
 
 Tilia Impact Ventures is a Prague-based, seed-stage fund that invests in companies whose impact is part of the business model. The sources don't agree on how many companies it has backed, so I've listed the figures separately.
 
 **Named portfolio companies**
 - **Arbonics (Estonia):** Tilia's most recent deal as of March 2024, co-invested with Nordic Ninja VC and Plural VC. Arbonics is an Estonian startup supporting landowners to plant forestry and receive carbon credits instead of cutting down their trees. It also ranks first in funding.tech.eu's list of the fund's portfolio by total round size, at €5.5M (Arbonics | Estonia | 1 | €5.5M).
 - **Datlab:** a public procurement oversight tool used on over 25,000 tenders that has helped save an estimated €142-143 million annually and supported prosecutions of corrupt officials.
-- **MIWA (Czech Republic):** Tilia's convertible l
-… [skrátené, 2140 znakov – plné znenie v raw/]
+- **MIWA (Czech Republic):** Tilia's convertible loan
+… [skrátené, 2137 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -616,7 +616,7 @@ No result matched "M3 Partners" by name. The search surfaced several similarly n
 ````text
 {
   "url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Tilia, Tilia Impact Ventures, Silke Horáková, Petr Vítek, MIWA, the investment amount, or the convertible loan, and the article's publication date exactly as shown."
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Tilia, Tilia Impact Ventures, [REDACTED]á, Petr Vítek, MIWA, the investment amount, or the convertible loan, and the article's publication date exactly as shown."
 }
 ````
 
@@ -627,7 +627,7 @@ No result matched "M3 Partners" by name. The search surfaced several similarly n
 ````text
 {
   "url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Tilia, Tilia Impact Ventures, Silke Horáková, the fund, the investment, or the company it invested in, and the article's publication date exactly as shown."
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Tilia, Tilia Impact Ventures, [REDACTED]á, the fund, the investment, or the company it invested in, and the article's publication date exactly as shown."
 }
 ````
 
@@ -699,9 +699,9 @@ The only status information is the "Exited" tag on four companies. The page does
 ````text
 **Publication date:** 18. 10. 2023 13:35
 
-**Sentences mentioning Tilia, Silke Horáková, the fund, the investment, or the invested company** (split into segments to respect the 125-character quote limit):
+**Sentences mentioning Tilia, [REDACTED]á, the fund, the investment, or the invested company** (split into segments to respect the 125-character quote limit):
 
-1. "Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros Silke Horáková," "má nový přírůstek, bulharskou platformu NOLD."
+1. "Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros [REDACTED]á," "má nový přírůstek, bulharskou platformu NOLD."
 
 2. "Jsme hrdí na to, že můžeme podpořit Boryanu Uzunovou a Anu Kremenlievu, protože mění tvář prodeje módy," "oznámil svoji investici impactový fond Tilia Impact Ventures."
 
@@ -719,15 +719,15 @@ The only status information is the "Exited" tag on four companies. The page does
 
 9. "Strategií fondu je investovat polovinu zdrojů do klastru „people“ a polovinu do „planet“."
 
-10. Related article, headline: "Podařilo se. Nový fond Silke Horákové a spol. upsal stamiliony korun"
+10. Related article, headline: "Podařilo se. Nový fond [REDACTED]é a spol. upsal stamiliony korun"
 
-11. Related article, summary: "Větší fond s novými partnery nám umožní udělat větší pozitivní změnu, uvedla zakladatelka Silke Horáková."
+11. Related article, summary: "Větší fond s novými partnery nám umožní udělat větší pozitivní změnu, uvedla zakladatelka [REDACTED]á."
 
 12. Related article, summary: "Do fondu investovali známí čeští miliardáři."
 
-13. Related video, headline: "Silke Horáková: Impaktové investování už je v kursu, děláme větší fond"
+13. Related video, headline: "[REDACTED]á: Impaktové investování už je v kursu, děláme větší fond"
 
-14. Related video, summary: "Venture kapitálový fond Tilia investorky Silke Horákové a partnerů bude mít brzy mladšího bratra, Tilia 2."
+14. Related video, summary: "Venture kapitálový fond Tilia investorky [REDACTED]é a partnerů bude mít brzy mladšího bratra, Tilia 2."
 
 15. Related video, summary: "Bude v něm více peněz."
 ````
@@ -741,12 +741,12 @@ The only status information is the "Exited" tag on four companies. The page does
 
 The full sentences exceed the 125-character quote limit, so I've quoted the relevant portions and paraphrased the rest in English.
 
-**Silke Horáková, Petr Vítek, and the Tilia fund**
-- The founders opened the Tilia Impact Ventures fund at the end of the previous year: "Silke Horáková a Petr Vítek, když spolu koncem loňského roku otevírali nový investiční fond Tilia Impact Ventures."
+**[REDACTED]á, Petr Vítek, and the Tilia fund**
+- The founders opened the Tilia Impact Ventures fund at the end of the previous year: "[REDACTED]á a Petr Vítek, když spolu koncem loňského roku otevírali nový investiční fond Tilia Impact Ventures."
 - Tilia supports socially beneficial businesses: "Tilia se zaměřuje na podporu společensky prospěšných podniků."
 - Their first investment was Datlab: "Jako svou první investici si Horáková s Vítkem vybrali projekt Datlab."
 - The fund started with 43 million CZK: "měl fond k dispozici 43 milionů korun" (the article says the founders plan to raise this to 60 million CZK by year-end: "navýšit až na 60 milionů korun").
-- Photo captions: "Zleva: Silke Horáková (Tilia), Petr Báča a Ivana Sobolíková (MIWA) a Petr Vítek (Tilia)" and "Silke Horáková, spoluzakladatelka Tilia Impact Ventures."
+- Photo captions: "Zleva: [REDACTED]á (Tilia), Petr Báča a Ivana Sobolíková (MIWA) a Petr Vítek (Tilia)" and "[REDACTED]á, spoluzakladatelka Tilia Impact Ventures."
 - Horáková describes MIWA as the fund's second investment: "Druhou investicí v portfoliu Tilia Impact Ventures se nyní stává společnost MIWA Technologies."
 - Horáková hopes Tilia's entry as the first institutional investor will attract other impact investors: "vstup Tilia Impact Ventures jako prvního institucionálního investora."
 - Tilia says the deal is a convertible loan of a few million CZK: "že jde o konvertibilní půjčku ve výši nižších jednotek milionů korun."
@@ -1177,7 +1177,7 @@ REMINDER: You MUST include the sources above in your response to the user using 
 ````text
 Web search results for query: "StratifAI pre-seed Neulogy Ventures"
 
-Links: [{"title":"Christian Mandl","url":"https://sk.linkedin.com/in/christianmandl"},{"title":"cekan pavol multiplexdx 202409 inc persons people chief 2001 28559","url":"https://www.life-sciences-europe.com/person/cekan-pavol-multiplexdx-202409-inc-persons-people-chief-2001-28559.html"},{"title":"app.foundernest.com","url":"https://app.foundernest.com/public/space/7678/companies/10190350?page=11"},{"title":"Recently FundedEUR 1.5MTechnology, Information and Internet","url":"https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"},{"title":"Funding Stage","url":"https://seedtable.com/companies/stratifai"},{"title":"Back to feed","url":"https://finder.techleap.nl/news/feed/stratifai-secures-12-5m-funding-round"},{"title":"Back to Stories","url":"https://aiworld.eu/story/stratifai-raises-125m-to-make-cancer-treatment-more-precise-with-ai"},{"title":"Major Investements for","url":"https://digitalhealth.tu-dresden.de/?p=13630"},{"title":"rocketlist.ai","url":"https://rocketlist.ai/companies/stratifai"},{"title":"www.vcbacked.co","url":"https://www.vcbacked.co/company/stratifai"}]
+Links: [{"title":"[REDACTED]","url":"https://sk.linkedin.com/in/christianmandl"},{"title":"cekan pavol multiplexdx 202409 inc persons people chief 2001 28559","url":"https://www.life-sciences-europe.com/person/cekan-pavol-multiplexdx-202409-inc-persons-people-chief-2001-28559.html"},{"title":"app.foundernest.com","url":"https://app.foundernest.com/public/space/7678/companies/10190350?page=11"},{"title":"Recently FundedEUR 1.5MTechnology, Information and Internet","url":"https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"},{"title":"Funding Stage","url":"https://seedtable.com/companies/stratifai"},{"title":"Back to feed","url":"https://finder.techleap.nl/news/feed/stratifai-secures-12-5m-funding-round"},{"title":"Back to Stories","url":"https://aiworld.eu/story/stratifai-raises-125m-to-make-cancer-treatment-more-precise-with-ai"},{"title":"Major Investements for","url":"https://digitalhealth.tu-dresden.de/?p=13630"},{"title":"rocketlist.ai","url":"https://rocketlist.ai/companies/stratifai"},{"title":"www.vcbacked.co","url":"https://www.vcbacked.co/company/stratifai"}]
 
 Neulogy Ventures co-led StratifAI's €1.5 million pre-seed round, which was announced on September 2, 2024.
 
@@ -1191,8 +1191,8 @@ Neulogy Ventures co-led StratifAI's €1.5 million pre-seed round, which was ann
 - Its main product is Polaris, an AI platform that analyzes large genetic and clinical datasets. By identifying biological signals linked to how patients react to specific drugs, the platform gives oncologists a clearer sense of which treatments are most likely to work best and why.
 
 **Later funding**
-- In September/October 2025, StratifAI raised €12.5 million. Picus Capital led that round, Alven co-led it, and existing investors including Debiopharm and Arve Capital also participated. StratifAI has secured € 
-… [skrátené, 1125 znakov – plné znenie v raw/]
+- In September/October 2025, StratifAI raised €12.5 million. Picus Capital led that round, Alven co-led it, and existing investors including Debiopharm and Arve Capital also participated. StratifAI has secured € 12.5 
+… [skrátené, 1120 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -1270,11 +1270,11 @@ The $15M first close is covered consistently in April 2024 trade press, but none
 ````text
 Web search results for query: "Tilia Impact Ventures 2025 investice startup kolo"
 
-Links: [{"title":"Tilia Impact Ventures","url":"https://cc.cz/tag/tilia-impact-ventures/"},{"title":"moje investice 2025 co letos potesilo vlivne zeny ceskeho byznysu","url":"https://forbes.cz/moje-investice-2025-co-letos-potesilo-vlivne-zeny-ceskeho-byznysu/"},{"title":"Investování s dopadem je budoucnost, věří Petr Vítek z Tilia Impact Ventures. Postupně nahrazuje klasické investice","url":"https://cc.cz/investovani-s-dopadem-je-budoucnost-veri-petr-vitek-z-tilia-ventures-postupne-nahrazuje-klasicke-investice/"},{"title":"Silke Horáková a Petr Vítek mají nový fond: Investice musí mít i společenský dopad. Máme na ně 43 milionů korun","url":"https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"},{"title":"Silke Horáková a Petr Vítek posílají miliony korun do startupu MIWA, který z obchodů odstraňuje jednorázové plasty","url":"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"},{"title":"tilia impact ventures","url":"https://impacteurope.net/members/tilia-impact-ventures"},{"title":"Assisted fundraising","url":"https://hub.waveup.com/funds/tilia-impact-ventures"},{"title":"podim.org","url":"https://podim.org/?p=34041"},{"title":"Tilia Impact Ventures","url":"https://capboard.io/en/investor/tilia-impact-ventures"}]
+Links: [{"title":"Tilia Impact Ventures","url":"https://cc.cz/tag/tilia-impact-ventures/"},{"title":"moje investice 2025 co letos potesilo vlivne zeny ceskeho byznysu","url":"https://forbes.cz/moje-investice-2025-co-letos-potesilo-vlivne-zeny-ceskeho-byznysu/"},{"title":"Investování s dopadem je budoucnost, věří Petr Vítek z Tilia Impact Ventures. Postupně nahrazuje klasické investice","url":"https://cc.cz/investovani-s-dopadem-je-budoucnost-veri-petr-vitek-z-tilia-ventures-postupne-nahrazuje-klasicke-investice/"},{"title":"[REDACTED]á a Petr Vítek mají nový fond: Investice musí mít i společenský dopad. Máme na ně 43 milionů korun","url":"https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"},{"title":"[REDACTED]á a Petr Vítek posílají miliony korun do startupu MIWA, který z obchodů odstraňuje jednorázové plasty","url":"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"},{"title":"tilia impact ventures","url":"https://impacteurope.net/members/tilia-impact-ventures"},{"title":"Assisted fundraising","url":"https://hub.waveup.com/funds/tilia-impact-ventures"},{"title":"podim.org","url":"https://podim.org/?p=34041"},{"title":"Tilia Impact Ventures","url":"https://capboard.io/en/investor/tilia-impact-ventures"}]
 
 **Tilia Impact Ventures v roce 2025: uzavřený druhý fond a nové investice**
 
-- **Druhý fond:** Silke Horáková hodnotila rok 2025 jako plný pozitivních momentů, mezi nimi uzavření druhého fondu o objemu 30 milionů eur V Tilia Impact Ventures jsme úspěšně uzavřeli náš druhý fond ve výši třiceti milionů eur. Profil na platformě WaveUp uvádí jinou částku: druhé fondové vozidlo Tilia II vybralo 32 milionů eur a ke konci roku 2025 fond podpořil zhruba 15 firem. Zdroje se tedy liší o 2 miliony eur.
+- **Druhý fond:** [REDACTED]á hodnotila rok 2025 jako plný pozitivních momentů, mezi nimi uzavření druhého fondu o objemu 30 milionů eur V Tilia Impact Ventures jsme úspěšně uzavřeli náš druhý fond ve výši třiceti milionů eur. Profil na platformě WaveUp uvádí jinou částku: druhé fondové vozidlo Tilia II vybralo 32 milionů eur a ke konci roku 2025 fond podpořil zhruba 15 firem. Zdroje se tedy liší o 2 miliony eur.
 
 - **Investice zmiňované v roce 2025:** Horáková podle Forbes.cz uvedla, že fond dál investuje do technologických firem se silným sociálním nebo environmentálním dopadem a globálními ambicemi, a jako příklady uvedla české DeltaGreen, rakouský Biocraft a ukrajinský LetsData (pokračujeme v investicích do technologických startupů s výrazným sociálním či environmentálním dopadem a globálními ambicemi – například českého DeltaGreen, rakouského Biocraft nebo ukrajinského LetsData).
 
@@ -1282,8 +1282,8 @@ Links: [{"title":"Tilia Impact Ventures","url":"https://cc.cz/tag/tilia-impact-v
 
 - **MIWA:** Fond do startupu, který z obchodů odstraňuje jednorázové plasty, vstoupil konvertibilní půjčkou ve výši nižších jednotek milionů korun. Tilia zde figuruje jako první institucionální investor a chce přilákat další zahraniční impaktní investory. Datum v úryvku uvedeno není.
 
-- **FaceUp:** Mezi investory českého startupu FaceUp je kromě Light
-… [skrátené, 1223 znakov – plné znenie v raw/]
+- **FaceUp:** Mezi investory českého startupu FaceUp je kromě Lighthouse Ven
+… [skrátené, 1214 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -1293,7 +1293,7 @@ Links: [{"title":"Tilia Impact Ventures","url":"https://cc.cz/tag/tilia-impact-v
 ````text
 {
   "url": "https://forbes.cz/moje-investice-2025-co-letos-potesilo-vlivne-zeny-ceskeho-byznysu/",
-  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Tilia, Tilia Impact Ventures, Silke Horáková, the second fund, DeltaGreen, Biocraft, LetsData, or the fund size, and the article's publication date exactly as shown."
+  "prompt": "Return word-for-word, without summarising or translating, every sentence that mentions Tilia, Tilia Impact Ventures, [REDACTED]á, the second fund, DeltaGreen, Biocraft, LetsData, or the fund size, and the article's publication date exactly as shown."
 }
 ````
 
@@ -1393,7 +1393,7 @@ The web page content you provided contains only a title, with no body text:
 
 "Moje investice 2025. Co letos potěšilo vlivné ženy českého byznysu? | Forbes"
 
-It contains no sentences mentioning Tilia, Tilia Impact Ventures, Silke Horáková, the second fund, DeltaGreen, Biocraft, LetsData, or a fund size. It also shows no publication date. If you share the full article text, I can extract the matching sentences and the date.
+It contains no sentences mentioning Tilia, Tilia Impact Ventures, [REDACTED]á, the second fund, DeltaGreen, Biocraft, LetsData, or a fund size. It also shows no publication date. If you share the full article text, I can extract the matching sentences and the date.
 ````
 
 </details>
@@ -1449,8 +1449,8 @@ I read "investice" as a typo for "investment." The main 2025 development is a Mi
 ````text
 {
   "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\data\\raw\\agents\\evidence\\w2_b07.json",
-  "content": "[\n  {\n    \"candidate_id\": \"C034\",\n    \"website\": \"https://www.tilia.vc\",\n    \"identity\": [],\n    \"hq_country\": {\n      \"value\": \"CZ\",\n      \"value_text\": \"Prague\",\n      \"source_url\": \"https://www.tilia.vc/\",\n      \"quote\": \"Drtinova 557/10, 150 00 Prague\",\n      \"published_date\": null,\n      \"derivation\": \"stated\"\n    },\n    \"investor_type\": {\n      \"value\": [\"vc\"],\n      \"value_text\": \"Venture kapitálový fond\",\n      \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n      \"quote\": \"Venture kapitálový fond Tilia investorky Silke Horákové a partnerů bude mít brzy mladšího bratra, Tilia 2.\",\n      \"published_date\": \"2023-10-18\",\n      \"derivation\": \"stated\"\n    },\n    \"investments\": [\n      {\n        \"value\": {\"company\": \"Datlab\", \"date\": null, \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"Datlab\",\n        \"source_url\": \"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/\",\n        \"quote\": \"Jako svou první investici si Horáková s Vítkem vybrali projekt Datlab.\",\n        \"published_date\": \"2019-10-08\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"MIWA Technologies\", \"date\": \"2019-10-08\", \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"MIWA Technologies\",\n        \"source_url\": \"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/\",\n        \"quote\": \"Druhou investicí v portfoliu Tilia Impact Ventures se nyní stává společnost MIWA Technologies.\",\n        \"published_date\": \"2019-10-08\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"NOLD\", \"date\": \"2023-10-18\", \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"bulharskou platformu NOLD\",\n        \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n        \"quote\": \"Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros Silke Horáková, má nový přírůstek, bulharskou platformu NOLD.\",\n        \"published_date\": \"2023-10-18\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"Munch\", \"date\": null, \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"maďarská Munch\",\n        \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n        \"quote\": \"Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).\",\n        \"published_date\": \"2023-10-18\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"Cyrkl\", \"date\": null, \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"česká Cyrkl\",\n        \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n        \"quote\": \"Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).\",\n        \"published_date\": \"2023-10-18\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"The Village\", \"date\"
-… [skrátené, 14074 znakov – plné znenie v raw/]
+  "content": "[\n  {\n    \"candidate_id\": \"C034\",\n    \"website\": \"https://www.tilia.vc\",\n    \"identity\": [],\n    \"hq_country\": {\n      \"value\": \"CZ\",\n      \"value_text\": \"Prague\",\n      \"source_url\": \"https://www.tilia.vc/\",\n      \"quote\": \"Drtinova 557/10, 150 00 Prague\",\n      \"published_date\": null,\n      \"derivation\": \"stated\"\n    },\n    \"investor_type\": {\n      \"value\": [\"vc\"],\n      \"value_text\": \"Venture kapitálový fond\",\n      \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n      \"quote\": \"Venture kapitálový fond Tilia investorky [REDACTED]é a partnerů bude mít brzy mladšího bratra, Tilia 2.\",\n      \"published_date\": \"2023-10-18\",\n      \"derivation\": \"stated\"\n    },\n    \"investments\": [\n      {\n        \"value\": {\"company\": \"Datlab\", \"date\": null, \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"Datlab\",\n        \"source_url\": \"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/\",\n        \"quote\": \"Jako svou první investici si Horáková s Vítkem vybrali projekt Datlab.\",\n        \"published_date\": \"2019-10-08\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"MIWA Technologies\", \"date\": \"2019-10-08\", \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"MIWA Technologies\",\n        \"source_url\": \"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/\",\n        \"quote\": \"Druhou investicí v portfoliu Tilia Impact Ventures se nyní stává společnost MIWA Technologies.\",\n        \"published_date\": \"2019-10-08\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"NOLD\", \"date\": \"2023-10-18\", \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"bulharskou platformu NOLD\",\n        \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n        \"quote\": \"Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros [REDACTED]á, má nový přírůstek, bulharskou platformu NOLD.\",\n        \"published_date\": \"2023-10-18\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"Munch\", \"date\": null, \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"maďarská Munch\",\n        \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n        \"quote\": \"Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).\",\n        \"published_date\": \"2023-10-18\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"Cyrkl\", \"date\": null, \"round\": \"unknown\", \"amount\": null},\n        \"value_text\": \"česká Cyrkl\",\n        \"source_url\": \"https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy\",\n        \"quote\": \"Její první fond uskutečnil různé impaktové investice: od boje proti plýtvání potravinami (maďarská Munch) přes zlepšení recyklace materiálů (česká Cyrkl) až po boj proti korupci ve veřejných výdajích (česká Datlab) a umožnění alternativních modelů předškolního vzdělávání (polská The Village).\",\n        \"published_date\": \"2023-10-18\",\n        \"derivation\": \"stated\"\n      },\n      {\n        \"value\": {\"company\": \"The Village\", \"date\": null
+… [skrátené, 14065 znakov – plné znenie v raw/]
 ````
 
 </details>

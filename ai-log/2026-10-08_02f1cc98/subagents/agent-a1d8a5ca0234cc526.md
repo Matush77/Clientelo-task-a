@@ -269,7 +269,7 @@ Today is 2026-10-09.
 **Article date:** 6 December 2023 (published as "06. 12. 2023")
 
 **Sentences mentioning Zero Gravity Capital:**
-- "Zero Gravity Capital, který spadá pod investiční aktivity Zero One Hundred" is part of the "Kdo investuje" (Who invests) line. It names Zero Gravity Capital as one of the investors, alongside Crowdberry and angel investor Jakub Borovička.
+- "Zero Gravity Capital, který spadá pod investiční aktivity Zero One Hundred" is part of the "Kdo investuje" (Who invests) line. It names Zero Gravity Capital as one of the investors, alongside Crowdberry and angel investor [REDACTED]a.
 
 **Sentences about the Wewell investment:**
 - "Mají už 250 tisíc registrovaných uživatelů a právě ohlásili svou už druhou investici." The company has 250,000 registered users and has just announced its second investment.
@@ -330,7 +330,7 @@ The page lists only one named portfolio company with a stated investment date. T
 
 **Location:** "Slovakia - HQ" (headquartered in Bratislava; the page lists presence in several other countries).
 
-**Team:** "Zero Gravity Capital professionals ready to support you and your start-up." Named leaders include Dušan Duffek, Marek Zámečník, Vít Hanuš, and Martin Joakim Flood Hauge, all Investment Directors, with Zámečník also listed as Partner.
+**Team:** "Zero Gravity Capital professionals ready to support you and your start-up." Named leaders include [REDACTED], Marek Zámečník, Vít Hanuš, and Martin Joakim Flood Hauge, all Investment Directors, with Zámečník also listed as Partner.
 
 **Investment focus:** Early-stage ("Pre-Seed") and later-stage ("Seed / Early S-A") companies.
 

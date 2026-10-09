@@ -674,7 +674,7 @@ Neulogy Ventures is a Bratislava-based VC manager, but these results contain no 
 - Figures conflict. One source says over €23M invested in dozens of early stage startups. Another counts 64 investments to date.
 - Assets are reported at €65M, which one profile attributes to the firm for 2024. AUM €65M (per the firm, 2024) A different profile lists $36M. AUM $36 M
 - Named portfolio companies include GroupSolver, Excalibur, SaferPass, Streamstar, Eyerim and Voltia. dozens of early stage startups like GroupSolver, Excalibur, SaferPass, Streamstar, Eyerim, or Voltia One recorded exit is Trustmatic, dated November 
-… [skrátené, 1012 znakov – plné znenie v raw/]
+… [skrátené, 997 znakov – plné znenie v raw/]
 ````
 
 </details>

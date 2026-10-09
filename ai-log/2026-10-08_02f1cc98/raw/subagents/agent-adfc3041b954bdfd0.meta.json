@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Refine batch rf_b04 (Sonnet)",
+  "toolUseId": "toolu_01EtU3Gg22hNup3DJWYZg1Gw",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "sonnet"
+}

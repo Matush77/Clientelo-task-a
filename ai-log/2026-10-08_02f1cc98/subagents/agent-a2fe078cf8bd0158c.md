@@ -425,7 +425,7 @@ The closest results were other companies:
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-**Investors:** Yes, Zero Gravity Capital is listed. The article names it with two others: "Slovenský fond Crowdberry Investment Management, Zero Gravity Capital" (plus angel investor Jakub Borovička). The article says Zero Gravity Capital falls under the investment activities of Zero One Hundred.
+**Investors:** Yes, Zero Gravity Capital is listed. The article names it with two others: "Slovenský fond Crowdberry Investment Management, Zero Gravity Capital" (plus angel investor [REDACTED]a). The article says Zero Gravity Capital falls under the investment activities of Zero One Hundred.
 
 **Amount:** "Celkem 1,25 milionu eur, tedy asi 30,5 milionu korun, v seedovém kole." This is roughly €1.25 million (about CZK 30.5 million) in a seed round.
 
@@ -1157,7 +1157,7 @@ Many companies are repeated across the filtered listings, but the repetition doe
 
 ````text
 {
-  "query": "DEPO Ventures One fund venture capital Prague DEPO Ventures s.r.o. Jakub Havrlant",
+  "query": "DEPO Ventures One fund venture capital Prague DEPO Ventures s.r.o. [REDACTED]",
   "mode": "standard"
 }
 ````
@@ -1195,19 +1195,21 @@ The two lists use slightly different formats for the same codes (for example, 68
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-Web search results for query: "DEPO Ventures One fund venture capital Prague DEPO Ventures s.r.o. Jakub Havrlant"
+Web search results for query: "DEPO Ventures One fund venture capital Prague DEPO Ventures s.r.o. [REDACTED]"
 
 Links: [{"title":"DEPO Pre-seed Fund I Overview","url":"https://pitchbook.com/profiles/fund/24819-94F"},{"title":"Assisted fundraising","url":"https://hub.waveup.com/funds/depo-ventures"},{"title":"DEPO Ventures Fund I Overview","url":"https://pitchbook.com/profiles/fund/20698-84F"},{"title":"Venture Capital","url":"https://altss.com/profile/depo-ventures"},{"title":"[REDACTED] a294681","url":"https://cz.linkedin.com/in/petr-sima-a294681"},{"title":"DEPO Ventures Research","url":"https://f4.fund/firms/depo-ventures"},{"title":"depo ventures opens 20m angel fund","url":"https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund"},{"title":"DEPO Ventures logo","url":"https://www.tryfundable.ai/investor/depo-ventures"},{"title":"DEPO Ventures","url":"https://www.premieralts.com/investors/depo-ventures/portfolio"},{"title":"depo ventures","url":"https://prod.actual.seedtable.com/investors/depo-ventures"}]
 
-Links: [{"title":"David Havrlant - osoby a firmy","url":"https://www.finmag.cz/obchodni-rejstrik/osoba/david-havrlant"},{"title":"Českým podnikatelem roku je Jakub Havrlant. Uspěl v digitální ekonomice a investuje do startupů","url":"https://cc.cz/ceskym-podnikatelem-roku-je-jakub-havrlant-uspel-v-digitalni-ekonomice-a-investuje-do-startupu/"},{"title":"DEPO Ventures","url":"https://privateequitylist.com/investors/depo-ventures"},{"title":"Depo Ventures","url":"https://www.capboard.io/en/investor/depo-ventures"},{"title":"v hlave jakuba h velky rozhovor s podnikatelem roku jakubem havrlantem","url":"https://forbes.cz/v-hlave-jakuba-h-velky-rozhovor-s-podnikatelem-roku-jakubem-havrlantem/"},{"title":"[REDACTED]","url":"https://forbes.cz/lists/zeny25/andrea-lauren/"},{"title":"DEPO Ventures","url":"https://venturecapitalarchive.com/venture-funds/depo-ventures-depoventures-com"},{"title":"DEPO Ventures","url":"https://www.premieralts.com/investors/depo-ventures/portfolio"},{"title":"DEPO Ventures logo","url":"https://www.tryfundable.ai/investor/depo-ventures"},{"title":"depo ventures","url":"https://prod.actual.seedtable.com/investors/depo-ventures"}]
+Links: [{"title":"David Havrlant - osoby a firmy","url":"https://www.finmag.cz/obchodni-rejstrik/osoba/david-havrlant"},{"title":"Českým podnikatelem roku je [REDACTED]. Uspěl v digitální ekonomice a investuje do startupů","url":"https://cc.cz/ceskym-podnikatelem-roku-je-jakub-havrlant-uspel-v-digitalni-ekonomice-a-investuje-do-startupu/"},{"title":"DEPO Ventures","url":"https://privateequitylist.com/investors/depo-ventures"},{"title":"Depo Ventures","url":"https://www.capboard.io/en/investor/depo-ventures"},{"title":"v hlave jakuba h velky rozhovor s podnikatelem roku jakubem havrlantem","url":"https://forbes.cz/v-hlave-jakuba-h-velky-rozhovor-s-podnikatelem-roku-jakubem-havrlantem/"},{"title":"[REDACTED]","url":"https://forbes.cz/lists/zeny25/andrea-lauren/"},{"title":"DEPO Ventures","url":"https://venturecapitalarchive.com/venture-funds/depo-ventures-depoventures-com"},{"title":"DEPO Ventures","url":"https://www.premieralts.com/investors/depo-ventures/portfolio"},{"title":"DEPO Ventures logo","url":"https://www.tryfundable.ai/investor/depo-ventures"},{"title":"depo ventures","url":"https://prod.actual.seedtable.com/investors/depo-ventures"}]
 
-I found no source mentioning a fund called "DEPO Ventures One." The results describe a Prague firm, DEPO Ventures, with several differently named funds. Nothing I found links Jakub Havrlant to DEPO Ventures.
+I found no source mentioning a fund called "DEPO Ventures One." The results describe a Prague firm, DEPO Ventures, with several differently named funds. Nothing I found links [REDACTED] to DEPO Ventures.
 
 **The firm**
 - [REDACTED] and Petr Šíma launched the firm in 2016 in Prague, according to one profile. DEPO Ventures is a Prague-based venture capital firm founded in 2016 by [REDACTED] and Petr Šíma.
 - Directory profiles place its focus on early-stage companies in Central and Eastern Europe and the Baltics. They are focused on investing in early-stage startups from Central and Eastern Europe and the Baltic region.
 - One research profile says the firm has moved from an angel-investor community toward institutional VC, with its current fund narrowed toward critical infrastructure. 
-… [skrátené, 2022 znakov – plné znenie v raw/]
+
+**Funds fo
+… [skrátené, 2006 znakov – plné znenie v raw/]
 ````
 
 </details>

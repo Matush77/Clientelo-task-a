@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Refine batch rf_b01 retry (Sonnet)",
+  "toolUseId": "toolu_01P6F3Y7RjpHpjJvraa4aVLY",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "sonnet"
+}

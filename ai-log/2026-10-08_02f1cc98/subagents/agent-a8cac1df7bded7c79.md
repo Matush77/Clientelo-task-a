@@ -267,13 +267,13 @@ The closest matches are about other companies:
 ````text
 Web search results for query: "Rockaway Ventures investice"
 
-Links: [{"title":"Návrat Rockaway do světa startupových investic aneb Přehled všech dubnových dealů a transakcí","url":"https://cc.cz/navrat-rockaway-do-sveta-startupovych-investic-aneb-prehled-vsech-dubnovych-dealu-a-transakci/"},{"title":"havrlant spousti novy miliardovy fond podpori digitalizacni projekty","url":"https://www.newstream.cz/money/havrlant-spousti-novy-miliardovy-fond-podpori-digitalizacni-projekty"},{"title":"Jakub Havrlant přichází s novým investičním fondem. Rockaway s ním chce do startupů poslat 2,5 miliardy korun","url":"https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"},{"title":"Predict your next investment","url":"https://www.cbinsights.com/company/rockaway-capital"},{"title":"server o českém Internetu","url":"https://www.lupa.cz/n/rockaway-group/"},{"title":"Do českého Rockaway míří Viktor Fischer","url":"https://cc.cz/ceske-rockaway-hlasi-novou-posilu-v-podobe-viktora-fischera/"},{"title":"prague based rockaway ventures closes second fund at nearly 55m","url":"https://startuphub.unwe.bg/bg/news/64237/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html"},{"title":"prague based rockaway ventures closes second fund at nearly 55m","url":"https://startuphub.unwe.bg/bg/news/64138/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html"},{"title":"[REDACTED]","url":"https://forbes.cz/lists/zeny23/andrea-lauren/"}]
+Links: [{"title":"Návrat Rockaway do světa startupových investic aneb Přehled všech dubnových dealů a transakcí","url":"https://cc.cz/navrat-rockaway-do-sveta-startupovych-investic-aneb-prehled-vsech-dubnovych-dealu-a-transakci/"},{"title":"havrlant spousti novy miliardovy fond podpori digitalizacni projekty","url":"https://www.newstream.cz/money/havrlant-spousti-novy-miliardovy-fond-podpori-digitalizacni-projekty"},{"title":"[REDACTED] přichází s novým investičním fondem. Rockaway s ním chce do startupů poslat 2,5 miliardy korun","url":"https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"},{"title":"Predict your next investment","url":"https://www.cbinsights.com/company/rockaway-capital"},{"title":"server o českém Internetu","url":"https://www.lupa.cz/n/rockaway-group/"},{"title":"Do českého Rockaway míří Viktor Fischer","url":"https://cc.cz/ceske-rockaway-hlasi-novou-posilu-v-podobe-viktora-fischera/"},{"title":"prague based rockaway ventures closes second fund at nearly 55m","url":"https://startuphub.unwe.bg/bg/news/64237/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html"},{"title":"prague based rockaway ventures closes second fund at nearly 55m","url":"https://startuphub.unwe.bg/bg/news/64138/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html"},{"title":"[REDACTED]","url":"https://forbes.cz/lists/zeny23/andrea-lauren/"}]
 
-**Rockaway Ventures** is the startup-investment arm of the Czech Rockaway group, which is tied to Jakub Havrlant and Rockaway Capital.
+**Rockaway Ventures** is the startup-investment arm of the Czech Rockaway group, which is tied to [REDACTED] and Rockaway Capital.
 
 **Background**
 - Rockaway Ventures began its journey in 2014, initially investing without a formal structure and supporting early Czech startups like Productboard and Storyous.
-- The Czech group is backed by billionaires Daniel Křetínský and Patrik Tkáč, alongside founder Jakub Havrlant.
+- The Czech group is backed by billionaires Daniel Křetínský and Patrik Tkáč, alongside founder [REDACTED].
 
 **Funds and strategy**
 - The current fund had an original goal of 100 million euros, or 2.5 billion crowns. The fund reported that it had raised about a quarter of that target in its first round.
@@ -284,8 +284,8 @@ Links: [{"title":"Návrat Rockaway do světa startupových investic aneb Přehle
 
 **Notable portfolio companies**
 - Productboard, Brand Embassy, Gjirafa and Storyous are among the names the group has backed. Bileto and SQLdep are also cited as portfolio companies.
-- A recent investme
-… [skrátené, 1204 znakov – plné znenie v raw/]
+- A recent investment was in Ap
+… [skrátené, 1192 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -675,7 +675,7 @@ REMINDER: You MUST include the sources above in your response to the user using 
 
 ````text
 1. "23. 9. 2021"
-2. "Jakub Havrlant, zakladatel Rockaway Capital"
+2. "[REDACTED], zakladatel Rockaway Capital"
 3. "Její nový fond zvaný Rockaway Ventures Fund má cílovou velikost 100 milionů eur, tedy zhruba 2,5 miliardy korun"
 4. "Teď chce svůj investiční záběr ještě rozšířit a otevírá nový fond zvaný Rockaway Ventures Fund."
 5. "V Rockaway Ventures Fundu se chtějí dál věnovat především oblastem, kterým rozumí"
@@ -863,7 +863,7 @@ Several outlets reported in mid-May 2025 that Rockaway Ventures closed its secon
 - Its earlier deals concentrated on e-commerce and travel software, but attention has moved to energy, defense and dual-use technology. 
 
 **Background and structure**
-- Founded in 2014 by Jakub Havrlant, the firm is part of the Rockaway Capital group and focuses on Central Europe and the DACH region.
+- Founded in 2014 by [REDACTED], the firm is part of the Rockaway Capital group and focuses on Central Europe and the DACH region.
 - Activity started in 2014, before any formal entity existed, with early Czech companies such as Productboard and Storyous among its first backers. 
 - The current fund dates from 2022. 
 
@@ -874,8 +874,8 @@ Several outlets reported in mid-May 2025 that Rockaway Ventures closed its secon
 
 **Discrepancy:** One outlet, Startups Magazine, headlined the figure in dollars, while most others reported euros. 
 
-These reports are from May 2025, and this search didn't turn up anything more recent. For l
-… [skrátené, 170 znakov – plné znenie v raw/]
+These reports are from May 2025, and this search didn't turn up anything more recent. For later
+… [skrátené, 166 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -953,7 +953,7 @@ I couldn't reach the firm's own site in this search, so the details below come f
 
 **Portfolio examples:** Apaleo, a hotel management platform based in Germany is among its backed companies. Albanian e-commerce and media company Gjirafa has taken $8.7M from the fund across two rounds. At the time of the Silicon Canals report, the portfolio held 11 companies.
 
-**Discrepancies:** Sources differ on the start date. Most profiles give 2014, while Silicon Canals names 2013 and Jakub Havrlant as founder, and says Rockaway Ventures began informal investing in 2014.
+**Discrepancies:** Sources differ on the start date. Most profiles give 2014, while Silicon Canals names 2013 and [REDACTED] as founder, and says Rockaway Ventures began informal investing in 2014.
 
 
 REMINDER: You MUST include the sources above in your response to the user using markdown hyperlinks.

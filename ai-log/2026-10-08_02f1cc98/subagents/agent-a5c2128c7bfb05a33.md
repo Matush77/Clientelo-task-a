@@ -271,7 +271,7 @@ Today is 2026-10-09.
 ````text
 **Publication date:** The article is dated "06. 12. 2023."
 
-**Zero Gravity Capital:** "Zero Gravity Capital, který spadá pod investiční aktivity Zero One Hundred" (the page lists it as one of three investors, alongside Crowdberry and angel investor Jakub Borovička).
+**Zero Gravity Capital:** "Zero Gravity Capital, který spadá pod investiční aktivity Zero One Hundred" (the page lists it as one of three investors, alongside Crowdberry and angel investor [REDACTED]a).
 
 **Wewell:** "Aplikace WeWell má velké „znalosti“ o tom, co se skrývá v kosmetických produktech." The company is also named in the headline and tag as WeWell/Wewell.
 
@@ -360,7 +360,7 @@ In English: the article reports that Zero Gravity Capital invested in Wewell, an
 
 **Team**
 - "Zero Gravity Capital professionals ready to support you and your start-up"
-- Investment Directors: Dušan Duffek, Marek Zámečník, Vít Hanuš, Martin Joakim Flood Hauge
+- Investment Directors: [REDACTED], Marek Zámečník, Vít Hanuš, Martin Joakim Flood Hauge
 - Partner: Marek Zámečník
 - Investment Manager: Adam Ďurica
 - Senior Investment Analyst: Maximilián Navračič
@@ -384,7 +384,7 @@ In English: the article reports that Zero Gravity Capital invested in Wewell, an
 ````text
 {
   "url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/",
-  "prompt": "Word-for-word, quote the full sentence(s) that list the investors in the seed round (names such as Zero Gravity Capital, Crowdberry, Jakub Borovička, or others) and the total amount. Quote the sentence that names Zero Gravity Capital exactly as written."
+  "prompt": "Word-for-word, quote the full sentence(s) that list the investors in the seed round (names such as Zero Gravity Capital, Crowdberry, [REDACTED]a, or others) and the total amount. Quote the sentence that names Zero Gravity Capital exactly as written."
 }
 ````
 
@@ -517,11 +517,11 @@ In English: the article reports that Zero Gravity Capital invested in Wewell, an
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-**Investors:** The source lists Crowdberry Investment Management (a Slovak fund), Zero Gravity Capital, and angel investor Jakub Borovička. The full sentence exceeds the 125-character quote limit, so it's split into parts:
+**Investors:** The source lists Crowdberry Investment Management (a Slovak fund), Zero Gravity Capital, and angel investor [REDACTED]a. The full sentence exceeds the 125-character quote limit, so it's split into parts:
 
 - "Slovenský fond Crowdberry Investment Management, Zero Gravity Capital,"
 - Zero Gravity Capital sentence, exactly as written: "Zero Gravity Capital, který spadá pod investiční aktivity Zero One Hundred"
-- "a angel investor Jakub Borovička."
+- "a angel investor [REDACTED]a."
 
 **Total amount:** The seed round totals about €1.25 million, roughly 30.5 million CZK: "Celkem 1,25 milionu eur, tedy asi 30,5 milionu korun, v seedovém kole."
 ````

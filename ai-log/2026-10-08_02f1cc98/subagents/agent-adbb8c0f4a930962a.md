@@ -530,7 +530,7 @@ The fund reportedly has 11 portfolio companies in total.
 ````text
 {
   "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/",
-  "prompt": "Quote word-for-word the sentences about Vivere, Productboard, Brand Embassy, the article's publication date, the fund size, and who runs the fund (Jakub Havrlant) and where."
+  "prompt": "Quote word-for-word the sentences about Vivere, Productboard, Brand Embassy, the article's publication date, the fund size, and who runs the fund ([REDACTED]) and where."
 }
 ````
 
@@ -569,7 +569,7 @@ The fund reportedly has 11 portfolio companies in total.
 
 **Fund size:** "Její nový fond zvaný Rockaway Ventures Fund má cílovou velikost 100 milionů eur, tedy zhruba 2,5 miliardy korun" (The target size is €100 million, roughly 2.5 billion CZK.)
 
-**Who runs the fund:** The article does not say Jakub Havrlant runs it. It states: "V čele nového fondu stojí [REDACTED] a [REDACTED]" ([REDACTED] and [REDACTED] lead the fund). Havrlant is described as the founder of Rockaway Capital, which will invest in the fund.
+**Who runs the fund:** The article does not say [REDACTED] runs it. It states: "V čele nového fondu stojí [REDACTED] a [REDACTED]" ([REDACTED] and [REDACTED] lead the fund). Havrlant is described as the founder of Rockaway Capital, which will invest in the fund.
 
 **Location:** "jehož oficiální sídlo je v Lucembursku" (The fund's official seat is in Luxembourg.)
 ````
@@ -753,7 +753,7 @@ Links: [{"title":"verejnerejstriky.msp.gov.cz","url":"https://verejnerejstriky.m
 Links: [{"title":"2017 objednavky 02","url":"https://vop.gov.sk/wp-content/uploads/2021/08/2017_objednavky_02.pdf"},{"title":"75 coffees s.r.o., IČO (07041608), sídlo Praha","url":"https://www.mesec.cz/rejstrik-firem/firma-75-coffees-s-r-o-07041608"},{"title":"Marek Fulín - osoby a firmy","url":"https://www.finmag.cz/obchodni-rejstrik/osoba/marek-fulin"},{"title":"0,75 s.r.o., IČO (07650116), sídlo Praha","url":"https://www.mesec.cz/rejstrik-firem/firma-0-75-s-r-o-07650116"},{"title":"rpvs.gov.sk","url":"https://rpvs.gov.sk/rpvs/Partner/Partner/HistorickyDetailPdf/8575"},{"title":"rpvs.gov.sk","url":"https://rpvs.gov.sk/rpvs/Partner/Partner/HistorickyDetailPdf/12904"},{"title":"docs.google.com","url":"https://docs.google.com/document/d/16vmQnAISQIXwmAb2H91ACeWlqoCjpOmv/export?format=pdf"},{"title":"rpvs.gov.sk","url":"https://rpvs.gov.sk/rpvs/Partner/Partner/HistorickyDetailPdf/23680"},{"title":"rpvs.gov.sk","url":"https://rpvs.gov.sk/rpvs/Partner/Partner/HistorickyDetailPdf/7500"}]
 
 Links: [{"title":"Legal Entity Identifier (LEI)","url":"https://lei.bloomberg.com/leis/view/3157005M2UPYAD5RHR23"},{"title":"Rockaway Ventures a.s., IČO (06387136), sídlo Praha","url":"https://www.mesec.cz/rejstrik-firem/firma-rockaway-ventures-a-s-06387136"},{"title":"SOLID FOUNDATIONS SICAV a.s., IČO: 17626242 - RES","url":"https://www.finmag.cz/obchodni-rejstrik/ares/17626242-solid-foundations-sicav-a-s"},{"title":"Legal Entity Identifier (LEI)","url":"https://lei.bloomberg.com/leis/view/3157006KHTI2YC85VC33"},{"title":"podnikatel: Mgr. Jakub Rod, DiS. - 88243338","url":"https://www.mesec.cz/rejstrik-firem/jmeno-jakub-rod"},{"title":"Algorithmic SICAV a.s., IČO: 10829954 - RES","url":"https://www.finmag.cz/obchodni-rejstrik/ares/10829954-algorithmic-sicav-a-s"},{"title":"verejnerejstriky.msp.gov.cz","url":"https://verejnerejstriky.msp.gov.cz/dokumenty/sbirka-listin/110511980"},{"title":"CARE SI
-… [skrátené, 4531 znakov – plné znenie v raw/]
+… [skrátené, 4523 znakov – plné znenie v raw/]
 ````
 
 </details>

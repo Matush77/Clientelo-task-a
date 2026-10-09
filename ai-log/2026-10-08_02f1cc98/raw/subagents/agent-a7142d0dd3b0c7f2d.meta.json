@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Fact-check batch j_b05 (Sonnet)",
+  "toolUseId": "toolu_011Km3APZbDduQfMW5AqaiQs",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "sonnet"
+}

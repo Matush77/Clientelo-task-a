@@ -445,7 +445,7 @@ about:blank is not a valid file path or URL — use an absolute path, a path sta
 ````text
 {
   "url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
-  "prompt": "Quote word-for-word the sentences that name the investor or fund (Silke Horáková, Tilia, or any fund name) and the startups Datlab and MIWA Technologies, including any investment amounts and dates. Quote the article's publication date exactly as shown. Quote any sentence that states the size of the fund (in CZK or EUR) or the typical ticket / investment size."
+  "prompt": "Quote word-for-word the sentences that name the investor or fund ([REDACTED]á, Tilia, or any fund name) and the startups Datlab and MIWA Technologies, including any investment amounts and dates. Quote the article's publication date exactly as shown. Quote any sentence that states the size of the fund (in CZK or EUR) or the typical ticket / investment size."
 }
 ````
 
@@ -467,7 +467,7 @@ about:blank is not a valid file path or URL — use an absolute path, a path sta
 ````text
 **Fund and investor**
 
-- "Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros Silke Horáková" (Tilia Impact Ventures, founded by Silke Horáková)
+- "Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros [REDACTED]á" (Tilia Impact Ventures, founded by [REDACTED]á)
 - "K Tilia Impact Ventures se připojili Depo Ventures, Czech Founders, Sofia Angel Ventures, New Vision 3" (other participants in the round; the sentence continues with "a čtyři individuální investoři")
 - "Tilia Impact Ventures byla založena v roce 2018, investuje do oblasti sociálních a environmentálních změn." (founding year and focus)
 
@@ -495,7 +495,7 @@ about:blank is not a valid file path or URL — use an absolute path, a path sta
 
 **Fund and founders**
 - "otevírali nový investiční fond Tilia Impact Ventures" (fund opened at the end of the previous year, per the article)
-- "Silke Horáková, spoluzakladatelka Tilia Impact Ventures" (photo caption)
+- "[REDACTED]á, spoluzakladatelka Tilia Impact Ventures" (photo caption)
 
 **Fund size**
 - "Už při svém otevření měl fond k dispozici 43 milionů korun" (CZK 43 million at opening)
@@ -562,7 +562,7 @@ about:blank is not a valid file path or URL — use an absolute path, a path sta
 
 ````text
 {
-  "query": "Tilia Impact Ventures fond velikost milionů korun Silke Horáková",
+  "query": "Tilia Impact Ventures fond velikost milionů korun [REDACTED]á",
   "mode": "standard"
 }
 ````
@@ -621,9 +621,9 @@ None of these is described as part of the current round. The article attributes 
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-Web search results for query: "Tilia Impact Ventures fond velikost milionů korun Silke Horáková"
+Web search results for query: "Tilia Impact Ventures fond velikost milionů korun [REDACTED]á"
 
-Links: [{"title":"Český fond určený na investice se společenskými dopady má dalších 600 milionů. Podpořili ho Winkler či Barta","url":"https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/"},{"title":"silke horakova impaktove investovani je v kursu delame vetsi fond","url":"https://www.newstream.cz/newstream-tv/silke-horakova-impaktove-investovani-je-v-kursu-delame-vetsi-fond"},{"title":"Silke Horáková a Petr Vítek posílají miliony korun do startupu MIWA, který z obchodů odstraňuje jednorázové plasty","url":"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"},{"title":"Silke Horáková a Petr Vítek mají nový fond: Investice musí mít i společenský dopad. Máme na ně 43 milionů korun","url":"https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"},{"title":"Silke Horáková a Petr Vítek mají nový fond: Investice musí mít i společenský dopad. Máme na ně 43 milionů korun","url":"https://cc.cz/2018/11/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"},{"title":"Tilia Impact Ventures","url":"https://cc.cz/tag/tilia-impact-ventures/"},{"title":"50 milionů korun","url":"https://forbes.cz/lists/nej-filantropove-ceska-2022/manzele-horakovi/"},{"title":"moje investice 2025 co letos potesilo vlivne zeny ceskeho byznysu","url":"https://forbes.cz/moje-investice-2025-co-letos-potesilo-vlivne-zeny-ceskeho-byznysu/"},{"title":"startupy menici svet k lepsimu zazivaji boom silke horakova radi jak pro ne ziskat investory","url":"https://forbes.cz/startupy-menici-svet-k-lepsimu-zazivaji-boom-silke-horakova-radi-jak-pro-ne-ziskat-investory/"}]
+Links: [{"title":"Český fond určený na investice se společenskými dopady má dalších 600 milionů. Podpořili ho Winkler či Barta","url":"https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/"},{"title":"silke horakova impaktove investovani je v kursu delame vetsi fond","url":"https://www.newstream.cz/newstream-tv/silke-horakova-impaktove-investovani-je-v-kursu-delame-vetsi-fond"},{"title":"[REDACTED]á a Petr Vítek posílají miliony korun do startupu MIWA, který z obchodů odstraňuje jednorázové plasty","url":"https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"},{"title":"[REDACTED]á a Petr Vítek mají nový fond: Investice musí mít i společenský dopad. Máme na ně 43 milionů korun","url":"https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"},{"title":"[REDACTED]á a Petr Vítek mají nový fond: Investice musí mít i společenský dopad. Máme na ně 43 milionů korun","url":"https://cc.cz/2018/11/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"},{"title":"Tilia Impact Ventures","url":"https://cc.cz/tag/tilia-impact-ventures/"},{"title":"50 milionů korun","url":"https://forbes.cz/lists/nej-filantropove-ceska-2022/manzele-horakovi/"},{"title":"moje investice 2025 co letos potesilo vlivne zeny ceskeho byznysu","url":"https://forbes.cz/moje-investice-2025-co-letos-potesilo-vlivne-zeny-ceskeho-byznysu/"},{"title":"startupy menici svet k lepsimu zazivaji boom silke horakova radi jak pro ne ziskat investory","url":"https://forbes.cz/startupy-menici-svet-k-lepsimu-zazivaji-boom-silke-horakova-radi-jak-pro-ne-ziskat-investory/"}]
 
 The sources give a first fund of about 43 million CZK and a second fund that grew from a 32 million EUR target to a reported 30 million EUR close.
 
@@ -631,8 +631,8 @@ The sources give a first fund of about 43 million CZK and a second fund that gre
 
 **Second fund:** A CzechCrunch article reports that Tilia had over 43 million in its activities at the time, and had now closed its second fund, Impact Seed Fund, targeting 32 million EUR, roughly 781 million CZK. At that point, Tilia had confirmed 26 million EUR, or 634 million CZK. That article's date isn't shown in the results.
 
-**Final size:** In a Forbes Czech year-end interview, Horáková wrote that Tilia Impact Ventures had successfully closed its second fund at thirty m
-… [skrátené, 743 znakov – plné znenie v raw/]
+**Final size:** In a Forbes Czech year-end interview, Horáková wrote that Tilia Impact Ventures had successfully closed its second fund at thirty million euros
+… [skrátené, 731 znakov – plné znenie v raw/]
 ````
 
 </details>

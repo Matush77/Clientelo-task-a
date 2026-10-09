@@ -135,7 +135,7 @@ Today is 2026-10-09.
 30	   {
 31	    "company": "TopMonks",
 32	    "date": "2017-09-05",
-33	    "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/"
+33	    "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/"
 34	   },
 35	   {
 36	    "company": "Leadspicker",
@@ -164,9 +164,9 @@ Today is 2026-10-09.
 59	   }
 60	  ],
 61	  "sources": [
-62	   "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
-63	   "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/",
-64	   "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+62	   "https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+63	   "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/",
+64	   "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
 65	   "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital",
 66	   "https://globalprivatecapital.org/?p=22043",
 67	   "https://www.reflexcapital.com",
@@ -187,8 +187,8 @@ Today is 2026-10-09.
 82	  "ticket": "",
 83	  "total_capital_eur": "81957136",
 84	  "capital_method": "sum_of_1_closed_funds",
-85	  "capital_note": "zhruba dvě 
-… [skrátené, 4066 znakov – plné znenie v raw/]
+85	  "cap
+… [skrátené, 4090 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -219,7 +219,7 @@ Today is 2026-10-09.
 
 ````text
 {
-  "url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+  "url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
   "prompt": "Give word-for-word sentences about fund size (třetí fond, 22 milionů eur), ticket size per startup (kolem jednoho milionu eur), closed funds, and whether the fund is closed or raising. Also article date."
 }
 ````
@@ -266,7 +266,7 @@ Yes. The article says Reflex Capital led the round and became the startup's main
 (Typical investments are around €1 million, sometimes up to €2 million.)
 
 **Closed funds:**
-- Third fund: closed. The article says Fryc "Uzavřel svůj třetí fond," meaning he closed it.
+- Third fund: closed. The article says [REDACTED] "Uzavřel svůj třetí fond," meaning he closed it.
 - Second fund: the article says the third fund's size is "Jde o podobnou částku, jakou měl i druhý fond Reflexu," so it was of similar size (about €22 million). It does not explicitly say whether the second fund is closed.
 - First fund: the article mentions its performance (an average annual return above 30%) but does not say whether it is closed.
 
@@ -290,7 +290,7 @@ Yes. The article says Reflex Capital led the round and became the startup's main
 
 ````text
 {
-  "url": "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+  "url": "https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
   "prompt": "Give word-for-word sentences about Reflex Capital funds: first fund size, second fund size (Reflex 2: 30 to 50 million eur?), what fund investments, ticket size, based in Prague. Also article date."
 }
 ````
@@ -312,8 +312,8 @@ Yes. The article says Reflex Capital led the round and became the startup's main
 
 ````text
 {
-  "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/",
-  "prompt": "Does this say Reflex Capital invested in TopMonks, or Ondrej Fryc personally? Give relevant sentences word-for-word and the date."
+  "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-[REDACTED]e/",
+  "prompt": "Does this say Reflex Capital invested in TopMonks, or Ondrej [REDACTED] personally? Give relevant sentences word-for-word and the date."
 }
 ````
 
@@ -322,12 +322,12 @@ Yes. The article says Reflex Capital led the round and became the startup's main
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-The article says **Reflex Capital** made the investment, not Ondřej Fryc personally. Fryc is described as the fund's founder and general partner.
+The article says **Reflex Capital** made the investment, not [REDACTED] personally. [REDACTED] is described as the fund's founder and general partner.
 
 - **Date:** 5 September 2017 (5. 9. 2017)
 - **Investor:** "kterou získává od českého investičního fondu Reflex Capital." Roughly: TopMonks receives the 35 million CZK from the Czech investment fund Reflex Capital.
-- **Fryc's role:** "Ten provozuje původní zakladatel eshopu MALL.cz, Ondřej Fryc." Roughly: the fund is run by the original founder of the MALL.cz e-shop, Ondřej Fryc.
-- **Title:** The headline's phrasing, "od Reflex Capital Ondřeje Fryce," links the investment to Fryc's fund rather than to him as an individual.
+- **[REDACTED]'s role:** "Ten provozuje původní zakladatel eshopu MALL.cz, [REDACTED]." Roughly: the fund is run by the original founder of the MALL.cz e-shop, [REDACTED].
+- **Title:** The headline's phrasing, "od Reflex Capital Ondřeje [REDACTED]e," links the investment to [REDACTED]'s fund rather than to him as an individual.
 ````
 
 </details>
@@ -370,7 +370,7 @@ The image file names on the page contain upload years, but those reflect when im
 
 ````text
 - **Article date:** 25 October 2018 (the page shows "25. 10. 2018").
-- **First fund size:** Not stated. The article says Fryc and Josef Chvojka founded the first fund as Spread Capital, and other partners joined later.
+- **First fund size:** Not stated. The article says [REDACTED] and Josef Chvojka founded the first fund as Spread Capital, and other partners joined later.
 - **Second fund (Reflex 2) size:** The article says the fund should target "od 30 do 50 milionů eur, v přepočtu tedy až 1,3 miliardy korun." Earlier, it had a plan for up to 80 million euros.
 - **Investments:** Recent Reflex Capital investments include Productboard, Fruitisimo, and Bushman. It also invested 10 million CZK in ShopSys, and the article links an investment in Spaceti made together with Fast Forward, but the body text gives no amount for it.
 - **Ticket size:** Not stated. The article says Reflex 2 plans to invest in 20 to 25 companies.
@@ -394,7 +394,7 @@ The image file names on the page contain upload years, but those reflect when im
 
 ````text
 {
-  "query": "Reflex Capital SE Ondřej Fryc fond celkem spravuje milionů eur první druhý třetí fond",
+  "query": "Reflex Capital SE [REDACTED] fond celkem spravuje milionů eur první druhý třetí fond",
   "mode": "standard"
 }
 ````
@@ -416,12 +416,12 @@ The image file names on the page contain upload years, but those reflect when im
 <details><summary>↳ výsledok nástroja</summary>
 
 ````text
-Web search results for query: "Reflex Capital SE Ondřej Fryc fond celkem spravuje milionů eur první druhý třetí fond"
+Web search results for query: "Reflex Capital SE [REDACTED] fond celkem spravuje milionů eur první druhý třetí fond"
 
-Links: [{"title":"ondrej fryc reflex capital otevre dalsi fond","url":"https://www.newstream.cz/money/ondrej-fryc-reflex-capital-otevre-dalsi-fond"},{"title":"Fryc otevírá druhý fond. Nabídne až osmdesát milionů eur start-upům","url":"https://www.e15.cz/byznys/finance-a-bankovnictvi/fryc-otevira-druhy-fond-nabidne-az-osmdesat-milionu-eur-start-upum-1345270"},{"title":"Valuace startupů spadly hodně, mají už ale aspoň realističtější požadavky, říká Ondřej Fryc","url":"https://cc.cz/valuace-startupu-spadly-hodne-maji-uz-ale-aspon-realistictejsi-pozadavky-rika-ondrej-fryc/"},{"title":"ondrej fryc","url":"https://www.newstream.cz/stitek/ondrej-fryc"},{"title":"Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Nová síla pro Reflex Capital Ondřeje Fryce. Ve třetím fondu má na startupy přes půl miliardy","url":"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"},{"title":"Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Ondřej Fryc: Past zvaná „valuace“ aneb pozor na likvidační preference při financování startupu","url":"https://cc.cz/ondrej-fryc-past-zvana-valuace-aneb-pozor-na-likvidacni-preference-pri-financovani-startupu/"},{"title":"ondrej fryc si k vanocum nadelil dalsi startup jeho reflex capital investovala do ppc bee","url":"https://forbes.cz/ondrej-fryc-si-k-vanocum-nadelil-dalsi-startup-jeho-reflex-capital-investovala-do-ppc-bee/"}]
+Links: [{"title":"ondrej [REDACTED] reflex capital otevre dalsi fond","url":"https://www.newstream.cz/money/ondrej-[REDACTED]-reflex-capital-otevre-dalsi-fond"},{"title":"[REDACTED] otevírá druhý fond. Nabídne až osmdesát milionů eur start-upům","url":"https://www.e15.cz/byznys/finance-a-bankovnictvi/[REDACTED]-otevira-druhy-fond-nabidne-az-osmdesat-milionu-eur-start-upum-1345270"},{"title":"Valuace startupů spadly hodně, mají už ale aspoň realističtější požadavky, říká [REDACTED]","url":"https://cc.cz/valuace-startupu-spadly-hodne-maji-uz-ale-aspon-realistictejsi-pozadavky-rika-ondrej-[REDACTED]/"},{"title":"ondrej [REDACTED]","url":"https://www.newstream.cz/stitek/ondrej-[REDACTED]"},{"title":"Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Nová síla pro Reflex Capital Ondřeje [REDACTED]e. Ve třetím fondu má na startupy přes půl miliardy","url":"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"},{"title":"Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"[REDACTED]: Past zvaná „valuace“ aneb pozor na likvidační preference při financování startupu","url":"https://cc.cz/ondrej-[REDACTED]-past-zvana-valuace-aneb-pozor-na-likvidacni-preference-pri-financovani-startupu/"},{"title":"ondrej [REDACTED] si k vanocum nadelil dalsi startup jeho reflex capital investovala do ppc bee","url":"https://forbes.cz/ondrej-[REDACTED]-si-k-vanocum-nadelil-dalsi-startup-jeho-reflex-capital-investovala-do-ppc-bee/"}]
 
-Links: [{"title":"Nová síla pro Reflex Capital Ondřeje Fryce. Ve třetím fondu má na startupy přes půl miliardy","url":"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"},{"title":"ondrej fryc reflex capital otevre dalsi fond","url":"https://www.newstream.cz/money/ondrej-fryc-reflex-capital-otevre-dalsi-fond"},{"title":"Fryc otevírá druhý fond. Nabídne až osmdesát milionů eur start-upům","url":"https://www.e15.cz/byznys/finance-a-bankovnictvi/fryc-otevira-druhy-fond-nabidne-az-osmdesat-milionu-eur-start-upum-1345270"},{"title":"Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Miliardář Ondřej Fryc spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"techmonitor.ai","url":"https://techmonito
-… [skrátené, 3052 znakov – plné znenie v raw/]
+Links: [{"title":"Nová síla pro Reflex Capital Ondřeje [REDACTED]e. Ve třetím fondu má na startupy přes půl miliardy","url":"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"},{"title":"ondrej [REDACTED] reflex capital otevre dalsi fond","url":"https://www.newstream.cz/money/ondrej-[REDACTED]-reflex-capital-otevre-dalsi-fond"},{"title":"[REDACTED] otevírá druhý fond. Nabídne až osmdesát milionů eur start-upům","url":"https://www.e15.cz/byznys/finance-a-bankovnictvi/[REDACTED]-otevira-druhy-fond-nabidne-az-osmdesat-milionu-eur-start-upum-1345270"},{"title":"Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/miliardar-ondrej-[REDACTED]-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/"},{"title":"Miliardář [REDACTED] spouští nový investiční fond. Do startupů chce vložit až 1,3 miliardy korun","url":"https://cc.cz/2018/10/miliardar-ondrej-[REDACTED]-spo
+… [skrátené, 3243 znakov – plné znenie v raw/]
 ````
 
 </details>
@@ -1139,8 +1139,8 @@ Links: [{"title":"Obchodný register","url":"https://www.najpravo.sk/registre/ob
 ````text
 {
   "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\data\\review\\sonnet\\s_b02.json",
-  "content": "[\n  {\n    \"review_id\": \"R06\",\n    \"real_investor\": {\"answer\": \"yes\", \"why\": \"Reflex Capital is a Prague-based fund that invests its own and partners' money in startups (e.g. EUR 2.3m seed in Digitoo, EUR 2m seed in Leadspicker, CZK 35m in TopMonks).\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"active_36m\": {\"answer\": \"yes\", \"why\": \"Digitoo seed round led by Reflex Capital dated 14 Dec 2023, after the 2023-10-09 cut-off (the article misspells the name as 'Relfex').\", \"source_url\": \"https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital\"},\n    \"type_vc\": {\"answer\": \"yes\", \"why\": \"Early-stage startup VC fund (seed/Series A, several funds, ticket around EUR 1-2m).\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"hq_cz_sk\": {\"answer\": \"yes\", \"why\": \"European office of Reflex Capital SE at Rasinovo nabrezi 2000/78, Praha 2 (a US office in San Francisco also exists, but the fund is run from Prague).\", \"source_url\": \"https://www.reflexcapital.com\"},\n    \"sources_support\": {\"answer\": \"yes\", \"why\": \"Digitoo (Dec 2023), Leadspicker (May 2020, with J&T Ventures) and TopMonks (Sep 2017) are each shown with a matching date; the other portfolio entries are undated and only appear on the portfolio page.\", \"source_url\": \"https://globalprivatecapital.org/?p=22043\"},\n    \"sectors_ok\": {\"answer\": \"not_given\", \"why\": \"No sectors listed in the record.\", \"source_url\": \"\"},\n    \"ticket_ok\": {\"answer\": \"yes\", \"why\": \"Article quotes 'investuje castky kolem jednoho milionu eur, nekdy ke hranici dvou milionu' for the fund's typical cheque.\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"capital_ok\": {\"answer\": \"no\", \"why\": \"EUR 22m is only the closed third fund; Reflex 2 was a similar size (~EUR 20m) and Reflex 1 also exists, so the sum of closed funds is clearly higher than 22m, and the site itself says EUR 150M invested. The 'Reflex 2: 30-50m' figure was a 2018 target, not capital.\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"identity_ok\": {\"answer\": \"yes\", \"why\": \"ARES: Reflex Capital SE, ICO 24269158, seat Rasinovo nabrezi 2000/78, Praha 2, matching the address on reflexcapital.com.\", \"source_url\": \"https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24269158\"},\n    \"overall\": \"include\"\n  },\n  {\n    \"review_id\": \"R07\",\n    \"real_investor\": {\"answer\": \"yes\", \"why\": \"JSK Investments SICAV invests equity into startups (EUR 420k pre-seed in Elin.ai; participation in Andromeda Surgical's USD 15m Series A).\", \"source_url\": \"https://www.lupa.cz/aktuality/jsk-investments-simony-[REDACTED]ove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/\"},\n    \"active_36m\": {\"answer\": \"yes\", \"why\": \"Elin.ai pre-seed (article 9 Dec 2024) and Andromeda Surgical Series A (reported Sep 2026) are both after 2023-10-09.\", \"source_url\": \"https://www.lupa.cz/aktuality/jsk-investments-simony-[REDACTED]ove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/\"},\n    \"type_vc\": {\"answer\": \"yes\", \"why\": \"The SICAV has a Venture Capital sub-fund taking minority stakes in early-stage startups (it also has a separate Private & Growth Equity sub-fund); the observed deals are VC-type.\", \"source_url\": \"https://cc.cz/investujte-jako-simona-[REDACTED]ova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/\"},\n    \"hq_cz_sk\": {\"answer\": \"yes\", \"why\": \"Czech SICAV; website lists Klimentska 1216/46, 
-… [skrátené, 7371 znakov – plné znenie v raw/]
+  "content": "[\n  {\n    \"review_id\": \"R06\",\n    \"real_investor\": {\"answer\": \"yes\", \"why\": \"Reflex Capital is a Prague-based fund that invests its own and partners' money in startups (e.g. EUR 2.3m seed in Digitoo, EUR 2m seed in Leadspicker, CZK 35m in TopMonks).\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"active_36m\": {\"answer\": \"yes\", \"why\": \"Digitoo seed round led by Reflex Capital dated 14 Dec 2023, after the 2023-10-09 cut-off (the article misspells the name as 'Relfex').\", \"source_url\": \"https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital\"},\n    \"type_vc\": {\"answer\": \"yes\", \"why\": \"Early-stage startup VC fund (seed/Series A, several funds, ticket around EUR 1-2m).\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"hq_cz_sk\": {\"answer\": \"yes\", \"why\": \"European office of Reflex Capital SE at Rasinovo nabrezi 2000/78, Praha 2 (a US office in San Francisco also exists, but the fund is run from Prague).\", \"source_url\": \"https://www.reflexcapital.com\"},\n    \"sources_support\": {\"answer\": \"yes\", \"why\": \"Digitoo (Dec 2023), Leadspicker (May 2020, with J&T Ventures) and TopMonks (Sep 2017) are each shown with a matching date; the other portfolio entries are undated and only appear on the portfolio page.\", \"source_url\": \"https://globalprivatecapital.org/?p=22043\"},\n    \"sectors_ok\": {\"answer\": \"not_given\", \"why\": \"No sectors listed in the record.\", \"source_url\": \"\"},\n    \"ticket_ok\": {\"answer\": \"yes\", \"why\": \"Article quotes 'investuje castky kolem jednoho milionu eur, nekdy ke hranici dvou milionu' for the fund's typical cheque.\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"capital_ok\": {\"answer\": \"no\", \"why\": \"EUR 22m is only the closed third fund; Reflex 2 was a similar size (~EUR 20m) and Reflex 1 also exists, so the sum of closed funds is clearly higher than 22m, and the site itself says EUR 150M invested. The 'Reflex 2: 30-50m' figure was a 2018 target, not capital.\", \"source_url\": \"https://cc.cz/nova-sila-pro-reflex-capital-ondreje-[REDACTED]e-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/\"},\n    \"identity_ok\": {\"answer\": \"yes\", \"why\": \"ARES: Reflex Capital SE, ICO 24269158, seat Rasinovo nabrezi 2000/78, Praha 2, matching the address on reflexcapital.com.\", \"source_url\": \"https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24269158\"},\n    \"overall\": \"include\"\n  },\n  {\n    \"review_id\": \"R07\",\n    \"real_investor\": {\"answer\": \"yes\", \"why\": \"JSK Investments SICAV invests equity into startups (EUR 420k pre-seed in Elin.ai; participation in Andromeda Surgical's USD 15m Series A).\", \"source_url\": \"https://www.lupa.cz/aktuality/jsk-investments-simony-[REDACTED]ove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/\"},\n    \"active_36m\": {\"answer\": \"yes\", \"why\": \"Elin.ai pre-seed (article 9 Dec 2024) and Andromeda Surgical Series A (reported Sep 2026) are both after 2023-10-09.\", \"source_url\": \"https://www.lupa.cz/aktuality/jsk-investments-simony-[REDACTED]ove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/\"},\n    \"type_vc\": {\"answer\": \"yes\", \"why\": \"The SICAV has a Venture Capital sub-fund taking minority stakes in early-stage startups (it also has a separate Private & Growth Equity sub-fund); the observed deals are VC-type.\", \"source_url\": \"https://cc.cz/investujte-jako-simona-[REDACTED]ova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/\"},\n    \"hq_cz_sk\": {\"answer\": \"yes\", \"why\": \"Czech SICAV; website li
+… [skrátené, 7395 znakov – plné znenie v raw/]
 ````
 
 </details>
