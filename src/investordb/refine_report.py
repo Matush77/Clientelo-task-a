@@ -2,11 +2,63 @@
 
 from __future__ import annotations
 
+import csv
+import json
+from collections import Counter
 from datetime import date
 from pathlib import Path
 
 from investordb.metrics import wilson
-from investordb.refine import JUDGE_DIR, judge_metrics, summary
+from investordb.refine import CLAIMS_GAPFILL, GAP_FIELDS, GAPFILL_DIR, JUDGE_DIR, judge_metrics, summary
+
+GAP_LABEL = {"sectors": "Sektory", "stages": "Štádiá", "ticket": "Tiket", "total_capital": "Celkový kapitál"}
+
+
+def gapfill_section(rows: dict) -> list[str]:
+    """D41: what the gap-filling agent found for the fields the assignment names, and what is not public."""
+    batches = [r for p in sorted((GAPFILL_DIR / "batches").glob("gf_b*.json"))
+               for r in json.loads(p.read_text(encoding="utf-8"))]
+    if not batches or not CLAIMS_GAPFILL.exists():
+        return []
+    with CLAIMS_GAPFILL.open(encoding="utf-8") as f:
+        claims = list(csv.DictReader(f))
+    missing = {b["candidate_id"]: b["missing"] for b in batches}
+    out = ["## 6. Doplnenie chýbajúcich polí (D41)\n",
+           "Zadanie žiada pri každom investorovi sektor, typickú investíciu a jej veľkosť a celkový kapitál. Po spresnení "
+           "niektoré z týchto polí chýbali. Agent Sonnet 5.5 ([pokyn](../prompts/gapfill_agent.md)) hľadal **len "
+           "chýbajúce polia**; sektory smel odvodiť z portfólia (každý odvodený sektor dokladá citácia o firme z "
+           "portfólia a v dátach je označený `inferred`), tiket a kapitál len ak ich zdroj uvádza. Pole, ktoré nenašiel, "
+           "je v stĺpci `not_public` – nie prázdne a nie odhadnuté.\n",
+           "| Pole | Vyplnené pred | Doplnené | Verejne neuvedené | Vyplnené po |\n|---|---|---|---|---|"]
+    for field, col in GAP_FIELDS.items():
+        need = [cid for cid, m in missing.items() if field in m]
+        filled = [cid for cid in need if rows[cid][col]]
+        not_public = [cid for cid in need if field in (rows[cid].get("not_public") or "").split("; ")]
+        before = len(rows) - len(need)
+        out.append(f"| {GAP_LABEL[field]} | {before}/{len(rows)} | +{len(filled)} | {len(not_public)} | "
+                   f"**{before + len(filled)}/{len(rows)}** |")
+    checks = Counter(c["auto_check"] for c in claims)
+    out.append(f"\nStrojová kontrola doplnených tvrdení: " + ", ".join(f"`{k}` {v}" for k, v in checks.most_common())
+               + ".\n")
+    out.append("| Investor | Chýbalo | Výsledok |\n|---|---|---|")
+    for cid, need in missing.items():
+        r = rows[cid]
+        res = []
+        for field in need:
+            col = GAP_FIELDS[field]
+            if r[col]:
+                if field in ("sectors", "stages"):
+                    val = r[field].replace(",", ", ") + (" (odvodené z portfólia)" if r.get(f"{field}_basis") == "inferred" else "")
+                elif field == "ticket":
+                    val = f"{float(r['ticket_min_eur']) / 1e6:.2f} – {float(r['ticket_max_eur'] or r['ticket_min_eur']) / 1e6:.2f} mil. €"
+                else:
+                    val = f"{float(r['total_capital_eur']) / 1e6:.1f} mil. €"
+                res.append(f"{GAP_LABEL[field].lower()}: {val}")
+            else:
+                res.append(f"{GAP_LABEL[field].lower()}: verejne neuvedené")
+        out.append(f"| {r['name']} | {', '.join(GAP_LABEL[f].lower() for f in need)} | {'; '.join(res)} |")
+    out.append("")
+    return out
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "docs" / "REFINEMENT.md"
@@ -143,7 +195,8 @@ def build(result: dict, as_of: date) -> str:
         "merať tou istou kontrolou by však bolo ladenie na testovacích dátach, preto to ostáva ako odporúčanie.\n"
         "- **Identita v registri:** 24/24 vrátane 8 záznamov, ktorých identita sa zmenila vo v3 a ktorých opakovaná "
         "kontrola predtým zlyhala na limite relácie (D36).\n")
-    add("## 6. Obmedzenia\n")
+    lines.extend(gapfill_section(rows))
+    add("## 7. Obmedzenia\n")
     add("- Spresňoval aj kontroloval model tej istej rodiny (Sonnet 5.5). Kontrolór bol iný agent bez prístupu k "
         "výstupu spresnenia a nevedel, ktorá hodnota je nová, chyby oboch však môžu byť korelované. Rozhodujúce je "
         "preto, že každé nové tvrdenie prešlo rovnakými strojovými kontrolami ako zvyšok databázy.\n"

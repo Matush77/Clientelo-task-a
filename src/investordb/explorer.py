@@ -76,10 +76,13 @@ def investor_view(row: dict, before: dict, merged: list[dict], on: str) -> dict:
                           "published": c.get("published_date") or "", "counted": any(c is k for k in cap["counted"])})
     profile = {}
     for field in ("sectors", "stages", "ticket", "investor_type", "hq_country", "identity"):
-        c = next((c for c in ok if c["field"] == field), None)
-        if c:
-            profile[field] = {"url": c["source_url"], "domain": domain(c["source_url"]), "quote": c["quote"],
-                              "published": c.get("published_date") or ""}
+        claims = [c for c in ok if c["field"] == field]
+        if field not in ("sectors", "stages"):
+            claims = claims[:1]  # the rules use the first verified claim of a single-valued field
+        if claims:
+            profile[field] = [{"url": c["source_url"], "domain": domain(c["source_url"]), "quote": c["quote"],
+                               "published": c.get("published_date") or "", "inferred": c.get("derivation") == "inferred"}
+                              for c in claims]
     return {
         "id": row["candidate_id"], "name": row["name"], "legal_name": row["legal_name"], "company_id": row["company_id"],
         "registry_url": row["registry_url"], "hq": row["hq_country"], "website": row["website"],
@@ -95,6 +98,8 @@ def investor_view(row: dict, before: dict, merged: list[dict], on: str) -> dict:
                    "last_date": before["last_investment_date"], "last_company": before["last_investment"],
                    "n_36m": int(before["n_investments_36m"] or 0), "tier": before["tier"], "status": before["status"]},
         "notes": [n for n in (row.get("refine_notes") or "").split("; ") if n],
+        "sectors_basis": row.get("sectors_basis", ""), "stages_basis": row.get("stages_basis", ""),
+        "not_public": [f for f in (row.get("not_public") or "").split("; ") if f],
         "deals": sorted(deals.values(), key=lambda d: d["date"] or "0", reverse=True),
         "funds": sorted(funds, key=lambda f: (not f["counted"], -(f["eur"] or 0))), "profile": profile,
     }
@@ -320,6 +325,8 @@ blockquote.counted { border-left-color: var(--accent) }
 .st-dot::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: currentColor; flex: none }
 .st-final_close, .st-aum { color: var(--ok) } .st-first_close { color: var(--accent) } .st-target { color: var(--warn) } .st- { color: var(--ink-3) }
 .yes { color: var(--ok); font-weight: 700 }
+.basis { display: inline-block; margin-top: 6px; font-size: 13px; font-weight: 600; color: var(--warn) }
+.basis::before { content: "◆ "; font-size: 10px }
 .targets { margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: var(--warn-soft); font-size: 15px }
 
 /* before / after */
@@ -387,6 +394,7 @@ const I18N = {
     colTier: "Úroveň", colTiert: "Úroveň dôkazov A / B", asc: "vzostupne", desc: "zostupne", flip: "kliknutím obrátite poradie", sortBy: "zoradiť podľa tohto stĺpca", refinedMark: "spresnené", dealShort: "obchod", review: "kontrola",
     tierT: "Úroveň dôkazov", reviewT: "Na ručnú kontrolu", none: "Žiadny investor nevyhovuje filtru.", pick: "Vyberte investora v tabuľke.",
     registry: "záznam v registri", toReview: "Na ručnú kontrolu.",
+    inferred: "odvodené z portfólia", notPublic: "verejne neuvedené", notPublicT: "Hľadané v zdrojoch investora aj v tlači, verejne sa neuvádza.",
     kCap: "Celkový kapitál", kCapNone: "zdroje ho neuvádzajú", kLast: "Posledný obchod", kInv: "Investície", kInvSub: n => `${n} za posledných 36 mes.`,
     kTier: "Úroveň dôkazov", tierA: "2+ datované obchody, 2+ zdroje", tierB: "1+ datovaný obchod za 36 mes.",
     hq: "Sídlo", type: "Typ", sectors: "Sektory", stages: "Štádiá", ticket: "Tiket", notGiven: "neuvedené",
@@ -418,6 +426,7 @@ const I18N = {
     colTier: "Tier", colTiert: "Evidence tier A / B", asc: "ascending", desc: "descending", flip: "click to reverse", sortBy: "sort by this column", refinedMark: "refined", dealShort: "deal", review: "review",
     tierT: "Evidence tier", reviewT: "Needs manual review", none: "No investor matches the filter.", pick: "Pick an investor in the table.",
     registry: "registry record", toReview: "Needs manual review.",
+    inferred: "inferred from portfolio", notPublic: "not publicly disclosed", notPublicT: "Searched on the investor's website and in the press; not disclosed publicly.",
     kCap: "Total capital", kCapNone: "not stated in sources", kLast: "Last deal", kInv: "Investments", kInvSub: n => `${n} in the last 36 months`,
     kTier: "Evidence tier", tierA: "2+ dated deals, 2+ sources", tierB: "1+ dated deal in 36 months",
     hq: "HQ", type: "Type", sectors: "Sectors", stages: "Stages", ticket: "Ticket", notGiven: "not stated",
@@ -453,6 +462,8 @@ const EN_PATTERNS = [
   [/^(.*) → EUR kurzom ECB (\S+) \((.*)\)$/, (_, a, r, d) => `${a} → EUR at ECB rate ${r} (${d})`],
   [/^(.*) \(cieľ \/ plán\)$/, (_, f) => `${f} (target / plan)`],
   [/^nespracované$/, () => "not processed"],
+  [/^doplnené: (.*)$/, (_, f) => "filled: " + f.replace("celkový kapitál", "total capital").replace("sektory", "sectors")
+    .replace("štádiá", "stages").replace("tiket", "ticket").replace("odvodené z portfólia", "inferred from portfolio")],
 ];
 const plural = (n, one, few, many) => n === 1 ? one : n >= 2 && n <= 4 ? few : many;
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -583,7 +594,9 @@ function renderSheet() {
   const el = document.getElementById("sheet");
   if (!i) { el.innerHTML = `<p class="empty">${esc(T.pick)}</p>`; return; }
   const b = i.before;
-  const ticket = i.ticket_eur[0] || i.ticket_eur[1] ? `${eur(i.ticket_eur[0])} – ${eur(i.ticket_eur[1])}` : `<span class="muted">${esc(T.notGiven)}</span>`;
+  const missing = f => i.not_public.includes(f) ? `<span class="muted" title="${esc(T.notPublicT)}">${esc(T.notPublic)}</span>` : "–";
+  const basis = b => b === "inferred" ? ` <span class="basis">${esc(T.inferred)}</span>` : "";
+  const ticket = i.ticket_eur[0] || i.ticket_eur[1] ? `${eur(i.ticket_eur[0])} – ${eur(i.ticket_eur[1])}` : missing("ticket");
   const dated = i.deals.filter(d => d.date), undated = i.deals.filter(d => !d.date);
   const cmpRows = [
     [T.cmpCap, `${eur(b.capital)}<small>${esc(method(b.capital_method) || T.notGiven)}</small>`, `${eur(i.capital)}<small>${esc(method(i.capital_method) || T.notGiven)}</small>`, (b.capital ?? null) !== (i.capital ?? null)],
@@ -598,7 +611,7 @@ function renderSheet() {
     </header>
     <div class="sh-body">
       <div class="kpis">
-        <div class="kpi"><span class="k">${esc(T.kCap)}</span><span class="v">${eur(i.capital)}</span><span class="s">${esc(method(i.capital_method) || T.kCapNone)}</span></div>
+        <div class="kpi"><span class="k">${esc(T.kCap)}</span><span class="v">${eur(i.capital)}</span><span class="s">${esc(method(i.capital_method) || (i.not_public.includes("total_capital") ? T.notPublic : T.kCapNone))}</span></div>
         <div class="kpi"><span class="k">${esc(T.kLast)}</span><span class="v">${esc(i.last_date || "–")}</span><span class="s">${esc(i.last_company || "")}</span></div>
         <div class="kpi"><span class="k">${esc(T.kInv)}</span><span class="v">${i.n_inv}</span><span class="s">${esc(T.kInvSub(i.n_36m))}</span></div>
         <div class="kpi"><span class="k">${esc(T.kTier)}</span><span class="v">${i.status === "INCLUDED" ? esc(i.tier) : esc(T.review)}</span><span class="s">${esc(i.tier === "A" ? T.tierA : i.tier === "B" ? T.tierB : "")}</span></div>
@@ -606,8 +619,8 @@ function renderSheet() {
       <dl class="kv">
         <dt>${esc(T.hq)}</dt><dd>${esc(i.hq)}</dd>
         <dt>${esc(T.type)}</dt><dd>${esc(typeText(i) || "–")}</dd>
-        <dt>${esc(T.sectors)}</dt><dd>${i.sectors.length ? `<span class="chips">${i.sectors.map(s => `<span class="chip acc">${esc(T.SECTOR[s] || s)}</span>`).join("")}</span>` : "–"}</dd>
-        <dt>${esc(T.stages)}</dt><dd>${i.stages.length ? `<span class="chips">${i.stages.map(s => `<span class="chip">${esc(T.STAGE[s] || s)}</span>`).join("")}</span>` : "–"}</dd>
+        <dt>${esc(T.sectors)}</dt><dd>${i.sectors.length ? `<span class="chips">${i.sectors.map(s => `<span class="chip acc">${esc(T.SECTOR[s] || s)}</span>`).join("")}</span>${basis(i.sectors_basis)}` : missing("sectors")}</dd>
+        <dt>${esc(T.stages)}</dt><dd>${i.stages.length ? `<span class="chips">${i.stages.map(s => `<span class="chip">${esc(T.STAGE[s] || s)}</span>`).join("")}</span>${basis(i.stages_basis)}` : missing("stages")}</dd>
         <dt>${esc(T.ticket)}</dt><dd>${ticket}</dd>
       </dl>
       ${m.refined ? `<section class="blk"><div class="blk-h"><h3>${esc(T.cmpH)}</h3><span class="n">${esc(T.changes(i.notes.length))}</span></div>
@@ -624,8 +637,8 @@ function renderSheet() {
         ${undated.length ? `<div class="dt-sub">${esc(T.undatedSub)}</div>${dealRows(undated)}` : ""}</div></section>
       <section class="blk"><div class="blk-h"><h3>${esc(T.profH)}</h3><span class="n">${Object.keys(i.profile).length}</span></div>
         <div class="dt prof"><div class="dt-head"><span>${esc(T.pField)}</span><span>${esc(T.pSrc)}</span><span></span></div>
-        ${Object.entries(i.profile).map(([k, s]) => `<details class="dt-row"><summary><span class="strong">${esc(T.PROFILE[k] || k)}</span><span>${esc(s.domain)}</span><span class="tog">${esc(T.quote)}</span></summary>
-          <div class="dt-open">${quotes([{...s, tier: "", context: ""}])}</div></details>`).join("")}</div></section>
+        ${Object.entries(i.profile).map(([k, list]) => `<details class="dt-row"><summary><span class="strong">${esc(T.PROFILE[k] || k)}${list.some(s => s.inferred) ? `<span class="orig">${esc(T.inferred)}</span>` : ""}</span><span>${esc([...new Set(list.map(s => s.domain))].join(", "))}</span><span class="tog">${esc(list.length > 1 ? T.sources(list.length) : T.quote)}</span></summary>
+          <div class="dt-open">${quotes(list.map(s => ({...s, tier: "", context: ""})))}</div></details>`).join("")}</div></section>
     </div>`;
   el.scrollTop = 0;
 }

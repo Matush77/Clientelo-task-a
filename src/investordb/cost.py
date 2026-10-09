@@ -43,7 +43,7 @@ def prices_for(model: str) -> dict[str, float]:
 TOKENS_PER_FETCHED_PAGE = 6000
 
 STAGES = {  # description keywords -> stage (see usage.py / runs.csv)
-    "reviewer": "ai_review", "re-review": "ai_review", "refine": "refinement", "fact-check": "refine_check",
+    "reviewer": "ai_review", "re-review": "ai_review", "refine": "refinement", "fact-check": "refine_check", "gap-fill": "gapfill",
     "verifier": "verifier", "recent-deal": "recent_deal", "evidence": "evidence", "list a": "discovery",
     "list b": "discovery", "lookalike": "discovery", "hq triage": "hq_triage", "duplicate": "duplicate_check",
 }
@@ -180,6 +180,7 @@ STAGE_LABELS = {
     "duplicate_check": "kontrola duplicít", "verifier": "nezávislý AI overovateľ", "pricing_check": "overenie cenníka",
     "ai_review": "slepá AI kontrola vzorky (Sonnet 5.5)", "refinement": "spresnenie zaradených záznamov (Sonnet 5.5)",
     "refine_check": "kontrola faktov pred a po spresnení (Sonnet 5.5)",
+    "gapfill": "doplnenie chýbajúcich polí (Sonnet 5.5)",
 }
 
 
