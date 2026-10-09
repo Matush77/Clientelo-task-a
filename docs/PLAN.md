@@ -142,6 +142,14 @@ Postup má päť vrstiev. Každá chytá iný druh chyby.
    (fuzzy zhoda ≥ 90 %), skontroluje, či hodnota v citácii naozaj je, a overí dátum. Výsledok:
    `ok`, `url_dead`, `quote_not_found`, `value_not_in_quote`, `stale`, `blocked`.
    **Tvrdenie, ktoré neprejde, sa zahodí.** Toto je hlavná ochrana pred „halucináciami“.
+
+   **3b. Významové kontroly (pridané v audite pred ručnou kontrolou, [AUDIT_V2.md](AUDIT_V2.md)).** Pravá citácia
+   ešte neznamená správny výklad. Kód preto ďalej overuje:
+
+   - či je investor v citácii alebo pri nej **menovaný** (priradenie);
+   - či citácia opisuje **obchod**, alebo len zmienku či exit (iba dátum obchodu sa počíta do aktivity);
+   - či je fond **uzavretý**, alebo len cieľ či plán (cieľ sa nepočíta do kapitálu);
+   - či sú sumy **reálne** (kontrola rozumnosti, prevod meny s uvedeným kurzom).
 4. **Pravidlá a skóre** – kód (`rules.py`) aplikuje pravidlá I1–I5 / E1–E9 a pridelí úroveň dôvery:
    - **A**: identita z registra + ≥ 2 datované investície z ≥ 2 nezávislých zdrojov T1–T3, aspoň 1 v posledných 36 mesiacoch;
    - **B**: identita z registra + ≥ 1 datovaná investícia v posledných 36 mesiacoch zo zdroja T1–T3;

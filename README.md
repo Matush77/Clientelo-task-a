@@ -13,9 +13,10 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | | |
 |---|---|
 | Kandidátov z verejných zdrojov | 206 (po deduplikácii), z toho 133 prešlo zberom dôkazov |
-| **Zaradených investorov** | **25** (21 CZ, 4 SK; úroveň dôvery A: 17, B: 8) |
-| Vyradených / mimo rozsahu / na ručnú kontrolu | 65 / 40 / 3 |
-| Tvrdení agentov strojovo overených na zdrojovej stránke | 820 z 852 (96 %) |
+| **Zaradených investorov** | **25** (21 CZ, 4 SK; úroveň dôvery A: 16, B: 9) |
+| Vyradených / mimo rozsahu / na ručnú kontrolu | 70 / 35 / 3 |
+| Tvrdení agentov strojovo overených na zdrojovej stránke | 808 z 852 (95 %) |
+| Audit pred ručnou kontrolou (v1 → v2) | 9 kategórií chýb vo výklade pravých citácií, opravené pravidlami – [AUDIT_V2.md](docs/AUDIT_V2.md) |
 | Náklad AI na celý pilot (Claude Haiku 5.5, prepočet na ceny API) | ~9 USD |
 | Odhad pre celý svet (1. rok, základný scenár) | pozri [COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
 

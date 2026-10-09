@@ -111,6 +111,21 @@ správne ju ignorovali – prompt im zakazoval zapisovať súbory.
 | C37 | **ja + Claude** | V správe commitu pri zmrazení dát bolo „19 tier A, 6 tier B“, skutočnosť je **17 A, 8 B** – čísla v správe som napísal bez opätovného prečítania dát | kontrola súhrnu z dát hneď po zmrazení | dáta sú správne, chybná je len správa commitu; históriu po zverejnení neprepisujem, chyba je zdokumentovaná tu |
 | C38 | Overenie cenníka | Citácie z cenníka pochádzali z **markdown verzie** stránky (tabuľka s `|`), ale agent uviedol URL **HTML verzie** → 10 z 13 citácií `quote_not_found` | strojová kontrola | overené znovu proti `.md` verzii tej istej stránky: všetky ceny Haiku, vyhľadávanie, fetch a dávková zľava `ok`; ceny Sonnet/Opus (len na porovnanie) zostávajú neoverené |
 
+### Audit pred ručnou kontrolou (v1 → v2)
+
+Podrobne v [AUDIT_V2.md](AUDIT_V2.md).
+
+| # | Kto / čo | Chyba | Ako zachytená | Opatrenie |
+|---|---|---|---|---|
+| C39 | Zber dôkazov + kód | **Citácie pravé, výklad chybný:** plánovaný fond ako kapitál, exit ako investícia, dátum článku ako dátum obchodu, kolo bez menovania investora, rozpätie „od 30 do 50 milionů“ → 30 € | **ja (človek)** pri prezretí formulára: Reflex „30 €“ a Look AI; potom systematický prehľad + zistenia AI overovateľa | deterministické významové kontroly (D31–D33) + kontrola rozumnosti súm |
+| C40 | **ja + Claude (audit)** | Preradenie spravodajských webov thesaasnews.com a raising.fi medzi databázy **bez dôkazu** → 4 skutočné VC vypadli | rozbor každej zmeny stavu v1 → v2 | vrátené; namiesto toho kontrola priradenia investora |
+| C41 | **ja + Claude (audit)** | Vzory kontextu obchodu: „round“ v „Boataround“, „invest“ v „investor“, „investors including“ aj pri syndikáte kola | testy + rozbor zmien (i&i Biotech chybne vypadol) | hranice slov, užší vzor „investori firmy“, regresné testy |
+| C42 | AI overovateľ | (pozitívne) Bez znalosti verdiktov si všimol duplicitu Jet Ventures / Jet Investment a problém dátumov v 13 z 24 záznamov | – | zistenia použité v audite; overovateľ beží znovu na v2 |
+
+**Hlavné ponaučenie pre prezentáciu:** strojová kontrola citácií zachytila vymyslené zdroje a parafrázy, no nie
+**nesprávny výklad pravej citácie**. To odhalil až človek – za dve minúty prezerania formulára. Preto sú v postupe
+obe vrstvy, strojová aj ľudská, a nedajú sa nahradiť jedna druhou.
+
 **Úspešné v3 opatrenia:** postup „najprv stránka portfólia“ zvýšil počet nájdených investícií (KAYA 1 → 6, Depo 1 → 7,
 Neulogy 8); agenti správne rozlišovali minimálny vklad LP do fondu od tiketu do startupu (ZAKA) a objem poradenských
 mandátov od kapitálu (Sušánka). Podiel strojovo potvrdených tvrdení stúpol na ~96 %.
