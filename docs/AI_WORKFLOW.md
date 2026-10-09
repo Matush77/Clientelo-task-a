@@ -108,6 +108,9 @@ správne ju ignorovali – prompt im zakazoval zapisovať súbory.
 | C35 | **ja + Claude (kód)** | Volania registrov bez opakovania a bez ošetrenia chýb – jeden timeout ARES zhodil celý beh | pád behu | opakovanie, cache na disku, zlyhanie = „bez zhody“ |
 | C36 | Zber dôkazov v3 | **Ďalšie pokusy o prompt injection** (Tilia, EVERITA, TCF/Töpfer, Espira, Dealroom) – spolu ~9 počas pilotu; všetky agenti ignorovali | správy agentov | žiadny dopad; dôvod, prečo sa výstup agenta nikdy nepreberá bez strojovej kontroly |
 
+| C37 | **ja + Claude** | V správe commitu pri zmrazení dát bolo „19 tier A, 6 tier B“, skutočnosť je **17 A, 8 B** – čísla v správe som napísal bez opätovného prečítania dát | kontrola súhrnu z dát hneď po zmrazení | dáta sú správne, chybná je len správa commitu; históriu po zverejnení neprepisujem, chyba je zdokumentovaná tu |
+| C38 | Overenie cenníka | Citácie z cenníka pochádzali z **markdown verzie** stránky (tabuľka s `|`), ale agent uviedol URL **HTML verzie** → 10 z 13 citácií `quote_not_found` | strojová kontrola | overené znovu proti `.md` verzii tej istej stránky: všetky ceny Haiku, vyhľadávanie, fetch a dávková zľava `ok`; ceny Sonnet/Opus (len na porovnanie) zostávajú neoverené |
+
 **Úspešné v3 opatrenia:** postup „najprv stránka portfólia“ zvýšil počet nájdených investícií (KAYA 1 → 6, Depo 1 → 7,
 Neulogy 8); agenti správne rozlišovali minimálny vklad LP do fondu od tiketu do startupu (ZAKA) a objem poradenských
 mandátov od kapitálu (Sušánka). Podiel strojovo potvrdených tvrdení stúpol na ~96 %.

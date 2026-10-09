@@ -130,6 +130,13 @@ def cmd_check_db(args: argparse.Namespace) -> None:
         raise SystemExit(1)
 
 
+def cmd_cost(args: argparse.Namespace) -> None:
+    """Write docs/COST_ESTIMATE.md from the pilot's measured usage."""
+    from investordb.cost import write
+
+    print(write())
+
+
 def cmd_report(args: argparse.Namespace) -> None:
     """Compute the pre-registered metrics and write docs/PRECISION_REPORT.md."""
     from investordb.report import write
@@ -172,6 +179,9 @@ def main() -> None:
 
     p = sub.add_parser("sample", help="draw the review sample + blind review form + verifier batches")
     p.set_defaults(func=cmd_sample)
+
+    p = sub.add_parser("cost", help="write docs/COST_ESTIMATE.md from measured usage")
+    p.set_defaults(func=cmd_cost)
 
     p = sub.add_parser("report", help="compute metrics and write docs/PRECISION_REPORT.md")
     p.set_defaults(func=cmd_report)
