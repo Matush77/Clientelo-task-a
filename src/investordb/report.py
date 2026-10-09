@@ -1,7 +1,11 @@
 """Compute the pre-registered metrics (docs/PLAN.md, chapter 9) and write docs/PRECISION_REPORT.md (Slovak).
 
-Inputs: data/review/review_results.csv (human, exported from review.html), data/review/review_key.csv (sample key),
-data/raw/agents/verifier/*.json (AI verifier), data/processed/{claims,investors,decisions,candidates}.csv.
+Who judges each sample record (decision D34):
+  - Claude Sonnet 5.5 reviews all records (data/review/sonnet/*.json),
+  - the human audits a subset - every Sonnet/Haiku disagreement + a random control set
+    (data/review/spotcheck_ids.csv, answers in data/review/spotcheck_results.csv); the human answer wins,
+  - the Haiku verifier (data/raw/agents/verifier/*.json) is the second, independent AI opinion.
+If a full human review exists (data/review/review_results.csv), it is used instead (the original design).
 """
 
 from __future__ import annotations
@@ -41,23 +45,24 @@ def overall(answers: dict) -> str:
     return "cannot_tell"
 
 
-def human_answers() -> dict[str, dict]:
+def human_answers(path: Path) -> dict[str, dict]:
     out = {}
-    for r in _read(REVIEW_DIR / "review_results.csv"):
+    for r in _read(path):
         a = {k: SK.get((r.get(k) or "").strip(), "cannot_tell") for k in PRIMARY + FIELDS}
-        a["minutes"] = r.get("minutes_spent", "")
-        a["note"] = r.get("note", "")
+        a.update(minutes=r.get("minutes_spent", ""), note=r.get("note", ""), by="človek")
         a["overall"] = overall(a)
         out[r["review_id"]] = a
     return out
 
 
-def verifier_answers() -> dict[str, dict]:
+def ai_answers(folder: Path, pattern: str, by: str) -> dict[str, dict]:
     out = {}
-    for path in sorted(VERIFIER_DIR.glob("*.json")):
+    for path in sorted(folder.glob(pattern)):
         for r in json.loads(path.read_text(encoding="utf-8")):
-            a = {k: (r.get(k) or {}).get("answer", "cannot_tell") for k in PRIMARY + FIELDS}
-            a["overall"] = r.get("overall") or overall(a)
+            a = {k: (r.get(k) or {}).get("answer", "cannot_tell") for k in PRIMARY + FIELDS + ["identity_ok"]}
+            a.update(note="; ".join(f"{k}: {(r.get(k) or {}).get('why', '')}" for k in PRIMARY + FIELDS
+                                    if (r.get(k) or {}).get("answer") in ("no", "cannot_tell"))[:400], by=by)
+            a["overall"] = overall(a)
             out[r["review_id"]] = a
     return out
 
@@ -71,24 +76,55 @@ def ci(k: int, n: int) -> str:
     return f"**{k}/{n} = {pct(p)}** (95 % CI {pct(lo)} – {pct(hi)})" if n else "–"
 
 
+def kappa(a: dict, b: dict, ids: list[str]) -> tuple[int, int, float]:
+    both = [r for r in ids if r in a and r in b]
+    agree = sum(a[r]["overall"] == b[r]["overall"] for r in both)
+    decided = [r for r in both if "cannot_tell" not in (a[r]["overall"], b[r]["overall"])]
+    k = cohen_kappa([a[r]["overall"] for r in decided], [b[r]["overall"] for r in decided]) if decided else float("nan")
+    return agree, len(both), k
+
+
 def build() -> str:
     key = {r["review_id"]: r for r in _read(REVIEW_DIR / "review_key.csv")}
-    human, ai = human_answers(), verifier_answers()
+    sonnet = ai_answers(REVIEW_DIR / "sonnet", "s_b*.json", "Sonnet 5.5")
+    haiku = ai_answers(VERIFIER_DIR, "v_b*.json", "Haiku 5.5")
+    human_full = human_answers(REVIEW_DIR / "review_results.csv")
+    human_spot = human_answers(REVIEW_DIR / "spotcheck_results.csv")
+    spot = {r["review_id"]: r for r in _read(REVIEW_DIR / "spotcheck_ids.csv")}
+    final = human_full or {rid: human_spot.get(rid) or sonnet[rid] for rid in key if rid in sonnet or rid in human_spot}
+
     investors = _read(PROCESSED / "investors.csv")
     decisions = _read(PROCESSED / "decisions.csv")
     claims = _read(PROCESSED / "claims.csv")
     candidates = {c["candidate_id"]: c for c in _read(PROCESSED / "candidates.csv")}
+    dec = {d["candidate_id"]: d for d in decisions}
     lines: list[str] = []
     add = lines.append
 
     as_of = investors[0]["as_of"] if investors else "?"
     add("# Meranie presnosti – pilot VC investori CZ + SK\n")
-    add(f"*Generované skriptom `python -m investordb.cli report` z dát zmrazených k `as_of` = {as_of}. "
-        "Metriky sú definované vopred v [PLAN.md](PLAN.md), kap. 9.*\n")
+    add(f"*Generované skriptom `python -m investordb.cli report` z dát zmrazených tagom `pilot-frozen-v2` "
+        f"(`as_of` = {as_of}). Metriky sú definované vopred v [PLAN.md](PLAN.md), kap. 9.*\n")
+
+    # --- who judged
+    add("## 1. Kto hodnotil vzorku\n")
+    if human_full:
+        add(f"Všetkých {len(human_full)} záznamov vzorky ručne overil človek.\n")
+    else:
+        disputed = [r for r, s in spot.items() if s["why_selected"] == "disagreement"]
+        control = [r for r, s in spot.items() if s["why_selected"] == "random_control"]
+        add(f"- **Claude Sonnet 5.5** posúdil všetkých {len(sonnet)} záznamov vzorky naslepo (rovnaké informácie ako "
+            "formulár pre človeka, zdroje si otváral sám) – [pokyn](../prompts/reviewer_agent.md).")
+        add(f"- **Človek** (autor) ručne overil {len(human_spot)} z {len(spot)} vybraných záznamov: všetky, pri "
+            f"ktorých sa Sonnet a Haiku overovateľ nezhodli alebo Sonnet nevedel rozhodnúť ({len(disputed)}), a "
+            f"{len(control)} náhodných kontrolných záznamov. **Kde sa človek a Sonnet líšia, platí odpoveď človeka.**")
+        add(f"- **Claude Haiku 5.5** (nezávislý overovateľ) posúdil tých istých {len(haiku)} záznamov – druhý AI názor.")
+        add("- Rozhodnutie a dôvody: [DECISIONS.md](DECISIONS.md) D34. Zadanie žiada ručne overenú vzorku – úplnú ručnú "
+            "kontrolu nahradila AI kontrola s ľudským auditom; obmedzenie je uvedené v README.\n")
 
     # --- pipeline overview
     status = Counter(d["status"] for d in decisions)
-    add("## 1. Výsledok pipeline\n")
+    add("## 2. Výsledok pipeline\n")
     add("| Stav | Počet |\n|---|---|")
     for s in ("INCLUDED", "REJECTED", "OOS", "NEEDS_REVIEW"):
         add(f"| {s} | {status.get(s, 0)} |")
@@ -96,84 +132,92 @@ def build() -> str:
     add("\nDôvody vyradenia: " + ", ".join(f"{r} {n}×" for r, n in reasons.most_common()) + "\n")
 
     # --- primary metric
-    included_ids = [rid for rid, k in key.items() if k["stratum"] == "included" and rid in human]
-    correct = [rid for rid in included_ids if human[rid]["overall"] == "include"]
-    decided = [rid for rid in included_ids if human[rid]["overall"] != "cannot_tell"]
-    add("## 2. Primárna metrika: presnosť zaradených záznamov\n")
-    add("Záznam je správny, ak kontrolór zo zdrojov potvrdil **všetky štyri**: skutočný investor ∧ aktívny "
+    included_ids = [rid for rid, k in key.items() if k["stratum"] == "included" and rid in final]
+    add("## 3. Primárna metrika: presnosť zaradených záznamov\n")
+    add("Záznam je správny, ak hodnotiteľ zo zdrojov potvrdil **všetky štyri**: skutočný investor ∧ aktívny "
         "v 36 mesiacoch ∧ VC ∧ sídlo CZ/SK.\n")
-    add(f"- Prísne (odpoveď „neviem“ = nepotvrdené): {ci(len(correct), len(included_ids))}")
-    add(f"- Len rozhodnuté záznamy (bez „neviem“): {ci(len(correct), len(decided))}\n")
-    add("| Otázka | Áno | Nie | Neviem |\n|---|---|---|---|")
+    correct = [r for r in included_ids if final[r]["overall"] == "include"]
+    decided = [r for r in included_ids if final[r]["overall"] != "cannot_tell"]
+    add(f"- **Výsledná presnosť** (prísne, „neviem“ = nepotvrdené): {ci(len(correct), len(included_ids))}")
+    add(f"- Len rozhodnuté záznamy (bez „neviem“): {ci(len(correct), len(decided))}")
+    if not human_full and sonnet:
+        s_ok = [r for r in included_ids if sonnet.get(r, {}).get("overall") == "include"]
+        add(f"- Pre porovnanie – len podľa Sonnetu (pred ľudským auditom): {ci(len(s_ok), len(included_ids))}")
+    add("\n| Otázka | Áno | Nie | Neviem |\n|---|---|---|---|")
     for q in PRIMARY:
-        c = Counter(human[rid][q] for rid in included_ids)
+        c = Counter(final[r][q] for r in included_ids)
         add(f"| {q} | {c['yes']} | {c['no']} | {c['cannot_tell']} |")
 
     # --- rejections
-    add("\n## 3. Správnosť vyradenia\n")
-    add("Vyradenie je správne, ak kontrolór pri aspoň jednej zo štyroch otázok odpovedal „nie“.\n")
-    add("Duplicity (E8) sa hodnotia zvlášť (rozhodnutie D29): vyradenie duplicity je správne, ak ide o skutočného "
-        "investora **a** jeho zlúčený hlavný záznam je v databáze zaradený – firma je tam teda práve raz.\n")
+    add("\n## 4. Správnosť vyradenia\n")
+    add("Vyradenie je správne, ak hodnotiteľ pri aspoň jednej zo štyroch otázok odpovedal „nie“. Duplicity (E8) sa "
+        "hodnotia zvlášť (D29): vyradenie je správne, ak ide o skutočného investora a jeho zlúčený hlavný záznam je "
+        "zaradený.\n")
     add("| Vrstva | Správne vyradené |\n|---|---|")
-    dec = {d["candidate_id"]: d for d in decisions}
     for stratum, label in (("real_reject", "skutočné vyradené záznamy (bez duplicít)"),
                            ("control_reject", "kontrolná sada (návnady)")):
-        ids = [rid for rid, k in key.items() if k["stratum"] == stratum and rid in human and k["reason"] != "E8"]
-        ok = [rid for rid in ids if human[rid]["overall"] == "exclude"]
+        ids = [r for r, k in key.items() if k["stratum"] == stratum and r in final and k["reason"] != "E8"]
+        ok = [r for r in ids if final[r]["overall"] == "exclude"]
         add(f"| {label} | {ci(len(ok), len(ids))} |")
-    dups = [rid for rid, k in key.items() if k["reason"] == "E8" and rid in human]
+    dups = [r for r, k in key.items() if k["reason"] == "E8" and r in final]
     if dups:
         def primary_included(rid: str) -> bool:
             expl = dec.get(key[rid]["candidate_id"], {}).get("explanation", "")
             primary = expl.split("duplicate of ")[-1].split(" ")[0] if "duplicate of" in expl else ""
             return dec.get(primary, {}).get("status") == "INCLUDED"
-        ok = [rid for rid in dups if human[rid]["real_investor"] == "yes" and primary_included(rid)]
+        ok = [r for r in dups if final[r]["real_investor"] == "yes" and primary_included(r)]
         add(f"| duplicity (E8) – firma je v databáze cez zlúčený záznam | {ci(len(ok), len(dups))} |")
 
     # --- fields
-    add("\n## 4. Presnosť a vyplnenosť polí\n")
+    add("\n## 5. Presnosť a vyplnenosť polí (zaradené záznamy)\n")
     add("| Pole | Presnosť (áno / áno+nie) | Vyplnenosť v databáze |\n|---|---|---|")
     fill = {"sectors_ok": "sectors", "ticket_ok": "ticket_min_eur", "capital_ok": "total_capital_eur"}
     for q in FIELDS:
-        c = Counter(human[rid][q] for rid in included_ids)
-        n = c["yes"] + c["no"]
+        c = Counter(final[r][q] for r in included_ids)
         filled = f"{sum(1 for i in investors if i.get(fill[q]))}/{len(investors)}" if q in fill else "–"
-        add(f"| {q} | {ci(c['yes'], n)} | {filled} |")
+        add(f"| {q} | {ci(c['yes'], c['yes'] + c['no'])} | {filled} |")
+    if sonnet:
+        c = Counter(sonnet[r].get("identity_ok", "cannot_tell") for r in included_ids if r in sonnet)
+        add(f"| identity_ok (len Sonnet) | {ci(c['yes'], c['yes'] + c['no'])} | – |")
 
     # --- automatic checks
     checks = Counter(c["auto_check"] for c in claims)
     total = sum(checks.values())
-    add("\n## 5. Strojová kontrola citácií (všetky tvrdenia agentov)\n")
-    add(f"{total} tvrdení: " + ", ".join(f"`{k}` {v} ({pct(v / total)})" for k, v in checks.most_common()) + "\n")
+    inv = [c for c in claims if c["field"] == "investments" and c["auto_check"] == "ok"]
+    add("\n## 6. Strojové kontroly (všetky tvrdenia agentov)\n")
+    add(f"{total} tvrdení: " + ", ".join(f"`{k}` {v} ({pct(v / total)})" for k, v in checks.most_common()) + ".")
+    add(f"Z {len(inv)} overených investičných tvrdení: kontext obchodu "
+        + ", ".join(f"`{k}` {v}" for k, v in Counter(c.get("deal_context", "") for c in inv).most_common())
+        + "; priradenie investora "
+        + ", ".join(f"`{k}` {v}" for k, v in Counter(c.get("attributed", "") for c in inv).most_common()) + ".\n")
 
-    # --- AI verifier vs human
-    both = [rid for rid in key if rid in human and rid in ai]
-    add("## 6. Zhoda AI overovateľa s človekom\n")
-    if both:
-        agree = sum(human[r]["overall"] == ai[r]["overall"] for r in both)
-        decided_both = [r for r in both if "cannot_tell" not in (human[r]["overall"], ai[r]["overall"])]
-        kappa = cohen_kappa([human[r]["overall"] for r in decided_both], [ai[r]["overall"] for r in decided_both]) \
-            if decided_both else float("nan")
-        add(f"- Zhoda celkového verdiktu: {ci(agree, len(both))}")
-        add(f"- Cohenovo κ (len záznamy, kde obaja rozhodli, n = {len(decided_both)}): **{kappa:.2f}**\n")
-        disagree = [r for r in both if human[r]["overall"] != ai[r]["overall"]]
-        if disagree:
-            add("| Záznam | Človek | AI | Poznámka človeka |\n|---|---|---|---|")
-            for r in disagree:
-                add(f"| {r} | {human[r]['overall']} | {ai[r]['overall']} | {human[r]['note']} |")
-    else:
-        add("*Výsledky overovateľa zatiaľ nie sú k dispozícii.*")
+    # --- agreement
+    add("## 7. Zhoda hodnotiteľov\n")
+    add("| Dvojica | Zhoda celkového verdiktu | Cohenovo κ (rozhodnuté záznamy) |\n|---|---|---|")
+    pairs = [("Haiku overovateľ vs. výsledok", haiku, final, list(key))]
+    if sonnet:
+        pairs.append(("Haiku overovateľ vs. Sonnet", haiku, sonnet, list(key)))
+    if human_spot:
+        ctrl = [r for r, s in spot.items() if s["why_selected"] == "random_control"]
+        disp = [r for r, s in spot.items() if s["why_selected"] == "disagreement"]
+        pairs += [("Sonnet vs. človek – náhodné kontrolné záznamy", sonnet, human_spot, ctrl),
+                  ("Sonnet vs. človek – sporné záznamy", sonnet, human_spot, disp)]
+    for label, a, b, ids in pairs:
+        agree, n, k = kappa(a, b, ids)
+        add(f"| {label} | {ci(agree, n)} | {k:.2f} |" if n else f"| {label} | – | – |")
+    add("\nZhoda Sonneta s človekom na **náhodných** kontrolných záznamoch je nestranný odhad spoľahlivosti AI kontroly; "
+        "na sporných záznamoch ukazuje, kto mal pri ťažkých prípadoch pravdu.\n")
 
     # --- coverage
-    add("\n## 7. Odhad úplnosti (capture–recapture)\n")
+    add("## 8. Odhad úplnosti (capture–recapture)\n")
 
-    def members(inv: dict) -> list[str]:  # a record merged from duplicates was "found" if any member was
-        expl = dec.get(inv["candidate_id"], {}).get("explanation", "")
+    def members(i: dict) -> list[str]:  # a record merged from duplicates was "found" if any member was
+        expl = dec.get(i["candidate_id"], {}).get("explanation", "")
         extra = expl.split("[merged:")[-1].rstrip("]").split(",") if "[merged:" in expl else []
-        return [inv["candidate_id"]] + [m.strip() for m in extra]
+        return [i["candidate_id"]] + [m.strip() for m in extra]
 
-    def found(inv: dict, col: str) -> bool:
-        return any(candidates.get(m, {}).get(col) == "1" for m in members(inv))
+    def found(i: dict, col: str) -> bool:
+        return any(candidates.get(m, {}).get(col) == "1" for m in members(i))
 
     in_a = sum(found(i, "in_list_a") for i in investors)
     in_b = sum(found(i, "in_list_b") for i in investors)
@@ -181,29 +225,29 @@ def build() -> str:
     if both_ab:
         n, lo, hi = chapman(in_a, in_b, both_ab)
         add(f"Zaradení investori nájdení v zozname A (štruktúrované zdroje): {in_a}, v zozname B (správy o kolách): "
-            f"{in_b}, v oboch: {both_ab}. Chapmanov odhad celkového počtu: **{n:.0f}** (95 % CI {lo:.0f} – {hi:.0f}). "
-            f"Databáza teda pokrýva približne **{pct(len(investors) / n)}** odhadnutej populácie. Ide o dolný odhad "
-            "populácie – oba zoznamy uprednostňujú viditeľných investorov.\n")
-    else:
-        add("Žiadny zaradený investor nie je v oboch zoznamoch – odhad nie je možný.\n")
+            f"{in_b}, v oboch: {both_ab}. Chapmanov odhad počtu aktívnych VC investorov so sídlom v CZ/SK: "
+            f"**{n:.0f}** (95 % CI {lo:.0f} – {hi:.0f}). Databáza pokrýva približne **{pct(len(investors) / n)}**. "
+            "Ide o dolný odhad populácie (a teda horný odhad pokrytia) – oba zoznamy uprednostňujú viditeľných "
+            "investorov.\n")
 
     # --- effort
-    minutes = [float(h["minutes"]) for h in human.values() if str(h["minutes"]).strip()]
-    add("## 8. Čas ručnej kontroly\n")
-    if minutes:
-        add(f"{len(minutes)} záznamov, priemer **{statistics.mean(minutes):.1f} min**, medián "
-            f"{statistics.median(minutes):.1f} min na záznam (vstup pre odhad nákladov).\n")
+    minutes = [float(h["minutes"]) for h in (human_full or human_spot).values() if str(h["minutes"]).strip()]
+    add("## 9. Čas ručnej kontroly\n")
+    add(f"{len(minutes)} záznamov, priemer **{statistics.mean(minutes):.1f} min**, medián "
+        f"{statistics.median(minutes):.1f} min na záznam (vstup pre odhad nákladov).\n" if minutes
+        else "Čas zatiaľ nie je k dispozícii.\n")
 
     # --- errors
-    add("## 9. Chyby nájdené ručnou kontrolou\n")
-    errors = [(rid, key[rid]) for rid in key if rid in human and (
-        (key[rid]["stratum"] == "included" and human[rid]["overall"] != "include")
-        or (key[rid]["stratum"] != "included" and key[rid]["reason"] != "E8" and human[rid]["overall"] != "exclude"))]
+    add("## 10. Záznamy, pri ktorých sa výsledok líši od pipeline\n")
+    errors = [(r, key[r]) for r in key if r in final and (
+        (key[r]["stratum"] == "included" and final[r]["overall"] != "include")
+        or (key[r]["stratum"] != "included" and key[r]["reason"] != "E8" and final[r]["overall"] != "exclude"))]
     if errors:
-        add("| Záznam | Vrstva | Pipeline | Človek | Poznámka |\n|---|---|---|---|---|")
-        for rid, k in errors:
-            add(f"| {rid} ({k['candidate_id']}) | {k['stratum']} | {k['status']} {k['reason']} | "
-                f"{human[rid]['overall']} | {human[rid]['note']} |")
+        add("| Záznam | Vrstva | Pipeline | Výsledok | Kto | Zdôvodnenie |\n|---|---|---|---|---|---|")
+        for r, k in errors:
+            name = dec.get(k["candidate_id"], {}).get("name", "")
+            add(f"| {r} {name} ({k['candidate_id']}) | {k['stratum']} | {k['status']} {k['reason']} | "
+                f"{final[r]['overall']} | {final[r]['by']} | {final[r]['note'][:300]} |")
     else:
         add("Žiadne.")
     return "\n".join(lines) + "\n"

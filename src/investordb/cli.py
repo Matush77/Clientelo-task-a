@@ -156,6 +156,13 @@ def cmd_sample(args: argparse.Namespace) -> None:
         print(p)
 
 
+def cmd_spotcheck(args: argparse.Namespace) -> None:
+    """Build the human spot-check form from the Sonnet review and the Haiku verifier (D34)."""
+    from investordb.sample import build_spotcheck
+
+    print(build_spotcheck())
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="investordb")
     sub = parser.add_subparsers(required=True)
@@ -182,6 +189,9 @@ def main() -> None:
 
     p = sub.add_parser("sample", help="draw the review sample + blind review form + verifier batches")
     p.set_defaults(func=cmd_sample)
+
+    p = sub.add_parser("spotcheck", help="build the human spot-check form (Sonnet vs Haiku disagreements + random)")
+    p.set_defaults(func=cmd_spotcheck)
 
     p = sub.add_parser("cost", help="write docs/COST_ESTIMATE.md from measured usage")
     p.set_defaults(func=cmd_cost)

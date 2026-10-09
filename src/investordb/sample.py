@@ -120,10 +120,52 @@ def make_verifier_batches(size: int = 5) -> list[Path]:
     return paths
 
 
-def render_form(records: list[dict]) -> str:
+def _overall(answers: dict) -> str:
+    vals = [(answers.get(k) or {}).get("answer", "cannot_tell") for k, _ in PRIMARY]
+    return "exclude" if "no" in vals else "include" if all(v == "yes" for v in vals) else "cannot_tell"
+
+
+def _ai_answers(folder: Path, pattern: str) -> dict[str, dict]:
+    out = {}
+    for path in sorted(folder.glob(pattern)):
+        for r in json.loads(path.read_text(encoding="utf-8")):
+            out[r["review_id"]] = r
+    return out
+
+
+SPOTCHECK_SEED = 20261009
+
+
+def build_spotcheck(target: int = 10, min_random: int = 3) -> Path:
+    """Human audit of the AI review (D34): every record where Sonnet and the Haiku verifier disagree (or Sonnet cannot
+    tell) + random agreeing records as an unbiased control. The form does not show why a record was picked."""
+    sonnet = _ai_answers(REVIEW_DIR / "sonnet", "s_b*.json")
+    haiku = _ai_answers(ROOT / "data" / "raw" / "agents" / "verifier", "v_b*.json")
+    records = {r["review_id"]: r for r in json.loads((REVIEW_DIR / "review_records.json").read_text(encoding="utf-8"))}
+    disputed = sorted(rid for rid in records if rid in sonnet and (
+        _overall(sonnet[rid]) == "cannot_tell" or _overall(sonnet[rid]) != _overall(haiku.get(rid, {}))))
+    agreeing = sorted(rid for rid in records if rid not in disputed)
+    n_random = max(min_random, target - len(disputed))
+    control = random.Random(SPOTCHECK_SEED).sample(agreeing, min(n_random, len(agreeing)))
+    picked = disputed + control
+    random.Random(SPOTCHECK_SEED).shuffle(picked)
+    with (REVIEW_DIR / "spotcheck_ids.csv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["review_id", "why_selected", "sonnet_overall", "haiku_overall"])
+        for rid in picked:
+            w.writerow([rid, "disagreement" if rid in disputed else "random_control",
+                        _overall(sonnet.get(rid, {})), _overall(haiku.get(rid, {}))])
+    path = REVIEW_DIR / "spotcheck.html"
+    path.write_text(render_form([records[rid] for rid in picked], key="investordb-spotcheck-v2",
+                                filename="spotcheck_results.csv"), encoding="utf-8")
+    return path
+
+
+def render_form(records: list[dict], key: str = "investordb-review-v2", filename: str = "review_results.csv") -> str:
     questions = json.dumps({"primary": PRIMARY, "secondary": SECONDARY}, ensure_ascii=False)
     data = json.dumps(records, ensure_ascii=False)
-    return TEMPLATE.replace("__DATA__", data).replace("__QUESTIONS__", questions).replace("__N__", str(len(records)))
+    return (TEMPLATE.replace("__DATA__", data).replace("__QUESTIONS__", questions).replace("__N__", str(len(records)))
+            .replace("investordb-review-v2", key).replace("review_results.csv", filename))
 
 
 TEMPLATE = """<!doctype html>
