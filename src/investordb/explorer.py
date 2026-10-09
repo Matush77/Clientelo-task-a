@@ -70,7 +70,7 @@ def investor_view(row: dict, before: dict, merged: list[dict], on: str) -> dict:
             v = _value(c)
             size = v.get("size") or v.get("amount") or ""
             eur, approx = _eur(size, v.get("currency"), on)
-            funds.append({"name": v.get("name") or "AUM (spravovaný kapitál)", "size": size, "eur": eur,
+            funds.append({"name": v.get("name") or "", "size": size, "eur": eur,
                           "approx": approx, "status": v.get("status") or ("aum" if c["field"] == "total_capital" else ""),
                           "url": c["source_url"], "domain": domain(c["source_url"]), "quote": c["quote"],
                           "published": c.get("published_date") or "", "counted": any(c is k for k in cap["counted"])})
@@ -174,6 +174,10 @@ button, select, input { font: inherit; color: inherit }
 .eyebrow { font: 600 13px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 10px }
 h1 { font: 800 clamp(26px, 3.2vw, 32px)/1.15 var(--display); letter-spacing: -0.015em; margin: 0; text-wrap: balance }
 .lede { color: var(--ink-2); margin: 10px 0 0; max-width: 64ch }
+.top-r { display: grid; gap: 10px; justify-items: end }
+.lang { height: 36px }
+.lang button { min-width: 48px; font-size: 14px; letter-spacing: .04em }
+@media (max-width: 760px) { .top-r { justify-items: stretch } .lang { justify-self: end } }
 .stats { display: grid; grid-template-columns: repeat(3, minmax(120px, auto)); background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; box-shadow: var(--shadow) }
 .stat { padding: 12px 18px; display: grid; gap: 2px }
 .stat + .stat { border-left: 1px solid var(--rule) }
@@ -193,7 +197,7 @@ h1 { font: 800 clamp(26px, 3.2vw, 32px)/1.15 var(--display); letter-spacing: -0.
 .check input { width: 18px; height: 18px; accent-color: var(--accent); margin: 0 }
 .check:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); color: var(--accent) }
 @media (max-width: 900px) { .tools { grid-template-columns: minmax(0, 1fr) auto } .tools input[type=search] { grid-column: 1 / -1 } }
-@media (max-width: 480px) { .tools { grid-template-columns: minmax(0, 1fr) } .seg { display: grid; grid-template-columns: repeat(3, 1fr) } }
+@media (max-width: 480px) { .tools { grid-template-columns: minmax(0, 1fr) } .tools .seg { display: grid; grid-template-columns: repeat(3, 1fr) } }
 
 /* two panes */
 .grid { display: grid; grid-template-columns: minmax(0, 11fr) minmax(0, 13fr); gap: 20px; align-items: start }
@@ -201,15 +205,16 @@ h1 { font: 800 clamp(26px, 3.2vw, 32px)/1.15 var(--display); letter-spacing: -0.
 .panel { background: var(--sheet); border: 1px solid var(--rule); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden }
 
 /* investor ledger: header and rows share one column template, so every value sits under its heading */
-.ledger { --cols: minmax(0, 1fr) 104px 108px 48px 64px }
+.ledger { --cols: minmax(0, 1fr) 100px 108px 84px 66px }
 .lhead, .row { display: grid; grid-template-columns: var(--cols); column-gap: 12px; align-items: center; padding: 0 16px }
 .lhead { position: sticky; top: 0; z-index: 2; background: var(--raised); border-bottom: 2px solid var(--rule-strong); min-height: 44px }
-.lhead button { border: 0; background: none; padding: 10px 0; font: 700 13px/1.2 var(--body); color: var(--ink-2); cursor: pointer; display: flex; gap: 4px; align-items: center; justify-content: flex-start; text-align: left }
+.lhead button { white-space: nowrap; border: 0; background: none; padding: 10px 0; font: 700 13px/1.2 var(--body); color: var(--ink-2); cursor: pointer; display: flex; gap: 4px; align-items: center; justify-content: flex-start; text-align: left }
 .lhead button.r { justify-content: flex-end; text-align: right }
 .lhead button.c { justify-content: center }
 .lhead button:hover { color: var(--ink) }
 .lhead button[aria-pressed=true] { color: var(--accent) }
-.lhead .arr { font-size: 11px; width: 10px }
+.lhead .arr { font-size: 11px; width: 12px; text-align: center; color: var(--ink-3) }
+.lhead button[aria-pressed=true] .arr { color: var(--accent) }
 .rows { max-height: calc(100vh - 230px); overflow: auto }
 @media (max-width: 1000px) { .rows { max-height: none } }
 .row { width: 100%; min-height: 64px; border: 0; border-bottom: 1px solid var(--rule); background: none; text-align: left; cursor: pointer; padding-block: 10px; position: relative }
@@ -259,7 +264,7 @@ h1 { font: 800 clamp(26px, 3.2vw, 32px)/1.15 var(--display); letter-spacing: -0.
 .legal { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; font-size: 14.5px; color: var(--ink-2) }
 .legal code { font: 500 14.5px var(--mono); color: var(--ink) }
 .banner { margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: var(--warn-soft); color: var(--ink); font-size: 15px }
-.sh-body { padding: 18px 24px 28px }
+.sh-body { padding: 18px 24px 28px; container-type: inline-size }
 .kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--rule); border-radius: 10px; overflow: hidden }
 .kpi { padding: 12px 14px; display: grid; gap: 2px; align-content: start; background: var(--raised) }
 .kpi + .kpi { border-left: 1px solid var(--rule) }
@@ -267,6 +272,7 @@ h1 { font: 800 clamp(26px, 3.2vw, 32px)/1.15 var(--display); letter-spacing: -0.
 .kpi .v { font: 700 20px/1.25 var(--body); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
 .kpi .s { font-size: 13px; color: var(--ink-2); overflow-wrap: anywhere }
 @media (max-width: 640px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)) } .kpi:nth-child(3) { border-left: 0 } .kpi:nth-child(n+3) { border-top: 1px solid var(--rule) } }
+@container (max-width: 760px) { .kpis { grid-template-columns: repeat(2, minmax(0, 1fr)) } .kpi:nth-child(3) { border-left: 0 } .kpi:nth-child(n+3) { border-top: 1px solid var(--rule) } }
 .kv { display: grid; grid-template-columns: 128px minmax(0, 1fr); margin: 16px 0 0; border-top: 1px solid var(--rule) }
 .kv dt, .kv dd { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--rule) }
 .kv dt { font-size: 14px; font-weight: 600; color: var(--ink-2); padding-right: 12px }
@@ -326,7 +332,7 @@ blockquote.counted { border-left-color: var(--accent) }
 .cmp td { font-variant-numeric: tabular-nums; width: 35% }
 .cmp td small { display: block; font-size: 13px; color: var(--ink-2); margin-top: 2px }
 .cmp td.chg { background: var(--warn-soft); font-weight: 700 }
-.cmp td.chg::after { content: "zmenené"; display: block; font: 600 12px var(--body); color: var(--warn); margin-top: 4px }
+.chg-l { display: block; font: 600 12px var(--body); color: var(--warn); margin-top: 4px }
 @media (max-width: 640px) { .cmp th, .cmp td { padding: 8px } .cmp tbody th { white-space: normal; width: 34% } .cmp td { width: 33% } .sh-head, .sh-body { padding-inline: 16px } }
 .notes { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 6px }
 .notes li { padding: 8px 12px; border-radius: 8px; background: var(--raised); font-size: 15px }
@@ -338,24 +344,29 @@ footer { margin-top: 28px; color: var(--ink-2); font-size: 14.5px; max-width: 82
 <div class="wrap">
 <header class="top">
   <div>
-    <p class="eyebrow">Zadanie A · pilot</p>
-    <h1>VC investori so sídlom v Česku a na Slovensku</h1>
-    <p class="lede">Každá hodnota má zdroj, dátum a doslovnú citáciu, ktorú program overil na stránke zdroja. Vyberte investora v tabuľke a rozbaľte riadok, aby ste videli citácie.</p>
+    <p class="eyebrow" id="t-eyebrow"></p>
+    <h1 id="t-h1"></h1>
+    <p class="lede" id="t-lede"></p>
   </div>
-  <div class="stats" id="stats"></div>
+  <div class="top-r">
+    <div class="seg lang" id="lang" role="group" aria-label="Jazyk / Language">
+      <button type="button" data-l="sk" lang="sk" aria-pressed="true">SK</button><button type="button" data-l="en" lang="en" aria-pressed="false">EN</button>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
 </header>
 <div class="tools" role="search">
-  <label class="sr" for="q">Hľadať</label>
-  <input type="search" id="q" placeholder="Hľadať investora, sektor alebo portfóliovú firmu">
-  <div class="seg" id="country" role="group" aria-label="Krajina sídla">
-    <button type="button" data-v="" aria-pressed="true">Všetky</button><button type="button" data-v="CZ" aria-pressed="false">CZ</button><button type="button" data-v="SK" aria-pressed="false">SK</button>
+  <label class="sr" for="q" id="t-qlabel"></label>
+  <input type="search" id="q">
+  <div class="seg" id="country" role="group">
+    <button type="button" data-v="" aria-pressed="true" id="t-all"></button><button type="button" data-v="CZ" aria-pressed="false">CZ</button><button type="button" data-v="SK" aria-pressed="false">SK</button>
   </div>
-  <label class="sr" for="sector">Sektor</label>
-  <select id="sector"><option value="">Všetky sektory</option></select>
-  <label class="check"><input type="checkbox" id="onlychg"> Len zmenené spresnením</label>
+  <label class="sr" for="sector" id="t-seclabel"></label>
+  <select id="sector"></select>
+  <label class="check"><input type="checkbox" id="onlychg"> <span id="t-onlychg"></span></label>
 </div>
 <div class="grid">
-  <section class="panel ledger" aria-label="Investori">
+  <section class="panel ledger" id="ledger">
     <div class="lhead" id="lhead"></div>
     <div class="rows" id="list"></div>
   </section>
@@ -365,141 +376,266 @@ footer { margin-top: 28px; color: var(--ink-2); font-size: 14.5px; max-width: 82
 </div>
 <script>
 const DATA = __DATA__;
-const SECTOR = {ai_data:"AI a dáta",enterprise_saas:"B2B SaaS",fintech_insurtech:"fintech",health_digital:"digitálne zdravie",life_sciences_medtech:"life sciences",deeptech_hardware:"deeptech",cleantech_energy:"cleantech",mobility_logistics:"mobilita",consumer_ecommerce:"spotrebiteľ",edtech:"edtech",proptech_construction:"proptech",agri_food:"agri/food",cybersecurity:"kyberbezpečnosť",media_gaming:"médiá/hry",industry_manufacturing:"priemysel",iot_telecom:"IoT",hr_worktech:"HR tech",travel_hospitality:"cestovanie",govtech_legaltech:"govtech",defense_space:"obrana/vesmír",sector_agnostic:"bez sektorového zamerania"};
-const STAGE = {pre_seed:"pre-seed",seed:"seed",series_a:"séria A",series_b_plus:"séria B+",growth:"growth",buyout:"buyout"};
-const TYPE = {vc:"VC",cvc:"korporátny VC",public_vc:"verejný VC",pe:"PE",real_estate:"nehnuteľnosti",angel_network:"sieť angel investorov",family_office:"family office"};
-const STATUS = {final_close:"uzavretý fond", first_close:"prvé uzavretie", target:"len cieľ", aum:"uvedené AUM", "":"stav neuvedený"};
-const TIER_SRC = {T1:"register / regulátor", T2:"web investora", T3:"tlač"};
-const PROFILE = {sectors:"Sektory", stages:"Štádiá", ticket:"Tiket", investor_type:"Typ", hq_country:"Sídlo", identity:"Identita"};
+const I18N = {
+  sk: {
+    title: "Databáza VC investorov CZ/SK", eyebrow: "Zadanie A · pilot", h1: "VC investori so sídlom v Česku a na Slovensku",
+    lede: "Každá hodnota má zdroj, dátum a doslovnú citáciu, ktorú program overil na stránke zdroja. Vyberte investora v tabuľke a rozbaľte riadok, aby ste videli citácie.",
+    search: "Hľadať", searchPh: "Hľadať investora, sektor alebo portfóliovú firmu", country: "Krajina sídla", all: "Všetky",
+    sector: "Sektor", allSectors: "Všetky sektory", onlyChg: "Len zmenené spresnením", investors: "Investori",
+    statIncl: "zaradených investorov", statPrec: "správne zaradených", statRefined: "stav po spresnení", statFrozen: "zmrazená verzia",
+    colName: "Investor", colCap: "Kapitál", colLast: "Posl. obchod", col36: "Nedávne", col36t: "Nedávne investície: počet za posledných 36 mesiacov (od 9. 10. 2023)",
+    colTier: "Úroveň", colTiert: "Úroveň dôkazov A / B", asc: "vzostupne", desc: "zostupne", flip: "kliknutím obrátite poradie", sortBy: "zoradiť podľa tohto stĺpca", refinedMark: "spresnené", dealShort: "obchod", review: "kontrola",
+    tierT: "Úroveň dôkazov", reviewT: "Na ručnú kontrolu", none: "Žiadny investor nevyhovuje filtru.", pick: "Vyberte investora v tabuľke.",
+    registry: "záznam v registri", toReview: "Na ručnú kontrolu.",
+    kCap: "Celkový kapitál", kCapNone: "zdroje ho neuvádzajú", kLast: "Posledný obchod", kInv: "Investície", kInvSub: n => `${n} za posledných 36 mes.`,
+    kTier: "Úroveň dôkazov", tierA: "2+ datované obchody, 2+ zdroje", tierB: "1+ datovaný obchod za 36 mes.",
+    hq: "Sídlo", type: "Typ", sectors: "Sektory", stages: "Štádiá", ticket: "Tiket", notGiven: "neuvedené",
+    cmpH: "Pred a po spresnení", cmpCol: "Údaj", cmpFrozen: "Zmrazené (v3)", cmpAfter: "Po spresnení", changedLbl: "zmenené",
+    cmpCap: "Celkový kapitál", cmpLast: "Posledný obchod", cmp36: "Nedávne investície (36 mes.)", cmpTier: "Úroveň dôkazov",
+    changes: n => n ? `${n} ${plural(n, "zmena", "zmeny", "zmien")}` : "bez zmeny",
+    fundsH: "Kapitál a fondy", claims: n => `${n} ${plural(n, "tvrdenie", "tvrdenia", "tvrdení")}`, noFunds: "Zdroje veľkosť fondov neuvádzajú.",
+    fFund: "Fond", fEur: "Suma v EUR", fStatus: "Stav · v kapitáli", orig: "pôvodne", counted: "✓ započítané", notCounted: "nezapočítané",
+    quote: "citácia", targets: "Len plánované, do kapitálu sa nepočítajú:", aumName: "AUM (spravovaný kapitál)",
+    dealsH: "Investície", dealsN: (a, b) => `${a} datovaných · ${b} bez dátumu`, dDate: "Dátum", dCo: "Firma", dRound: "Kolo", dAmt: "Suma kola",
+    undatedSub: "V portfóliu, bez dátumu obchodu", noDate: "bez dátumu", sources: n => `${n} ${plural(n, "zdroj", "zdroje", "zdrojov")}`,
+    profH: "Zdroje ostatných údajov", pField: "Údaj", pSrc: "Zdroj", published: "publikované", dealMsg: "správa o obchode",
+    mention: "len zmienka – dátum sa nepočíta", fromRefine: "zo spresnenia",
+    footer: "Zdroj: data/processed/investors_refined.csv a claims*.csv v repozitári Clientelo-task-a. Citácie sú doslovné úryvky z verejných stránok v pôvodnom jazyku, ktoré program overil na stránke zdroja; sumy v EUR prepočítal program kurzom ECB (≈ = približne alebo prepočet z inej meny).",
+    STATUS: {final_close: "uzavretý fond", first_close: "prvé uzavretie", target: "len cieľ", aum: "uvedené AUM", "": "stav neuvedený"},
+    TIER_SRC: {T1: "register / regulátor", T2: "web investora", T3: "tlač"},
+    PROFILE: {sectors: "Sektory", stages: "Štádiá", ticket: "Tiket", investor_type: "Typ", hq_country: "Sídlo", identity: "Identita"},
+    TYPE: {vc: "VC", cvc: "korporátny VC", public_vc: "verejný VC", pe: "PE", real_estate: "nehnuteľnosti", angel_network: "sieť angel investorov", family_office: "family office"},
+    STAGE: {pre_seed: "pre-seed", seed: "seed", series_a: "séria A", series_b_plus: "séria B+", growth: "growth", buyout: "buyout"},
+    SECTOR: {ai_data: "AI a dáta", enterprise_saas: "B2B SaaS", fintech_insurtech: "fintech", health_digital: "digitálne zdravie", life_sciences_medtech: "life sciences", deeptech_hardware: "deeptech", cleantech_energy: "cleantech", mobility_logistics: "mobilita", consumer_ecommerce: "spotrebiteľ", edtech: "edtech", proptech_construction: "proptech", agri_food: "agri/food", cybersecurity: "kyberbezpečnosť", media_gaming: "médiá/hry", industry_manufacturing: "priemysel", iot_telecom: "IoT", hr_worktech: "HR tech", travel_hospitality: "cestovanie", govtech_legaltech: "govtech", defense_space: "obrana/vesmír", sector_agnostic: "bez sektorového zamerania"},
+  },
+  en: {
+    title: "CZ/SK VC Investor Database", eyebrow: "Assignment A · pilot", h1: "VC investors headquartered in Czechia and Slovakia",
+    lede: "Every value has a source, a date and a verbatim quote that a program checked on the source page. Pick an investor in the table and expand a row to see the quotes.",
+    search: "Search", searchPh: "Search investor, sector or portfolio company", country: "Country of HQ", all: "All",
+    sector: "Sector", allSectors: "All sectors", onlyChg: "Only changed by refinement", investors: "Investors",
+    statIncl: "investors included", statPrec: "correctly included", statRefined: "refined data as of", statFrozen: "frozen version",
+    colName: "Investor", colCap: "Capital", colLast: "Last deal", col36: "Recent", col36t: "Recent investments: number in the last 36 months (since 9 Oct 2023)",
+    colTier: "Tier", colTiert: "Evidence tier A / B", asc: "ascending", desc: "descending", flip: "click to reverse", sortBy: "sort by this column", refinedMark: "refined", dealShort: "deal", review: "review",
+    tierT: "Evidence tier", reviewT: "Needs manual review", none: "No investor matches the filter.", pick: "Pick an investor in the table.",
+    registry: "registry record", toReview: "Needs manual review.",
+    kCap: "Total capital", kCapNone: "not stated in sources", kLast: "Last deal", kInv: "Investments", kInvSub: n => `${n} in the last 36 months`,
+    kTier: "Evidence tier", tierA: "2+ dated deals, 2+ sources", tierB: "1+ dated deal in 36 months",
+    hq: "HQ", type: "Type", sectors: "Sectors", stages: "Stages", ticket: "Ticket", notGiven: "not stated",
+    cmpH: "Before and after refinement", cmpCol: "Field", cmpFrozen: "Frozen (v3)", cmpAfter: "Refined", changedLbl: "changed",
+    cmpCap: "Total capital", cmpLast: "Last deal", cmp36: "Recent investments (36 mo)", cmpTier: "Evidence tier",
+    changes: n => n ? `${n} ${n === 1 ? "change" : "changes"}` : "no change",
+    fundsH: "Capital and funds", claims: n => `${n} ${n === 1 ? "claim" : "claims"}`, noFunds: "Sources do not state fund sizes.",
+    fFund: "Fund", fEur: "Amount in EUR", fStatus: "Status · in capital", orig: "as written", counted: "✓ counted", notCounted: "not counted",
+    quote: "quote", targets: "Planned only, not counted as capital:", aumName: "AUM (assets under management)",
+    dealsH: "Investments", dealsN: (a, b) => `${a} dated · ${b} undated`, dDate: "Date", dCo: "Company", dRound: "Round", dAmt: "Round size",
+    undatedSub: "In the portfolio, no deal date", noDate: "no date", sources: n => `${n} ${n === 1 ? "source" : "sources"}`,
+    profH: "Sources of other fields", pField: "Field", pSrc: "Source", published: "published", dealMsg: "deal announcement",
+    mention: "mention only – date not counted", fromRefine: "from refinement",
+    footer: "Source: data/processed/investors_refined.csv and claims*.csv in the Clientelo-task-a repository. Quotes are verbatim excerpts from public pages in their original language, checked by a program on the source page; EUR amounts converted by the program at ECB rates (≈ = approximate or converted from another currency).",
+    STATUS: {final_close: "closed fund", first_close: "first close", target: "target only", aum: "stated AUM", "": "status not stated"},
+    TIER_SRC: {T1: "registry / regulator", T2: "investor's website", T3: "press"},
+    PROFILE: {sectors: "Sectors", stages: "Stages", ticket: "Ticket", investor_type: "Type", hq_country: "HQ", identity: "Identity"},
+    TYPE: {vc: "VC", cvc: "corporate VC", public_vc: "public VC", pe: "PE", real_estate: "real estate", angel_network: "angel network", family_office: "family office"},
+    STAGE: {pre_seed: "pre-seed", seed: "seed", series_a: "Series A", series_b_plus: "Series B+", growth: "growth", buyout: "buyout"},
+    SECTOR: {ai_data: "AI & data", enterprise_saas: "B2B SaaS", fintech_insurtech: "fintech", health_digital: "digital health", life_sciences_medtech: "life sciences", deeptech_hardware: "deeptech", cleantech_energy: "cleantech", mobility_logistics: "mobility", consumer_ecommerce: "consumer", edtech: "edtech", proptech_construction: "proptech", agri_food: "agri/food", cybersecurity: "cybersecurity", media_gaming: "media/gaming", industry_manufacturing: "industry", iot_telecom: "IoT", hr_worktech: "HR tech", travel_hospitality: "travel", govtech_legaltech: "govtech", defense_space: "defense/space", sector_agnostic: "sector-agnostic"},
+  },
+};
+// texts produced by the pipeline in Slovak (refinement notes, capital notes, planned funds) - translated by pattern
+const EN_PATTERNS = [
+  [/^(.*): dátum (\S+) -> (\S+)$/, (_, c, a, b) => `${c}: date ${a} → ${b}`],
+  [/^nový obchod (.*) \((.*)\)$/, (_, c, d) => `new deal ${c} (${d})`],
+  [/^fond (.*) znovu neoverený$/, (_, f) => `fund ${f} not re-verified`],
+  [/^(.*): investor sa na kole nepodieľal$/, (_, c) => `${c}: investor did not take part in the round`],
+  [/^(.*): dátum obchodu sa nepotvrdil$/, (_, c) => `${c}: deal date not confirmed`],
+  [/^(.*): opravený dátum sa nepodarilo overiť$/, (_, c) => `${c}: corrected date could not be verified`],
+  [/^(.*): novšie kolo \((.*)\) sa nepodarilo overiť, pôvodný dátum ostáva$/, (_, c, d) => `${c}: later round (${d}) could not be verified, original date kept`],
+  [/^(.*): zatiaľ len prvé uzavretie (.*)$/, (_, f, a) => `${f}: first close only so far, ${a}`],
+  [/^(.*) → EUR kurzom ECB (\S+) \((.*)\)$/, (_, a, r, d) => `${a} → EUR at ECB rate ${r} (${d})`],
+  [/^(.*) \(cieľ \/ plán\)$/, (_, f) => `${f} (target / plan)`],
+  [/^nespracované$/, () => "not processed"],
+];
+const plural = (n, one, few, many) => n === 1 ? one : n >= 2 && n <= 4 ? few : many;
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
 const link = (u, label) => safeUrl(u) ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(label || u)}</a>` : esc(label || "");
-const eur = (v, approx) => v == null ? "–" : (approx ? "≈ " : "") + (v >= 1e6 ? (v/1e6).toLocaleString("sk", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + " mil. €" : Math.round(v/1e3).toLocaleString("sk") + " tis. €");
-const method = m => !m ? "" : m === "aum_stated" ? "uvedené AUM" : (k => k ? `súčet ${k[1]} ${k[1] === "1" ? "fondu" : "fondov"}` : m)(m.match(/sum_of_(\d+)_closed_funds/));
-const arrow = t => esc(t).replace(/ -&gt; /g, " → ");
-const plural = (n, one, few, many) => n === 1 ? one : n >= 2 && n <= 4 ? few : many;
+
+let lang = "sk";
+const hashLang = (location.hash || "").replace("#", "");
+try { const s = JSON.parse(localStorage.getItem("investor-explorer") || "{}"); if (s.lang) lang = s.lang; } catch (e) {}
+if (hashLang === "sk" || hashLang === "en") lang = hashLang;
+let T = I18N[lang];
+const tr = text => lang === "sk" || !text ? text : (p => p ? text.replace(p[0], p[1]) : text)(EN_PATTERNS.find(p => p[0].test(text)));
+const trList = text => (text || "").split("; ").filter(Boolean).map(tr).join("; ");
+const eur = (v, approx) => {
+  if (v == null) return "–";
+  const pre = approx ? "≈ " : "";
+  if (lang === "en") return pre + (v >= 1e6 ? "€" + (v/1e6).toLocaleString("en", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + "M" : "€" + Math.round(v/1e3).toLocaleString("en") + "k");
+  return pre + (v >= 1e6 ? (v/1e6).toLocaleString("sk", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + " mil. €" : Math.round(v/1e3).toLocaleString("sk") + " tis. €");
+};
+const method = mth => {
+  if (!mth) return "";
+  if (mth === "aum_stated") return lang === "en" ? "stated AUM" : "uvedené AUM";
+  const k = mth.match(/sum_of_(\d+)_closed_funds/);
+  if (!k) return mth;
+  return lang === "en" ? `sum of ${k[1]} ${k[1] === "1" ? "fund" : "funds"}` : `súčet ${k[1]} ${k[1] === "1" ? "fondu" : "fondov"}`;
+};
+const arrow = t => esc(tr(t)).replace(/ -&gt; /g, " → ");
+// each column: how to read its value, how two values compare (ascending), and the direction a first click uses
 const COLS = [
-  {key: "name", label: "Investor", cls: "", cmp: (a, b) => a.name.localeCompare(b.name, "sk")},
-  {key: "capital", label: "Kapitál", cls: "r", cmp: (a, b) => (b.capital ?? -1) - (a.capital ?? -1)},
-  {key: "last", label: "Posl. obchod", cls: "c-date", cmp: (a, b) => (b.last_date || "").localeCompare(a.last_date || "")},
-  {key: "n36", label: "36 m", cls: "r c-n36", title: "Investície za posledných 36 mesiacov", cmp: (a, b) => b.n_36m - a.n_36m},
-  {key: "tier", label: "Úroveň", cls: "c", title: "Úroveň dôkazov A / B", cmp: (a, b) => (a.tier || "Z").localeCompare(b.tier || "Z")},
+  {key: "name", label: "colName", cls: "", first: 1, get: i => i.name, cmp: (a, b) => a.localeCompare(b, lang)},
+  {key: "capital", label: "colCap", cls: "r", first: -1, get: i => i.capital, cmp: (a, b) => a - b},
+  {key: "last", label: "colLast", cls: "c-date", first: -1, get: i => i.last_date || null, cmp: (a, b) => a.localeCompare(b)},
+  {key: "n36", label: "col36", cls: "r c-n36", title: "col36t", first: -1, get: i => i.n_36m, cmp: (a, b) => a - b},
+  {key: "tier", label: "colTier", cls: "c", title: "colTiert", first: 1, get: i => i.status === "INCLUDED" ? i.tier || null : null, cmp: (a, b) => a.localeCompare(b)},
 ];
-let state = {q: "", country: "", sector: "", onlyChg: false, sort: "name", sel: null};
-try { const s = JSON.parse(localStorage.getItem("investor-explorer") || "{}"); if (COLS.some(c => c.key === s.sort)) state.sort = s.sort; } catch (e) {}
+let state = {q: "", country: "", sector: "", onlyChg: false, sort: "name", dir: 1, sel: null};
+try { const s = JSON.parse(localStorage.getItem("investor-explorer") || "{}");
+  if (COLS.some(c => c.key === s.sort)) { state.sort = s.sort; state.dir = s.dir === -1 ? -1 : 1; } } catch (e) {}
+const save = () => { try { localStorage.setItem("investor-explorer", JSON.stringify({sort: state.sort, dir: state.dir, lang})); } catch (e) {} };
+// sort by the active column in the chosen direction; missing values always last, ties by name
+function byColumn(a, b) {
+  const c = COLS.find(x => x.key === state.sort), va = c.get(a), vb = c.get(b);
+  const missing = (va == null) - (vb == null);
+  return missing || (va == null ? 0 : state.dir * c.cmp(va, vb)) || a.name.localeCompare(b.name, lang);
+}
 
 const invs = DATA.investors;
 const m = DATA.meta;
-const sectors = [...new Set(invs.flatMap(i => i.sectors))].sort((a, b) => (SECTOR[a]||a).localeCompare(SECTOR[b]||b, "sk"));
-document.getElementById("sector").innerHTML += sectors.map(s => `<option value="${esc(s)}">${esc(SECTOR[s]||s)}</option>`).join("");
-document.getElementById("stats").innerHTML =
-  `<div class="stat"><b>${invs.filter(i => i.status === "INCLUDED").length}</b><span>zaradených investorov</span></div>` +
-  (m.precision ? `<div class="stat"><b>${esc(m.precision)}</b><span>správne zaradených</span></div>` : "") +
-  `<div class="stat"><b>${esc(m.as_of.split("-").reverse().join(". ").replace(/^0/, ""))}</b><span>${m.refined ? "stav po spresnení" : "zmrazená verzia"}</span></div>`;
-document.getElementById("foot").innerHTML = esc(m.footer || "");
-
+const typeText = i => i.types.map(t => T.TYPE[t] || t).join(", ");
 const changed = i => i.notes.length > 0 || i.status !== "INCLUDED";
+
+function applyLang() {
+  T = I18N[lang];
+  document.documentElement.lang = lang;
+  document.title = T.title;
+  const set = (id, text) => { const el = document.getElementById(id); if (el) el.textContent = text; };
+  set("t-eyebrow", T.eyebrow); set("t-h1", T.h1); set("t-lede", T.lede); set("t-qlabel", T.search);
+  set("t-all", T.all); set("t-seclabel", T.sector); set("t-onlychg", T.onlyChg); set("foot", T.footer);
+  document.getElementById("q").placeholder = T.searchPh;
+  document.getElementById("country").setAttribute("aria-label", T.country);
+  document.getElementById("ledger").setAttribute("aria-label", T.investors);
+  document.querySelectorAll("#lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.l === lang));
+  const sectors = [...new Set(invs.flatMap(i => i.sectors))].sort((a, b) => (T.SECTOR[a] || a).localeCompare(T.SECTOR[b] || b, lang));
+  const sel = document.getElementById("sector");
+  sel.innerHTML = `<option value="">${esc(T.allSectors)}</option>` + sectors.map(s => `<option value="${esc(s)}">${esc(T.SECTOR[s] || s)}</option>`).join("");
+  sel.value = state.sector;
+  const asOf = new Date(m.as_of + "T12:00:00");
+  document.getElementById("stats").innerHTML =
+    `<div class="stat"><b>${invs.filter(i => i.status === "INCLUDED").length}</b><span>${esc(T.statIncl)}</span></div>` +
+    (m.precision ? `<div class="stat"><b>${esc(m.precision)}</b><span>${esc(T.statPrec)}</span></div>` : "") +
+    `<div class="stat"><b>${esc(asOf.toLocaleDateString(lang === "en" ? "en-GB" : "sk", {day: "numeric", month: lang === "en" ? "short" : "numeric", year: "numeric"}))}</b><span>${esc(m.refined ? T.statRefined : T.statFrozen)}</span></div>`;
+  renderList();
+}
 function matches(i) {
   const q = state.q.trim().toLowerCase();
   if (state.country && i.hq !== state.country) return false;
   if (state.sector && !i.sectors.includes(state.sector)) return false;
   if (state.onlyChg && !changed(i)) return false;
   if (!q) return true;
-  return [i.name, i.legal_name, i.company_id, ...i.sectors.map(s => SECTOR[s] || s), ...i.deals.map(d => d.company)].join(" ").toLowerCase().includes(q);
+  return [i.name, i.legal_name, i.company_id, ...i.sectors.flatMap(s => [I18N.sk.SECTOR[s] || s, I18N.en.SECTOR[s] || s]), ...i.deals.map(d => d.company)].join(" ").toLowerCase().includes(q);
 }
 function renderHead() {
-  document.getElementById("lhead").innerHTML = COLS.map(c => `<button type="button" class="${c.cls}" data-sort="${c.key}" aria-pressed="${state.sort === c.key}"${c.title ? ` title="${esc(c.title)}"` : ""}>${c.label}<span class="arr" aria-hidden="true">${state.sort === c.key ? (c.key === "name" ? "▲" : "▼") : ""}</span></button>`).join("");
+  const dirName = state.dir === 1 ? T.asc : T.desc;
+  document.getElementById("lhead").innerHTML = COLS.map(c => {
+    const on = state.sort === c.key;
+    return `<button type="button" class="${c.cls}" data-sort="${c.key}" aria-pressed="${on}" title="${esc((c.title ? T[c.title] + " · " : "") + (on ? dirName + " · " + T.flip : T.sortBy))}">${esc(T[c.label])}<span class="arr" aria-hidden="true">${on ? (state.dir === 1 ? "▲" : "▼") : "↕"}</span></button>`;
+  }).join("");
 }
 function renderList() {
-  const list = invs.filter(matches).sort(COLS.find(c => c.key === state.sort).cmp);
+  const list = invs.filter(matches).sort(byColumn);
   if (!list.some(i => i.id === state.sel)) state.sel = list[0]?.id || null;
   renderHead();
   document.getElementById("list").innerHTML = list.length ? list.map(i => `
     <button type="button" class="row" data-id="${esc(i.id)}" aria-current="${i.id === state.sel}">
-      <span class="nm"><b>${esc(i.name)}</b><small><span class="ty" title="${esc(i.types.map(t => TYPE[t] || t).join(", "))}">${esc(i.hq)} · ${esc(i.types.map(t => TYPE[t] || t).join(", "))}</span><span class="m-date">obchod ${esc(i.last_date || "–")}</span>${changed(i) && m.refined ? '<span class="chg-mark">spresnené</span>' : ""}</small></span>
+      <span class="nm"><b>${esc(i.name)}</b><small><span class="ty" title="${esc(typeText(i))}">${esc(i.hq)} · ${esc(typeText(i))}</span><span class="m-date">${esc(T.dealShort)} ${esc(i.last_date || "–")}</span>${changed(i) && m.refined ? `<span class="chg-mark">${esc(T.refinedMark)}</span>` : ""}</small></span>
       <span class="v num${i.capital == null ? " dim" : ""}">${eur(i.capital)}</span>
       <span class="v mono c-date">${esc(i.last_date || "–")}</span>
       <span class="v num c-n36">${i.n_36m}</span>
-      <span class="tier ${i.status === "INCLUDED" ? esc(i.tier) : "R"}" title="${i.status === "INCLUDED" ? "Úroveň dôkazov " + esc(i.tier) : "Na ručnú kontrolu"}">${i.status === "INCLUDED" ? esc(i.tier) : "kontrola"}</span>
-    </button>`).join("") : `<p class="empty">Žiadny investor nevyhovuje filtru.</p>`;
+      <span class="tier ${i.status === "INCLUDED" ? esc(i.tier) : "R"}" title="${esc(i.status === "INCLUDED" ? T.tierT + " " + i.tier : T.reviewT)}">${i.status === "INCLUDED" ? esc(i.tier) : esc(T.review)}</span>
+    </button>`).join("") : `<p class="empty">${esc(T.none)}</p>`;
   renderSheet();
 }
 function quotes(list) {
   return list.map(s => `<div><blockquote class="${s.counted ? "counted" : ""}">${esc(s.quote)}</blockquote>
-    <div class="meta"><span>${link(s.url, s.domain)}</span>${s.published ? `<span>publikované ${esc(s.published)}</span>` : ""}${s.tier ? `<span>${esc(TIER_SRC[s.tier] || s.tier)}</span>` : ""}${s.context ? `<span>${s.context === "deal" ? "správa o obchode" : "len zmienka – dátum sa nepočíta"}</span>` : ""}${s.refined ? "<span>zo spresnenia</span>" : ""}</div></div>`).join("");
+    <div class="meta"><span>${link(s.url, s.domain)}</span>${s.published ? `<span>${esc(T.published)} ${esc(s.published)}</span>` : ""}${s.tier ? `<span>${esc(T.TIER_SRC[s.tier] || s.tier)}</span>` : ""}${s.context ? `<span>${esc(s.context === "deal" ? T.dealMsg : T.mention)}</span>` : ""}${s.refined ? `<span>${esc(T.fromRefine)}</span>` : ""}</div></div>`).join("");
 }
 function fundRows(i) {
-  if (!i.funds.length) return `<p class="empty">Zdroje veľkosť fondov neuvádzajú.</p>`;
-  return `<div class="dt funds"><div class="dt-head"><span>Fond</span><span class="num">Suma v EUR</span><span class="c-st">Stav · v kapitáli</span><span></span></div>
+  if (!i.funds.length) return `<p class="empty">${esc(T.noFunds)}</p>`;
+  return `<div class="dt funds"><div class="dt-head"><span>${esc(T.fFund)}</span><span class="num">${esc(T.fEur)}</span><span class="c-st">${esc(T.fStatus)}</span><span></span></div>
     ${i.funds.map(f => `<details class="dt-row"><summary>
-      <span class="strong">${esc(f.name)}<span class="orig">pôvodne: ${esc(f.size || "neuvedené")}</span></span>
+      <span class="strong">${esc(f.name || T.aumName)}<span class="orig">${esc(T.orig)}: ${esc(f.size || T.notGiven)}</span></span>
       <span class="num">${eur(f.eur, f.approx)}</span>
-      <span class="c-st"><span class="st-dot st-${esc(f.status)}">${esc(STATUS[f.status] ?? f.status)}</span><span class="orig">${f.counted ? '<span class="yes">✓ započítané</span>' : "nezapočítané"}</span></span>
-      <span class="tog">citácia</span></summary>
+      <span class="c-st"><span class="st-dot st-${esc(f.status)}">${esc(T.STATUS[f.status] ?? f.status)}</span><span class="orig">${f.counted ? `<span class="yes">${esc(T.counted)}</span>` : esc(T.notCounted)}</span></span>
+      <span class="tog">${esc(T.quote)}</span></summary>
       <div class="dt-open">${quotes([{...f, tier: "", context: ""}])}</div></details>`).join("")}</div>`;
 }
 function dealRows(list) {
   return list.map(d => `<details class="dt-row"><summary>
-      <span class="mono${d.date ? "" : " muted"}">${esc(d.date || "bez dátumu")}</span>
+      <span class="mono${d.date ? "" : " muted"}">${esc(d.date || T.noDate)}</span>
       <span class="strong">${esc(d.company)}</span>
-      <span class="c-rd">${d.round && d.round !== "unknown" ? esc(STAGE[d.round] || d.round) : '<span class="muted">–</span>'}</span>
+      <span class="c-rd">${d.round && d.round !== "unknown" ? esc(T.STAGE[d.round] || d.round) : '<span class="muted">–</span>'}</span>
       <span class="num c-amt">${d.eur != null ? eur(d.eur, d.approx) : (d.amount ? `<span class="muted">${esc(d.amount)}</span>` : '<span class="muted">–</span>')}</span>
-      <span class="tog">${d.sources.length} ${plural(d.sources.length, "zdroj", "zdroje", "zdrojov")}</span></summary>
+      <span class="tog">${esc(T.sources(d.sources.length))}</span></summary>
       <div class="dt-open">${quotes(d.sources)}</div></details>`).join("");
 }
 function renderSheet() {
   const i = invs.find(x => x.id === state.sel);
   const el = document.getElementById("sheet");
-  if (!i) { el.innerHTML = `<p class="empty">Vyberte investora v tabuľke.</p>`; return; }
+  if (!i) { el.innerHTML = `<p class="empty">${esc(T.pick)}</p>`; return; }
   const b = i.before;
-  const ticket = i.ticket_eur[0] || i.ticket_eur[1] ? `${eur(i.ticket_eur[0])} – ${eur(i.ticket_eur[1])}` : '<span class="muted">neuvedené</span>';
+  const ticket = i.ticket_eur[0] || i.ticket_eur[1] ? `${eur(i.ticket_eur[0])} – ${eur(i.ticket_eur[1])}` : `<span class="muted">${esc(T.notGiven)}</span>`;
   const dated = i.deals.filter(d => d.date), undated = i.deals.filter(d => !d.date);
   const cmpRows = [
-    ["Celkový kapitál", `${eur(b.capital)}<small>${esc(method(b.capital_method) || "neuvedené")}</small>`, `${eur(i.capital)}<small>${esc(method(i.capital_method) || "neuvedené")}</small>`, (b.capital ?? null) !== (i.capital ?? null)],
-    ["Posledný obchod", `${esc(b.last_date || "–")}<small>${esc(b.last_company)}</small>`, `${esc(i.last_date || "–")}<small>${esc(i.last_company)}</small>`, b.last_date !== i.last_date],
-    ["Investície za 36 mes.", b.n_36m, i.n_36m, b.n_36m !== i.n_36m],
-    ["Úroveň dôkazov", b.tier || "–", i.status === "INCLUDED" ? (i.tier || "–") : "na kontrolu", b.tier !== i.tier || i.status !== "INCLUDED"]];
+    [T.cmpCap, `${eur(b.capital)}<small>${esc(method(b.capital_method) || T.notGiven)}</small>`, `${eur(i.capital)}<small>${esc(method(i.capital_method) || T.notGiven)}</small>`, (b.capital ?? null) !== (i.capital ?? null)],
+    [T.cmpLast, `${esc(b.last_date || "–")}<small>${esc(b.last_company)}</small>`, `${esc(i.last_date || "–")}<small>${esc(i.last_company)}</small>`, b.last_date !== i.last_date],
+    [T.cmp36, b.n_36m, i.n_36m, b.n_36m !== i.n_36m],
+    [T.cmpTier, b.tier || "–", i.status === "INCLUDED" ? (i.tier || "–") : T.review, b.tier !== i.tier || i.status !== "INCLUDED"]];
   el.innerHTML = `
     <header class="sh-head">
       <h2>${esc(i.name)}</h2>
-      <div class="legal"><span>${esc(i.legal_name)}</span><span>IČO <code>${esc(i.company_id)}</code></span><span>${link(i.registry_url, "záznam v registri")}</span>${i.website ? `<span>${link(i.website, i.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</span>` : ""}</div>
-      ${i.status !== "INCLUDED" ? `<div class="banner"><b>Na ručnú kontrolu.</b> ${esc(i.explanation)}</div>` : ""}
+      <div class="legal"><span>${esc(i.legal_name)}</span><span>IČO <code>${esc(i.company_id)}</code></span><span>${link(i.registry_url, T.registry)}</span>${i.website ? `<span>${link(i.website, i.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</span>` : ""}</div>
+      ${i.status !== "INCLUDED" ? `<div class="banner"><b>${esc(T.toReview)}</b> ${esc(i.explanation)}</div>` : ""}
     </header>
     <div class="sh-body">
       <div class="kpis">
-        <div class="kpi"><span class="k">Celkový kapitál</span><span class="v">${eur(i.capital)}</span><span class="s">${esc(method(i.capital_method) || "zdroje ho neuvádzajú")}</span></div>
-        <div class="kpi"><span class="k">Posledný obchod</span><span class="v">${esc(i.last_date || "–")}</span><span class="s">${esc(i.last_company || "")}</span></div>
-        <div class="kpi"><span class="k">Investície</span><span class="v">${i.n_inv}</span><span class="s">${i.n_36m} za posledných 36 mes.</span></div>
-        <div class="kpi"><span class="k">Úroveň dôkazov</span><span class="v">${i.status === "INCLUDED" ? esc(i.tier) : "kontrola"}</span><span class="s">${i.tier === "A" ? "2+ datované obchody, 2+ zdroje" : i.tier === "B" ? "1+ datovaný obchod za 36 mes." : ""}</span></div>
+        <div class="kpi"><span class="k">${esc(T.kCap)}</span><span class="v">${eur(i.capital)}</span><span class="s">${esc(method(i.capital_method) || T.kCapNone)}</span></div>
+        <div class="kpi"><span class="k">${esc(T.kLast)}</span><span class="v">${esc(i.last_date || "–")}</span><span class="s">${esc(i.last_company || "")}</span></div>
+        <div class="kpi"><span class="k">${esc(T.kInv)}</span><span class="v">${i.n_inv}</span><span class="s">${esc(T.kInvSub(i.n_36m))}</span></div>
+        <div class="kpi"><span class="k">${esc(T.kTier)}</span><span class="v">${i.status === "INCLUDED" ? esc(i.tier) : esc(T.review)}</span><span class="s">${esc(i.tier === "A" ? T.tierA : i.tier === "B" ? T.tierB : "")}</span></div>
       </div>
       <dl class="kv">
-        <dt>Sídlo</dt><dd>${esc(i.hq)}</dd>
-        <dt>Typ</dt><dd>${esc(i.types.map(t => TYPE[t] || t).join(", ") || "–")}</dd>
-        <dt>Sektory</dt><dd>${i.sectors.length ? `<span class="chips">${i.sectors.map(s => `<span class="chip acc">${esc(SECTOR[s] || s)}</span>`).join("")}</span>` : "–"}</dd>
-        <dt>Štádiá</dt><dd>${i.stages.length ? `<span class="chips">${i.stages.map(s => `<span class="chip">${esc(STAGE[s] || s)}</span>`).join("")}</span>` : "–"}</dd>
-        <dt>Tiket</dt><dd>${ticket}</dd>
+        <dt>${esc(T.hq)}</dt><dd>${esc(i.hq)}</dd>
+        <dt>${esc(T.type)}</dt><dd>${esc(typeText(i) || "–")}</dd>
+        <dt>${esc(T.sectors)}</dt><dd>${i.sectors.length ? `<span class="chips">${i.sectors.map(s => `<span class="chip acc">${esc(T.SECTOR[s] || s)}</span>`).join("")}</span>` : "–"}</dd>
+        <dt>${esc(T.stages)}</dt><dd>${i.stages.length ? `<span class="chips">${i.stages.map(s => `<span class="chip">${esc(T.STAGE[s] || s)}</span>`).join("")}</span>` : "–"}</dd>
+        <dt>${esc(T.ticket)}</dt><dd>${ticket}</dd>
       </dl>
-      ${m.refined ? `<section class="blk"><div class="blk-h"><h3>Pred a po spresnení</h3><span class="n">${i.notes.length ? i.notes.length + " " + plural(i.notes.length, "zmena", "zmeny", "zmien") : "bez zmeny"}</span></div>
-        <div class="cmp-wrap"><table class="cmp"><thead><tr><th scope="col">Údaj</th><th scope="col">Zmrazené (v3)</th><th scope="col">Po spresnení</th></tr></thead><tbody>
-        ${cmpRows.map(r => `<tr><th scope="row">${r[0]}</th><td>${r[1]}</td><td${r[3] ? ' class="chg"' : ""}>${r[2]}</td></tr>`).join("")}</tbody></table></div>
+      ${m.refined ? `<section class="blk"><div class="blk-h"><h3>${esc(T.cmpH)}</h3><span class="n">${esc(T.changes(i.notes.length))}</span></div>
+        <div class="cmp-wrap"><table class="cmp"><thead><tr><th scope="col">${esc(T.cmpCol)}</th><th scope="col">${esc(T.cmpFrozen)}</th><th scope="col">${esc(T.cmpAfter)}</th></tr></thead><tbody>
+        ${cmpRows.map(r => `<tr><th scope="row">${esc(r[0])}</th><td>${r[1]}</td><td${r[3] ? ' class="chg"' : ""}>${r[2]}${r[3] ? `<span class="chg-l">${esc(T.changedLbl)}</span>` : ""}</td></tr>`).join("")}</tbody></table></div>
         ${i.notes.length ? `<ul class="notes">${i.notes.map(n => `<li>${arrow(n)}</li>`).join("")}</ul>` : ""}</section>` : ""}
-      <section class="blk"><div class="blk-h"><h3>Kapitál a fondy</h3><span class="n">${i.funds.length} ${plural(i.funds.length, "tvrdenie", "tvrdenia", "tvrdení")}</span></div>
-        ${i.capital_note ? `<p class="blk-note">${esc(i.capital_note)}</p>` : ""}
+      <section class="blk"><div class="blk-h"><h3>${esc(T.fundsH)}</h3><span class="n">${esc(T.claims(i.funds.length))}</span></div>
+        ${i.capital_note ? `<p class="blk-note">${esc(trList(i.capital_note))}</p>` : ""}
         ${fundRows(i)}
-        ${i.targets ? `<p class="targets"><b>Len plánované, do kapitálu sa nepočítajú:</b> ${esc(i.targets)}</p>` : ""}</section>
-      <section class="blk"><div class="blk-h"><h3>Investície</h3><span class="n">${dated.length} datovaných · ${undated.length} bez dátumu</span></div>
-        <div class="dt deals"><div class="dt-head"><span>Dátum</span><span>Firma</span><span class="c-rd">Kolo</span><span class="num c-amt">Suma kola</span><span></span></div>
+        ${i.targets ? `<p class="targets"><b>${esc(T.targets)}</b> ${esc(trList(i.targets))}</p>` : ""}</section>
+      <section class="blk"><div class="blk-h"><h3>${esc(T.dealsH)}</h3><span class="n">${esc(T.dealsN(dated.length, undated.length))}</span></div>
+        <div class="dt deals"><div class="dt-head"><span>${esc(T.dDate)}</span><span>${esc(T.dCo)}</span><span class="c-rd">${esc(T.dRound)}</span><span class="num c-amt">${esc(T.dAmt)}</span><span></span></div>
         ${dealRows(dated)}
-        ${undated.length ? `<div class="dt-sub">V portfóliu, bez dátumu obchodu</div>${dealRows(undated)}` : ""}</div></section>
-      <section class="blk"><div class="blk-h"><h3>Zdroje ostatných údajov</h3><span class="n">${Object.keys(i.profile).length}</span></div>
-        <div class="dt prof"><div class="dt-head"><span>Údaj</span><span>Zdroj</span><span></span></div>
-        ${Object.entries(i.profile).map(([k, s]) => `<details class="dt-row"><summary><span class="strong">${esc(PROFILE[k] || k)}</span><span>${esc(s.domain)}</span><span class="tog">citácia</span></summary>
+        ${undated.length ? `<div class="dt-sub">${esc(T.undatedSub)}</div>${dealRows(undated)}` : ""}</div></section>
+      <section class="blk"><div class="blk-h"><h3>${esc(T.profH)}</h3><span class="n">${Object.keys(i.profile).length}</span></div>
+        <div class="dt prof"><div class="dt-head"><span>${esc(T.pField)}</span><span>${esc(T.pSrc)}</span><span></span></div>
+        ${Object.entries(i.profile).map(([k, s]) => `<details class="dt-row"><summary><span class="strong">${esc(T.PROFILE[k] || k)}</span><span>${esc(s.domain)}</span><span class="tog">${esc(T.quote)}</span></summary>
           <div class="dt-open">${quotes([{...s, tier: "", context: ""}])}</div></details>`).join("")}</div></section>
     </div>`;
   el.scrollTop = 0;
 }
-document.getElementById("lhead").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state.sort = b.dataset.sort;
-  try { localStorage.setItem("investor-explorer", JSON.stringify({sort: state.sort})); } catch (err) {} renderList(); });
+document.getElementById("lang").addEventListener("click", e => { const b = e.target.closest("button"); if (!b || b.dataset.l === lang) return;
+  lang = b.dataset.l; save(); applyLang(); });
+document.getElementById("lhead").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return;
+  // the active column flips its direction; a new column starts in its most useful direction
+  if (state.sort === b.dataset.sort) state.dir = -state.dir;
+  else { state.sort = b.dataset.sort; state.dir = COLS.find(c => c.key === state.sort).first; }
+  save(); renderList(); });
 document.getElementById("list").addEventListener("click", e => { const r = e.target.closest(".row"); if (!r) return; state.sel = r.dataset.id; renderList();
   if (matchMedia("(max-width: 1000px)").matches) document.getElementById("sheet").scrollIntoView({behavior: "smooth", block: "start"}); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; renderList(); });
@@ -507,5 +643,5 @@ document.getElementById("sector").addEventListener("change", e => { state.sector
 document.getElementById("onlychg").addEventListener("change", e => { state.onlyChg = e.target.checked; renderList(); });
 document.getElementById("country").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state.country = b.dataset.v;
   document.querySelectorAll("#country button").forEach(x => x.setAttribute("aria-pressed", x === b)); renderList(); });
-renderList();
+applyLang();
 </script>"""
