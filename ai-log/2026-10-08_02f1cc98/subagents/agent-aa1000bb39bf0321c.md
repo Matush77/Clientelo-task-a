@@ -220,7 +220,7 @@ dk17. 1. 2020Řádní členové(0)
 Read More
 KAYA VC
 dk15. 1. 2020Řádní členové(0)
-Adresa Thámova 183/11186 00 Praha 8 &#8211; Karlínwww.kaya.vc Kontaktní osoba Tomáš PačindaPartnertomas.pacinda@kaya.vc Informace o společnosti...
+Adresa Thámova 183/11186 00 Praha 8 &#8211; Karlínwww.kaya.vc Kontaktní osoba Tomáš PačindaPartnertomas.[REDACTED]a@kaya.vc Informace o společnosti...
 Read More
 MAM Private Equity Fund SICAV a.s.
 dk14. 1. 2020Řádní členové(0)
@@ -272,8 +272,8 @@ Read More
  Co je PE &#038; VC
  Členství  	Řádní členové
  	Přidružení členové
- 	Staňte se člene
-… [skrátené, 3182 znakov – plné znenie v raw/]
+ 	Staňte se č
+… [skrátené, 3186 znakov – plné znenie v raw/]
 ````
 
 </details>

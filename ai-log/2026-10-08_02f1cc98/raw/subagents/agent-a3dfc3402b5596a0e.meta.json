@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Confirm live API and web search prices",
+  "toolUseId": "toolu_01PTRdZKcXke1t1u225AbD9i",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

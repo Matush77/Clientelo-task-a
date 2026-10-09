@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Verifier v2 batch 3",
+  "toolUseId": "toolu_015XbpquvztUipFRSjerYQm2",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

@@ -72,7 +72,7 @@ Na tieto polia treba silnejší model než Haiku a ľudskú kontrolu – variant
 
 ## Ako som pracoval s AI (zhrnutie)
 
-Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg ~38 chýb a slabín).
+Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 49 chýb a slabín).
 
 - **Rozdelenie rolí:**
   - ja rozhodujem o pravidlách a robím kvalitatívny audit;
@@ -96,7 +96,7 @@ Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg ~38 chýb a slab
 
 ## Kľúčové rozhodnutia
 
-Všetky (28) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitejšie:
+Všetky (37) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitejšie:
 
 - Pilot **CZ + SK** namiesto len SK (samotné SK má príliš málo aktívnych VC na zmysluplné meranie).
 - Investor = **≥ 2 investície do firiem, ≥ 1 v posledných 36 mesiacoch** (výnimka: nový fond).

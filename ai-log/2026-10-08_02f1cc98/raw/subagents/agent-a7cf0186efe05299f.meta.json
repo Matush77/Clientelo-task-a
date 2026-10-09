@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Verify two suspected duplicate pairs",
+  "toolUseId": "toolu_01DjTb5SGKmszyb1afk2ybaQ",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

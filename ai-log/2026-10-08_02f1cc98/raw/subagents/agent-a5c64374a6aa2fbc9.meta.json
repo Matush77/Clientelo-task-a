@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Evidence v3 re-run (3 unresearched)",
+  "toolUseId": "toolu_01EMPjnq8bj9TEKfDSCDDw6M",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

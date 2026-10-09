@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Recent-deal pass batch 2",
+  "toolUseId": "toolu_013wDTE7WP4ZDuNjBYfwcF7H",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

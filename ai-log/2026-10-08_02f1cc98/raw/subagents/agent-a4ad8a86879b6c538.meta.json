@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Verifier batch 7",
+  "toolUseId": "toolu_016tL8ghetEJXdPSX8iGUgGP",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

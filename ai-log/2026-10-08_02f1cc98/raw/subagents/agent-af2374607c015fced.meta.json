@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Evidence v2 wave1 batch 09",
+  "toolUseId": "toolu_01MMwrYGhmdY83NdKDCXQQVN",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "haiku"
+}

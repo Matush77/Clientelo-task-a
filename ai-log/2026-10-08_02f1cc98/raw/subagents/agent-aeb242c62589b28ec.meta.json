@@ -1,0 +1,9 @@
+{
+  "agentType": "general-purpose",
+  "description": "Sonnet reviewer batch 1",
+  "toolUseId": "toolu_01Ln5DGVFUkJHfQqN8qnqLJ4",
+  "spawnDepth": 1,
+  "requestShape": "background",
+  "requestNonInteractive": true,
+  "model": "sonnet"
+}
