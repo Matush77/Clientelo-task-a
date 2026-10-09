@@ -10,24 +10,25 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | | |
 |---|---|
 | Kandidátov z verejných zdrojov | 206 (po deduplikácii), z toho 133 prešlo zberom dôkazov |
-| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) – [investors.csv](data/processed/investors.csv) |
+| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) – [investors.csv](data/processed/investors.csv), spresnená verzia [investors_refined.csv](data/processed/investors_refined.csv) |
 | Vyradených / mimo rozsahu / na ručnú kontrolu | 70 / 35 / 4 |
-| Tvrdení agentov strojovo overených na zdrojovej stránke | 808 z 852 (95 %) |
+| Tvrdení agentov strojovo overených na zdrojovej stránke | 808 z 852 (95 %); pri spresnení 144 zo 147 (98 %) |
 | **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |
-| Presnosť polí | sektory 17/17, tiket 15/15, zdroje dokladajú investície 19/23 (83 %), **celkový kapitál 6/12 (50 %)** |
+| Presnosť polí (zmrazená v3) | sektory 17/17, tiket 15/15, zdroje dokladajú investície 19/23 (83 %), celkový kapitál 6/12 (50 %) |
+| **Spresnenie Sonnetom 5.5 – slepá kontrola faktov pred → po** | celkový kapitál 8/15 (53 %) → **14/20 (70 %)**, vyplnený pri 15 → 20 z 24; dátum obchodu 54/68 (79 %) → **78/80 (97,5 %)**; identita v registri 24/24 – [REFINEMENT.md](docs/REFINEMENT.md) |
 | Pokrytie (capture–recapture) | ~78 % z odhadovaných ~31 aktívnych VC so sídlom v CZ/SK |
 | Ľudský audit (v1 → v2 → v3) | našiel chyby výkladu (kapitál „30 €“, plánovaný fond ako kapitál, chybné IČO) → 2 opravy pipeline – [AUDIT_V2.md](docs/AUDIT_V2.md) |
-| Náklad AI na celý pilot (prepočet na ceny API) | ~17 USD (Haiku ~9,5 USD + kontrola Sonnetom ~7,8 USD) |
-| Odhad pre celý svet, 1. rok (základ) | ~97 tis. € (AI ~20 tis., ľudská kontrola ~57 tis., vývoj ~20 tis.) – [COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
+| Náklad AI na celý pilot (prepočet na ceny API) | ~42 USD: Haiku ~9,5 USD; Sonnet – kontrola vzorky 7,8, spresnenie 18,1, kontrola faktov 6,3 USD |
+| Odhad pre celý svet, 1. rok (základ) | ~97 tis. € (AI ~20 tis., ľudská kontrola ~57 tis., vývoj ~20 tis.); s odporúčaným spresnením Sonnetom ~142 tis. € – [COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
 
 **Hlavné zistenie.** Rozhodnutie, *kto je investor*, sa dá z verejných zdrojov urobiť spoľahlivo. Údaje *o
-investíciách* (presný dátum, suma, výška kapitálu) však verejné články často neuvádzajú jednoznačne:
+investíciách* verejné články často neuvádzajú jednoznačne a lacný model ich vykladal zle – ako dátum obchodu bral
+dátum článku, ktorý staršiu investíciu len spomína, a ako kapitál cieľovú veľkosť fondu:
 
-- len 60 % investícií má dátum obchodu;
-- len 22 % investícií má uvedenú sumu;
-- celkový kapitál je správne v polovici prípadov.
-
-Na tieto polia treba silnejší model než Haiku a ľudskú kontrolu – variant je vyčíslený v nákladoch.
+- len 60 % investícií má dátum obchodu a len 22 % uvedenú sumu;
+- cielené spresnenie silnejším modelom **len pri zaradených záznamoch** zlepšilo dátumy obchodov zo 79 % na 97,5 %
+  a celkový kapitál z 53 % na 70 % (meraná slepou kontrolou faktov);
+- zvyšné chyby kapitálu sú podhodnotenia (chýba starší fond alebo navýšenie), nie ciele počítané ako kapitál.
 <!-- RESULTS:END -->
 
 ## Kde čo nájdete (požiadavky zadania)
@@ -117,8 +118,9 @@ Všetky (39) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitej
   s druhým modelom (Haiku). Ľudský vstup je kvalitatívny audit formulára – našiel chyby, ktoré viedli k dvom
   opraveným verziám dát (`pilot-frozen-v2`, `-v3`), a hlavné zistenie o nejasnosti článkov.
 - **Haiku na výklad článkov nestačí.** Zber dôkazov robil lacný model, ktorý často nerozlíšil dátum článku od dátumu
-  obchodu ani cieľový fond od uzavretého. Silnejší model (Sonnet) to pri kontrole zachytil – odporúčanie do ďalšej
-  verzie s vyčíslenou cenou.
+  obchodu ani cieľový fond od uzavretého. Riešené cieleným spresnením modelom Sonnet 5.5 pri zaradených záznamoch
+  (D38): dátumy obchodov 97,5 %, kapitál 70 %. Spresnenie aj kontrolu faktov robil model tej istej rodiny, takže
+  korelované chyby nemožno vylúčiť; zmrazená v3 ostáva ako meraná verzia, spresnená je zvlášť.
 - **Úplnosť (recall):** pravidlo „jedna citácia musí obsahovať investora aj firmu“ a zákaz agregátorov znamenajú, že
   niektorí skutoční aktívni investori skončili vyradení pre nedostatok dôkazov (napr. Vision Ventures, JIC Ventures).
   Presnosť má prednosť pred úplnosťou – zodpovedá to zadaniu („každý záznam musí byť skutočný investor“).
