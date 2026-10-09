@@ -1,0 +1,396 @@
+[
+  {
+    "candidate_id": "C145",
+    "funds": [
+      {
+        "value": {"name": "Fund II", "known_as": "Fund II", "size": "€30 million", "currency": "EUR", "vintage": "2022", "status": "final_close", "status_date": "2022-06-24"},
+        "value_text": "€30 million",
+        "source_url": "https://www.privateequitywire.co.uk/presto-ventures-closes-eu30m-fund-ii-invest-central-eastern-european-b2b-startups/",
+        "quote": "has announced the final close of its €30 million Fund II.",
+        "published_date": "2022-06-24",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Presto Tech Horizons", "known_as": "Presto Tech Horizons", "size": "€150 million", "currency": "EUR", "vintage": "2024", "status": "target", "status_date": null},
+        "value_text": "€150 million",
+        "source_url": "https://csg.com/en/news/presto-tech-horizons",
+        "quote": "With a target size of €150 million",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Presto III", "known_as": null, "size": "EUR 100m", "currency": "EUR", "vintage": null, "status": "target", "status_date": "2023-01-23"},
+        "value_text": "EUR 100m",
+        "source_url": "https://www.unquote.com/cee/news/3028533/presto-ventures-targets-eur-100m-for-new-early-stage-fund",
+        "quote": "targeting EUR 100m on the way",
+        "published_date": "2023-01-23",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["Fund I"],
+    "deal_checks": [
+      {
+        "company": "Tur.ai",
+        "listed_date": "2024-10-01",
+        "verdict": "confirmed",
+        "note": "Seed round led by the new fund Presto Tech Horizons (Presto Ventures + CSG), announced 2024-10-23 together with Bavovna and Vidar Systems; the same ain.ua group of articles says the round was led by Presto Tech Horizons.",
+        "value": {"company": "Tur.ai", "date": "2024-10-23", "round": "seed", "amount": null},
+        "value_text": "Tur.ai",
+        "source_url": "https://en.ain.ua/2024/10/23/presto-tech-horizons-invests-in-bavovna-vidar-turai",
+        "quote": "Presto Tech Horizons expands its portfolio with 3 new startups: Bavovna, Vidar Systems, and Tur.ai",
+        "published_date": "2024-10-23",
+        "derivation": "stated"
+      },
+      {
+        "company": "GoRamp",
+        "listed_date": "2022-06-01",
+        "verdict": "corrected",
+        "note": "Latest follow-on reported: GoRamp late seed round of July 2023 (cc.cz 2023-07-21, ain.ua 2023-07-20, Presto named among existing investors). The earlier round of April 2022 was announced in cc.cz on 2022-06-23 ('pro Presto šlo už o třetí investiční kolo') and matches the listed date; the 2023 article says it is Presto's third investment in the company, so the counts of the two articles differ.",
+        "value": {"company": "GoRamp", "date": "2023-07-21", "round": "late seed", "amount": null},
+        "value_text": "GoRamp",
+        "source_url": "https://cc.cz/sluzby-pro-logistiku-z-litvy-se-siri-po-evrope-pomahaji-jim-v-tom-i-ceske-penize/",
+        "quote": "GoRamp během své existence hlásí investice každý rok a opakovaně mu přispělo i české Presto Ventures.",
+        "published_date": "2023-07-21",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "DiffuseDrive",
+        "note": "Seed round of 3.5 million announced 2025-05-14 together with Outlander; newer than the newest listed date (2024-10-01).",
+        "value": {"company": "DiffuseDrive", "date": "2025-05-14", "round": "seed", "amount": "3.5 million"},
+        "value_text": "DiffuseDrive",
+        "source_url": "https://www.silicon.co.uk/press-release/from-scarcity-to-scale-diffusedrive-closes-3-5m-to-define-physical-ai-for-automotive-aerospace-defense-and-robotics",
+        "quote": "DiffuseDrive founders Balint Pasztor (Right) and Roland Pinter (Left), vision AI experts, have raised an additional 3.5 million from Outlander and Presto Tech Horizons venture groups",
+        "published_date": "2025-05-14",
+        "derivation": "stated"
+      },
+      {
+        "company": "Bavovna",
+        "note": "Announced 2024-10-23 together with Tur.ai and Vidar Systems (after the listed date 2024-10-01 of Tur.ai).",
+        "value": {"company": "Bavovna", "date": "2024-10-23", "round": null, "amount": null},
+        "value_text": "Bavovna",
+        "source_url": "https://en.ain.ua/2024/10/23/presto-tech-horizons-invests-in-bavovna-vidar-turai",
+        "quote": "Presto Tech Horizons expands its portfolio with 3 new startups: Bavovna, Vidar Systems, and Tur.ai",
+        "published_date": "2024-10-23",
+        "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "fetch en.ain.ua Presto Ventures launches 30M fund",
+      "fetch cc.cz Presto Tech Horizons 4 miliardy",
+      "fetch startuprise.co.uk presto-tech-horizons-welcomes-investments",
+      "fetch cc.cz Presto Ventures Gruzie a Litva (GoRamp)",
+      "Presto Ventures Fund II first close OR \"final close\" 30 million",
+      "Presto Tech Horizons fund close CSG 150 million EUR first close",
+      "Tur.ai Presto Tech Horizons investment round",
+      "fetch prestoventures.com",
+      "fetch privateequitywire Presto Ventures closes 30m Fund II",
+      "fetch unquote Presto Ventures targets EUR 100m",
+      "fetch vestbee presto-ventures-recent-exit-and-fund-iii-launch (not cited, forbidden source)",
+      "fetch csg.com presto-tech-horizons",
+      "Presto Ventures první fond 2016 milionů eur Rubeš Presto Ventures I",
+      "Presto Ventures III fond cílová velikost první uzavření 2025",
+      "fetch en.ain.ua presto-tech-horizons-invests-in-bavovna-vidar-turai",
+      "GoRamp Presto Ventures investment round Lithuania seed",
+      "GoRamp raises €3 million Lead Ventures Presto Ventures Startup Wise Guys Willgrow 2023",
+      "fetch en.ain.ua turai raises 145m seed",
+      "fetch en.ain.ua lithuanian-logtech-goramp-raises-3m",
+      "fetch cc.cz sluzby-pro-logistiku-z-litvy",
+      "Presto Tech Horizons invests 2025 seed round led by Presto Tech Horizons",
+      "DiffuseDrive raises seed Presto Tech Horizons Outlander",
+      "fetch businesswire DiffuseDrive (403)",
+      "\"Presto Tech Horizons\" investuje startup kolo 2026",
+      "fetch silicon.co.uk DiffuseDrive press release (twice)",
+      "Choice Series A led by Presto Ventures 2026 (not cited: only database sources)"
+    ]
+  },
+  {
+    "candidate_id": "C146",
+    "funds": [
+      {
+        "value": {"name": "Purple Ventures 1", "known_as": null, "size": "15 milionů eur (380 milionů korun)", "currency": "EUR", "vintage": "2018", "status": "final_close", "status_date": "2024-03-26"},
+        "value_text": "15 milionů eur",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-spousti-druhy-fond-do-startupu-chteji-proinvestovat-pres-miliardu-korun/",
+        "quote": "od roku 2018 rozběhli také vlastní venture kapitálový fond Purple Ventures o velikosti 15 milionů eur (380 milionů korun).",
+        "published_date": "2024-03-26",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Purple Ventures 2", "known_as": "Purple Ventures 2", "size": "čtyřicet milionů eur", "currency": "EUR", "vintage": "2024", "status": "target", "status_date": "2024-03-26"},
+        "value_text": "čtyřicet milionů eur",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-spousti-druhy-fond-do-startupu-chteji-proinvestovat-pres-miliardu-korun/",
+        "quote": "si klade za cíl proinvestovat čtyřicet milionů eur",
+        "published_date": "2024-03-26",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Purple Ventures 2", "known_as": "Purple Ventures 2", "size": "27 milionů euro", "currency": "EUR", "vintage": "2024", "status": "first_close", "status_date": "2025-08-17"},
+        "value_text": "27 milionů euro",
+        "source_url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676",
+        "quote": "Pod smlouvami je podepsáno celkem 27 milionů euro z cílových čtyřiceti",
+        "published_date": "2025-08-17",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Purple Ventures 2", "known_as": "Purple Ventures 2", "size": "přes 780 milionů (Kč)", "currency": "CZK", "vintage": "2024", "status": "first_close", "status_date": "2026-03-11"},
+        "value_text": "přes 780 milionů",
+        "source_url": "https://www.lupa.cz/clanky/jan-stanek-purple-ventures-ai-nektere-firmy-zabiji-tretina-startupu-do-nichz-sly-nedavno-penize-uz-nemusi-davat-smysl/",
+        "quote": "V tu dobu bude uzavírat fond, ve kterém má už teď přes 780 milionů.",
+        "published_date": "2026-03-11",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Delta Green",
+        "listed_date": "2024-05-01",
+        "verdict": "corrected",
+        "note": "Latest follow-on reported: EUR 2M round from existing investors announced 2025-10-15 (cc.cz). The first round (EUR 2.2M, led by Tilia, with Credo and Purple Ventures) was announced 2024-05-27 on cc.cz ('Kolo vede česká Tilia Impact Ventures, přidaly se i fondy Credo Ventures a Purple Ventures') and 2024-05-28 on ain.ua, which matches the listed date.",
+        "value": {"company": "Delta Green", "date": "2025-10-15", "round": "seed follow-on", "amount": "dva miliony eur"},
+        "value_text": "Delta Green",
+        "source_url": "https://cc.cz/z-prahy-propojuji-evropske-domacnosti-a-tvori-z-nich-obri-elektrarnu-jejich-cena-je-ve-stamilionech/",
+        "quote": "Pražský energetický startup Delta Green získal dva miliony eur, tedy 50 milionů korun, od investorů z Credo Ventures, Tilia Impact Ventures a Purple Ventures.",
+        "published_date": "2025-10-15",
+        "derivation": "stated"
+      },
+      {
+        "company": "iVent Pro",
+        "listed_date": "2024-01-01",
+        "verdict": "corrected",
+        "note": "Announced as the second investment of Purple Ventures 2 on 2024-06-27 (cc.cz; also ain.ua 2024-06-28). Total for the first three deals was 48 million CZK; no separate amount for iVent Pro. No earlier announcement found.",
+        "value": {"company": "iVent Pro", "date": "2024-06-27", "round": null, "amount": null},
+        "value_text": "iVent Pro",
+        "source_url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/",
+        "quote": "Nejnovější investice Purple Ventures putuje do startupu iVent Pro",
+        "published_date": "2024-06-27",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "ArtMaster",
+        "note": "Funding round announced by co-investor Gi21 Capital on its own site, 2026-04-29, naming Purple Ventures as co-investor.",
+        "value": {"company": "ArtMaster", "date": "2026-04-29", "round": null, "amount": null},
+        "value_text": "ArtMaster",
+        "source_url": "https://gi21capital.com/blog-posts/investing-in-artmaster-music-education",
+        "quote": "to support ArtMaster in their latest funding round, alongside Purple Ventures.",
+        "published_date": "2026-04-29",
+        "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "fetch cc.cz brnensti-purple-ventures-rozbihaji-druhy-fond",
+      "fetch e15.cz roste-nam-novy-dolarovy-jednorozec (twice)",
+      "Purple Ventures fond uzavřel milionů eur první fond Purple Ventures 2",
+      "Purple Ventures Delta Green investice iVent Pro",
+      "fetch en.ain.ua czech-startup-delta-green-secures-funding (twice)",
+      "fetch en.ain.ua purple-ventures-40m-fund-ii-investments",
+      "fetch lupa.cz jan-stanek-purple-ventures",
+      "Delta Green Plzeň energetika investice kolo Purple Ventures Credo Ventures Tilia Impact Ventures",
+      "iVent Pro investice Purple Ventures miliony korun virtuální konference",
+      "Delta Green raises €2 million existing investors Tilia Credo Purple Ventures October 2025",
+      "Delta Green získal 2,2 milionu eur Tilia Credo Purple Ventures cc.cz",
+      "Purple Ventures první fond Purple Ventures I velikost 15 milionů eur Jan Staněk 2018",
+      "fetch cc.cz brnensti-purple-ventures-spousti-druhy-fond",
+      "lupa.cz Delta Green oznámila investici dva miliony eur Credo Ventures Tilia Impact Ventures Purple Ventures",
+      "fetch cc.cz domacnostem-umoznuji-vydelavat-na-elektrine",
+      "fetch cc.cz z-prahy-propojuji-evropske-domacnosti",
+      "fetch fxstreet.cz zpravodajstvi-157952",
+      "Kilde Purple Ventures znovu investují singapurský fintech druhá investice",
+      "fetch lupa.cz startup-cecha-v-singapuru (Kilde, no quote naming both in one sentence, so not added)"
+    ]
+  },
+  {
+    "candidate_id": "C151",
+    "funds": [],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Hermetiq",
+        "listed_date": "2026-08-27",
+        "verdict": "confirmed",
+        "note": "Gi21's own blog post of 2026-08-27; the seed round of 2.2M was led by Jet Investment, Gi21 took part.",
+        "value": {"company": "Hermetiq", "date": "2026-08-27", "round": "seed", "amount": "$2.2M"},
+        "value_text": "Hermetiq",
+        "source_url": "https://gi21capital.com/blog-posts/why-we-invested-in-hermetiq",
+        "quote": "Gi21 Capital has invested in Hermetiq",
+        "published_date": "2026-08-27",
+        "derivation": "stated"
+      },
+      {
+        "company": "FaceUp",
+        "listed_date": "2026-05-21",
+        "verdict": "confirmed",
+        "note": "Gi21 joined as a new investor in the 5M Series A led by Fil Rouge Capital (Gi21's own blog, 2026-05-21).",
+        "value": {"company": "FaceUp", "date": "2026-05-21", "round": "Series A", "amount": "$5M"},
+        "value_text": "FaceUp",
+        "source_url": "https://gi21capital.com/blog-posts/why-we-invested-in-faceup-bringing-safety-and-integrity-to-global-workplaces",
+        "quote": "we are absolutely thrilled to announce our participation as a new investor in FaceUp",
+        "published_date": "2026-05-21",
+        "derivation": "stated"
+      },
+      {
+        "company": "Zerops",
+        "listed_date": "2026-05-01",
+        "verdict": "confirmed",
+        "note": "Seed round led by Gi21 Capital, reported 2026-05-15 (thesaasnews page shows 'Updated May 18, 2026', funding date May 2026). An earlier 500K pre-seed from Presto Ventures and Gi21 was reported by Silicon Canals on 2024-06-20.",
+        "value": {"company": "Zerops", "date": "2026-05-15", "round": "seed", "amount": "$2 million"},
+        "value_text": "Zerops",
+        "source_url": "https://founders-daily-briefing.beehiiv.com/p/zerops-raises-2m",
+        "quote": "Prague-based cloud platform Zerops has raised a $2 million seed round led by Gi21 Capital",
+        "published_date": "2026-05-15",
+        "derivation": "stated"
+      },
+      {
+        "company": "ArtMaster",
+        "listed_date": "2026-04-29",
+        "verdict": "confirmed",
+        "note": "Gi21's own blog post of 2026-04-29; Gi21 supports ArtMaster in its latest round together with Purple Ventures.",
+        "value": {"company": "ArtMaster", "date": "2026-04-29", "round": null, "amount": null},
+        "value_text": "ArtMaster",
+        "source_url": "https://gi21capital.com/blog-posts/investing-in-artmaster-music-education",
+        "quote": "to support ArtMaster in their latest funding round, alongside Purple Ventures.",
+        "published_date": "2026-04-29",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "fetch gi21capital.com/blog (twice, once for links)",
+      "fetch gi21capital.com",
+      "Gi21 Capital fond investice startup kolo",
+      "\"Why We Invested in Hermetiq\" Gi21",
+      "Hermetiq funding round Gi21 Capital investors announcement",
+      "fetch thesaasnews.com zerops-raises-2m-seed-round",
+      "fetch fundraiseinsider.com Hermetiq raises 2.2M",
+      "fetch gi21capital.com/blog-posts/why-we-invested-in-hermetiq",
+      "fetch gi21capital.com/blog-posts/why-we-invested-in-faceup-...",
+      "fetch gi21capital.com/blog-posts/investing-in-artmaster-music-education",
+      "Zerops seed $2M Gi21 Capital Prague PaaS raises",
+      "Gi21 Capital institutional fund data centers fund size Špoljarič (no sized fund found; Altiora Partners vehicle mentioned by e15 but not clearly a Gi21 fund)",
+      "fetch siliconcanals.com Zerops 2024 pre-seed",
+      "fetch founders-daily-briefing.beehiiv.com zerops-raises-2m (twice)",
+      "\"Gi21 Capital\" raises round participation September 2026"
+    ]
+  },
+  {
+    "candidate_id": "C184",
+    "funds": [],
+    "funds_without_size": ["Miton C", "Miton Psychonats"],
+    "deal_checks": [
+      {
+        "company": "Aim",
+        "listed_date": "2025-01-01",
+        "verdict": "corrected",
+        "note": "Pre-seed of EUR 300,000 from Miton reported 2025-07-15 (Startbase). The listed date is only the year-level entry from Miton's About page.",
+        "value": {"company": "Aim", "date": "2025-07-15", "round": "pre-seed", "amount": "300.000 Euro"},
+        "value_text": "Aim",
+        "source_url": "https://www.startbase.de/news/aim-erhaelt-300-000-e-pre-seed/",
+        "quote": "Das tschechische AI-Startup Aim hat sich ein Pre-Seed-Investment in Höhe von 300.000 Euro durch den Frühphasen-Investor Miton gesichert.",
+        "published_date": "2025-07-15",
+        "derivation": "stated"
+      },
+      {
+        "company": "Bandits",
+        "listed_date": "2025-01-01",
+        "verdict": "corrected",
+        "note": "Announced 2025-11-20 on Lupa.cz (EUR 400,000 from Miton; Bandits is a new project by Jiří Štěpánek, Kryštof Mitka and Miton).",
+        "value": {"company": "Bandits", "date": "2025-11-20", "round": null, "amount": "400 tisíc eur"},
+        "value_text": "Bandits",
+        "source_url": "https://www.lupa.cz/aktuality/aby-se-lepe-jelo-na-vlne-umele-inteligence-miton-investuje-do-startupu-ktery-ji-chce-firmam-zefektivnit/",
+        "quote": "Miton posílá 400 tisíc eur (necelých 9,7 milionu Kč) do startupu Bandits",
+        "published_date": "2025-11-20",
+        "derivation": "stated"
+      },
+      {
+        "company": "PangeAI",
+        "listed_date": "2025-01-01",
+        "verdict": "corrected",
+        "note": "Pre-seed round of 1M in total, announced by the founders at the end of 2025 (Lupa.cz 2026-04-29 says 'na konci loňského roku'; CB Insights lists 2025-12-11, not cited). The earliest page I could quote is Miton's own recap blog dated 2026-01-07; Miton led the Czech part. Quote does not repeat the company name, the blog section is about PangeAI.",
+        "value": {"company": "PangeAI", "date": "2026-01-07", "round": "pre-seed", "amount": "$1M"},
+        "value_text": "we led its pre-seed round",
+        "source_url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/",
+        "quote": "In the Czech Republic, the company received an investment from us as well, as we led its pre-seed round.",
+        "published_date": "2026-01-07",
+        "derivation": "stated"
+      },
+      {
+        "company": "POS Experts",
+        "listed_date": "2024-11-18",
+        "verdict": "confirmed",
+        "note": "CzechCrunch live article of 2024-11-18 about Miton's gastro team reports a minority-stake investment in POS Experts (quote does not repeat the name Miton, the article is about Miton).",
+        "value": {"company": "POS Experts", "date": "2024-11-18", "round": "minority stake", "amount": null},
+        "value_text": "POS Experts",
+        "source_url": "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/",
+        "quote": "A přidal investici do menšinového podílu v POS Experts.",
+        "published_date": "2024-11-18",
+        "derivation": "stated"
+      },
+      {
+        "company": "GTE",
+        "listed_date": "2024-01-01",
+        "verdict": "corrected",
+        "note": "Miton (via MitonC) backed GTE in its pre-seed and seed rounds in H2 2024 (Miton's later blog says 'in 2024'); first public announcement by MitonC was a post dated 2025-01-16 embedded in Miton's blog of 2025-01-23. Nothing supports January 2024.",
+        "value": {"company": "GTE", "date": "2025-01-23", "round": "seed", "amount": null},
+        "value_text": "@GTE_XYZ",
+        "source_url": "https://www.miton.cz/en/blog/2024-at-mitonc-six-new-investments-and-filip-siroky-as-general-partner/",
+        "quote": "We at @MitonC_ are hyped to back @GTE_XYZ",
+        "published_date": "2025-01-23",
+        "derivation": "stated"
+      },
+      {
+        "company": "Firefish",
+        "listed_date": "2023-01-01",
+        "verdict": "corrected",
+        "note": "Latest follow-on reported: seed round of 1.8M dollars led by Braiins with MitonC, cc.cz 2025-04-16 (Braiins blog 2025-04-08). The first Miton investment was reported by cc.cz on 2023-10-04 (not January 2023). Quote does not repeat the name Firefish, the article is about Firefish.",
+        "value": {"company": "Firefish", "date": "2025-04-16", "round": "seed", "amount": "1,8 milionu dolarů"},
+        "value_text": "MitonC",
+        "source_url": "https://cc.cz/funguje-jako-zonky-kryte-bitcoiny-v-uschove-jich-ma-mit-za-dve-miliardy-cesky-startup-nabira-dalsi-miliony/",
+        "quote": "Vedoucím investorem je česká společnost pro těžbu kryptoměn Braiins, přidal se také investiční fond MitonC",
+        "published_date": "2025-04-16",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "DeepScout",
+        "note": "EUR 200,000 round led by Miton, announced 2025-03-10 (after the newest listed date).",
+        "value": {"company": "DeepScout", "date": "2025-03-10", "round": null, "amount": "€200,000"},
+        "value_text": "DeepScout",
+        "source_url": "https://en.ain.ua/2025/03/10/deepscout-secures-eur200k",
+        "quote": "DeepScout, a Czech AI startup, has secured €200,000 in fresh funding led by the startup studio Miton.",
+        "published_date": "2025-03-10",
+        "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "fetch miton.cz/en/about",
+      "fetch cc.cz miton-posiluje-svuj-tym-zamereny-na-gastronomii",
+      "fetch miton.cz blog what-happened-fall-winter-2025 (twice)",
+      "GTE pre-seed seed 2024 Miton MitonC investors crypto trading",
+      "Firefish Bitcoin-backed loans raises seed Miton Braiins",
+      "fetch miton.cz blog 2024-at-mitonc-six-new-investments",
+      "fetch braiins.com Firefish 1.8M seed round",
+      "fetch cc.cz mitonc-hlasi-uspesny-rok",
+      "fetch forbes.cz vychazejici-hvezda (paywalled, headline only)",
+      "GTE.xyz raises seed round MitonC Miton investors GTE exchange MegaETH funding announced",
+      "fetch theblock.co GTE funding (no mention of Miton)",
+      "Miton investuje 400 tisíc eur startup Bandits Štěpánek Mitka",
+      "PangeAI pre-seed Miton Stanford startup raises",
+      "EU-Startups Bandits Prague AI implementation startup Miton €400,000 OKTAGON",
+      "Miton investice Aim AI startup 2025 Miton investoval do Aim",
+      "MitonC fund size million crypto fund Miton Filip Široký fond velikost (no fund size stated anywhere)",
+      "fetch lupa.cz Bandits article",
+      "fetch startbase.de aim-erhaelt-300-000-e-pre-seed",
+      "Firefish seed 2025 Braiins Miton cc.cz kryptofond MitonC půjčky Bitcoin",
+      "fetch cc.cz funguje-jako-zonky-kryte-bitcoiny",
+      "fetch cc.cz at-bitcoiny-nelezi-ladem (2023-10-04)",
+      "PangeAI Johanna von der Leyen Marek Miltner pre-seed $1M Plug and Play RTP Global Miton announcement",
+      "fetch forbes.cz cech-zalozil-startup (paywalled)",
+      "fetch lupa.cz jel-se-do-berlina-jen-pobavit (PangeAI, 2026-04-29)",
+      "fetch en.ain.ua deepscout-secures-eur200k"
+    ]
+  }
+]

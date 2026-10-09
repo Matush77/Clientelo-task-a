@@ -111,3 +111,23 @@ def test_merge_refined_fund_supersedes_the_frozen_claim_about_the_same_fund():
     merged, notes = merge(old, new, [])
     assert [json.loads(c["value"])["size"] for c in merged] == ["EUR 27M"]
     assert total_capital(merged, ON)["eur"] == pytest.approx(27e6)
+
+
+def test_judge_items_are_deduplicated_and_carry_no_version(tmp_path, monkeypatch):
+    from datetime import date
+
+    import investordb.refine as refine
+    monkeypatch.setattr(refine, "JUDGE_DIR", tmp_path)
+    inv = {"name": "X Ventures", "website": "", "legal_name": "X a.s.", "company_id": "1", "registry_url": ""}
+    same = deal("Alfa", "2025-03-10")
+    old_only = deal("Beta", "2025-05-16")
+    new_only = dict(deal("Beta", "2023-03-07"), event_date_precision="day")
+    result = {"before": {"C1": inv}, "old": {"C1": [same, old_only]}, "merged": {"C1": [same, new_only]}}
+    refine.make_judge_batches(result, date(2026, 10, 9))
+    items = json.loads((tmp_path / "batches" / "j_b01.json").read_text(encoding="utf-8"))[0]["items"]
+    deals = [i for i in items if i["type"] == "deal"]
+    assert sorted((d["company"], d["date"]) for d in deals) == [("Alfa", "2025-03"), ("Beta", "2023-03"), ("Beta", "2025-05")]
+    assert all(set(i) <= {"item_id", "type", "company", "date", "source_url", "legal_name", "company_id",
+                          "registry_url"} for i in items)
+    key = (tmp_path / "key.csv").read_text(encoding="utf-8")
+    assert key.count(",deal,1,1") == 1 and key.count(",deal,1,0") == 1 and key.count(",deal,0,1") == 1

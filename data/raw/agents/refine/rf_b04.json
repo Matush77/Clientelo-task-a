@@ -1,0 +1,372 @@
+[
+  {
+    "candidate_id": "C132",
+    "funds": [
+      {
+        "value": {"name": "Zero Gravity Capital", "known_as": null, "size": "EUR 23m", "currency": "EUR", "vintage": null, "status": "final_close", "status_date": "2023-01-06"},
+        "value_text": "EUR 23m",
+        "source_url": "https://www.unquote.com/cee/news/3028445/zero-one-hundred-targets-eur-15m-for-new-funds-first-close",
+        "quote": "follow-on rounds for existing portfolio companies in the EUR 23m Zero Gravity Capital fund.",
+        "published_date": "2023-01-06",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Wewell",
+        "listed_date": "2023-12-01",
+        "verdict": "confirmed",
+        "note": "Latest round (seed, EUR 1.25M, with Crowdberry and angel Jakub Borovicka) announced 2023-12-06, matches the listed date. The investor's FIRST investment in Wewell (pre-seed, several hundred thousand EUR) was announced earlier, on 2022-06-28 (https://www.startitup.sk/?p=640272, 'Zero Gravity Capital investoval do Wewell'); the Dec 2023 round is a follow-on and is reported as the latest.",
+        "value": {"company": "Wewell", "date": "2023-12-06", "round": "seed", "amount": "1,25 milióna eur"},
+        "value_text": "Wewell",
+        "source_url": "https://www.startitup.sk/?p=840617",
+        "quote": "Investícia 1,25 milióna eur od slovenského fondu Crowdberry Investment Management, Zero Gravity Capital a anjelského investora Jakuba Borovičku poukazuje na silný potenciál Wewell na trhu.",
+        "published_date": "2023-12-06",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "Wewell investice Zero Gravity Capital",
+      "\"Zero Gravity Capital\" fond",
+      "\"Zero Gravity Capital invests in Wewell\" data-driven cosmetics advisor",
+      "Wewell startup investice Crowdberry Zero Gravity Capital Jobava Pečený",
+      "Wewell kosmetika aplikace nové kolo investice 2024 2025 Zero Gravity Capital Crowdberry",
+      "Zero One Hundred fund to invest in CEE startups Zero Gravity Capital fund size million EUR",
+      "Zero Gravity Capital fond veľkosť fondu miliónov eur Slovak Investment Holding Hanuš",
+      "CulturePulse Zero Gravity Capital portfolio investícia",
+      "CulturePulse seed round 2026 B Ventures Zero Gravity Capital raises",
+      "Patron startup investícia Zero Gravity Capital 2024",
+      "fetched: cc.cz Wewell article (2023-12-06), startitup.sk/?p=640272 (2022-06-28), startitup.sk/?p=840617 (2023-12-06), zerogravitycap.com, sih.sk ZGC page, startitup.sk/?p=453938, startitup.sk/?p=742627, tech.eu 2022/12/21, unquote.com 2023-01-06"
+    ]
+  },
+  {
+    "candidate_id": "C135",
+    "funds": [],
+    "funds_without_size": ["Seed Starter"],
+    "deal_checks": [
+      {
+        "company": "Repsense",
+        "listed_date": "2025-12-01",
+        "verdict": "confirmed",
+        "note": "Round of EUR 1.1M announced 2025-12-17 (CzechCrunch), led by Tensor Ventures with Seed Starter of Ceska sporitelna joining; the listed article is the announcement. The quoted sentence names the investor; the article is about Repsense (see headline and first paragraph).",
+        "value": {"company": "Repsense", "date": "2025-12-17", "round": "seed", "amount": "1,1 milionu eur"},
+        "value_text": "Seed Starter České spořitelny",
+        "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/",
+        "quote": "Investiční kolo vedl český deeptech fond Tensor Ventures, přidaly se Seed Starter České spořitelny",
+        "published_date": "2025-12-17",
+        "derivation": "stated"
+      },
+      {
+        "company": "Investown",
+        "listed_date": "2023-11-27",
+        "verdict": "corrected",
+        "note": "Listed source is a 2023 overview of the Seed Starter portfolio. Investown was the programme's first investment, announced 2020-09-02. A later round (2022-05-23, Chytry Honza 30 mil. CZK) did not involve Seed Starter as an investor.",
+        "value": {"company": "Investown", "date": "2020-09-02", "round": null, "amount": "několik milionů korun"},
+        "value_text": "Investown",
+        "source_url": "https://cc.cz/novy-startup-investown-nabidne-investicni-nemovitosti-uz-od-par-stovek-miliony-korun-do-nej-posila-ceska-sporitelna/",
+        "quote": "Nový startup Investown nabídne investiční nemovitosti už od pár stovek. Miliony korun do něj posílá Česká spořitelna",
+        "published_date": "2020-09-02",
+        "derivation": "stated"
+      },
+      {
+        "company": "Signi",
+        "listed_date": "2023-11-27",
+        "verdict": "corrected",
+        "note": "Listed source is a 2023 overview. Investment of Seed Starter (Ceska sporitelna) in Signi announced 2021-03-26 (minority stake, low tens of millions CZK).",
+        "value": {"company": "Signi", "date": "2021-03-26", "round": null, "amount": "do výše 1 milionu eur"},
+        "value_text": "Seed Starteru do Signi",
+        "source_url": "https://cc.cz/ceska-sporitelna-investuje-do-elektronickych-podpisu-ceske-signi-podpori-desitkami-milionu-korun/",
+        "quote": "Hodnota investice Seed Starteru do Signi se pohybuje v rozmezí, které odpovídá standardu u takto maturovaných společností",
+        "published_date": "2021-03-26",
+        "derivation": "stated"
+      },
+      {
+        "company": "PalmApp",
+        "listed_date": "2023-11-27",
+        "verdict": "corrected",
+        "note": "Listed source is a 2023 overview. Investment announced 2022-01-18 (27 mil. CZK in total from Seed Starter and ZenX Capital).",
+        "value": {"company": "PalmApp", "date": "2022-01-18", "round": null, "amount": "27 milionů korun"},
+        "value_text": "PalmApp",
+        "source_url": "https://cc.cz/vyplata-mzdy-kdykoliv-v-mesici-tuzemsky-startup-palmapp-ziskava-desitky-milionu-i-od-ceske-sporitelny/",
+        "quote": "Jedním z nich je PalmApp, který nyní získává finanční podporu od České spořitelny a společnosti ZenX Capital.",
+        "published_date": "2022-01-18",
+        "derivation": "stated"
+      },
+      {
+        "company": "Wflow",
+        "listed_date": "2023-11-27",
+        "verdict": "corrected",
+        "note": "Listed source is a 2023 overview. Seed Starter investment (17 % stake, low tens of millions CZK) announced 2022-02-08.",
+        "value": {"company": "Wflow", "date": "2022-02-08", "round": null, "amount": "nižší desítky milionů korun"},
+        "value_text": "Wflow.com",
+        "source_url": "https://cc.cz/ceskou-sporitelnu-zaujala-automatizace-ucetnictvi-do-startupu-wflow-posila-desitky-milionu-korun/",
+        "quote": "Ze všech startupů, do kterých jsme se Seed Starterem investičně vstoupili, je Wflow.com nejvíce maturovaná firma.",
+        "published_date": "2022-02-08",
+        "derivation": "stated"
+      },
+      {
+        "company": "Rekenber",
+        "listed_date": "2023-11-27",
+        "verdict": "corrected",
+        "note": "Listed source is a 2023 overview. Seed Starter investment of 12 mil. CZK announced 2022-03-15.",
+        "value": {"company": "Rekenber", "date": "2022-03-15", "round": null, "amount": "12 milionů korun"},
+        "value_text": "Rekenber nyní podpoří částkou 12 milionů korun",
+        "source_url": "https://cc.cz/v-cesku-je-800-tisic-lidi-v-insolvenci-startup-pomahajici-resit-problemy-dluzniku-dostal-investici-od-ceske-sporitelny/",
+        "quote": "Pilotní projekt však už realizuje s Českou spořitelnou a její investiční odnož zaměřená na startupy Seed Starter teď oznámila, že Rekenber nyní podpoří částkou 12 milionů korun.",
+        "published_date": "2022-03-15",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "Pointee",
+        "note": "Seed round of 1,4 milionu dolarů led by Tensor Ventures; Seed Starter of Ceska and Slovenska sporitelna joined. Article names the startup in the surrounding text, the quoted sentence names the investor.",
+        "value": {"company": "Pointee", "date": "2026-04-15", "round": "seed", "amount": "1,4 milionu dolarů"},
+        "value_text": "Seed Starter České i Slovenské spořitelny",
+        "source_url": "https://cc.cz/nasadit-ai-je-hracka-ale-uridit-ji-peklo-hlasi-cesky-startup-ktery-na-to-ziskal-desitky-milionu/",
+        "quote": "Investici vedl český fond Tensor Ventures, ke kterému se přidal Seed Starter České i Slovenské spořitelny.",
+        "published_date": "2026-04-15",
+        "derivation": "stated"
+      },
+      {
+        "company": "Definic",
+        "note": "Slovak startup Definic (formerly Nordics), seed round of 2,5 milionu eur led by J&T Ventures; Seed Starter and Slovak Investment Holding joined. Quoted sentence names the investors, the company is named in the preceding sentence of the article.",
+        "value": {"company": "Definic", "date": "2026-06-12", "round": "seed", "amount": "2,5 milionu eur"},
+        "value_text": "Seed Starter patřící pod Českou spořitelnu",
+        "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/",
+        "quote": "Investiční kolo vedl český fond J&T Ventures, ke kterému se připojil Seed Starter patřící pod Českou spořitelnu",
+        "published_date": "2026-06-12",
+        "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "Seed Starter Česká spořitelna investice startup Repsense Tensor Ventures",
+      "Investown Seed Starter Česká spořitelna investice do startupu",
+      "Signi Seed Starter Česká spořitelna investice digitální podpis startup",
+      "PalmApp Seed Starter Česká spořitelna investice",
+      "Wflow Seed Starter Česká spořitelna investice",
+      "Rekenber Seed Starter Česká spořitelna investice insolvence startup",
+      "Repsense raises €2 million seed Tensor Ventures Seed Starter Česká spořitelna Havel disinformation",
+      "\"Seed Starter\" Česká spořitelna investiční program objem milionů korun na investice do startupů rozpočet",
+      "fetched: cc.cz overview 2023-11-27, cc.cz tag/seed-starter, cc.cz Repsense 2025-12-17, forbes.cz Repsense, e15.cz Havel 2026-01-14, cc.cz Investown 2020-09-02, cc.cz Investown 2022-05-23, cc.cz Signi 2021-03-26, cc.cz PalmApp 2022-01-18, cc.cz Wflow 2022-02-08, cc.cz Rekenber 2022-03-15, cc.cz Definic 2026-06-12, cc.cz Pointee 2026-04-15, finance.cz interview, cc.cz Bootcamp 2022-03-28"
+    ]
+  },
+  {
+    "candidate_id": "C139",
+    "funds": [
+      {
+        "value": {"name": "J&T Ventures I", "known_as": null, "size": "7 milionů eur", "currency": "EUR", "vintage": null, "status": "final_close", "status_date": "2025-02-20"},
+        "value_text": "7 milionů eur",
+        "source_url": "https://www.jtbank.cz/clanky/insight/j3ipg9ykdf-investujte-do-spickovych-startupu-s-novym-fondem-j-t-ventures",
+        "quote": "Fond J&T Ventures III navazuje na předchozí úspěšné fondy J&T Ventures I (7 milionů eur) a J&T Ventures II (48 milionů eur)",
+        "published_date": "2025-02-20",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "J&T Ventures II", "known_as": null, "size": "48 milionů eur", "currency": "EUR", "vintage": "2019", "status": "final_close", "status_date": "2025-02-20"},
+        "value_text": "48 milionů eur",
+        "source_url": "https://www.jtbank.cz/clanky/insight/j3ipg9ykdf-investujte-do-spickovych-startupu-s-novym-fondem-j-t-ventures",
+        "quote": "Fond J&T Ventures III navazuje na předchozí úspěšné fondy J&T Ventures I (7 milionů eur) a J&T Ventures II (48 milionů eur)",
+        "published_date": "2025-02-20",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "J&T Ventures II", "known_as": null, "size": "takmer 800 miliónov Kč", "currency": "CZK", "vintage": "2019", "status": "first_close", "status_date": "2020-06-06"},
+        "value_text": "takmer 800 miliónov Kč",
+        "source_url": "https://www.startitup.sk/jt-napumpuje-do-startupov-30-milionov-eur-koronakrizu-povazuje-za-prilezitost/",
+        "quote": "Investičný fond Ventures II bol s miernym oneskorením oproti plánu spustený v októbri minulého roka. Len do marca dokázal získať takmer 800 miliónov Kč.",
+        "published_date": "2020-06-06",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "J&T Ventures II", "known_as": null, "size": "1 miliarda Kč", "currency": "CZK", "vintage": "2019", "status": "target", "status_date": "2020-06-06"},
+        "value_text": "1 miliarda Kč",
+        "source_url": "https://www.startitup.sk/jt-napumpuje-do-startupov-30-milionov-eur-koronakrizu-povazuje-za-prilezitost/",
+        "quote": "Len do marca dokázal získať takmer 800 miliónov Kč. Plánovaná veľkosť fondu je pritom rovná 1 miliarda Kč.",
+        "published_date": "2020-06-06",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "J&T Ventures III", "known_as": null, "size": "75 milionů eur", "currency": "EUR", "vintage": "2024", "status": "target", "status_date": "2024-11-05"},
+        "value_text": "75 milionů eur",
+        "source_url": "https://www.jtbank.cz/clanky/interview/j3imbtu9eu-adam-kocik-zajimava-prilezitost-ma-nazev-j-t-ventures-iii",
+        "quote": "J&T Ventures zúročuje deset let zkušeností ve venture kapitálu a spouští svůj dosud největší venture kapitálový fond s plánovanou velikostí 75 milionů eur.",
+        "published_date": "2024-11-05",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Xund",
+        "listed_date": "2025-03-05",
+        "verdict": "confirmed",
+        "note": "Pre-Series A of EUR 6M led by Lead Ventures, J&T Ventures joined; announced 2025-03-05.",
+        "value": {"company": "Xund", "date": "2025-03-05", "round": "Pre-Series A", "amount": "6 milionů eur"},
+        "value_text": "Xund",
+        "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/",
+        "quote": "J&T Ventures a Lead Ventures investují do vídeňského scaleupu Xund, celkem 6 milionů eur",
+        "published_date": "2025-03-05",
+        "derivation": "stated"
+      },
+      {
+        "company": "FetView",
+        "listed_date": "2015-03-01",
+        "verdict": "confirmed",
+        "note": "First announcement of the fund's investment in FetView (and ICE GATEWAY) is the CzechCrunch article of 2015-03-24, within 2 months of the listed date.",
+        "value": {"company": "FetView", "date": "2015-03-24", "round": null, "amount": null},
+        "value_text": "FetView",
+        "source_url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/",
+        "quote": "Zhruba rok starý venture kapitálový fond J&T VENTURES patřící J&T bance, ohlašuje investici do dvou zajímavých projektů. Konkrétně se jedná o zdravotnický software FetView",
+        "published_date": "2015-03-24",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "ValkaAI",
+        "note": "Pre-seed round of EUR 12M led by Rockaway Ventures with J&T Ventures, Tensor Ventures, BD Partners and Fond Nase Cesko; announced 2026-02-24. The quoted sentence names the investors; the startup ValkaAI is named in the surrounding article text.",
+        "value": {"company": "ValkaAI", "date": "2026-02-24", "round": "pre-seed", "amount": "12 milionů eur"},
+        "value_text": "J&T Ventures",
+        "source_url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/",
+        "quote": "Startup v pre-seedovém kole získal rekordní investici 12 milionů eur, tedy necelých 300 milionů korun, a to od tuzemských fondů J&T Ventures, Tensor Ventures, BD Partners",
+        "published_date": "2026-02-24",
+        "derivation": "stated"
+      },
+      {
+        "company": "Definic",
+        "note": "Seed round of 2,5 milionu eur, led by J&T Ventures (first Slovak investment); Seed Starter and Slovak Investment Holding joined; announced 2026-06-12. Quoted sentence names the investor, the company is named in the preceding sentence of the article.",
+        "value": {"company": "Definic", "date": "2026-06-12", "round": "seed", "amount": "2,5 milionu eur"},
+        "value_text": "Investiční kolo vedl český fond J&T Ventures",
+        "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/",
+        "quote": "Investiční kolo vedl český fond J&T Ventures, ke kterému se připojil Seed Starter patřící pod Českou spořitelnu",
+        "published_date": "2026-06-12",
+        "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "J&T Ventures fond uzavřel velikost fondu milionů eur první fond J&T Ventures",
+      "\"J&T Ventures III\" fond objem startupy investice",
+      "J&T Ventures druhý fond Adam Kočík startupy fond o velikosti milionů eur uzavření",
+      "J&T Ventures třetí fond spuštění 2025 startupy Kočík \"J&T Ventures III\"",
+      "J&T Ventures III first close OR final close OR \"první uzavření\" fund million EUR commitments",
+      "Definic Nordics seed 2,5 milionu eur J&T Ventures Seed Starter Slovak Investment Holding",
+      "ValkaAI J&T Ventures investice",
+      "fetched: cc.cz Xund 2025-03-05, cc.cz FetView 2015-03-24, konference.jtbank.cz PDF (no text), jtventures.cz, e15.cz 2015-12-09, e15.cz 2017-02-25, startitup.sk 2020-06-06, jtbank.cz interview 2024-11-05, jtbank.cz insight 2025-02-20, cc.cz ValkaAI 2026-02-24"
+    ]
+  },
+  {
+    "candidate_id": "C144",
+    "funds": [
+      {
+        "value": {"name": "Reflex 2", "known_as": "Reflex 2", "size": "až osmdesát milionů eur", "currency": "EUR", "vintage": "2018", "status": "target", "status_date": "2018-04-05"},
+        "value_text": "až osmdesát milionů eur",
+        "source_url": "https://www.e15.cz/byznys/finance-a-bankovnictvi/fryc-otevira-druhy-fond-nabidne-az-osmdesat-milionu-eur-start-upum-1345270",
+        "quote": "Fryc otevírá druhý fond. Nabídne až osmdesát milionů eur start-upům",
+        "published_date": "2018-04-05",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Reflex 2", "known_as": "Reflex 2", "size": "od 30 do 50 milionů eur", "currency": "EUR", "vintage": "2018", "status": "target", "status_date": "2018-10-25"},
+        "value_text": "od 30 do 50 milionů eur",
+        "source_url": "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+        "quote": "Reflex 2 by měl mít pro investice nejen do startupů nakonec od 30 do 50 milionů eur,",
+        "published_date": "2018-10-25",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Reflex 2", "known_as": "Reflex 2", "size": "20 milionů eur", "currency": "EUR", "vintage": "2018", "status": "final_close", "status_date": "2023-03-09"},
+        "value_text": "20 milionů eur",
+        "source_url": "https://www.newstream.cz/money/ondrej-fryc-reflex-capital-otevre-dalsi-fond",
+        "quote": "Pomalu připravujeme Reflex 3. Bude to malý fond, počítáme s kapitálem 20 milionů eur, jako měl Reflex 2",
+        "published_date": "2023-03-09",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Reflex 3", "known_as": "třetí fond", "size": "20 milionů eur", "currency": "EUR", "vintage": "2023", "status": "target", "status_date": "2023-03-09"},
+        "value_text": "počítáme s kapitálem 20 milionů eur",
+        "source_url": "https://www.newstream.cz/money/ondrej-fryc-reflex-capital-otevre-dalsi-fond",
+        "quote": "Pomalu připravujeme Reflex 3. Bude to malý fond, počítáme s kapitálem 20 milionů eur, jako měl Reflex 2",
+        "published_date": "2023-03-09",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Reflex 3", "known_as": "třetí fond", "size": "dvaadvacet milionů eur", "currency": "EUR", "vintage": "2023", "status": "final_close", "status_date": "2023-12-22"},
+        "value_text": "dvaadvacet milionů eur",
+        "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+        "quote": "Uzavřel svůj třetí fond o velikosti dvaadvacet milionů eur, tedy bezmála 540 milionů korun.",
+        "published_date": "2023-12-22",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["Reflex 1"],
+    "deal_checks": [
+      {
+        "company": "Digitoo",
+        "listed_date": "2023-12-14",
+        "verdict": "confirmed",
+        "note": "Seed round of EUR 2.3M led by Reflex Capital, announced 2023-12-14.",
+        "value": {"company": "Digitoo", "date": "2023-12-14", "round": "seed", "amount": "€2.3M"},
+        "value_text": "Digitoo",
+        "source_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital",
+        "quote": "Czech startup Digitoo raises €2.3M in a seed round from Reflex Capital",
+        "published_date": "2023-12-14",
+        "derivation": "stated"
+      },
+      {
+        "company": "Leadspicker",
+        "listed_date": "2020-05-21",
+        "verdict": "confirmed",
+        "note": "First round (about 50 mil. CZK / EUR 2m seed) led by Reflex Capital with J&T Ventures; CzechCrunch reported it 2020-05-20, Global Private Capital 2020-05-21.",
+        "value": {"company": "Leadspicker", "date": "2020-05-21", "round": "seed", "amount": "USD2.2m"},
+        "value_text": "Leadspicker",
+        "source_url": "https://globalprivatecapital.org/?p=22043",
+        "quote": "Reflex Capital and J&T Ventures Invest USD2.2m in Czech AI-Enabled Scouting Startup Leadspicker",
+        "published_date": "2020-05-21",
+        "derivation": "stated"
+      },
+      {
+        "company": "TopMonks",
+        "listed_date": "2017-09-05",
+        "verdict": "confirmed",
+        "note": "Investment of 35 mil. CZK from Reflex Capital announced 2017-09-05.",
+        "value": {"company": "TopMonks", "date": "2017-09-05", "round": null, "amount": "35 milionů Kč"},
+        "value_text": "TopMonks",
+        "source_url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/",
+        "quote": "České startupové studio TopMonks získává investici 35 milionů Kč od Reflex Capital Ondřeje Fryce",
+        "published_date": "2017-09-05",
+        "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "Merchantee",
+        "note": "Extension of the 2024 seed round by another 30 million CZK, led by Reflex Capital with Czech Founders VC and Lighthouse Ventures; announced 2026-06-09. Quoted sentence names the investor, the company is named in the preceding sentence of the article.",
+        "value": {"company": "Merchantee", "date": "2026-06-09", "round": "seed extension", "amount": "třicet milionů korun"},
+        "value_text": "Reflex Capital",
+        "source_url": "https://cc.cz/resi-jeden-z-nejvetsich-problemu-evropskych-e-shopu-kvituje-investor-cesi-ziskali-dalsi-desitky-milionu/",
+        "quote": "Kolo vedl fond Reflex Capital za účasti Czech Founders VC a Lighthouse Ventures.",
+        "published_date": "2026-06-09",
+        "derivation": "stated"
+      },
+      {
+        "company": "FaceUp",
+        "note": "Series A of five million dollars led by Fil Rouge Capital; Reflex Capital took part as an existing investor; announced 2026-05-19 (earlier round with Reflex reported 2024-10-10). Quoted sentence names the investor, the company FaceUp is named in the surrounding article text.",
+        "value": {"company": "FaceUp", "date": "2026-05-19", "round": "Series A", "amount": "pět milionů dolarů"},
+        "value_text": "Reflex Capital",
+        "source_url": "https://cc.cz/byl-to-studentsky-projekt-ted-uz-ma-hodnotu-pres-pul-miliardy-nabidky-na-odkup-odmitame-hlasi-cesi/",
+        "quote": "Do investice se pak zapojili i stávající investoři Jiří Hlavenka, Tilia Impact Ventures a Reflex Capital",
+        "published_date": "2026-05-19",
+        "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "Reflex Capital Ondřej Fryc druhý fond Reflex 2 uzavřel milionů eur první fond Spread Capital velikost",
+      "\"Reflex Capital\" fund close million EUR Fryc second fund",
+      "Leadspicker investice Reflex Capital Ondřej Fryc J&T Ventures kolo",
+      "fetched: cc.cz third fund 2023-12-22, cc.cz Reflex 2 2018-10-25, e15.cz 2018-04-05, cc.cz valuace 2024-01-08, newstream.cz 2023-03-09, ain.ua Digitoo, cc.cz TopMonks 2017-09-05, cc.cz Leadspicker 2020-05-20, globalprivatecapital.org Leadspicker, cc.cz tag/reflex-capital, cc.cz Merchantee 2026-06-09, cc.cz FaceUp 2026-05-19"
+    ]
+  }
+]

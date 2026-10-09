@@ -1,0 +1,220 @@
+[
+  {
+    "candidate_id": "C092",
+    "funds": [
+      {
+        "value": {"name": "Lighthouse Seed Fund", "known_as": "Lighthouse Seed Fund", "size": "23 mil. EUR", "currency": "EUR", "vintage": "2019", "status": "final_close", "status_date": "2019-06-06"},
+        "value_text": "23 miliony eur",
+        "source_url": "https://www.lupa.cz/aktuality/zalesakuv-lighthouse-investuje-do-brnenskych-pekat-vision-pomoci-ai-hleda-chyby/",
+        "quote": "Fond Lighthouse aktuálně operuje s 23 miliony eur.",
+        "published_date": "2019-06-06",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Lighthouse Seed Fund", "known_as": "Lighthouse Seed Fund", "size": "600 mil. CZK", "currency": "CZK", "vintage": "2019", "status": "final_close", "status_date": "2020-04-06"},
+        "value_text": "600 milionů korun",
+        "source_url": "https://cc.cz/2020/04/nejde-o-zdroj-penez-ale-jak-fondy-podporuji-startupy-v-rozvoji-i-pres-krizi-investujeme-dal-rika-zalesak-z-lighthouse-ventures/",
+        "quote": "Loni společně s partnery založil investiční fond Lighthouse Ventures s celkovým kapitálem na úrovni 600 milionů korun",
+        "published_date": "2020-04-06",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["Lighthouse Fund II"],
+    "deal_checks": [
+      {
+        "company": "Ranketta", "listed_date": "2025-11-01", "verdict": "confirmed",
+        "note": "pre-seed round led by Lighthouse Ventures; page 'Updated November 27, 2025', funding date November 2025",
+        "value": {"company": "Ranketta", "date": "2025-11-27", "round": "pre-Seed", "amount": "€1 million"},
+        "value_text": "Ranketta",
+        "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/",
+        "quote": "Ranketta, a Brno, Czech Republic-based AI visibility platform, has raised €1 million in pre-Seed funding. The funding round was led by Lighthouse Ventures, with participation from Gi21 Capital.",
+        "published_date": "2025-11-27", "derivation": "stated"
+      },
+      {
+        "company": "Pekat Vision", "listed_date": "2019-06-07", "verdict": "confirmed",
+        "note": "Lighthouse Ventures' first investment; CzechCrunch dated 7 June 2019 (Lupa.cz 6 June 2019). No follow-on round by Lighthouse found; company later sold to Datalogic (exit, not an investment)",
+        "value": {"company": "Pekat Vision", "date": "2019-06-07", "round": null, "amount": "vyšší stovky tisíc eur"},
+        "value_text": "Pekat Vision",
+        "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/",
+        "quote": "Český fond Lighthouse Ventures vložil vyšší stovky tisíc eur do brněnského AI startupu Pekat Vision",
+        "published_date": "2019-06-07", "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "Merchantee",
+        "note": "extension of a 2024 round led by Reflex Capital with Czech Founders VC and Lighthouse Ventures; amount differs by source (Lupa/CzechCrunch: 30 mil. CZK, raising.fi: EUR 1.8M) so no amount given",
+        "value": {"company": "Merchantee", "date": "2026-06-09", "round": null, "amount": null},
+        "value_text": "Lighthouse Ventures",
+        "source_url": "https://raising.fi/news/merchantee-undisclosed-june-2026",
+        "quote": "Lighthouse Ventures also joined this funding effort, indicating strong interest in Merchantee",
+        "published_date": "2026-06-09", "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "\"Lighthouse Ventures\" fond uzavřel milionů eur",
+      "Lighthouse Ventures Zálešák druhý fond Lighthouse Ventures II první uzavření",
+      "Lighthouse Ventures Prague \"Fund II\" EIF Czech seed fund Zálešák 2024 launch",
+      "Ranketta pre-seed €1 million Lighthouse Ventures Gi21 Capital",
+      "\"Lighthouse Ventures\" investice startup kolo 2026",
+      "Pekat Vision investice kolo Lighthouse Ventures follow-on",
+      "Merchantee €1.8M round Reflex Capital Czech Founders VC Lighthouse Ventures",
+      "Hermetiq pre-seed $2.2M Lighthouse Ventures AI-native build infrastructure"
+    ]
+  },
+  {
+    "candidate_id": "C099",
+    "funds": [
+      {
+        "value": {"name": "Neulogy Ventures (seed fund and VC fund, combined)", "known_as": null, "size": "23 mil. EUR", "currency": "EUR", "vintage": "2014", "status": "final_close", "status_date": "2014-04-30"},
+        "value_text": "23 miliónov Eur",
+        "source_url": "https://www.startitup.sk/?p=8860",
+        "quote": "Obidva fondy majú k dispozícii 23 miliónov Eur",
+        "published_date": "2014-04-30",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "GA Drilling", "listed_date": "2024-04-18", "verdict": "confirmed",
+        "note": "USD 15M first close announced 18 April 2024 (ThinkGeoEnergy, the listed source, names Neulogy Ventures among investors); PrivSource headline dated 25 April 2024 names both. Seedtable lists a July 2025 round with Neulogy as lead but this is unconfirmed; the March 2026 USD 44.1M round coverage does not name Neulogy",
+        "value": {"company": "GA Drilling", "date": "2024-04-25", "round": "first close", "amount": "$15M"},
+        "value_text": "GA Drilling",
+        "source_url": "https://www.privsource.com/acquisitions/deal/YBSvjg",
+        "quote": "GA Drilling Secures $15M First Close from Nabors, alfa8, Underground Ventures, Neulogy Ventures and Thomas von Koch",
+        "published_date": "2024-04-25", "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "Neulogy Ventures fund size million EUR first close fond uzavřel",
+      "Neulogy Ventures Štefunko fond miliónov eur Neulogy Fund II",
+      "EIF Neulogy Ventures \"Innovation Fund\" \"Entrepreneurs Fund\" JEREMIE Slovakia EUR 23m",
+      "GA Drilling Neulogy Ventures investícia Slovak geothermal drilling funding Nabors Underground Ventures",
+      "Neulogy Ventures nový fond Neulogy Ventures II Slovak VC 2021 2022 2023 fund close EUR",
+      "StratifAI pre-seed Neulogy Ventures",
+      "GreenWay investícia Neulogy Ventures 2025 financing round",
+      "StratifAI secures €1.5 million pre-seed co-led by Neulogy Ventures and MultiplexDX precision oncology press release"
+    ]
+  },
+  {
+    "candidate_id": "C100",
+    "funds": [
+      {
+        "value": {"name": "Venture to Future Fund", "known_as": "Venture to Future Fund", "size": "55 mil. EUR", "currency": "EUR", "vintage": "2020", "status": "final_close", "status_date": null},
+        "value_text": "55 mil. EUR",
+        "source_url": "https://vff.sk",
+        "quote": "máme vyčlenených 55 mil. EUR, aby sme našli a zafinancovali práve váš projekt",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Venture to Future Fund", "known_as": "Venture to Future Fund", "size": "40.4 mil. EUR", "currency": "EUR", "vintage": "2020", "status": "final_close", "status_date": null},
+        "value_text": "EUR 40.4 million",
+        "source_url": "https://www.sih.sk/en/aktuality/venture-to-future-fund-navysuje-kapital-o-15-3-miliona-eur-na-podporu-slovenskych-startupov",
+        "quote": "an initial capital of EUR 40.4 million",
+        "published_date": "2024-05-28",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "Talentiqa", "listed_date": "2025-10-01", "verdict": "confirmed",
+        "note": "EUR 1M round backed equally by Purple Ventures and VFF; page 'Updated October 07, 2025', funding date October 2025",
+        "value": {"company": "Talentiqa", "date": "2025-10", "round": null, "amount": "€1 million"},
+        "value_text": "Talentiqa",
+        "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/",
+        "quote": "Talentiqa, an Ostrava, Czech Republic-based recruitment automation startup, has raised €1 million in funding. The funding round was backed equally by Purple Ventures and Venture to Future Fund.",
+        "published_date": "2025-10-07", "derivation": "stated"
+      },
+      {
+        "company": "Product Fruits", "listed_date": "2023-05-10", "verdict": "confirmed",
+        "note": "VFF's own news item, listed as 10.05.2023 (the page body carries the dateline 29 March 2023, still within 2 months); co-investor LEVERAGE. A 2024 follow-on was by Reflex Capital alone",
+        "value": {"company": "Product Fruits", "date": "2023-05-10", "round": null, "amount": "1,6 milióna eur"},
+        "value_text": "Product Fruits",
+        "source_url": "https://vff.sk/novinky/nase-investicne-portfolio-sa-rozsirilo-o-spolocnost-product-fruits-ktora-ziskala-investiciu-vo-vyske-1-6-miliona-eur-19",
+        "quote": "Naše investičné portfólio sa rozšírilo o spoločnosť Product Fruits, ktorá získala investíciu vo výške 1,6 milióna eur",
+        "published_date": "2023-05-10", "derivation": "stated"
+      },
+      {
+        "company": "Sensoneo", "listed_date": "2021-10-24", "verdict": "corrected",
+        "note": "FOLLOW-ON: VFF took part as an existing investor in Sensoneo's EUR 6.2M Series A (announced 8 June 2023, led by Taiwania Capital). The first VFF investment (EUR 2M with EIC Fund) was announced on vff.sk on 24.10.2021, which matches the listed date: 'Sensoneo získalo investíciu 2 milióny eur z Fondu Európskej rady pre inovácie a Venture to Future Fund'",
+        "value": {"company": "Sensoneo", "date": "2023-06-08", "round": "Series A", "amount": "6.2 million euros"},
+        "value_text": "Venture to Future Fund",
+        "source_url": "https://sensoneo.com/series-a-investment/",
+        "quote": "Venture to Future Fund. Sensoneo will use the investment to expand into other regions",
+        "published_date": "2023-06-08", "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "\"Venture to Future Fund\" 55 miliónov eur fond uzavretie",
+      "Venture to Future Fund navyšuje kapitál o 15,3 milióna EUR na podporu slovenských startupov",
+      "Talentiqa Purple Ventures Venture to Future Fund investícia 1 milión eur",
+      "Sensoneo investícia Venture to Future Fund EIC Fund 2 milióny eur",
+      "Product Fruits investice Venture to Future Fund 1,6 milionu eur"
+    ]
+  },
+  {
+    "candidate_id": "C125",
+    "funds": [
+      {
+        "value": {"name": "National Development Fund II", "known_as": null, "size": "623 mil. EUR", "currency": "EUR", "vintage": "2014", "status": "final_close", "status_date": "2017-12-31"},
+        "value_text": "EUR 623 mil.",
+        "source_url": "https://sih.sk/en/stranky/cinnosti/national-development-fund-ii/o-spolocnosti-ndf-ii",
+        "quote": "Financial resources allocated to NDF II. as of the 31st December 2017 amount to EUR 623 mil.",
+        "published_date": null,
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["National Development Fund I", "National Development Fund III"],
+    "deal_checks": [
+      {
+        "company": "PERRY SOFT a.s.", "listed_date": "2025-09-05", "verdict": "confirmed",
+        "note": "SIH invested EUR 2M via National Development Fund II as a convertible loan (36 months) within a EUR 3M round, announced 5 September 2025 on sih.sk",
+        "value": {"company": "PERRY SOFT a.s.", "date": "2025-09-05", "round": "convertible loan", "amount": "EUR 2 million"},
+        "value_text": "PERRY SOFT a.s.",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu",
+        "quote": "Slovak Investment Holding (SIH), through the National Development Fund II., has invested EUR 2 million in PERRY SOFT a.s.",
+        "published_date": "2025-09-05", "derivation": "stated"
+      },
+      {
+        "company": "InoBat", "listed_date": "2024-01-01", "verdict": "confirmed",
+        "note": "SIH joined the ongoing Series C as a capital increase; InoBat press release dated 31 January 2024 (listed date 2024-01-01 is within 2 months). Series C was later closed in December 2024 with SIH among the named contributors; no separate later SIH round found",
+        "value": {"company": "InoBat", "date": "2024-01-31", "round": "Series C", "amount": null},
+        "value_text": "InoBat",
+        "source_url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/",
+        "quote": "InoBat has secured another significant investor, Slovak Investment Holding",
+        "published_date": "2024-01-31", "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "VisionFlow",
+        "note": "convertible loan maturing December 2028, part of a EUR 2 million round with a private Slovak co-investor",
+        "value": {"company": "VisionFlow", "date": "2026-09-22", "round": "convertible loan", "amount": "€1.4 million"},
+        "value_text": "€1.4 million",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-1-4-miliona-eur-do-visionflow-slovensky-startup-vyvija-softverovu-datovu-infrastrukturu-pre-umelu-inteligenciu",
+        "quote": "Slovak Investment Holding is investing €1.4 million in VisionFlow",
+        "published_date": "2026-09-22", "derivation": "stated"
+      },
+      {
+        "company": "AT Crystals",
+        "note": "part of a EUR 400,000 round with an independent private co-investor",
+        "value": {"company": "AT Crystals", "date": "2026-09-15", "round": null, "amount": "€280,000"},
+        "value_text": "€280,000",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-slovenskej-deep-tech-spolocnosti-at-crystals",
+        "quote": "Slovak Investment Holding (SIH) is investing €280,000 in Slovak technology company AT Crystals",
+        "published_date": "2026-09-15", "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "Slovak Investment Holding fondy Slovak Growth Equity Fund Slovak Co-Investment Fund objem milióna eur",
+      "Národný rozvojový fond II SIH objem miliónov eur finančné nástroje Národný rozvojový fond III",
+      "Slovak Investment Holding SIH investuje do startupu 2026 priama investícia kapitálový vstup",
+      "InoBat Slovak Investment Holding SIH investment Series C follow-on 2025 capital increase"
+    ]
+  }
+]

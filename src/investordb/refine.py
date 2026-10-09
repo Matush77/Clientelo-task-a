@@ -308,24 +308,24 @@ def _capital_item(row: dict, ok: list[dict], on: str) -> dict | None:
     cap = total_capital(ok, on)
     if cap["eur"] is None:
         return None
+    # no fund status and the same date precision in both versions: only refined claims carry a status and day dates,
+    # which would tell the fact-checker which version an item comes from (D39)
     basis = []
     for c in cap["counted"]:
         v = _value(c)
         label = v.get("name") or "AUM"
         amount = v.get("size") or v.get("amount") or ""
-        status = {"final_close": "uzavretý", "first_close": "prvé uzavretie"}.get(v.get("status"), "")
-        basis.append({"fund": label, "amount": amount, "status": status, "source_url": c["source_url"]})
-    return {"type": "capital", "total_eur": round(cap["eur"]), "method": cap["method"], "basis": basis,
+        basis.append({"fund": label, "amount": amount, "source_url": c["source_url"]})
+    return {"type": "capital", "total_eur": round(cap["eur"]), "basis": basis,
             "key": (round(cap["eur"]), tuple(sorted(b["source_url"] + b["amount"] for b in basis)))}
 
 
 def _deal_items(ok: list[dict]) -> list[dict]:
     out = []
     for key, c in counted_deals(ok).items():
-        precision = c.get("event_date_precision") or "day"
-        shown = c["event_date"][:4] if precision == "year" else c["event_date"][:7] if precision == "month" else c["event_date"]
+        shown = c["event_date"][:4] if c.get("event_date_precision") == "year" else c["event_date"][:7]
         out.append({"type": "deal", "company": _value(c).get("company"), "date": shown, "source_url": c["source_url"],
-                    "key": (key, shown[:7], c["source_url"])})
+                    "key": (key, shown, c["source_url"])})
     return out
 
 

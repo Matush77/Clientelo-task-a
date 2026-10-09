@@ -1,0 +1,413 @@
+[
+  {
+    "candidate_id": "C023",
+    "funds": [
+      {
+        "value": {"name": "Jet Venture 1", "known_as": "Jet Venture 1", "size": "padesát milionů eur", "currency": "EUR", "vintage": null, "status": "target", "status_date": "2025-12-18"},
+        "value_text": "padesát milionů eur",
+        "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/",
+        "quote": "Fond Jet Venture 1 cílí na velikost padesát milionů eur (zhruba 1,2 miliardy korun) a už po prvním kole fundraisingu má k dispozici přes třicet milionů eur",
+        "published_date": "2025-12-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Jet Venture 1", "known_as": "Jet Venture 1", "size": "přes třicet milionů eur", "currency": "EUR", "vintage": null, "status": "first_close", "status_date": "2025-12-18"},
+        "value_text": "přes třicet milionů eur",
+        "source_url": "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/",
+        "quote": "Fond Jet Venture 1 cílí na velikost padesát milionů eur (zhruba 1,2 miliardy korun) a už po prvním kole fundraisingu má k dispozici přes třicet milionů eur",
+        "published_date": "2025-12-18",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Jet Venture 1", "known_as": "Jet Venture 1", "size": "50 milionů eur", "currency": "EUR", "vintage": "2024", "status": "target", "status_date": "2024-09-28"},
+        "value_text": "50 milionů eur",
+        "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/",
+        "quote": "Idea fondu Jet Ventures, který hodlá postupně od investorů nabrat 50 milionů eur",
+        "published_date": "2024-09-28",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["Jet 2", "Jet 3", "Jet 4"],
+    "deal_checks": [
+      {
+        "company": "AppNava", "listed_date": "2026-09-17", "verdict": "confirmed",
+        "note": "Jet Investment own news item dated 17.9.2026; cc.cz article of 2026-09-17 also lists AppNava among four new Jet Venture 1 investments",
+        "value": {"company": "AppNava", "date": "2026-09-17", "round": null, "amount": "$1.8 Million"},
+        "value_text": "AppNava",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment Invests $1.8 Million in U.S. Startup AppNava, Which Focuses on Predictive Analytics",
+        "published_date": "2026-09-17", "derivation": "stated"
+      },
+      {
+        "company": "Phantasma Labs", "listed_date": "2026-09-01", "verdict": "confirmed",
+        "note": "Jet Investment own news item dated 01.09.2026; lupa.cz of 2026-09-01 reports the same (2,1 milionu eur from Jet Venture 1 SICAV, round 2,6 milionu eur)",
+        "value": {"company": "Phantasma Labs", "date": "2026-09-01", "round": null, "amount": "€2.1 Million"},
+        "value_text": "Phantasma Labs",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment Announces €2.1 Million Investment in Berlin AI Startup Phantasma Labs",
+        "published_date": "2026-09-01", "derivation": "stated"
+      },
+      {
+        "company": "GigaScan", "listed_date": "2026-08-26", "verdict": "confirmed",
+        "note": "Jet Investment own news item dated 26.08.2026; cc.cz of 2026-09-17 repeats it in an overview of four new investments",
+        "value": {"company": "GigaScan", "date": "2026-08-26", "round": null, "amount": "€2.1 million"},
+        "value_text": "GigaScan",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment invests €2.1 million in Swedish deep-tech company GigaScan",
+        "published_date": "2026-08-26", "derivation": "stated"
+      },
+      {
+        "company": "DecisionRules", "listed_date": "2026-06-23", "verdict": "confirmed",
+        "note": "cc.cz article dated 23. 6. 2026 (listed source) and Jet Investment news item dated 24.06.2026; quote taken from the Jet page because it names both parties",
+        "value": {"company": "DecisionRules", "date": "2026-06-24", "round": null, "amount": "€1.5 Million"},
+        "value_text": "DecisionRules",
+        "source_url": "https://www.jetinvestment.cz/en/news",
+        "quote": "Jet Investment Invests €1.5 Million in Czech Startup DecisionRules",
+        "published_date": "2026-06-24", "derivation": "stated"
+      },
+      {
+        "company": "Partory", "listed_date": "2024-09-28", "verdict": "confirmed",
+        "note": "first investment of the new Jet Ventures fund; cc.cz article of 28. 9. 2024 (listed source) announced it, ain.ua of 2024-10-01 names both parties in one sentence; no later follow-on found",
+        "value": {"company": "Partory", "date": "2024-10-01", "round": null, "amount": "€1.25 million"},
+        "value_text": "PARTORY",
+        "source_url": "https://en.ain.ua/2024/10/01/czech-startup-partory-raises-a-eur1m-investment-round-from-jet-investments-new-fund-to-improve-its-application-and-reach-global-markets",
+        "quote": "Czech-based startup PARTORY has raised €1.25 million in a fresh funding round from Jet Ventures",
+        "published_date": "2024-10-01", "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "fetch cc.cz DecisionRules article (23. 6. 2026)",
+      "fetch cc.cz Jet Venture 1 interview (18. 12. 2025)",
+      "fetch jetinvestment.cz/en/news",
+      "Jet Investment invests AppNava $1.8 million predictive analytics",
+      "Jet Investment Phantasma Labs €2.1 million Berlin AI startup",
+      "Jet Investment GigaScan €2.1 million Swedish deep-tech",
+      "fetch cc.cz Brněnská startupová ofenziva (17. 9. 2026)",
+      "fetch lupa.cz Phantasma Labs (1. 9. 2026)",
+      "Jet Investment AppNava investice 1,8 milionu dolarů Jet Venture 1",
+      "fetch forbes.cz Partory (paywalled, headline only)",
+      "fetch cc.cz Brněnští průmyslníci kolem Igora Faita (Partory, 28. 9. 2024)",
+      "fetch cc.cz Brněnská startupová ofenziva (bullet list of four deals)",
+      "Jet Ventures Partory první investice Kamil Levinský fond 50 milionů eur 2024",
+      "fetch en.ain.ua Partory (1 Oct 2024)",
+      "fetch cc.cz Jet 4 article (10. 12. 2025)",
+      "fetch forbes.cz Levinský Jet Ventures (paywalled)",
+      "fetch cc.cz Jet Venture 1 interview (verify exact string)",
+      "fetch jetinvestment.cz/en/news (list of all items)",
+      "Partory investice kolo Jet Ventures 2025 2026 Series A Málek",
+      "Partory secures €2.25M expansion Jet Ventures follow-on"
+    ]
+  },
+  {
+    "candidate_id": "C032",
+    "funds": [
+      {
+        "value": {"name": "Tensor Ventures Fund II", "known_as": "new Tensor Ventures fund launched October 2024 (name not stated in source)", "size": "1,25 miliardy korun", "currency": "CZK", "vintage": "2024", "status": "target", "status_date": "2024-10-10"},
+        "value_text": "1,25 miliardy korun",
+        "source_url": "https://cc.cz/live/tensor-ventures-naplno-rozbiha-druhy-fond-na-deep-tech-startupy-chce-mit-125-miliardy/",
+        "quote": "Nový fond Tensor Ventures cílí na velikost 1,25 miliardy korun (z toho půl miliardy do fondu vložila EIF)",
+        "published_date": "2024-10-10",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tensor Ventures Fund II", "known_as": "new Tensor Ventures fund launched October 2024 (name not stated in source)", "size": "50 milionů EUR", "currency": "EUR", "vintage": "2024", "status": "target", "status_date": "2025-02-24"},
+        "value_text": "50 milionů EUR",
+        "source_url": "https://feedit.cz/2025/02/24/investorum-venture-clubu-putuji-prvni-vynosy-z-fondu-tensor-ventures-fund-1/",
+        "quote": "Druhý fond Tensor Ventures cílí na 50 milionů EUR",
+        "published_date": "2025-02-24",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tensor Ventures Fund II", "known_as": "new Tensor Ventures fund launched October 2024 (name not stated in source)", "size": "50–60 million euros", "currency": "EUR", "vintage": "2024", "status": "target", "status_date": "2025-02-04"},
+        "value_text": "50–60 million euros",
+        "source_url": "https://ventureclub.cz/en/udalost/tensor-ventures-fund-2-presentation/",
+        "quote": "The size is 50–60 million euros",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tensor Ventures Fund II", "known_as": "new Tensor Ventures fund launched October 2024 (name not stated in source)", "size": "miliardu", "currency": "CZK", "vintage": "2024", "status": "first_close", "status_date": null},
+        "value_text": "vybral miliardu",
+        "source_url": "https://forbes.cz/tensor-vybral-miliardu-a-miri-dal-cesti-investori-sazi-na-ai-i-kvantove-technologie/",
+        "quote": "Tensor vybral miliardu a míří dál. Čeští investoři sázejí na kvantové technologie",
+        "published_date": null,
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tensor Ventures first fund (opened 2017)", "known_as": null, "size": "dvacet milionů eur", "currency": "EUR", "vintage": "2017", "status": "final_close", "status_date": "2024-05-15"},
+        "value_text": "dvacet milionů eur",
+        "source_url": "https://cc.cz/evropsky-investicni-fond-uz-vlozil-penize-do-17-ceskych-fondu-miliardovy-ted-otevira-s-tensor-ventures/",
+        "quote": "pak v roce 2017 otevřeli první fond, do něhož získali dvacet milionů eur, a tento kapitál již rozinvestovali do dvacítky startupů.",
+        "published_date": "2024-05-15",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["Tensor Ventures Fund I SCSp"],
+    "deal_checks": [
+      {
+        "company": "AppFactor", "listed_date": "2026-02-01", "verdict": "confirmed",
+        "note": "seed round led by Tensor Ventures; thesaasnews.com (listed source) says 'Updated February 05, 2026'; theaiinsider.tech dated 4 Feb 2026 names both in the headline",
+        "value": {"company": "AppFactor", "date": "2026-02-04", "round": "seed", "amount": "$4 Million"},
+        "value_text": "AppFactor",
+        "source_url": "https://theaiinsider.tech/2026/02/04/tensor-ventures-and-others-invest-4-million-us-in-london-based-appfactor/",
+        "quote": "Tensor Ventures And Others Invest $4 Million US in London-based AppFactor",
+        "published_date": "2026-02-04", "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "fetch tech.eu Tensor Ventures launches €50M fund (11 Oct 2024)",
+      "fetch tensor.ventures",
+      "fetch thesaasnews.com AppFactor",
+      "fetch tech.eu (quote request)",
+      "\"Tensor Ventures\" fond 50 milionů eur deep tech uzavřel první uzavření",
+      "\"Tensor Ventures\" fund close Smola Drdul Ulvr raised million",
+      "fetch cc.cz Tensor Ventures naplno rozbíhá druhý fond (10. 10. 2024)",
+      "fetch forbes.cz Tensor vybral miliardu (paywalled, headline only)",
+      "fetch cc.cz Jsme nerdi investorského světa (14. 4. 2023)",
+      "Tensor Ventures druhý fond closing miliarda korun Next Big Thing půl miliardy navýšit",
+      "\"Tensor Ventures Fund I SCSp\"",
+      "fetch cc.cz Evropský investiční fond už vložil peníze do 17 českých fondů (15. 5. 2024)",
+      "Tensor Ventures uzavřel druhý fond na miliardu korun Smola Drdúl Forbes Next Big Thing",
+      "Tensor Ventures closes second fund CZK 1 billion first close EUR deep tech Czech",
+      "fetch feedit.cz Venture Club Tensor Ventures Fund 1 (24. 2. 2025)",
+      "fetch e15.cz Čeští startupoví dobrodruzi (10. 10. 2024)",
+      "AppFactor raises $4 million seed Tensor Ventures Begin Capital Adara Ventures",
+      "fetch cc.cz Venture Club investuje 35 milionů (11. 6. 2024)",
+      "fetch forbes.cz AppFactor 84 milionů korun (paywalled, headline only)",
+      "Tensor Ventures \"closing\" druhého fondu 1 miliarda korun deep tech Roman Smola 2025",
+      "fetch cc.cz EIF article (verify first-fund sentence)",
+      "fetch thesaasnews.com (check sentence adjacency)",
+      "fetch ventureclub.cz Tensor Ventures Fund 2 presentation",
+      "\"AppFactor\" \"Tensor Ventures\" seed round led London agentic orchestration",
+      "fetch theaiinsider.tech AppFactor (4 Feb 2026)",
+      "fetch blog.tensor.ventures newsletter March 2026"
+    ]
+  },
+  {
+    "candidate_id": "C034",
+    "funds": [
+      {
+        "value": {"name": "Tilia Impact Ventures", "known_as": "Tilia Impact Ventures", "size": "43 milionů korun", "currency": "CZK", "vintage": "2018", "status": "first_close", "status_date": "2018-11-28"},
+        "value_text": "43 milionech korun",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/",
+        "quote": "První kolo jsme uzavřeli na 43 milionech korun",
+        "published_date": "2018-11-28",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia Impact Ventures", "known_as": "Tilia Impact Ventures", "size": "43 milionů korun", "currency": "CZK", "vintage": "2018", "status": "first_close", "status_date": "2019-10-08"},
+        "value_text": "43 milionů korun",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
+        "quote": "Už při svém otevření měl fond k dispozici 43 milionů korun",
+        "published_date": "2019-10-08",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia Impact Ventures", "known_as": "Tilia Impact Ventures", "size": "necelých 60 milionů korun", "currency": "CZK", "vintage": "2018", "status": "target", "status_date": "2018-11-28"},
+        "value_text": "necelých 60 milionů korun",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/",
+        "quote": "doufám, že ve druhém náš fond navýšíme na necelých 60 milionů korun.",
+        "published_date": "2018-11-28",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia 2", "known_as": "Tilia 2", "size": "€26m", "currency": "EUR", "vintage": "2023", "status": "first_close", "status_date": "2023-09-15"},
+        "value_text": "€26m",
+        "source_url": "https://www.causeartist.com/tilia-impact-ventures-32m-impact-seed-fund/",
+        "quote": "successful first closing of its second fund, totaling €26m",
+        "published_date": "2023-09-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia 2", "known_as": "Tilia 2", "size": "26 milionů eur", "currency": "EUR", "vintage": "2023", "status": "first_close", "status_date": "2023-09-21"},
+        "value_text": "26 milionů eur",
+        "source_url": "https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/",
+        "quote": "Prozatím má Tilia potvrzených 26 milionů eur, tedy 634 milionů korun.",
+        "published_date": "2023-09-21",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia 2", "known_as": "Tilia 2", "size": "€32m EUR", "currency": "EUR", "vintage": "2023", "status": "target", "status_date": "2023-09-15"},
+        "value_text": "€32m EUR",
+        "source_url": "https://www.causeartist.com/tilia-impact-ventures-32m-impact-seed-fund/",
+        "quote": "They will continue fundraising to the target of €32m EUR over the next 12 months.",
+        "published_date": "2023-09-15",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "Tilia 2", "known_as": "Tilia 2", "size": "32 milionů eur", "currency": "EUR", "vintage": "2023", "status": "target", "status_date": "2023-09-21"},
+        "value_text": "32 milionů eur",
+        "source_url": "https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/",
+        "quote": "s nímž cílí už na 32 milionů eur, v přepočtu bezmála 781 milionů korun.",
+        "published_date": "2023-09-21",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": [],
+    "deal_checks": [
+      {
+        "company": "NOLD", "listed_date": "2023-10-18", "verdict": "confirmed",
+        "note": "seed round (EUR 1M per tech.eu 2023-10-18) led by Tilia; newstream article dated 18. 10. 2023 is the original announcement coverage",
+        "value": {"company": "NOLD", "date": "2023-10-18", "round": "seed", "amount": "€1 million"},
+        "value_text": "NOLD",
+        "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+        "quote": "Impactový fond Tilia Impact Ventures, který založila investorka a spolumajitelka vydavatelství Albatros Silke Horáková, má nový přírůstek, bulharskou platformu NOLD.",
+        "published_date": "2023-10-18", "derivation": "stated"
+      },
+      {
+        "company": "Munch", "listed_date": "2023-10-18", "verdict": "corrected",
+        "note": "listed source is an overview article; Tilia's investment in Nesnězeno/Munch (merged Nov 2022) was announced in June 2023; the quoted sentence says 'firmy' = Nesnězeno/Munch; Series A of Dec 2023 was a later round",
+        "value": {"company": "Munch", "date": "2023-06-13", "round": null, "amount": "desítky milionů korun"},
+        "value_text": "desítky milionů korun",
+        "source_url": "https://cc.cz/nesnezeno-pred-vyhozenim-zachranilo-300-tisic-jidel-spojilo-se-s-madary-spolecne-sli-na-slovensko/",
+        "quote": "Blíže nespecifikované desítky milionů korun do firmy vložil český fond Tilia Impact Ventures,",
+        "published_date": "2023-06-13", "derivation": "stated"
+      },
+      {
+        "company": "Cyrkl", "listed_date": "2023-10-18", "verdict": "not_found",
+        "note": "listed source is an overview article; cc.cz of 2021-12-20 shows Tilia was already an investor before Kahikatea joined, but no source found that dates Tilia's own investment",
+        "value": null, "value_text": null, "source_url": null, "quote": null, "published_date": null, "derivation": null
+      },
+      {
+        "company": "The Village", "listed_date": "2023-10-18", "verdict": "corrected",
+        "note": "listed source is an overview article; The Village Network round of EUR 3.4M with Tilia announced July 2022 (cc.cz of 2022-07-08 also reports it); the quoted sentences are consecutive and the article headline names The Village",
+        "value": {"company": "The Village", "date": "2022-07-04", "round": null, "amount": "€3.4 million"},
+        "value_text": "€3.4 million",
+        "source_url": "https://tech.eu/2022/07/04/ramping-up-early-education-with-parent-led-micro-schools-the-village-rakes-in-eur34-million/",
+        "quote": "The Polish platform has now raised €3.4 million to create an all-in-one marketplace to encourage child development. The funding was backed by Movens Capital, 500 Startups, Tilia Impact Ventures and Credo Ventures.",
+        "published_date": "2022-07-04", "derivation": "stated"
+      },
+      {
+        "company": "Datlab", "listed_date": "2019-10-08", "verdict": "corrected",
+        "note": "Datlab was announced as the first investment of the new fund at its launch (28. 11. 2018); the listed 2019 MIWA article only recalls it; quote is from Silke Horáková in the Tilia launch interview and does not repeat the fund name",
+        "value": {"company": "Datlab", "date": "2018-11-28", "round": null, "amount": null},
+        "value_text": "Datlab",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/",
+        "quote": "Jsme moc rádi, že naše první investice se zaměří na sektor veřejných zakázek a na firmu, která může tento sektor pozitivně ovlivnit. Jedná se o Datlab",
+        "published_date": "2018-11-28", "derivation": "stated"
+      },
+      {
+        "company": "MIWA Technologies", "listed_date": "2019-10-08", "verdict": "confirmed",
+        "note": "announced as the second investment of Tilia Impact Ventures",
+        "value": {"company": "MIWA Technologies", "date": "2019-10-08", "round": null, "amount": null},
+        "value_text": "MIWA Technologies",
+        "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
+        "quote": "Druhou investicí v portfoliu Tilia Impact Ventures se nyní stává společnost MIWA Technologies",
+        "published_date": "2019-10-08", "derivation": "stated"
+      }
+    ],
+    "new_deals": [],
+    "search_log": [
+      "fetch newstream.cz Fond Silke Horákové investoval do módní platformy (18. 10. 2023)",
+      "fetch cc.cz MIWA article (8. 10. 2019)",
+      "fetch tilia.vc",
+      "Podařilo se. Nový fond Silke Horákové a spol. upsal stamiliony korun Tilia 2",
+      "Tilia Impact Ventures second fund EIF first close million EUR Silke Horáková",
+      "fetch newstream.cz Podařilo se (15. 9. 2023)",
+      "fetch en.ain.ua Tilia launches €32M second fund",
+      "fetch cc.cz Český fond určený na investice se společenskými dopady (21. 9. 2023)",
+      "fetch cc.cz 600 milionů article (exact quotes)",
+      "fetch causeartist.com Tilia €32M",
+      "Silke Horáková třetí fond Tilia Impact Ventures Forbes 2026",
+      "Datlab Tilia Impact Ventures investice Silke Horáková první investice fondu 2019",
+      "Munch Hungary food waste startup raises Tilia Impact Ventures",
+      "Cyrkl investice Tilia Impact Ventures kolo odpady startup",
+      "The Village microschools Poland funding Tilia Impact Ventures",
+      "fetch cc.cz Polka dělá z rodičů mikropodnikatele (8. 7. 2022)",
+      "fetch tech.eu The Village €3.4 million (4 Jul 2022)",
+      "fetch cc.cz Nesnězeno získalo peníze od velkých jmen (10. 1. 2024)",
+      "fetch cc.cz Tilia launch interview (28. 11. 2018)",
+      "NOLD fashion resale platform raises seed Tilia Impact Ventures Depo Ventures Czech Founders Sofia Angel Ventures",
+      "Munch Nesnězeno investice Tilia Impact Ventures desítky milionů korun 2023 seed",
+      "fetch cc.cz Cyrkl Kahikatea article (20. 12. 2021)",
+      "fetch cc.cz Nesnězeno 300 tisíc jídel (13. 6. 2023)",
+      "fetch tech.eu NOLD €1M seed (18 Oct 2023)",
+      "Cyrkl 2020 pre-seed investice Tilia Impact Ventures 5 milionů korun Cyril Klepek",
+      "fetch tech.eu Munch Series A (19 Dec 2023)",
+      "Nesnězeno Munch červen 2023 investice desítky milionů korun Tilia Fiedler Capital BNL Start Partners Silicon Gardens",
+      "fetch tech.eu The Village (verify adjacency)",
+      "fetch newstream.cz NOLD sentence continuation",
+      "fetch forbes.cz Cyrkl vyráží bojovat s odpadem (paywalled)",
+      "fetch cc.cz Tilia launch interview (verify Datlab sentence)"
+    ]
+  },
+  {
+    "candidate_id": "C063",
+    "funds": [
+      {
+        "value": {"name": "JSK Investments SICAV", "known_as": "JSK Investments SICAV", "size": "dvě miliardy korun", "currency": "CZK", "vintage": "2025", "status": "first_close", "status_date": "2025-10-01"},
+        "value_text": "dvě miliardy korun",
+        "source_url": "https://www.newstream.cz/money/kijonkova-spousti-vlastni-fond-pro-kvalifikovane-investory",
+        "quote": "Počáteční objem prostředků činí dvě miliardy korun s výhledem na navýšení do řádu vyšších jednotek miliard.",
+        "published_date": "2025-10-01",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "JSK Investments SICAV", "known_as": "JSK Investments SICAV", "size": "zhruba dvě miliardy korun", "currency": "CZK", "vintage": "2025", "status": "first_close", "status_date": "2025-09-30"},
+        "value_text": "zhruba dvě miliardy korun",
+        "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/",
+        "quote": "Společně s manželem Jaromírem Kijonkou už před osmi lety založili investiční skupinu JSK Investments a v rámci ní teď rozjíždí investiční fond, do kterého sami Kijonkovi vkládají zhruba dvě miliardy korun.",
+        "published_date": "2025-09-30",
+        "derivation": "stated"
+      },
+      {
+        "value": {"name": "JSK Investments private equity fund (planned)", "known_as": null, "size": "100 milionů eur", "currency": "EUR", "vintage": null, "status": "target", "status_date": "2025-06-03"},
+        "value_text": "100 milionů eur",
+        "source_url": "https://cc.cz/kijonkovi-pokracuji-v-investicich-hodlaji-rozjet-dalsi-dva-fondy-jeden-cili-na-velikost-25-miliardy/",
+        "quote": "Zhruba za tři roky pak hodlá spustit fundraising na plnohodnotný private equity fond s cílovou velikostí 100 milionů eur",
+        "published_date": "2025-06-03",
+        "derivation": "stated"
+      }
+    ],
+    "funds_without_size": ["JSK Investments Venture Capital Fund I.", "JSK Investments Private and Growth Equity Fund I."],
+    "deal_checks": [
+      {
+        "company": "Andromeda Surgical", "listed_date": "2026-09-01", "verdict": "confirmed",
+        "note": "cc.cz article dated 15. 9. 2026 (listed source), lupa.cz 16. 9. 2026; Series A led by Standard Capital with JSK participating; company's own Series A post reportedly dated 3 Aug 2026 (not seen naming JSK)",
+        "value": {"company": "Andromeda Surgical", "date": "2026-09-15", "round": "Series A", "amount": null},
+        "value_text": "Andromeda Surgical",
+        "source_url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/",
+        "quote": "Fond JSK Investments se zapojil do investice do amerického startupu Andromeda Surgical",
+        "published_date": "2026-09-15", "derivation": "stated"
+      },
+      {
+        "company": "Elin.ai", "listed_date": "2024-12-01", "verdict": "confirmed",
+        "note": "lupa.cz article dated 9. 12. 2024: pre-seed round EUR 1M, JSK Investments put in EUR 420k",
+        "value": {"company": "Elin.ai", "date": "2024-12-09", "round": "pre-seed", "amount": "420 tisíc eur"},
+        "value_text": "420 tisíc eur",
+        "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/",
+        "quote": "JSK Investments Simony Kijonkové investoval 420 tisíc eur do AI startupu Elin.ai",
+        "published_date": "2024-12-09", "derivation": "stated"
+      }
+    ],
+    "new_deals": [
+      {
+        "company": "MintNeuro",
+        "note": "JSK Investments SICAV joined MintNeuro's USD 5M round; JSK own news item dated 9.10.2026; tech.eu article of 2026-10-07 lists JSK Investments among participants (round led by Odyssey Ventures)",
+        "value": {"company": "MintNeuro", "date": "2026-10-09", "round": null, "amount": null},
+        "value_text": "MintNeuro",
+        "source_url": "https://www.jskinvestments.cz",
+        "quote": "Investiční fond JSK Investments SICAV a.s. se zapojil do investičního kola britské společnosti MintNeuro",
+        "published_date": "2026-10-09", "derivation": "stated"
+      }
+    ],
+    "search_log": [
+      "fetch cc.cz Investujte jako Simona Kijonková (30. 9. 2025)",
+      "fetch jskinvestments.cz",
+      "fetch cc.cz Simona Kijonková robotická chirurgie (15. 9. 2026)",
+      "fetch cc.cz Kijonková SICAV (exact sentences)",
+      "fetch lupa.cz Elin.ai (9. 12. 2024)",
+      "JSK Investments MintNeuro investice 5 milionů dolarů Kijonková",
+      "fetch newstream.cz Kijonková podpořila americký startup (13. 10. 2025, iSono Health)",
+      "fetch newstream.cz Kijonková spouští vlastní fond (1. 10. 2025)",
+      "MintNeuro raises $5 million round Odyssey Ventures 33East JSK Investments",
+      "fetch tech.eu MintNeuro (7 Oct 2026)",
+      "Andromeda Surgical Series A Standard Capital Pioneer Fund JSK Investments raises",
+      "JSK Investments SICAV velikost fondu externí investoři uzavření 2026 miliardy",
+      "fetch cc.cz Kijonkovi pokračují v investicích, hodlají rozjet další dva fondy (3. 6. 2025)",
+      "fetch forbes.cz Simona a Jaromír Kijonkovi list (paywalled)"
+    ]
+  }
+]
