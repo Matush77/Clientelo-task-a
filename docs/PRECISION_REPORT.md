@@ -1,6 +1,6 @@
 # Meranie presnosti – pilot VC investori CZ + SK
 
-*Generované skriptom `python -m investordb.cli report` z dát zmrazených tagom `pilot-frozen-v2` (`as_of` = 2026-10-09). Metriky sú definované vopred v [PLAN.md](PLAN.md), kap. 9.*
+*Generované skriptom `python -m investordb.cli report` z dát zmrazených tagom `pilot-frozen-v3` (`as_of` = 2026-10-09). Metriky sú definované vopred v [PLAN.md](PLAN.md), kap. 9.*
 
 ## 1. Kto hodnotil vzorku
 

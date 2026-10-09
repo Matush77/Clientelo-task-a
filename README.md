@@ -34,11 +34,14 @@ Na tieto polia treba silnejší model než Haiku a ľudskú kontrolu – variant
 
 | Požiadavka zadania | Súbor |
 |---|---|
+| **Zhrnutie na jednu stranu** | [docs/SUMMARY.md](docs/SUMMARY.md) |
 | Plán: kto v databáze bude a kto nie, ako sa overuje, odhad rozsahu a spoľahlivosti a z čoho vychádza | [docs/PLAN.md](docs/PLAN.md) |
 | Dáta zo vzorky so zdrojom pri každom údaji | [data/processed/investors.csv](data/processed/investors.csv) (1 riadok = 1 investor) + [claims.csv](data/processed/claims.csv) (1 riadok = 1 údaj so zdrojom, dátumom, citáciou a výsledkom kontroly) |
 | Zdroj a dátum, ktoré dokladajú, že subjekt investuje | stĺpce `last_investment`, `last_investment_date`, `last_investment_source` v investors.csv; všetky investície v claims.csv (`field = investments`) |
 | Vyradené záznamy s dôvodom | [rejected.csv](data/processed/rejected.csv), všetky rozhodnutia v [decisions.csv](data/processed/decisions.csv) |
 | Meranie presnosti na ručne overenej vzorke | [docs/PRECISION_REPORT.md](docs/PRECISION_REPORT.md) |
+| Spresnenie slabých polí silnejším modelom a meranie pred / po | [docs/REFINEMENT.md](docs/REFINEMENT.md), spresnená verzia [investors_refined.csv](data/processed/investors_refined.csv) |
+| Prehliadač investorov: každá hodnota so zdrojom a citáciou | [docs/explorer.html](docs/explorer.html) (stiahnuť a otvoriť v prehliadači, funguje offline) |
 | Odhad nákladov na rozšírenie na celý svet | [docs/COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
 | Ako som pracoval s AI (pokyny, kontrola, chyby agentov) | [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) + doslovné pokyny v [prompts/](prompts/) |
 | Rozhodnutia pri nejasnostiach zadania | [docs/DECISIONS.md](docs/DECISIONS.md) |
@@ -72,14 +75,15 @@ Na tieto polia treba silnejší model než Haiku a ľudskú kontrolu – variant
 
 ## Ako som pracoval s AI (zhrnutie)
 
-Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 49 chýb a slabín).
+Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 57 chýb a slabín).
 
 - **Rozdelenie rolí:**
   - ja rozhodujem o pravidlách a robím kvalitatívny audit;
   - hlavná session Claude Code (Opus 5.5) orchestruje, píše kód a pokyny;
-  - **zber a overovanie dát robia subagenti Claude Haiku 5.5**; slepú kontrolu vzorky robí **Claude Sonnet 5.5**
+  - **zber a overovanie dát robia subagenti Claude Haiku 5.5**; slepú kontrolu vzorky, spresnenie kapitálu
+    a dátumov pri zaradených záznamoch a kontrolu faktov pred / po robí **Claude Sonnet 5.5**
     (modely overené zo záznamov agentov);
-  - všetko, čo sa dá overiť bez AI, robí deterministický kód (145 testov).
+  - všetko, čo sa dá overiť bez AI, robí deterministický kód (162 testov).
 - **Pokyny agentom** sú doslovne v [prompts/](prompts/) a verzované v gite (napr. zber dôkazov v1 → v2 → v3).
   Agenti čítajú pokyn priamo zo súboru, takže každý dostal presne verziu uloženú v repozitári.
 - **Kontrola výstupu:** (1) agent smie a má povedať „neviem“; (2) každá citácia sa strojovo overí na stránke;
@@ -96,7 +100,7 @@ Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 49 chýb a slab�
 
 ## Kľúčové rozhodnutia
 
-Všetky (37) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitejšie:
+Všetky (39) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitejšie:
 
 - Pilot **CZ + SK** namiesto len SK (samotné SK má príliš málo aktívnych VC na zmysluplné meranie).
 - Investor = **≥ 2 investície do firiem, ≥ 1 v posledných 36 mesiacoch** (výnimka: nový fond).
@@ -135,6 +139,9 @@ python -m venv .venv
 .venv/Scripts/python -m pytest
 ```
 
+Na Windows treba repozitár naklonovať do krátkej cesty (napr. `C:\src\task-a`), inak inštalácia `lxml` zlyhá na
+dĺžke cesty. Overené na čistom klone z GitHubu: testy prechádzajú a `check-db` hlási 0 problémov.
+
 Pipeline krok za krokom (kroky s AI agentmi sa spúšťajú z Claude Code podľa pokynov v `prompts/`):
 
 ```bash
@@ -149,6 +156,11 @@ python -m investordb.cli decide --as-of 2026-10-09                           # p
 python -m investordb.cli check-db                                            # integrita databázy
 python -m investordb.cli sample                                              # vzorka + formulár ručnej kontroly
 python -m investordb.cli report                                              # meranie presnosti
+python -m investordb.cli refine batches                                      # spresnenie (D38): dávky pre Sonnet
+python -m investordb.cli refine check                                        # kontrola spresnených tvrdení
+python -m investordb.cli refine judge-batches                                # slepá kontrola faktov pred / po
+python -m investordb.cli refine report                                       # docs/REFINEMENT.md
+python -m investordb.cli explorer                                            # docs/explorer.html
 python -m investordb.usage && python -m investordb.cli cost                  # odhad nákladov
 python tools/export_ailog.py <session-export.zip>                            # ai-log
 ```
