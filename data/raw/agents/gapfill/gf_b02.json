@@ -1,0 +1,161 @@
+[
+  {
+    "candidate_id": "C099",
+    "sectors": [],
+    "stages": [
+      {
+        "value": ["seed"],
+        "value_text": "seed investície",
+        "source_url": "https://www.startitup.sk/neulogy-ventures-a-ich-uvodny-event-ako-sa-patri/",
+        "quote": "Neulogy Ventures pozostáva z dvoch fondov, prvý, ktorý je určený pre seed investície do 200tis.€",
+        "published_date": "2014-04-30",
+        "derivation": "stated"
+      }
+    ],
+    "ticket": {
+      "value": {"min": "€200K", "max": "€3M", "currency": "EUR"},
+      "value_text": "from €200K to €3M",
+      "source_url": "https://neulogy.vc/about",
+      "quote": "from €200K to €3M",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "Neulogy Ventures investujeme seed ticket mil. EUR",
+      "Neulogy Ventures seed fund invest €100k to €1M pre-seed seed deeptech CEE",
+      "Neulogy Ventures pre-seed seed rounds \"Neulogy\" deeptech fund invests early stage founders interview",
+      "Neulogy Ventures fond investuje seed a series A slovenské startupy Mandl Luptak investície od 200 tisíc do 3 miliónov eur",
+      "EIF Neulogy Ventures European Investment Fund commitment seed early-stage fund"
+    ]
+  },
+  {
+    "candidate_id": "C125",
+    "sectors": [
+      {
+        "value": ["deeptech_hardware"],
+        "value_text": "Deep-Tech Company AT Crystals",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-slovenskej-deep-tech-spolocnosti-at-crystals",
+        "quote": "SIH Invests in Slovak Deep-Tech Company AT Crystals",
+        "published_date": "2026-09-15",
+        "derivation": "inferred"
+      },
+      {
+        "value": ["ai_data"],
+        "value_text": "software data infrastructure for artificial intelligence",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-1-4-miliona-eur-do-visionflow-slovensky-startup-vyvija-softverovu-datovu-infrastrukturu-pre-umelu-inteligenciu",
+        "quote": "The Slovak startup is developing software data infrastructure for artificial intelligence.",
+        "published_date": "2026-09-22",
+        "derivation": "inferred"
+      },
+      {
+        "value": ["fintech_insurtech"],
+        "value_text": "Fintech Company Veslo",
+        "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-fintechu-veslo-podpori-platformu-ktora-digitalizuje-distribuciu-a-vyuzivanie-platobnych-sluzieb",
+        "quote": "SIH Invests in Fintech Company Veslo. Backing a platform that digitalises the distribution and use of payment services.",
+        "published_date": "2026-07-20",
+        "derivation": "inferred"
+      }
+    ],
+    "stages": [
+      {
+        "value": ["seed"],
+        "value_text": "companies in the seed stage",
+        "source_url": "https://www.sih.sk/en/aktuality/slovak-investment-holding-podpori-podniky-v-pociatocnej-etape-zivotneho-cyklu-v-celkovom-objeme-15-milionov-eur",
+        "quote": "Support will be addressed to companies in the seed stage",
+        "published_date": "2024-06-27",
+        "derivation": "stated"
+      }
+    ],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [
+      {
+        "field": "ticket",
+        "note": "Searched sih.sk (homepage, financial instruments, news, 2019/2024 start-up programme releases) and Slovak press: SIH publishes only individual deal amounts (e.g. EUR 0.28M AT Crystals, EUR 1.4M VisionFlow, EUR 12M InoBat) and programme totals (EUR 15M seed programme), but no general per-company cheque size; the only per-company cap found (EUR 800 000) belongs to a one-off 2020 convertible-loan scheme."
+      }
+    ],
+    "search_log": [
+      "Slovak Investment Holding SIH priame investície výška investície od do mil. EUR kapitálové investície",
+      "sih.sk InoBat Slovak Investment Holding priama kapitálová investícia VisionFlow AT Crystals",
+      "SIH nástroj priame kapitálové investície startupy Plán obnovy konvertibilné úvery výška investície do mil. eur Slovak Investment Holding startup",
+      "SIH Seed Starter Eatster investícia 350 000 eur Slovak Investment Holding priame investície do startupov od do eur"
+    ]
+  },
+  {
+    "candidate_id": "C132",
+    "sectors": [
+      {
+        "value": ["sector_agnostic"],
+        "value_text": "companies from various industries",
+        "source_url": "https://en.ain.ua/2022/11/30/most-active-slovak-vc-funds",
+        "quote": "The VC fund focuses on companies from various industries, with global mindset and innovative, scalable business models",
+        "published_date": "2022-11-30",
+        "derivation": "stated"
+      }
+    ],
+    "stages": [],
+    "ticket": {
+      "value": {"min": null, "max": "200k €", "currency": "EUR"},
+      "value_text": "Up to 200k €",
+      "source_url": "https://zerogravitycap.com",
+      "quote": "Up to 200k € intro investment",
+      "published_date": null,
+      "derivation": "stated"
+    },
+    "total_capital": null,
+    "funds": [],
+    "not_public": [],
+    "search_log": [
+      "Zero Gravity Capital Slovak fund pre-seed seed investuje sektory ticket startupy Limerock 0100 Ventures"
+    ]
+  },
+  {
+    "candidate_id": "C135",
+    "sectors": [
+      {
+        "value": ["fintech_insurtech"],
+        "value_text": "vykupuje nemovitosti, nabízí je drobným investorům",
+        "source_url": "https://cc.cz/novy-startup-investown-nabidne-investicni-nemovitosti-uz-od-par-stovek-miliony-korun-do-nej-posila-ceska-sporitelna/",
+        "quote": "Investown, který vykupuje nemovitosti, nabízí je drobným investorům",
+        "published_date": "2020-09-02",
+        "derivation": "inferred"
+      },
+      {
+        "value": ["enterprise_saas"],
+        "value_text": "digitalizací účetnictví",
+        "source_url": "https://www.newstream.cz/zpravy-z-firem/ceska-sporitelna-poslala-desitky-milionu-do-ceskeho-fintechu",
+        "quote": "firmám z Česka i zahraničí pomáhá s digitalizací účetnictví",
+        "published_date": "2022-02-08",
+        "derivation": "inferred"
+      },
+      {
+        "value": ["hr_worktech"],
+        "value_text": "vyplácet odpracovanou část mzdy kdykoliv v měsíci",
+        "source_url": "https://cc.cz/do-peti-let-bude-vyplata-kdykoliv-standard-hlasi-palmapp-startupu-s-tim-pomaha-i-ceska-sporitelna/",
+        "quote": "PalmApp firmám umožňuje vyplácet odpracovanou část mzdy kdykoliv v měsíci.",
+        "published_date": "2022-04-29",
+        "derivation": "inferred"
+      }
+    ],
+    "stages": [],
+    "ticket": null,
+    "total_capital": null,
+    "funds": [],
+    "not_public": [
+      {
+        "field": "total_capital",
+        "note": "Searched seedstarter.cz (EN and CS), csas.cz and CzechCrunch/cc.cz articles: Seed Starter is a corporate programme of Česká spořitelna with no stated fund size or AUM; press gives only the vague 'stovky milionů korun' set aside and cumulative amounts already invested (180 milionů korun into eight startups), which are not capital under management."
+      }
+    ],
+    "search_log": [
+      "Seed Starter Česká spořitelna investiční program startupy milionů korun kapitál fond Erste Group seed",
+      "\"Seed Starter\" Česká spořitelna vyčlenila milionů korun na investice do startupů celkový objem fondu rozpočet",
+      "Seed Starter Česká spořitelna investovala Wflow Signi Rekenber Investown startup co dělá investice",
+      "Investown Seed Starter Česká spořitelna investice platforma pro investování do nemovitostí fintech"
+    ]
+  }
+]

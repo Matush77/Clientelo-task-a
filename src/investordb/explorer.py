@@ -394,7 +394,7 @@ const I18N = {
     colTier: "Úroveň", colTiert: "Úroveň dôkazov A / B", asc: "vzostupne", desc: "zostupne", flip: "kliknutím obrátite poradie", sortBy: "zoradiť podľa tohto stĺpca", refinedMark: "spresnené", dealShort: "obchod", review: "kontrola",
     tierT: "Úroveň dôkazov", reviewT: "Na ručnú kontrolu", none: "Žiadny investor nevyhovuje filtru.", pick: "Vyberte investora v tabuľke.",
     registry: "záznam v registri", toReview: "Na ručnú kontrolu.",
-    inferred: "odvodené z portfólia", notPublic: "verejne neuvedené", notPublicT: "Hľadané v zdrojoch investora aj v tlači, verejne sa neuvádza.",
+    upTo: "do", from: "od", inferred: "odvodené z portfólia", notPublic: "verejne neuvedené", notPublicT: "Hľadané v zdrojoch investora aj v tlači, verejne sa neuvádza.",
     kCap: "Celkový kapitál", kCapNone: "zdroje ho neuvádzajú", kLast: "Posledný obchod", kInv: "Investície", kInvSub: n => `${n} za posledných 36 mes.`,
     kTier: "Úroveň dôkazov", tierA: "2+ datované obchody, 2+ zdroje", tierB: "1+ datovaný obchod za 36 mes.",
     hq: "Sídlo", type: "Typ", sectors: "Sektory", stages: "Štádiá", ticket: "Tiket", notGiven: "neuvedené",
@@ -426,7 +426,7 @@ const I18N = {
     colTier: "Tier", colTiert: "Evidence tier A / B", asc: "ascending", desc: "descending", flip: "click to reverse", sortBy: "sort by this column", refinedMark: "refined", dealShort: "deal", review: "review",
     tierT: "Evidence tier", reviewT: "Needs manual review", none: "No investor matches the filter.", pick: "Pick an investor in the table.",
     registry: "registry record", toReview: "Needs manual review.",
-    inferred: "inferred from portfolio", notPublic: "not publicly disclosed", notPublicT: "Searched on the investor's website and in the press; not disclosed publicly.",
+    upTo: "up to", from: "from", inferred: "inferred from portfolio", notPublic: "not publicly disclosed", notPublicT: "Searched on the investor's website and in the press; not disclosed publicly.",
     kCap: "Total capital", kCapNone: "not stated in sources", kLast: "Last deal", kInv: "Investments", kInvSub: n => `${n} in the last 36 months`,
     kTier: "Evidence tier", tierA: "2+ dated deals, 2+ sources", tierB: "1+ dated deal in 36 months",
     hq: "HQ", type: "Type", sectors: "Sectors", stages: "Stages", ticket: "Ticket", notGiven: "not stated",
@@ -596,7 +596,9 @@ function renderSheet() {
   const b = i.before;
   const missing = f => i.not_public.includes(f) ? `<span class="muted" title="${esc(T.notPublicT)}">${esc(T.notPublic)}</span>` : "–";
   const basis = b => b === "inferred" ? ` <span class="basis">${esc(T.inferred)}</span>` : "";
-  const ticket = i.ticket_eur[0] || i.ticket_eur[1] ? `${eur(i.ticket_eur[0])} – ${eur(i.ticket_eur[1])}` : missing("ticket");
+  const [tLo, tHi] = i.ticket_eur;
+  const ticket = tLo && tHi ? (tLo === tHi ? eur(tLo) : `${eur(tLo)} – ${eur(tHi)}`)
+    : tHi ? `${esc(T.upTo)} ${eur(tHi)}` : tLo ? `${esc(T.from)} ${eur(tLo)}` : missing("ticket");
   const dated = i.deals.filter(d => d.date), undated = i.deals.filter(d => !d.date);
   const cmpRows = [
     [T.cmpCap, `${eur(b.capital)}<small>${esc(method(b.capital_method) || T.notGiven)}</small>`, `${eur(i.capital)}<small>${esc(method(i.capital_method) || T.notGiven)}</small>`, (b.capital ?? null) !== (i.capital ?? null)],

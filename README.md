@@ -16,10 +16,11 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |
 | **Ručná kontrola autora** (5 záznamov, D40) | zaradené potvrdené 4/4, návnada správne vyradená; Sonnet sa s človekom zhodol v 4/5 (v piatom nevedel rozhodnúť); celkový kapitál človek z verejných zdrojov neoveril ani raz („neviem“ 4/4) |
 | Presnosť polí (zmrazená v3) | sektory 17/17, tiket 15/15, zdroje dokladajú investície 19/23 (83 %), celkový kapitál 6/12 (50 %) |
+| **Povinné polia** (sektor, štádiá, tiket, kapitál – D41) | sektory a štádiá **24/24**, tiket **22/24**, kapitál **20/24**; zvyšných 6 hodnôt agent hľadal a sú overene **verejne neuvedené** (stĺpec `not_public`), nič nie je odhadnuté – [REFINEMENT.md](docs/REFINEMENT.md), kap. 6 |
 | **Spresnenie Sonnetom 5.5 – slepá kontrola faktov pred → po** | celkový kapitál 8/15 (53 %) → **14/20 (70 %)**, vyplnený pri 15 → 20 z 24; dátum obchodu 54/68 (79 %) → **78/80 (97,5 %)**; identita v registri 24/24 – [REFINEMENT.md](docs/REFINEMENT.md) |
 | Pokrytie (capture–recapture) | ~78 % z odhadovaných ~31 aktívnych VC so sídlom v CZ/SK |
 | Ľudský audit (v1 → v2 → v3) | našiel chyby výkladu (kapitál „30 €“, plánovaný fond ako kapitál, chybné IČO) → 2 opravy pipeline – [AUDIT_V2.md](docs/AUDIT_V2.md) |
-| Náklad AI na celý pilot (prepočet na ceny API) | ~42 USD: Haiku ~9,5 USD; Sonnet – kontrola vzorky 7,8, spresnenie 18,1, kontrola faktov 6,3 USD |
+| Náklad AI na celý pilot (prepočet na ceny API) | ~47 USD: Haiku ~9,5 USD; Sonnet – kontrola vzorky 7,8, spresnenie 18,1, kontrola faktov 6,3, doplnenie polí 5,4 USD |
 | Odhad pre celý svet, 1. rok (základ) | ~97 tis. € (AI ~20 tis., ľudská kontrola ~57 tis., vývoj ~20 tis.); s odporúčaným spresnením Sonnetom ~142 tis. € – [COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
 
 **Hlavné zistenie.** Rozhodnutie, *kto je investor*, sa dá z verejných zdrojov urobiť spoľahlivo. Údaje *o
@@ -77,7 +78,7 @@ dátum článku, ktorý staršiu investíciu len spomína, a ako kapitál cieľo
 
 ## Ako som pracoval s AI (zhrnutie)
 
-Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 58 chýb a slabín).
+Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 59 chýb a slabín).
 
 - **Rozdelenie rolí:**
   - ja rozhodujem o pravidlách a robím kvalitatívny audit;

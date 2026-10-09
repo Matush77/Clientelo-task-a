@@ -27,6 +27,7 @@ každý záznam skutočný investor a každý údaj (sektor, typická investíci
 | Dátum obchodu správny (±2 mesiace) | 79 % → **97,5 %** po spresnení |
 | Celkový kapitál správny | 53 % → **70 %** po spresnení (vyplnený pri 20 z 24) |
 | Identita v registri | 24/24 |
+| Povinné polia | sektory a štádiá 24/24, tiket 22/24, kapitál 20/24; zvyšok overene verejne neuvedený, nič neodhadnuté |
 | Pokrytie trhu (capture–recapture) | ~78 % z odhadovaných ~31 aktívnych VC v CZ/SK |
 
 ## Čo sa ukázalo

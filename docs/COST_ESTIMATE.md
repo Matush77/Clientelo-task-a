@@ -12,17 +12,18 @@ Objavovanie, zber dôkazov a overovateľ bežali na **Claude Haiku 5.5**; slepá
 | slepá AI kontrola vzorky (Sonnet 5.5) | 7.79 |
 | zber dôkazov (vrátane opakovaní) | 6.42 |
 | kontrola faktov pred a po spresnení (Sonnet 5.5) | 6.26 |
+| doplnenie chýbajúcich polí (Sonnet 5.5) | 5.36 |
 | prieskum a plánovanie (jednorazovo) | 0.86 |
 | nezávislý AI overovateľ | 0.81 |
 | objavovanie kandidátov | 0.63 |
 | triáž sídla | 0.40 |
 | etapa „nedávna investícia“ | 0.28 |
 | kontrola duplicít | 0.06 |
-| **spolu** | **41.58** |
+| **spolu** | **46.94** |
 
 - Na jedného kandidáta (objavovanie + triáž + dôkazy + nedávna investícia): **0.059 USD**
 - Nezávislý overovateľ na jeden záznam: **0.012 USD**
-- **Vyhľadávanie na webe tvorí 25 % nákladov na AI** – tokeny Haiku sú lacné; drahé sú vyhľadávania a tokeny Sonnetu.
+- **Vyhľadávanie na webe tvorí 23 % nákladov na AI** – tokeny Haiku sú lacné; drahé sú vyhľadávania a tokeny Sonnetu.
 - Na 1 zaradeného investora pripadlo **5.5 kandidátov**; 3.0 % kandidátov skončilo v ručnej kontrole.
 - Ručná kontrola: **4 min – predpoklad**, nahradí sa meraním z ručnej kontroly na záznam.
 

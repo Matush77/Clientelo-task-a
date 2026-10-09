@@ -50,7 +50,8 @@ def gapfill_section(rows: dict) -> list[str]:
                     val = r[field].replace(",", ", ") + (" (odvodené z portfólia)" if r.get(f"{field}_basis") == "inferred" else "")
                 elif field == "ticket":
                     lo, hi = (f"{float(x) / 1e6:.2f}" if x else "?" for x in (r["ticket_min_eur"], r["ticket_max_eur"]))
-                    val = f"{lo} – {hi} mil. €" if r["ticket_min_eur"] else f"do {hi} mil. €"
+                    val = (f"od {lo} mil. €" if not r["ticket_max_eur"] else f"{lo} – {hi} mil. €") \
+                        if r["ticket_min_eur"] else f"do {hi} mil. €"
                 else:
                     val = f"{float(r['total_capital_eur']) / 1e6:.1f} mil. €"
                 res.append(f"{GAP_LABEL[field].lower()}: {val}")
