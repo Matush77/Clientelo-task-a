@@ -20,7 +20,8 @@ from investordb.evidence import CLAIMS_CSV, T4_DOMAINS, _under, domain, load_rec
 import re
 
 from investordb.money import TARGET_FUND, Money, eur_rate, parse_money, plausible, to_eur
-from investordb.registries import RegistryRecord, ares_get, core_name, legal_form, rpo_search
+from investordb.registries import (NON_PROFIT_FORMS, RegistryRecord, ares_get, core_name, legal_form, name_tokens,
+                                   rpo_search, strict_match_rank, valid_ico)
 from investordb.rules import Decision, decide
 from investordb.candidates import match_key
 from investordb.registries import ares_search
@@ -37,56 +38,81 @@ def _read_csv(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
+def _lookup_ico(ico: str, country: str) -> RegistryRecord | None:
+    if country in ("CZ", "") and (rec := ares_get(ico)):
+        return rec
+    if country in ("SK", ""):
+        recs = rpo_search(ico=ico, limit=1)
+        return recs[0] if recs else None
+    return None
+
+
+def _search(name: str, country: str) -> list[RegistryRecord]:
+    # raw name too: normalising "J&T Ventures" to "j t ventures" makes ARES find nothing
+    queries = list(dict.fromkeys(q for q in (name, match_key(name), match_key(name).split(" ")[0]) if q))
+    found: list[RegistryRecord] = []
+    for q in queries:
+        if country in ("CZ", ""):
+            found += ares_search(q, limit=50 if " " not in q else 10)[1]
+        if country in ("SK", "") and not found:
+            found += rpo_search(name=q, limit=5)
+        if any(r.active and strict_match_rank(r.name, name) is not None for r in found):
+            break
+    return found
+
+
+def _best(records: list[RegistryRecord], name: str, form: str = "") -> RegistryRecord | None:
+    ranked = [(strict_match_rank(r.name, name), r) for r in records if r.active]
+    ranked = [(rank, r) for rank, r in ranked if rank is not None and (not form or legal_form(r.name) in ("", form))]
+    # exact name first; among fund vehicles prefer a name that marks an investment vehicle, then the shortest
+    return min(ranked, key=lambda t: (t[0], not has_investment_signal(t[1].name), len(t[1].name)))[1] if ranked else None
+
+
 def registry_for(claims: list[dict], triage: dict | None, names: list[str] = ()) -> RegistryRecord | None:
-    """Identity in a registry, strongest evidence first:
-    1. the IČO the agent found (and the checker verified) on the investor's own pages,
-    2. the triage match,
-    3. a name search with the verified legal name, then with the brand name(s) - accepted only on a strict match.
+    """Identity in a registry, strongest evidence first (D35):
+    1. a well-formed IČO the agent found (and the checker verified) on the investor's own pages,
+    2. otherwise the verified legal name from those pages - same name and same legal form,
+    3. only if the investor's pages name no legal entity at all: the brand name(s), matched strictly; the triage
+       match is just one more candidate and has to pass the same strict test.
+    Non-profit forms (z.ú., o.p.s.) are never accepted, and an unresolvable IČO never falls back to the brand.
     """
-    ids: list[tuple[str, str]] = []
-    legal_names: list[tuple[str, str]] = []
+    identities: list[dict] = []
     hq = ""
     for c in claims:
         if c["auto_check"] != "ok":
             continue
         v = json.loads(c["value"])
-        if c["field"] == "identity" and isinstance(v, dict):
-            if v.get("company_id"):
-                ids.append((str(v["company_id"]).replace(" ", ""), v.get("country", "")))
-            elif v.get("legal_name"):
-                legal_names.append((v["legal_name"], v.get("country", "")))
+        # only CZ/SK entities can be checked in ARES/RPO; a foreign fund GP ('Tensor Ventures GP S.à r.l.') does not
+        # block the search for the local company the team works from (D5: HQ = where the team sits)
+        if (c["field"] == "identity" and isinstance(v, dict) and (v.get("company_id") or v.get("legal_name"))
+                and v.get("country") in ("CZ", "SK", "", None)):
+            identities.append(v)
         if c["field"] == "hq_country" and v in ("CZ", "SK"):
             hq = v
+    if identities:
+        for v in identities:
+            ico, country = str(v.get("company_id") or "").replace(" ", ""), v.get("country", "")
+            if ico and valid_ico(ico, country) and (rec := _lookup_ico(ico, country)):
+                if legal_form(rec.name) not in NON_PROFIT_FORMS:
+                    return rec
+        for v in identities:
+            name, country = v.get("legal_name") or "", v.get("country", "")
+            country = country if country in ("CZ", "SK") else hq
+            if name and (rec := _best(_search(name, country), name, legal_form(name))):
+                return rec
+        return None  # the investor names its legal entity, but no registry record matches it - do not guess
+    pool: list[tuple[str, RegistryRecord]] = []
     if triage and triage.get("company_id"):
-        ids.append((triage["company_id"], {"ARES": "CZ", "RPO": "SK"}.get(triage.get("registry", ""), "")))
-    for ico, country in ids:
-        if country in ("CZ", "") and (rec := ares_get(ico)):
-            return rec
-        if country in ("SK", ""):
-            recs = rpo_search(ico=ico, limit=1)
-            if recs:
-                return recs[0]
-    # a verified legal name is the strongest lead: if there is one, the looser brand-name search is not used
-    candidates = legal_names if legal_names else [(n, hq) for n in names if n]
-    for name, country in candidates:
-        country = country if country in ("CZ", "SK") else hq
-        # raw name too: normalising "J&T Ventures" to "j t ventures" makes ARES find nothing
-        queries = list(dict.fromkeys(q for q in (name, match_key(name), match_key(name).split(" ")[0]) if q))
-        found = []
-        for q in queries:
-            if country in ("CZ", ""):
-                found += ares_search(q, limit=50 if " " not in q else 10)[1]
-            if country in ("SK", "") and not found:
-                found += rpo_search(name=q, limit=5)
-            if any(r.active and registry_name_matches(r.name, name) for r in found):
-                break
-        matches = [r for r in found if r.active and registry_name_matches(r.name, name)]
-        if legal_names and legal_form(name):  # "Czech Founders VC s.r.o." must not match "Czech Founders z.ú."
-            matches = [r for r in matches if legal_form(r.name) in ("", legal_form(name))]
-        if matches:
-            # prefer a name that marks an investment vehicle, then the shortest (management company over sub-funds)
-            return min(matches, key=lambda r: (not has_investment_signal(r.name), len(r.name)))
-    return None
+        rec = _lookup_ico(triage["company_id"], {"ARES": "CZ", "RPO": "SK"}.get(triage.get("registry", ""), ""))
+        pool += [(n, rec) for n in names if rec]
+    for name in names:
+        pool += [(name, r) for r in _search(name, hq)]
+    ranked = [(strict_match_rank(r.name, n), r, n) for n, r in pool if r.active]
+    # a one-word brand ('KAYA') collides with unrelated firms ('KAYA, spol. s r.o.'): only a fund-vehicle name or
+    # a name that says it is an investment company counts
+    ranked = [(rank, r) for rank, r, n in ranked if rank is not None
+              and (len(name_tokens(n)) > 1 or rank == 1 or has_investment_signal(r.name))]
+    return min(ranked, key=lambda t: (t[0], not has_investment_signal(t[1].name), len(t[1].name)))[1] if ranked else None
 
 
 def _first(claims: list[dict], field: str):

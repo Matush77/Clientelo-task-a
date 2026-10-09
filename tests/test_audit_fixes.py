@@ -141,6 +141,41 @@ def test_unattributed_investments_do_not_count():
     assert investments_from(claims) == []
 
 
+@pytest.mark.parametrize("ico", ["28538137", "04753101", "05775574", "03890333", "24269158", "02059533"])
+def test_valid_czech_icos_from_the_pilot(ico):
+    from investordb.registries import valid_ico
+
+    assert valid_ico(ico, "CZ")
+
+
+def test_malformed_ico_is_rejected():
+    from investordb.registries import valid_ico
+
+    assert not valid_ico("52 524 5311", "SK")  # CB Investment Management's website shows 10 digits
+    assert not valid_ico("28538138", "CZ")  # wrong check digit
+
+
+@pytest.mark.parametrize(
+    "registry_name,name,rank",
+    [
+        ("Credo Ventures a.s.", "Credo Ventures", 0),
+        ("Credo Ventures Management II a.s.", "Credo Ventures", None),  # v2 picked this one
+        ("Rockaway Ventures Fund SICAV a.s., podfond I", "Rockaway Ventures", 1),
+        ("Presto Ventures II a.s., osoba rizikového kapitálu", "Presto Ventures", 1),
+        ("ZAKA VC I, osoba rizikového kapitálu, a.s.", "zaka vc", 1),
+        ("MITON CZ, s.r.o.", "Miton", 1),
+        ("Nation1 Investment s.r.o.", "Nation1", None),  # wrong company in v2
+        ("Czech Founders z.ú.", "Czech Founders", None),  # non-profit, never an investor's identity
+        ("CB Investments s. r. o.", "CB Investment Management s. r. o.", None),  # wrong company in v2
+        ("Czech Founders Ventures s.r.o.", "Czech Founders Ventures s.r.o.", 0),
+    ],
+)
+def test_strict_identity_matching(registry_name, name, rank):
+    from investordb.registries import strict_match_rank
+
+    assert strict_match_rank(registry_name, name) == rank
+
+
 @pytest.mark.parametrize(
     "name,form",
     [("Czech Founders z.ú.", "zu"), ("Czech Founders VC s.r.o.", "sro"), ("Credo Ventures a.s.", "as"),

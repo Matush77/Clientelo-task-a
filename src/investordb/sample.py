@@ -105,6 +105,37 @@ def build(out_dir: Path = REVIEW_DIR) -> Path:
     return html_path
 
 
+def refresh() -> list[str]:
+    """Re-render the SAME sample (same review IDs, same records) from the current pipeline output.
+    Used after a re-freeze, so a reviewer's answers - stored per review ID - stay valid. Returns review IDs whose
+    displayed record changed."""
+    key = _read(REVIEW_DIR / "review_key.csv")
+    decisions = {d["candidate_id"]: d for d in _read(DECISIONS_CSV)}
+    claims = _read(CLAIMS_CSV)
+    old = {r["review_id"]: r for r in json.loads((REVIEW_DIR / "review_records.json").read_text(encoding="utf-8"))}
+    records, changed = [], []
+    for k in key:
+        d = decisions[k["candidate_id"]]
+        rec = {"review_id": k["review_id"], **claimed_view(k["candidate_id"], claims, d)}
+        if rec != old.get(k["review_id"]):
+            changed.append(k["review_id"])
+        records.append(rec)
+        k.update(status=d["status"], reason=d["reason"], tier=d["tier"])
+    with (REVIEW_DIR / "review_key.csv").open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(key[0].keys()))
+        w.writeheader()
+        w.writerows(key)
+    (REVIEW_DIR / "review_records.json").write_text(json.dumps(records, ensure_ascii=False, indent=1), encoding="utf-8")
+    (REVIEW_DIR / "review.html").write_text(render_form(records), encoding="utf-8")
+    spot_ids = [r["review_id"] for r in _read(REVIEW_DIR / "spotcheck_ids.csv")]
+    if spot_ids:
+        by_id = {r["review_id"]: r for r in records}
+        (REVIEW_DIR / "spotcheck.html").write_text(
+            render_form([by_id[i] for i in spot_ids], key="investordb-spotcheck-v2", filename="spotcheck_results.csv"),
+            encoding="utf-8")
+    return changed
+
+
 VERIFIER_BATCH_DIR = ROOT / "data" / "raw" / "agents" / "verifier" / "batches"
 
 

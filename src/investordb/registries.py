@@ -91,6 +91,39 @@ LEGAL_FORMS = [  # (pattern, canonical form) - the form must agree when matching
 ]
 
 
+NON_PROFIT_FORMS = {"zu", "ops"}  # zapsaný ústav, obecně prospěšná společnost - never an investor's management company
+VEHICLE_EXTRAS = {"i", "ii", "iii", "iv", "v", "fund", "fond", "gp", "cz", "sk", "sicav"}
+
+
+def valid_ico(ico: str, country: str = "") -> bool:
+    """CZ/SK company IDs have 8 digits; Czech ones carry a mod-11 check digit. A website showing '52 524 5311'
+    (10 digits) is a typo at the source, not an ID to look up."""
+    digits = re.sub(r"\s", "", str(ico or ""))
+    if not re.fullmatch(r"\d{8}", digits):
+        return False
+    if country == "SK":
+        return True
+    s = sum(int(d) * w for d, w in zip(digits[:7], range(8, 1, -1)))
+    return (11 - s % 11) % 10 == int(digits[7])
+
+
+def name_tokens(name: str) -> list[str]:
+    """Legal form removed, generic words KEPT: 'Credo Ventures Management II a.s.' -> [credo, ventures, management, ii]."""
+    return re.sub(r"[^\w]+", " ", LEGAL_SUFFIXES.sub(" ", name.lower())).split()
+
+
+def strict_match_rank(registry_name: str, name: str) -> int | None:
+    """0 = same name, 1 = same name + fund-vehicle tokens ('Rockaway Ventures Fund ... podfond I'), None = no match.
+    'Nation1 Investment s.r.o.' is not 'Nation1'; 'Credo Ventures Management II' is not 'Credo Ventures'."""
+    if legal_form(registry_name) in NON_PROFIT_FORMS:
+        return None
+    reg, own = name_tokens(registry_name), name_tokens(name)
+    if not own or reg[: len(own)] != own:
+        return None
+    extra = reg[len(own):]
+    return 0 if not extra else 1 if set(extra) <= VEHICLE_EXTRAS else None
+
+
 def legal_form(name: str) -> str:
     low = name.lower()
     return next((form for pattern, form in LEGAL_FORMS if re.search(pattern, low)), "")
