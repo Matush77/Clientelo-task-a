@@ -110,7 +110,7 @@ def write(as_of: date, meta: dict, out: Path = OUT, artifact_out: Path | None = 
     return data
 
 
-TEMPLATE = r"""<title>Investori CZ/SK – dôkazy</title>
+TEMPLATE = r"""<title>Databáza VC investorov CZ/SK</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap">
