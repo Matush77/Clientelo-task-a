@@ -1,0 +1,205 @@
+[
+ {
+  "review_id": "R21",
+  "name": "Look AI Ventures",
+  "website": "https://lookai.vc",
+  "legal_name": "Look AI Ventures SICAV, a.s.",
+  "company_id": "17604087",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17604087",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "ai_data",
+  "stages": "",
+  "ticket": "€250,000",
+  "total_capital_eur": "20000000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "Look AI Ventures fund (LAIV) (€20 million)",
+  "investments": [
+   {
+    "company": "Sodex Innovations",
+    "date": "2026-07-13",
+    "url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026"
+   },
+   {
+    "company": "Lucida AI",
+    "date": "2026-06-30",
+    "url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/"
+   },
+   {
+    "company": "Digicust",
+    "date": null,
+    "url": "https://lookai.vc"
+   },
+   {
+    "company": "Embodied AI",
+    "date": null,
+    "url": "https://lookai.vc"
+   },
+   {
+    "company": "Trackbar",
+    "date": null,
+    "url": "https://lookai.vc"
+   },
+   {
+    "company": "SECJUR",
+    "date": null,
+    "url": "https://lookai.vc"
+   }
+  ],
+  "sources": [
+   "https://lookai.vc",
+   "https://raising.fi/news/sodex-innovations-undisclosed-july-2026",
+   "https://tech.eu/2023/04/13/czech-republic-has-a-new-investment-fund-for-ai-start-ups",
+   "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/"
+  ]
+ },
+ {
+  "review_id": "R22",
+  "name": "Rockaway Ventures",
+  "website": "https://rockawayventures.com",
+  "legal_name": "Rockaway Ventures Fund SICAV a.s., podfond I",
+  "company_id": "75163225",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/75163225",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "consumer_ecommerce,travel_hospitality,mobility_logistics,media_gaming",
+  "stages": "seed,series_a",
+  "ticket": "",
+  "total_capital_eur": "55000000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "Rockaway Ventures II (nearly €55 million); Rockaway Ventures Fund (?)",
+  "investments": [
+   {
+    "company": "Apptronik",
+    "date": "2026-02-01",
+    "url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+   },
+   {
+    "company": "Apaleo",
+    "date": "2025-05-16",
+    "url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+   },
+   {
+    "company": "Gjirafa",
+    "date": "2025-05-16",
+    "url": "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/"
+   },
+   {
+    "company": "Vivere",
+    "date": "2021-09-23",
+    "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+   },
+   {
+    "company": "Productboard",
+    "date": "2021-09-23",
+    "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+   },
+   {
+    "company": "Brand Embassy",
+    "date": "2021-09-23",
+    "url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/",
+   "https://rockawayventures.com",
+   "https://startuphub.unwe.bg/bg/news/64138/prague-based-rockaway-ventures-closes-second-fund-at-nearly-55m.html",
+   "https://tech.eu/2025/05/16/rockaway-ventures-closes-55m-fund-to-back-transformative-tech-in-cee-and-beyond/",
+   "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+  ]
+ },
+ {
+  "review_id": "R23",
+  "name": "N1",
+  "website": "https://n1.rocks",
+  "legal_name": "",
+  "company_id": "",
+  "registry_url": "",
+  "hq_country": "",
+  "types": "",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Liki24",
+    "date": "2025-07-01",
+    "url": "https://startuprise.co.uk/ukraine-liki24-secures-9-million-in-series-a-round-to-expand-health-marketplace-across-europe/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+   "https://n1.rocks",
+   "https://startuprise.co.uk/ukraine-liki24-secures-9-million-in-series-a-round-to-expand-health-marketplace-across-europe/"
+  ]
+ },
+ {
+  "review_id": "R24",
+  "name": "Tensor Ventures",
+  "website": "https://tensor.ventures",
+  "legal_name": "Tensor Ventures a.s.",
+  "company_id": "06257241",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06257241",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "deeptech_hardware",
+  "stages": "seed,series_a",
+  "ticket": "",
+  "total_capital_eur": "50000000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "Tensor Ventures Fund I SCSp (?); new Tensor Ventures fund launched October 2024 (name not stated in source) (€50 million)",
+  "investments": [
+   {
+    "company": "AppFactor",
+    "date": "2026-02-01",
+    "url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
+   }
+  ],
+  "sources": [
+   "https://tech.eu/2024/10/11/tensor-ventures-launches-eur50m-fund-a-boost-for-quantum-biotech-and-climate-tech-startups/",
+   "https://tensor.ventures/",
+   "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
+  ]
+ },
+ {
+  "review_id": "R25",
+  "name": "Purple Ventures",
+  "website": "https://www.purple-ventures.com",
+  "legal_name": "Purple Ventures s.r.o.",
+  "company_id": "05775574",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05775574",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "sector_agnostic",
+  "stages": "pre_seed,seed",
+  "ticket": "€250k – €400k",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "Purple Ventures 2 (čtyřicet milionů eur)",
+  "investments": [
+   {
+    "company": "Kilde",
+    "date": "2025-01-01",
+    "url": "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676"
+   },
+   {
+    "company": "Delta Green",
+    "date": "2024-05-01",
+    "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+   },
+   {
+    "company": "iVent Pro",
+    "date": "2024-01-01",
+    "url": "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/brnensti-purple-ventures-rozbihaji-druhy-fond-trem-startupum-poslali-desitky-milionu-korun/",
+   "https://www.e15.cz/byznys/roste-nam-novy-dolarovy-jednorozec-s-ceskym-zakladatelem-hlasi-partner-fondu-purple-ventures-1426676",
+   "https://www.purple-ventures.com"
+  ]
+ }
+]

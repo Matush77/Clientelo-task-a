@@ -1,0 +1,200 @@
+[
+ {
+  "review_id": "R06",
+  "name": "Reflex Capital",
+  "website": "https://www.reflexcapital.com",
+  "legal_name": "Reflex Capital SE",
+  "company_id": "24269158",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24269158",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "",
+  "stages": "seed,series_a",
+  "ticket": "kolem jednoho milionu eur – ke hranici dvou milionů",
+  "total_capital_eur": "30",
+  "capital_method": "sum_of_1_funds",
+  "funds": "třetí fond (dvaadvacet milionů eur); Reflex 2 (od 30 do 50 milionů eur); třetí fond (dvaadvacet milionů eur)",
+  "investments": [
+   {
+    "company": "Digitoo",
+    "date": "2023-12-14",
+    "url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+   },
+   {
+    "company": "Leadspicker",
+    "date": "2020-05-21",
+    "url": "https://globalprivatecapital.org/?p=22043"
+   },
+   {
+    "company": "TopMonks",
+    "date": "2017-09-05",
+    "url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/"
+   },
+   {
+    "company": "Leadspicker",
+    "date": null,
+    "url": "https://www.reflexcapital.com/portfolio"
+   },
+   {
+    "company": "Fitify",
+    "date": null,
+    "url": "https://www.reflexcapital.com/portfolio"
+   },
+   {
+    "company": "Keboola",
+    "date": null,
+    "url": "https://www.reflexcapital.com/portfolio"
+   },
+   {
+    "company": "Apify",
+    "date": null,
+    "url": "https://www.reflexcapital.com/portfolio"
+   },
+   {
+    "company": "Choice",
+    "date": null,
+    "url": "https://www.reflexcapital.com/portfolio"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/2018/10/miliardar-ondrej-fryc-spousti-novy-investicni-fond-do-startupu-chce-vlozit-az-13-miliardy-korun/",
+   "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/",
+   "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/",
+   "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital",
+   "https://globalprivatecapital.org/?p=22043",
+   "https://www.reflexcapital.com",
+   "https://www.reflexcapital.com/portfolio"
+  ]
+ },
+ {
+  "review_id": "R07",
+  "name": "JSK Investments",
+  "website": "https://www.jskinvestments.cz",
+  "legal_name": "JSK Management s.r.o.",
+  "company_id": "21285241",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21285241",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed,seed",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "JSK Investments SICAV (zhruba dvě miliardy korun); JSK Investments Venture Capital Fund I. (?); JSK Investments Private and Growth Equity Fund I. (?)",
+  "investments": [
+   {
+    "company": "Andromeda Surgical",
+    "date": "2026-09-01",
+    "url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
+   },
+   {
+    "company": "Elin.ai",
+    "date": "2024-12-01",
+    "url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/",
+   "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/",
+   "https://www.jskinvestments.cz",
+   "https://www.jskinvestments.cz/cs/kontakt",
+   "https://www.jskinvestments.cz/cs/projekty",
+   "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+  ]
+ },
+ {
+  "review_id": "R08",
+  "name": "Venture to Future Fund",
+  "website": "https://vff.sk",
+  "legal_name": "Venture to Future Fund, a.s.",
+  "company_id": "52380483",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/9905872",
+  "hq_country": "SK",
+  "types": "vc",
+  "sectors": "ai_data,deeptech_hardware",
+  "stages": "seed,series_a,series_b_plus",
+  "ticket": "400tis. EUR – 2,0 mil. EUR",
+  "total_capital_eur": "55000000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "Venture to Future Fund (55 mil. EUR)",
+  "investments": [
+   {
+    "company": "Talentiqa",
+    "date": "2025-10-01",
+    "url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+   },
+   {
+    "company": "Product Fruits",
+    "date": "2023-05-10",
+    "url": "https://vff.sk"
+   },
+   {
+    "company": "Sensoneo",
+    "date": "2021-10-24",
+    "url": "https://vff.sk"
+   },
+   {
+    "company": "Nettle AI",
+    "date": null,
+    "url": "https://vff.sk"
+   },
+   {
+    "company": "SEC Technologies",
+    "date": null,
+    "url": "https://vff.sk"
+   },
+   {
+    "company": "Brightpick",
+    "date": null,
+    "url": "https://vff.sk"
+   },
+   {
+    "company": "Twinzo",
+    "date": null,
+    "url": "https://vff.sk"
+   }
+  ],
+  "sources": [
+   "https://vff.sk",
+   "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+  ]
+ },
+ {
+  "review_id": "R09",
+  "name": "CEC Capital SK, s.r.o.",
+  "website": "",
+  "legal_name": "CEC Capital SK, s.r.o.",
+  "company_id": "35897635",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/244850",
+  "hq_country": "SK",
+  "types": "",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [],
+  "sources": []
+ },
+ {
+  "review_id": "R10",
+  "name": "Forvis Mazars CZ",
+  "website": "https://www.forvismazars.com/cz",
+  "legal_name": "Forvis Mazars s.r.o.",
+  "company_id": "62582496",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/62582496",
+  "hq_country": "CZ",
+  "types": "advisory",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [],
+  "sources": [
+   "https://www.forvismazars.com/cz"
+  ]
+ }
+]

@@ -1,0 +1,168 @@
+[
+ {
+  "review_id": "R16",
+  "name": "CB Investment Management",
+  "website": "https://www.cbim.sk",
+  "legal_name": "CB Investments s. r. o.",
+  "company_id": "36796379",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/677804",
+  "hq_country": "SK",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed,seed",
+  "ticket": "",
+  "total_capital_eur": "23200000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "CB Investment Management Growth One fund (€23.2M)",
+  "investments": [
+   {
+    "company": "DNA ERA",
+    "date": "2021-02-02",
+    "url": "https://www.startitup.sk/velky-uspech-slovensky-startup-ktory-meni-zivoty-ziskal-dolezitu-investiciu-a-mieri-do-zahranicia/"
+   }
+  ],
+  "sources": [
+   "https://www.cbim.sk",
+   "https://www.startitup.sk/velky-uspech-slovensky-startup-ktory-meni-zivoty-ziskal-dolezitu-investiciu-a-mieri-do-zahranicia/"
+  ]
+ },
+ {
+  "review_id": "R17",
+  "name": "Tech Ventures s.r.o.",
+  "website": "",
+  "legal_name": "Tech Ventures s.r.o.",
+  "company_id": "07922345",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07922345",
+  "hq_country": "CZ",
+  "types": "",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [],
+  "sources": []
+ },
+ {
+  "review_id": "R18",
+  "name": "Zero Gravity Capital",
+  "website": "https://zerogravitycap.com",
+  "legal_name": "Zero Gravity Capital s.r.o.",
+  "company_id": "52651894",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/10049101",
+  "hq_country": "SK",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed,seed",
+  "ticket": "200k €",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Wewell",
+    "date": "2023-12-01",
+    "url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
+   },
+   {
+    "company": "Wewell",
+    "date": "2022-06-01",
+    "url": "https://www.startitup.sk/?p=640272"
+   },
+   {
+    "company": "CulturePulse",
+    "date": null,
+    "url": "https://zerogravitycap.com"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/",
+   "https://www.startitup.sk/?p=640272",
+   "https://zerogravitycap.com"
+  ]
+ },
+ {
+  "review_id": "R19",
+  "name": "Depo Ventures",
+  "website": "https://depoventures.com",
+  "legal_name": "DEPO VENTURES, s.r.o.",
+  "company_id": "04753101",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04753101",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "defense_space,fintech_insurtech,industry_manufacturing,cleantech_energy",
+  "stages": "pre_seed",
+  "ticket": "€250K – 500K",
+  "total_capital_eur": "20000000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "third angel fund (€20 million); DEPO Ventures One (?); DEPO Angels fund I (?)",
+  "investments": [
+   {
+    "company": "ArcSpace",
+    "date": "2026-09-01",
+    "url": "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/"
+   },
+   {
+    "company": "Kardi AI",
+    "date": "2025-04-01",
+    "url": "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
+   },
+   {
+    "company": "Tatum",
+    "date": null,
+    "url": "https://depoventures.com/portfolio"
+   },
+   {
+    "company": "Bolt",
+    "date": null,
+    "url": "https://depoventures.com/portfolio"
+   },
+   {
+    "company": "WanderWallet",
+    "date": null,
+    "url": "https://depoventures.com/portfolio"
+   }
+  ],
+  "sources": [
+   "https://depoventures.com",
+   "https://depoventures.com/portfolio",
+   "https://en.ain.ua/2022/10/10/depo-ventures-opens-20m-angel-fund",
+   "https://media.startupcentrum.com/en/investment-arcspace-raises-over-e2-million/",
+   "https://tech.eu/2025/04/28/czech-medtech-kardi-ai-raises-1-1m-to-expand-heart-monitoring-tech/"
+  ]
+ },
+ {
+  "review_id": "R20",
+  "name": "Lighthouse Ventures",
+  "website": "https://lhv.vc",
+  "legal_name": "Lighthouse Ventures GP s.r.o.",
+  "company_id": "07500912",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07500912",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "enterprise_saas,fintech_insurtech,ai_data",
+  "stages": "pre_seed,seed",
+  "ticket": "€200k – €1m",
+  "total_capital_eur": "23000000",
+  "capital_method": "aum_stated",
+  "funds": "Lighthouse Seed Fund (?)",
+  "investments": [
+   {
+    "company": "Ranketta",
+    "date": "2025-11-01",
+    "url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+   },
+   {
+    "company": "Pekat Vision",
+    "date": "2019-06-07",
+    "url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/",
+   "https://lhv.vc",
+   "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+  ]
+ }
+]

@@ -1,0 +1,183 @@
+[
+ {
+  "review_id": "R26",
+  "name": "PRK Partners",
+  "website": "https://www.prkpartners.com",
+  "legal_name": "PRK Partners s.r.o. advokátní kancelář",
+  "company_id": "26692392",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/26692392",
+  "hq_country": "CZ",
+  "types": "",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [],
+  "sources": [
+   "https://www.prkpartners.com"
+  ]
+ },
+ {
+  "review_id": "R27",
+  "name": "Mid Europa Partners",
+  "website": "https://www.mideuropa.com/",
+  "legal_name": "",
+  "company_id": "",
+  "registry_url": "",
+  "hq_country": "other",
+  "types": "pe",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [],
+  "sources": [
+   "https://www.mideuropa.com/about"
+  ]
+ },
+ {
+  "review_id": "R28",
+  "name": "Czech Founders VC",
+  "website": "https://czechfounders.vc",
+  "legal_name": "Czech Founders z.ú.",
+  "company_id": "09761187",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09761187",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed",
+  "ticket": "50 tisíc – 350 tisíc eur",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "Czech Founders VC (deset milionů eur)",
+  "investments": [
+   {
+    "company": "Maxfusion",
+    "date": "2026-01-14",
+    "url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+   },
+   {
+    "company": "Lemondia",
+    "date": "2025-09-17",
+    "url": "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/"
+   },
+   {
+    "company": "DTS",
+    "date": null,
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "StreamBee",
+    "date": null,
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "Filuta AI",
+    "date": null,
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "Adventurer",
+    "date": null,
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "CRUXO",
+    "date": null,
+    "url": "https://czechfounders.vc/our-portfolio"
+   },
+   {
+    "company": "Carta Genum",
+    "date": null,
+    "url": "https://czechfounders.vc/our-portfolio"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/",
+   "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/",
+   "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/",
+   "https://czechfounders.vc",
+   "https://czechfounders.vc/our-portfolio"
+  ]
+ },
+ {
+  "review_id": "R29",
+  "name": "Gi21 Capital",
+  "website": "https://gi21capital.com",
+  "legal_name": "Gi21 Capital a.s.",
+  "company_id": "19584229",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/19584229",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "ai_data,enterprise_saas",
+  "stages": "pre_seed,seed,series_a,series_b_plus,growth",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Hermetiq",
+    "date": "2026-08-27",
+    "url": "https://gi21capital.com/blog"
+   },
+   {
+    "company": "FaceUp",
+    "date": "2026-05-21",
+    "url": "https://gi21capital.com/blog"
+   },
+   {
+    "company": "Zerops",
+    "date": "2026-05-01",
+    "url": "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
+   },
+   {
+    "company": "ArtMaster",
+    "date": "2026-04-29",
+    "url": "https://gi21capital.com/blog"
+   }
+  ],
+  "sources": [
+   "https://gi21capital.com",
+   "https://gi21capital.com/blog",
+   "https://www.thesaasnews.com/news/zerops-raises-2m-seed-round"
+  ]
+ },
+ {
+  "review_id": "R30",
+  "name": "Slovak Investment Holding",
+  "website": "https://www.sih.sk",
+  "legal_name": "Slovak Investment Holding, a. s.",
+  "company_id": "47759097",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/1007511",
+  "hq_country": "SK",
+  "types": "public_vc",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "PERRY SOFT a.s.",
+    "date": "2025-09-05",
+    "url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+   },
+   {
+    "company": "InoBat",
+    "date": "2024-01-01",
+    "url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
+   }
+  ],
+  "sources": [
+   "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/",
+   "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu",
+   "https://www.sih.sk/en/stranky/o-nas/o-spolocnosti"
+  ]
+ }
+]

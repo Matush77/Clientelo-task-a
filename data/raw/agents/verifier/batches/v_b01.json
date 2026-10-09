@@ -1,0 +1,279 @@
+[
+ {
+  "review_id": "R01",
+  "name": "J&T Ventures",
+  "website": "https://www.jtventures.cz",
+  "legal_name": "J&T Ventures CG SICAV a.s.",
+  "company_id": "08220867",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08220867",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "sector_agnostic",
+  "stages": "pre_seed,seed,series_a",
+  "ticket": "€300K – €3M",
+  "total_capital_eur": "120000000",
+  "capital_method": "aum_stated",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Xund",
+    "date": "2025-03-05",
+    "url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"
+   },
+   {
+    "company": "FetView",
+    "date": "2015-03-01",
+    "url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/"
+   },
+   {
+    "company": "Supernova.io",
+    "date": null,
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Grid.online",
+    "date": null,
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Daytrip",
+    "date": null,
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Wultra",
+    "date": null,
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Choice",
+    "date": null,
+    "url": "https://www.jtventures.cz/portfolio"
+   },
+   {
+    "company": "Sharry",
+    "date": null,
+    "url": "https://www.jtventures.cz/portfolio"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/",
+   "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/",
+   "https://www.jtventures.cz",
+   "https://www.jtventures.cz/portfolio"
+  ]
+ },
+ {
+  "review_id": "R02",
+  "name": "Neulogy Ventures",
+  "website": "https://neulogy.vc",
+  "legal_name": "Neulogy Ventures, a. s.",
+  "company_id": "47367610",
+  "registry_url": "https://api.statistics.sk/rpo/v1/entity/1008262",
+  "hq_country": "SK",
+  "types": "vc",
+  "sectors": "deeptech_hardware",
+  "stages": "pre_seed",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "StratifAI",
+    "date": "2024-09-02",
+    "url": "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"
+   },
+   {
+    "company": "GA Drilling",
+    "date": "2024-04-18",
+    "url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+   },
+   {
+    "company": "GroupSolver",
+    "date": null,
+    "url": "https://neulogy.vc"
+   },
+   {
+    "company": "GreenWay",
+    "date": null,
+    "url": "https://neulogy.vc/portfolio"
+   },
+   {
+    "company": "Voltia",
+    "date": null,
+    "url": "https://neulogy.vc/portfolio"
+   },
+   {
+    "company": "Vectary",
+    "date": null,
+    "url": "https://neulogy.vc/portfolio"
+   },
+   {
+    "company": "Trustmatic",
+    "date": null,
+    "url": "https://neulogy.vc/portfolio"
+   },
+   {
+    "company": "SaferPass",
+    "date": null,
+    "url": "https://neulogy.vc/portfolio"
+   }
+  ],
+  "sources": [
+   "https://neulogy.vc",
+   "https://neulogy.vc/contact",
+   "https://neulogy.vc/portfolio",
+   "https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/neulogy-ventures-kapitalova-investicia",
+   "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/",
+   "https://www.trysignalbase.com/news/funding/stratifai-secures-1.5-million-in-pre-seed-funding-to-revolutionize-precision-oncology-with-ai-driven-biomarkers"
+  ]
+ },
+ {
+  "review_id": "R03",
+  "name": "Nation1",
+  "website": "https://n1.rocks",
+  "legal_name": "Nation1 Investment s.r.o.",
+  "company_id": "09172807",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09172807",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "",
+  "stages": "pre_seed",
+  "ticket": "",
+  "total_capital_eur": "53638477",
+  "capital_method": "aum_stated",
+  "funds": "N1 Ventures U-Tech (?); N1 Ventures U-Tech (přibližně 10 milionů eur); N1 Ventures U-Tech (přibližně 10 milionů eur)",
+  "investments": [
+   {
+    "company": "Taikun",
+    "date": "2026-06-20",
+    "url": "https://n1.rocks"
+   },
+   {
+    "company": "Flick",
+    "date": "2026-05-15",
+    "url": "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/"
+   },
+   {
+    "company": "Novoflow",
+    "date": "2025-11-01",
+    "url": "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup"
+   },
+   {
+    "company": "Respeecher",
+    "date": "2025-05-28",
+    "url": "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/"
+   },
+   {
+    "company": "Myriad AI",
+    "date": "2024-07-30",
+    "url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+   },
+   {
+    "company": "Myriad AI",
+    "date": "2024-07-01",
+    "url": "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/barta-prusa-winkler-a-investori-z-n1-ventures-rozjeli-novy-fond-v-hledacku-maji-ukrajinske-startupy/",
+   "https://en.ain.ua/2024/07/30/czech-founded-startup-myriad-ai-secures-2m-pre-seed-funding-round",
+   "https://n1.rocks",
+   "https://www.lupa.cz/aktuality/cesi-z-n1-investovali-do-startupu-ktery-vytvari-ai-filmy-stoji-za-nim-spolutvurce-instagram-stories/",
+   "https://www.thevccorner.com/p/novoflow-ai-healthcare-startup"
+  ]
+ },
+ {
+  "review_id": "R04",
+  "name": "ZAKA Ventures",
+  "website": "https://zaka.vc",
+  "legal_name": "ZAKA Management s.r.o.",
+  "company_id": "21053987",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21053987",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "life_sciences_medtech,industry_manufacturing",
+  "stages": "pre_seed,seed",
+  "ticket": "",
+  "total_capital_eur": "15000000",
+  "capital_method": "sum_of_1_funds",
+  "funds": "ZAKA VC Fund I (€15 million)",
+  "investments": [
+   {
+    "company": "DeepSeq.AI",
+    "date": "2026-01-07",
+    "url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+   },
+   {
+    "company": "WonderTx",
+    "date": null,
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "Aerogen Systems",
+    "date": null,
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "FinalDose",
+    "date": null,
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "PerfectBit",
+    "date": null,
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "Human Archive",
+    "date": null,
+    "url": "https://zaka.vc/portfolio"
+   },
+   {
+    "company": "AxionOrbital Space",
+    "date": null,
+    "url": "https://zaka.vc/portfolio"
+   }
+  ],
+  "sources": [
+   "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m",
+   "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery",
+   "https://zaka.vc",
+   "https://zaka.vc/portfolio"
+  ]
+ },
+ {
+  "review_id": "R05",
+  "name": "i&i Biotech Investments",
+  "website": "https://www.inibio.eu",
+  "legal_name": "Biotech Investments s.r.o.",
+  "company_id": "10885978",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10885978",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "life_sciences_medtech",
+  "stages": "pre_seed,seed",
+  "ticket": "€0.5M – €2M",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "i&i Biotech Fund I SCSp (?); i&i Biotech Fund I SCSp (?)",
+  "investments": [
+   {
+    "company": "Captain T Cell",
+    "date": "2024-05-22",
+    "url": "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round"
+   },
+   {
+    "company": "Celeris Therapeutics",
+    "date": null,
+    "url": "https://www.inibio.eu/news"
+   }
+  ],
+  "sources": [
+   "https://www.healthcapital.de/en/news/article/captain-t-cell-secures-seed-financing-round",
+   "https://www.inibio.eu",
+   "https://www.inibio.eu/news"
+  ]
+ }
+]

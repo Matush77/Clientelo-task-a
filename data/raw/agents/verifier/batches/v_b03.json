@@ -1,0 +1,206 @@
+[
+ {
+  "review_id": "R11",
+  "name": "Inven Capital",
+  "website": "https://www.invencapital.cz",
+  "legal_name": "Inven Capital, SICAV, a.s.",
+  "company_id": "02059533",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/02059533",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "cleantech_energy",
+  "stages": "",
+  "ticket": "2 – 30m EUR",
+  "total_capital_eur": "500000000",
+  "capital_method": "aum_stated",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Vytal",
+    "date": "2025-03-11",
+    "url": "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala"
+   },
+   {
+    "company": "eliq",
+    "date": null,
+    "url": "https://www.invencapital.cz"
+   },
+   {
+    "company": "Ember",
+    "date": null,
+    "url": "https://www.invencapital.cz"
+   },
+   {
+    "company": "Hydrogrid",
+    "date": null,
+    "url": "https://www.invencapital.cz"
+   },
+   {
+    "company": "Taranis",
+    "date": null,
+    "url": "https://www.invencapital.cz"
+   }
+  ],
+  "sources": [
+   "https://en.ain.ua/2025/03/11/inven-capital-leads-eur142m-vytala",
+   "https://www.invencapital.cz"
+  ]
+ },
+ {
+  "review_id": "R12",
+  "name": "Miton",
+  "website": "https://www.miton.cz",
+  "legal_name": "MITON CZ, s.r.o.",
+  "company_id": "25417967",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/25417967",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "ai_data",
+  "stages": "",
+  "ticket": "300k – 2M",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "Miton C (?); Miton Psychonats (?)",
+  "investments": [
+   {
+    "company": "Boataround",
+    "date": "2026-05-04",
+    "url": "https://www.trendingtopics.eu/boataround-boot-charter-firma-erhaelt-millioneninvestments/"
+   },
+   {
+    "company": "Aim",
+    "date": "2025-01-01",
+    "url": "https://www.miton.cz/en/about"
+   },
+   {
+    "company": "Bandits",
+    "date": "2025-01-01",
+    "url": "https://www.miton.cz/en/about"
+   },
+   {
+    "company": "PangeAI",
+    "date": "2025-01-01",
+    "url": "https://www.miton.cz/en/about"
+   },
+   {
+    "company": "POS Experts",
+    "date": "2024-11-18",
+    "url": "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/"
+   },
+   {
+    "company": "GTE",
+    "date": "2024-01-01",
+    "url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+   },
+   {
+    "company": "Firefish",
+    "date": "2023-01-01",
+    "url": "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/live/miton-posiluje-svuj-tym-zamereny-na-gastronomii-hlasi-i-nove-investice/",
+   "https://www.miton.cz/en/about",
+   "https://www.miton.cz/en/blog/what-happened-fall-winter-2025/",
+   "https://www.trendingtopics.eu/boataround-boot-charter-firma-erhaelt-millioneninvestments/"
+  ]
+ },
+ {
+  "review_id": "R13",
+  "name": "Seed Starter",
+  "website": "https://www.seedstarter.cz",
+  "legal_name": "ČS Seed Starter, a.s.",
+  "company_id": "61058769",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/61058769",
+  "hq_country": "CZ",
+  "types": "cvc",
+  "sectors": "",
+  "stages": "pre_seed,seed",
+  "ticket": "200k – 1M",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Definic",
+    "date": "2026-06-12",
+    "url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"
+   },
+   {
+    "company": "Repsense",
+    "date": "2025-12-01",
+    "url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"
+   },
+   {
+    "company": "Investown",
+    "date": "2023-11-27",
+    "url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+   },
+   {
+    "company": "Signi",
+    "date": "2023-11-27",
+    "url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+   },
+   {
+    "company": "PalmApp",
+    "date": "2023-11-27",
+    "url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+   },
+   {
+    "company": "Wflow",
+    "date": "2023-11-27",
+    "url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+   },
+   {
+    "company": "Rekenber",
+    "date": "2023-11-27",
+    "url": "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/investice-do-startupu-po-vzoru-ceske-sporitelny-prebira-dalsi-zeme-banka-jim-zatim-poslala-180-milionu/",
+   "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/",
+   "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/",
+   "https://www.seedstarter.cz/cs/uvod"
+  ]
+ },
+ {
+  "review_id": "R14",
+  "name": "Investika realitní fond (INVESTIKA, investiční společnost, a.s.)",
+  "website": "https://www.investika.cz",
+  "legal_name": "INVESTIKA HOLDING a.s.",
+  "company_id": "23820632",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/23820632",
+  "hq_country": "CZ",
+  "types": "real_estate",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "1229357046",
+  "capital_method": "aum_stated",
+  "funds": "INVESTIKA realitní fond (?); MONETIKA peněžní fond (?); EUROMONETIKA depozitní fond (?); EFEKTIKA fond akciových trhů (?); DYNAMIKA fond unikátních příležitostí (?); METALIKA zlatý fond (?); CRYPTONIKA kryptoměnový fond (?)",
+  "investments": [],
+  "sources": [
+   "https://www.investika.cz",
+   "https://www.newstream.cz/zpravy-z-firem/za-10-let-ke-30-miliardam-korun-investika-meni-tvar-investovani-v-cesku"
+  ]
+ },
+ {
+  "review_id": "R15",
+  "name": "Uroboros Ventures s.r.o.",
+  "website": "",
+  "legal_name": "Uroboros Ventures s.r.o.",
+  "company_id": "24808016",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24808016",
+  "hq_country": "CZ",
+  "types": "",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [],
+  "sources": []
+ }
+]

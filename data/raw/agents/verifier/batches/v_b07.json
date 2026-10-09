@@ -1,0 +1,177 @@
+[
+ {
+  "review_id": "R31",
+  "name": "Jet Investment",
+  "website": "https://www.jetinvestment.cz/en",
+  "legal_name": "Jet Investment, a.s.",
+  "company_id": "03890333",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03890333",
+  "hq_country": "CZ",
+  "types": "pe,real_estate,vc",
+  "sectors": "ai_data",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "700000000",
+  "capital_method": "aum_stated",
+  "funds": "Jet Venture 1 (50 milionů eur); Jet Venture 1 (?)",
+  "investments": [
+   {
+    "company": "AppNava",
+    "date": "2026-09-17",
+    "url": "https://www.jetinvestment.cz/en/news"
+   },
+   {
+    "company": "Phantasma Labs",
+    "date": "2026-09-01",
+    "url": "https://www.jetinvestment.cz/en/news"
+   },
+   {
+    "company": "GigaScan",
+    "date": "2026-08-26",
+    "url": "https://www.jetinvestment.cz/en/news"
+   },
+   {
+    "company": "DecisionRules",
+    "date": "2026-06-23",
+    "url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/",
+   "https://www.jetinvestment.cz/en",
+   "https://www.jetinvestment.cz/en/news"
+  ]
+ },
+ {
+  "review_id": "R32",
+  "name": "Jet Ventures",
+  "website": "",
+  "legal_name": "",
+  "company_id": "",
+  "registry_url": "",
+  "hq_country": "",
+  "types": "",
+  "sectors": "",
+  "stages": "",
+  "ticket": "",
+  "total_capital_eur": "",
+  "capital_method": "",
+  "funds": "",
+  "investments": [
+   {
+    "company": "Cequence",
+    "date": "2025-06-12",
+    "url": "https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/"
+   },
+   {
+    "company": "Partory",
+    "date": "2024-09-28",
+    "url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/",
+   "https://cc.cz/slovaci-automatizuji-reseni-smluv-pro-dell-ci-notino-desitky-milionu-maji-od-miliardare-faita/",
+   "https://cc.cz/teoreticka-hodnota-nestaci-fondy-musi-investorum-vydelavat-rika-sef-fondu-jet-venture-1/",
+   "https://www.jetinvestment.cz"
+  ]
+ },
+ {
+  "review_id": "R33",
+  "name": "Tilia Impact Ventures",
+  "website": "https://www.tilia.vc",
+  "legal_name": "Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o.",
+  "company_id": "17848911",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17848911",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "agri_food,cleantech_energy,govtech_legaltech,edtech",
+  "stages": "pre_seed,seed",
+  "ticket": "0.3 – 1.2m",
+  "total_capital_eur": "1762078",
+  "capital_method": "sum_of_1_funds",
+  "funds": "Tilia Impact Ventures (43 milionů korun); Tilia 2 (?)",
+  "investments": [
+   {
+    "company": "NOLD",
+    "date": "2023-10-18",
+    "url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+   },
+   {
+    "company": "Munch",
+    "date": "2023-10-18",
+    "url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+   },
+   {
+    "company": "Cyrkl",
+    "date": "2023-10-18",
+    "url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+   },
+   {
+    "company": "The Village",
+    "date": "2023-10-18",
+    "url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+   },
+   {
+    "company": "Datlab",
+    "date": "2019-10-08",
+    "url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+   },
+   {
+    "company": "MIWA Technologies",
+    "date": "2019-10-08",
+    "url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/",
+   "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy",
+   "https://www.tilia.vc/"
+  ]
+ },
+ {
+  "review_id": "R34",
+  "name": "Presto Ventures",
+  "website": "https://prestoventures.com",
+  "legal_name": "Presto Ventures II a.s., osoba rizikového kapitálu",
+  "company_id": "11678704",
+  "registry_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/11678704",
+  "hq_country": "CZ",
+  "types": "vc",
+  "sectors": "defense_space",
+  "stages": "seed,series_a",
+  "ticket": "€500k – €5M",
+  "total_capital_eur": "180000000",
+  "capital_method": "sum_of_2_funds",
+  "funds": "Fund I (?); Fund II (€30 million); Presto Tech Horizons (150 miliony eur)",
+  "investments": [
+   {
+    "company": "Vidar Systems",
+    "date": "2024-10-01",
+    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+   },
+   {
+    "company": "Bavovna",
+    "date": "2024-10-01",
+    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+   },
+   {
+    "company": "Tur.ai",
+    "date": "2024-10-01",
+    "url": "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+   },
+   {
+    "company": "GoRamp",
+    "date": "2022-06-01",
+    "url": "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/"
+   }
+  ],
+  "sources": [
+   "https://cc.cz/regiony-s-velkym-startupovym-talentem-ceske-presto-ventures-posila-penize-do-gruzie-a-litvy/",
+   "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/",
+   "https://en.ain.ua/2022/07/12/presto-ventures-launches-e30m-fund-to-support-cee-startups",
+   "https://prestoventures.com",
+   "https://startuprise.co.uk/presto-tech-horizons-welcomes-investments/"
+  ]
+ }
+]
