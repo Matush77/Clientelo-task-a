@@ -116,8 +116,11 @@ def cmd_check_db(args: argparse.Namespace) -> None:
         ids = set(inv["evidence_ids"].split())
         mine = [c for c in claims if c["candidate_id"] in ids]
         window = months_before(date.fromisoformat(inv["as_of"]), ACTIVITY_MONTHS).isoformat()
-        if not any(c["field"] == "investments" and c["event_date"] >= window for c in mine):
-            problems.append(f"{inv['candidate_id']}: no verified investment since {window}")
+        if not any(c["field"] == "investments" and c["event_date"] >= window and c.get("deal_context") == "deal"
+                   for c in mine):
+            problems.append(f"{inv['candidate_id']}: no verified, dated deal since {window}")
+        if inv["total_capital_eur"] and float(inv["total_capital_eur"]) < 5e5:
+            problems.append(f"{inv['candidate_id']}: implausible total capital {inv['total_capital_eur']} EUR")
         for col, fields in cell_fields.items():
             if inv[col] and not any(c["field"] in fields for c in mine):
                 problems.append(f"{inv['candidate_id']}: '{col}' has no verified claim")

@@ -60,12 +60,19 @@ def investments_from(claims: list[dict]) -> list[Investment]:
     for c in claims:
         if c["field"] != "investments":
             continue
+        context = c.get("deal_context") or "deal"  # older claims / tests without context are treated as deals
+        if context == "exit":  # "Taikun's exit to Cloudera" is not an investment
+            continue
+        if c.get("attributed") == "0":  # the article proves a round, but not that this candidate took part
+            continue
         value = json.loads(c["value"]) or {}
         company = str(value.get("company") or "").strip()
         if not company:
             continue
         inv = by_company.setdefault(core_name(company), Investment(company=company, date=""))
-        inv.date = max(inv.date, c.get("event_date") or "")
+        # a bare mention (portfolio list, overview article) proves the investment, but its date is not a deal date
+        if context == "deal":
+            inv.date = max(inv.date, c.get("event_date") or "")
         inv.sources.add(domain(c["source_url"]))
     return list(by_company.values())
 

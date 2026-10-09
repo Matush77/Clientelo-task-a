@@ -28,6 +28,25 @@ def test_parse_money(text, hint, amount, currency, approx):
     assert (m.currency, m.approx) == (currency, approx)
 
 
+@pytest.mark.parametrize(
+    "text,amount,amount_max,currency",
+    [
+        # regressions from the pre-review audit (Reflex Capital showed "30 €")
+        ("dvaadvacet milionů eur", 22e6, None, "EUR"),
+        ("od 30 do 50 milionů eur", 30e6, 50e6, "EUR"),
+        ("čtyřicet milionů eur", 40e6, None, "EUR"),
+        ("€1-3M", 1e6, 3e6, "EUR"),
+        ("30 až 50 mil. Kč", 30e6, 50e6, "CZK"),
+        ("twenty-two million euros", 22e6, None, "EUR"),
+    ],
+)
+def test_number_words_and_ranges(text, amount, amount_max, currency):
+    m = parse_money(text)
+    assert m.amount == pytest.approx(amount)
+    assert (m.amount_max == pytest.approx(amount_max)) if amount_max else m.amount_max is None
+    assert m.currency == currency
+
+
 def test_no_currency_no_amount():
     assert parse_money("30 million") is None
     assert parse_money("undisclosed", "EUR") is None

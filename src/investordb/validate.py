@@ -70,6 +70,104 @@ def value_in_quote(value: str, quote: str) -> bool:
     return fuzz.partial_ratio(normalize(value), normalize(quote)) >= TEXT_VALUE_THRESHOLD
 
 
+# Words that show a quote (or its surroundings on the page) is about an actual deal (EN / CZ / SK)
+DEAL_WORDS = re.compile(
+    # "invest" only as a verb or the act ("invested", "investment", "investuje", "investice") - never "investor":
+    # "Miton, an investor in Boataround" (2026 article) describes a 2020 deal, it is not a 2026 deal
+    r"rais(?:e|es|ed|ing)\b|\brounds?\b|\bseed\b|series [a-d]|invest(?:ed|s|ing|ment|ments)\b|investuj|investov|"
+    r"investic|investíc|\bkol[aeouo]?\b|získal|získala|získali|"
+    r"vybral|vybrala|vložil|vložila|poslal|vstoup|vstúp|\bled\b|\blead|particip|joined|backed|funding|financ|"
+    r"welcome\w*\b.{0,60}portfolio|spája sily|spojil|připojil|pripojil|capital injection|stake|podíl|podiel|"
+    r"navýšen|navýšil",
+    re.I,
+)
+EXIT_WORDS = re.compile(
+    r"\bexit|acquired by|acquisition|akvizic|odkoupil|odkúpil|prodal|predal|sold to|merger|\bipo\b|went public",
+    re.I,
+)
+WINDOW = 250  # characters of page context on each side of the quote
+# A sentence that lists EXISTING investors is a mention even inside an article about a new round:
+# "Zu den Investoren der Firma gehören ... Miton" (2026 article, the Miton deal was in 2020)
+INVESTOR_LIST = re.compile(  # investors OF THE COMPANY (existing shareholders) - not investors IN THIS ROUND
+    r"zu den investoren\b|\b(?:its|existing|current|the company's)\s+investors\b|among \S+ investors\b|"
+    r"among (?:its|the company's|the startup's) investors|"
+    r"mezi (?:její|jeho|stávající|dosavadní)?\s*investory|mezi investory (?:firmy|společnosti|startupu)|"
+    r"medzi (?:jej|jeho|existujúcich|doterajších)?\s*investormi|"
+    r"investoři (?:firmy|společnosti|startupu)|investormi (?:firmy|spoločnosti|startupu)",
+    re.I,
+)
+
+
+def deal_context(quote: str, page_text: str) -> str:
+    """'exit'    - the quote describes an exit / acquisition, not an investment;
+    'deal'    - the quote or its page context describes an actual deal (its date may count as the deal date);
+    'mention' - the company is only named (portfolio list, overview article): investment yes, date not a deal date."""
+    q = normalize(quote)
+    if EXIT_WORDS.search(q) and not DEAL_WORDS.search(q):
+        return "exit"
+    if INVESTOR_LIST.search(q) and not re.search(r"\bnew investors?\b|nov[íý] investo", q):
+        return "mention"
+    if DEAL_WORDS.search(q):
+        return "deal"
+    t = normalize(page_text)
+    pos = t.find(q)
+    if pos < 0:
+        alignment = fuzz.partial_ratio_alignment(q, t)
+        pos = alignment.dest_start if alignment and alignment.score >= QUOTE_THRESHOLD else -1
+    if pos >= 0 and DEAL_WORDS.search(t[max(0, pos - WINDOW): pos + len(q) + WINDOW]):
+        return "deal"
+    return "mention"
+
+
+ATTRIBUTION_WINDOW = 400
+
+
+def _plain(text: str) -> str:
+    """Lowercase words only: 'J&T Ventures' -> 'j t ventures' (so names compare across punctuation)."""
+    return re.sub(r"[^\w]+", " ", normalize(text)).strip()
+
+
+GENERIC_TAIL = {"ventures", "venture", "capital", "investments", "investment", "partners", "fund", "funds", "vc", "gp",
+                "management", "group", "holding", "invest", "sicav", "as", "sro", "s", "r", "o", "a", "se"}
+
+
+def name_variants(names: list[str]) -> set[str]:
+    """Full names plus their distinctive core ('Presto Ventures' -> 'presto', 'i&i Biotech Investments' -> 'i i biotech'),
+    because articles write 'Presto Tech Horizons', 'i&i Biotech Fund', 'Zaka VC'. A core must be >= 4 characters or
+    contain a digit ('gi21'), so short brands ('J&T', 'Jet') are only matched by their full name."""
+    out = set()
+    for n in names:
+        full = _plain(n)
+        if len(full) >= 3:
+            out.add(full)
+        tokens = full.split()
+        while tokens and tokens[-1] in GENERIC_TAIL:
+            tokens.pop()
+        core = " ".join(tokens)
+        if core and (len(core) >= 4 or any(ch.isdigit() for ch in core)):
+            out.add(core)
+    return out
+
+
+def attributed(quote: str, page_text: str, names: list[str]) -> bool:
+    """Is the candidate (any of its names) named in the quote or in the page text around it?
+    An article that says 'Ranketta raised EUR 1m' proves a round, not that this candidate took part in it."""
+    variants = name_variants(names)
+
+    def named(text: str) -> bool:
+        return any(re.search(rf"\b{re.escape(v)}\b", text) for v in variants)
+    q, t = _plain(quote), _plain(page_text)
+    if named(q):
+        return True
+    pos = t.find(q)
+    if pos < 0:
+        alignment = fuzz.partial_ratio_alignment(q, t)
+        pos = alignment.dest_start if alignment and alignment.score >= QUOTE_THRESHOLD else -1
+    if pos < 0:
+        return False
+    return named(t[max(0, pos - ATTRIBUTION_WINDOW): pos + len(q) + ATTRIBUTION_WINDOW])
+
+
 @dataclass
 class ClaimCheck:
     status: str  # ok | url_dead | blocked | quote_not_found | value_not_in_quote

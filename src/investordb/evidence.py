@@ -13,7 +13,8 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from urllib.parse import urlparse
 
-from investordb.validate import check_claim
+from investordb.fetch import fetch_with_archive_fallback
+from investordb.validate import attributed, check_claim, deal_context
 
 ROOT = Path(__file__).resolve().parents[2]
 EVIDENCE_DIR = ROOT / "data" / "raw" / "agents" / "evidence"
@@ -32,6 +33,9 @@ T4_DOMAINS = (
     "dealroom.co", "crunchbase.com", "pitchbook.com", "tracxn.com", "cbinsights.com", "vestbee.com", "caplight.com",
     "seedtable.com", "nfx.com", "openvc.app", "linkedin.com", "wikipedia.org", "finstat.sk", "finstat.cz",
     "kurzy.cz", "firmy.cz", "zoominfo.com", "owler.com", "golden.com",
+    # added in the pre-review audit (D30): startup databases and a registry mirror (funding-NEWS sites such as
+    # thesaasnews.com stay T3 - they publish articles about specific rounds; attribution is checked instead, D31)
+    "startbase.de", "trysignalbase.com", "podnikatel.cz",
 )
 
 
@@ -87,6 +91,8 @@ class ClaimRow:
     event_date: str  # investments: deal date (or publication date as fallback); others: publication date
     event_date_precision: str
     auto_check: str = ""
+    deal_context: str = ""  # investments only: deal | mention | exit (validate.deal_context)
+    attributed: str = ""  # investments only: 1 if the candidate is named in the quote / around it (or own site)
     quote_score: str = ""
     checked_url: str = ""
     text_sha256: str = ""
@@ -134,13 +140,35 @@ def flatten(record: dict) -> list[ClaimRow]:
     return rows
 
 
+def candidate_names() -> dict[str, list[str]]:
+    """Every name a candidate is known under (brand, aliases from discovery)."""
+    path = ROOT / "data" / "processed" / "candidates.csv"
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as f:
+        return {r["candidate_id"]: [r["name"]] + [a for a in r["aliases"].split(" | ") if a] for r in csv.DictReader(f)}
+
+
 def check(rows: list[ClaimRow]) -> None:
+    names = candidate_names()
+    # legal names the agents verified count as names too ("Biotech Investments, s. r. o.")
+    for r in rows:
+        if r.field == "identity":
+            legal = (json.loads(r.value) or {}).get("legal_name") if r.value.startswith("{") else None
+            if legal:
+                names.setdefault(r.candidate_id, []).append(legal)
     for r in rows:
         if r.source_tier == "T4":
             r.auto_check = "forbidden_source"
             continue
         result = check_claim(r.source_url, r.quote, r.value_text)
         r.auto_check = result.status
+        if r.field == "investments" and result.status == "ok":
+            page = fetch_with_archive_fallback(r.source_url).text
+            r.deal_context = deal_context(r.quote, page)
+            # the candidate's own site implies attribution (its portfolio); elsewhere the name must be near the quote
+            own = r.source_tier == "T2"
+            r.attributed = "1" if own or attributed(r.quote, page, names.get(r.candidate_id, [])) else "0"
         r.quote_score = f"{result.quote_score:.0f}" if result.quote_score is not None else ""
         r.checked_url, r.text_sha256, r.fetched_at = result.checked_url or "", result.text_sha256 or "", result.fetched_at
 

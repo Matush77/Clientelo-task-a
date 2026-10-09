@@ -61,7 +61,7 @@ def _request(method: str, url: str, **kwargs) -> _Response:
 LEGAL_SUFFIXES = re.compile(
     r"\b(s\.?\s?r\.?\s?o\.?|spol\.?\s?s\s?r\.?\s?o\.?|a\.?\s?s\.?|k\.?\s?s\.?|v\.?\s?o\.?\s?s\.?|se|sicav|"
     r"investi[čc]n[íý] fond|podfond|správ\.?\s?spol\.?|správcovská spoločnosť|investiční společnost|"
-    r"osoba rizikového kapitálu|otevřený podílový fond|"
+    r"osoba rizikového kapitálu|otevřený podílový fond|z\.?\s?ú\.?|o\.?\s?p\.?\s?s\.?|"
     r"gmbh|ltd|llc|b\.?v\.?|s\.?a\.?r\.?l\.?)\b",
     re.I,
 )
@@ -83,6 +83,17 @@ class RegistryRecord:
     @property
     def active(self) -> bool:
         return self.dissolved is None
+
+
+LEGAL_FORMS = [  # (pattern, canonical form) - the form must agree when matching a verified legal name
+    (r"spol\.?\s?s\s?r\.?\s?o\.?|s\.?\s?r\.?\s?o\.?", "sro"), (r"\ba\.?\s?s\.?(?!\w)", "as"), (r"z\.?\s?ú\.?", "zu"),
+    (r"o\.?\s?p\.?\s?s\.?", "ops"), (r"\bse\b", "se"), (r"\bk\.?\s?s\.?(?!\w)", "ks"), (r"sicav", "sicav"),
+]
+
+
+def legal_form(name: str) -> str:
+    low = name.lower()
+    return next((form for pattern, form in LEGAL_FORMS if re.search(pattern, low)), "")
 
 
 def core_name(name: str) -> str:

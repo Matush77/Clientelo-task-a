@@ -17,8 +17,10 @@ from pathlib import Path
 
 from investordb.candidates import OUT as CANDIDATES_CSV
 from investordb.evidence import CLAIMS_CSV, T4_DOMAINS, _under, domain, load_records
-from investordb.money import Money, parse_money, to_eur
-from investordb.registries import RegistryRecord, ares_get, core_name, rpo_search
+import re
+
+from investordb.money import TARGET_FUND, Money, eur_rate, parse_money, plausible, to_eur
+from investordb.registries import RegistryRecord, ares_get, core_name, legal_form, rpo_search
 from investordb.rules import Decision, decide
 from investordb.candidates import match_key
 from investordb.registries import ares_search
@@ -64,7 +66,9 @@ def registry_for(claims: list[dict], triage: dict | None, names: list[str] = ())
             recs = rpo_search(ico=ico, limit=1)
             if recs:
                 return recs[0]
-    for name, country in legal_names + [(n, hq) for n in names if n]:
+    # a verified legal name is the strongest lead: if there is one, the looser brand-name search is not used
+    candidates = legal_names if legal_names else [(n, hq) for n in names if n]
+    for name, country in candidates:
         country = country if country in ("CZ", "SK") else hq
         # raw name too: normalising "J&T Ventures" to "j t ventures" makes ARES find nothing
         queries = list(dict.fromkeys(q for q in (name, match_key(name), match_key(name).split(" ")[0]) if q))
@@ -77,6 +81,8 @@ def registry_for(claims: list[dict], triage: dict | None, names: list[str] = ())
             if any(r.active and registry_name_matches(r.name, name) for r in found):
                 break
         matches = [r for r in found if r.active and registry_name_matches(r.name, name)]
+        if legal_names and legal_form(name):  # "Czech Founders VC s.r.o." must not match "Czech Founders z.ú."
+            matches = [r for r in matches if legal_form(r.name) in ("", legal_form(name))]
         if matches:
             # prefer a name that marks an investment vehicle, then the shortest (management company over sub-funds)
             return min(matches, key=lambda r: (not has_investment_signal(r.name), len(r.name)))
@@ -88,37 +94,81 @@ def _first(claims: list[dict], field: str):
     return vals[0] if vals else None
 
 
+def _display_date(claim: dict) -> str:
+    """Show a date with the precision the source gave: '2024' stays '2024', not '2024-01-01'."""
+    d, precision = claim["event_date"], claim.get("event_date_precision", "day")
+    return d[:4] if precision == "year" else d[:7] if precision == "month" else d
+
+
 def _eur(value: float | None) -> str:
     return f"{value:.0f}" if value is not None else ""
 
 
-def total_capital(ok: list[dict], on: str) -> tuple[float | None, str, bool]:
-    """(EUR amount, method, approx). Stated AUM wins; otherwise the sum of all verified fund sizes (D17)."""
+def _conversion_note(m: Money, on: str) -> str:
+    return "" if m.currency == "EUR" else f"{m.raw} → EUR kurzom ECB {eur_rate(m.currency, on)} ({on})"
+
+
+def total_capital(ok: list[dict], on: str) -> dict:
+    """Stated AUM wins; otherwise the sum of all verified CLOSED fund sizes (D17, D30).
+    Target / planned funds and ranges are listed separately, never summed; implausible amounts are dropped + flagged."""
+    out = {"eur": None, "method": "", "approx": False, "targets": [], "notes": [], "flags": []}
     aum = _first(ok, "total_capital")
     # only an explicit AUM counts here - a single fund's size must not pose as the firm's total capital
     if aum and aum.get("capital_type") == "aum" and (m := parse_money(aum.get("amount"), aum.get("currency"))):
-        return to_eur(m, on), "aum_stated", m.approx
+        eur = to_eur(m, on)
+        if plausible("aum", eur) and not m.is_range:
+            out.update(eur=eur, method="aum_stated", approx=m.approx, notes=[n for n in [_conversion_note(m, on)] if n])
+            return out
+        out["flags"].append(f"AUM '{m.raw}' vyradené (rozpätie alebo nereálna hodnota)")
     funds: dict[str, Money] = {}
     for c in ok:
         if c["field"] != "funds":
             continue
         f = json.loads(c["value"]) or {}
         m = parse_money(f.get("size"), f.get("currency"))
-        if m:
-            funds.setdefault(core_name(f.get("name") or c["source_url"]), m)  # same fund cited twice counts once
-    if not funds:
-        return None, "", False
-    total = sum(to_eur(m, on) for m in funds.values())
-    return total, f"sum_of_{len(funds)}_funds", any(m.approx for m in funds.values())
+        if not m:
+            continue
+        name = f.get("name") or "fond"
+        if m.is_range or TARGET_FUND.search(c["quote"]):
+            out["targets"].append(f"{name}: {m.raw} (cieľ / plán)")
+            continue
+        if not plausible("fund", to_eur(m, on)):
+            out["flags"].append(f"fond '{name}: {m.raw}' vyradený (nereálna hodnota)")
+            continue
+        funds.setdefault(core_name(name), m)  # same fund cited twice counts once
+    if funds:
+        out.update(eur=sum(to_eur(m, on) for m in funds.values()), method=f"sum_of_{len(funds)}_closed_funds",
+                   approx=any(m.approx for m in funds.values()),
+                   notes=[n for m in funds.values() if (n := _conversion_note(m, on))])
+    return out
+
+
+def ticket_eur(ticket: dict, on: str) -> tuple[float | None, float | None, list[str]]:
+    """Ticket min/max in EUR. 'min 2, max 15 mil. EUR' -> the bare minimum borrows the maximum's scale."""
+    flags = []
+    t_min = parse_money(ticket.get("min"), ticket.get("currency"))
+    t_max = parse_money(ticket.get("max"), ticket.get("currency"))
+    if t_min and t_min.is_range and not t_max:  # "€1-3M" written into one field
+        t_max = Money(t_min.amount_max, t_min.currency, t_min.approx, t_min.raw)
+    if t_min and t_max and t_min.amount < 1000 <= t_max.amount and not re.search(r"[a-z]", str(ticket.get("min")).lower().replace("eur", "")):
+        for factor in (1e6, 1e3):
+            if t_max.amount >= factor:
+                t_min = Money(t_min.amount * factor, t_min.currency, t_min.approx, t_min.raw)
+                break
+    lo, hi = to_eur(t_min, on), to_eur(t_max, on)
+    for label, val, m in (("min", lo, t_min), ("max", hi, t_max)):
+        if m and not plausible("ticket", val):
+            flags.append(f"tiket {label} '{m.raw}' vyradený (nereálna hodnota)")
+    return (lo if plausible("ticket", lo) else None), (hi if plausible("ticket", hi) else None), flags
 
 
 def wide_row(rec: dict, d: Decision, reg: RegistryRecord | None, ok: list[dict], as_of: date, name: str) -> dict:
     on = as_of.isoformat()
     ticket = _first(ok, "ticket") or {}
-    t_min = parse_money(ticket.get("min"), ticket.get("currency"))
-    t_max = parse_money(ticket.get("max"), ticket.get("currency"))
-    capital_eur, capital_method, capital_approx = total_capital(ok, on)
-    invs = sorted((c for c in ok if c["field"] == "investments" and c["event_date"]), key=lambda c: c["event_date"])
+    t_min_eur, t_max_eur, ticket_flags = ticket_eur(ticket, on)
+    cap = total_capital(ok, on)
+    invs = sorted((c for c in ok if c["field"] == "investments" and c["event_date"] and c.get("deal_context") == "deal"),
+                  key=lambda c: c["event_date"])
     last = invs[-1] if invs else None
     funds = [json.loads(c["value"]) for c in ok if c["field"] == "funds"]
     return dict(
@@ -127,10 +177,13 @@ def wide_row(rec: dict, d: Decision, reg: RegistryRecord | None, ok: list[dict],
         hq_country=d.hq, website=rec.get("website") or "", investor_types=",".join(d.types),
         sectors=",".join(_first(ok, "sectors") or []), stages=",".join(_first(ok, "stages") or []),
         ticket_min=ticket.get("min") or "", ticket_max=ticket.get("max") or "",
-        ticket_min_eur=_eur(to_eur(t_min, on)), ticket_max_eur=_eur(to_eur(t_max, on)),
-        total_capital_eur=_eur(capital_eur), capital_method=capital_method, capital_approx=int(capital_approx),
+        ticket_min_eur=_eur(t_min_eur), ticket_max_eur=_eur(t_max_eur),
+        total_capital_eur=_eur(cap["eur"]), capital_method=cap["method"], capital_approx=int(cap["approx"]),
+        capital_note="; ".join(cap["notes"]), funds_target="; ".join(cap["targets"]),
         funds="; ".join(f"{f.get('name')} ({f.get('size') or '?'})" for f in funds),
-        n_investments=d.n_investments, n_investments_36m=d.n_recent, last_investment_date=d.last_investment,
+        data_flags="; ".join(cap["flags"] + ticket_flags),
+        n_investments=d.n_investments, n_investments_36m=d.n_recent,
+        last_investment_date=_display_date(last) if last else "",
         last_investment=(json.loads(last["value"]) or {}).get("company", "") if last else "",
         last_investment_source=last["source_url"] if last else "",
         status=d.status, reason=d.reason, tier=d.tier, explanation=d.explanation, as_of=as_of.isoformat(),
