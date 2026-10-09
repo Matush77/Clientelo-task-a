@@ -65,6 +65,26 @@ Všetky štyri sú opravené a pokryté regresnými testami (spolu 128 testov).
 **Chyby boli v hodnotách polí** (kapitál, tiket, dátumy). Tie vo v1 nemala pokrytá žiadna automatická kontrola
 významu.
 
+## Doplnok: v3 – identita v registri (počas ručnej kontroly)
+
+Pri ručnej kontrole som si všimol, že IČO pri CB Investment Management nesedí s webom. Nezávisle na tom označil
+Sonnet chybnú identitu aj pri Nation1 a Czech Founders.
+
+**Príčina** – zlé poradie a príliš voľné pravidlá pri hľadaní v registri:
+
+- neplatné IČO z webu → voľné hľadanie podľa značky;
+- výsledok triáže mal prednosť pred obchodným menom z webu;
+- „značka + investičné slovo“ sa považovalo za zhodu.
+
+**Oprava:** prísne pravidlá D35 s 22 novými testami. Zmrazené ako `pilot-frozen-v3`.
+
+**Vplyv na 34 záznamov vzorky:**
+
+- 8 záznamov má opravenú identitu, napr. CB → „CB Investment Management s. r. o.“ (IČO 52524531; web má navyše
+  jednu číslicu navyše), Czech Founders → „Czech Founders Ventures s.r.o.“.
+- Nation1 nemá spoľahlivú identitu → ručná kontrola (I1), počet zaradených **25 → 24**.
+- Identifikátory vzorky ostali rovnaké, takže už vyplnené odpovede kontrolóra platia ďalej.
+
 ## Ponaučenie
 
 Overenie, že AI citovala správne, nestačí. Treba overiť aj to, **čo citácia znamená**:

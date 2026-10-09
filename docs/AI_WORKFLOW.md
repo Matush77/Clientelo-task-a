@@ -122,6 +122,9 @@ Podrobne v [AUDIT_V2.md](AUDIT_V2.md).
 | C41 | **ja + Claude (audit)** | Vzory kontextu obchodu: „round“ v „Boataround“, „invest“ v „investor“, „investors including“ aj pri syndikáte kola | testy + rozbor zmien (i&i Biotech chybne vypadol) | hranice slov, užší vzor „investori firmy“, regresné testy |
 | C42 | AI overovateľ | (pozitívne) Bez znalosti verdiktov si všimol duplicitu Jet Ventures / Jet Investment a problém dátumov v 13 z 24 záznamov | – | zistenia použité v audite; overovateľ beží znovu na v2 |
 
+| C43 | **ja + Claude (kód)** | **Chybné priradenie identity (IČO)**. Malé neplatné IČO z webu („52 524 5311“) → kód prešiel na voľné hľadanie podľa značky → cudzia „CB Investments s. r. o.“. Výsledok triáže mal prednosť pred overeným obchodným menom z webu → Czech Founders priradený k neziskovej z.ú. „Nation1 Investment s.r.o.“ prijaté ako Nation1. Credo priradené k novej „Credo Ventures Management II“. | **človek** pri ručnej kontrole (CB) + Sonnet (`identity_ok`: Nation1, Czech Founders, CB, Investika) | prísne pravidlá identity (D35), kontrola formátu IČO, regresné testy; v3: 8 záznamov vo vzorke s opravenou identitou, Nation1 na ručnú kontrolu |
+| C44 | **ja + Claude (kód)** | Prvá verzia prísneho pravidla prijala presnú zhodu jednoslovnej značky („KAYA“ → „KAYA, spol. s r.o.“) a zahodila lokálnu firmu tímu pri zahraničnom GP (Tensor) | porovnanie zmien identity v2 → v3 pred zmrazením | jednoslovná značka potrebuje investičné označenie; zahraničná identita nebráni hľadaniu lokálnej |
+
 **Hlavné ponaučenie pre prezentáciu:** strojová kontrola citácií zachytila vymyslené zdroje a parafrázy, no nie
 **nesprávny výklad pravej citácie**. To odhalil až človek – za dve minúty prezerania formulára. Preto sú v postupe
 obe vrstvy, strojová aj ľudská, a nedajú sa nahradiť jedna druhou.
