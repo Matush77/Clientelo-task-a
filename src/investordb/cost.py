@@ -270,8 +270,9 @@ def render(m: Measured) -> str:
         f"= 20×); AI kontrola Sonnetom stála {m.ai_review_per_record:.3f} USD na záznam. Podiel ľudskej kontroly 40 % "
         "v poslednom riadku je predpoklad – v pilote sa Sonnet a Haiku líšili v 15 % záznamov, k tomu náhodná kontrola."
         + (f" Spresnenie jedného zaradeného záznamu Sonnetom stálo {m.refine_per_record:.3f} USD (namerané na "
-           f"{m.refined_records} záznamoch) – Sonnet tak beží len na ~1/{m.candidates / max(m.included, 1):.0f} "
-           "kandidátov, a to len na polia, kde Haiku zlyhával." if m.refined_records else "") + "\n")
+           f"{m.refined_records} záznamoch, vrátane jedného behu prerušeného limitom) – Sonnet tak beží len na "
+           f"~1/{m.candidates / max(m.included, 1):.0f} kandidátov, a to len na polia, kde Haiku zlyhával. Zlepšenie, "
+           "ktoré tým vzniklo, je zmerané v [REFINEMENT.md](REFINEMENT.md)." if m.refined_records else "") + "\n")
     add("## 4. Čo z toho vyplýva\n")
     add(f"- **Hlavný náklad nie je AI, ale ľudská kontrola kvality.** V základnom scenári AI stojí "
         f"{_eur(base['ai_eur'])}, ľudská kontrola {_eur(base['human_eur'])}.")

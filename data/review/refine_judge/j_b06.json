@@ -1,0 +1,170 @@
+[
+ {
+  "item_id": "C186-I00",
+  "answer": "yes",
+  "why": "ARES lists Look AI Ventures SICAV, a.s. (IČO 17604087) and the lookai.vc footer names the same entity as the fund acting for the Look AI Ventures I Subfund.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17604087"
+ },
+ {
+  "item_id": "C186-I01",
+  "answer": "yes",
+  "why": "Look AI Ventures is named among backers of Embodied AI's first funding round, announced mid/late September 2026 (lookai.vc news item dated 22 Sep 2026; other report 16 Sep 2026).",
+  "source_url": "https://pulse2.com/embodied-ai-launches-with-funding-to-automate-european-manufacturing/"
+ },
+ {
+  "item_id": "C186-I02",
+  "answer": "yes",
+  "why": "Tech.eu (30 June 2026) says the Lucida AI seed round was led by Velocity Capital with participation from Next Tier Ventures, Look AI Ventures and others.",
+  "source_url": "https://tech.eu/2026/06/30/lucida-ai-closes-7m-seed-round-for-speech-to-speech-ai/"
+ },
+ {
+  "item_id": "C186-I03",
+  "answer": "yes",
+  "why": "lookai.vc lists a 23 July 2026 news item on Look AI Ventures investing in Sodex Innovations' EUR 4M round, and the round itself took place 13 July 2026 (raising.fi).",
+  "source_url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026"
+ },
+ {
+  "item_id": "C186-I04",
+  "answer": "yes",
+  "why": "Raising.fi states the Sodex Innovations round took place on 13 July 2026, led by Capmont Technology, with Look AI Ventures joining as a new investor.",
+  "source_url": "https://raising.fi/news/sodex-innovations-undisclosed-july-2026"
+ },
+ {
+  "item_id": "C195-I00",
+  "answer": "yes",
+  "why": "ARES shows ZAKA VC I, osoba rizikového kapitálu, a.s. (IČO 21514992), formed 25 Apr 2024 just before ZAKA VC Fund I launched (June/July 2024); name matches the brand and fund, though no source states the IČO explicitly.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21514992"
+ },
+ {
+  "item_id": "C195-I01",
+  "answer": "yes",
+  "why": "Sources say ZAKA VC Fund I (EUR 15M target) started with a EUR 10.5M first closing in mid-2024, so EUR 10.5M is a real first-close amount; note the firm's website now shows an unlabelled 'current fund size 17M' and I found no later close announcement.",
+  "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+ },
+ {
+  "item_id": "C195-I02",
+  "answer": "yes",
+  "why": "ParcelBio's USD 13M seed (announced 7 May 2026) was led by Breyer Capital with participation from ZAKA VC among others.",
+  "source_url": "https://pulse2.com/parcelbio-13-million-seed-financing-raised-to-advance-next-generation-mrna-medicines/"
+ },
+ {
+  "item_id": "C195-I03",
+  "answer": "yes",
+  "why": "EIN Presswire release of 7 January 2026 announces an investment in DeepSeq.AI from ZAKA VC together with Illumina Ventures.",
+  "source_url": "https://www.einpresswire.com/article/879998435/zaka-vc-invests-in-deepseq-ai-to-transform-ai-based-protein-drug-discovery"
+ },
+ {
+  "item_id": "C195-I04",
+  "answer": "no",
+  "why": "EUR 15M is only the Fund I target size; the source says the fund is 'sized at EUR 15 million' but starting with a EUR 10.5 million first closing, so only EUR 10.5M was actually raised.",
+  "source_url": "https://en.ain.ua/2024/07/19/czech-zaka-launches-its-first-fund-of-15m"
+ },
+ {
+  "item_id": "C197-I00",
+  "answer": "yes",
+  "why": "ARES lists Rockaway Ventures a.s. (IČO 06387136, Generála Píky 430/26, Praha 6, formed 2017), a Rockaway-group company carrying the investor's exact name and sharing an address with sibling Rockaway entities, though its exact role (management/holding) is not stated.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06387136"
+ },
+ {
+  "item_id": "C197-I01",
+  "answer": "wrong_date",
+  "why": "The Sept 2021 cc.cz article only lists Productboard among older investments; Rockaway Capital first invested in 2015 (USD 400K) and joined the USD 10M extension in Feb 2019, not a round in Sept 2021.",
+  "source_url": "https://cc.cz/cesky-startup-productboard-vybral-dalsich-10-milionu-dolaru-mezi-investory-jsou-i-credo-a-reflex-capital/"
+ },
+ {
+  "item_id": "C197-I02",
+  "answer": "yes",
+  "why": "The 23 Sep 2021 cc.cz article says the new Rockaway Ventures Fund began investing with Lingvist and the German Vivere (its second investment).",
+  "source_url": "https://cc.cz/jakub-havrlant-prichazi-s-novym-investicnim-fondem-rockaway-s-nim-chce-do-startupu-poslat-25-miliardy-korun/"
+ },
+ {
+  "item_id": "C197-I03",
+  "answer": "yes",
+  "why": "Lupa.cz (19 Feb 2014) reports Brand Embassy received almost USD 1M from Spread Capital and Rockaway Capital ([osoba], the Rockaway group predecessor of Rockaway Ventures).",
+  "source_url": "https://www.lupa.cz/clanky/brand-embassy-ziskala-milion-dolaru-startupyard-a-nydrle-firmu-opousteji/"
+ },
+ {
+  "item_id": "C197-I04",
+  "answer": "wrong_date",
+  "why": "The May 2025 tech.eu article about the fund close merely names Gjirafa as a notable past investment; Rockaway's Gjirafa rounds were 2016 and March 2019 (Series B) and I found no 2025 round.",
+  "source_url": "https://techcrunch.com/2019/03/25/gjirafa-raises-a-6-7m-series-b-from-rockaway-capital-to-digitise-the-balkans"
+ },
+ {
+  "item_id": "C197-I05",
+  "answer": "wrong_date",
+  "why": "Brand Embassy is only mentioned in the Sept 2021 article as an older investment; Rockaway Capital's actual investment was announced in Feb 2014.",
+  "source_url": "https://www.lupa.cz/clanky/brand-embassy-ziskala-milion-dolaru-startupyard-a-nydrle-firmu-opousteji/"
+ },
+ {
+  "item_id": "C197-I06",
+  "answer": "yes",
+  "why": "Nordic9 (1 March 2026) headlines 'Float secured seed investment from Rockaway Ventures and EIFO' (investor field lists Rockaway Capital).",
+  "source_url": "https://nordic9.com/news/float-secured-investment-from-rockaway-ventures-and-eifo/"
+ },
+ {
+  "item_id": "C197-I07",
+  "answer": "yes",
+  "why": "Rockaway Ventures II closed at nearly EUR 55M (May 2025) and the first Rockaway Ventures Fund held a second close at EUR 40M (Nov 2022, EUR 100M target, third close of EUR 60-70M only planned), so the sum of actually closed amounts is about EUR 95M; no later final close found.",
+  "source_url": "https://www.unquote.com/cee/news/3028705/rockaway-plans-third-closing-for-rockaway-ventures-fund-this-autumn"
+ },
+ {
+  "item_id": "C197-I08",
+  "answer": "wrong_date",
+  "why": "Rockaway Ventures co-led Apaleo's Series A extension announced 1 March 2023 and joined its EUR 20M round of 3 Dec 2024 as an existing investor; the May 2025 fund-close article only names Apaleo as a past investment.",
+  "source_url": "https://www.hospitalitynet.org/news/4115220/apaleo-expands-its-series-a-round-to-9-million-to-fuel-further-growth-into-hotel-groups-across-europe"
+ },
+ {
+  "item_id": "C197-I09",
+  "answer": "no",
+  "why": "EUR 55M counts only Rockaway Ventures II and omits the earlier Rockaway Ventures Fund, which had a closed EUR 40M (second close, Nov 2022), a gap of more than 20 % of the total.",
+  "source_url": "https://www.unquote.com/cee/news/3028705/rockaway-plans-third-closing-for-rockaway-ventures-fund-this-autumn"
+ },
+ {
+  "item_id": "C197-I10",
+  "answer": "yes",
+  "why": "Cc.cz (4 Feb 2019) reports Productboard's additional USD 10M round with all existing investors including Credo Ventures, Reflex Capital and Rockaway Capital.",
+  "source_url": "https://cc.cz/cesky-startup-productboard-vybral-dalsich-10-milionu-dolaru-mezi-investory-jsou-i-credo-a-reflex-capital/"
+ },
+ {
+  "item_id": "C197-I11",
+  "answer": "yes",
+  "why": "TechCrunch (25 March 2019) reports Gjirafa raised a USD 6.7M Series B from Rockaway Capital (the Rockaway group's earlier name for its venture arm).",
+  "source_url": "https://techcrunch.com/2019/03/25/gjirafa-raises-a-6-7m-series-b-from-rockaway-capital-to-digitise-the-balkans"
+ },
+ {
+  "item_id": "C197-I12",
+  "answer": "yes",
+  "why": "Lupa.cz (13 Feb 2026) reports Czech investors from Rockaway Ventures entered Apptronik in its Series A extension of USD 520M announced that month.",
+  "source_url": "https://www.lupa.cz/aktuality/cesti-investori-z-rockaway-investovali-do-americkych-humanoidu-a-to-po-boku-googlu-nebo-mercedes-benz/"
+ },
+ {
+  "item_id": "C198-I00",
+  "answer": "yes",
+  "why": "ARES lists Czech Founders Ventures s.r.o., osoba rizikového kapitálu (IČO 17051835, formed April 2022) and the czechfounders.vc footer reads '© Czech Founders Ventures s.r.o.'.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17051835"
+ },
+ {
+  "item_id": "C198-I01",
+  "answer": "yes",
+  "why": "Cc.cz (17 Sep 2025) reports Lemondia's EUR 300K pre-seed round from Czech Founders VC and Nextech Ventures.",
+  "source_url": "https://cc.cz/za-rok-pomohli-s-organizaci-eventu-300-firmam-vcetne-red-bullu-investori-jim-posilaji-dalsi-miliony/"
+ },
+ {
+  "item_id": "C198-I02",
+  "answer": "yes",
+  "why": "Cc.cz (14 Jan 2026) reports Maxfusion obtained a EUR 350K investment from Czech Founders VC.",
+  "source_url": "https://cc.cz/umoznuji-hromadne-tvorit-videoreklamy-i-s-ai-herci-izraelci-buduji-startup-z-prahy-ziskali-investici/"
+ },
+ {
+  "item_id": "C198-I03",
+  "answer": "yes",
+  "why": "Cc.cz (7 Sep 2022) says the 45 founder contributors together put in EUR 10 million (about CZK 250M) after doubling the EUR 5M target, with the final top-up completed a month earlier, so the amount is raised rather than a target.",
+  "source_url": "https://cc.cz/uspesni-cesti-startupiste-budou-pomahat-novym-nadejim-vybrali-na-to-mezi-sebou-ctvrt-miliardy/"
+ },
+ {
+  "item_id": "C198-I04",
+  "answer": "yes",
+  "why": "Lupa.cz (9 June 2026) reports Merchantee's CZK 30M round led by Reflex Capital with Czech Founders VC and Lighthouse Ventures participating.",
+  "source_url": "https://www.lupa.cz/aktuality/cesky-startup-dava-e-shopum-ai-ktera-za-ne-rozhoduje-na-trzistich-s-novou-investici-vyhlizi-dalsi-trhy/"
+ }
+]

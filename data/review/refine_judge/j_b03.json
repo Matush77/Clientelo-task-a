@@ -1,0 +1,134 @@
+[
+ {
+  "item_id": "C092-I00",
+  "answer": "yes",
+  "why": "ARES lists Lighthouse Ventures GP s.r.o. (ICO 07500912) at Evropska 2758/11, Praha 6, the same address lhv.vc gives for the Lighthouse Ventures fund, and a fund directory names it as manager of the Lighthouse Seed Fund.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/07500912"
+ },
+ {
+  "item_id": "C092-I01",
+  "answer": "yes",
+  "why": "The SaaS News article (updated 27 Nov 2025, funding date November 2025) says the Ranketta round was led by Lighthouse Ventures.",
+  "source_url": "https://www.thesaasnews.com/news/ranketta-raises-1m-pre-seed-round/"
+ },
+ {
+  "item_id": "C092-I02",
+  "answer": "yes",
+  "why": "CzechCrunch article dated 7 June 2019 reports Lighthouse Ventures invested in the hundreds of thousands of euros in Pekat Vision, its first investment ever.",
+  "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+ },
+ {
+  "item_id": "C092-I03",
+  "answer": "yes",
+  "why": "CzechCrunch (June 2019) states the fund manages total capital of 23 million EUR; later listings give about 24 million, and no larger Fund II size was found.",
+  "source_url": "https://cc.cz/2019/06/cesky-fond-lighthouse-ventures-vlozil-vyssi-stovky-tisic-eur-do-brnenskeho-ai-startupu-pekat-vision/"
+ },
+ {
+  "item_id": "C092-I04",
+  "answer": "yes",
+  "why": "Raising.fi (9 June 2026) and Nordic9 report the Merchantee round led by Reflex Capital with participation from Lighthouse Ventures.",
+  "source_url": "https://raising.fi/news/merchantee-undisclosed-june-2026"
+ },
+ {
+  "item_id": "C099-I00",
+  "answer": "yes",
+  "why": "The Slovak statistical register lists Neulogy Ventures, a. s. (ICO 47367610, Tallerova 4, Bratislava) with a board of [osoba], [osoba] and [osoba], who are Neulogy's managing partners/CFO per neulogy.vc.",
+  "source_url": "https://api.statistics.sk/rpo/v1/entity/1008262"
+ },
+ {
+  "item_id": "C099-I01",
+  "answer": "yes",
+  "why": "ThinkGeoEnergy (18 April 2024) lists Slovakia-based Neulogy Ventures among the investors in GA Drilling's USD 15 million first close.",
+  "source_url": "https://www.thinkgeoenergy.com/ga-drilling-secures-15-million-funding-to-accelerate-deep-geothermal/"
+ },
+ {
+  "item_id": "C099-I02",
+  "answer": "no",
+  "why": "The 23 million EUR figure is the 2014 launch size of the two original funds, but neulogy.vc now states 65 million EUR assets under management, so 23 million understates the firm's stated AUM by far more than 20 percent.",
+  "source_url": "https://neulogy.vc/about-us"
+ },
+ {
+  "item_id": "C100-I00",
+  "answer": "yes",
+  "why": "The Slovak register shows Venture to Future Fund, a.s. (ICO 52380483, Bratislava, est. 2019) with board [osoba] and [osoba]; the same name, VFF, is the SIH-backed fund that vff.sk and sih.sk describe.",
+  "source_url": "https://api.statistics.sk/rpo/v1/entity/9905872"
+ },
+ {
+  "item_id": "C100-I01",
+  "answer": "yes",
+  "why": "vff.sk states 55 mil. EUR set aside for 2020-2026, and SIH confirms initial capital 40.4 million plus a 15.3 million increase in 2024 (about 55.7 million).",
+  "source_url": "https://vff.sk"
+ },
+ {
+  "item_id": "C100-I02",
+  "answer": "yes",
+  "why": "Sensoneo's announcement of 8 June 2023 lists Venture to Future Fund as a participating investor in the 6.2 million EUR Series A.",
+  "source_url": "https://sensoneo.com/series-a-investment/"
+ },
+ {
+  "item_id": "C100-I03",
+  "answer": "yes",
+  "why": "The SaaS News page (funding date October 2025) says the 1 million EUR Talentiqa round was backed equally by Purple Ventures and Venture to Future Fund.",
+  "source_url": "https://www.thesaasnews.com/news/talentiqa-raises-1-million-in-funding/"
+ },
+ {
+  "item_id": "C100-I04",
+  "answer": "yes",
+  "why": "vff.sk news dated 24 Oct 2021 and Tech.eu (21 Oct 2021) report Sensoneo raised 2 million EUR from the EIC Fund and Venture to Future Fund.",
+  "source_url": "https://vff.sk"
+ },
+ {
+  "item_id": "C100-I05",
+  "answer": "no",
+  "why": "40.4 million EUR was only the initial 2019 capital; SIH says the capital was increased by 15.3 million EUR in 2024 (about 55.7 million), so the omitted increase is over 20 percent of the total.",
+  "source_url": "https://www.sih.sk/en/aktuality/venture-to-future-fund-navysuje-kapital-o-15-3-miliona-eur-na-podporu-slovenskych-startupov"
+ },
+ {
+  "item_id": "C100-I06",
+  "answer": "yes",
+  "why": "The VFF news item (datelined 29 March 2023, listed 10 May 2023) and SaaS News (May 2023) report Product Fruits' 1.6 million EUR round co-led by Leverage and Venture to Future Fund, within two months of May 2023.",
+  "source_url": "https://vff.sk/novinky/nase-investicne-portfolio-sa-rozsirilo-o-spolocnost-product-fruits-ktora-ziskala-investiciu-vo-vyske-1-6-miliona-eur-19"
+ },
+ {
+  "item_id": "C100-I07",
+  "answer": "yes",
+  "why": "SaaS News (funding month May 2023, updated 8 May 2023) says the Product Fruits 1.6 million EUR seed round was co-led by Leverage and Venture to Future Fund.",
+  "source_url": "https://www.thesaasnews.com/news/product-fruits-raises-1-6-million-in-seed-round/"
+ },
+ {
+  "item_id": "C125-I00",
+  "answer": "yes",
+  "why": "The register lists Slovak Investment Holding, a. s. (ICO 47759097, established 1 May 2014), matching sih.sk's statement that SIH began on 1 May 2014 as SZRB Asset Management and was renamed Slovak Investment Holding.",
+  "source_url": "https://api.statistics.sk/rpo/v1/entity/1007511"
+ },
+ {
+  "item_id": "C125-I01",
+  "answer": "yes",
+  "why": "InoBat's release of 31 January 2024 says SIH decided on a strategic capital-increase investment and joined the Series C round.",
+  "source_url": "https://www.inobat.eu/newsroom/inobat-has-secured-another-significant-investor-slovak-investment-holding/"
+ },
+ {
+  "item_id": "C125-I02",
+  "answer": "yes",
+  "why": "SIH release dated 5 September 2025 says SIH invested 2 million EUR in PERRY SOFT a.s. through the National Development Fund II.",
+  "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-technologickeho-startupu"
+ },
+ {
+  "item_id": "C125-I03",
+  "answer": "no",
+  "why": "623 million EUR is only the allocation of NDF II, one of several funds SIH manages (NDF I, NDF III, others); fi-compass says SIH manages over 1 billion EUR, so the figure omits more than 20 percent.",
+  "source_url": "https://www.fi-compass.eu/library/case-studies/slovak-investment-holding-multi-sector-financial-instruments-slovakia"
+ },
+ {
+  "item_id": "C125-I04",
+  "answer": "yes",
+  "why": "SIH release dated 15 September 2026 says SIH invested 280,000 EUR in AT Crystals from the Recovery and Resilience Plan, Component 9.",
+  "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-do-slovenskej-deep-tech-spolocnosti-at-crystals"
+ },
+ {
+  "item_id": "C125-I05",
+  "answer": "yes",
+  "why": "SIH release dated 22 September 2026 says SIH is investing 1.4 million EUR in VisionFlow through a convertible loan within a 2 million EUR round.",
+  "source_url": "https://www.sih.sk/en/aktuality/sih-investuje-1-4-miliona-eur-do-visionflow-slovensky-startup-vyvija-softverovu-datovu-infrastrukturu-pre-umelu-inteligenciu"
+ }
+]

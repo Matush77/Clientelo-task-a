@@ -4,23 +4,25 @@
 
 ## 1. Čo stál pilot (namerané)
 
-Všetci subagenti bežali na **Claude Haiku 5.5**. Náklad je prepočítaný na ceny API (pilot bežal v rámci predplatného Claude Code), podľa skutočnej spotreby tokenov zo záznamov agentov (`usage.py`).
+Objavovanie, zber dôkazov a overovateľ bežali na **Claude Haiku 5.5**; slepá kontrola vzorky, spresnenie zaradených záznamov a kontrola faktov na **Claude Sonnet 5.5** (20× drahšie tokeny). Náklad je prepočítaný na ceny API (pilot bežal v rámci predplatného Claude Code), podľa skutočnej spotreby tokenov zo záznamov agentov (`usage.py`), každý beh cenou svojho modelu.
 
 | Etapa | Náklad (USD) |
 |---|---|
-| ai_review | 7.79 |
+| spresnenie zaradených záznamov (Sonnet 5.5) | 18.08 |
+| slepá AI kontrola vzorky (Sonnet 5.5) | 7.79 |
 | zber dôkazov (vrátane opakovaní) | 6.42 |
+| kontrola faktov pred a po spresnení (Sonnet 5.5) | 6.26 |
 | prieskum a plánovanie (jednorazovo) | 0.86 |
 | nezávislý AI overovateľ | 0.81 |
 | objavovanie kandidátov | 0.63 |
 | triáž sídla | 0.40 |
 | etapa „nedávna investícia“ | 0.28 |
 | kontrola duplicít | 0.06 |
-| **spolu** | **17.24** |
+| **spolu** | **41.58** |
 
 - Na jedného kandidáta (objavovanie + triáž + dôkazy + nedávna investícia): **0.059 USD**
 - Nezávislý overovateľ na jeden záznam: **0.012 USD**
-- **Vyhľadávanie na webe tvorí 45 % nákladov na AI** – samotné tokeny Haiku sú zanedbateľné.
+- **Vyhľadávanie na webe tvorí 25 % nákladov na AI** – tokeny Haiku sú lacné; drahé sú vyhľadávania a tokeny Sonnetu.
 - Na 1 zaradeného investora pripadlo **5.5 kandidátov**; 3.0 % kandidátov skončilo v ručnej kontrole.
 - Ručná kontrola: **4 min – predpoklad**, nahradí sa meraním z ručnej kontroly na záznam.
 
@@ -52,25 +54,26 @@ Všetci subagenti bežali na **Claude Haiku 5.5**. Náklad je prepočítaný na 
 
 ## 3. Varianty kvality (základný scenár)
 
-Pilot ukázal dve slabiny: (1) Haiku pri výklade článkov často nerozlíšil dátum obchodu od dátumu článku a cieľový fond od uzavretého, (2) na presnosť polí treba ľudskú kontrolu. Dve varianty, ako za to zaplatiť:
+Pilot ukázal dve slabiny: (1) Haiku pri výklade článkov často nerozlíšil dátum obchodu od dátumu článku a cieľový fond od uzavretého, (2) na presnosť polí treba ľudskú kontrolu. Varianty, ako za to zaplatiť:
 
 | Variant | AI | Ľudská kontrola | Spolu 1. rok | Rozdiel oproti základu |
 |---|---|---|---|---|
 | základ (Haiku na zber, človek na vzorku) | 20 057 € | 56 700 € | 97 007 € | – |
 | **Sonnet 5.5 na zber dôkazov** (výklad dátumov, súm, účasti) | 110 216 € | 56 700 € | 187 166 € | +90 159 € |
+| **Haiku na zber, Sonnet 5.5 len na spresnenie zaradených záznamov** (D38, odporúčané) | 65 513 € | 56 700 € | 142 463 € | +45 457 € |
 | Sonnet na zber **aj** AI kontrolu všetkých záznamov, človek len na sporné a náhodné | 119 429 € | 22 680 € | 162 359 € | +65 353 € |
 
-Namerané v pilote: tokeny zberu dôkazov stoja 0.0142 USD na kandidáta pri Haiku (Sonnet = 20×); AI kontrola Sonnetom stála 0.229 USD na záznam. Podiel ľudskej kontroly 40 % v poslednom riadku je predpoklad – v pilote sa Sonnet a Haiku líšili v 15 % záznamov, k tomu náhodná kontrola.
+Namerané v pilote: tokeny zberu dôkazov stoja 0.0142 USD na kandidáta pri Haiku (Sonnet = 20×); AI kontrola Sonnetom stála 0.229 USD na záznam. Podiel ľudskej kontroly 40 % v poslednom riadku je predpoklad – v pilote sa Sonnet a Haiku líšili v 15 % záznamov, k tomu náhodná kontrola. Spresnenie jedného zaradeného záznamu Sonnetom stálo 0.753 USD (namerané na 24 záznamoch, vrátane jedného behu prerušeného limitom) – Sonnet tak beží len na ~1/6 kandidátov, a to len na polia, kde Haiku zlyhával. Zlepšenie, ktoré tým vzniklo, je zmerané v [REFINEMENT.md](REFINEMENT.md).
 
 ## 4. Čo z toho vyplýva
 
 - **Hlavný náklad nie je AI, ale ľudská kontrola kvality.** V základnom scenári AI stojí 20 057 €, ľudská kontrola 56 700 €.
 - **Najväčšia páka je zhoda AI overovateľa s človekom** (meraná v [PRECISION_REPORT.md](PRECISION_REPORT.md)). Ak je vysoká, človek kontroluje len segmentovú vzorku a záznamy, kde sa AI overovateľ a pravidlá nezhodnú; ak nízka, počet ručne kontrolovaných záznamov rastie.
 - **Druhá páka je vyhľadávanie:** tvorí väčšinu nákladov na AI. Štruktúrované zdroje (registre SEC Form ADV, ESMA, národné registre, zoznamy asociácií) znižujú počet kandidátov na 1 zaradený záznam aj počet vyhľadávaní.
-- **Tretia páka je kvalita zoznamu kandidátov:** v pilote bolo 5,3 kandidáta na 1 zaradeného investora; v krajinách bez dobrých zoznamov (a pri family office / angel investoroch) to bude viac.
-- Model Haiku 5.5 stačí: všetky kroky, kde záleží na presnosti, robí deterministický kód (kontrola citácií, pravidlá, registre). Drahší model by zvýšil cenu AI ~20× bez zmeny tejto architektúry.
+- **Tretia páka je kvalita zoznamu kandidátov:** v pilote bolo 5.5 kandidáta na 1 zaradeného investora; v krajinách bez dobrých zoznamov (a pri family office / angel investoroch) to bude viac.
+- **Model podľa úlohy:** Haiku 5.5 stačí na objavovanie a zber, lebo rozhodnutia, kde záleží na presnosti, robí deterministický kód (kontrola citácií, pravidlá, registre) – rozhodnutie *kto je investor* bolo správne 23/23. Na výklad článkov (dátum obchodu, stav fondu) Haiku nestačil; Sonnet je 20× drahší, preto sa oplatí púšťať ho cielene len na zaradené záznamy a len na tieto polia (D38).
 
-## 4. Obmedzenia odhadu
+## 5. Obmedzenia odhadu
 
 - Pilot meral VC investorov v CZ/SK. Pre PE, family office a angel investorov bude pomer kandidátov k zaradeným a čas kontroly iný (family office sú menej verejné).
 - Prístup k registrom: ARES (CZ) a RPO (SK) sú zadarmo; v niektorých krajinách sú registre platené alebo bez API – v odhade nie sú zahrnuté poplatky za výpisy.

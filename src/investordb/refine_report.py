@@ -132,6 +132,17 @@ def build(result: dict, as_of: date) -> str:
             add(f"| {k} | {j['key'][k]['type']} | {a['answer']} | {str(a.get('why', '')).replace('|', '/')[:300]} |")
         add("")
 
+    add("### Výklad (napísaný ručne k behu z 9. 10. 2026)\n")
+    add("- **Dátumy obchodov:** všetkých 14 chýb zmrazenej verzie je rovnakého typu – dátum prehľadového článku, ktorý "
+        "staršiu investíciu len spomína (portfólio v článku o novom fonde). Spresnenie ich opravilo. Zostali 2 chyby: "
+        "blogový príspevok investora z apríla 2026 opakuje oznámenie kola z marca 2025 (ArtMaster).\n"
+        "- **Kapitál:** zmrazená verzia chybovala hlavne tým, že započítala **cieľ** fondu (Presto, Purple, Tensor, "
+        "ZAKA) alebo vynechala starší fond (Rockaway, Tilia, Reflex). Spresnená verzia ciele nepočíta; zvyšné chyby "
+        "sú **podhodnotenia** – chýba fond, navýšenie kapitálu alebo AUM, ktoré investor uvádza na webe (Neulogy "
+        "65 mil. €). Ďalší krok: v pokyne žiadať aj AUM uvádzané investorom a navýšenia kapitálu. Znovu to spustiť a "
+        "merať tou istou kontrolou by však bolo ladenie na testovacích dátach, preto to ostáva ako odporúčanie.\n"
+        "- **Identita v registri:** 24/24 vrátane 8 záznamov, ktorých identita sa zmenila vo v3 a ktorých opakovaná "
+        "kontrola predtým zlyhala na limite relácie (D36).\n")
     add("## 6. Obmedzenia\n")
     add("- Spresňoval aj kontroloval model tej istej rodiny (Sonnet 5.5). Kontrolór bol iný agent bez prístupu k "
         "výstupu spresnenia a nevedel, ktorá hodnota je nová, chyby oboch však môžu byť korelované. Rozhodujúce je "

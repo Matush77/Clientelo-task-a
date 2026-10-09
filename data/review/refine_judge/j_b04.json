@@ -1,0 +1,182 @@
+[
+ {
+  "item_id": "C132-I00",
+  "answer": "yes",
+  "why": "Slovak register shows Zero Gravity Capital s.r.o. (IČO 52651894), owned by 0100 Ventures s.r.o. with [osoba], a Zero One Hundred partner, as managing director - the investor's management company.",
+  "source_url": "https://api.statistics.sk/rpo/v1/entity/10049101"
+ },
+ {
+  "item_id": "C132-I01",
+  "answer": "yes",
+  "why": "CzechCrunch article of 6 Dec 2023 says the EUR 1.25m Wewell seed round was led by Crowdberry, Zero Gravity Capital and [osoba].",
+  "source_url": "https://cc.cz/algoritmy-ceskeho-startupu-dokazou-prokouknout-kosmetiku-maji-ctvrt-milionu-uzivatelu-a-novou-investici/"
+ },
+ {
+  "item_id": "C132-I02",
+  "answer": "yes",
+  "why": "StartitUp.sk article of 6 Dec 2023 reports the EUR 1.25m Wewell investment from Crowdberry, Zero Gravity Capital and angel [osoba].",
+  "source_url": "https://www.startitup.sk/?p=840617"
+ },
+ {
+  "item_id": "C132-I03",
+  "answer": "cannot_tell",
+  "why": "Unquote and others confirm a closed EUR 23m Zero Gravity Capital fund (Fund I), but the firm's Fund II (EUR 25m, launched Sept 2025) is not shown as raised or not raised, so the total cannot be verified.",
+  "source_url": "https://www.unquote.com/cee/news/3028445/zero-one-hundred-targets-eur-15m-for-new-funds-first-close"
+ },
+ {
+  "item_id": "C135-I00",
+  "answer": "yes",
+  "why": "seedstarter.cz names ČS Seed Starter, a.s., IČ 61058769, as the company behind Seed Starter (Corporate VC of Česká spořitelna); ARES record matches.",
+  "source_url": "https://www.seedstarter.cz"
+ },
+ {
+  "item_id": "C135-I01",
+  "answer": "yes",
+  "why": "Article of 15 Apr 2026 says Pointee's USD 1.4m seed was led by Tensor Ventures and joined by Seed Starter of Česká/Slovenská spořitelna.",
+  "source_url": "https://cc.cz/nasadit-ai-je-hracka-ale-uridit-ji-peklo-hlasi-cesky-startup-ktery-na-to-ziskal-desitky-milionu/"
+ },
+ {
+  "item_id": "C135-I02",
+  "answer": "yes",
+  "why": "Article of 15 Mar 2022 says Seed Starter announced it will back Rekenber with CZK 12m.",
+  "source_url": "https://cc.cz/v-cesku-je-800-tisic-lidi-v-insolvenci-startup-pomahajici-resit-problemy-dluzniku-dostal-investici-od-ceske-sporitelny/"
+ },
+ {
+  "item_id": "C135-I03",
+  "answer": "yes",
+  "why": "Article of 8 Feb 2022 says Seed Starter (Česká spořitelna) invested low tens of millions CZK for a 17% stake in Wflow.",
+  "source_url": "https://cc.cz/ceskou-sporitelnu-zaujala-automatizace-ucetnictvi-do-startupu-wflow-posila-desitky-milionu-korun/"
+ },
+ {
+  "item_id": "C135-I04",
+  "answer": "wrong_date",
+  "why": "Seed Starter invested in PalmApp (CZK 27m round, two-thirds from Seed Starter) as reported 18 Jan 2022; the Nov 2023 article only lists it as an existing portfolio company.",
+  "source_url": "https://cc.cz/vyplata-mzdy-kdykoliv-v-mesici-tuzemsky-startup-palmapp-ziskava-desitky-milionu-i-od-ceske-sporitelny/"
+ },
+ {
+  "item_id": "C135-I05",
+  "answer": "wrong_date",
+  "why": "Rekenber investment was announced 15 Mar 2022; the 27 Nov 2023 article only mentions it among existing portfolio companies.",
+  "source_url": "https://cc.cz/v-cesku-je-800-tisic-lidi-v-insolvenci-startup-pomahajici-resit-problemy-dluzniku-dostal-investici-od-ceske-sporitelny/"
+ },
+ {
+  "item_id": "C135-I06",
+  "answer": "yes",
+  "why": "Article of 12 Jun 2026 says Definic's EUR 2.5m seed was led by J&T Ventures with Seed Starter (Česká spořitelna) joining.",
+  "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"
+ },
+ {
+  "item_id": "C135-I07",
+  "answer": "wrong_date",
+  "why": "Wflow investment was announced 8 Feb 2022; the 27 Nov 2023 article only lists Wflow as an existing portfolio company.",
+  "source_url": "https://cc.cz/ceskou-sporitelnu-zaujala-automatizace-ucetnictvi-do-startupu-wflow-posila-desitky-milionu-korun/"
+ },
+ {
+  "item_id": "C135-I08",
+  "answer": "wrong_date",
+  "why": "Seed Starter's Investown investment dates from Aug/Sep 2020 (first Seed Starter investment); the 27 Nov 2023 article only lists it as an existing portfolio company.",
+  "source_url": "https://cc.cz/novy-startup-investown-nabidne-investicni-nemovitosti-uz-od-par-stovek-miliony-korun-do-nej-posila-ceska-sporitelna/"
+ },
+ {
+  "item_id": "C135-I09",
+  "answer": "yes",
+  "why": "Article of 17 Dec 2025 says Repsense's EUR 1.1m round was led by Tensor Ventures with Seed Starter of Česká spořitelna joining.",
+  "source_url": "https://cc.cz/jejich-nastroj-havel-pomaha-i-v-nato-do-litevcu-ted-investuji-tensor-ventures-a-ceska-sporitelna/"
+ },
+ {
+  "item_id": "C135-I10",
+  "answer": "wrong_date",
+  "why": "Signi investment was announced 26 Mar 2021 (Seed Starter's second investment); the 27 Nov 2023 article only lists it as an existing portfolio company.",
+  "source_url": "https://cc.cz/ceska-sporitelna-investuje-do-elektronickych-podpisu-ceske-signi-podpori-desitkami-milionu-korun/"
+ },
+ {
+  "item_id": "C135-I11",
+  "answer": "yes",
+  "why": "Article of 26 Mar 2021 reports Česká spořitelna's Seed Starter investment in Signi (up to EUR 1m, tens of millions CZK).",
+  "source_url": "https://cc.cz/ceska-sporitelna-investuje-do-elektronickych-podpisu-ceske-signi-podpori-desitkami-milionu-korun/"
+ },
+ {
+  "item_id": "C139-I00",
+  "answer": "yes",
+  "why": "ARES lists J&T Ventures III SICAV a.s. (IČO 22175903, formed Oct 2024, qualified-investor fund at the J&T Karlín address); it is the third fund vehicle of J&T Ventures, consistent with the earlier J&T Ventures CG SICAV (Fund II) vehicle.",
+  "source_url": "https://www.podnikatel.cz/rejstrik/j-t-ventures-iii-sicav-a-s-22175903/"
+ },
+ {
+  "item_id": "C139-I01",
+  "answer": "yes",
+  "why": "jtventures.cz itself states assets of EUR 120M (\"Výše aktiv\"), i.e. the firm's stated AUM; some third-party profiles give EUR 40M but the firm's own figure is what is listed.",
+  "source_url": "https://www.jtventures.cz"
+ },
+ {
+  "item_id": "C139-I02",
+  "answer": "yes",
+  "why": "Article of 24 Feb 2026 says ValkaAI's EUR 12m pre-seed came from J&T Ventures, Tensor Ventures, BD Partners, Fond Naše Česko and Rockaway Ventures (lead).",
+  "source_url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/"
+ },
+ {
+  "item_id": "C139-I03",
+  "answer": "yes",
+  "why": "Article of 24 Mar 2015 reports the J&T Banka-owned venture fund J&T VENTURES investing in FetView and ICE GATEWAY.",
+  "source_url": "https://cc.cz/jt-investoval-desitky-milionu-do-techto-2-startupu/"
+ },
+ {
+  "item_id": "C139-I04",
+  "answer": "yes",
+  "why": "Article of 5 Mar 2025 says Lead Ventures led the EUR 6m Xund round and J&T Ventures joined.",
+  "source_url": "https://cc.cz/live/jt-ventures-a-lead-ventures-investuji-do-videnskeho-scaleupu-xund-celkem-6-milionu-eur/"
+ },
+ {
+  "item_id": "C139-I05",
+  "answer": "yes",
+  "why": "Article of 12 Jun 2026 says J&T Ventures led Definic's EUR 2.5m seed round.",
+  "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/"
+ },
+ {
+  "item_id": "C144-I00",
+  "answer": "yes",
+  "why": "ARES shows Reflex Capital SE (IČO 24269158, Praha 2) and reflexcapital.com names Reflex Capital SE in its European address block and copyright line.",
+  "source_url": "https://www.reflexcapital.com"
+ },
+ {
+  "item_id": "C144-I01",
+  "answer": "yes",
+  "why": "Article of 5 Sep 2017 says TopMonks received CZK 35m from the Reflex Capital fund run by [osoba].",
+  "source_url": "https://cc.cz/ceske-startupove-studio-topmonks-ziskava-investici-35-milionu-kc-od-ondreje-fryce/"
+ },
+ {
+  "item_id": "C144-I02",
+  "answer": "yes",
+  "why": "Report of 21 May 2020 says Reflex Capital and J&T Ventures made a EUR 2m seed investment in Leadspicker.",
+  "source_url": "https://globalprivatecapital.org/?p=22043"
+ },
+ {
+  "item_id": "C144-I03",
+  "answer": "yes",
+  "why": "Article of 14 Dec 2023 says Digitoo raised EUR 2.3m seed led by Reflex Capital.",
+  "source_url": "https://en.ain.ua/2023/12/14/digitoo-raises-2-3m-seed-reflex-capital"
+ },
+ {
+  "item_id": "C144-I04",
+  "answer": "yes",
+  "why": "Article of 19 May 2026 reports FaceUp's Series A (about USD 5m) in which existing investor Reflex Capital participated.",
+  "source_url": "https://cc.cz/byl-to-studentsky-projekt-ted-uz-ma-hodnotu-pres-pul-miliardy-nabidky-na-odkup-odmitame-hlasi-cesi/"
+ },
+ {
+  "item_id": "C144-I05",
+  "answer": "no",
+  "why": "The closed EUR 22m third fund is confirmed, but Reflex 2 (about EUR 20m, also raised) is omitted, which would change the total by roughly half.",
+  "source_url": "https://www.newstream.cz/money/ondrej-fryc-reflex-capital-otevre-dalsi-fond"
+ },
+ {
+  "item_id": "C144-I06",
+  "answer": "yes",
+  "why": "Article of 9 Jun 2026 says Reflex Capital led the CZK 30m extension of Merchantee's seed round.",
+  "source_url": "https://cc.cz/resi-jeden-z-nejvetsich-problemu-evropskych-e-shopu-kvituje-investor-cesi-ziskali-dalsi-desitky-milionu/"
+ },
+ {
+  "item_id": "C144-I07",
+  "answer": "yes",
+  "why": "Reflex 3 closed at EUR 22m (Dec 2023 article) and Reflex 2 had EUR 20m per [osoba] (Mar 2023), both raised external funds; Reflex 1 is own money of unknown size so no shown omission.",
+  "source_url": "https://cc.cz/nova-sila-pro-reflex-capital-ondreje-fryce-ve-tretim-fondu-ma-na-startupy-pres-pul-miliardy/"
+ }
+]

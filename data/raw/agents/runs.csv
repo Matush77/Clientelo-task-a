@@ -1,5 +1,6 @@
 session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m_tokens,cache_write_1h_tokens,cache_read_tokens,output_tokens_logged,output_tokens_est,web_searches,web_fetches,tool_calls,duration_s
 02f1cc98,agent-a001130ee5f166bec,Sonnet reviewer batch 2,general-purpose,claude-sonnet-5-5,20,40,104128,0,1470419,5444,5611,9,25,39,378
+02f1cc98,agent-a074e5279f3833976,Fact-check batch j_b03 (Sonnet),general-purpose,claude-sonnet-5-5,20,40,64367,0,1489112,3843,4625,12,28,45,359
 02f1cc98,agent-a0f3f1db0a64dbb7a,Verifier batch 6,general-purpose,claude-haiku-5-5,7,14,47833,0,401667,8160,8160,0,15,20,119
 02f1cc98,agent-a15b0ffd04c171d14,Evidence v3 wave2 batch 09,general-purpose,claude-haiku-5-5,12,24,128481,0,996468,21811,21811,21,17,43,438
 02f1cc98,agent-a16856a60fe2725d1,Public investor data sources,Explore,claude-haiku-5-5,7,14,83232,0,339568,12995,12995,15,8,24,238
@@ -14,7 +15,9 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-a288535925ccf21a7,Verifier v2 batch 1,general-purpose,claude-haiku-5-5,14,28,109608,0,942401,13268,13268,2,24,31,276
 02f1cc98,agent-a2927432fb4c8e3a5,Evidence v3 wave2 batch 11,general-purpose,claude-haiku-5-5,9,18,85668,0,622268,13242,13242,12,12,29,275
 02f1cc98,agent-a2a3b3136f606d44f,Evidence v3 rescue batch 1,general-purpose,claude-haiku-5-5,11,22,199984,0,912076,33053,33053,19,29,53,559
+02f1cc98,agent-a2eedd38946ef0837,Refine batch rf_b03 (Sonnet),general-purpose,claude-sonnet-5-5,43,86,170097,0,4618293,13001,13001,25,57,87,1097
 02f1cc98,agent-a2fe078cf8bd0158c,Sonnet reviewer batch 4,general-purpose,claude-sonnet-5-5,16,32,106596,0,1165026,5892,5892,11,28,44,373
+02f1cc98,agent-a30ee00355a5924d0,Refine batch rf_b01 retry (Sonnet),general-purpose,claude-sonnet-5-5,36,72,169136,0,3718128,13218,13218,26,56,87,906
 02f1cc98,agent-a397163d21bc9a610,Sonnet reviewer batch 7,general-purpose,claude-sonnet-5-5,18,36,63705,0,1296403,5880,5880,8,24,37,340
 02f1cc98,agent-a3ca7d6c92e3dbbf3,Red-team the draft plan,Plan,claude-haiku-5-5,2,4,24178,0,65831,20849,20849,0,0,1,100
 02f1cc98,agent-a3dfc3402b5596a0e,Confirm live API and web search prices,general-purpose,claude-haiku-5-5,4,8,41999,0,208996,8008,8008,0,1,4,39
@@ -22,8 +25,10 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-a441bbbd6c88d3e87,Control lookalikes discovery,general-purpose,claude-haiku-5-5,9,18,115281,0,643387,5243,5243,8,18,31,352
 02f1cc98,agent-a4737c76e703f0e07,Evidence v2 wave1 batch 02,general-purpose,claude-haiku-5-5,14,28,135635,0,1317928,26836,26836,17,19,41,600
 02f1cc98,agent-a481cd108a24af19e,Evidence v3 wave2 batch 14,general-purpose,claude-haiku-5-5,12,24,136944,0,1046190,25040,25040,16,22,43,501
+02f1cc98,agent-a494f210fcd4f1899,Refine batch rf_b05 (Sonnet),general-purpose,claude-sonnet-5-5,46,92,205935,0,5921754,17275,17275,36,59,102,1207
 02f1cc98,agent-a49560825e5109580,Verifier batch 3,general-purpose,claude-haiku-5-5,9,18,64272,0,556646,15231,15231,3,17,25,207
 02f1cc98,agent-a4ad8a86879b6c538,Verifier batch 7,general-purpose,claude-haiku-5-5,11,22,62243,0,710507,7402,7402,1,16,22,221
+02f1cc98,agent-a5039eeb61c75c0a7,Fact-check batch j_b04 (Sonnet),general-purpose,claude-sonnet-5-5,22,44,75316,0,1666084,6392,6392,10,37,52,409
 02f1cc98,agent-a51ba64ff8b0339fa,Evidence v1 on 3 CP2 candidates,general-purpose,claude-haiku-5-5,25,50,127596,0,2435504,6479,7848,18,25,47,669
 02f1cc98,agent-a5b1280f94bf7bed1,HQ triage batch 2 (19 names),general-purpose,claude-haiku-5-5,7,14,71632,0,437842,15651,15651,13,24,40,214
 02f1cc98,agent-a5c2128c7bfb05a33,Verifier v2 batch 4,general-purpose,claude-haiku-5-5,9,18,109935,0,590737,8469,8469,5,19,29,232
@@ -36,14 +41,18 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-a6b5f807f8cef568e,Evidence v2 wave1 batch 06,general-purpose,claude-haiku-5-5,36,72,132895,0,3654986,19888,19888,24,33,62,800
 02f1cc98,agent-a6d0ed783ba851f2c,Recent-deal pass batch 1,general-purpose,claude-haiku-5-5,9,18,98929,0,546008,6169,6169,11,7,23,209
 02f1cc98,agent-a6eb835a2ab3252cf,Evidence v3 wave2 batch 13,general-purpose,claude-haiku-5-5,11,22,93576,0,807114,15846,15846,16,14,35,285
+02f1cc98,agent-a7142d0dd3b0c7f2d,Fact-check batch j_b05 (Sonnet),general-purpose,claude-sonnet-5-5,28,56,87084,0,2270437,6630,6630,17,40,62,603
 02f1cc98,agent-a783f532eabce3ab0,Evidence v3 wave2 batch 03,general-purpose,claude-haiku-5-5,9,18,98877,0,654752,19320,19320,11,14,30,342
 02f1cc98,agent-a7cf0186efe05299f,Verify two suspected duplicate pairs,general-purpose,claude-haiku-5-5,8,16,75352,0,431470,3450,3450,4,6,13,157
+02f1cc98,agent-a7e3e1c78c9f93a7f,Refine batch rf_b02 (Sonnet),general-purpose,claude-sonnet-5-5,41,82,228888,0,5363956,23047,23047,31,62,100,1285
+02f1cc98,agent-a7f0ff95488163a98,Fact-check batch j_b01 (Sonnet),general-purpose,claude-sonnet-5-5,19,38,62071,0,1399201,3822,4613,10,30,45,356
 02f1cc98,agent-a828ecbd5de62a85e,Verifier v2 batch 7,general-purpose,claude-haiku-5-5,13,26,74773,0,928396,13988,13988,1,18,25,283
 02f1cc98,agent-a86f7d94df2b46603,Evidence v2 wave1 batch 05,general-purpose,claude-haiku-5-5,13,26,114141,0,1087727,25523,25523,21,15,41,460
 02f1cc98,agent-a896e26da9e14fc3a,Evidence v3 wave2 batch 08,general-purpose,claude-haiku-5-5,19,38,119627,0,1823403,12687,12687,20,21,46,571
 02f1cc98,agent-a897d1867af733795,Evidence v3 wave2 batch 04,general-purpose,claude-haiku-5-5,20,40,119967,0,1678103,20857,20857,16,31,52,580
 02f1cc98,agent-a8a4d15bef31498e4,Verifier v2 batch 3,general-purpose,claude-haiku-5-5,13,26,104952,0,850040,10749,10749,4,15,24,305
 02f1cc98,agent-a8cac1df7bded7c79,Evidence v3 wave2 batch 12,general-purpose,claude-haiku-5-5,11,22,119470,0,840732,25011,25011,18,18,41,428
+02f1cc98,agent-a8ffda5c8aa15d136,Fact-check batch j_b06 (Sonnet),general-purpose,claude-sonnet-5-5,16,32,67452,0,1145417,5871,5871,11,26,42,390
 02f1cc98,agent-a9173529cff9591cf,Evidence v2 wave1 batch 10,general-purpose,claude-haiku-5-5,15,30,136632,0,1430871,24804,24804,22,25,53,523
 02f1cc98,agent-a9256d450905a1e50,Evidence v3 wave2 batch 01,general-purpose,claude-haiku-5-5,12,24,141148,0,1073219,24674,24674,14,27,46,511
 02f1cc98,agent-a9c5ca4163a707d88,List B deal news Czechia,general-purpose,claude-haiku-5-5,12,24,151460,0,959928,25073,25073,13,24,41,441
@@ -53,9 +62,12 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-ab8312fe00b704b64,HQ triage batch 1 (20 names),general-purpose,claude-haiku-5-5,5,10,74215,0,304413,19548,19548,20,20,44,175
 02f1cc98,agent-abd3070f7b71c3171,Verifier v2 batch 5,general-purpose,claude-haiku-5-5,13,26,69660,0,895708,14304,14304,1,21,27,246
 02f1cc98,agent-ac0e4ff49ded39838,Sonnet re-review v3 batch 2,general-purpose,claude-sonnet-5-5,9,16,75978,0,443339,293,1531,3,19,25,140
+02f1cc98,agent-ac7bf056d027c4f0e,Refine batch rf_b06 (Sonnet),general-purpose,claude-sonnet-5-5,40,80,181535,0,4215453,14309,14309,30,46,81,1013
+02f1cc98,agent-ac92f0645272ee341,Refine batch rf_b01 (Sonnet),general-purpose,claude-sonnet-5-5,54,106,174206,0,5746208,711,6272,26,64,93,1300
 02f1cc98,agent-acda2923da1506412,Verifier v2 batch 2,general-purpose,claude-haiku-5-5,11,22,97381,0,682385,13362,13362,2,14,22,225
 02f1cc98,agent-ad5c340032e784cb7,Slovak VC landscape research,Explore,claude-haiku-5-5,8,16,96057,0,427398,10270,10270,19,8,28,262
 02f1cc98,agent-adbb8c0f4a930962a,Sonnet reviewer batch 5,general-purpose,claude-sonnet-5-5,15,30,71334,0,1084965,8636,8636,11,23,39,332
+02f1cc98,agent-adfc3041b954bdfd0,Refine batch rf_b04 (Sonnet),general-purpose,claude-sonnet-5-5,45,88,185430,0,5043254,14935,14935,28,58,90,1292
 02f1cc98,agent-ae52194acac28e65e,Verifier batch 1,general-purpose,claude-haiku-5-5,11,22,68802,0,731597,12798,12798,2,26,33,240
 02f1cc98,agent-ae57ad8bee33b49f6,Recent-deal pass batch 2,general-purpose,claude-haiku-5-5,9,18,91296,0,530510,3671,3671,12,8,25,227
 02f1cc98,agent-ae936f58402359b00,Evidence v2 wave1 batch 01,general-purpose,claude-haiku-5-5,12,24,110193,0,969497,24299,24299,20,12,37,427
@@ -66,5 +78,6 @@ session,agent,description,agent_type,model,api_calls,input_tokens,cache_write_5m
 02f1cc98,agent-af2374607c015fced,Evidence v2 wave1 batch 09,general-purpose,claude-haiku-5-5,20,40,103410,0,1536687,21314,21314,10,26,41,544
 02f1cc98,agent-af49d55c419fcf495,Sonnet reviewer batch 3,general-purpose,claude-sonnet-5-5,17,34,108023,0,1218750,7357,7357,10,22,37,377
 02f1cc98,agent-af6f7c7b5ddd040e0,Evidence v3 wave2 batch 10,general-purpose,claude-haiku-5-5,14,28,153580,0,1337320,27309,27309,18,37,60,578
+02f1cc98,agent-af9520de04ba9a1a3,Fact-check batch j_b02 (Sonnet),general-purpose,claude-sonnet-5-5,18,36,68638,0,1311368,6264,6264,7,33,45,407
 02f1cc98,agent-afd898471cdad5a86,Evidence v3 wave2 batch 07,general-purpose,claude-haiku-5-5,14,28,121113,0,1154844,18957,18957,18,21,44,469
 02f1cc98,agent-affd2819cb132970a,Evidence v3 wave2 batch 06,general-purpose,claude-haiku-5-5,20,40,125839,0,1829134,17958,17958,26,20,51,627

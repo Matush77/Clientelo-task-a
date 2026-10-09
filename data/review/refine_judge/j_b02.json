@@ -1,0 +1,182 @@
+[
+ {
+  "item_id": "C023-I00",
+  "answer": "yes",
+  "why": "ARES lists Jet Investment, a.s. (IČO 03890333, Brno) and the investor's website footer names the same legal entity.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03890333"
+ },
+ {
+  "item_id": "C023-I01",
+  "answer": "yes",
+  "why": "Jet Investment (via Jet Venture 1) announced a EUR 1.5m investment in DecisionRules on 24 June 2026; CzechCrunch reported it on 23 June 2026.",
+  "source_url": "https://www.jetinvestment.cz/en/news"
+ },
+ {
+  "item_id": "C023-I02",
+  "answer": "yes",
+  "why": "The firm's homepage states 'AUM: € 700m+', which is a stated AUM.",
+  "source_url": "https://www.jetinvestment.cz/en"
+ },
+ {
+  "item_id": "C023-I03",
+  "answer": "yes",
+  "why": "Jet Investment's news page dated 17.9.2026 reports a $1.8m investment in AppNava through Jet Venture 1 SICAV.",
+  "source_url": "https://www.jetinvestment.cz/en/news"
+ },
+ {
+  "item_id": "C023-I04",
+  "answer": "yes",
+  "why": "Jet Investment's news page dated 01.09.2026 announces a EUR 2.1m investment in Berlin AI startup Phantasma Labs.",
+  "source_url": "https://www.jetinvestment.cz/en/news"
+ },
+ {
+  "item_id": "C023-I05",
+  "answer": "yes",
+  "why": "AIN article of 1 Oct 2024 says Partory raised EUR 1.25m with Jet Investment as lead investor (Jet Ventures new fund).",
+  "source_url": "https://en.ain.ua/2024/10/01/czech-startup-partory-raises-a-eur1m-investment-round-from-jet-investments-new-fund-to-improve-its-application-and-reach-global-markets"
+ },
+ {
+  "item_id": "C023-I06",
+  "answer": "yes",
+  "why": "CzechCrunch (23 June 2026) says DecisionRules gets EUR 1.5m from Jet Investment's venture fund Jet Venture 1.",
+  "source_url": "https://cc.cz/cesi-vyviji-centralni-mozek-pro-lepsi-firemni-rozhodovani-od-investoru-na-nej-maji-pres-70-milionu/"
+ },
+ {
+  "item_id": "C023-I07",
+  "answer": "yes",
+  "why": "Jet Investment's news page dated 26.08.2026 reports a EUR 2.1m investment in Swedish deep-tech company GigaScan.",
+  "source_url": "https://www.jetinvestment.cz/en/news"
+ },
+ {
+  "item_id": "C023-I08",
+  "answer": "yes",
+  "why": "CzechCrunch article of 28 Sep 2024 announces the new Jet fund's first investment, in Partory (within 2 months of 2024-09; AIN reported it 1 Oct 2024).",
+  "source_url": "https://cc.cz/brnensti-prumyslnici-kolem-igora-faita-na-lovu-startupu-desitky-milionu-posilaji-do-digitalni-tovarny/"
+ },
+ {
+  "item_id": "C032-I00",
+  "answer": "yes",
+  "why": "ARES lists Tensor Ventures a.s. (IČO 06257241, Pernerova, Praha 8 Karlín) with real-estate/management activity codes, matching the Prague (Karlín) office on tensor.ventures.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/06257241"
+ },
+ {
+  "item_id": "C032-I01",
+  "answer": "yes",
+  "why": "CzechCrunch says the founders opened their first fund in 2017 and raised EUR 20m into it (other outlets say EUR 18.5m / EUR 20m invested), and no close of the second fund is reported.",
+  "source_url": "https://cc.cz/evropsky-investicni-fond-uz-vlozil-penize-do-17-ceskych-fondu-miliardovy-ted-otevira-s-tensor-ventures/"
+ },
+ {
+  "item_id": "C032-I02",
+  "answer": "yes",
+  "why": "TheSaaSNews says AppFactor's USD 4m seed round (February 2026) was led by Tensor Ventures.",
+  "source_url": "https://www.thesaasnews.com/news/appfactor-raises-4-million-seed-funding/"
+ },
+ {
+  "item_id": "C032-I03",
+  "answer": "no",
+  "why": "Sources (AIN, Quantum Insider, CzechCrunch) describe EUR 50m only as the second fund's target size, with EIF pledging up to EUR 20m, and I found no report of a first close.",
+  "source_url": "https://en.ain.ua/2024/10/11/tensor-ventures-launches-second-fund-targeting-eur50m-in-size-to-invest-in-deep-tech-startups-across-the-czech-republic-and-beyond"
+ },
+ {
+  "item_id": "C032-I04",
+  "answer": "yes",
+  "why": "The AI Insider (4 Feb 2026) says Tensor Ventures led the USD 4m seed round in London-based AppFactor with Begin Capital and Adara Ventures.",
+  "source_url": "https://theaiinsider.tech/2026/02/04/tensor-ventures-and-others-invest-4-million-us-in-london-based-appfactor/"
+ },
+ {
+  "item_id": "C034-I00",
+  "answer": "yes",
+  "why": "ARES lists Tilia Impact Ventures, osoba rizikového kapitálu, s.r.o. (IČO 17848911, Praha 5, founded 2022-12-19), a venture-capital-person entity bearing the Tilia Impact Ventures brand.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/17848911"
+ },
+ {
+  "item_id": "C034-I01",
+  "answer": "yes",
+  "why": "CzechCrunch (13 June 2023) reports that Tilia Impact Ventures put an undisclosed tens of millions CZK into Munch's round.",
+  "source_url": "https://cc.cz/nesnezeno-pred-vyhozenim-zachranilo-300-tisic-jidel-spojilo-se-s-madary-spolecne-sli-na-slovensko/"
+ },
+ {
+  "item_id": "C034-I02",
+  "answer": "yes",
+  "why": "Tech.eu (4 July 2022) says The Village's EUR 3.4m round was backed by Movens Capital, 500 Startups, Tilia Impact Ventures and Credo Ventures.",
+  "source_url": "https://tech.eu/2022/07/04/ramping-up-early-education-with-parent-led-micro-schools-the-village-rakes-in-eur34-million/"
+ },
+ {
+  "item_id": "C034-I03",
+  "answer": "wrong_date",
+  "why": "Tilia is a Cyrkl investor (pre-seed in 2020, a further round around Dec 2021) but the Oct 2023 article only lists Cyrkl among earlier first-fund holdings, with no new round.",
+  "source_url": "https://cc.cz/cesky-startup-cyrkl-pomaha-firmam-lepe-nakladat-s-odpady-a-setrit-planetu-na-expanzi-po-evrope-ziskava-desitky-milionu/"
+ },
+ {
+  "item_id": "C034-I04",
+  "answer": "wrong_date",
+  "why": "Tilia invested in The Village in the round announced July 2022; the Oct 2023 article only mentions it as an existing first-fund holding.",
+  "source_url": "https://tech.eu/2022/07/04/ramping-up-early-education-with-parent-led-micro-schools-the-village-rakes-in-eur34-million/"
+ },
+ {
+  "item_id": "C034-I05",
+  "answer": "wrong_date",
+  "why": "Tilia's Munch investment was announced 13 June 2023; the Oct 2023 article only mentions Munch as an existing holding.",
+  "source_url": "https://cc.cz/nesnezeno-pred-vyhozenim-zachranilo-300-tisic-jidel-spojilo-se-s-madary-spolecne-sli-na-slovensko/"
+ },
+ {
+  "item_id": "C034-I06",
+  "answer": "no",
+  "why": "CZK 43m is only the first fund's first close (2018/19), omitting the second fund where Tilia had confirmed EUR 26m by Sept 2023, which changes the total by far more than 20%.",
+  "source_url": "https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/"
+ },
+ {
+  "item_id": "C034-I07",
+  "answer": "yes",
+  "why": "Newstream (18 Oct 2023) reports [osoba]'s Tilia fund invested in the Bulgarian fashion platform NOLD, which raised EUR 1m in its first round.",
+  "source_url": "https://www.newstream.cz/money/fond-silke-horakove-investoval-do-modni-platformy"
+ },
+ {
+  "item_id": "C034-I08",
+  "answer": "yes",
+  "why": "CzechCrunch (21 Sep 2023) says Tilia had confirmed EUR 26m for its second fund (target 32m) and the first fund closed at CZK 43m, so the sum is supported by raised money.",
+  "source_url": "https://cc.cz/cesky-fond-urceny-na-investice-se-spolecenskymi-dopady-ma-dalsich-600-milionu-podporili-ho-winkler-ci-barta/"
+ },
+ {
+  "item_id": "C034-I09",
+  "answer": "wrong_date",
+  "why": "Datlab was Tilia's first investment, announced in CzechCrunch on 28 Nov 2018 (the Oct 2019 article was about MIWA, the second investment).",
+  "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-z-noveho-tilia-impact-ventures-chybel-nam-rizikovy-kapital-pro-socialni-inovace/"
+ },
+ {
+  "item_id": "C034-I10",
+  "answer": "yes",
+  "why": "CzechCrunch (8 Oct 2019) says MIWA Technologies became the second investment in Tilia Impact Ventures' portfolio (convertible loan).",
+  "source_url": "https://cc.cz/silke-horakova-a-petr-vitek-posilaji-miliony-korun-do-startupu-miwa-ktery-z-obchodu-odstranuje-jednorazove-plasty/"
+ },
+ {
+  "item_id": "C063-I00",
+  "answer": "yes",
+  "why": "ARES lists JSK Management s.r.o. (IČO 21285241, Klimentská, Praha 1), which is the entity named in the JSK Investments website footer and shares the SICAV's address.",
+  "source_url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/21285241"
+ },
+ {
+  "item_id": "C063-I01",
+  "answer": "yes",
+  "why": "CzechCrunch (30 Sep 2025) says the [osoba] themselves are putting roughly CZK 2bn into the SICAV; the larger billions figure is the separate growth goal, so 2bn is initial capital, not a target.",
+  "source_url": "https://cc.cz/investujte-jako-simona-kijonkova-zakladatelka-zasilkovny-otevira-fond-do-ktereho-chce-miliardy/"
+ },
+ {
+  "item_id": "C063-I02",
+  "answer": "yes",
+  "why": "CzechCrunch (15 Sep 2026) reports [osoba] joined Andromeda Surgical's USD 15m Series A via JSK Investments; Vestbee also lists JSK among the investors and the round was announced Aug-Sep 2026.",
+  "source_url": "https://cc.cz/simona-kijonkova-investuje-desitky-milionu-do-roboticke-chirurgie-cilem-je-zkratit-fronty-na-operace/"
+ },
+ {
+  "item_id": "C063-I03",
+  "answer": "yes",
+  "why": "Lupa.cz (9 Dec 2024) reports JSK Investments put EUR 420k of Elin.ai's round, announced by press release.",
+  "source_url": "https://www.lupa.cz/aktuality/jsk-investments-simony-kijonkove-investuje-420-tisic-eur-do-ai-startupu-elin-ai/"
+ },
+ {
+  "item_id": "C063-I04",
+  "answer": "yes",
+  "why": "Newstream (1 Oct 2025) states the SICAV's initial volume of funds is CZK 2bn, with growth into higher single-digit billions only an outlook.",
+  "source_url": "https://www.newstream.cz/money/kijonkova-spousti-vlastni-fond-pro-kvalifikovane-investory"
+ }
+]
