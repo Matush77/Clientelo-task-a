@@ -125,6 +125,16 @@ Podrobne v [AUDIT_V2.md](AUDIT_V2.md).
 | C43 | **ja + Claude (kód)** | **Chybné priradenie identity (IČO)**. Malé neplatné IČO z webu („52 524 5311“) → kód prešiel na voľné hľadanie podľa značky → cudzia „CB Investments s. r. o.“. Výsledok triáže mal prednosť pred overeným obchodným menom z webu → Czech Founders priradený k neziskovej z.ú. „Nation1 Investment s.r.o.“ prijaté ako Nation1. Credo priradené k novej „Credo Ventures Management II“. | **človek** pri ručnej kontrole (CB) + Sonnet (`identity_ok`: Nation1, Czech Founders, CB, Investika) | prísne pravidlá identity (D35), kontrola formátu IČO, regresné testy; v3: 8 záznamov vo vzorke s opravenou identitou, Nation1 na ručnú kontrolu |
 | C44 | **ja + Claude (kód)** | Prvá verzia prísneho pravidla prijala presnú zhodu jednoslovnej značky („KAYA“ → „KAYA, spol. s r.o.“) a zahodila lokálnu firmu tímu pri zahraničnom GP (Tensor) | porovnanie zmien identity v2 → v3 pred zmrazením | jednoslovná značka potrebuje investičné označenie; zahraničná identita nebráni hľadaniu lokálnej |
 
+### Meranie presnosti – AI kontrola (Haiku vs. Sonnet)
+
+| # | Kto / čo | Zistenie | Ako zachytené | Opatrenie |
+|---|---|---|---|---|
+| C45 | Haiku 5.5 vs. Sonnet 5.5 (slepá kontrola 34 záznamov) | Celkový verdikt sa zhodol v 29/34. Všetkých 5 rozdielov sú prípady, keď Haiku „nevedel rozhodnúť“ a Sonnet áno. Sonnet navyše našiel chyby polí, ktoré Haiku prehliadol: cieľové fondy v kapitáli (Purple, Tensor, ZAKA, Presto) a dátumy článkov namiesto dátumov obchodu (Rockaway, Seed Starter, Tilia, Gi21) | porovnanie výstupov oboch modelov | do ďalšej verzie: na výklad článkov (dátum, suma, účasť) silnejší model; vyčíslené v COST_ESTIMATE |
+| C46 | **človek** | Pri prezretí formulára: z článkov často nie je jasný dátum, suma ani to, či peniaze išli do firmy | kvalitatívna kontrola | kvantifikované: 40 % investícií bez dátumu obchodu, 22 % so sumou, kapitál správne v 50 % |
+| C47 | Infraštruktúra | Opakovaná kontrola Sonnetom pre 8 záznamov so zmenenou identitou sa nedokončila – vyčerpaný limit relácie (HTTP 429) | notifikácia o zlyhaní agentov | ich `identity_ok` sa v správe nezapočítava (stará verzia identity) |
+| C48 | Overovateľ Haiku | Napriek zákazu v pokyne raz zavolal zabudovaný prehliadač (bez účinku) | vlastné hlásenie agenta | potvrdzuje, že zákaz v texte pokynu nie je tvrdá hranica → vlastný typ agenta s obmedzenými nástrojmi |
+| C49 | Sonnet (kontrolór) | V zdôvodnení citoval mená štatutárov firmy z registra (osobné údaje) | kontrola pred commitom | mená fyzických osôb vo výstupoch AI kontroly nahradené `[osoba]` (D14) |
+
 **Hlavné ponaučenie pre prezentáciu:** strojová kontrola citácií zachytila vymyslené zdroje a parafrázy, no nie
 **nesprávny výklad pravej citácie**. To odhalil až človek – za dve minúty prezerania formulára. Preto sú v postupe
 obe vrstvy, strojová aj ľudská, a nedajú sa nahradiť jedna druhou.

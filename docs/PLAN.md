@@ -262,6 +262,27 @@ office a angel investori nie; (3) po pilote z merania: podiel kandidátov s dato
 presnosť z ručnej kontroly a odhad pokrytia (capture–recapture). Rozpätia sú zámerne široké – najväčšia neistota je
 mimo USA a Európy (Ázia, najmä Čína, kde sú zdroje v miestnom jazyku).
 
+### 11.4 Čo zmeral pilot (VC, CZ + SK) a ako to mení odhad
+
+| Meranie | Pilot | Hypotéza v 11.2 / 11.3 | Dopad |
+|---|---|---|---|
+| Kandidátov na 1 zaradeného investora | 5,5 (133 → 24) | – | vstup nákladového modelu |
+| Pokrytie (capture–recapture) | ~78 % z odhadovaných ~31 aktívnych VC (95 % CI 24–40) | doložiteľných 60–75 % | v súlade; mierne nad odhadom |
+| Presnosť zaradenia (slepá kontrola Sonnet 5.5) | 23/23 (95 % CI 85,7–100 %) | ≥ 95 % | nevyvrátené; interval je pri malej vzorke široký |
+| Vyplnenosť: sektory / tiket / kapitál | 75 % / 58 % / 62 % | ~90 % / 60–75 % / 50–70 % | sektory nižšie, ostatné v rozpätí |
+| Presnosť: kapitál | 6/12 = 50 % | ~85 % | **výrazne horšie** – cieľové fondy a čiastočné uzavretia |
+| Presnosť: zdroje dokladajú investície (dátum, účasť) | 19/23 = 83 % | – | dátumy článkov namiesto dátumov obchodu |
+| Investície s dátumom obchodu / so sumou | 59,5 % / 21,6 % | – | verejné články sú často nejasné (zistenie ľudskej kontroly) |
+
+**Záver pre celosvetový odhad:**
+
+- Rozsah z 11.2 (~32–70 tis., základ ~45 tis.) ostáva.
+- Spoľahlivosť **existencie a aktivity** investora sa potvrdila.
+- Spoľahlivosť **celkového kapitálu** treba znížiť na ~50–70 %.
+- Pri **dátumoch a sumách investícií** treba počítať s tým, že ~40 % investícií bude len „v portfóliu“ bez dátumu.
+
+Podrobne v [PRECISION_REPORT.md](PRECISION_REPORT.md).
+
 ## 12. Odhad nákladov na rozšírenie na celý svet – metodika
 
 Náklady sa **nemajú hádať, ale odvodiť z merania v pilote**:

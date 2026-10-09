@@ -7,18 +7,28 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 ## Výsledky v skratke
 
 <!-- RESULTS:START -->
-*(Doplní sa po ručnej kontrole vzorky – presnosť, zhoda AI s človekom, odhad úplnosti.)*
-<!-- RESULTS:END -->
-
 | | |
 |---|---|
 | Kandidátov z verejných zdrojov | 206 (po deduplikácii), z toho 133 prešlo zberom dôkazov |
-| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) |
+| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) – [investors.csv](data/processed/investors.csv) |
 | Vyradených / mimo rozsahu / na ručnú kontrolu | 70 / 35 / 4 |
 | Tvrdení agentov strojovo overených na zdrojovej stránke | 808 z 852 (95 %) |
-| Audit pred ručnou kontrolou (v1 → v2) | 9 kategórií chýb vo výklade pravých citácií, opravené pravidlami – [AUDIT_V2.md](docs/AUDIT_V2.md) |
-| Náklad AI na celý pilot (Claude Haiku 5.5, prepočet na ceny API) | ~9 USD |
-| Odhad pre celý svet (1. rok, základný scenár) | pozri [COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
+| **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |
+| Presnosť polí | sektory 17/17, tiket 15/15, zdroje dokladajú investície 19/23 (83 %), **celkový kapitál 6/12 (50 %)** |
+| Pokrytie (capture–recapture) | ~78 % z odhadovaných ~31 aktívnych VC so sídlom v CZ/SK |
+| Ľudský audit (v1 → v2 → v3) | našiel chyby výkladu (kapitál „30 €“, plánovaný fond ako kapitál, chybné IČO) → 2 opravy pipeline – [AUDIT_V2.md](docs/AUDIT_V2.md) |
+| Náklad AI na celý pilot (prepočet na ceny API) | ~17 USD (Haiku ~9,5 USD + kontrola Sonnetom ~7,8 USD) |
+| Odhad pre celý svet, 1. rok (základ) | ~97 tis. € (AI ~20 tis., ľudská kontrola ~57 tis., vývoj ~20 tis.) – [COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
+
+**Hlavné zistenie.** Rozhodnutie, *kto je investor*, sa dá z verejných zdrojov urobiť spoľahlivo. Údaje *o
+investíciách* (presný dátum, suma, výška kapitálu) však verejné články často neuvádzajú jednoznačne:
+
+- len 60 % investícií má dátum obchodu;
+- len 22 % investícií má uvedenú sumu;
+- celkový kapitál je správne v polovici prípadov.
+
+Na tieto polia treba silnejší model než Haiku a ľudskú kontrolu – variant je vyčíslený v nákladoch.
+<!-- RESULTS:END -->
 
 ## Kde čo nájdete (požiadavky zadania)
 
@@ -64,9 +74,12 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 
 Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg ~38 chýb a slabín).
 
-- **Rozdelenie rolí:** ja rozhodujem o pravidlách a robím ručnú kontrolu; hlavná session Claude Code (Opus 5.5)
-  orchestruje, píše kód a pokyny; **všetci subagenti bežia výhradne na Claude Haiku 5.5** (overené zo záznamov –
-  53 behov); všetko, čo sa dá overiť bez AI, robí deterministický kód (97 testov).
+- **Rozdelenie rolí:**
+  - ja rozhodujem o pravidlách a robím kvalitatívny audit;
+  - hlavná session Claude Code (Opus 5.5) orchestruje, píše kód a pokyny;
+  - **zber a overovanie dát robia subagenti Claude Haiku 5.5**; slepú kontrolu vzorky robí **Claude Sonnet 5.5**
+    (modely overené zo záznamov agentov);
+  - všetko, čo sa dá overiť bez AI, robí deterministický kód (145 testov).
 - **Pokyny agentom** sú doslovne v [prompts/](prompts/) a verzované v gite (napr. zber dôkazov v1 → v2 → v3).
   Agenti čítajú pokyn priamo zo súboru, takže každý dostal presne verziu uloženú v repozitári.
 - **Kontrola výstupu:** (1) agent smie a má povedať „neviem“; (2) každá citácia sa strojovo overí na stránke;
@@ -95,15 +108,23 @@ Všetky (28) s dôvodmi v [docs/DECISIONS.md](docs/DECISIONS.md). Najdôležitej
 ## Čo chýba / obmedzenia
 
 <!-- LIMITS:START -->
+- **Ručne overená vzorka nie je úplná (D34, D36).** Zadanie žiada meranie na ručne overenej vzorke. Štruktúrované
+  ručné odpovede som nevyplnil. Presnosť je preto zmeraná **slepou kontrolou modelom Claude Sonnet 5.5** a porovnaná
+  s druhým modelom (Haiku). Ľudský vstup je kvalitatívny audit formulára – našiel chyby, ktoré viedli k dvom
+  opraveným verziám dát (`pilot-frozen-v2`, `-v3`), a hlavné zistenie o nejasnosti článkov.
+- **Haiku na výklad článkov nestačí.** Zber dôkazov robil lacný model, ktorý často nerozlíšil dátum článku od dátumu
+  obchodu ani cieľový fond od uzavretého. Silnejší model (Sonnet) to pri kontrole zachytil – odporúčanie do ďalšej
+  verzie s vyčíslenou cenou.
 - **Úplnosť (recall):** pravidlo „jedna citácia musí obsahovať investora aj firmu“ a zákaz agregátorov znamenajú, že
   niektorí skutoční aktívni investori skončili vyradení pre nedostatok dôkazov (napr. Vision Ventures, JIC Ventures).
   Presnosť má prednosť pred úplnosťou – zodpovedá to zadaniu („každý záznam musí byť skutočný investor“).
-- **3 záznamy čakajú na ručnú identifikáciu** (KAYA, Zero One Hundred – bez spoľahlivej zhody v registri; 10VC – zdroje
-  blokujú prístup).
+- **4 záznamy čakajú na ručnú identifikáciu.** KAYA, Nation1 a Zero One Hundred nemajú spoľahlivú zhodu v registri,
+  pri 10VC zdroje blokujú prístup. Radšej bez identity než s cudzou firmou (D35).
 - **Pilot pokrýva len VC v CZ/SK.** PE, family office a angel investori sú v pravidlách a taxonómii, ale neboli
   pilotne overené; odhady pre ne sú hypotézy (PLAN.md, kap. 11).
-- **Dátum investície** sa pri niektorých záznamoch odvodzuje od dátumu článku, nie od dátumu obchodu.
-- **Ručná kontrola** je jedna osoba (ja) – bez druhého nezávislého hodnotiteľa.
+- **Dátum investície:** ~40 % investícií je len „v portfóliu“ bez dátumu obchodu; zvyšok má dátum z oznámenia, ktorý
+  sa môže líšiť od dátumu obchodu.
+- **Malá vzorka:** 23 zaradených záznamov dáva široký interval spoľahlivosti (85,7–100 %).
 <!-- LIMITS:END -->
 
 ## Spustenie
