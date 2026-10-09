@@ -239,7 +239,22 @@ h1 { font: 800 clamp(26px, 3.2vw, 32px)/1.15 var(--display); letter-spacing: -0.
 /* evidence sheet */
 .sheet { position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto }
 @media (max-width: 1000px) { .sheet { position: static; max-height: none } }
-.sh-head { position: sticky; top: 0; z-index: 3; background: var(--sheet); padding: 20px 24px 14px; border-bottom: 1px solid var(--rule) }
+/* the evidence sheet has its own deep-navy scheme, so it reads as a separate surface from the light list;
+   every color inside it comes from these tokens (contrast of text on it: 5.7:1 or more in both themes) */
+.sheet {
+  --sheet: #14202e; --head: #1a2a3d; --raised: #1b2a3b; --row-hover: #213247; --ink: #f2f5f9; --ink-2: #c5cfdb; --ink-3: #9eabbb;
+  --rule: #2b3b4f; --rule-strong: #4a5e76; --accent: #a9c1ff; --accent-soft: #243758; --on-accent: #0b1220; --edge: #3d6ae0;
+  --ok: #8ae3b4; --ok-soft: #153629; --warn: #f6c87d; --warn-soft: #3d2d12; --quote: #0f1924; --quote-rule: #50657e;
+  background: var(--sheet); color: var(--ink); color-scheme: dark; border: 1px solid #0b1520; border-top: 4px solid var(--edge) }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sheet {
+  --sheet: #1a2b45; --head: #203457; --raised: #22365a; --row-hover: #26406a; --ink: #f4f7fb; --ink-2: #cdd7e4; --ink-3: #a7b4c6;
+  --rule: #2f4568; --rule-strong: #4f6a92; --accent: #b3caff; --accent-soft: #2c4572; --edge: #7d9cff;
+  --ok: #90e6b9; --ok-soft: #173a2d; --warn: #f8cd86; --warn-soft: #433217; --quote: #132036; --quote-rule: #5a7398; border-color: #2f4568 } }
+:root[data-theme="dark"] .sheet {
+  --sheet: #1a2b45; --head: #203457; --raised: #22365a; --row-hover: #26406a; --ink: #f4f7fb; --ink-2: #cdd7e4; --ink-3: #a7b4c6;
+  --rule: #2f4568; --rule-strong: #4f6a92; --accent: #b3caff; --accent-soft: #2c4572; --edge: #7d9cff;
+  --ok: #90e6b9; --ok-soft: #173a2d; --warn: #f8cd86; --warn-soft: #433217; --quote: #132036; --quote-rule: #5a7398; border-color: #2f4568 }
+.sh-head { position: sticky; top: 0; z-index: 3; background: var(--head); padding: 20px 24px 14px; border-bottom: 1px solid var(--rule) }
 .sh-head h2 { font: 800 26px/1.2 var(--display); margin: 0; letter-spacing: -0.01em; text-wrap: balance }
 .legal { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 6px; font-size: 14.5px; color: var(--ink-2) }
 .legal code { font: 500 14.5px var(--mono); color: var(--ink) }
