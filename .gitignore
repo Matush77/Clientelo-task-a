@@ -19,3 +19,6 @@ Thumbs.db
 
 # Local redaction terms for ai-log export (contains personal data, never commit)
 .redact-terms
+
+# Names of natural persons quoted by AI reviewers (D14) - local only, never commit
+.redact-people

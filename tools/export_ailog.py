@@ -43,9 +43,14 @@ USER_FACING_TOOLS = {"AskUserQuestion", "ExitPlanMode"}  # their results carry t
 # --- redaction -----------------------------------------------------------------------------------
 
 def load_terms(path: Path = REDACT_FILE) -> list[str]:
-    if not path.exists():
-        return []
-    return [t.strip() for t in path.read_text(encoding="utf-8").splitlines() if t.strip() and not t.startswith("#")]
+    """Personal terms to redact: .redact-terms (author's e-mail) + .redact-people (natural persons quoted by AI
+    reviewers, D14; a trailing * there means 'any ending' - here the stem is redacted)."""
+    terms = []
+    for p in (path, path.with_name(".redact-people")):
+        if p.exists():
+            terms += [t.strip().rstrip("*") for t in p.read_text(encoding="utf-8").splitlines()
+                      if t.strip() and not t.startswith("#")]
+    return terms
 
 
 def redact(text: str, terms: list[str]) -> str:
