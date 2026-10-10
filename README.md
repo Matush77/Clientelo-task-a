@@ -1,8 +1,20 @@
 # Clientelo – Zadanie A: Spoľahlivá databáza investorov
 
+[![testy](https://github.com/Matush77/Clientelo-task-a/actions/workflows/tests.yml/badge.svg)](https://github.com/Matush77/Clientelo-task-a/actions/workflows/tests.yml)
+
 Návrh a overenie postupu, ako z **verejných zdrojov** zostaviť databázu investorov do firiem, v ktorej je **každý
 záznam skutočný investor** a **každý údaj má zdroj, dátum a doslovnú citáciu** – overenú programom, nie len AI.
 Pilot: **VC investori so sídlom v Česku a na Slovensku**.
+
+**Kde začať**
+
+| | |
+|---|---|
+| Zhrnutie na jednu stranu | [docs/SUMMARY.md](docs/SUMMARY.md) |
+| **Výsledná databáza** (24 investorov) | [investors_refined.csv](data/processed/investors_refined.csv) · v Exceli s citáciami a odkazmi na zdroje: [investori_cz_sk.xlsx](data/processed/investori_cz_sk.xlsx) |
+| Prehliadač investorov online (SK / EN) | [claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) · [po anglicky](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS#en) · offline [docs/explorer.html](docs/explorer.html) |
+| Popis všetkých stĺpcov a kódov | [docs/DATA.md](docs/DATA.md) |
+| Odovzdaná verzia | tag [`v1.0-submission`](https://github.com/Matush77/Clientelo-task-a/tree/v1.0-submission) |
 
 ## Výsledky v skratke
 
@@ -10,7 +22,7 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | | |
 |---|---|
 | Kandidátov z verejných zdrojov | 206 (po deduplikácii), z toho 133 prešlo zberom dôkazov |
-| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) – [investors.csv](data/processed/investors.csv), spresnená verzia [investors_refined.csv](data/processed/investors_refined.csv) |
+| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôkazov A: 18, B: 6) – výsledná databáza [investors_refined.csv](data/processed/investors_refined.csv) / [Excel](data/processed/investori_cz_sk.xlsx); zmrazená v3, na ktorej je zmeraná presnosť: [investors.csv](data/processed/investors.csv) (A: 15, B: 9) |
 | Vyradených / mimo rozsahu / na ručnú kontrolu | 70 / 35 / 4 |
 | Tvrdení agentov strojovo overených na zdrojovej stránke | 808 z 852 (95 %); pri spresnení 144 zo 147 (98 %) |
 | **Presnosť zaradenia** (slepá kontrola Claude Sonnet 5.5) | **23/23 = 100 %** (95 % CI 85,7–100 %) |
@@ -37,14 +49,13 @@ dátum článku, ktorý staršiu investíciu len spomína, a ako kapitál cieľo
 
 | Požiadavka zadania | Súbor |
 |---|---|
-| **Zhrnutie na jednu stranu** | [docs/SUMMARY.md](docs/SUMMARY.md) |
 | Plán: kto v databáze bude a kto nie, ako sa overuje, odhad rozsahu a spoľahlivosti a z čoho vychádza | [docs/PLAN.md](docs/PLAN.md) |
-| Dáta zo vzorky so zdrojom pri každom údaji | [data/processed/investors.csv](data/processed/investors.csv) (1 riadok = 1 investor) + [claims.csv](data/processed/claims.csv) (1 riadok = 1 údaj so zdrojom, dátumom, citáciou a výsledkom kontroly) |
-| Zdroj a dátum, ktoré dokladajú, že subjekt investuje | stĺpce `last_investment`, `last_investment_date`, `last_investment_source` v investors.csv; všetky investície v claims.csv (`field = investments`) |
+| Dáta zo vzorky so zdrojom pri každom údaji | **výsledná databáza** [investors_refined.csv](data/processed/investors_refined.csv) a [Excel](data/processed/investori_cz_sk.xlsx) (hárok Tvrdenia = citácia a odkaz pri každej hodnote), popis stĺpcov [DATA.md](docs/DATA.md); zmrazená v3 [investors.csv](data/processed/investors.csv) (1 riadok = 1 investor) + [claims.csv](data/processed/claims.csv) (1 riadok = 1 údaj so zdrojom, dátumom, citáciou a výsledkom kontroly) |
+| Zdroj a dátum, ktoré dokladajú, že subjekt investuje | stĺpce `last_investment`, `last_investment_date`, `last_investment_source` v investors_refined.csv; všetky investície v claims.csv (`field = investments`) |
 | Vyradené záznamy s dôvodom | [rejected.csv](data/processed/rejected.csv), všetky rozhodnutia v [decisions.csv](data/processed/decisions.csv) |
 | Meranie presnosti na ručne overenej vzorke | [docs/PRECISION_REPORT.md](docs/PRECISION_REPORT.md) |
 | Spresnenie slabých polí silnejším modelom a meranie pred / po | [docs/REFINEMENT.md](docs/REFINEMENT.md), spresnená verzia [investors_refined.csv](data/processed/investors_refined.csv) |
-| Prehliadač investorov: každá hodnota so zdrojom a citáciou | [docs/explorer.html](docs/explorer.html) (stiahnuť a otvoriť v prehliadači, funguje offline) |
+| Prehliadač investorov: každá hodnota so zdrojom a citáciou | [online](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) alebo [docs/explorer.html](docs/explorer.html) (stiahnuť a otvoriť v prehliadači, funguje offline) |
 | Odhad nákladov na rozšírenie na celý svet | [docs/COST_ESTIMATE.md](docs/COST_ESTIMATE.md) |
 | Ako som pracoval s AI (pokyny, kontrola, chyby agentov) | [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) + doslovné pokyny v [prompts/](prompts/) |
 | Rozhodnutia pri nejasnostiach zadania | [docs/DECISIONS.md](docs/DECISIONS.md) |
@@ -86,7 +97,7 @@ Podrobne v [docs/AI_WORKFLOW.md](docs/AI_WORKFLOW.md) (katalóg 59 chýb a slab�
   - **zber a overovanie dát robia subagenti Claude Haiku 5.5**; slepú kontrolu vzorky, spresnenie kapitálu
     a dátumov pri zaradených záznamoch a kontrolu faktov pred / po robí **Claude Sonnet 5.5**
     (modely overené zo záznamov agentov);
-  - všetko, čo sa dá overiť bez AI, robí deterministický kód (162 testov).
+  - všetko, čo sa dá overiť bez AI, robí deterministický kód (168 testov).
 - **Pokyny agentom** sú doslovne v [prompts/](prompts/) a verzované v gite (napr. zber dôkazov v1 → v2 → v3).
   Agenti čítajú pokyn priamo zo súboru, takže každý dostal presne verziu uloženú v repozitári.
 - **Kontrola výstupu:** (1) agent smie a má povedať „neviem“; (2) každá citácia sa strojovo overí na stránke;
@@ -166,6 +177,8 @@ python -m investordb.cli refine check                                        # k
 python -m investordb.cli refine judge-batches                                # slepá kontrola faktov pred / po
 python -m investordb.cli refine report                                       # docs/REFINEMENT.md
 python -m investordb.cli explorer                                            # docs/explorer.html
+python -m investordb.cli export-xlsx                                         # Excel s citáciami
+python -m investordb.cli datadict                                            # docs/DATA.md
 python -m investordb.usage && python -m investordb.cli cost                  # odhad nákladov
 python tools/export_ailog.py <session-export.zip>                            # ai-log
 ```

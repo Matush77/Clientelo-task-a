@@ -370,11 +370,14 @@ def rebuild_all(as_of: date) -> dict:
     investors = {r["candidate_id"]: r for r in _read(PROCESSED / "investors.csv")}
     outputs = {r["candidate_id"]: r for r in load_outputs()}
     new = _read(CLAIMS_REFINED) if CLAIMS_REFINED.exists() else []
+    for c in new:
+        c["origin"] = "refined"
     checks = {cid: deal_checks(rec) for cid, rec in outputs.items()}
     old = claims_by_investor(list(investors.values()), _read(PROCESSED / "claims.csv"), only_ok=False)
 
     gapfill = defaultdict(list)
     for c in (_read(CLAIMS_GAPFILL) if CLAIMS_GAPFILL.exists() else []):
+        c["origin"] = "gapfill"
         gapfill[c["candidate_id"]].append(c)
     not_public = {r["candidate_id"]: [n.get("field") for n in r.get("not_public") or []] for r in load_gapfill()}
 

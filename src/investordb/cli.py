@@ -196,6 +196,22 @@ def cmd_refine(args: argparse.Namespace) -> None:
         print(write(result, as_of))
 
 
+def cmd_export_xlsx(args: argparse.Namespace) -> None:
+    """Write data/processed/investori_cz_sk.xlsx - the final database with every quote and a clickable source."""
+    from datetime import date
+
+    from investordb.export import build
+
+    print(build(date.fromisoformat(args.as_of)))
+
+
+def cmd_datadict(args: argparse.Namespace) -> None:
+    """Write docs/DATA.md - every column and code of the delivered data."""
+    from investordb.datadict import write
+
+    print(write())
+
+
 def cmd_explorer(args: argparse.Namespace) -> None:
     """Write docs/explorer.html - every included investor with the sources and quotes behind each value."""
     from datetime import date
@@ -250,6 +266,13 @@ def main() -> None:
                                     "report"])
     p.add_argument("--as-of", default="2026-10-09")
     p.set_defaults(func=cmd_refine)
+
+    p = sub.add_parser("export-xlsx", help="write data/processed/investori_cz_sk.xlsx (final database, sources, dictionary)")
+    p.add_argument("--as-of", default="2026-10-09")
+    p.set_defaults(func=cmd_export_xlsx)
+
+    p = sub.add_parser("datadict", help="write docs/DATA.md (data dictionary)")
+    p.set_defaults(func=cmd_datadict)
 
     p = sub.add_parser("explorer", help="write docs/explorer.html (interactive view of the included investors)")
     p.add_argument("--as-of", default="2026-10-09")
