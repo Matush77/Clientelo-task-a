@@ -15,7 +15,7 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | **Výsledná databáza** (24 investorov) | [investors_refined.csv](data/processed/investors_refined.csv) · v Exceli s citáciami a odkazmi na zdroje: [investori_cz_sk.xlsx](data/processed/investori_cz_sk.xlsx) |
 | Prehliadač investorov online (SK / EN) | [claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) · [po anglicky](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS#en) · offline [docs/explorer.html](docs/explorer.html) |
 | Popis všetkých stĺpcov a kódov | [docs/DATA.md](docs/DATA.md) |
-| Odovzdaná verzia | tag [`v1.1-submission`](https://github.com/Matush77/Clientelo-task-a/tree/v1.1-submission) |
+| Odovzdaná verzia | tag [`v1.2-submission`](https://github.com/Matush77/Clientelo-task-a/tree/v1.2-submission) |
 
 ## Výsledky v skratke
 
