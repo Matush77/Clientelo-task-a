@@ -11,7 +11,7 @@ Pilot: **VC investori so sídlom v Česku a na Slovensku**.
 | | |
 |---|---|
 | Zhrnutie na jednu stranu | [docs/SUMMARY.md](docs/SUMMARY.md) |
-| Prezentácia (12 slajdov s poznámkami k prezentovaniu) | [docs/prezentacia.pdf](docs/prezentacia.pdf) |
+| Prezentácia (12 slajdov) | [docs/prezentacia.pdf](docs/prezentacia.pdf) · poznámky k prezentovaniu [docs/prezentacia_poznamky.md](docs/prezentacia_poznamky.md) |
 | **Výsledná databáza** (24 investorov) | [investors_refined.csv](data/processed/investors_refined.csv) · v Exceli s citáciami a odkazmi na zdroje: [investori_cz_sk.xlsx](data/processed/investori_cz_sk.xlsx) |
 | Prehliadač investorov online (SK / EN) | [claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) · [po anglicky](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS#en) · offline [docs/explorer.html](docs/explorer.html) |
 | Popis všetkých stĺpcov a kódov | [docs/DATA.md](docs/DATA.md) |
