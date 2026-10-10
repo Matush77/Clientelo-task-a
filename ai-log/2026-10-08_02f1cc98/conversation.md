@@ -33740,3 +33740,863 @@ M  src/investordb/refine_report.py
 ````
 
 </details>
+
+### 🤖 Claude · 2026-10-09 22:22:43
+
+Last step: refreshing the ai-log export so this stage is included.
+
+<details><summary>🔧 mcp__ccd_session_mgmt__export_transcript</summary>
+
+````text
+{
+  "session_id": "self"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Exported this session's transcript "Plán databázy investorov" to C:\Users\matus\Downloads\session-export-1791584563944.zip (78 MB, 81396244 bytes). The zip holds the conversation transcript, its subagent transcripts and session metadata, not the app's logs; nothing was uploaded.
+````
+
+</details>
+
+<details><summary>🔧 Bash – Export, redact, commit and push the ai-log</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 timeout 900 .venv/Scripts/python.exe tools/export_ailog.py \"C:/Users/matus/Downloads/session-export-1791584563944.zip\" 2>&1 | tail -1 && ls ai-log/*/subagents | wc -l && git add ai-log && git commit -q -m \"ai-log export after gap filling (D41), incl. all subagent transcripts (redacted)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push -q origin main && git log --oneline -1 && git status -sb | head -1",
+  "description": "Export, redact, commit and push the ai-log",
+  "timeout": 960000
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ai-log written to C:\Users\matus\Desktop\Interview_Project\Project_a\ai-log\2026-10-08_02f1cc98
+84
+2a2cad1 ai-log export after gap filling (D41), incl. all subagent transcripts (redacted)
+## main...origin/main
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-09 22:24:05
+
+Item #1 is done and pushed: every field the assignment requires now has a value, or is explicitly marked as searched for but not publicly disclosed.
+
+| Required field | Before | After | Not public |
+|---|---|---|---|
+| Sectors | 18/24 | **24/24** | – |
+| Stages | 18/24 | **24/24** | – |
+| Ticket (typical investment size) | 14/24 | **22/24** | Tensor, Slovak Investment Holding |
+| Total capital | 20/24 | **20/24** | Seed Starter, Gi21, Miton, Look AI |
+
+**How the values were obtained:**
+- **Checked:** all 31 new claims passed the same check as the rest of the database: the quote really appears on the source page. For the risky ones (tickets, inferred sectors) I also read the surrounding page text; it confirms each value, e.g. Jet's "ideal ticket size between one and two million euros".
+- **Labelled:** sectors were inferred from portfolio companies only where the investor doesn't state a focus (Czech Founders, Seed Starter, Slovak Investment Holding). They're marked "inferred" in the data and the explorer.
+- **Nothing estimated:** the agent found Tensor's ticket only on Dealroom, which isn't allowed as a source, so the field stays "not public". The same goes for a fundraising target, which never counts as capital.
+
+**Fixes along the way:**
+- **Parser:** amounts written with declined Czech number words were missed ("kolem jednoho milionu", "mezi jedním a dvěma miliony"). They're now read correctly, with tests (166 pass). The frozen v3 tables stay exactly as tagged.
+- **One-sided tickets:** a ticket stated only as a maximum ("up to €15M") now counts as filled, and displays as "do 15 mil. € / up to €15M".
+
+**Updated and pushed:**
+- `REFINEMENT.md` has a new section 6 with the per-investor table.
+- README, the one-page summary, decision D41 and error-catalogue entry C59.
+- Costs: this step cost $5.36, bringing the whole pilot to about $47.
+- The explorer (same shared link) shows the "inferred" and "not publicly disclosed" labels in both languages, and the cost slide in the deck has the new total.
+- The ai-log is re-exported.
+
+Next on the list are the reviewer-polish items (#2+3): presenting the refined database as the final result, an Excel export, a data dictionary, a CI badge and a submission tag. Tell me if you want me to start.
+
+## 👤 Používateľ · 2026-10-10 06:10:22
+
+Do #2+3 now
+
+### 🤖 Claude · 2026-10-10 06:10:40
+
+Starting #2+3. First I'm loading the spreadsheet guidance, since the Excel export is a deliverable:
+
+<details><summary>🔧 Skill</summary>
+
+````text
+{
+  "skill": "anthropic-skills:xlsx",
+  "args": "Generate an Excel export of the investor database from project code (Python, openpyxl): sheets for investors (refined), verified claims with clickable source links, and a data dictionary."
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Launching skill: anthropic-skills:xlsx
+````
+
+</details>
+
+## 👤 Používateľ · 2026-10-10 06:10:41
+
+Base directory for this skill: C:\Users\matus\AppData\Roaming\Claude\local-agent-mode-sessions\skills-plugin\44b821bd-81d4-45c5-bb4a-c26ef86bc11c\a26ad3fc-21e9-48ac-b6ec-3f6360b38809\skills\xlsx
+
+# XLSX creation, editing, and analysis
+
+| Task | Approach |
+|---|---|
+| **Create** or **edit** with formulas/formatting | `openpyxl` — see gotchas below |
+| **Bulk data** in or out | `pandas` (`read_excel`, `to_excel`) |
+| **Quick look** at a sheet | `markitdown file.xlsx` — `## SheetName` per sheet; reads `.xlsm` too. No cell coordinates, so don't plan edits from it |
+| **Read** a model (formulas *and* values) | two `load_workbook` passes — see gotchas |
+
+> `openpyxl`, `pandas`, and `markitdown` are preinstalled — do not run `pip install` first; write the script and import directly. Only if an import fails (or the `markitdown` command is missing): `pip install` the missing package.
+
+> Script paths below are relative to this skill's directory.
+
+## Requirements for every output
+
+- **Professional font** (Arial, Times New Roman) throughout, unless the user says otherwise.
+- **Zero formula errors.** Never ship while `recalc.py` reports `errors_found`. If you think an error predates you, prove it: load the *original* with `data_only=True` and look at that cell. An error you introduced looks exactly like one you inherited.
+- **Use formulas, never hardcoded results.** Write `sheet['B10'] = '=SUM(B2:B9)'`, not the Python-computed total. The sheet must recalculate when its inputs change.
+- **Follow the user's spec literally.** Exact tab names, exact column headers, and the formula they spelled out. A redesign that computes something else fails, however elegant.
+- **Document every assumption and hardcoded number** where the reader will see it — a cell comment, or an adjacent cell at a table's end. Cite a real source when one exists (`Source: Company 10-K, FY2024, Page 45, Revenue Note, [SEC EDGAR URL]`); when the number came from the user, say so plainly.
+- **A workbook *you create* for someone to fill in** needs a short legend naming which cells to edit, and one example row of realistic values showing the expected format. Never add such a row to a file you were asked to edit.
+- **Editing an existing file: match its conventions exactly.** They override every guideline here. Find its designated input cells first — a distinct font color, fill, or shading marks them — write only there, and leave every existing formula untouched.
+
+## Recalculate (mandatory whenever the file contains formulas)
+
+openpyxl writes formulas as strings with **no cached values**. Until you recalculate, every
+formula cell reads back as `None` to anything reading cached values — `pandas`,
+`load_workbook(data_only=True)`, and most previewers.
+
+```bash
+python scripts/recalc.py output.xlsx [timeout_seconds]   # default 30
+```
+
+LibreOffice computes every formula, the file is **rewritten in place**, and you get JSON:
+`status` (`success` | `errors_found`), `total_formulas`, `total_errors`, and an
+`error_summary` naming up to 100 cells per error type (`locations_truncated` says how many it
+withheld — trust `total_errors`, not the length of the list). Fix what it names and run it
+again. **JSON with an `error` key instead of a `status` means nothing was recalculated**, and
+only that case exits non-zero — `errors_found` exits 0, so never treat a clean exit as a clean
+workbook.
+
+**A green recalc proves your formulas *evaluate*, not that they are *right*.** An off-by-one
+range or a reference to the wrong row yields a clean, error-free file with wrong numbers.
+Write 2–3 formulas first and check they pull the values you expect, before building out a grid.
+
+**A workbook that links to another file loses those links** if you re-save it with openpyxl and
+then recalculate. Such a formula reads `='[1]Returns Analysis'!$BExcel` — the `[1]` is an index
+into the workbook's external-reference list, naming a *separate file on disk*, not a sheet.
+That file is rarely present here, so the cell's cached value is the only thing holding its
+data. openpyxl strips that value on save; LibreOffice then has to resolve the reference for
+real, fails, writes `#NAME?`, and deletes every link. `recalc.py` refuses to run in that state
+— copy those cells' values out of the original before you save over them (`--force` overrides,
+and accepts the loss).
+
+## Choosing formulas that survive verification
+
+LibreOffice implements fewer functions than Excel, and one it cannot evaluate becomes a
+literal `#NAME?` baked into the file you deliver.
+
+- **Prefer Excel-2007-era functions** — `SUMIFS`, `INDEX`, `MATCH`, `IFERROR`, `SUMPRODUCT` — which need no prefix.
+- **Six post-2007 functions work, but only with an `_xlfn.` prefix**, because openpyxl writes your formula into the XML verbatim and Excel stores post-2007 names prefixed (its UI hides the prefix): `_xlfn.TEXTJOIN`, `_xlfn.CONCAT`, `_xlfn.IFS`, `_xlfn.SWITCH`, `_xlfn.MAXIFS`, `_xlfn.MINIFS`. Written bare, each yields `#NAME?`.
+- **Never use `XLOOKUP`, `XMATCH`, `SORT`, `FILTER`, `UNIQUE`, or `SEQUENCE`.** The runtime's LibreOffice cannot evaluate them under *any* prefix. Newer builds do evaluate them, but they are spilling array functions and an openpyxl-written file has no spill metadata, so only the top-left cell of the range gets a value — and `recalc.py` reports `total_errors: 0` on the truncated result. Use `INDEX`/`MATCH` for lookups, and sort, filter, and de-duplicate in Python before writing the cells.
+- A formula LibreOffice could not parse is written back **lowercased** — a quick tell beside a `#NAME?`.
+
+## openpyxl gotchas
+
+- **Reading a model takes two loads.** `data_only=True` yields cached values with the formulas gone; the default yields formula strings with no values. One pass cannot give you both.
+- **`data_only=True` is destructive if you save.** That workbook has no formulas left, so saving replaces every one with a literal — permanently.
+- **`data_only=True` on a file openpyxl just wrote returns `None` everywhere** — run `recalc.py` first. (A formula whose result is `""` also reads back as `None`.)
+- **Merged cells: write the top-left anchor only.** Every other cell in the range is a `MergedCell` whose `.value` is read-only.
+- **`.xlsm` loses its macros unless you pass `keep_vba=True`** to `load_workbook`.
+- **A sheet name containing a space must be quoted** in a cross-sheet reference: `='Assumptions Inputs'!$Bthe`. Unquoted, it evaluates to `#VALUE!`.
+
+## Financial models
+
+Unless the user says otherwise, or the existing file already does something else.
+
+**Color:** blue text (`0,0,255`) for hardcoded inputs and scenario levers · black for formulas ·
+green (`0,128,0`) for links to another sheet · red (`255,0,0`) for links to another file ·
+yellow fill (`255,255,0`) for key assumptions and cells the user should fill in.
+
+**Numbers:** currency `$#,##0`, with the unit named in the header (`Revenue ($mm)`) · zeros
+render as `-`, including in percentages (`$#,##0;($#,##0);-`) · negatives in parentheses ·
+percentages `0.0%`, **stored as fractions** (`0.15` renders `15.0%`; storing `15` renders
+`1500.0%`) · valuation multiples `0.0x` · years as text (`"2024"`, never `2,024`).
+
+**Structure:** every assumption in its own labeled cell, referenced by the formulas that use it
+(`=B5*(1+$Binvestor)`, never `=B5*1.05`) · formulas consistent across every projection period, since a
+lone edited cell mid-row is the commonest silent error · guard denominators that can be zero.
+
+## Dependencies
+
+`openpyxl`, `pandas`, `markitdown` (pip, preinstalled — install only if an import fails or the command is missing) · LibreOffice (`soffice`, auto-configured for sandboxed environments via `scripts/office/soffice.py`)
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+Since the workbook is a plain data export with no formulas, I'll format it with Arial font, frozen headers, filters, clickable source links, and readable labels—starting by confirming openpyxl is available in the environment.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Check openpyxl and the CSV headers</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe -c \"import openpyxl; print(openpyxl.__version__)\" 2>&1; head -1 data/processed/investors_refined.csv; head -1 data/processed/claims_refined.csv",
+  "description": "Check openpyxl and the CSV headers"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import openpyxl; print(openpyxl.__version__)
+    ^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'openpyxl'
+candidate_id,name,legal_name,company_id,registry_url,hq_country,website,investor_types,sectors,stages,ticket_min,ticket_max,ticket_min_eur,ticket_max_eur,total_capital_eur,capital_method,capital_approx,capital_note,funds_target,funds,data_flags,n_investments,n_investments_36m,last_investment_date,last_investment,last_investment_source,status,reason,tier,explanation,as_of,evidence_ids,refine_notes,sectors_basis,stages_basis,not_public
+candidate_id,field,idx,value,value_text,source_url,quote,published_date,derivation,source_tier,event_date,event_date_precision,auto_check,deal_context,attributed,quote_score,checked_url,text_sha256,fetched_at,verdict
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:11:18
+
+openpyxl isn't in the project's environment. I'm adding it as a project dependency, so the export also works on a fresh clone and in CI:
+
+<details><summary>🔧 Bash – Install openpyxl and add it to dependencies</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe -m pip install -q openpyxl 2>&1 | grep -v notice; .venv/Scripts/python.exe -c \"import openpyxl; print(openpyxl.__version__)\" && sed -i 's/    \"pandas\",/    \"pandas\",\\n    \"openpyxl\",/' pyproject.toml && grep -n -A8 \"^dependencies\" pyproject.toml",
+  "description": "Install openpyxl and add it to dependencies"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+3.1.5
+6:dependencies = [
+7-    "httpx",
+8-    "trafilatura",
+9-    "pypdf",
+10-    "rapidfuzz",
+11-    "pydantic>=2",
+12-    "pandas",
+13-    "openpyxl",
+14-]
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:11:35
+
+Next, a single data dictionary in code, which generates both `docs/DATA.md` and the dictionary sheet in the Excel file. First, the exact check statuses and codes the pipeline uses:
+
+<details><summary>🔧 Bash – Collect check statuses and reason codes in use</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && grep -n 'status=\\|\"ok\"\\|quote_not_found\\|value_not_in_quote\\|url_dead\\|\"blocked\"' src/investordb/validate.py | head -20 && cut -d, -f13 data/processed/claims.csv | sort | uniq -c && grep -o '\"reason\": \"[A-Z_0-9]*\"\\|\"REVIEW_[A-Z_]*\"\\|\"OOS_[A-Z_]*\"\\|\"E[0-9]\"' src/investordb/rules.py src/investordb/pipeline.py src/investordb/refine.py | sort -u | head -30",
+  "description": "Collect check statuses and reason codes in use"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+173:    status: str  # ok | url_dead | blocked | quote_not_found | value_not_in_quote
+185:        http_status=page.status_code, text_sha256=page.sha256, fetched_at=page.fetched_at, checked_url=page.final_url
+187:    if page.outcome != "ok":
+188:        return ClaimCheck(status=page.outcome, quote_score=None, detail=page.error or "", **base)
+191:        return ClaimCheck(status="quote_not_found", quote_score=score, **base)
+193:        return ClaimCheck(status="value_not_in_quote", quote_score=score, detail=f"value={value!r}", **base)
+194:    return ClaimCheck(status="ok", quote_score=score, **base)
+    164 
+      1  212 VC a několik angel investorů."
+      1  AI"
+      8  Anthropic
+      1  Bucharest
+      1  Kaya VC
+      1  Masarykova 26
+      1  Multifaceted Capital
+      1  N1 Ventures
+      6  VRgineers
+      1  Venture Capital"
+      1  Vodičkova 31
+      5  Wflow a Rekenber."
+      1  a venture capital entity
+      1  a.s.
+      1  and Litovel."
+      1  and Tensor Ventures."
+      1  and servicing
+      1  bulharskou platformu NOLD."
+      1  d.o.o."
+      1  for a sum in the lower tens of millions of euros."
+      1  has raised $4 million in a Seed round. The round was led by Tensor Ventures
+      1  has raised €1 million in pre-Seed funding."
+      1  have also significantly increased their stakes"
+      1  jak se informace šíří"
+      1  je regulovaná Českou národní bankou"
+      1  pričom preferovaná dĺžka investície predstavuje 5-7 rokov."
+      1  s.r.o. from CIB Group"
+      1  u.ventures
+      1  with a first close of €70 million."
+      3 "
+      1 "Across Private Investments
+      1 "INVESTIKA
+      1 "Inven Capital
+      1 "Minimálna výška našej investície je 400tis. EUR
+      1 "Spoločnosť Sandberg Capital
+      1 "retail and e-commerce
+      1 2014-09-22
+      1 2018-10-25
+      1 2019-06-07
+      2 2020-05-27
+      1 2021-03-01
+      1 2021-09-23
+      1 2022-06-23
+      1 2022-07-12
+      1 2022-08-30
+      2 2022-08-31
+      1 2022-09-07
+      2 2022-11-01
+      1 2023-01-06
+      1 2023-04-13
+      4 2023-06-27
+      1 2023-12-22
+      1 2024-01-22
+      1 2024-05-01
+      2 2024-05-22
+      1 2024-06-26
+      3 2024-07-30
+      1 2024-09-30
+      1 2025-01-14
+      1 2025-02-21
+      1 2025-04-28
+      1 2025-05-16
+      1 2025-06-12
+      1 2025-08-04
+      1 2025-09-10
+      1 2025-09-24
+      1 2025-10-21
+      1 2025-12-10
+      1 2026-02-12
+      1 2026-06-10
+      1 2026-06-12
+      3 2026-06-20
+      1 25 milionu eur
+      1 5 milionu eur"
+      1 6 milióna eur"
+      6 T1
+    186 T2
+    108 T3
+      2 T4
+      1 auto_check
+      1 blocked
+     30 day
+      5 forbidden_source
+      2 https://depoventures.com
+      1 https://www.espirainvestments.com
+      1 https://www.unquote.com/cee/news/3028445/zero-one-hundred-targets-eur-15m-for-new-funds-first-close
+      7 inferred
+    151 ok
+      6 quote_not_found
+     78 stated
+src/investordb/pipeline.py:"E7"
+src/investordb/pipeline.py:"E8"
+src/investordb/pipeline.py:"rea
+… [skrátené, 528 znakov – plné znenie v raw/]
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:11:40
+
+I have all the codes. Writing the data dictionary module:
+
+<details><summary>🔧 Write – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\datadict.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\datadict.py",
+  "content": "\"\"\"Data dictionary of the delivered database - one source for docs/DATA.md and the dictionary sheet of the Excel export.\n\n    python -m investordb.cli datadict        -> docs/DATA.md\n\"\"\"\n\nfrom __future__ import annotations\n\nfrom pathlib import Path\n\nROOT = Path(__file__).resolve().parents[2]\nOUT = ROOT / \"docs\" / \"DATA.md\"\n\nFILES = [\n    (\"data/processed/investors_refined.csv\", \"**Výsledná databáza:** 24 zaradených investorov po spresnení (D38) a doplnení \"\n     \"polí (D41), jeden riadok = jeden investor.\"),\n    (\"data/processed/investori_cz_sk.xlsx\", \"To isté v Exceli: hárky Investori, Tvrdenia (citácie s odkazmi na zdroj), \"\n     \"Popis stĺpcov a O súbore.\"),\n    (\"data/processed/investors.csv\", \"Zmrazená verzia v3 (tag `pilot-frozen-v3`), na ktorej je zmeraná presnosť \"\n     \"([PRECISION_REPORT.md](PRECISION_REPORT.md)). Rovnaké stĺpce bez posledných štyroch.\"),\n    (\"data/processed/claims.csv\", \"Tvrdenia agentov zo zberu dôkazov (všetci kandidáti), každé so zdrojom, doslovnou \"\n     \"citáciou a výsledkom strojovej kontroly.\"),\n    (\"data/processed/claims_refined.csv\", \"Tvrdenia zo spresnenia (D38) + stĺpec `verdict` (stav fondu alebo verdikt k dátumu).\"),\n    (\"data/processed/claims_gapfill.csv\", \"Tvrdenia z doplnenia chýbajúcich polí (D41).\"),\n    (\"data/processed/decisions.csv\", \"Rozhodnutie pre všetkých 133 kandidátov (zaradený / vyradený s kódom / mimo rozsahu \"\n     \"/ na kontrolu).\"),\n    (\"data/processed/rejected.csv\", \"Vyradení a mimo rozsahu, s kódom dôvodu.\"),\n    (\"data/processed/needs_review.csv\", \"Záznamy, ktoré pravidlá nevedeli rozhodnúť (na ručnú kontrolu).\"),\n    (\"data/processed/candidates.csv\", \"Všetkých 206 kandidátov z objavovania (zoznam A, B, kontrolné sady).\"),\n]\n\n# (column, header in the Excel sheet, description)\nINVESTOR_COLUMNS = [\n    (\"name\", \"Investor\", \"Názov značky investora.\"),\n    (\"hq_country\", \"Krajina\", \"Krajina sídla investičného tímu (CZ / SK) – nie domicil fondu.\"),\n    (\"investor_types\", \"Typ\", \"Typ investora (kódy nižšie): `vc`, `cvc` (korporátny VC), `public_vc` (štátny VC); môže \"\n     \"byť viac typov.\"),\n    (\"sectors\", \"Sektory\", \"Sektorové zameranie, kódy nižšie; `sector_agnostic` = bez sektorového zamerania.\"),\n    (\"sectors_basis\", \"Sektory – základ\", \"`stated` = investor zameranie uvádza; `inferred` = odvodené z portfólia \"\n     \"(každý sektor dokladá citácia o firme z portfólia).\"),\n    (\"stages\", \"Štádiá\", \"Štádiá investícií (kódy nižšie).\"),\n    (\"stages_basis\", \"Štádiá – základ\", \"`stated` / `inferred`, ako pri sektoroch.\"),\n    (\"ticket_min\", \"Tiket od (ako v zdroji)\", \"Typická výška investície do jednej firmy – dolná hranica, presne ako v zdroji.\"),\n    (\"ticket_max\", \"Tiket do (ako v zdroji)\", \"Horná hranica, presne ako v zdroji.\"),\n    (\"ticket_min_eur\", \"Tiket od (EUR)\", \"Dolná hranica v EUR; prepočet kurzom ECB z posledného dňa pred `as_of`.\"),\n    (\"ticket_max_eur\", \"Tiket do (EUR)\", \"Horná hranica v EUR.\"),\n    (\"total_capital_eur\", \"Celkový kapitál (EUR)\", \"Uvedené AUM, inak súčet fondov, ktoré získali peniaze (uzavretie alebo \"\n     \"prvé uzavretie); cieľ fondu sa nepočíta (D17, D38).\"),\n    (\"capital_method\", \"Spôsob výpočtu kapitálu\", \"`aum_stated` = investor uvádza AUM; `sum_of_N_closed_funds` = súčet N fondov.\"),\n    (\"capital_approx\", \"Kapitál približne\", \"1 = zdroj uvádza približnú sumu („bezmála“, „nearly“…).\"),\n    (\"capital_note\", \"Poznámka ku kapitálu\", \"Prepočty mien a fondy, ktoré majú zatiaľ len prvé uzavretie.\"),\n    (\"funds\", \"Fondy\", \"Všetky overené fondy so sumou ako v zdroji a stavom (uzavretý / prvé uzavretie / cieľ).\"),\n    (\"funds_target\", \"Plánované fondy (nezapočítané)\", \"Cieľové veľkosti fondov – do kapit
+… [skrátené, 9488 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\datadict.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:12:39
+
+Now the Excel export module. It reuses the same rebuild as the CSV, so the two can't drift apart:
+
+<details><summary>🔧 Write – C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\export.py</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\export.py",
+  "content": "\"\"\"Excel export of the final database for readers who open data in a spreadsheet.\n\n    python -m investordb.cli export-xlsx     -> data/processed/investori_cz_sk.xlsx\n\nSheets: Investori (one row per investor, readable labels), Tvrdenia (every verified claim behind the values, with a\nclickable source and the verbatim quote), Popis stĺpcov (data dictionary), O súbore (what this is, how it was made).\nPlain data, no formulas: every number comes from investors_refined.csv.\n\"\"\"\n\nfrom __future__ import annotations\n\nimport json\nfrom datetime import date\nfrom pathlib import Path\n\nfrom openpyxl import Workbook\nfrom openpyxl.styles import Alignment, Border, Font, PatternFill, Side\nfrom openpyxl.utils import get_column_letter\n\nfrom investordb.datadict import CLAIM_COLUMNS, CODES, INVESTOR_COLUMNS, SECTOR_SK, STAGE_SK, TYPE_SK\nfrom investordb.evidence import domain\nfrom investordb.refine import PROCESSED, _value, rebuild_all\n\nOUT = PROCESSED / \"investori_cz_sk.xlsx\"\nREPO = \"https://github.com/Matush77/Clientelo-task-a\"\nEXPLORER = \"https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS\"\n\nFONT = \"Arial\"\nHEAD_FILL = PatternFill(\"solid\", fgColor=\"1A44A3\")\nBAND_FILL = PatternFill(\"solid\", fgColor=\"F2F5F9\")\nTHIN = Side(style=\"thin\", color=\"C9D2DD\")\nNUMBER_COLS = {\"ticket_min_eur\", \"ticket_max_eur\", \"total_capital_eur\", \"n_investments\", \"n_investments_36m\",\n               \"capital_approx\"}\nLINK_COLS = {\"last_investment_source\", \"registry_url\", \"website\"}\nORIGIN = {\"refined\": \"spresnenie (D38)\", \"gapfill\": \"doplnenie (D41)\"}\nFIELD_SK = {\"investments\": \"investícia\", \"funds\": \"fond\", \"total_capital\": \"AUM\", \"ticket\": \"tiket\", \"sectors\": \"sektory\",\n            \"stages\": \"štádiá\", \"hq_country\": \"sídlo\", \"investor_type\": \"typ\", \"identity\": \"identita\"}\nFIELD_ORDER = list(FIELD_SK)\n\n\ndef _labels(codes: str, table: dict) -> str:\n    return \", \".join(table.get(c, c) for c in codes.split(\",\") if c)\n\n\ndef _cell_value(col: str, row: dict):\n    v = row.get(col, \"\")\n    if col in NUMBER_COLS:\n        return float(v) if v not in (\"\", None) else None\n    if col == \"sectors\":\n        return _labels(v, SECTOR_SK)\n    if col == \"stages\":\n        return _labels(v, STAGE_SK)\n    if col == \"investor_types\":\n        return _labels(v, TYPE_SK)\n    if col in (\"sectors_basis\", \"stages_basis\"):\n        return {\"stated\": \"uvádza investor\", \"inferred\": \"odvodené z portfólia\"}.get(v, v)\n    if col == \"not_public\":\n        return \", \".join({\"sectors\": \"sektory\", \"stages\": \"štádiá\", \"ticket\": \"tiket\",\n                          \"total_capital\": \"celkový kapitál\"}.get(f, f) for f in v.split(\"; \") if f)\n    return v\n\n\ndef _claim_text(c: dict) -> str:\n    v = _value(c) if c.get(\"value\", \"\").startswith(\"{\") else None\n    if c[\"field\"] == \"investments\" and v:\n        parts = [v.get(\"company\"), c.get(\"event_date\", \"\")[:10] if c.get(\"deal_context\") == \"deal\" else \"bez dátumu obchodu\",\n                 v.get(\"amount\")]\n        return \" · \".join(str(p) for p in parts if p)\n    if c[\"field\"] == \"funds\" and v:\n        status = {\"final_close\": \"uzavretý\", \"first_close\": \"prvé uzavretie\", \"target\": \"cieľ\"}.get(v.get(\"status\"), \"\")\n        return f\"{v.get('name') or 'fond'}: {v.get('size') or '?'}\" + (f\" ({status})\" if status else \"\")\n    if c[\"field\"] == \"ticket\" and v:\n        return \" – \".join(str(x) for x in (v.get(\"min\"), v.get(\"max\")) if x)\n    if c[\"field\"] in (\"sectors\", \"stages\"):\n        codes = json.loads(c[\"value\"]) if c.get(\"value\") else []\n        codes = [codes] if isinstance(codes, str) else codes or []\n        table = SECTOR_SK if c[\"field\"] == \"sectors\" else STAGE_SK\n        return
+… [skrátené, 6715 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\Desktop\Interview_Project\Project_a\src\investordb\export.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:13:18
+
+Two fixes before running it: claims need an explicit origin tag (collection, refinement or gap-fill) set where they're loaded, and the cell-font condition was tangled. Adding the tag in the rebuild:
+
+<details><summary>🔧 Bash – Tag claim origin and fix the font condition</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && cat > \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_origin.py\" <<'EOF'\nfrom pathlib import Path\nR = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\")\np = R / \"refine.py\"\ns = p.read_text(encoding=\"utf-8\")\nold = '''    new = _read(CLAIMS_REFINED) if CLAIMS_REFINED.exists() else []\n'''\nnew = '''    new = _read(CLAIMS_REFINED) if CLAIMS_REFINED.exists() else []\n    for c in new:\n        c[\"origin\"] = \"refined\"\n'''\nassert s.count(old) == 1; s = s.replace(old, new)\nold = '''    for c in (_read(CLAIMS_GAPFILL) if CLAIMS_GAPFILL.exists() else []):\n        gapfill[c[\"candidate_id\"]].append(c)'''\nnew = '''    for c in (_read(CLAIMS_GAPFILL) if CLAIMS_GAPFILL.exists() else []):\n        c[\"origin\"] = \"gapfill\"\n        gapfill[c[\"candidate_id\"]].append(c)'''\nassert s.count(old) == 1; s = s.replace(old, new)\np.write_text(s, encoding=\"utf-8\")\n\ne = R / \"export.py\"\nt = e.read_text(encoding=\"utf-8\")\nold = '''            origin = \"verdict\" in c and \"refined\" or (\"gapfill\" if c.get(\"_gapfill\") else \"\")\n'''\nassert t.count(old) == 1; t = t.replace(old, '''            origin = c.get(\"origin\", \"\")\n''')\nold = '''            if cell.font.name != FONT or not cell.hyperlink:\n                cell.font = Font(name=FONT, bold=cell.column == 1)'''\nassert t.count(old) == 1; t = t.replace(old, '''            if not cell.hyperlink:  # links keep their own blue, underlined font\n                cell.font = Font(name=FONT, bold=cell.column == 1)''')\ne.write_text(t, encoding=\"utf-8\")\nprint(\"ok\")\nEOF\n.venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_origin.py\" && sed -i 's/\\r$//' src/investordb/refine.py src/investordb/export.py && grep -n \"def cmd_explorer\" src/investordb/cli.py",
+  "description": "Tag claim origin and fix the font condition"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+199:def cmd_explorer(args: argparse.Namespace) -> None:
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:13:28
+
+Adding the `export-xlsx` and `datadict` commands to the CLI:
+
+<details><summary>🔧 Bash – Add CLI commands and generate the Excel file and DATA.md</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && cat > \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_cli_export.py\" <<'EOF'\nfrom pathlib import Path\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\src\\investordb\\cli.py\")\ns = p.read_text(encoding=\"utf-8\")\nold = '''def cmd_explorer(args: argparse.Namespace) -> None:'''\nnew = '''def cmd_export_xlsx(args: argparse.Namespace) -> None:\n    \"\"\"Write data/processed/investori_cz_sk.xlsx - the final database with every quote and a clickable source.\"\"\"\n    from datetime import date\n\n    from investordb.export import build\n\n    print(build(date.fromisoformat(args.as_of)))\n\n\ndef cmd_datadict(args: argparse.Namespace) -> None:\n    \"\"\"Write docs/DATA.md - every column and code of the delivered data.\"\"\"\n    from investordb.datadict import write\n\n    print(write())\n\n\ndef cmd_explorer(args: argparse.Namespace) -> None:'''\nassert s.count(old) == 1; s = s.replace(old, new)\nold = '''    p = sub.add_parser(\"explorer\",'''\nnew = '''    p = sub.add_parser(\"export-xlsx\", help=\"write data/processed/investori_cz_sk.xlsx (final database, sources, dictionary)\")\n    p.add_argument(\"--as-of\", default=\"2026-10-09\")\n    p.set_defaults(func=cmd_export_xlsx)\n\n    p = sub.add_parser(\"datadict\", help=\"write docs/DATA.md (data dictionary)\")\n    p.set_defaults(func=cmd_datadict)\n\n    p = sub.add_parser(\"explorer\",'''\nassert s.count(old) == 1; s = s.replace(old, new)\np.write_text(s, encoding=\"utf-8\")\nprint(\"ok\")\nEOF\n.venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_cli_export.py\" && sed -i 's/\\r$//' src/investordb/cli.py && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli export-xlsx && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -m investordb.cli datadict && git status --short",
+  "description": "Add CLI commands and generate the Excel file and DATA.md"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+C:\Users\matus\Desktop\Interview_Project\Project_a\data\processed\investori_cz_sk.xlsx
+C:\Users\matus\Desktop\Interview_Project\Project_a\docs\DATA.md
+ M pyproject.toml
+ M src/investordb/cli.py
+ M src/investordb/refine.py
+?? data/processed/investori_cz_sk.xlsx
+?? docs/DATA.md
+?? src/investordb/datadict.py
+?? src/investordb/export.py
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:13:42
+
+Both files are generated. Inspecting the workbook's contents to verify it:
+
+<details><summary>🔧 Bash – Inspect the generated Excel workbook</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nfrom openpyxl import load_workbook\nwb = load_workbook('data/processed/investori_cz_sk.xlsx')\nprint(wb.sheetnames, 'active:', wb.active.title)\nfor ws in wb.worksheets:\n    print('==', ws.title, ws.max_row, 'x', ws.max_column, 'freeze', ws.freeze_panes, 'filter', ws.auto_filter.ref)\nws = wb['Investori']\nprint([c.value for c in ws[1]][:12])\nfor r in (2, 3, 22):\n    print([ws.cell(row=r, column=i).value for i in (1,2,3,4,5,8,10,11,12,18)])\nprint('link:', ws.cell(row=2, column=[c.value for c in ws[1]].index('Web')+1).hyperlink.target, 'fmt', ws.cell(row=2, column=12).number_format)\nwc = wb['Tvrdenia']\nfor r in (2, 3, 40, 200):\n    print([wc.cell(row=r, column=i).value for i in range(1, 12)][:11])\nimport collections; print(collections.Counter(wc.cell(row=r, column=10).value for r in range(2, wc.max_row+1)))\nprint('fonts:', {c.font.name for row in ws.iter_rows() for c in row})\n\"",
+  "description": "Inspect the generated Excel workbook"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+['O súbore', 'Investori', 'Tvrdenia', 'Popis stĺpcov'] active: Investori
+== O súbore 9 x 2 freeze None filter None
+== Investori 25 x 36 freeze B2 filter A1:AJ25
+== Tvrdenia 427 x 11 freeze B2 filter A1:K427
+== Popis stĺpcov 87 x 4 freeze A2 filter A1:D87
+['Investor', 'Krajina', 'Typ', 'Sektory', 'Sektory – základ', 'Štádiá', 'Štádiá – základ', 'Tiket od (ako v zdroji)', 'Tiket do (ako v zdroji)', 'Tiket od (EUR)', 'Tiket do (EUR)', 'Celkový kapitál (EUR)']
+['Credo Ventures', 'CZ', 'VC', 'bez sektorového zamerania', 'odvodené z portfólia', '$1M', 893975, 4469873, 324669766, None]
+['Czech Founders VC', 'CZ', 'VC', 'proptech, AI a dáta, médiá/hry, life sciences', 'odvodené z portfólia', '50 tisíc', 50000, 350000, 10000000, None]
+['Tilia Impact Ventures', 'CZ', 'VC', 'agri/food, cleantech, govtech, edtech', 'odvodené z portfólia', '0.3', 300000, 1200000, 27762078, None]
+link: https://www.credoventures.com fmt #,##0 "€"
+['Credo Ventures', 'investícia', 'SuperPlane · bez dátumu obchodu · $2.6 Million', 'SuperPlane Secures $2.6 Million in Pre-Seed Funding Led by Credo Ventures', 'raising.fi', '2026-06-25', 'tlač', 'uvádza zdroj', 'zmienka', 'zber dôkazov', 100]
+['Credo Ventures', 'investícia', 'SuperPlane · 2026-06-24 · €2.28M', 'SuperPlane raises €2.28M in pre-seed funding led by Credo Ventures to build an open-source control plane for AI agents', 'thesaasnews.com', '2026-06-24', 'tlač', 'uvádza zdroj', 'správa o obchode', 'spresnenie (D38)', 100]
+['Czech Founders VC', 'identita', 'Czech Founders Ventures s.r.o.', '© Czech Founders Ventures s.r.o.', 'czechfounders.vc', None, 'web investora', 'uvádza zdroj', None, 'zber dôkazov', 100]
+['Look AI Ventures', 'štádiá', 'pre-seed, seed', 'The LAIV fund focuses on AI start-ups in pre-seed and seed stages with the potential to disrupt major industries.', 'emerging-europe.com', '2023-04-14', 'tlač', 'uvádza zdroj', None, 'doplnenie (D41)', 100]
+Counter({'zber dôkazov': 259, 'spresnenie (D38)': 136, 'doplnenie (D41)': 31})
+fonts: {'Arial'}
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+The workbook checks out: 4 sheets with Investori holding 24 labeled EUR entries and Tvrdenia backing all 426 verified claims with sources and quotes, all in Arial. Next I'll update the README to feature the final database and new deliverables up front.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Read README head and rows to restructure</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -n 1,12p README.md && grep -n \"Zaradených investorov\\|Dáta zo vzorky so zdrojom\\|Zdroj a dátum, ktoré dokladajú\\|Prehliadač investorov\\|Zhrnutie na jednu stranu\" README.md | cut -c1-160",
+  "description": "Read README head and rows to restructure"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+# Clientelo – Zadanie A: Spoľahlivá databáza investorov
+
+Návrh a overenie postupu, ako z **verejných zdrojov** zostaviť databázu investorov do firiem, v ktorej je **každý
+záznam skutočný investor** a **každý údaj má zdroj, dátum a doslovnú citáciu** – overenú programom, nie len AI.
+Pilot: **VC investori so sídlom v Česku a na Slovensku**.
+
+## Výsledky v skratke
+
+<!-- RESULTS:START -->
+| | |
+|---|---|
+| Kandidátov z verejných zdrojov | 206 (po deduplikácii), z toho 133 prešlo zberom dôkazov |
+13:| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) – [investors.csv](data/processed/investors.csv), spresnená verzia [inves
+40:| **Zhrnutie na jednu stranu** | [docs/SUMMARY.md](docs/SUMMARY.md) |
+42:| Dáta zo vzorky so zdrojom pri každom údaji | [data/processed/investors.csv](data/processed/investors.csv) (1 riadok = 1 investor) + [claims.csv](data/pr
+43:| Zdroj a dátum, ktoré dokladajú, že subjekt investuje | stĺpce `last_investment`, `last_investment_date`, `last_investment_source` v investors.csv; vš
+47:| Prehliadač investorov: každá hodnota so zdrojom a citáciou | [docs/explorer.html](docs/explorer.html) (stiahnuť a otvoriť v prehliadači, funguje off
+````
+
+</details>
+
+<details><summary>🔧 Bash – Compare tiers between frozen and refined databases</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && PYTHONIOENCODING=utf-8 .venv/Scripts/python.exe -c \"\nimport csv, collections\nfor f in ('investors.csv','investors_refined.csv'):\n    R = list(csv.DictReader(open('data/processed/'+f, encoding='utf-8')))\n    print(f, len(R), collections.Counter(r['hq_country'] for r in R), collections.Counter(r['tier'] for r in R), collections.Counter(r['status'] for r in R))\n\"",
+  "description": "Compare tiers between frozen and refined databases"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+investors.csv 24 Counter({'CZ': 20, 'SK': 4}) Counter({'A': 15, 'B': 9}) Counter({'INCLUDED': 24})
+investors_refined.csv 24 Counter({'CZ': 20, 'SK': 4}) Counter({'A': 18, 'B': 6}) Counter({'INCLUDED': 24})
+````
+
+</details>
+
+<details><summary>🔧 Write – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\scratchpad\\edit_readme_final.py",
+  "content": "import re\nfrom pathlib import Path\n\np = Path(r\"C:\\Users\\matus\\Desktop\\Interview_Project\\Project_a\\README.md\")\ns = p.read_text(encoding=\"utf-8\")\n\n\ndef rep(old, new):\n    global s\n    assert s.count(old) == 1, (old[:80], s.count(old))\n    s = s.replace(old, new)\n\n\nrep(\"\"\"# Clientelo – Zadanie A: Spoľahlivá databáza investorov\n\nNávrh a overenie postupu, ako z **verejných zdrojov** zostaviť databázu investorov do firiem, v ktorej je **každý\nzáznam skutočný investor** a **každý údaj má zdroj, dátum a doslovnú citáciu** – overenú programom, nie len AI.\nPilot: **VC investori so sídlom v Česku a na Slovensku**.\n\"\"\", \"\"\"# Clientelo – Zadanie A: Spoľahlivá databáza investorov\n\n[![testy](https://github.com/Matush77/Clientelo-task-a/actions/workflows/tests.yml/badge.svg)](https://github.com/Matush77/Clientelo-task-a/actions/workflows/tests.yml)\n\nNávrh a overenie postupu, ako z **verejných zdrojov** zostaviť databázu investorov do firiem, v ktorej je **každý\nzáznam skutočný investor** a **každý údaj má zdroj, dátum a doslovnú citáciu** – overenú programom, nie len AI.\nPilot: **VC investori so sídlom v Česku a na Slovensku**.\n\n**Kde začať**\n\n| | |\n|---|---|\n| Zhrnutie na jednu stranu | [docs/SUMMARY.md](docs/SUMMARY.md) |\n| **Výsledná databáza** (24 investorov) | [investors_refined.csv](data/processed/investors_refined.csv) · v Exceli s citáciami a odkazmi na zdroje: [investori_cz_sk.xlsx](data/processed/investori_cz_sk.xlsx) |\n| Prehliadač investorov online (SK / EN) | [claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) · [po anglicky](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS#en) · offline [docs/explorer.html](docs/explorer.html) |\n| Popis všetkých stĺpcov a kódov | [docs/DATA.md](docs/DATA.md) |\n| Odovzdaná verzia | tag [`v1.0-submission`](https://github.com/Matush77/Clientelo-task-a/tree/v1.0-submission) |\n\"\"\")\n\nrep(\"| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôvery A: 15, B: 9) – [investors.csv](data/processed/investors.csv), spresnená verzia [investors_refined.csv](data/processed/investors_refined.csv) |\",\n    \"| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôkazov A: 18, B: 6) – výsledná databáza [investors_refined.csv](data/processed/investors_refined.csv) / [Excel](data/processed/investori_cz_sk.xlsx); zmrazená v3, na ktorej je zmeraná presnosť: [investors.csv](data/processed/investors.csv) (A: 15, B: 9) |\")\n\n# requirement map: the final database first\ns = re.sub(r\"\\| \\*\\*Zhrnutie na jednu stranu\\*\\* \\| \\[docs/SUMMARY.md\\]\\(docs/SUMMARY.md\\) \\|\\n\", \"\", s)\nrep(\"| Dáta zo vzorky so zdrojom pri každom údaji | [data/processed/investors.csv](data/processed/investors.csv) (1 riadok = 1 investor) +\",\n    \"| Dáta zo vzorky so zdrojom pri každom údaji | **výsledná databáza** [investors_refined.csv](data/processed/investors_refined.csv) a [Excel](data/processed/investori_cz_sk.xlsx) (hárok Tvrdenia = citácia a odkaz pri každej hodnote), popis stĺpcov [DATA.md](docs/DATA.md); zmrazená v3 [investors.csv](data/processed/investors.csv) (1 riadok = 1 investor) +\")\nrep(\"stĺpce `last_investment`, `last_investment_date`, `last_investment_source` v investors.csv;\",\n    \"stĺpce `last_investment`, `last_investment_date`, `last_investment_source` v investors_refined.csv;\")\nrep(\"| Prehliadač investorov: každá hodnota so zdrojom a citáciou | [docs/explorer.html](docs/explorer.html) (stiahnuť a otvoriť v prehliadači, funguje offline) |\",\n    \"| Prehliadač investorov: každá hodnota so zdrojom a citáciou | [online](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) alebo [docs/explorer.html](docs/explorer.html) (stiahnuť a otvoriť v prehliadači, funguje offline) |\")\n\n# run section
+… [skrátené, 503 znakov – plné znenie v raw/]
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+File created successfully at: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\scratchpad\edit_readme_final.py (file state is current in your context — no need to Read it back)
+````
+
+</details>
+
+<details><summary>🔧 Bash – Restructure the README around the final database</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && .venv/Scripts/python.exe \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/scratchpad/edit_readme_final.py\" && sed -n 1,25p README.md",
+  "description": "Restructure the README around the final database"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+ok
+# Clientelo – Zadanie A: Spoľahlivá databáza investorov
+
+[![testy](https://github.com/Matush77/Clientelo-task-a/actions/workflows/tests.yml/badge.svg)](https://github.com/Matush77/Clientelo-task-a/actions/workflows/tests.yml)
+
+Návrh a overenie postupu, ako z **verejných zdrojov** zostaviť databázu investorov do firiem, v ktorej je **každý
+záznam skutočný investor** a **každý údaj má zdroj, dátum a doslovnú citáciu** – overenú programom, nie len AI.
+Pilot: **VC investori so sídlom v Česku a na Slovensku**.
+
+**Kde začať**
+
+| | |
+|---|---|
+| Zhrnutie na jednu stranu | [docs/SUMMARY.md](docs/SUMMARY.md) |
+| **Výsledná databáza** (24 investorov) | [investors_refined.csv](data/processed/investors_refined.csv) · v Exceli s citáciami a odkazmi na zdroje: [investori_cz_sk.xlsx](data/processed/investori_cz_sk.xlsx) |
+| Prehliadač investorov online (SK / EN) | [claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS) · [po anglicky](https://claude.ai/artifact/QNrw3gMzFoMqE9kSpoD1SS#en) · offline [docs/explorer.html](docs/explorer.html) |
+| Popis všetkých stĺpcov a kódov | [docs/DATA.md](docs/DATA.md) |
+| Odovzdaná verzia | tag [`v1.0-submission`](https://github.com/Matush77/Clientelo-task-a/tree/v1.0-submission) |
+
+## Výsledky v skratke
+
+<!-- RESULTS:START -->
+| | |
+|---|---|
+| Kandidátov z verejných zdrojov | 206 (po deduplikácii), z toho 133 prešlo zberom dôkazov |
+| **Zaradených investorov** | **24** (20 CZ, 4 SK; úroveň dôkazov A: 18, B: 6) – výsledná databáza [investors_refined.csv](data/processed/investors_refined.csv) / [Excel](data/processed/investori_cz_sk.xlsx); zmrazená v3, na ktorej je zmeraná presnosť: [investors.csv](data/processed/investors.csv) (A: 15, B: 9) |
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+I'll set up a GitHub Actions workflow to run tests and the integrity check on every push, plus add a test ensuring the data dictionary stays in sync with the database's columns.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Add CI workflow and data-dictionary tests</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && mkdir -p .github/workflows && cat > .github/workflows/tests.yml <<'EOF'\nname: tests\n\non:\n  push:\n  pull_request:\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v5\n        with:\n          python-version: \"3.13\"\n      - name: Install\n        run: python -m pip install -e \".[dev]\"\n      - name: Unit tests\n        run: python -m pytest -q\n      - name: Database integrity (every included investor has a verified dated deal, every cell a verified claim)\n        run: python -m investordb.cli check-db\nEOF\ncat > tests/test_datadict.py <<'EOF'\n\"\"\"The data dictionary must document every column of the delivered database.\"\"\"\n\nimport csv\nfrom pathlib import Path\n\nfrom investordb.datadict import INVESTOR_COLUMNS, render\n\nROOT = Path(__file__).resolve().parents[1]\n\n\ndef test_every_column_of_the_final_database_is_documented():\n    with (ROOT / \"data\" / \"processed\" / \"investors_refined.csv\").open(encoding=\"utf-8\") as f:\n        header = next(csv.reader(f))\n    documented = {c for c, _, _ in INVESTOR_COLUMNS}\n    assert set(header) - documented == set()\n    assert documented - set(header) == set()\n\n\ndef test_data_md_is_up_to_date():\n    assert (ROOT / \"docs\" / \"DATA.md\").read_text(encoding=\"utf-8\") == render()\nEOF\n.venv/Scripts/python.exe -m pytest -q 2>&1 | tail -2",
+  "description": "Add CI workflow and data-dictionary tests"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+........................                                                 [100%]
+168 passed in 0.62s
+````
+
+</details>
+
+<details><summary>💭 Úvaha modelu</summary>
+
+````text
+All 168 tests pass. I'll update the test count in the README and push the changes—if the workflow file push is rejected due to missing "workflow" permission on your credentials, I'll let you know.
+
+
+````
+
+</details>
+
+<details><summary>🔧 Bash – Commit polish and push, including the workflow</summary>
+
+````text
+{
+  "command": "cd \"C:/Users/matus/Desktop/Interview_Project/Project_a\" && sed -i 's/robí deterministický kód (162 testov)/robí deterministický kód (168 testov)/' README.md && grep -c \"168 testov\" README.md && sed -n 1,12p docs/DATA.md | cut -c1-150 && git add .github/workflows/tests.yml tests/test_datadict.py src/investordb/datadict.py src/investordb/export.py src/investordb/cli.py src/investordb/refine.py pyproject.toml data/processed/investori_cz_sk.xlsx docs/DATA.md README.md && git commit -q -m \"Reviewer polish: refined database presented as the final result, Excel export with every quote and clickable source, data dictionary (docs/DATA.md, generated), CI workflow (tests + integrity check) with badge\n\n- README 'Kde začať' block: summary, final database (CSV / Excel), online explorer (SK / EN), data dictionary, submission tag\n- export.py: sheets O súbore, Investori, Tvrdenia (426 verified claims with origin), Popis stĺpcov\n- tests: the dictionary documents every column and DATA.md is up to date\n- openpyxl added to dependencies\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\" && git push origin main 2>&1 | tail -3 && git log --oneline -1",
+  "description": "Commit polish and push, including the workflow"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+1
+# Dátový slovník
+
+*Generované skriptom `python -m investordb.cli datadict`. Rovnaký popis je v hárku „Popis stĺpcov“ súboru [investori_cz_sk.xlsx](../data/proc
+
+## Súbory
+
+| Súbor | Obsah |
+|---|---|
+| [data/processed/investors_refined.csv](../data/processed/investors_refined.csv) | **Výsledná databáza:** 24 zaradených investorov po spresnení 
+| [data/processed/investori_cz_sk.xlsx](../data/processed/investori_cz_sk.xlsx) | To isté v Exceli: hárky Investori, Tvrdenia (citácie s odkazmi na
+| [data/processed/investors.csv](../data/processed/investors.csv) | Zmrazená verzia v3 (tag `pilot-frozen-v3`), na ktorej je zmeraná presnosť ([PRE
+| [data/processed/claims.csv](../data/processed/claims.csv) | Tvrdenia agentov zo zberu dôkazov (všetci kandidáti), každé so zdrojom, doslovnou c
+To https://github.com/Matush77/Clientelo-task-a.git
+   2a2cad1..08e2009  main -> main
+08e2009 Reviewer polish: refined database presented as the final result, Excel export with every quote and clickable source, data dictionary (docs/DATA.md, generated), CI workflow (tests + integrity check) with badge
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:14:49
+
+Status: pushed, and GitHub accepted the workflow file. Now checking whether the first CI run passes.
+
+<details><summary>🔧 Bash – Check the GitHub Actions run status</summary>
+
+````text
+{
+  "command": "curl -s \"https://api.github.com/repos/Matush77/Clientelo-task-a/actions/runs?per_page=3\" | .venv/Scripts/python.exe -c \"\nimport json, sys\nd = json.load(sys.stdin)\nfor r in d.get('workflow_runs', [])[:3]:\n    print(r['name'], r['head_sha'][:7], r['status'], r['conclusion'], r['html_url'])\nprint(d.get('message', ''))\n\" 2>&1 || true",
+  "description": "Check the GitHub Actions run status"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+tests 08e2009 queued None https://github.com/Matush77/Clientelo-task-a/actions/runs/38030262770
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:14:56
+
+The run is queued. I'm watching it in the background; I get notified when it finishes.
+
+<details><summary>🔧 Bash – Wait for the CI run to complete</summary>
+
+````text
+{
+  "command": "for i in $(seq 1 40); do out=$(curl -s \"https://api.github.com/repos/Matush77/Clientelo-task-a/actions/runs/38030262770\"); st=$(echo \"$out\" | grep -o '\"status\": *\"[a-z_]*\"' | head -1); co=$(echo \"$out\" | grep -o '\"conclusion\": *\"\\{0,1\\}[a-z_]*' | head -1); if echo \"$st\" | grep -q completed; then echo \"$st $co\"; exit 0; fi; sleep 15; done; echo \"timeout $st\"",
+  "description": "Wait for the CI run to complete",
+  "run_in_background": true
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+Command running in background with ID: budz2sd9s. Output is being written to: C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tasks\budz2sd9s.output. You will be notified when it completes. To check interim output, use Read on that file path.
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:15:02
+
+While CI runs: the submission tag will be created last, after a final ai-log export, so the tagged version includes the complete log.
+
+<details><summary>🔧 Read – C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a519</summary>
+
+````text
+{
+  "file_path": "C:\\Users\\matus\\AppData\\Local\\Temp\\claude\\C--Users-matus-Desktop-Interview-Project-Project-a\\02f1cc98-1d44-4e11-9082-a51941f0be85\\tasks\\budz2sd9s.output"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+
+````
+
+</details>
+
+### 🤖 Claude · 2026-10-10 06:15:10
+
+Everything for #2+3 is built and pushed except the submission tag. The CI workflow is accepted on GitHub and its first run is in progress; I'll create the tag only once that run passes.
+
+Done and pushed:
+- **Final result is clear:** the README now opens with a "Kde začať" (where to start) table: one-page summary, the final database (refined CSV and Excel), the online explorer (Slovak, plus a direct English link), the data dictionary, and a link to the submission tag. The results table names `investors_refined.csv` as the final database (evidence tier A: 18, B: 6). The frozen `investors.csv` stays as the version the precision was measured on (A: 15, B: 9).
+- **Excel export `investori_cz_sk.xlsx`:** four sheets.
+  - **O súbore (about):** what the file is and how it was made.
+  - **Investori:** one row per investor with readable labels, euro formatting and clickable websites.
+  - **Tvrdenia (claims):** all 426 verified claims, each with the verbatim quote, a clickable source and whether it came from the original collection, the refinement or the gap-filling step.
+  - **Popis stĺpcov (column descriptions):** the data dictionary.
+
+  It uses Arial, frozen headers and filters, and has no formulas, so nothing needs recalculating.
+- **Data dictionary `docs/DATA.md`:** every file, column and code. It's generated from the same source as the Excel dictionary sheet, and a test fails if a column is undocumented or the file is out of date.
+- **CI:** a GitHub Actions workflow runs all 168 tests and the database integrity check on every push, with a badge at the top of the README.
+
+Once the run finishes I'll re-export the ai-log, create and push the `v1.0-submission` tag, and confirm the badge is green.
+
+## 👤 Používateľ · 2026-10-10 06:15:46
+
+<task-notification>
+<task-id>budz2sd9s</task-id>
+<tool-use-id>toolu_013UmQ9DSachm2pVdMJycAgV</tool-use-id>
+<output-file>C:\Users\matus\AppData\Local\Temp\claude\C--Users-matus-Desktop-Interview-Project-Project-a\02f1cc98-1d44-4e11-9082-a51941f0be85\tasks\budz2sd9s.output</output-file>
+<status>completed</status>
+<summary>Background command "Wait for the CI run to complete" completed (exit code 0)</summary>
+</task-notification>
+
+<details><summary>🔧 Bash – Read the CI result and per-step outcome</summary>
+
+````text
+{
+  "command": "cat \"C:/Users/matus/AppData/Local/Temp/claude/C--Users-matus-Desktop-Interview-Project-Project-a/02f1cc98-1d44-4e11-9082-a51941f0be85/tasks/budz2sd9s.output\"; curl -s \"https://api.github.com/repos/Matush77/Clientelo-task-a/actions/runs/38030262770/jobs\" | \"C:/Users/matus/Desktop/Interview_Project/Project_a/.venv/Scripts/python.exe\" -c \"\nimport json, sys\nd = json.load(sys.stdin)\nfor j in d.get('jobs', []):\n    print(j['name'], j['conclusion'])\n    for s in j['steps']: print('  ', s['name'], s['conclusion'])\n\"",
+  "description": "Read the CI result and per-step outcome"
+}
+````
+
+</details>
+
+<details><summary>↳ výsledok nástroja</summary>
+
+````text
+"status": "completed" "conclusion": "success
+
+[exited with code 0]
+test success
+   Set up job success
+   Run actions/checkout@v4 success
+   Run actions/setup-python@v5 success
+   Install success
+   Unit tests success
+   Database integrity (every included investor has a verified dated deal, every cell a verified claim) success
+   Post Run actions/setup-python@v5 success
+   Post Run actions/checkout@v4 success
+   Complete job success
+````
+
+</details>
