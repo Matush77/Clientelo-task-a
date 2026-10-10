@@ -61,5 +61,5 @@ každý záznam skutočný investor a každý údaj (sektor, typická investíci
 
 [README.md](../README.md) · [PLAN.md](PLAN.md) · [PRECISION_REPORT.md](PRECISION_REPORT.md) ·
 [REFINEMENT.md](REFINEMENT.md) · [COST_ESTIMATE.md](COST_ESTIMATE.md) · [AI_WORKFLOW.md](AI_WORKFLOW.md) ·
-[DECISIONS.md](DECISIONS.md) · prezentácia [prezentacia.pdf](prezentacia.pdf) · prehliadač investorov [explorer.html](explorer.html) · dáta v
+[DECISIONS.md](DECISIONS.md) · prezentácia [online](https://claude.ai/artifact/W4YoxZMXZ6mo9Vbfhy6hT7) a [PDF](prezentacia.pdf) · prehliadač investorov [explorer.html](explorer.html) · dáta v
 [data/processed/](../data/processed/)
